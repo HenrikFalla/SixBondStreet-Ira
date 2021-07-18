@@ -41,6 +41,7 @@
             {%- if swatch_options contains option_name and show_swatches-%}
               <div class="product-form__color-swatches" data-option-buttons>
                 {% for value in option.values %}
+				<div class="swatch-images">
                   <a
                     href="#"
                     data-button="{{ value }}"
@@ -50,6 +51,7 @@
                   >
                   </a>
 				  <p class="swatch-name">{{ value }}</p>
+				</div>
                 {% endfor %}
                 <select
                   id="Option{{ option.position }}"
