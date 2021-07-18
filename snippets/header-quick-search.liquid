@@ -1,0 +1,35 @@
+{% capture settings %}
+  {
+    "limit": {{ settings.search_max_result_size | json }},
+    "show_articles": {{ settings.search_show_articles | json }},
+    "show_pages": {{ settings.search_show_pages | json }},
+    "show_price": {{ settings.search_show_price | json }},
+    "show_vendor": {{ settings.search_show_vendor | json }}
+  }
+{% endcapture %}
+
+<div class="quick-search" data-quick-search>
+  <script type="application/json" data-settings>{{ settings }}</script>
+
+  <div class="quick-search__overlay" data-overlay></div>
+  <form action="{{ routes.search_url }}" class="quick-search__container" autocomplete="off">
+    <div class="quick-search__bar">
+      <input
+        class="quick-search__input"
+        type="text"
+        name="q"
+        placeholder="{{ 'search.placeholder' | t }}"
+        data-input
+      />
+      <div class="quick-search__actions">
+        <a class="quick-search__clear" href="#" data-clear>
+          {% render 'icon' with icon: 'close' %}
+        </a>
+        <button class="quick-search__submit" type="submit">
+          {% render 'icon' with icon: 'search' %}
+        </button>
+      </div>
+    </div>
+    <div class="quick-search__results" data-results></div>
+  </form>
+</div>

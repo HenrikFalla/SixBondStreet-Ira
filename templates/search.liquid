@@ -1,0 +1,100 @@
+{% paginate search.results by 10 %}
+
+<section
+  class="search"
+  data-section-id="{{ section.id }}"
+  data-section-type="search"
+>
+
+  <header class="page__header">
+    {% if search.performed %}
+      <h1 class="page__heading ff-heading c-heading">{{ 'search.results_with_count' | t: terms: search.terms, count: search.results_count }}</h1>
+    {% else %}
+      <h1 class="page__heading ff-heading c-heading">{{ 'search.title' | t }}</h1>
+    {% endif %}
+  </header>
+
+  <form action="{{ routes.search_url }}" class="search__form" method="get" role="search">
+    <input
+      type="search"
+      name="q"
+      id="Search"
+      class="input input--round"
+      value="{{ search.terms | escape }}"
+      placeholder="{{ 'search.placeholder' | t }}"
+      autocomplete="off"
+    >
+    <button type="submit" class="search__submit">
+      {% render 'icon-button' with icon: 'search' %}
+    </button>
+  </form>
+
+  {% if search.performed %}
+    {% if search.results_count == 0 %}
+      <p class="search__no-results ff-body fs-primary-body ta-c">{{ 'search.no_results' | t }}</p>
+
+    {% else %}
+      <h2 class="visually-hidden">{{ 'search.heading' | t: count: search.results_count }}</h2>
+      <ul class="search__results">
+        {% for item in search.results %}
+          {%- assign image = false -%}
+          {%- if item.object_type == 'article' -%}
+            {%- assign image = item.image -%}
+          {%- elsif item.object_type == 'product' -%}
+            {% assign image = item.featured_media.preview_image | default: item.featured_image %}
+          {%- endif -%}
+
+          <li class="search__result">
+            <a href="{{ item.url }}" class="hover">
+              <div class="search__result-image">
+                {% if image != blank %}
+                  {% render 'image' with image: image, id: image.id %}
+                {% else %}
+                  {% render 'icon' with icon: 'alphabetical' %}
+                {% endif %}
+              </div>
+            </a>
+            <div class="search__result-content">
+              <h3 class="search__result-heading ff-heading fs-primary-body c-heading">
+                <a href="{{ item.url }}">
+                  {{ item.title }}
+                </a>
+              </h3>
+              {% if item.object_type == 'product' %}
+                <div class="ff-body fs-body-base">
+                  {% if item.compare_at_price > item.price %}
+                    {% if item.price_varies %}
+                      {% assign sale_price = item.price | money %}
+                      {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+                    {% else %}
+                      {{ 'products.product.on_sale' | t }}
+                      <span>{{ item.price | money }}</span>
+                    {% endif %}
+                    <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                    <s>{{ item.compare_at_price | money }}</s>
+                  </div>
+                {% else %}
+                  {% if item.price_varies %}
+                    {% assign price = item.price | money %}
+                    <span>{{ 'products.product.from_lowest_price_html' | t: lowest_price: price }}</span>
+                  {% else %}
+                    <span>{{ item.price | money }}</span>
+                  {% endif %}
+                {% endif %}
+                {% unless item.available %}
+                  {{ 'products.product.sold_out' | t }}
+                {% endunless %}
+              {% else %}
+                <p class="ff-body fs-body-base">{{ item.content | strip_html | truncate: 120 }}</p>
+              {% endif %}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% render 'pagination' with paginate: paginate %}
+    {% endif %}
+  {% endif %}
+</section>
+
+{% endpaginate %}

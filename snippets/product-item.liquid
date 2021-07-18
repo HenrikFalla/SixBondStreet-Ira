@@ -1,0 +1,95 @@
+{%- if product.media.size > 1 -%}
+  {%- assign multiple_images = true -%}
+{%- endif -%}
+
+<div class="product-item">
+  {%- if placeholder -%}
+    <div class="placeholder-image">
+      {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    </div>
+  {%- elsif product.featured_media -%}
+    <div class="product-item__media">
+      <a class="product-item__image-link borders" href="{{ product.url }}">
+        {%- if multiple_images -%}
+          {% render 'image' with
+            id: product.media[0].id,
+            image: product.media[0].preview_image,
+            wrapper_class: 'product-item__image'
+          %}
+          {% render 'image' with
+            image: product.media[1].preview_image,
+            wrapper_class: 'product-item__image product-item__image--two',
+            disable_style: true
+          %}
+        {%- else -%}
+          {% render 'image' with
+            id: product.featured_media.id,
+            image: product.featured_media,
+            wrapper_class: 'product-item__image'
+          %}
+        {%- endif -%}
+      </a>
+      {% if product.available and settings.cart_enable_quick_shop %}
+        <div class="product-item__add">
+          <button class="btn btn--primary btn--full" data-quick-add="{{ product.handle }}">{{ 'product.quick_add' | t }}</button>
+        </div>
+      {% endif %}
+
+      <div class="product-item__stars">
+        <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="product-item__meta fs-body-base c-body">
+    <div class="product-item__text ff-body">
+      {%- if placeholder -%}
+        <h4><a href="#">{{ 'sections.featured_products.placeholder.product_title' | t }}</a></h4>
+      {%- else -%}
+        <h4><a href="{{ product.url }}">{{ product.title }}</a></h4>
+      {%- endif -%}
+
+      {% if placeholder %}
+        {{ 9999 | money }}
+
+      {% elsif product.compare_at_price > product.price %}
+        <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+        <s class="t-subdued">{{ product.compare_at_price | money }}</s>
+
+        {% if product.price_varies %}
+          {%- assign sale_price = product.price | money -%}
+          {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+        {% else %}
+          <span class="sale">{{ product.price | money }}<span>
+        {% endif %}
+
+      {% else %}
+        {% if product.price_varies %}
+          {%- assign price = product.price | money -%}
+          {{ 'products.product.from_lowest_price_html' | t: lowest_price: price }}
+        {% else %}
+          {{ product.price | money }}
+        {% endif %}
+
+      {% endif %}
+
+    </div>
+
+    {%- if product.compare_at_price > product.price or product.available != true -%}
+      <div class="product-item__badges">
+        {% if product.compare_at_price > product.price %}
+          <div class="product-item__badge product-item__badge--sale">
+            {{ 'products.product.on_sale' | t }}
+          </div>
+        {% endif %}
+
+        {% unless product.available or placeholder %}
+          <div class="product-item__badge product-item__badge--sold-out">
+            {{ 'products.product.sold_out' | t }}
+          </div>
+        {% endunless %}
+      </div>
+    {%- endif -%}
+
+  </div>
+</div>

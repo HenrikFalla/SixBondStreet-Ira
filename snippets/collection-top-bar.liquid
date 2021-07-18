@@ -1,0 +1,38 @@
+{% if current_tags.size > 0 or collection.sort_by != blank %}
+  <div class="collection-top-bar">
+    <div class="collection-top-bar__active-elements">
+      {% for tag in current_tags %}
+        {% assign label = tag %}
+        {% assign cat = label | split: '_' | first %}
+
+        {% unless cat == tag %}
+          {% assign filter = label | split: '_' | last %}
+          {% assign label = cat | append: ': ' | append: filter %}
+        {% endunless %}
+
+        {% assign url = label | link_to_remove_tag: tag | split: '"' %}
+        {% assign url = url[1] %}
+
+        <a href="{{ url }}" class="pill pill--solid fs-body-base no-transition" data-pill="filter" data-tag="{{ tag | handle }}">
+          {{ label }}
+          {% render 'icon' with icon: 'close' %}
+        </a>
+      {% endfor %}
+
+      {%- if collection.sort_by != blank -%}
+        {% comment %} Would be nice not to loop to get the formatted label {% endcomment %}
+        {% for option in collection.sort_options %}
+          {% if collection.sort_by == option.value %}
+            {% assign label = option.name %}
+          {% endif %}
+        {% endfor %}
+        <a href="#" class="pill pill--solid fs-body-base no-transition" data-sort-pill data-pill="sort">
+          Sort: {{ label }}
+          {% render 'icon' with icon: 'close' %}
+        </a>
+      {%- endif -%}
+
+      <div class="space"></div>
+    </div>
+  </div>
+{% endif %}

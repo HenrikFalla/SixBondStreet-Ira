@@ -1,0 +1,116 @@
+{%- assign image = section.settings.image -%}
+{%- assign heading = section.settings.title -%}
+{%- assign subheading = section.settings.subheading -%}
+
+{%- if section.settings.enable_popup -%}
+  <section
+    class="popup"
+    data-section-id="{{ section.id }}"
+    data-section-type="popup"
+    data-timeout="10000"
+    style="
+      --image-position: {{ section.settings.image_position }};
+      --color-background: {{ section.settings.color_background }};
+      --color-background-input: {{ section.settings.color_background_input }};
+      --color-text: {{ section.settings.color_text }};
+      --color-text-input: {{ section.settings.color_text_input }};
+    "
+  >
+    <div class="popup__overlay" data-overlay></div>
+    <div class="popup__bar">
+      {%- if image != blank -%}
+        {% render 'image' with
+          image: image,
+          id: 'popup',
+          wrapper_class: 'popup__image',
+          disable_style: true
+        %}
+      {%- endif -%}
+      <a href="#" data-close class="popup__close">{% render 'icon' with icon: 'close' %}</a>
+
+      <div class="popup__content">
+        {%- if heading != blank -%}
+          <h3 class="popup__heading ff-heading">{{ heading }}</h3>
+        {%- endif -%}
+        {%- if subheading != blank -%}
+          <div class="popup__subheading ff-body">{{ subheading }}</div>
+        {%- endif -%}
+
+        <div class="popup__form">
+          {% render 'newsletter-form' with id: 'popup' %}
+        </div>
+      </div>
+    </div>
+  </section>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Popup",
+    "settings": [
+      {
+        "id": "enable_popup",
+        "type": "checkbox",
+        "label": "Enable",
+        "info": "Show a popup the first time the user's cursor leaves your site.",
+        "default": false
+      },
+      {
+        "id": "image",
+        "type": "image_picker",
+        "label": "Image"
+      },
+      {
+        "id": "image_position",
+        "type": "select",
+        "label": "Image position",
+        "options": [
+          { "label": "Top", "value": "top" },
+          { "label": "Center", "value": "center" },
+          { "label": "Bottom", "value": "bottom" }
+        ],
+        "default": "center"
+      },
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Heading",
+        "default": "Sign up for our newsletter"
+      },
+      {
+        "id": "subheading",
+        "type": "textarea",
+        "label": "Subheading",
+        "default": "We only send emails once or twice a month and only about good things."
+      },
+      {
+        "type": "header",
+        "content": "Style"
+      },
+      {
+        "id": "color_background",
+        "type": "color",
+        "label": "Background",
+        "default": "#000000"
+      },
+      {
+        "id": "color_text",
+        "type": "color",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "id": "color_background_input",
+        "type": "color",
+        "label": "Input background",
+        "default": "#ffffff"
+      },
+      {
+        "id": "color_text_input",
+        "type": "color",
+        "label": "Input text",
+        "default": "#1d1d1d"
+      }
+    ]
+  }
+{% endschema %}

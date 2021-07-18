@@ -1,0 +1,38 @@
+{% layout none %}
+{%- assign current_variant = product.first_available_variant -%}
+
+<div class="quick-add__product">
+  <div class="quick-add__image">
+    <a href="{{ product.url }}">
+      {%- if product.featured_media -%}
+        {% render 'image' with
+          image: product.featured_media,
+          id: 'quick-add',
+          disable_style: true,
+        %}
+      {%- endif -%}
+    </a>
+  </div>
+  <div class="quick-add__details ff-body fs-body-base">
+    <h4><a href="{{ product.url }}">{{ product.title }}</a></h4>
+    <div>
+      <span data-price>{{ current_variant.price | money }}</span>
+      <s data-compare-price>
+        {% if current_variant.compare_at_price > current_variant.price %}
+          {{ current_variant.compare_at_price | money }}
+        {% endif %}
+      </s>
+    </div>
+  </div>
+</div>
+
+<div class="quick-add__form">
+  {% render 'product-form' with
+    product: product,
+    current_variant: current_variant,
+    show_quantity: settings.cart_quick_shop_show_quantity,
+    show_dynamic_checkout: false,
+    show_swatches: false,
+    quick: true
+  %}
+</div>

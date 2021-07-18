@@ -1,0 +1,50 @@
+{% render 'section--featured-collection' with
+  heading: section.settings.title,
+  collection: collections[section.settings.collection],
+  per_row: section.settings.per_row
+%}
+
+{% schema %}
+  {
+    "name": "Featured collection",
+    "class": "inline-section",
+    "settings": [
+      {
+        "id": "collection",
+        "type": "collection",
+        "label": "Collection"
+      },
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Heading",
+        "default": "Featured collection"
+      },
+      {
+        "type": "range",
+        "id": "per_row",
+        "label": "Products per row",
+        "min": 2,
+        "max": 4,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "range",
+        "id": "rows",
+        "label": "Rows",
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "default": 1
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured collection",
+        "category": "Collection",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,250 @@
+{% liquid
+  assign show_vendor = section.settings.show_vendor
+  assign media_layout = section.settings.media_layout
+  assign full_width = section.settings.enable_full_width
+  assign current_variant = product.selected_or_first_available_variant
+  assign enable_image_zoom = section.settings.enable_image_zoom
+  assign compare_at_price = current_variant.compare_at_price
+  assign price = current_variant.price
+  assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media
+  assign first_3d_model = product.media | where: "media_type", "model" | first
+  assign enable_video_looping = section.settings.enable_video_looping
+%}
+
+<section
+  class="
+    product
+    s-inline-template
+    {% if full_width %}full-width{% endif %}
+  "
+  data-section-id="{{ section.id }}"
+  data-section-type="product"
+  data-product-has-only-default-variant="{{ product.has_only_default_variant }}"
+>
+
+  <div class="product__content">
+    <div class="product__media-container">
+      <div class="product__media product__media--{{ media_layout }}" data-slider>
+        {%- for media in product.media -%}
+          <div class="product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
+            {% render 'media', media: media, featured_media: featured_media, loop_video: enable_video_looping  %}
+          </div>
+        {%- endfor -%}
+
+        {%- if product.media.size > 1 -%}
+          {% render 'carousel-pagination' %}
+        {%- endif -%}
+      </div>
+
+      <noscript>
+        {% capture product_image_size %}{{ height }}x{% endcapture %}
+        <img src="{{ featured_media | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_media.alt }}" id="FeaturedMedia-{{ section.id }}" class="product-featured-media" style="max-width: {{ height }}px;">
+      </noscript>
+
+      {%- if first_3d_model -%}
+        <button
+          aria-label="{{ 'products.product.view_in_space_label' | t }}"
+          class="product__view-in-space btn btn--full"
+          data-in-your-space
+          data-shopify-xr
+          data-shopify-model3d-id="{{ first_3d_model.id }}"
+          data-shopify-title="{{ product.title | escape }}"
+          data-shopify-xr-hidden
+        >
+          <span>
+            {% render 'icon' with icon: '3d' %}
+            <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
+          </span>
+        </button>
+      {%- endif -%}
+    </div>
+
+    <div class="product__details grid__item grid__item--one-third">
+      <div class="product-single__meta">
+
+        {%- if show_vendor -%}
+          <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div>
+        {%- endif -%}
+
+        <h1 class="product-single__title ff-heading fs-heading-base c-heading">{{ product.title }}</h1>
+
+        <div class="product__price fs-body-base">
+          <span data-price>{{ current_variant.price | money }}</span>
+
+          <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
+          <s data-compare-price>
+            {% if current_variant.compare_at_price > current_variant.price %}
+              {{ current_variant.compare_at_price | money }}
+            {% endif %}
+          </s>
+        <!-- Custom Stock Display for Product - Henrik -->
+		<div class="stock-availability">
+		{% if variant.options > 1 %}
+          	{% if current_variant.available == true %}
+          		{% if current_variant.inventory_quantity > 0 %}
+          			<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
+          		{% else %}
+          			<span data-stock-availability>Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}</span>
+          		{% endif %}
+          	{% else %}
+          		<span data-stock-availability>Utsolgt</span>
+          	{% endif %}          	
+		{% else %}
+          	{% if current_variant.available == true %}
+          		{% if product.variants.first.inventory_quantity > 0 %}
+          			<span data-stock-availability>{{ product.variants.first.inventory_quantity }} på lager.</span>
+          		{% else %}
+          			<span data-stock-availability>Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
+          		{% endif %}
+            {% else %}
+            	<span data-stock-availability>Utsolgt</span>
+            {% endif %}
+		{% endif %}
+		</div>
+        <!-- End of custom stock display - Henrik -->
+        </div>
+        <!--
+        {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+          <div class="product__policies rte" data-product-policies>
+            {%- if shop.taxes_included -%}
+              {{ 'products.product.include_taxes' | t }}
+            {%- endif -%}
+            {%- if shop.shipping_policy.body != blank -%}
+              {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+		-->
+
+        {% render 'product-form' with
+          product: product,
+          current_variant: current_variant,
+          show_quantity: section.settings.show_quantity_input,
+          show_dynamic_checkout: section.settings.enable_payment_button,
+          show_swatches: section.settings.show_swatches,
+        %}
+      </div>
+
+      {%- comment -%}
+        Live region for announcing updated price and availability to screen readers
+      {%- endcomment -%}
+      <p class="visually-hidden" data-product-status
+        aria-live="polite"
+        role="status"
+      ></p>
+
+      {%- comment -%}
+        Live region for announcing that the product form has been submitted and the
+        product is in the process being added to the cart
+      {%- endcomment -%}
+      <p class="visually-hidden" data-loader-status
+        aria-live="assertive"
+        role="alert"
+        aria-hidden="true"
+      >{{ 'products.product.loader_label' | t }}</p>
+
+      <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
+
+      {% if section.settings.show_share_buttons %}
+        <div class="product__share" data-share="{{ 'product.share' | t }}">
+          {% render 'share-block', share_title: product.title, url: product.url, share_image: product.featured_media %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="product__reviews">
+      <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
+    </div>
+  </div>
+
+  {%- assign images = product.media | where: 'media_type', 'image' -%}
+  {% render 'lightbox' with images: images %}
+</section>
+
+<script>
+  window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)}
+  {% assign models = product.media | where: 'media_type', 'model' | json %}
+  ShopifyXR('addModels', {{ models }});
+</script>
+<script src='//cdn.shopify.com/shopifycloud/shopify-xr-js/assets/v1.0/shopify-xr.en.js' defer='defer'></script>
+
+{% unless product == empty %}
+  <script type="application/json" id="ProductJson-{{ section.id }}">
+    {{ product | json }}
+  </script>
+  <script type="application/json" id="ModelJson-{{ section.id }}">
+    {{ product.media | where: 'media_type', 'model' | json }}
+  </script>
+{% endunless %}
+
+
+{% schema %}
+  {
+    "name": "Product pages",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_swatches",
+        "label": "Show swatches",
+        "info": "Add swatch image files to your store's [files area](/admin/settings/files). Make sure the file names match the names of your color variants. For example, a variant called Blue would need a file called 'blue.png'",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_share_buttons",
+        "label": "Show social sharing buttons"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_quantity_input",
+        "label": "Show quantity input",
+        "info": "If quantity inputs are hidden, quantities will default to 1.",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_payment_button",
+        "label": "Show dynamic checkout button",
+        "info": "Lets customers check out directly using a familiar payment method. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+        "default": true
+      },
+      {
+        "id": "enable_full_width",
+        "type": "checkbox",
+        "label": "Enable full width",
+        "info": "If enabled this section will span the entire width of the window",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Media"
+      },
+      {
+        "type": "select",
+        "id": "media_layout",
+        "label": "Layout",
+        "options": [
+          { "value": "column", "label": "Column" },
+          { "value": "grid", "label": "Grid" }
+        ],
+        "default": "column"
+      },
+      {
+        "type": "paragraph",
+        "content": "Learn more about [media types](https://help.shopify.com/en/manual/products/product-media)"
+      },
+      {
+        "id": "enable_video_looping",
+        "type": "checkbox",
+        "label": "Enable video looping",
+        "default": true
+      }
+    ]
+  }
+{% endschema %}

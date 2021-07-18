@@ -1,0 +1,107 @@
+{% assign timing_in_ms = section.settings.timing | times: 1000 %}
+{% assign announcements = section.blocks %}
+
+{% assign visible = false %}
+{% if section.settings.enabled and announcements.size > 0 %}
+  {% assign visible = true %}
+{% endif %}
+
+{% if visible %}
+  <section
+    class="announcement-bar"
+    data-section-id="{{ section.id }}"
+    data-section-type="announcement-bar"
+    data-timing="{{ timing_in_ms }}"
+  >
+    {% for block in announcements %}
+      <div
+        class="announcement-bar__item ff-body fs-body-small"
+        style="
+          --s-color-background: {{ block.settings.color_background }};
+          --s-color-text: {{ block.settings.color_text }};
+        "
+        data-single-announcement
+        data-index="{{ forloop.index0 }}"
+        {{ block.shopify_attributes }}
+      >
+        <div class="announcement-bar__content">
+          {%- if block.settings.link != blank -%}
+            <span>
+              <a class="color-inherit" href="{{ block.settings.link }}">
+                {{ block.settings.title | strip_html }}
+              </a>
+            </span>
+          {%- else -%}
+            <span>{{ block.settings.title | strip_html }}</span>
+          {%- endif -%}
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Announcement bar",
+    "settings": [
+      {
+        "id": "enabled",
+        "type": "checkbox",
+        "label": "Show announcement",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "timing",
+        "label": "Time between announcements",
+        "min": 3,
+        "max": 15,
+        "step": 1,
+        "default": 4
+      }
+    ],
+    "max_blocks": 3,
+    "blocks": [
+      {
+        "type": "announcement",
+        "name": "Announcement",
+        "settings": [
+          {
+            "id": "title",
+            "type": "text",
+            "label": "Announcement text",
+            "default": "Announce something here"
+          },
+          {
+            "id": "link",
+            "type": "url",
+            "label": "Announcement link",
+            "info": "Optional"
+          },
+          {
+            "id": "color_background",
+            "type": "color",
+            "label": "Background color",
+            "default": "#1D1D1D"
+          },
+          {
+            "id": "color_text",
+            "type": "color",
+            "label": "Text color",
+            "default": "#FFFFFF"
+          }
+        ]
+      }
+    ],
+    "default": {
+      "blocks": [
+        {
+          "type": "announcement",
+          "settings": {
+            "title": "Announce a sale or a new product line using this announcement bar."
+          }
+        }
+      ]
+    }
+  }
+{% endschema %}

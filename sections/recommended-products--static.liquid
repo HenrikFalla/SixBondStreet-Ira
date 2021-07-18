@@ -1,0 +1,68 @@
+{%- assign max_products = section.settings.per_row | times: section.settings.rows -%}
+
+{%- if section.settings.enabled -%}
+  <section
+    class="recommended-products s-inline-section"
+    data-section-id="{{ section.id }}"
+    data-section-type="recommended-products"
+    data-product-id="{{ product.id }}"
+    data-limit="{{ max_products }}"
+  >
+    {% render 'section-header', heading: section.settings.heading %}
+
+    <div class="recommended-products__wrapper" data-recommendations> 
+      {%- if recommendations.products_count > 0 -%}
+        <div class="recommended-products__grid mobile-carousel" data-slider>
+
+          {%- for product in recommendations.products -%}
+            <div class="recommended-products__product recommended-products__product--{{ section.settings.per_row }}" data-slide>
+              {% render 'product-item' with product: product %}
+            </div>
+          {%- endfor -%}
+
+          {% render 'carousel-pagination' %}
+        </div>
+      {%- endif -%}
+    </div>
+
+  </section>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Recommended products",
+    "class": "inline-section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enabled",
+        "label": "Enable",
+        "default": true
+      },
+      {
+        "id": "heading",
+        "type": "text",
+        "label": "Heading",
+        "default": "Recommended"
+      },
+      {
+        "id": "per_row",
+        "type": "range",
+        "label": "Posts per row",
+        "min": 2,
+        "max": 4,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "id": "rows",
+        "type": "range",
+        "label": "Rows",
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "default": 1
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,94 @@
+{% render 'section--gallery' with
+  blocks: section.blocks,
+  settings: section.settings
+%}
+
+{% schema %}
+  {
+    "name": "Gallery",
+    "class": "inline-section",
+    "settings": [
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Heading",
+        "default": "Gallery"
+      },
+      {
+        "id": "link_text",
+        "type": "text",
+        "label": "Link text",
+        "default": "See all"
+      },
+      {
+        "id": "link",
+        "type": "url",
+        "label": "Link"
+      },
+      {
+        "id": "aspect_ratio",
+        "type": "select",
+        "label": "Image aspect ratio",
+        "options": [
+          { "label": "Natural", "value": "natural" },
+          { "label": "Square (1:1)", "value": "square" },
+          { "label": "Landscape (3:2)", "value": "landscape" },
+          { "label": "Portrait (2:3)", "value": "portrait" }
+        ],
+        "default": "square"
+      },
+      {
+        "id": "per_row",
+        "type": "range",
+        "label": "Images per row",
+        "min": 2,
+        "max": 4,
+        "step": 1,
+        "default": 3
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "id": "image",
+            "type": "image_picker",
+            "label": "Image"
+          },
+          {
+            "id": "text",
+            "type": "richtext",
+            "label": "Text"
+          },
+          {
+            "id": "link",
+            "type": "url",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Gallery",
+        "category": "Image",
+        "blocks": [
+          {
+            "type": "image",
+            "settings": {}
+          },
+          {
+            "type": "image",
+            "settings": {}
+          },
+          {
+            "type": "image",
+            "settings": {}
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

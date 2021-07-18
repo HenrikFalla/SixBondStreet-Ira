@@ -1,0 +1,28 @@
+<div class="collection-top-bar__filters">
+  {% if collection.all_tags.size > 0 and filter_style != 'hidden' %}
+    {% if filter_style == 'by_group' %}
+      {% for category in categories %}
+        <a href="#" class="pill pill--outline fs-body-base" data-mobile-filter="{{ category }}">
+          {{ category }}
+          {% render 'icon' with icon: 'arrow-drop-down' %}
+        </a>
+      {% endfor %}
+    {% endif %}
+
+    {% if filter_style == 'by_tag' %}
+      <a href="#" class="pill pill--outline fs-body-base" data-mobile-filter="__tags">
+        {{ 'collections.tags.title' | t }}
+        {% render 'icon' with icon: 'arrow-drop-down' %}
+      </a>
+    {% endif %}
+  {% endif %}
+
+  {% if show_sort %}
+    <a href="#" class="pill pill--outline fs-body-base" data-mobile-filter="__sort">
+      {{ 'collections.sorting.title' | t }}
+      {% render 'icon' with icon: 'arrow-drop-down' %}
+    </a>
+  {% endif %}
+
+  <div class="space"></div>
+</div>

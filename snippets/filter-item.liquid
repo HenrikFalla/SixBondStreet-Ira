@@ -1,0 +1,25 @@
+<li class="filter-item {% if active %}active{% endif %}">
+  <a
+    class="filter-item__content no-transition"
+    href="{{ url }}"
+    {% if key != blank and val != blank %}
+      data-{{ key }}="{{ val | handle }}"
+    {% endif %}
+  >
+    {% if type == 'checkbox' %}
+      <div class="filter-input__input filter-item__checkbox">
+        {% render 'icon' with icon: 'check' %}
+      </div>
+    {% endif %}
+
+    {% if type == 'radio' %}
+      <div class="filter-input__input filter-item__radio">
+        <div class="indicator"></div>
+      </div>
+    {% endif %}
+
+    <span class="filter-item__label fs-body-base">
+      {{ label }}
+    </span>
+  </a>
+</li>

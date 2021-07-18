@@ -1,0 +1,441 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Ira",
+    "theme_version": "3.3.2",
+    "theme_author": "Fluorescent Design Inc.",
+    "theme_documentation_url": "https://fluorescent.co/help/ira",
+    "theme_support_url": "https://fluorescent.co/help/contact"
+  },
+  {
+    "name": {
+      "da": "Farver",
+      "de": "Farben",
+      "en": "Colors",
+      "es": "Colores",
+      "fi": "Värit",
+      "fr": "Couleurs",
+      "hi": "रंग",
+      "it": "Colori",
+      "ja": "色",
+      "ko": "색상",
+      "nb": "Farger",
+      "nl": "Kleuren",
+      "pt-BR": "Cores",
+      "pt-PT": "Cores",
+      "sv": "Färger",
+      "th": "สี",
+      "zh-CN": "颜色",
+      "zh-TW": "色彩"
+    },
+    "settings": [
+      {
+        "type": "header",
+        "content": "General"
+      },
+      {
+        "type": "color",
+        "id": "color_background_body",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_border",
+        "label": "Borders",
+        "default": "#eaeaea"
+      },
+      {
+        "type": "color",
+        "id": "color_overlay",
+        "label": "Overlay",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_text_heading",
+        "label": "Headings",
+        "default": "#1b1b1b"
+      },
+      {
+        "type": "color",
+        "id": "color_text_body",
+        "label": "Body",
+        "default": "#313131"
+      },
+      {
+        "type": "color",
+        "id": "color_text_link",
+        "label": "Links",
+        "default": "#2a5ddf"
+      },
+      {
+        "type": "header",
+        "content": "Header"
+      },
+      {
+        "type": "color",
+        "id": "color_header_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_header_text",
+        "label": "Text",
+        "default": "#313131"
+      },
+      {
+        "type": "color",
+        "id": "color_border_header",
+        "label": "Border",
+        "default": "#eaeaea"
+      },
+      {
+        "type": "header",
+        "content": "Footer"
+      },
+      {
+        "type": "color",
+        "id": "color_background_footer",
+        "label": "Background",
+        "default": "#f9f9f9"
+      },
+      {
+        "type": "color",
+        "id": "color_text_footer",
+        "label": "Text",
+        "default": "#363636"
+      },
+      {
+        "type": "color",
+        "id": "color_border_footer",
+        "label": "Border",
+        "default": "#e2e2e2"
+      },
+      {
+        "type": "header",
+        "content": "Buttons"
+      },
+      {
+        "id": "color_background_button",
+        "type": "color",
+        "label": "Background",
+        "default": "#000000"
+      },
+      {
+        "id": "color_text_button",
+        "type": "color",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Contrast",
+        "info": "Contrast colors are provided to offer an alternative to your default color scheme. Selecting the \"contrast\" option from the dropdown at the top of a Section activates these colors."
+      },
+      {
+        "id": "color_background_contrast",
+        "type": "color",
+        "label": "Background",
+        "default": "#f8f8f8"
+      },
+      {
+        "id": "color_text_heading_contrast",
+        "type": "color",
+        "label": "Headings",
+        "default": "#1d1d1d"
+      },
+      {
+        "id": "color_text_body_contrast",
+        "type": "color",
+        "label": "Body",
+        "default": "#1d1d1d"
+      },
+      {
+        "id": "color_border_contrast",
+        "type": "color",
+        "label": "Borders",
+        "default": "#dfdfdf"
+      },
+      {
+        "id": "color_background_button_contrast",
+        "type": "color",
+        "label": "Button background",
+        "default": "#000000"
+      },
+      {
+        "id": "color_text_button_contrast",
+        "type": "color",
+        "label": "Button text",
+        "default": "#ffffff"
+      },
+      {
+        "id": "color_text_link_contrast",
+        "type": "color",
+        "label": "Links",
+        "default": "#2a5ddf"
+      },
+      {
+        "type": "header",
+        "content": "Popovers"
+      },
+      {
+        "type": "color",
+        "id": "color_text_drawer",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_background_drawer",
+        "label": "Background",
+        "default": "#101010"
+      },
+      {
+        "type": "color",
+        "id": "color_border_drawer",
+        "label": "Border",
+        "default": "#353535"
+      },
+      {
+        "type": "color",
+        "id": "color_background_input_drawer",
+        "label": "Input background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_text_input_drawer",
+        "label": "Input text",
+        "default": "#1d1d1d"
+      }
+    ]
+  },
+  {
+    "name": "Fonts",
+    "settings": [
+      {
+        "type": "font_picker",
+        "id": "font_heading",
+        "label": "Headings",
+        "default": "ibm_plex_sans_n7"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_body",
+        "label": "Body",
+        "default": "ibm_plex_sans_n4"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_meta",
+        "label": "Mini headings",
+        "default": "ibm_plex_sans_n4"
+      }
+    ]
+  },
+  {
+    "name": "Layout",
+    "settings": [
+      {
+        "id": "enable_section_borders",
+        "type": "checkbox",
+        "label": "Show border between sections",
+        "default": true
+      },
+      {
+        "id": "corner_radius",
+        "type": "range",
+        "label": "Corner radius",
+        "unit": "px",
+        "min": 0,
+        "max": 16,
+        "step": 1,
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "Animation",
+    "settings": [
+      {
+        "id": "enable_page_transitions",
+        "type": "checkbox",
+        "label": "Enable page transitions",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Search",
+    "settings": [
+      {
+        "id": "search_max_result_size",
+        "type": "range",
+        "label": "Results per category",
+        "min": 1,
+        "max": 6,
+        "step": 1,
+        "default": 4
+      },
+      {
+        "id": "search_show_articles",
+        "type": "checkbox",
+        "label": "Show articles",
+        "default": true
+      },
+      {
+        "id": "search_show_pages",
+        "type": "checkbox",
+        "label": "Show pages",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Product results"
+      },
+      {
+        "id": "search_show_price",
+        "type": "checkbox",
+        "label": "Show price",
+        "default": true
+      },
+      {
+        "id": "search_show_vendor",
+        "type": "checkbox",
+        "label": "Show vendor",
+        "default": false
+      }
+    ]
+  },
+  {
+    "name": "Product",
+    "settings": [
+      {
+        "type": "text",
+        "id": "swatch_options",
+        "label": "Variant option for swatches",
+        "info": "Variant option name to use for displaying swatches. Use a comma separated list to support multiple options: Color, Colour",
+        "default": "Color, Colour"
+      },
+      {
+        "type": "text",
+        "id": "chip_options",
+        "label": "Variant option for chips",
+        "info": "Variant option name to use for displaying chips. Use a comma separated list to support multiple options: Size, Fabric, Material",
+        "default": "Size"
+      }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "cart_enable_ajax",
+        "label": "Show notification when item is added to cart",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_enable_quick_shop",
+        "label": "Enable quick shop",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_quick_shop_show_quantity",
+        "label": "Show quick shop quantity input",
+        "info": "If quantity inputs are hidden, quantities will default to 1.",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_show_notes",
+        "label": "Enable cart notes",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "quick_cart_note",
+        "label": "Quick cart note",
+        "default": "Your subtotal today is [subtotal]. Shipping and taxes will be calculated at checkout."
+      }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Account links"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "Twitter link",
+        "info": "https://twitter.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "Facebook link",
+        "info": "https://facebook.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest_link",
+        "label": "Pinterest link",
+        "info": "https://pinterest.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "Instagram link",
+        "info": "https://instagram.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_snapchat_link",
+        "label": "Snapchat link",
+        "info": "https://snapchat.com/add/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr_link",
+        "label": "Tumblr link",
+        "info": "https://shopify.tumblr.com"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube_link",
+        "label": "Youtube link",
+        "info": "https://youtube.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo_link",
+        "label": "Vimeo link",
+        "info": "https://vimeo.com/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_linkedin_link",
+        "label": "LinkedIn link",
+        "info": "https://linkedin.com/company/shopify"
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon image",
+        "info": "Will be scaled down to 32 x 32px"
+      }
+    ]
+  }
+]

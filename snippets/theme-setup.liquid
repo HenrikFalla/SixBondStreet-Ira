@@ -1,0 +1,36 @@
+<script>
+  console.log('Ira v3.3.2 by Fluorescent');
+
+  document.documentElement.className = document.documentElement.className.replace('no-js', '');
+
+  window.theme = {
+    version: 'v3.3.2',
+    moneyFormat: "{{ shop.money_format | escape }}",
+    routes: {
+      root: "{{ routes.root_url }}",
+      cart: {
+        base: "{{ routes.cart_url }}",
+        add: "{{ routes.cart_add_url }}",
+        change: "{{ routes.cart_change_url }}",
+        clear: "{{ routes.cart_clear_url }}",
+      },
+      // Manual routes until Shopify adds support
+      products: "{% if routes.root_url == '/' %}/products{% else %}{{ routes.root_url }}/products{% endif %}",
+      productRecommendations: "{{ routes.product_recommendations_url }}"
+    },
+    strings: {
+      product: {
+        reviews: {{ 'product.reviews' | t | json }}
+      },
+      search: {
+        headings: {
+          articles: {{ 'search.headings.articles' | t | json }},
+          pages: {{ 'search.headings.pages' | t | json }},
+          products: {{ 'search.headings.products' | t | json }}
+        },
+        view_all: {{ 'search.view_all' | t | json }},
+        no_results: {{ 'search.no_results' | t | json }}
+      }
+    }
+  }
+</script>

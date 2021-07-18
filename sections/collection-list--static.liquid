@@ -1,0 +1,51 @@
+{%- if section.settings.enabled -%}
+  {% render 'section--collection-list' with
+    heading: section.settings.title,
+    per_row: section.settings.per_row,
+    blocks: section.blocks
+  %}
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Collection list",
+    "class": "inline-section",
+    "max_blocks": 12,
+    "settings": [
+      {
+        "id": "enabled",
+        "type": "checkbox",
+        "label": "Enable",
+        "default": false
+      },
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Heading",
+        "default": "Collection list"
+      },
+      {
+        "id": "per_row",
+        "type": "range",
+        "label": "Collections per row",
+        "min": 2,
+        "max": 4,
+        "step": 1,
+        "default": 3
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "id": "collection",
+            "type": "collection",
+            "label": "Collection"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

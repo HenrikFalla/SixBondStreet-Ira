@@ -1,0 +1,188 @@
+{% liquid
+  assign product = all_products[section.settings.product]
+  assign contrast = section.settings.enable_contrast
+  assign full_width = section.settings.enable_full_width
+  assign current_variant = product.selected_or_first_available_variant
+  assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media
+  assign enable_video_looping = section.settings.enable_video_looping
+%}
+
+
+<section
+  data-section-id="{{ section.id }}"
+  data-section-type="featured-product"
+  data-product-has-only-default-variant="{{ product.has_only_default_variant }}"
+  class="
+    featured-product
+    {% if contrast %}contrast{% endif %}
+    {% if full_width %}full-width{% endif %}
+  "
+>
+  <div class="featured-product__media-container">
+    {%- if product != blank -%}
+      {% for media in product.media %}
+        <div
+          data-media="{{ media.id }}"
+          class="featured-product__media {% if media.id == featured_media.id %}visible{% endif %}"
+        >
+          {% render 'media', media: media, featured_media: featured_media, loop_video: enable_video_looping %}
+        </div>
+      {% endfor %}
+    {%- else -%}
+      <div class="featured-product__media visible">
+        <div class="placeholder-image">
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+
+  <div class="featured-product__details">
+    {%- if product != blank -%}
+      {% render 'product-details' with
+        product: product,
+        current_variant: current_variant,
+        compare_at_price = current_variant.compare_at_price,
+        price = current_variant.price,
+        show_vendor: section.settings.show_vendor
+      %}
+    {%- else -%}
+    {%- if show_vendor -%}
+      <div class="product__vendor ff-meta fs-meta c-meta">{{ 'sections.featured_product.placeholder.vendor' | t }}</div>
+
+    {%- endif -%}
+      <h1 class="product-single__title ff-heading fs-heading-base c-heading">{{ 'sections.featured_product.placeholder.title' | t }}</h1>
+      <div class="product__price fs-body-base">$99.99</div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Featured product",
+    "class": "grid-section",
+    "settings": [
+      {
+        "type": "product",
+        "id": "product",
+        "label": "Product"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_swatches",
+        "label": "Show swatches",
+        "info": "Add swatch image files to your store's [files area](/admin/settings/files). Make sure the file names match the names of your color variants. For example, a variant called Blue would need a file called 'blue.png'",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_share_buttons",
+        "label": "Show social sharing buttons"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_quantity_input",
+        "label": "Show quantity input",
+        "info": "If quantity inputs are hidden, quantities will default to 1.",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_payment_button",
+        "label": "Show dynamic checkout button",
+        "info": "Lets customers check out directly using a familiar payment method. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Style"
+      },
+      {
+        "id": "enable_contrast",
+        "type": "checkbox",
+        "label": "Enable contrast",
+        "info": "Configure Contrast section colors in Theme settings",
+        "default": false
+      },
+      {
+        "id": "enable_full_width",
+        "type": "checkbox",
+        "label": "Enable full width",
+        "info": "If enabled this section will span the entire width of the window",
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured product",
+        "category": "Product"
+      }
+    ]
+  }
+{% endschema %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "{{ product.title | escape }}",
+  "url": "{{ shop.url }}{{ product.url }}",
+  {% if product.featured_image %}
+    {% assign image_size = product.featured_image.width | append: 'x' %}
+    "image": [
+      "https:{{ product.featured_image.src | img_url: image_size }}"
+    ],
+  {% endif %}
+  "description": "{{ product.description | strip_html | escape }}",
+  {% if current_variant.sku != blank %}
+    "sku": "{{ current_variant.sku }}",
+  {% endif %}
+  "brand": {
+    "@type": "Thing",
+    "name": "{{ product.vendor | escape }}"
+  },
+  {% if product.variants %}
+    "offers": [
+      {% for variant in product.variants %}
+        {
+          "@type" : "Offer",
+          "availability" : "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+          "price" : "{{ variant.price | divided_by: 100.00 }}",
+          "priceCurrency" : "{{ shop.currency }}",
+          "url" : "{{ shop.url }}{{ variant.url }}",
+          "itemOffered" :
+          {
+              "@type" : "Product",
+              {% if variant.image %}
+                {% assign variant_image_size = variant.image.width | append: 'x' %}
+                "image": "http:{{ variant.image.src | img_url: variant_image_size }}",
+              {% endif %}
+              {% if variant.title != blank %}
+                "name" : "{{ variant.title | escape }}",
+              {% endif %}
+              {% if variant.sku != blank %}
+                "sku": "{{ variant.sku }}",
+              {% endif %}
+              {% if variant.weight != blank %}
+                "weight": {
+                  "@type": "QuantitativeValue",
+                  {% if variant.weight_unit != blank %}
+                    "unitCode": "{{ variant.weight_unit }}",
+                  {% endif %}
+                  "value": "{{ variant.weight | weight_with_unit: variant.weight_unit }}"
+                },
+              {% endif %}
+              "url": "{{ shop.url }}{{ variant.url }}"
+          }
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  {% endif %}
+}
+</script>

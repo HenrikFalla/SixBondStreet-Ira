@@ -1,0 +1,74 @@
+{% liquid
+  assign per_row = section.settings.per_row
+  assign blocks = section.blocks
+  assign display = section.settings.display_type
+%}
+
+<div class="s-inline-section">
+  <div class="list-collections__header">
+    <h1 class="list-collections__heading ff-heading fs-heading-base c-heading">{{ page_title }}</h1>
+  </div>
+
+  <div class="grid">
+    {% if display == 'all' %}
+      {% for collection in collections %}
+        <div class="grid__item grid__item--{{ per_row }}">
+          {% render 'collection-item' with collection: collection %}
+        </div>
+      {% endfor %}
+    {% else %}
+      {% for block in blocks %}
+        {%- assign collection = collections[block.settings.collection] -%}
+        <div class="grid__item grid__item--{{ per_row }}">
+          {% render 'collection-item' with collection: collection %}
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+
+</div>
+
+
+{% schema %}
+  {
+    "name": "Collections list page",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "All of your collections are listed by default. To customize your list, choose 'Selected' and add collections."
+      },
+      {
+        "id": "display_type",
+        "type": "radio",
+        "label": "Select collections to show",
+        "default": "all",
+        "options": [
+          { "value": "all", "label": "All" },
+          { "value": "selected", "label": "Selected" }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "per_row",
+        "label": "Collections per row",
+        "min": 2,
+        "max": 4,
+        "step": 1,
+        "default": 3
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "id": "collection",
+            "type": "collection",
+            "label": "Collection"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

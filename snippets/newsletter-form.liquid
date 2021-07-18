@@ -1,0 +1,20 @@
+<div class="newsletter-form">
+  {% form 'customer', id: id %}
+    {{ form.errors | default_errors }}
+    {% if form.posted_successfully? %}
+      <p class="ff-body fs-body-base">{{ 'general.newsletter_form.confirmation' | t }}</p>
+    {% else %}
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      <div class="newsletter__input-container">
+        <input
+          type="email"
+          class="input input--round"
+          name="contact[email]"
+          value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
+          placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+          autocorrect="off"
+          autocapitalize="off">
+      </div>
+    {% endif %}
+  {% endform %}
+</div>

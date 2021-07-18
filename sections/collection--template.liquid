@@ -1,0 +1,316 @@
+{% liquid
+  assign show_collection_image = section.settings.show_collection_image
+  assign show_collection_description = section.settings.show_collection_description
+  assign per_row = section.settings.per_row
+  assign show_sidebar = section.settings.show_sidebar
+  assign show_sort = section.settings.show_sort
+  assign full_width = section.settings.enable_full_width
+
+  assign show_enhanced_header = false
+  assign show_as_slideshow = false
+
+  if section.settings.collection_header_style == 'half' and collection.image != blank
+    assign show_enhanced_header = true
+  endif
+
+  if section.settings.collection_header_style == 'full' and collection.image != blank
+    assign show_as_slideshow = true
+  endif
+
+  assign collection_description = false
+  if section.settings.show_collection_description == true
+    assign collection_description = collection.description
+  endif
+
+  assign visible_sidebar = false
+  unless collection.tags.size == 0 and section.settings.show_sort == false
+    unless section.settings.show_sort == false and section.settings.filter_style == 'hidden'
+      assign visible_sidebar = true
+    endunless
+  endunless
+
+  assign show_rule = false
+  if settings.enable_section_borders and show_sidebar and visible_sidebar
+    if show_enhanced_header or show_as_slideshow
+      assign show_rule = true
+    endif
+  endif
+
+  assign cat_string = blank
+  for tag in collection.all_tags
+    if tag contains '_'
+      assign category = tag | split: '_' | first
+      assign cat_string = cat_string | append: '|' | append: category
+    endif
+  endfor
+  assign categories = cat_string | remove_first: '|' | split: '|' | uniq
+%}
+
+
+{% paginate collection.products by section.settings.per_page %}
+  <section
+    class="
+      collection
+      s-inline-section
+      {% if full_width %}full-width{% endif %}
+    "
+    data-section-id="{{ section.id }}"
+    data-section-type="collection"
+    style="
+      --image-position: {{ section.settings.image_position }};
+    "
+  >
+    {%- if show_as_slideshow -%}
+      <div class="collection__slideshow-header borders-nfw">
+        {% render 'image' with image: collection.image %}
+
+        <div class="collection__slideshow-header-overlay">
+          {% render 'block-overlay' with
+            heading: collection.title,
+            subheading: collection_description,
+
+            alignment: 'left_center',
+            max_width_content: 34,
+
+            opacity: section.settings.opacity_overlay,
+            color_background: section.settings.color_overlay,
+            color_heading: section.settings.color_heading,
+            color_subheading: section.settings.color_subheading
+          %}
+        </div>
+      </div>
+
+    {%- elsif show_enhanced_header -%}
+      <div class="collection__enhanced-header contrast borders-nfw">
+        <div class="collection__enhanced-header-text">
+          <h1 class="collection__heading ff-heading fs-heading-base c-heading">{{ collection.title }}</h1>
+          {% if show_collection_description and collection.description != blank %}
+            <div class="collection__description fs-body-base c-body">
+              {{ collection.description }}
+            </div>
+          {% endif %}
+        </div>
+        <div class="collection__enhanced-header-image">
+          {% render 'flexible-image' with
+            image: collection.image
+          %}
+        </div>
+      </div>
+    {%- else -%}
+      <div class="collection__simple-header">
+        <h1 class="collection__heading ff-heading fs-heading-base">{{ collection.title }}</h1>
+        {% if show_collection_description and collection.description != blank %}
+          <div class="collection__description fs-body-base">
+            {{ collection.description }}
+          </div>
+        {% endif %}
+      </div>
+    {%- endif -%}
+
+
+    <div
+      class="collection__content
+        {% if show_rule %}collection__content--rule{% endif %}
+      "
+      data-js-container
+    >
+
+      {%- if show_sidebar and visible_sidebar -%}
+        <div class="collection__sidebar" data-js-sidebar>
+          {% render 'collection-sidebar' with
+            categories: categories,
+            filter_style: section.settings.filter_style,
+            show_sort: section.settings.show_sort
+          %}
+        </div>
+      {%- endif -%}
+
+      <div class="collection__main-area">
+        {% if show_sidebar and visible_sidebar %}
+          {% render 'collection-mobile-filters' with
+            categories: categories,
+            filter_style: section.settings.filter_style,
+            show_sort: section.settings.show_sort
+          %}
+        {% endif %}
+
+        <div class="collection__window">
+
+          <div class="collection__loading" data-js-loading>
+            {% render 'loader' %}
+          </div>
+
+          <div id="root" class="collection__main" data-js-partial>
+
+            <div class="collection__top-row">
+              {% render 'collection-top-bar' with
+                categories: categories
+              %}
+            </div>
+
+            <div class="collection__grid grid">
+              {% for product in collection.products %}
+                <div class="grid__item grid__item--{{ per_row }} animate animate-up">
+                  {% render 'product-item', product: product %}
+                </div>
+              {% else %}
+                <div class="collection__empty">
+                  <div class="ff-heading fs-heading-small">No products</div>
+                  <a class="link ff-body fs-body-base" data-clear="true">Clear filters</a>
+                </div>
+              {% endfor %}
+            </div>
+
+            <div class="collection__pagination">
+              {% render 'pagination' with paginate: paginate, disable_page_transitions: true %}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    {% render 'collection-modal' with
+      filter_style: section.settings.filter_style,
+      categories: categories,
+      show_sort: section.settings.show_sort
+    %}
+  </section>
+{% endpaginate %}
+
+
+{% schema %}
+  {
+    "name": "Collection pages",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Collection image"
+      },
+      {
+        "id": "collection_header_style",
+        "type": "select",
+        "label": "Collection image style",
+        "options": [
+          { "label": "Text only", "value": "text_only" },
+          { "label": "Half width image", "value": "half" },
+          { "label": "Full width image", "value": "full" }
+        ],
+        "default": "half"
+      },
+      {
+        "id": "image_position",
+        "type": "select",
+        "label": "Image position",
+        "info": "If the image is cropped this part will remain visible.",
+        "options": [
+          { "label": "Top left", "value": "left top" },
+          { "label": "Top center", "value": "center top" },
+          { "label": "Top right", "value": "right top" },
+          { "label": "Middle left", "value": "left center" },
+          { "label": "Middle center", "value": "center center" },
+          { "label": "Middle right", "value": "right center" },
+          { "label": "Bottom left", "value": "left bottom" },
+          { "label": "Bottom center", "value": "center bottom" },
+          { "label": "Bottom right", "value": "right bottom" }
+        ],
+        "default": "center center"
+      },
+      {
+        "id": "enable_full_width",
+        "type": "checkbox",
+        "label": "Enable full width",
+        "info": "If enabled this section will span the entire width of the window",
+        "default": false
+      },
+      {
+        "id": "show_collection_description",
+        "type": "checkbox",
+        "label": "Show collection description",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Full width styles",
+        "info": "These settings only apply when the collection image style is set to 'Full width image'"
+      },
+      {
+        "id": "opacity_overlay",
+        "type": "range",
+        "label": "Overlay opacity",
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "default": 60,
+        "unit": "%"
+      },
+      {
+        "id": "color_overlay",
+        "type": "color",
+        "label": "Overlay",
+        "default": "#000000"
+      },
+      {
+        "id": "color_heading",
+        "type": "color",
+        "label": "Heading",
+        "default": "#ffffff"
+      },
+      {
+        "id": "color_subheading",
+        "type": "color",
+        "label": "Subheading",
+        "default": "#b8b8b8"
+      },
+      {
+        "type": "header",
+        "content": "Sidebar"
+      },
+      {
+        "id": "show_sidebar",
+        "type": "checkbox",
+        "label": "Show sidebar",
+        "default": true
+      },
+      {
+        "id": "show_sort",
+        "type": "checkbox",
+        "label": "Show sort options",
+        "default": false
+      },
+      {
+        "id": "filter_style",
+        "type": "select",
+        "label": "Filter style",
+        "options": [
+          { "label": "Hidden", "value": "hidden" },
+          { "label": "By group", "value": "by_group" },
+          { "label": "By tag", "value": "by_tag" }
+        ],
+        "default": "by_tag"
+      },
+      {
+        "type": "header",
+        "content": "Grid"
+      },
+      {
+        "id": "per_row",
+        "type": "range",
+        "label": "Products per row",
+        "default": 3,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "id": "per_page",
+        "type": "range",
+        "label": "Products per page",
+        "default": 12,
+        "min": 2,
+        "max": 24,
+        "step": 1
+      }
+    ]
+  }
+{% endschema %}

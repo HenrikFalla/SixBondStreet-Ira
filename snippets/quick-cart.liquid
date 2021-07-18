@@ -1,0 +1,40 @@
+{% liquid
+  assign brightness_drawer_background = settings.color_text_drawer | color_brightness
+  if brightness_drawer_background > 60
+    assign color_background_button_hover_popup = settings.color_text_drawer | color_darken: 20
+  else
+    assign color_background_button_hover_popup = settings.color_text_drawer | color_lighten: 20
+  endif
+%}
+
+<div
+  class="quick-cart"
+  data-quick-cart
+  style="
+    --color-button-background-hover: {{ color_background_button_hover_popup }};
+  "
+>
+  <div class="quick-cart__overlay" data-overlay></div>
+
+  <div class="quick-cart__container">
+    <div class="quick-cart__cart visible" data-cart data-scroll-lock-ignore>
+      <div class="quick-cart__header">{{ 'quick_cart.cart' | t }}</div>
+      <div class="quick-cart__items" data-items></div>
+      <div class="quick_cart__empty ff-body fs-body-base" data-empty>{{ 'quick_cart.empty' | t }}</div>
+      <div class="quick-cart__footer ff-body fs-body-base ta-c" data-footer>
+        <div class="quick-cart__discounts c-subdued" data-discounts></div>
+        <p>{{ settings.quick_cart_note | replace: "[subtotal]", "<span data-subtotal>$-.--</span>" }}</p>
+        <a href="{{ routes.cart_url }}" class="btn btn--primary btn--full">{{ 'quick_cart.go_to_cart' | t }}</a>
+      </div>
+    </div>
+
+    <div class="quick-cart__configure" data-configure>
+      <div class="quick-add loading" data-scroll-lock-ignore data-add>
+        <div class="quick-add__configure" data-contents></div>
+        <div class="quick-add__loading-wrap">
+          <div class="quick-add__loading-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

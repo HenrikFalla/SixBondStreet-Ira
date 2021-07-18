@@ -1,0 +1,116 @@
+<div class="collection-sidebar">
+  {% if collection.all_tags.size > 0 and filter_style != 'hidden' %}
+
+    {%- if filter_style == 'by_tag' -%}
+      <div class="collection-sidebar__group" data-group="{{ 'collections.tags.title' | t }}">
+        {%- assign heading = 'collections.tags.title' | t -%}
+        {% render 'collection-sidebar-heading' with heading: heading %}
+        <ul>
+        {% for tag in collection.all_tags %}
+          {% assign is_in_category = false %}
+          {% assign cat = tag | split: '_' | first %}
+          {% unless cat == tag %}
+            {% if categories contains cat %}
+              {% assign is_in_category = true %}
+            {% endif %}
+          {% endunless %}
+
+          {%- capture tag_text -%}
+            {% if is_in_category %}
+              {{ tag | remove_first: cat | remove_first: '_' }}
+            {% else %}
+              {{ tag }}
+            {% endif %}
+          {%- endcapture -%}
+
+          {% if current_tags contains tag %}
+            {% assign is_active = true %}
+            {% assign url = tag_text | link_to_remove_tag: tag | split: '"' %}
+            {% assign url = url[1] %}
+          {% else %}
+            {% assign is_active = false %}
+            {% assign url = tag_text | link_to_add_tag: tag | split: '"' %}
+            {% assign url = url[1] %}
+          {% endif %}
+
+          {% render 'filter-item' with
+            type: 'checkbox',
+            label: tag_text,
+            active: is_active,
+            url: url,
+            
+            key: 'tag',
+            val: tag
+          %}
+        {% endfor %}
+        </ul>
+      </div>
+    {%- endif -%}
+
+
+    {%- if filter_style == 'by_group' -%}
+      {% for category in categories %}
+        {%- assign heading = category -%}
+        <div class="collection-sidebar__group" data-group="{{ heading }}">
+          {% render 'collection-sidebar-heading' with heading: heading %}
+          <ul>
+            {% for tag in collection.all_tags %}
+              {% assign cat = tag | split: '_' | first %}
+
+              {% if cat != tag and category == cat %}
+                {% assign label = tag | remove_first: cat | remove_first: '_' %}
+
+                {% if current_tags contains tag %}
+                  {% assign is_active = true %}
+                  {% assign url = label | link_to_remove_tag: tag | split: '"' %}
+                  {% assign url = url[1] %}
+                {% else %}
+                  {% assign is_active = false %}
+                  {% assign url = label | link_to_add_tag: tag | split: '"' %}
+                  {% assign url = url[1] %}
+                {% endif %}
+
+                {% render 'filter-item' with
+                  type: 'checkbox',
+                  label: label,
+                  active: is_active,
+                  url: url,
+
+                  key: 'tag',
+                  val: tag
+                %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+
+    {%- endif -%}
+  {% endif %}
+
+
+  {% if show_sort %}
+    {%- assign heading = 'collections.sorting.title' | t -%}
+    <div class="collection-sidebar__group" data-group="{{ heading }}">
+      {% render 'collection-sidebar-heading' with heading: heading %}
+      <ul>
+        {% for option in collection.sort_options %}
+          {%- assign is_active = false -%}
+          {%- if option.value == collection.sort_by -%}
+            {%- assign is_active = true -%}
+          {%- endif -%}
+          {% render 'filter-item' with
+            label: option.name,
+            type: 'radio',
+            active: is_active,
+            url: '#',
+            
+            key: 'sort',
+            val: option.value
+          %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+</div>

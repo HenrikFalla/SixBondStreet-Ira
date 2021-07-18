@@ -1,0 +1,82 @@
+<section
+  class="rich-text s-inline-section"
+  data-section-id="{{ section.id }}"
+  data-section-type="rich-text"
+  style="
+    --s-max-width: {{ section.settings.max_width }}px;
+  "
+>
+  <div class="rich-text__content rich-text__content--{{ section.settings.alignment }}">
+    {%- if section.settings.title != blank -%}
+      <h3 class="rich-text__heading ff-heading fs-page-heading c-heading">{{ section.settings.title }}</h3>
+    {%- endif -%}
+
+    {%- if section.settings.text != blank -%}
+      <div class="rich-text__body rte ff-body fs-primary-body c-subheading">{{ section.settings.text }}</div>
+    {%- endif -%}
+
+    {%- if section.settings.link != blank and section.settings.link_text != blank -%}
+      <a class="btn btn--primary" href="{{ section.settings.link }}">{{ section.settings.link_text }}</a>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Rich text",
+    "class": "inline-section",
+    "settings": [
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Heading",
+        "default": "This is the Rich text section"
+      },
+      {
+        "id": "text",
+        "type": "richtext",
+        "label": "Text",
+        "default": "<p>Use this text area to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+      },
+      {
+        "id": "link",
+        "type": "url",
+        "label": "Link"
+      },
+      {
+        "id": "link_text",
+        "type": "text",
+        "label": "Link text"
+      },
+      {
+        "type": "header",
+        "content": "Style"
+      },
+      {
+        "id": "max_width",
+        "type": "range",
+        "label": "Text max width",
+        "default": 680,
+        "min": 500,
+        "max": 900,
+        "step": 10
+      },
+      {
+        "id": "alignment",
+        "type": "select",
+        "label": "Text alignment",
+        "options": [
+          { "label": "Left", "value": "left" },
+          { "label": "Center", "value": "center" }
+        ],
+        "default": "center"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Rich text",
+        "category": "Text"
+      }
+    ]
+  }
+{% endschema %}
