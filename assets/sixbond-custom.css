@@ -6,6 +6,9 @@ p, span {
 	letter-spacing: 1px;
 }
 /* Swatches */
+.product-form__color-swatches {
+    padding-top: 32px;
+}
 .product__color-swatch {
     width: 60px;
     height: 60px;
