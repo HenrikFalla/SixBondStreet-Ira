@@ -5,3 +5,8 @@ h1, h2, h3, h4, h5, h6 {
 p, span {
 	letter-spacing: 1px;
 }
+/* Swatches */
+.product__color-swatch {
+    width: 60px;
+    height: 60px;
+}
