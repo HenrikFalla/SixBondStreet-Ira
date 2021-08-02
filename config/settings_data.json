@@ -40,7 +40,7 @@
     "swatch_options": "Color, Colour, Treverk, Tekstil",
     "chip_options": "Size, Størrelse",
     "cart_enable_ajax": true,
-    "cart_enable_quick_shop": false,
+    "cart_enable_quick_shop": true,
     "cart_quick_shop_show_quantity": false,
     "cart_show_notes": true,
     "quick_cart_note": "Your subtotal today is [subtotal]. Shipping and taxes will be calculated at checkout.",
@@ -297,7 +297,7 @@
       "1600315431677": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "",
+          "collection": "spisestue",
           "title": "Featured collection",
           "per_row": 3,
           "rows": 1
