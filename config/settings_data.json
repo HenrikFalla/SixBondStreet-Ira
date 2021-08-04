@@ -496,7 +496,7 @@
         "settings": {
           "articles_per_row": "3",
           "show_rss": true,
-          "show_excerpt": false
+          "show_excerpt": true
         }
       },
       "featured-collection--static": {
@@ -656,6 +656,14 @@
         "settings": {
           "display_type": "all",
           "per_row": 3
+        }
+      },
+      "article--template": {
+        "type": "article--template",
+        "settings": {
+          "show_share": true,
+          "show_image": true,
+          "show_pagination": true
         }
       }
     },
