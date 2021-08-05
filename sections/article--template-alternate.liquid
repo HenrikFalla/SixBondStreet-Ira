@@ -12,11 +12,13 @@
 
 <article class="article">
   <header class="article__header">
+    
     {%- if show_image and article.image != blank -%}
       <div class="article__image borders">
         {% render 'image' with image: article.image %}
       </div>
   	{%- endif -%}
+    
     <p class="article__date ff-meta fs-meta c-meta">{{ article.published_at | time_tag: format: 'date' }}</p>
     <h1 class="ff-heading fs-page-heading c-heading">{{ article.title }}</h1>
     {%- if show_share -%}
