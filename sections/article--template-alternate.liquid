@@ -22,6 +22,9 @@
     
     <p class="article__date ff-meta fs-meta c-meta">{{ article.published_at | time_tag: format: 'date' }}</p>
     <h1 class="ff-heading fs-page-heading c-heading">{{ article.title }}</h1>
+    {%- if show_author and article.author != blank -%}
+    <p class="article__author ff-subheading">{{ article.author }}</p>
+    {%- endif -%}
     {%- if show_share -%}
       <div class="article__share">
         {% render 'share-block' with
