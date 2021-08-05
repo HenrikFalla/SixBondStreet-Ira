@@ -2,6 +2,7 @@
   assign show_share = section.settings.show_share
   assign show_image = section.settings.show_image
   assign show_pagination = section.settings.show_pagination
+  assign show_author = section.settings.show_author
 
   if comment.status == 'pending'
     assign number_of_comments = article.comments_count | plus: 1
