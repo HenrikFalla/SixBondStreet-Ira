@@ -51,13 +51,13 @@ p.swatch-name {
 /* end header section */
 /* article content */
 .article__content {
-	max-width: calc(900px + calc(20px * 2));
-    max-width: calc(900px + calc(var(--space-outer) * 2));
+	max-width: calc(800px + calc(20px * 2));
+    max-width: calc(800px + calc(var(--space-outer) * 2));
 	
 }
 /* end article content */
 /* article page settings */
 .page {
-	--s-max-width: 900px;	
+	--s-max-width: 800px;	
 }
 /* end article page settings */
