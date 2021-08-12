@@ -36,3 +36,6 @@ p.swatch-name {
     padding-right: 0;
     margin-bottom: 0;
 }
+.article__date {
+	margin-bottom: var(--spacing-extra-small);
+}
