@@ -31,6 +31,7 @@ p.swatch-name {
 }
 
 /* Article template SixBondStreet */
+/* Header section */
 .article .article__image {
     padding-left: 0;
     padding-right: 0;
@@ -42,3 +43,9 @@ p.swatch-name {
 .article__share {
 	margin-top: var(--spacing-extra-small);	
 }
+@media (min-width: 40em) {
+	.article__header {
+		margin: 20px auto;
+	}
+}
+/* end header section */
