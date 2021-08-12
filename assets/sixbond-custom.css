@@ -29,3 +29,10 @@ p.swatch-name {
     font-size: 12px;
     max-width: 70px;
 }
+
+/* Article template SixBondStreet */
+.article .article__image {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+}
