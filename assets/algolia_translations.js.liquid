@@ -1,22 +1,22 @@
 (function(algolia) {
   'use strict';
   algolia.translations = {
-    search: 'Current search',
-    noCollectionFound: 'No collection found',
-    allProducts: 'See all products',
-    matching: 'matching',
-    sortBy: 'Sorted by',
-    relevance: 'Relevance',
+    search: 'Ditt s&oslash;k',
+    noCollectionFound: 'Ingen kategori funnet',
+    allProducts: 'Se alle produkter',
+    matching: 'matcher',
+    sortBy: 'Sortert etter',
+    relevance: 'Relevans',
     outOf: 'out of',
-    resultsFound: 'results found',
-    oneResultFound: '1 result found',
-    noResultFound: 'No result found',
-    addToCart: 'Add to cart',
-    searchForProduct: 'Search for products',
-    selectedFilter: 'Selected filters',
-    clearAll: 'Clear all',
-    noPageFound: 'No page found',
-    outOfStock: 'Out of stock',
+    resultsFound: 'resultater funnet',
+    oneResultFound: '1 resultat funnet',
+    noResultFound: 'Ingen resultater funnet',
+    addToCart: 'Legg i handlekurv',
+    searchForProduct: 'S&oslash;k etter produkter',
+    selectedFilter: 'Valgte filter',
+    clearAll: 'Fjern alt',
+    noPageFound: 'Ingen sider funnet',
+    outOfStock: 'Utsolgt',
   };
 
   algolia.translation_helpers = {
