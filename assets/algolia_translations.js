@@ -1,7 +1,7 @@
 (function(algolia) {
   'use strict';
   algolia.translations = {
-    search: 'Ditt s&oslash;k',
+    search: 'Ditt søk',
     noCollectionFound: 'Ingen kategori funnet',
     allProducts: 'Se alle produkter',
     matching: 'matcher',
@@ -12,7 +12,7 @@
     oneResultFound: '1 resultat funnet',
     noResultFound: 'Ingen resultater funnet',
     addToCart: 'Legg i handlekurv',
-    searchForProduct: 'S&oslash;k etter produkter',
+    searchForProduct: 'Søk etter produkter',
     selectedFilter: 'Valgte filter',
     clearAll: 'Fjern alt',
     noPageFound: 'Ingen sider funnet',
