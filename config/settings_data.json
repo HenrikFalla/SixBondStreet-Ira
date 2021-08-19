@@ -154,20 +154,28 @@
           "d652cb66-da13-4cdb-9522-ded0c627c26a": {
             "type": "links",
             "settings": {
-              "title": "Links",
+              "title": "Kontakt oss",
               "link_list": "footer"
+            }
+          },
+          "c4f553af-66fe-4e23-bc9c-a7a83d158532": {
+            "type": "text",
+            "settings": {
+              "title": "Åpningstider",
+              "text": "<p>Man - Ons: 11:00 - 19:00<br\/>Tors: 11:00 - 20:00<br\/>Fre: 11:00 - 19:00<br\/>Lør: 10:00 - 16:00<\/p>"
             }
           },
           "f0c659ac-07a5-4769-9de6-3cce9ab7b94f": {
             "type": "newsletter",
             "settings": {
-              "title": "Newsletter",
-              "text": "<p>Subscribe for store updates and discounts.<\/p>"
+              "title": "Nyhetsbrev",
+              "text": "<p>Hold deg oppdatert på nyheter, trender og kampanjer ved å melde deg på vårt nyhetsbrev. Legg igjen e-posten din her.<\/p>"
             }
           }
         },
         "block_order": [
           "d652cb66-da13-4cdb-9522-ded0c627c26a",
+          "c4f553af-66fe-4e23-bc9c-a7a83d158532",
           "f0c659ac-07a5-4769-9de6-3cce9ab7b94f"
         ],
         "settings": {
