@@ -64,8 +64,12 @@ p.swatch-name {
 /* Search Result Page */
 	.search .ais-page .ais-input {
         border: none;
-        display: flex;
-        flex-direction: row;
+        display: block;
+	}
+  	.ais-page .ais-search-box-container {
+    	display: block;
+    	margin: auto;
+    	width: 100%;
 	}
 	.search .ais-page .ais-input--label {
 		display:none;
