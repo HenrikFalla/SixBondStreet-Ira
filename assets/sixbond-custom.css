@@ -70,6 +70,10 @@ p.swatch-name {
     	max-width: calc(var(--space-outer) * 2 + var(--max-width));
           padding-top: 16px;
 	}
+  	.search .ais-page .ais-search-header {
+    	background: none;
+    	margin-top: 0px;
+	}
 	.search .ais-page .ais-input {
         border: none;
         display: block;
