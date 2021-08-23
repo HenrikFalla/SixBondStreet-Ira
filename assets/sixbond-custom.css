@@ -82,6 +82,7 @@ p.swatch-name {
     	display: block;
     	margin: auto;
     	width: 100%;
+      	padding: 8px;
 	}
 	.search .ais-page .ais-input--label {
 		display:none;
