@@ -150,41 +150,41 @@
         }
       },
       "footer": {
-        "type": "footer",
+        "block_order": [
+          "d652cb66-da13-4cdb-9522-ded0c627c26a",
+          "c4f553af-66fe-4e23-bc9c-a7a83d158532",
+          "f0c659ac-07a5-4769-9de6-3cce9ab7b94f"
+        ],
         "blocks": {
-          "1600315542945": {
-            "type": "text",
+          "c4f553af-66fe-4e23-bc9c-a7a83d158532": {
             "settings": {
-              "title": "About",
-              "text": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>"
-            }
+              "text": "<p>Man - Ons: 11:00 - 19:00<br\/>Tors: 11:00 - 20:00<br\/>Fre: 11:00 - 19:00<br\/>Lør: 10:00 - 16:00<\/p>",
+              "title": "Åpningstider"
+            },
+            "type": "text"
           },
-          "1600315548142": {
-            "type": "links",
+          "d652cb66-da13-4cdb-9522-ded0c627c26a": {
             "settings": {
-              "title": "Links",
-              "link_list": "footer"
-            }
+              "link_list": "footer",
+              "title": "Kontakt oss"
+            },
+            "type": "links"
           },
-          "1600315553114": {
-            "type": "newsletter",
+          "f0c659ac-07a5-4769-9de6-3cce9ab7b94f": {
             "settings": {
-              "title": "Newsletter",
-              "text": "<p>Subscribe for store updates and discounts. We only send emails about once month and only about good things.<\/p>"
-            }
+              "text": "<p>Hold deg oppdatert på nyheter, trender og kampanjer ved å melde deg på vårt nyhetsbrev. Legg igjen e-posten din her.<\/p>",
+              "title": "Nyhetsbrev"
+            },
+            "type": "newsletter"
           }
         },
-        "block_order": [
-          "1600315542945",
-          "1600315548142",
-          "1600315553114"
-        ],
         "settings": {
-          "show_locale_selector": true,
           "show_currency_selector": true,
-          "show_social_icons": true,
-          "show_payment_icons": true
-        }
+          "show_locale_selector": true,
+          "show_payment_icons": true,
+          "show_social_icons": true
+        },
+        "type": "footer"
       },
       "1600315401018": {
         "type": "slideshow--dynamic",
