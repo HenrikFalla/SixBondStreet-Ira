@@ -104,6 +104,7 @@ p.swatch-name {
   	.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form .ais-SearchBox-reset {
     	order: 3;
       	padding: 8px;
+      	padding-right: 16px;
 	}
   	.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form .ais-SearchBox-submit {
     	order: 1;
