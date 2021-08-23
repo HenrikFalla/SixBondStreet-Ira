@@ -3,12 +3,12 @@
 	--max-width-large-page: 1200px
 }
 /* TYPOGRAPHY */
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 2px;
 }
 p, span {
 	letter-spacing: 1px;
-}
+} */
 /* Swatches */
 .product-form__color-swatches {
     padding-top: 32px;
