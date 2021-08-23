@@ -61,3 +61,18 @@ p.swatch-name {
 	--s-max-width: 800px;	
 }
 /* end article page settings */
+/* Search Result Page */
+	.ais-page .ais-input {
+        border: none;
+        display: flex;
+        flex-direction: row;
+	}
+	.ais-page .ais-input--label {
+		display:none;
+ 	}
+  	.ais-page .ais-search-box-container {
+        display: block;
+        background-color: #F8F7F5;
+        border-radius: 50px;
+	}
+/* End Search Result Page */
