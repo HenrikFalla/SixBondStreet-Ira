@@ -1,0 +1,23 @@
+<div class="stock-availability">
+		{% if item.variant.options > 1 %}
+          	{% if item.current_variant.available == true %}
+          		{% if item.current_variant.inventory_quantity > 0 %}
+          			<span data-stock-availability>{{ item.current_variant.inventory_quantity }} på lager.</span>
+          		{% else %}
+          			<span data-stock-availability>Leveringstid: {{ item.current_variant.metafields.product_data.leveringstid }}</span>
+          		{% endif %}
+          	{% else %}
+          		<span data-stock-availability>Utsolgt</span>
+          	{% endif %}          	
+		{% else %}
+          	{% if item.current_variant.available == true %}
+          		{% if item.variants.first.inventory_quantity > 0 %}
+          			<span data-stock-availability>{{ item.variants.first.inventory_quantity }} på lager.</span>
+          		{% else %}
+          			<span data-stock-availability>Leveringstid: {{ item.metafields.product_data.leveringstid }}</span>
+          		{% endif %}
+            {% else %}
+            	<span data-stock-availability>Utsolgt</span>
+            {% endif %}
+		{% endif %}
+		</div>
