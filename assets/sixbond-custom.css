@@ -124,4 +124,7 @@ p.swatch-name {
     	top: 0;
     	left: 0;
 	}
+  	.search .ais-page .ais-results-as-block .ais-hit--details {
+    	margin-top: 16px;
+	}
 /* End Search Result Page */
