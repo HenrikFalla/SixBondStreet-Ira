@@ -139,7 +139,7 @@
       "popup": {
         "type": "popup",
         "settings": {
-          "enable_popup": true,
+          "enable_popup": false,
           "image_position": "center",
           "title": "Sign up for our newsletter",
           "subheading": "We only send emails once or twice a month and only about good things.",
@@ -520,9 +520,9 @@
           "show_swatches": true,
           "show_share_buttons": true,
           "show_quantity_input": false,
-          "enable_payment_button": true,
-          "enable_full_width": false,
-          "media_layout": "grid",
+          "enable_payment_button": false,
+          "enable_full_width": true,
+          "media_layout": "column",
           "enable_video_looping": true
         }
       },
@@ -532,7 +532,8 @@
           "enabled": true,
           "heading": "Recommended",
           "per_row": 3,
-          "rows": 1
+          "rows": 1,
+          "aspect_ratio": "natural"
         }
       },
       "collection--template": {
@@ -558,7 +559,8 @@
         "settings": {
           "enabled": false,
           "title": "Collection list",
-          "per_row": 3
+          "per_row": 3,
+          "aspect_ratio": "natural"
         }
       },
       "gallery--static": {
