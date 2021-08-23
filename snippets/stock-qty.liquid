@@ -1,23 +1,11 @@
-<div class="stock-availability">
-		{% if item.variant.options > 1 %}
-          	{% if item.current_variant.available == true %}
-          		{% if item.current_variant.inventory_quantity > 0 %}
-          			<span data-stock-availability>{{ item.current_variant.inventory_quantity }} på lager.</span>
-          		{% else %}
-          			<span data-stock-availability>Leveringstid: {{ item.current_variant.metafields.product_data.leveringstid }}</span>
-          		{% endif %}
-          	{% else %}
-          		<span data-stock-availability>Utsolgt</span>
-          	{% endif %}          	
-		{% else %}
-          	{% if item.available == true %}
-          		{% if item.inventory_quantity > 0 %}
-          			<span data-stock-availability>{{ item.inventory_quantity }} på lager.</span>
-          		{% else %}
-          			<span data-stock-availability>Leveringstid: {{ item.metafields.product_data.leveringstid }}</span>
-          		{% endif %}
-            {% else %}
-            	<span data-stock-availability>Utsolgt</span>
-            {% endif %}
-		{% endif %}
-		</div>
+<select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+  {% for variant in product.variants %}
+    {% if variant.available %}
+      <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+        {{ variant.title }}
+      </option>
+    {% else %}
+      <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+    {% endif %}
+  {% endfor %}
+  </select>
