@@ -79,6 +79,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "title": "Announce a sale or a new product line using this announcement bar.",
               "link": "",
@@ -88,6 +89,7 @@
           },
           "1601505997237": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "title": "Announce a sale or a new product line using this announcement bar.",
               "link": "",
@@ -101,7 +103,7 @@
           "1601505997237"
         ],
         "settings": {
-          "enabled": true,
+          "enabled": false,
           "timing": 3
         }
       },
