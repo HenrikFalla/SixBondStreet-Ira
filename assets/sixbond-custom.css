@@ -62,12 +62,12 @@ p.swatch-name {
 }
 /* end article page settings */
 /* Search Result Page */
-	.ais-page .ais-input {
+	.search .ais-page .ais-input {
         border: none;
         display: flex;
         flex-direction: row;
 	}
-	.ais-page .ais-input--label {
+	.search .ais-page .ais-input--label {
 		display:none;
  	}
   	.ais-page .ais-search-box-container {
