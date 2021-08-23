@@ -5,32 +5,36 @@
     "color_overlay": "#000000",
     "color_text_heading": "#1b1b1b",
     "color_text_body": "#313131",
-    "color_text_link": "#2a5ddf",
+    "color_text_link": "#313131",
     "color_header_bg": "#ffffff",
-    "color_header_text": "#313131",
-    "color_border_header": "#eaeaea",
-    "color_background_footer": "#fafafa",
-    "color_text_footer": "#1f1f1f",
-    "color_border_footer": "#dcdcdc",
-    "color_background_button": "#000000",
-    "color_text_button": "#ffffff",
-    "color_background_contrast": "#141414",
-    "color_text_heading_contrast": "#ffffff",
-    "color_text_body_contrast": "#ffffff",
-    "color_border_contrast": "#282828",
-    "color_background_button_contrast": "#ffffff",
-    "color_text_button_contrast": "#191919",
-    "color_text_link_contrast": "#fafafa",
-    "color_text_drawer": "#ffffff",
-    "color_background_drawer": "#101010",
-    "color_border_drawer": "#353535",
-    "color_background_input_drawer": "#ffffff",
-    "color_text_input_drawer": "#1d1d1d",
+    "color_header_text": "#29292c",
+    "color_border_header": "#f1efeb",
+    "color_background_footer": "#f8f7f5",
+    "color_text_footer": "#29292c",
+    "color_border_footer": "#f1efeb",
+    "color_background_button": "#29292c",
+    "color_text_button": "#f8f7f5",
+    "color_background_contrast": "#29292c",
+    "color_text_heading_contrast": "#f8f7f5",
+    "color_text_body_contrast": "#f8f7f5",
+    "color_border_contrast": "#29292c",
+    "color_background_button_contrast": "#f8f7f5",
+    "color_text_button_contrast": "#29292c",
+    "color_text_link_contrast": "#f8f7f5",
+    "color_text_drawer": "#f8f7f5",
+    "color_background_drawer": "#29292c",
+    "color_border_drawer": "#555555",
+    "color_background_input_drawer": "#f8f7f5",
+    "color_text_input_drawer": "#29292c",
     "font_logo": "raleway_n4",
     "capitalize_logo": false,
     "font_heading": "raleway_n4",
+    "heading_letter_spacing": 50,
+    "heading_base_size": 25,
     "font_meta": "raleway_n4",
+    "meta_letter_spacing": 50,
     "font_body": "raleway_n4",
+    "body_letter_spacing": 0,
     "enable_section_borders": false,
     "corner_radius": 0,
     "enable_page_transitions": true,
@@ -150,41 +154,41 @@
         }
       },
       "footer": {
+        "type": "footer",
+        "blocks": {
+          "d652cb66-da13-4cdb-9522-ded0c627c26a": {
+            "type": "links",
+            "settings": {
+              "title": "Kontakt oss",
+              "link_list": "footer"
+            }
+          },
+          "c4f553af-66fe-4e23-bc9c-a7a83d158532": {
+            "type": "text",
+            "settings": {
+              "title": "Åpningstider",
+              "text": "<p>Man - Ons: 11:00 - 19:00<br\/>Tors: 11:00 - 20:00<br\/>Fre: 11:00 - 19:00<br\/>Lør: 10:00 - 16:00<\/p>"
+            }
+          },
+          "f0c659ac-07a5-4769-9de6-3cce9ab7b94f": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Nyhetsbrev",
+              "text": "<p>Hold deg oppdatert på nyheter, trender og kampanjer ved å melde deg på vårt nyhetsbrev. Legg igjen e-posten din her.<\/p>"
+            }
+          }
+        },
         "block_order": [
           "d652cb66-da13-4cdb-9522-ded0c627c26a",
           "c4f553af-66fe-4e23-bc9c-a7a83d158532",
           "f0c659ac-07a5-4769-9de6-3cce9ab7b94f"
         ],
-        "blocks": {
-          "c4f553af-66fe-4e23-bc9c-a7a83d158532": {
-            "settings": {
-              "text": "<p>Man - Ons: 11:00 - 19:00<br\/>Tors: 11:00 - 20:00<br\/>Fre: 11:00 - 19:00<br\/>Lør: 10:00 - 16:00<\/p>",
-              "title": "Åpningstider"
-            },
-            "type": "text"
-          },
-          "d652cb66-da13-4cdb-9522-ded0c627c26a": {
-            "settings": {
-              "link_list": "footer",
-              "title": "Kontakt oss"
-            },
-            "type": "links"
-          },
-          "f0c659ac-07a5-4769-9de6-3cce9ab7b94f": {
-            "settings": {
-              "text": "<p>Hold deg oppdatert på nyheter, trender og kampanjer ved å melde deg på vårt nyhetsbrev. Legg igjen e-posten din her.<\/p>",
-              "title": "Nyhetsbrev"
-            },
-            "type": "newsletter"
-          }
-        },
         "settings": {
-          "show_currency_selector": true,
           "show_locale_selector": true,
-          "show_payment_icons": true,
-          "show_social_icons": true
-        },
-        "type": "footer"
+          "show_currency_selector": true,
+          "show_social_icons": true,
+          "show_payment_icons": true
+        }
       },
       "1600315401018": {
         "type": "slideshow--dynamic",
@@ -500,7 +504,8 @@
         "settings": {
           "articles_per_row": "3",
           "show_rss": true,
-          "show_excerpt": false
+          "show_excerpt": false,
+          "aspect_ratio": "square"
         }
       },
       "featured-collection--static": {
@@ -510,7 +515,8 @@
           "collection": "",
           "title": "Featured collection",
           "per_row": 3,
-          "rows": 1
+          "rows": 1,
+          "aspect_ratio": "natural"
         }
       },
       "product--static": {
@@ -551,7 +557,8 @@
           "show_sort": true,
           "filter_style": "by_group",
           "per_row": 2,
-          "per_page": 12
+          "per_page": 12,
+          "aspect_ratio": "natural"
         }
       },
       "collection-list--static": {
@@ -638,6 +645,15 @@
         "type": "page-contact--template",
         "settings": {
           "image": ""
+        }
+      },
+      "article--template-alternate": {
+        "type": "article--template-alternate",
+        "settings": {
+          "show_share": true,
+          "show_image": true,
+          "show_pagination": true,
+          "show_author": true
         }
       }
     },
