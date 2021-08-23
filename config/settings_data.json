@@ -107,8 +107,21 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "c86b95e4-c30d-4106-9baa-aee4810cecd6": {
+            "type": "mega_nav",
+            "settings": {
+              "dropdown_parent_link": "Møbler",
+              "mega_nav_featured_image": "shopify:\/\/shop_images\/Mobler_Image_meganav.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "c86b95e4-c30d-4106-9baa-aee4810cecd6"
+        ],
         "settings": {
-          "logo_max_width": 200,
+          "logo": "shopify:\/\/shop_images\/Logo_simplified.png",
+          "logo_max_width": 300,
           "menu": "main-menu",
           "style": "inline",
           "logo_position": "center",
@@ -117,7 +130,8 @@
           "color_text_transparent": "#ffffff",
           "color_icon_transparent": "#ffffff",
           "color_border_transparent": "#ffffff",
-          "opacity_border_transparent": 10
+          "opacity_border_transparent": 10,
+          "logo_transparent": "shopify:\/\/shop_images\/Logo_simplified_White.png"
         }
       },
       "popup": {
