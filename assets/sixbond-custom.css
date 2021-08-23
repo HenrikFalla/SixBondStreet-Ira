@@ -84,6 +84,11 @@ p.swatch-name {
     	width: 100%;
       	padding: 8px;
 	}
+  	svg.ais-SearchBox-submitIcon {
+      	width: 15px;
+    	height: 15px;
+    	margin-top: 5px;
+	}
 	.search .ais-page .ais-input--label {
 		display:none;
  	}
@@ -107,6 +112,7 @@ p.swatch-name {
 	}
   	.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form .ais-SearchBox-input {
     	order: 3;
+      	padding-top: 10px;
 	}
   /* Search Result Products */
   	.search .ais-results-size-lg .ais-page .ais-results-as-block .ais-hit, .search .ais-page .ais-hit {
