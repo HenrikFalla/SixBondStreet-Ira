@@ -127,4 +127,7 @@ p.swatch-name {
   	.search .ais-page .ais-results-as-block .ais-hit--details {
     	margin-top: 16px;
 	}
+  	ol.ais-Hits-list {
+    	padding: 0;
+	}
 /* End Search Result Page */
