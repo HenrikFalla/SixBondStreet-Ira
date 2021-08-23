@@ -48,7 +48,7 @@
     "search_show_vendor": false,
     "swatch_options": "Color, Colour",
     "cart_enable_ajax": true,
-    "cart_enable_quick_shop": true,
+    "cart_enable_quick_shop": false,
     "cart_quick_shop_show_quantity": false,
     "cart_show_notes": true,
     "social_twitter_link": "",
