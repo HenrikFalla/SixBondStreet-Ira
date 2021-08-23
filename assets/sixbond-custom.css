@@ -107,4 +107,11 @@ p.swatch-name {
   	.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form .ais-SearchBox-input {
     	order: 3;
 	}
+  /* Search Result Products */
+  	.search .ais-page .ais-hit {
+    	border: none;
+    	margin: 0;
+      	margin-left: 0;
+    	padding: 8px;
+	}
 /* End Search Result Page */
