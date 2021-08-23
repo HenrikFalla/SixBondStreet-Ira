@@ -108,7 +108,7 @@ p.swatch-name {
     	order: 3;
 	}
   /* Search Result Products */
-  	.search .ais-results-size-lg .ais-page .ais-results-as-block .ais-hit {
+  	.search .ais-results-size-lg .ais-page .ais-results-as-block .ais-hit, .search .ais-page .ais-hit {
     	border: none;
     	margin: 0;
       	margin-left: 0;
