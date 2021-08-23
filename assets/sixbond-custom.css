@@ -102,7 +102,7 @@ p.swatch-name {
     	flex-direction: row;
 	}
   	.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form .ais-SearchBox-reset {
-    	order: 2;
+    	order: 3;
       	padding: 8px;
 	}
   	.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form .ais-SearchBox-submit {
@@ -111,7 +111,7 @@ p.swatch-name {
     	padding-left: 18px;
 	}
   	.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form .ais-SearchBox-input {
-    	order: 3;
+    	order: 2;
       	padding-top: 10px;
 	}
   /* Search Result Products */
