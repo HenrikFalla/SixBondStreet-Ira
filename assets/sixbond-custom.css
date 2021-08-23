@@ -99,7 +99,7 @@ p.swatch-name {
     	order: 3;
 	}
   	.search {
-    	max-width: calc(20px * 2 + 1200px);
-    	max-width: calc(var(--space-outer) * 2 + var(--max-width-large-page));
+    	max-width: calc(20px * 2 + 2000px);
+    	max-width: calc(var(--space-outer) * 2 + var(--max-width));
 	}
 /* End Search Result Page */
