@@ -77,44 +77,9 @@
               {{ current_variant.compare_at_price | money }}
             {% endif %}
           </s>
-        <!-- Custom Stock Display for Product - Henrik -->
-		<div class="stock-availability">
-		{% if variant.options > 1 %}
-          	{% if current_variant.available == true %}
-          		{% if current_variant.inventory_quantity > 0 %}
-          			<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
-          		{% else %}
-          			<span data-stock-availability>Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}</span>
-          		{% endif %}
-          	{% else %}
-          		<span data-stock-availability>Utsolgt</span>
-          	{% endif %}          	
-		{% else %}
-          	{% if current_variant.available == true %}
-          		{% if product.variants.first.inventory_quantity > 0 %}
-          			<span data-stock-availability>{{ product.variants.first.inventory_quantity }} på lager.</span>
-          		{% else %}
-          			<span data-stock-availability>Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
-          		{% endif %}
-            {% else %}
-            	<span data-stock-availability>Utsolgt</span>
-            {% endif %}
-		{% endif %}
-		</div>
-        <!-- End of custom stock display - Henrik -->
+
+          {% render 'unit-price' item: current_variant %}
         </div>
-        <!--
-        {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-          <div class="product__policies rte" data-product-policies>
-            {%- if shop.taxes_included -%}
-              {{ 'products.product.include_taxes' | t }}
-            {%- endif -%}
-            {%- if shop.shipping_policy.body != blank -%}
-              {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-            {%- endif -%}
-          </div>
-        {%- endif -%}
-		-->
 
         {% render 'product-form' with
           product: product,

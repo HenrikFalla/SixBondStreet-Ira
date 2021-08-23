@@ -2,6 +2,13 @@
   assign per_row = section.settings.articles_per_row
   assign show_rss = section.settings.show_rss
   assign show_excerpt = section.settings.show_excerpt
+  assign aspect_ratio = section.settings.aspect_ratio
+
+  assign disabled_image_style = false
+
+  if aspect_ratio != 'natural'
+    assign disabled_image_style = true
+  endif
 %}
 
 {% paginate blog.articles by 6 %}
@@ -25,12 +32,13 @@
 
   <div class="blog__articles grid">
     {%- for article in blog.articles -%}
-      <div class="blog__article grid__item grid__item--{{ per_row }}">
+      <div class="blog__article blog__article--{{ aspect_ratio }} grid__item grid__item--{{ per_row }}">
         {%- if article.image != blank -%}
           <a href="{{ article.url }}" class="hover">
             {% render 'image' with
               image: article.image,
-              wrapper_class: 'blog__article-image'
+              wrapper_class: 'blog__article-image',
+              disable_style: disabled_image_style
             %}
           </a>
         {%- endif -%}
@@ -81,6 +89,18 @@
         "type": "checkbox",
         "label": "Show article excerpts",
         "default": false
+      },
+      {
+        "id": "aspect_ratio",
+        "type": "select",
+        "label": "Image aspect ratio",
+        "options": [
+          { "label": "Natural", "value": "natural" },
+          { "label": "Square (1:1)", "value": "square" },
+          { "label": "Landscape (3:2)", "value": "landscape" },
+          { "label": "Portrait (2:3)", "value": "portrait" }
+        ],
+        "default": "square"
       }
     ]
   }

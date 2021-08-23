@@ -2,7 +2,7 @@
   {
     "name": "theme_info",
     "theme_name": "Ira",
-    "theme_version": "3.3.2",
+    "theme_version": "3.5.1",
     "theme_author": "Fluorescent Design Inc.",
     "theme_documentation_url": "https://fluorescent.co/help/ira",
     "theme_support_url": "https://fluorescent.co/help/contact"
@@ -216,10 +216,113 @@
     "name": "Fonts",
     "settings": [
       {
+        "type": "header",
+        "content": "Logo"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_logo",
+        "label": "Logo",
+        "default": "ibm_plex_sans_n4"
+      },
+      {
+        "id": "capitalize_logo",
+        "type": "checkbox",
+        "label": "Capitalize",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "logo_letter_spacing",
+        "label": "Letter spacing",
+        "min": -50,
+        "max": 200,
+        "step": 25,
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "logo_base_size",
+        "label": "Base size",
+        "min": 20,
+        "max": 38,
+        "step": 1,
+        "default": 24,
+        "unit": "px"
+      },
+      {
+        "type": "header",
+        "content": "Headings"
+      },
+      {
         "type": "font_picker",
         "id": "font_heading",
         "label": "Headings",
         "default": "ibm_plex_sans_n7"
+      },
+      {
+        "id": "capitalize_headings",
+        "type": "checkbox",
+        "label": "Capitalize",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "heading_letter_spacing",
+        "label": "Letter spacing",
+        "min": -50,
+        "max": 200,
+        "step": 25,
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "heading_base_size",
+        "label": "Base size",
+        "min": 20,
+        "max": 32,
+        "step": 1,
+        "default": 24,
+        "unit": "px"
+      },
+      {
+        "type": "header",
+        "content": "Mini headings"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_meta",
+        "label": "Mini headings",
+        "default": "ibm_plex_sans_n4"
+      },
+      {
+        "id": "capitalize_meta",
+        "type": "checkbox",
+        "label": "Capitalize",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "meta_letter_spacing",
+        "label": "Letter spacing",
+        "min": -50,
+        "max": 200,
+        "step": 25,
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "meta_base_size",
+        "label": "Base size",
+        "min": 10,
+        "max": 16,
+        "step": 1,
+        "default": 12,
+        "unit": "px"
+      },
+      {
+        "type": "header",
+        "content": "Body text"
       },
       {
         "type": "font_picker",
@@ -228,10 +331,23 @@
         "default": "ibm_plex_sans_n4"
       },
       {
-        "type": "font_picker",
-        "id": "font_meta",
-        "label": "Mini headings",
-        "default": "ibm_plex_sans_n4"
+        "type": "range",
+        "id": "body_letter_spacing",
+        "label": "Letter spacing",
+        "min": -50,
+        "max": 200,
+        "step": 25,
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "body_base_size",
+        "label": "Base size",
+        "min": 12,
+        "max": 18,
+        "step": 1,
+        "default": 14,
+        "unit": "px"
       }
     ]
   },
@@ -355,12 +471,6 @@
         "id": "cart_show_notes",
         "label": "Enable cart notes",
         "default": true
-      },
-      {
-        "type": "text",
-        "id": "quick_cart_note",
-        "label": "Quick cart note",
-        "default": "Your subtotal today is [subtotal]. Shipping and taxes will be calculated at checkout."
       }
     ]
   },

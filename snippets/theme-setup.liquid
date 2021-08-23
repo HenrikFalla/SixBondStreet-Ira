@@ -1,10 +1,10 @@
 <script>
-  console.log('Ira v3.3.2 by Fluorescent');
+  console.log('Ira v3.5.1 by Fluorescent');
 
   document.documentElement.className = document.documentElement.className.replace('no-js', '');
 
   window.theme = {
-    version: 'v3.3.2',
+    version: 'v3.5.1',
     moneyFormat: "{{ shop.money_format | escape }}",
     routes: {
       root: "{{ routes.root_url }}",
@@ -21,6 +21,12 @@
     strings: {
       product: {
         reviews: {{ 'product.reviews' | t | json }}
+      },
+      products: {
+        product: {
+          unitPrice: {{ 'products.product.unit_price_label' | t | json }},
+          unitPriceSeparator: {{ 'general.accessibility.unit_price_separator' | t | json }}
+        }
       },
       search: {
         headings: {

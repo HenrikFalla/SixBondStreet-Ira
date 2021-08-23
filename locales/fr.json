@@ -221,7 +221,8 @@
       },
       "product_details": "Détails du produit",
       "quantity": "Qty",
-      "quantity_label": "Quantity: {{ quantity_count }}"
+      "quantity_label": "Quantity: {{ quantity_count }}",
+      "quick_cart_note_html": "Votre sous-total aujourd'hui est de {{ subtotal }}. {{ shipping_taxes }}"
     }
   },
   "collections": {

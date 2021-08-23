@@ -8,7 +8,6 @@
   {%- assign id = image.id -%}
 {%- endif -%}
 
-<script>console.log({{ image | json }}, ' image from within the snippet')</script>
 <div
   class="image image--{{ id }} image--responsive {{ wrapper_class }}"
   {% unless disable_style %}

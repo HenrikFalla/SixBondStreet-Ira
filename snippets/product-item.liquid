@@ -1,8 +1,17 @@
-{%- if product.media.size > 1 -%}
-  {%- assign multiple_images = true -%}
-{%- endif -%}
+{%- liquid
+  if product.media.size > 1
+    assign multiple_images = true
+  endif
 
-<div class="product-item">
+  assign current_variant = product.selected_or_first_available_variant
+
+  assign disabled_image_style = false
+  if aspect_ratio != 'natural'
+    assign disabled_image_style = true
+  endif
+-%}
+
+<div class="product-item product-item--{{ aspect_ratio }}">
   {%- if placeholder -%}
     <div class="placeholder-image">
       {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -14,7 +23,8 @@
           {% render 'image' with
             id: product.media[0].id,
             image: product.media[0].preview_image,
-            wrapper_class: 'product-item__image'
+            wrapper_class: 'product-item__image',
+            disable_style: disabled_image_style
           %}
           {% render 'image' with
             image: product.media[1].preview_image,
@@ -25,7 +35,8 @@
           {% render 'image' with
             id: product.featured_media.id,
             image: product.featured_media,
-            wrapper_class: 'product-item__image'
+            wrapper_class: 'product-item__image',
+            disable_style: disabled_image_style
           %}
         {%- endif -%}
       </a>
@@ -61,6 +72,7 @@
           {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
         {% else %}
           <span class="sale">{{ product.price | money }}<span>
+          {% render 'unit-price' item: current_variant %}
         {% endif %}
 
       {% else %}
