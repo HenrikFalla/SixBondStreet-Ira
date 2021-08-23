@@ -305,7 +305,7 @@
       "1600315431677": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "",
+          "collection": "spisestue",
           "title": "Featured collection",
           "per_row": 3,
           "rows": 1,
