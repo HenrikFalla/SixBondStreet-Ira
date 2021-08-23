@@ -46,7 +46,7 @@
     "search_show_pages": true,
     "search_show_price": true,
     "search_show_vendor": false,
-    "swatch_options": "Color, Colour, Tekstil, Treverk",
+    "swatch_options": "Color, Colour, Tekstil, Treverk, Stoff",
     "chip_options": "Size",
     "cart_enable_ajax": true,
     "cart_enable_quick_shop": false,
@@ -576,6 +576,19 @@
       },
       "gallery--static": {
         "type": "gallery--static",
+        "blocks": {
+          "a7fe232f-1010-4318-9d04-000bbcad8e27": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "text": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "a7fe232f-1010-4318-9d04-000bbcad8e27"
+        ],
         "settings": {
           "enabled": false,
           "title": "Gallery",
