@@ -1,4 +1,12 @@
-<div class="collection-item">
+{%- liquid
+  assign disabled_image_style = false
+
+  if aspect_ratio != 'natural'
+    assign disabled_image_style = true
+  endif
+-%}
+
+<div class="collection-item collection-item--{{ aspect_ratio }}">
   {%- if collection.image != blank or collection.products.first != blank -%}
     {%- assign image_object = collection.image | default: collection.products.first.featured_media.preview_image -%}
     {%- assign image_id = collection.image.id | default: collection.products.first.featured_media.id -%}
@@ -7,7 +15,8 @@
       {% render 'image' with
         image: image_object,
         id: image_id,
-        wrapper_class: 'collection-item__image borders'
+        wrapper_class: 'collection-item__image borders',
+        disable_style: disabled_image_style
       %}
     </a>
   {%- elsif collection == empty -%}

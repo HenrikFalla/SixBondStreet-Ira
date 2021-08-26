@@ -1,4 +1,5 @@
 {% liquid
+  assign font_logo = settings.font_logo
   assign font_heading = settings.font_heading
   assign font_body = settings.font_body
   assign font_meta = settings.font_meta
@@ -7,6 +8,27 @@
   assign font_body_bolder = font_body_bold | font_modify: 'weight', '+100'
   assign font_body_italic = settings.font_body | font_modify: 'style', 'italic'
   assign font_body_bold_italic = settings.font_body | font_modify: 'weight', '+100' | font_modify: 'style', 'italic'
+
+  assign logo_text_transform = 'none'
+  if settings.capitalize_logo
+    assign logo_text_transform = 'uppercase'
+  endif
+
+  assign heading_text_transform = 'none'
+  if settings.capitalize_headings
+    assign heading_text_transform = 'uppercase'
+  endif
+
+  assign logo_text_transform = 'none'
+  if settings.capitalize_logo
+    assign logo_text_transform = 'uppercase'
+  endif
+
+  assign meta_text_transform = 'none'
+  if settings.capitalize_meta
+    assign meta_text_transform = 'uppercase'
+  endif
+
 
   assign opacity_mini_heading = 0.7
 
@@ -42,6 +64,7 @@
 
 
 <style>
+  {{ font_logo | font_face }}
   {{ font_heading | font_face }}
   {{ font_meta | font_face }}
   {{ font_body | font_face }}
@@ -120,19 +143,64 @@
     --color-background-pill: {{ settings.color_border | color_modify: 'alpha', 0.70 }};
     --color-background-pill-hover: {{ settings.color_border }};
 
+    /* Typography */
+    --font-logo: {{ font_logo.family }}, {{ font_logo.fallback_families }};
+    --font-logo-weight: {{ font_logo.weight }};
+    --font-logo-style: {{ font_logo.style }};
+    --logo-font-size: {{ settings.logo_base_size }}px;
+    --logo-text-transform: {{ logo_text_transform }};
+    --logo-letter-spacing: {{ settings.logo_letter_spacing | times: 0.001 | append: 'em' }};
+
     --font-heading: {{ settings.font_heading.family }}, {{ settings.font_heading.fallback_families }};
     --font-heading-weight: {{ settings.font_heading.weight }};
     --font-heading-style: {{ settings.font_heading.style }};
+    --font-heading-text-transform: {{ heading_text_transform }};
+    --font-heading-base-letter-spacing: {{ settings.heading_letter_spacing | times: 0.001 | append: 'em' }};
 
     --font-body: {{ settings.font_body.family }}, {{ settings.font_body.fallback_families }};
     --font-body-weight: {{ settings.font_body.weight }};
     --font-body-style: {{ settings.font_body.style }};
     --font-body-bold-weight: {{ font_body_bold.weight | default: 'bold' }};
     --font-body-bolder-weight: {{ font_body_bolder.weight | default: 'bold' }};
+    --font-body-base-letter-spacing: {{ settings.body_letter_spacing | times: 0.001 | append: 'em' }};
 
     --font-meta: {{ settings.font_meta.family }}, {{ settings.font_meta.fallback_families }};
     --font-meta-weight: {{ settings.font_meta.weight }};
     --font-meta-style: {{ settings.font_meta.style }};
+    --font-meta-text-transform: {{ meta_text_transform }};
+    --font-meta-base-letter-spacing: {{ settings.meta_letter_spacing | times: 0.001 | append: 'em' }};
+
+    /* --font-size-heading-x-large: 36px; */
+    --font-size-heading-x-large: {{ settings.heading_base_size | times: 1.5 | round | append: 'px' }};
+    --line-height-heading-x-large: 1.22;
+
+    /* --font-size-heading-large: 32px; */
+    --font-size-heading-large: {{ settings.heading_base_size | times: 1.333 | round | append: 'px' }};
+    --line-height-heading-large: 1.25;
+
+    /* --font-size-heading-base: 24px; */
+    --font-size-heading-base: {{ settings.heading_base_size | append: 'px' }};
+    --line-height-heading-base: 1.33;
+
+    /* --font-size-heading-small: 18px; */
+    --font-size-heading-small: {{ settings.heading_base_size | times: 0.75 | round | append: 'px' }};
+    --line-height-heading-small: 1.33;
+
+    /* --font-size-body-large: 16px; */
+    --font-size-body-large: {{ settings.body_base_size | times: 1.14 | round | append: 'px' }};
+    --line-height-body-large: 1.75;
+
+    /* --font-size-body-base: 14px; */
+    --font-size-body-base: {{ settings.body_base_size | append: 'px' }};
+    --line-height-body-base: 1.714;
+
+    --font-size-body-small: 12px;
+    --font-size-body-small: {{ settings.body_base_size | times: 0.85 | round | append: 'px' }};
+    --line-height-body-small: 1.66;
+
+    /* --font-size-meta: 12px; */
+    --font-size-meta: {{ settings.meta_base_size | append: 'px' }};
+    --line-height-meta: 2;
 
     --radius-corner: {{ settings.corner_radius }}px;
 

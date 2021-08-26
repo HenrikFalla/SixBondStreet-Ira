@@ -1,7 +1,9 @@
 {% render 'section--featured-collection' with
   heading: section.settings.title,
   collection: collections[section.settings.collection],
-  per_row: section.settings.per_row
+  per_row: section.settings.per_row,
+  rows: section.settings.rows,
+  aspect_ratio: section.settings.aspect_ratio
 %}
 
 {% schema %}
@@ -37,6 +39,18 @@
         "max": 3,
         "step": 1,
         "default": 1
+      },
+      {
+        "id": "aspect_ratio",
+        "type": "select",
+        "label": "Image aspect ratio",
+        "options": [
+          { "label": "Natural", "value": "natural" },
+          { "label": "Square (1:1)", "value": "square" },
+          { "label": "Landscape (3:2)", "value": "landscape" },
+          { "label": "Portrait (2:3)", "value": "portrait" }
+        ],
+        "default": "natural"
       }
     ],
     "presets": [

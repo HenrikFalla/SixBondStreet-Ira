@@ -151,7 +151,10 @@
             <div class="collection__grid grid">
               {% for product in collection.products %}
                 <div class="grid__item grid__item--{{ per_row }} animate animate-up">
-                  {% render 'product-item', product: product %}
+                  {% render 'product-item' with
+                    product: product,
+                    aspect_ratio: section.settings.aspect_ratio,
+                  %}
                 </div>
               {% else %}
                 <div class="collection__empty">
@@ -310,6 +313,18 @@
         "min": 2,
         "max": 24,
         "step": 1
+      },
+      {
+        "id": "aspect_ratio",
+        "type": "select",
+        "label": "Image aspect ratio",
+        "options": [
+          { "label": "Natural", "value": "natural" },
+          { "label": "Square (1:1)", "value": "square" },
+          { "label": "Landscape (3:2)", "value": "landscape" },
+          { "label": "Portrait (2:3)", "value": "portrait" }
+        ],
+        "default": "natural"
       }
     ]
   }

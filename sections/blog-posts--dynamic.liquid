@@ -4,6 +4,12 @@
   assign per_row = section.settings.per_row
   assign rows = section.settings.rows
   assign max_posts = per_row | times: rows
+  assign aspect_ratio = section.settings.aspect_ratio
+
+  assign disabled_image_style = false
+  if aspect_ratio != 'natural'
+    assign disabled_image_style = true
+  endif
 %}
 
 <section
@@ -17,12 +23,13 @@
     <div class="blog-posts__grid mobile-carousel" data-slider>
       {%- if blog != blank -%}
         {%- for article in blog.articles limit: max_posts -%}
-          <div class="blog-posts__item blog-posts__item--{{ per_row }}" data-slide>
+          <div class="blog-posts__item blog-posts__item--{{ per_row }} blog-posts__item--{{ aspect_ratio }}" data-slide>
             {%- if article.image -%}
               <a href="{{ article.url }}" class="hover">
                 {% render 'image' with
                   image: article.image,
-                  wrapper_class: 'blog-posts__item-image borders'
+                  wrapper_class: 'blog-posts__item-image borders',
+                  disable_style: disabled_image_style
                 %}
               </a>
             {%- endif -%}
@@ -37,7 +44,7 @@
       {%- else -%}
 
         {% for i in (1..max_posts) %}
-          <div class="blog-posts__item blog-posts__item--{{ per_row }}" data-slide>
+          <div class="blog-posts__item blog-posts__item--{{ per_row }} blog-posts__item--{{ aspect_ratio }}" data-slide>
             <div class="blog-posts__item-image placeholder-image borders">
               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
             </div>
@@ -88,6 +95,18 @@
         "max": 3,
         "step": 1,
         "default": 1
+      },
+      {
+        "id": "aspect_ratio",
+        "type": "select",
+        "label": "Image aspect ratio",
+        "options": [
+          { "label": "Natural", "value": "natural" },
+          { "label": "Square (1:1)", "value": "square" },
+          { "label": "Landscape (3:2)", "value": "landscape" },
+          { "label": "Portrait (2:3)", "value": "portrait" }
+        ],
+        "default": "square"
       }
     ],
     "presets": [

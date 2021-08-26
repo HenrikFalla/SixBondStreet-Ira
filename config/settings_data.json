@@ -5,30 +5,39 @@
     "color_overlay": "#000000",
     "color_text_heading": "#1b1b1b",
     "color_text_body": "#313131",
-    "color_text_link": "#2a5ddf",
+    "color_text_link": "#313131",
     "color_header_bg": "#ffffff",
-    "color_header_text": "#313131",
-    "color_border_header": "#eaeaea",
-    "color_background_footer": "#fafafa",
-    "color_text_footer": "#1f1f1f",
-    "color_border_footer": "#dcdcdc",
-    "color_background_button": "#000000",
-    "color_text_button": "#ffffff",
-    "color_background_contrast": "#141414",
-    "color_text_heading_contrast": "#ffffff",
-    "color_text_body_contrast": "#ffffff",
-    "color_border_contrast": "#282828",
-    "color_background_button_contrast": "#ffffff",
-    "color_text_button_contrast": "#191919",
-    "color_text_link_contrast": "#fafafa",
-    "color_text_drawer": "#ffffff",
-    "color_background_drawer": "#101010",
-    "color_border_drawer": "#353535",
-    "color_background_input_drawer": "#ffffff",
-    "color_text_input_drawer": "#1d1d1d",
-    "font_heading": "raleway_n5",
-    "font_body": "raleway_n4",
+    "color_header_text": "#29292c",
+    "color_border_header": "#f1efeb",
+    "color_background_footer": "#f8f7f5",
+    "color_text_footer": "#29292c",
+    "color_border_footer": "#f1efeb",
+    "color_background_button": "#29292c",
+    "color_text_button": "#f8f7f5",
+    "color_background_contrast": "#29292c",
+    "color_text_heading_contrast": "#f8f7f5",
+    "color_text_body_contrast": "#f8f7f5",
+    "color_border_contrast": "#29292c",
+    "color_background_button_contrast": "#f8f7f5",
+    "color_text_button_contrast": "#29292c",
+    "color_text_link_contrast": "#f8f7f5",
+    "color_text_drawer": "#f8f7f5",
+    "color_background_drawer": "#29292c",
+    "color_border_drawer": "#555555",
+    "color_background_input_drawer": "#f8f7f5",
+    "color_text_input_drawer": "#29292c",
+    "font_logo": "raleway_n4",
+    "capitalize_logo": false,
+    "logo_letter_spacing": 0,
+    "font_heading": "raleway_n4",
+    "capitalize_headings": false,
+    "heading_letter_spacing": 75,
+    "heading_base_size": 24,
     "font_meta": "raleway_n4",
+    "capitalize_meta": false,
+    "meta_letter_spacing": 75,
+    "font_body": "raleway_n4",
+    "body_letter_spacing": 25,
     "enable_section_borders": false,
     "corner_radius": 0,
     "enable_page_transitions": true,
@@ -37,13 +46,12 @@
     "search_show_pages": true,
     "search_show_price": true,
     "search_show_vendor": false,
-    "swatch_options": "Color, Colour, Treverk, Tekstil",
-    "chip_options": "Size, Størrelse",
+    "swatch_options": "Color, Colour, Tekstil, Treverk, Stoff",
+    "chip_options": "Size",
     "cart_enable_ajax": true,
     "cart_enable_quick_shop": false,
     "cart_quick_shop_show_quantity": false,
     "cart_show_notes": true,
-    "quick_cart_note": "Your subtotal today is [subtotal]. Shipping and taxes will be calculated at checkout.",
     "social_twitter_link": "",
     "social_facebook_link": "",
     "social_pinterest_link": "",
@@ -63,11 +71,12 @@
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_image": "",
     "checkout_sidebar_background_color": "#fafafa",
-    "checkout_heading_font": "Raleway",
-    "checkout_body_font": "Raleway",
-    "checkout_accent_color": "#333333",
-    "checkout_button_color": "#333333",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
     "checkout_error_color": "#e32c2b",
+    "quick_cart_note": "Your subtotal today is [subtotal]. Shipping and taxes will be calculated at checkout.",
     "color_text_meta": "#a6a6a6",
     "color_text_meta_contrast": "#a5a5a5",
     "color_text_meta_drawer": "#8a8a8a",
@@ -102,23 +111,23 @@
           "1601505997237"
         ],
         "settings": {
-          "enabled": true,
+          "enabled": false,
           "timing": 3
         }
       },
       "header": {
         "type": "header",
         "blocks": {
-          "b9ad44e0-18fa-4228-a4e5-df19c48d6c9f": {
+          "c86b95e4-c30d-4106-9baa-aee4810cecd6": {
             "type": "mega_nav",
             "settings": {
-              "dropdown_parent_link": "møbler",
+              "dropdown_parent_link": "Møbler",
               "mega_nav_featured_image": "shopify:\/\/shop_images\/Mobler_Image_meganav.jpg"
             }
           }
         },
         "block_order": [
-          "b9ad44e0-18fa-4228-a4e5-df19c48d6c9f"
+          "c86b95e4-c30d-4106-9baa-aee4810cecd6"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/Logo_simplified.png",
@@ -127,7 +136,7 @@
           "style": "inline",
           "logo_position": "center",
           "enable_transparent_home": true,
-          "enable_transparent_collection": false,
+          "enable_transparent_collection": true,
           "color_text_transparent": "#ffffff",
           "color_icon_transparent": "#ffffff",
           "color_border_transparent": "#ffffff",
@@ -140,8 +149,8 @@
         "settings": {
           "enable_popup": false,
           "image_position": "center",
-          "title": "Nyhetsbrev",
-          "subheading": "Hold deg oppdatert på de siste interiørtrendene og få tilsendt gode tilbud.",
+          "title": "Sign up for our newsletter",
+          "subheading": "We only send emails once or twice a month and only about good things.",
           "color_background": "#000000",
           "color_text": "#ffffff",
           "color_background_input": "#ffffff",
@@ -300,7 +309,8 @@
           "collection": "spisestue",
           "title": "Featured collection",
           "per_row": 3,
-          "rows": 1
+          "rows": 1,
+          "aspect_ratio": "natural"
         }
       },
       "1600315444066": {
@@ -362,7 +372,8 @@
         ],
         "settings": {
           "title": "Collections",
-          "per_row": 2
+          "per_row": 2,
+          "aspect_ratio": "natural"
         }
       },
       "1600315468934": {
@@ -405,7 +416,8 @@
           "title": "Blog posts",
           "blog": "",
           "per_row": 3,
-          "rows": 1
+          "rows": 1,
+          "aspect_ratio": "square"
         }
       },
       "1601240654390": {
@@ -496,7 +508,8 @@
         "settings": {
           "articles_per_row": "3",
           "show_rss": true,
-          "show_excerpt": true
+          "show_excerpt": false,
+          "aspect_ratio": "square"
         }
       },
       "featured-collection--static": {
@@ -506,7 +519,8 @@
           "collection": "",
           "title": "Featured collection",
           "per_row": 3,
-          "rows": 1
+          "rows": 1,
+          "aspect_ratio": "natural"
         }
       },
       "product--static": {
@@ -515,8 +529,8 @@
           "show_vendor": true,
           "show_swatches": true,
           "show_share_buttons": true,
-          "show_quantity_input": true,
-          "enable_payment_button": true,
+          "show_quantity_input": false,
+          "enable_payment_button": false,
           "enable_full_width": true,
           "media_layout": "column",
           "enable_video_looping": true
@@ -528,55 +542,53 @@
           "enabled": true,
           "heading": "Recommended",
           "per_row": 3,
-          "rows": 1
+          "rows": 1,
+          "aspect_ratio": "natural"
         }
       },
       "collection--template": {
         "type": "collection--template",
         "settings": {
-          "collection_header_style": "half",
+          "collection_header_style": "full",
           "image_position": "center center",
           "enable_full_width": true,
           "show_collection_description": true,
           "opacity_overlay": 60,
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
-          "color_subheading": "#b8b8b8",
+          "color_subheading": "#e1e1e1",
           "show_sidebar": true,
           "show_sort": true,
           "filter_style": "by_group",
           "per_row": 3,
-          "per_page": 12
+          "per_page": 24,
+          "aspect_ratio": "square"
         }
       },
       "collection-list--static": {
         "type": "collection-list--static",
-        "blocks": {
-          "15514c06-a214-4553-be50-4ac809e34296": {
-            "type": "collection",
-            "settings": {
-              "collection": "interior"
-            }
-          },
-          "75413a95-c99e-4de6-b9ac-45a3687a539a": {
-            "type": "collection",
-            "settings": {
-              "collection": "interior"
-            }
-          }
-        },
-        "block_order": [
-          "15514c06-a214-4553-be50-4ac809e34296",
-          "75413a95-c99e-4de6-b9ac-45a3687a539a"
-        ],
         "settings": {
           "enabled": false,
-          "title": "",
-          "per_row": 4
+          "title": "Collection list",
+          "per_row": 3,
+          "aspect_ratio": "natural"
         }
       },
       "gallery--static": {
         "type": "gallery--static",
+        "blocks": {
+          "a7fe232f-1010-4318-9d04-000bbcad8e27": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "text": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "a7fe232f-1010-4318-9d04-000bbcad8e27"
+        ],
         "settings": {
           "enabled": false,
           "title": "Gallery",
@@ -607,7 +619,8 @@
           "collection": "",
           "title": "New Arrivals",
           "per_row": 3,
-          "rows": 1
+          "rows": 1,
+          "aspect_ratio": "natural"
         }
       },
       "page-about--template": {
@@ -651,19 +664,13 @@
           "image": ""
         }
       },
-      "list-collections--template": {
-        "type": "list-collections--template",
-        "settings": {
-          "display_type": "all",
-          "per_row": 3
-        }
-      },
-      "article--template": {
-        "type": "article--template",
+      "article--template-alternate": {
+        "type": "article--template-alternate",
         "settings": {
           "show_share": true,
           "show_image": true,
-          "show_pagination": true
+          "show_pagination": true,
+          "show_author": true
         }
       }
     },
@@ -723,7 +730,6 @@
       "cart_enable_quick_shop": true,
       "cart_quick_shop_show_quantity": false,
       "cart_show_notes": true,
-      "quick_cart_note": "Your subtotal today is [subtotal]. Shipping and taxes will be calculated at checkout.",
       "social_twitter_link": "",
       "social_facebook_link": "",
       "social_pinterest_link": "",

@@ -44,6 +44,8 @@
                   {{ item.final_price | money }}
                 </div>
 
+                {% render 'unit-price' item: item %}
+
                 {%- assign property_size = item.properties | size -%}
 
                 {% if property_size > 0 %}

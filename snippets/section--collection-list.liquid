@@ -18,7 +18,10 @@
           data-slide
           {{ block.shopify_attributes }}
         >
-          {% render 'collection-item' with collection: collection %}
+          {% render 'collection-item' with
+            collection: collection,
+            aspect_ratio: aspect_ratio
+          %}
         </div>
       {%- else -%}
         {%- for i in (1..per_row) -%}
@@ -27,7 +30,10 @@
             data-index="{{ forloop.index0 }}"
             data-slide
           >
-            {% render 'collection-item' with collection: empty %}
+            {% render 'collection-item' with
+              collection: empty,
+              aspect_ratio: aspect_ratio
+            %}
           </div>
         {%- endfor -%}
       {%- endfor -%}

@@ -189,10 +189,10 @@
       "remove": "Entfernen",
       "subtotal": "Zwischensumme",
       "savings": "Sie sparen",
-      "tax_and_shipping_at_checkout": "Steuern und Versandkosten an der Kasse berechnet",
-      "tax_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versandkosten<\/a> berechnet an der Kasse",
-      "tax_included_but_shipping_at_checkout": "Steuern enthalten und Versand an der Kasse berechnet",
-      "tax_included_and_shipping_policy_html": "Steuern inbegriffen. <a href=\"{{ link }}\">Versandkosten<\/a> berechnet an der Kasse.",
+      "taxes_and_shipping_at_checkout": "Steuern und Versandkosten an der Kasse berechnet.",
+      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versandkosten<\/a> berechnet an der Kasse.",
+      "taxes_included_but_shipping_at_checkout": "Steuern enthalten und Versand an der Kasse berechnet.",
+      "taxes_included_and_shipping_policy_html": "Steuern inbegriffen. <a href=\"{{ link }}\">Versandkosten<\/a> berechnet an der Kasse.",
       "update": "Update",
       "checkout": "Auschecken",
       "empty": "Ihr Warenkorb ist derzeit leer.",
@@ -221,7 +221,8 @@
       },
       "product_details": "Produktdetails",
       "quantity": "Menge",
-      "quantity_label": "Menge: {{ quantity_count }}"
+      "quantity_label": "Menge: {{ quantity_count }}",
+      "quick_cart_note_html": "Ihre Zwischensumme beträgt heute {{ subtotal }}. {{ shipping_taxes }}"
     }
   },
   "collections": {

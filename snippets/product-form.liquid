@@ -29,7 +29,7 @@
 
         <div class="pf-container">
           <div class="pf-element js-enabled {% if button_options contains option_name %}pf-element--flexible{% endif %}">
-            <label for="Option{{ option.position }}" class="pf-label">
+            <label for="Option{{ option.position }}" class="pf-label fs-body-base">
               <span>{{ option.name }}</span>
             </label>
 
@@ -41,7 +41,6 @@
             {%- if swatch_options contains option_name and show_swatches-%}
               <div class="product-form__color-swatches" data-option-buttons>
                 {% for value in option.values %}
-				<div class="swatch-images">
                   <a
                     href="#"
                     data-button="{{ value }}"
@@ -50,8 +49,6 @@
                     tabindex="0"
                   >
                   </a>
-				  <p class="swatch-name">{{ value }}</p>
-				</div>
                 {% endfor %}
                 <select
                   id="Option{{ option.position }}"
@@ -144,7 +141,7 @@
   {% if show_quantity %}
     <div class="pf-container">
       <div class="pf-element">
-        <label class="pf-label" for="Quantity-{{ section.id }}">
+        <label class="pf-label fs-body-base" for="Quantity-{{ section.id }}">
           <span>{{ 'products.product.quantity' | t }}</span>
         </label>
         <input
@@ -162,7 +159,7 @@
     {% if product.selling_plan_groups.size > 0 %}
       <div class="pf-container">
         <div class="pf-element js-enabled">
-          <label for="plans" class="pf-label">
+          <label for="plans" class="pf-label fs-body-base">
             <span>{{ 'products.product.selling_plan_options' | t }}</span>
           </label>
 
@@ -178,7 +175,7 @@
               </optgroup>
             {% endfor %}
           </select>
-      
+
           <div class="pf-icon" data-icon>{% render 'icon' with icon: 'arrow-drop-down' %}</div>
         </div>
       </div>
@@ -216,6 +213,17 @@
       {% if show_dynamic_checkout %}
         {{ form | payment_button }}
       {% endif %}
+
+      {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+      <div class="product__policies fs-body-base rte" data-product-policies>
+        {%- if shop.taxes_included -%}
+        {{ 'products.product.include_taxes' | t }}
+        {%- endif -%}
+        {%- if shop.shipping_policy.body != blank -%}
+        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+        {%- endif -%}
+      </div>
+      {%- endif -%}
 
       {% comment %} Shop Pay {% endcomment %}
       <div class="product-form__shop-pay fs-body-base">

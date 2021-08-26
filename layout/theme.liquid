@@ -14,7 +14,7 @@
      \__\/                     \__\/         \__\/         \__\/
 
 --------------------------------------------------------------------
-#  Ira v3.3.2
+#  Ira v3.5.1
 #  Documentation: https://fluorescent.co/help/ira/
 #  Purchase: https://themes.shopify.com/themes/ira/
 #  A product by Fluorescent: https://fluorescent.co/
@@ -61,13 +61,11 @@
   {% render 'theme-setup' %}
   {% render 'theme-setting-vars' %}
   {{ 'index.css' | asset_url | stylesheet_tag }}
-   <!-- CUSTOM CSS -->
+  <!-- CUSTOM CSS -->
   {{ 'sixbond-custom.css' | asset_url | stylesheet_tag }}
   <!-- END CUSTOM CSS  -->
 
   {{ content_for_header }}
-
-  {% render 'shogun-head' %}
   <!-- Algolia head -->
     {{ 'algolia_config.js' | asset_url | script_tag }}
 

@@ -189,10 +189,10 @@
       "remove": "Eliminar",
       "subtotal": "Total parcial",
       "savings": "Estás ahorrando",
-      "tax_and_shipping_at_checkout": "Impuestos y envío calculados al finalizar la compra",
-      "tax_and_shipping_policy_at_checkout_html": "Impuestos y <a href=\"{{ link }}\">envío</a> calculados al finalizar la compra",
-      "tax_included_but_shipping_at_checkout": "Impuestos incluidos y envío calculado al finalizar la compra",
-      "tax_included_and_shipping_policy_html": "Impuestos incluidos. <a href=\"{{ link }}\">Envío</a> calculado al finalizar la compra.",
+      "taxes_and_shipping_at_checkout": "Impuestos y envío calculados al finalizar la compra.",
+      "taxes_and_shipping_policy_at_checkout_html": "Impuestos y <a href=\"{{ link }}\">envío</a> calculados al finalizar la compra.",
+      "taxes_included_but_shipping_at_checkout": "Impuestos incluidos y envío calculado al finalizar la compra.",
+      "taxes_included_and_shipping_policy_html": "Impuestos incluidos. <a href=\"{{ link }}\">Envío</a> calculado al finalizar la compra.",
       "update": "Actualizar",
       "checkout": "Ir a la caja",
       "empty": "Su carrito está vacío.",
@@ -221,7 +221,8 @@
       },
       "product_details": "Detalles del producto",
       "quantity": "Cantidad",
-      "quantity_label": "Cantidad: {{ quantity_count }}"
+      "quantity_label": "Cantidad: {{ quantity_count }}",
+      "quick_cart_note_html": "Tu subtotal de hoy es {{ subtotal }}. {{ shipping_taxes }}"
     }
   },
   "collections": {

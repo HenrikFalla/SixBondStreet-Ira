@@ -13,14 +13,20 @@
     {% if display == 'all' %}
       {% for collection in collections %}
         <div class="grid__item grid__item--{{ per_row }}">
-          {% render 'collection-item' with collection: collection %}
+          {% render 'collection-item' with
+            collection: collection,
+            aspect_ratio: section.settings.aspect_ratio
+          %}
         </div>
       {% endfor %}
     {% else %}
       {% for block in blocks %}
         {%- assign collection = collections[block.settings.collection] -%}
         <div class="grid__item grid__item--{{ per_row }}">
-          {% render 'collection-item' with collection: collection %}
+          {% render 'collection-item' with
+            collection: collection,
+            aspect_ratio: section.settings.aspect_ratio
+          %}
         </div>
       {% endfor %}
     {% endif %}
@@ -55,6 +61,18 @@
         "max": 4,
         "step": 1,
         "default": 3
+      },
+      {
+        "id": "aspect_ratio",
+        "type": "select",
+        "label": "Image aspect ratio",
+        "options": [
+          { "label": "Natural", "value": "natural" },
+          { "label": "Square (1:1)", "value": "square" },
+          { "label": "Landscape (3:2)", "value": "landscape" },
+          { "label": "Portrait (2:3)", "value": "portrait" }
+        ],
+        "default": "natural"
       }
     ],
     "blocks": [

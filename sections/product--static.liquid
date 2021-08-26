@@ -77,7 +77,7 @@
               {{ current_variant.compare_at_price | money }}
             {% endif %}
           </s>
-        <!-- Custom Stock Display for Product - Henrik -->
+          <!-- Custom Stock Display for Product - Henrik -->
 		<div class="stock-availability">
 		{% if variant.options > 1 %}
           	{% if current_variant.available == true %}
@@ -101,20 +101,21 @@
             {% endif %}
 		{% endif %}
 		</div>
+        <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+  			{% for variant in product.variants %}
+    		{% if variant.available %}
+      	<option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+        	{{ variant.title }}
+      	</option>
+    	{% else %}
+      	<option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+    	{% endif %}
+  		{% endfor %}
+  		</select>
         <!-- End of custom stock display - Henrik -->
+          {% render 'unit-price' item: current_variant %}
+          {% render 'stock-qty' item: current_variant %}
         </div>
-        <!--
-        {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-          <div class="product__policies rte" data-product-policies>
-            {%- if shop.taxes_included -%}
-              {{ 'products.product.include_taxes' | t }}
-            {%- endif -%}
-            {%- if shop.shipping_policy.body != blank -%}
-              {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-            {%- endif -%}
-          </div>
-        {%- endif -%}
-		-->
 
         {% render 'product-form' with
           product: product,
