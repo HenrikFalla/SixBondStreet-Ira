@@ -139,4 +139,17 @@ p.swatch-name {
   	ol.ais-Hits-list {
     	padding: 0;
 	}
+	.search .ais-hit--details {
+		display: flex;
+		flex-direction: column;
+	}
+	.search .ais-hit--details .ais-hit--title {
+		order: 2;
+	}
+	.search .ais-hit--details .ais-hit--subtitle {
+		order: 1;
+	}
+	.search .ais-hit--details .ais-hit--price {
+		order: 3;
+	}
 /* End Search Result Page */
