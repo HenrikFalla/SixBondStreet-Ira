@@ -148,8 +148,10 @@ p.swatch-name {
 	}
 	.search .ais-hit--details .ais-hit--subtitle {
 		order: 1;
+		padding-bottom: 4px;
 	}
 	.search .ais-hit--details .ais-hit--price {
 		order: 3;
+		padding-top: 8px;
 	}
 /* End Search Result Page */
