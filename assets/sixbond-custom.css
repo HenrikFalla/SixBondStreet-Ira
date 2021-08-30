@@ -182,7 +182,7 @@ p.swatch-name {
         font-weight: bold;
 	}
   
-  
+  /* trying to move the hole block up and to the side. belive we need to add an extra class?*/
   	element.style {
       	width: 650px !important;
         top: 60.9px !important;
