@@ -160,3 +160,9 @@ p.swatch-name {
 	.quick-search__results {
 		display: none !important;
   	}
+  
+  	.aa-dropdown-menu-size-lg .aa-columns-container {
+    	background-color: #29292c; 
+  	}
+  
+      	
