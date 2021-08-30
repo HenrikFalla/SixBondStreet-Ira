@@ -555,7 +555,7 @@
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
           "color_subheading": "#e1e1e1",
-          "show_sidebar": false,
+          "show_sidebar": true,
           "show_sort": true,
           "filter_style": "by_group",
           "per_row": 3,
