@@ -17,7 +17,7 @@
     clearAll: 'Fjern alt',
     noPageFound: 'Ingen sider funnet',
     outOfStock: 'Utsolgt',
-    'Vendor': 'Merke',
+    Vendor: 'Merke',
   };
 
   algolia.translation_helpers = {
