@@ -155,3 +155,8 @@ p.swatch-name {
 		padding-top: 8px;
 	}
 /* End Search Result Page */
+
+  /* Instant search */
+	.quick-search__results {
+		display: none !important;
+  	}
