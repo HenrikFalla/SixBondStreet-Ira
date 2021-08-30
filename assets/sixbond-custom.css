@@ -175,3 +175,8 @@ p.swatch-name {
  	.aa-dropdown-menu .aa-product-info, .aa-dropdown-menu .aa-product-price {
         color: white !important;
     }
+  
+  	.aa-dropdown-menu .aa-highlight {
+        color: white !important;
+        font-weight: bold;
+	}
