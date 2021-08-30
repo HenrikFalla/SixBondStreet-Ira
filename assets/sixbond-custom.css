@@ -158,9 +158,10 @@ p.swatch-name {
 
   /* Instant search */  
   	.aa-dropdown-menu-size-lg .aa-columns-container {
-      	direction: rtl;
-    	width: 100%;
-    	display: table;
+      	display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
     	background-color: #29292c !important; 
   	}
   
