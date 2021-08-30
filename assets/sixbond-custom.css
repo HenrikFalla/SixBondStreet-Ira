@@ -65,6 +65,19 @@ p.swatch-name {
 	--s-max-width: 800px;	
 }
 /* end article page settings */
+/* Catalog Page */
+.product-item__image-link:after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 100%;
+    background: rgb(71 47 0 / 4%);
+    z-index: 10000;
+}
+/* End Catalog Page */
 /* Search Result Page */
 /* Input Search */
   	.search {
