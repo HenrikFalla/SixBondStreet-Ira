@@ -168,6 +168,6 @@ p.swatch-name {
         box-sizing: border-box;
         border: none !important;
         z-index: 10000 !important;
-        color: white;
+        color: white !important;
         text-align: left;
 	}
