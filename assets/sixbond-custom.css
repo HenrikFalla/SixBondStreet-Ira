@@ -66,6 +66,7 @@ p.swatch-name {
 }
 /* end article page settings */
 /* Search Result Page */
+/* Input Search */
   	.search {
     	max-width: calc(20px * 2 + 2000px);
     	max-width: calc(var(--space-outer) * 2 + var(--max-width));
@@ -116,7 +117,11 @@ p.swatch-name {
     	order: 2;
       	padding-top: 10px;
 	}
-  /* Search Result Products */
+	/* Filters */
+	.search .ais-page .ais-facets .ais-facet {
+		border: none;
+	}
+	/* Search Result Products */
   	.search .ais-results-size-lg .ais-page .ais-results-as-block .ais-hit, .search .ais-page .ais-hit {
     	border: none;
     	margin: 0;
