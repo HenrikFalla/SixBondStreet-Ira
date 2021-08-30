@@ -158,10 +158,8 @@ p.swatch-name {
 
   /* Instant search */  
   	.aa-dropdown-menu-size-lg .aa-columns-container {
-      	display: flex;
-        align-items: center;
-        justify-content: space-between;
     	background-color: #29292c !important; 
+      	height: 400px;
   	}
   
   	.algolia-autocomplete {
