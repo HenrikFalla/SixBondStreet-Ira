@@ -162,6 +162,7 @@ p.swatch-name {
       	height: 400px;
   	}
   
+  
   	.algolia-autocomplete {
         box-sizing: border-box;
         border: none !important;
@@ -170,11 +171,20 @@ p.swatch-name {
         text-align: left;
 	}
   
+  
  	.aa-dropdown-menu .aa-product-info, .aa-dropdown-menu .aa-product-price {
         color: white !important;
     }
+  
   
   	.aa-dropdown-menu .aa-highlight {
         color: white !important;
         font-weight: bold;
 	}
+  
+  
+  	element.style {
+      	width: 650px !important;
+        top: 60.9px !important;
+        right: 115.6px !important;
+    }
