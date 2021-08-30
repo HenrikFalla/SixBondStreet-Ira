@@ -171,3 +171,7 @@ p.swatch-name {
         color: white !important;
         text-align: left;
 	}
+  
+ 	.aa-dropdown-menu .aa-product-info {
+        color: white !important;
+    }
