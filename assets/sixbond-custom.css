@@ -172,6 +172,6 @@ p.swatch-name {
         text-align: left;
 	}
   
- 	.aa-dropdown-menu .aa-product-info .aa-dropdown-menu .aa-product-price {
+ 	.aa-dropdown-menu .aa-product-info, .aa-dropdown-menu .aa-product-price {
         color: white !important;
     }
