@@ -138,6 +138,9 @@ p.swatch-name {
 		margin-left: 0;
 		width: 100%;
 	}
+	.search .ais-page .ais-results-as-block .ais-hit {
+		padding: 16px;
+	}
 	/* Filters */
 	.search .ais-page .ais-facets .ais-facet {
 		border: none;
