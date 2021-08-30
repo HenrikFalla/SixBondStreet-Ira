@@ -161,9 +161,13 @@ p.swatch-name {
       	display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
-     	border: none !important;
     	background-color: #29292c !important; 
   	}
   
-      	
+  	.algolia-autocomplete {
+        box-sizing: border-box;
+        border: none !important;
+        z-index: 10000 !important;
+        color: #ffffff;
+        text-align: left;
+	}
