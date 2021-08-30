@@ -124,17 +124,17 @@ p.swatch-name {
 		padding-bottom: 100%;
 		background: rgb(71 47 0 / 4%);
 	}
-	.ais-results-size-lg .ais-page .ais-results-as-block .ais-hit {
+	.ais-results-size-lg .ais-page .ais-results-as-block .ais-Hits .ais-hit {
 		margin-left: 0;
 		width: 33.3%;
 		width: calc(100% / 3);
 	}
-	.ais-results-size-sm .ais-page .ais-results-as-block .ais-hit, .search .ais-results-size-md .ais-page .ais-results-as-block .ais-hit {
+	.ais-results-size-sm .ais-page .ais-results-as-block .ais-Hits .ais-hit, .search .ais-results-size-md .ais-page .ais-results-as-block .ais-Hits .ais-hit {
 		margin-left: 0;
 		width: 50%;
 		width: calc(100% / 2);
 	}
-	.ais-results-size-xs .ais-page .ais-results-as-block .ais-hit {
+	.ais-results-size-xs .ais-page .ais-results-as-block .ais-Hits .ais-hit {
 		margin-left: 0;
 		width: 100%;
 	}
