@@ -508,8 +508,7 @@
         "settings": {
           "articles_per_row": "3",
           "show_rss": true,
-          "show_excerpt": false,
-          "aspect_ratio": "square"
+          "show_excerpt": false
         }
       },
       "featured-collection--static": {
@@ -542,8 +541,7 @@
           "enabled": true,
           "heading": "Recommended",
           "per_row": 3,
-          "rows": 1,
-          "aspect_ratio": "natural"
+          "rows": 1
         }
       },
       "collection--template": {
