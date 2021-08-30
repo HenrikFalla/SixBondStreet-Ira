@@ -117,29 +117,15 @@ p.swatch-name {
     	order: 2;
       	padding-top: 10px;
 	}
-	.search .ais-page .ais-results-as-block .ais-hit--picture:after {
-		content: '';
-		display: block;
-		width: 100%;
-		padding-bottom: 100%;
-		background: rgb(71 47 0 / 4%);
-	}
-	.ais-results-size-lg .ais-page .ais-results-as-block .ais-Hits .ais-hit {
-		margin-left: 0;
-		width: 33.3%;
-		width: calc(100% / 3);
-	}
-	.ais-results-size-sm .ais-page .ais-results-as-block .ais-Hits .ais-hit, .search .ais-results-size-md .ais-page .ais-results-as-block .ais-Hits .ais-hit {
-		margin-left: 0;
-		width: 50%;
-		width: calc(100% / 2);
-	}
-	.ais-results-size-xs .ais-page .ais-results-as-block .ais-Hits .ais-hit {
-		margin-left: 0;
-		width: 100%;
-	}
-	.search .ais-page .ais-results-as-block .ais-hit {
-		padding: 16px;
+	.search select.ais-SortBy-select {
+		border: none;
+		border-radius: 10px;
+		background: #f8f7f5;
+		padding: 0 25px;
+		margin: auto;
+		text-align: center;
+		justify-content: center;
+		height: 2em;
 	}
 	/* Filters */
 	.search .ais-page .ais-facets .ais-facet {
@@ -182,5 +168,29 @@ p.swatch-name {
 	.search .ais-hit--details .ais-hit--price {
 		order: 3;
 		padding-top: 8px;
+	}
+	.search .ais-page .ais-results-as-block .ais-hit--picture:after {
+		content: '';
+		display: block;
+		width: 100%;
+		padding-bottom: 100%;
+		background: rgb(71 47 0 / 4%);
+	}
+	.ais-results-size-lg .ais-page .ais-results-as-block .ais-Hits .ais-hit {
+		margin-left: 0;
+		width: 33.3%;
+		width: calc(100% / 3);
+	}
+	.ais-results-size-sm .ais-page .ais-results-as-block .ais-Hits .ais-hit, .search .ais-results-size-md .ais-page .ais-results-as-block .ais-Hits .ais-hit {
+		margin-left: 0;
+		width: 50%;
+		width: calc(100% / 2);
+	}
+	.ais-results-size-xs .ais-page .ais-results-as-block .ais-Hits .ais-hit {
+		margin-left: 0;
+		width: 100%;
+	}
+	.search .ais-page .ais-results-as-block .ais-hit {
+		padding: 16px;
 	}
 /* End Search Result Page */
