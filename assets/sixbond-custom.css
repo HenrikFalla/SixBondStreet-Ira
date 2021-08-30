@@ -156,12 +156,11 @@ p.swatch-name {
 	}
 /* End Search Result Page */
 
-  /* Instant search */
-	.quick-search__results {
-		display: none !important;
-  	}
-  
+  /* Instant search */  
   	.aa-dropdown-menu-size-lg .aa-columns-container {
+      	direction: rtl;
+    	width: 100%;
+    	display: table;
     	background-color: #29292c; 
   	}
   
