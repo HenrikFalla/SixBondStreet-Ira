@@ -253,5 +253,6 @@ p.swatch-name {
 	}
 	.search .ais-page .ais-highlight:before { /* Overlay for matching text */
 		background: rgb(71 47 0 / 4%);
+		opacity: 1;
 	}
 /* End Search Result Page */
