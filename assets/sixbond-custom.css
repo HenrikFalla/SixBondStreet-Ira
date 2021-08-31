@@ -159,8 +159,8 @@ p.swatch-name {
 		padding-left: 16px;
 	}
 	.search .ais-page .ais-RefinementList-item--selected, .search .ais-page .ais-facet--item:hover {
-		border-left: 8px;
-		margin-left: 0;
+		border-left: none;
+		margin-left: 8px;
 	}
 	.search .ais-facet--label:after {
 		content: '';
