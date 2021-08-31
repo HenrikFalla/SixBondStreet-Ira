@@ -150,6 +150,9 @@ p.swatch-name {
 		font-weight: bold;
 	}
 	.search .ais-page .ais-facet--label {
+		padding-left: 0;
+	}
+	.search .ais-page .ais-facet--item {
 		padding-left: 16px;
 	}
 	.search .ais-page .ais-RefinementList-item--selected, .search .ais-page .ais-facet--item:hover {
