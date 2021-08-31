@@ -188,3 +188,11 @@ p.swatch-name {
         top: 60.9px !important;
         right: 115.6px !important;
     }
+  
+  @media only screen and (max-width: 600px) {
+    
+        .aa-dropdown-menu-size-lg .aa-columns-container {
+        	background-color: #29292c;
+      }
+   
+  }
