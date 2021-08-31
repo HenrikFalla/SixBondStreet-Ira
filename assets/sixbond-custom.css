@@ -251,4 +251,7 @@ p.swatch-name {
 	.search .ais-page .ais-results-as-block .ais-hit {
 		padding: 8px;
 	}
+	.search .ais-page .ais-highlight:before { /* Overlay for matching text */
+		background: rgb(71 47 0 / 4%);
+	}
 /* End Search Result Page */
