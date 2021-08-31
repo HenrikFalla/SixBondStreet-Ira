@@ -197,7 +197,7 @@ p.swatch-name {
    
   }*/
   
-  @media (min-width: 60em) {
+  @media (min-width: 1292px) {
     
     .aa-dropdown-menu-size-lg .aa-colums-container {
       backgound-color: #29292c !important;
