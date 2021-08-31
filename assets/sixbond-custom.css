@@ -172,8 +172,10 @@ p.swatch-name {
 	}
 	.search .ais-RefinementList-item--selected:before {
 		content: '\E800';
-		font-family: 'fontello';
+		font-family: fontello;
 		color: #333;
+		position: absolute;
+		left: -10px;
 	}
 	/* Search Result Products */
   	.search .ais-results-size-lg .ais-page .ais-results-as-block .ais-hit, .search .ais-page .ais-hit {
