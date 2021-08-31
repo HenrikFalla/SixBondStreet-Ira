@@ -189,17 +189,6 @@ p.swatch-name {
         right: 115.6px !important;
     }
   
- 	 .quick-search__bar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: var(--s-height-search-bar);
-        background-color: var(--color-background-dropdown);
-        padding: 0 calc(4px * 3) 0 calc(4px * 5);
-        padding: 0 var(--spacing-small) 0 var(--spacing-medium);
-        pointer-events: all;
-	}
   
  	/* should make the bakcground on mobile and tablet dark */
   
