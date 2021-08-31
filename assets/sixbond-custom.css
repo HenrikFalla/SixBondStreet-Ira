@@ -164,7 +164,17 @@ p.swatch-name {
 		border-left: none;
 		margin-left: 0;
 	}
-	
+	.search .ais-facet--label:after {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		border: 1px solid #c7c7c7;
+		position: absolute;
+		left: -12px;
+		top: 4px;
+		border-radius: 4px;
+	}
 	/* Search Result Products */
   	.search .ais-results-size-lg .ais-page .ais-results-as-block .ais-hit, .search .ais-page .ais-hit {
     	border: none;
