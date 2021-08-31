@@ -140,10 +140,23 @@ p.swatch-name {
 		justify-content: center;
 		height: 2em;
 	}
-	/* Filters */
+	/* Filters/Facets */
 	.search .ais-page .ais-facets .ais-facet {
 		border: none;
 	}
+	.search .ais-page .ais-facet--header {
+		border: none;
+		background: none;
+		font-weight: bold;
+	}
+	.search .ais-page .ais-facet--label {
+		padding-left: 16px;
+	}
+	.search .ais-page .ais-RefinementList-item--selected, .search .ais-page .ais-facet--item:hover {
+		border-left: none;
+		margin-left: 0;
+	}
+	
 	/* Search Result Products */
   	.search .ais-results-size-lg .ais-page .ais-results-as-block .ais-hit, .search .ais-page .ais-hit {
     	border: none;
