@@ -178,6 +178,7 @@ p.swatch-name {
 		left: -10px;
 	}
 	/* Selected facets */
+	/*
 	.search .ais-page .ais-current-refined-values--list .ais-current-refined-values--item {
 		border: none;
 		border-radius: 50px;
@@ -193,6 +194,7 @@ p.swatch-name {
 		content: '\2a2f';
 		padding: 12px;
 	}
+	*/
 	/* Search Result Products */
   	.search .ais-results-size-lg .ais-page .ais-results-as-block .ais-hit, .search .ais-page .ais-hit {
     	border: none;
