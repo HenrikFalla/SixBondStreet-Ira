@@ -4,7 +4,7 @@
 }
 /* TYPOGRAPHY */
 @fontello {
-	font-family: 'fontello';
+	font-family: "fontello";
 	src: url('fonts\fontello.woff2') format('woff2'),
 		 url('fonts\fontello.woff') format('woff');
 }
