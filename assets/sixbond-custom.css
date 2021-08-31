@@ -189,10 +189,17 @@ p.swatch-name {
         right: 115.6px !important;
     }
   
- 	@media only screen and (max-width: 1292px) {
+ 	/*@media only screen and (max-width: 1292px) {
     
         .aa-dropdown-menu-size-lg .aa-columns-container {
         	background-color: #29292c !important;
       }
    
+  }*/
+  
+  @media (min-width: 40em) {
+    
+    .aa-dropdown-menu-size-lg .aa-colums-container {
+      backgound-color: #29292c !important;
+    }
   }
