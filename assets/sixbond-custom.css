@@ -185,6 +185,10 @@ p.swatch-name {
       	font-weight: bold !important;
     }
   
+  	.aa-dropdown-menu .aa-collections-header, .aa-dropdown-menu .aa-articles-header, .aa-dropdown-menu .aa-pages-header {
+      	color: white !important;
+    }
+  
   
   	.aa-dropdown-menu .aa-highlight {
         color: white !important;
