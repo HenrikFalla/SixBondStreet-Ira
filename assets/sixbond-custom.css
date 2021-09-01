@@ -189,6 +189,11 @@ p.swatch-name {
         right: 116.6px !important;
     }
   
+  /* hiding the 'quick search result' default from shopify */
+  
+  	.quick-search__results {
+      	visibility: hidden !important; 
+    }
   
  	/* should make the bakcground on mobile and tablet dark */
   
