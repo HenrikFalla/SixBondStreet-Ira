@@ -180,6 +180,10 @@ p.swatch-name {
       	color: white !important;
     }
   
+  	.aa-dropdown-menu a, .aa-dropdown-menu a:hover, .aa-dropdown-menu a:focus, .aa-dropdown-menu a:active {
+      	color: white !important;
+    }
+  
   
   	.aa-dropdown-menu .aa-highlight {
         color: white !important;
