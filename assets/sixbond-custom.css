@@ -182,7 +182,7 @@ p.swatch-name {
   
   	.aa-dropdown-menu a, .aa-dropdown-menu a:hover, .aa-dropdown-menu a:focus, .aa-dropdown-menu a:active {
       	color: white !important;
-      	font-weight: bold;
+      	font-weight: bold !important;
     }
   
   
