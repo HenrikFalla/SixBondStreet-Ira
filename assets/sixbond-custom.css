@@ -176,6 +176,10 @@ p.swatch-name {
         color: white !important;
     }
   
+  	.aa-dropdown-menu .aa-products-empty .aa-no-result { 
+      	color: white !important;
+    }
+  
   
   	.aa-dropdown-menu .aa-highlight {
         color: white !important;
