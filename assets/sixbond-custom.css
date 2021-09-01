@@ -183,7 +183,7 @@ p.swatch-name {
 	}
   
   /* trying to move the hole block up and to the side. belive we need to add an extra class?*/
-  	element.style {
+  	.algolia-autocomplete {
       	width: 650px !important;
         top: 60.9px !important;
         right: 115.6px !important;
