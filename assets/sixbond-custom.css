@@ -77,6 +77,9 @@ p.swatch-name {
     background: rgb(71 47 0 / 4%);
     z-index: 10000;
 }
+.product-item__text .product__vendor {
+    margin-bottom: 0;
+}
 /* End Catalog Page */
 /* Search Result Page */
 /* Input Search */
