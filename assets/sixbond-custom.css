@@ -241,4 +241,8 @@ p.swatch-name {
     body .drawer-menu__search-input {
       visibility: hidden;
     }
+    
+    body. .drawer-menu__all-links ul:not(.drawer-menu__footer) {
+        top: -17px;
+    }
   }
