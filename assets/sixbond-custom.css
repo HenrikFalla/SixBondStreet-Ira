@@ -233,7 +233,7 @@ p.swatch-name {
  /* change hover color */
   body .aa-dropdown-menu .aa-cursor {
     	background: #dfdfdf; 
-    	width: 100%;
+    	padding: none;
   }
   
   /* turn off search bar from hamburger meny to the left from 641px and bigger */
