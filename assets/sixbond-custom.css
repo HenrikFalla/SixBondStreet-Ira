@@ -176,13 +176,13 @@ p.swatch-name {
         color: white !important;
     }
   
-  	.aa-dropdown-menu .aa-products-empty .aa-no-result { 
-      	color: white !important;
+  	body .aa-dropdown-menu .aa-products-empty .aa-no-result { 
+      	color: white;
     }
   
-  	.aa-dropdown-menu a, .aa-dropdown-menu a:hover, .aa-dropdown-menu a:focus, .aa-dropdown-menu a:active {
-      	color: white !important;
-      	font-weight: bold !important;
+  	body .aa-dropdown-menu a, .aa-dropdown-menu a:hover, .aa-dropdown-menu a:focus, .aa-dropdown-menu a:active {
+      	color: white;
+      	font-weight: bold;
     }
   
   	body .aa-dropdown-menu .aa-collections-header, .aa-dropdown-menu .aa-articles-header, .aa-dropdown-menu .aa-pages-header {
