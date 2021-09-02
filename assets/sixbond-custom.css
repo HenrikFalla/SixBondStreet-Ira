@@ -198,8 +198,8 @@ p.swatch-name {
   /* moving the algolia search block up and to the right*/
   	.algolia-autocomplete {
       	/*width: 650px !important;*/
-        top: 60.9px !important;
-        right: 115.6px !important;
+        top: 57.9px !important;
+        right: 116.px !important;
     }
   
   /* hiding the 'quick search result' default from shopify */
