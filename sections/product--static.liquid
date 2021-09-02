@@ -77,7 +77,7 @@
               {{ current_variant.compare_at_price | money }}
             {% endif %}
           </s>
-          <!-- Custom Stock Display for Product - Henrik -->
+          <!-- SixBondStreet CUSTOM - Henrik -->
 		<div class="stock-availability">
 		{% if variant.options > 1 %}
           	{% if current_variant.available == true %}
@@ -112,7 +112,7 @@
     	{% endif %}
   		{% endfor %}
   		</select>
-        <!-- End of custom stock display - Henrik -->
+        <!-- END SixBondStreet CUSTOM - Henrik -->
           {% render 'unit-price' item: current_variant %}
           {% render 'stock-qty' item: current_variant %}
         </div>
