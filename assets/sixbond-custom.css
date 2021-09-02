@@ -190,8 +190,8 @@ p.swatch-name {
     }
   
   
-  	.aa-dropdown-menu .aa-highlight {
-        color: white !important;
+  	body .aa-dropdown-menu .aa-highlight {
+        color: white;
         font-weight: bold;
 	}
   
