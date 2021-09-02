@@ -204,9 +204,15 @@ p.swatch-name {
   
   /* hiding the 'quick search result' default from shopify */
   
-  	.quick-search__results {
+  	/* .quick-search__results {
       	visibility: hidden !important; 
-    }
+    } */
+	/* more specific version for hiding shopify results in instant search */ 
+	.quick-search__container .quick-search__results {
+		height: 0px;
+		overflow: hidden;
+		display: none;
+	}
   
  	/* should make the bakcground on mobile and tablet dark */
   
