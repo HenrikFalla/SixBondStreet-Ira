@@ -238,7 +238,7 @@ p.swatch-name {
   /* turn off search bar from hamburger menu to the left from 641px and bigger. 
   	 the shopping cart and the hamburger menu has the same class name */
   @media only screen and (min-width: 641px) {
-    body .drawer-menu__header .icon-button {
+    body .drawer-menu__header /*.icon-button*/ {
       visibility: hidden;
     }
   }
