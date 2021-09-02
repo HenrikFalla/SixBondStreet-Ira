@@ -246,7 +246,7 @@ p.swatch-name {
       	visibility: hidden;
     }
     
-    body. .drawer-menu__all-links ul:not(.drawer-menu__footer) {
+    body .drawer-menu__all-links ul:not(.drawer-menu__footer) {
         top: -25px;
     }
   }
