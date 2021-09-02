@@ -223,7 +223,7 @@ p.swatch-name {
 		}
 	}
 	*/
-	.algolia-autocomplete {
+	body .algolia-autocomplete {
 		background: #29292c;
 	}
 	
