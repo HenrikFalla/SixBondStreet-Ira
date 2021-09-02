@@ -196,10 +196,10 @@ p.swatch-name {
 	}
   
   /* moving the algolia search block up and to the right*/
-  	.algolia-autocomplete {
+  	body .algolia-autocomplete {
       	/*width: 650px !important;*/
-        top: 58px !important;
-        right: 116px !important;
+        top: 58px;
+        right: 116px;
     }
   
   /* hiding the 'quick search result' default from shopify */
@@ -231,8 +231,8 @@ p.swatch-name {
   /* remove white line between search result and categori */ 
   
  /* change hover color */
-  	body .aa-dropdown-menu .aa-cursor {
-    	background: #dfdfdf; 
+  body .aa-dropdown-menu .aa-cursor {
+     background: #dfdfdf; 
   }
   
   /* turn off search bar from hamburger meny to the left from 641px and bigger */
