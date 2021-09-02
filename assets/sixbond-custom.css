@@ -215,12 +215,17 @@ p.swatch-name {
 	}
   
  	/* should make the bakcground on mobile and tablet dark */
-  
+	/* 
   	 @media only screen and (max-width: 1292px) {
 
 		.aa-dropdown-menu-size-lg .aa-columns-container {
 			background-color: #29292c !important;
 		}
 	}
+	*/
+	.algolia-autocomplete {
+		background: #29292c;
+	}
+	
   
   
