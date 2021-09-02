@@ -157,17 +157,17 @@ p.swatch-name {
 /* End Search Result Page */
 
   /* Instant search */  
-  	.aa-dropdown-menu-size-lg .aa-columns-container {
-    	background-color: #29292c !important; 
+  	body .aa-dropdown-menu-size-lg .aa-columns-container {
+    	background-color: #29292c; 
       	height: 400px;
   	}
   
   
-  	.algolia-autocomplete {
+  	body .algolia-autocomplete {
         box-sizing: border-box;
-        border: none !important;
-        z-index: 10000 !important;
-        color: white !important;
+        border: none;
+        z-index: 10000;
+        color: white;
         text-align: left;
 	}
   
