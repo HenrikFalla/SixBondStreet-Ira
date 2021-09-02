@@ -231,5 +231,8 @@ p.swatch-name {
   /* remove white line between search result and categori */ 
   
  /* change hover color */
+  body .aa-dropdown-menu .aa-cursor {
+    	background: black;
+  }
   
   /* turn off search bar from hamburger meny to the left from 641px and bigger */
