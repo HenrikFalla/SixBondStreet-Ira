@@ -54,6 +54,17 @@
 
   <div class="product-item__meta fs-body-base c-body">
     <div class="product-item__text ff-body">
+		<!-- SixBondStreet CUSTOM -->
+		{%- if product.handle -%}
+			{%- assign vendorHandle = product.vendor | handle -%}
+			{%- if collections[vendorHandle].products.size > 0 -%}
+			<a href="{{ collections[vendorHandle].url }}">
+			<div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div>
+			{%- else -%}
+			<div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
+			{%- endif -%}
+		{%- endif -%}
+		<!-- END SixBondStreet CUSTOM -->
       {%- if placeholder -%}
         <h4><a href="#">{{ 'sections.featured_products.placeholder.product_title' | t }}</a></h4>
       {%- else -%}
