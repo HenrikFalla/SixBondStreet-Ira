@@ -172,8 +172,8 @@ p.swatch-name {
 	}
   
   
- 	body .aa-dropdown-menu .aa-product-info, .aa-dropdown-menu .aa-product-price {
-        color: white;
+ 	.aa-dropdown-menu .aa-product-info, .aa-dropdown-menu .aa-product-price {
+        color: white !important;
     }
   
   	body .aa-dropdown-menu .aa-products-empty .aa-no-result { 
