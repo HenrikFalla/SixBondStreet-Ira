@@ -229,7 +229,7 @@ body .algolia-autocomplete {
 
 body .aa-dropdown-menu .aa-product-info,
 body .aa-dropdown-menu .aa-product-price {
-    color: white !important;
+    color: white;
 }
 
 body .aa-dropdown-menu .aa-products-empty .aa-no-result {
@@ -259,18 +259,9 @@ body .aa-dropdown-menu .aa-highlight {
 /* moving the algolia search block up and to the right*/
 
 body .algolia-autocomplete {
-    /*width: 650px !important;*/
     top: 58px;
     right: 116px;
 }
-
-
-/* hiding the 'quick search result' default from shopify */
-
-
-/* .quick-search__results {
-      	visibility: hidden !important; 
-    } */
 
 
 /* more specific version for hiding shopify results in instant search */
@@ -282,24 +273,11 @@ body .algolia-autocomplete {
 }
 
 
-/* should make the bakcground on mobile and tablet dark */
-
-
-/* 
-  	 @media only screen and (max-width: 1292px) {
-
-		.aa-dropdown-menu-size-lg .aa-columns-container {
-			background-color: #29292c !important;
-		}
-	}
-	*/
+/* makes the bakcground on mobile and tablet dark */
 
 body .algolia-autocomplete {
     background: #29292c;
 }
-
-
-/* remove white line between search result and categori */
 
 
 /* change hover color */
