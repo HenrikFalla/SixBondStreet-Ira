@@ -301,3 +301,10 @@ body .aa-dropdown-menu .aa-cursor {
         top: -25px;
     }
 }
+
+@media only screen and (min-width: 973px) {
+    body .algolia-autocomplete {
+        top: 58px;
+        right: 45px;
+    }
+}
