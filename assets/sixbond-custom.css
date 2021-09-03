@@ -277,13 +277,16 @@ body .algolia-autocomplete {
 
 body .algolia-autocomplete {
     background: #29292c;
+    width: 520px;
+    right: 133px;
 }
 
-.algolia-autocomplete element.style {
+
+/*.algolia-autocomplete element.style {
     display: block;
     margin-left: auto;
     width: 520px;
-}
+}*/
 
 body .aa-dropdown-menu-size-lg .aa-right-column {
     border-left: none;
