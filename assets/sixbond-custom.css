@@ -232,7 +232,7 @@ p.swatch-name {
   
  /* change hover color */
   body .aa-dropdown-menu .aa-cursor {
-     background: #dfdfdf; 
+     	background: #dfdfdf; 
   }
   
   /* turn off search bar from hamburger menu to the left from 641px and bigger. 
