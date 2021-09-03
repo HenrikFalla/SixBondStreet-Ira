@@ -1,22 +1,32 @@
 /* Settings */
+
 :root {
-	--max-width-large-page: 1200px
+    --max-width-large-page: 1200px
 }
+
+
 /* TYPOGRAPHY */
+
+
 /* h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 2px;
 }
 p, span {
 	letter-spacing: 1px;
 } */
+
+
 /* Swatches */
+
 .product-form__color-swatches {
     padding-top: 32px;
 }
+
 .product__color-swatch {
     width: 60px;
     height: 60px;
 }
+
 .swatch-images {
     display: flex;
     flex-direction: column;
@@ -29,193 +39,253 @@ p, span {
     margin: auto;
     margin-bottom: 6px;
 }
+
 p.swatch-name {
     font-size: 12px;
     max-width: 70px;
 }
 
+
 /* Article template SixBondStreet */
+
+
 /* Header section */
+
 .article .article__image {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 0;
 }
+
 .article__date {
-	margin-bottom: var(--spacing-extra-small);
+    margin-bottom: var(--spacing-extra-small);
 }
+
 .article__share {
-	margin-top: var(--spacing-extra-small);	
+    margin-top: var(--spacing-extra-small);
 }
+
 @media (min-width: 40em) {
-	.article__header {
-		margin: 20px auto;
-	}
+    .article__header {
+        margin: 20px auto;
+    }
 }
+
+
 /* end header section */
+
+
 /* article content */
+
 .article__content {
-	max-width: calc(800px + calc(20px * 2));
+    max-width: calc(800px + calc(20px * 2));
     max-width: calc(800px + calc(var(--space-outer) * 2));
-	
 }
+
+
 /* end article content */
+
+
 /* article page settings */
+
 .page {
-	--s-max-width: 800px;	
+    --s-max-width: 800px;
 }
+
+
 /* end article page settings */
+
+
 /* Search Result Page */
-  	.search {
-    	max-width: calc(20px * 2 + 2000px);
-    	max-width: calc(var(--space-outer) * 2 + var(--max-width));
-          padding-top: 16px;
-	}
-  	.search .ais-page .ais-search-header {
-    	background: none;
-    	margin-top: 0px;
-	}
-	.search .ais-page .ais-input {
-        border: none;
-        display: block;
-	}
-  	.search .ais-page .ais-search-box-container {
-    	display: block;
-    	margin: auto;
-    	width: 100%;
-      	padding: 8px;
-	}
-  	svg.ais-SearchBox-submitIcon {
-      	width: 15px;
-    	height: 15px;
-    	margin-top: 5px;
-	}
-	.search .ais-page .ais-input--label {
-		display:none;
- 	}
-  	.ais-page .ais-search-box-container {
-        display: block;
-        background-color: #F8F7F5;
-        border-radius: 50px;
-	}
-  	.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form {
-    	display: flex;
-    	flex-direction: row;
-	}
-  	.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form .ais-SearchBox-reset {
-    	order: 3;
-      	padding: 8px;
-      	padding-right: 16px;
-	}
-  	.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form .ais-SearchBox-submit {
-    	order: 1;
-      	padding: 8px;
-    	padding-left: 18px;
-	}
-  	.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form .ais-SearchBox-input {
-    	order: 2;
-      	padding-top: 10px;
-	}
-  /* Search Result Products */
-  	.search .ais-results-size-lg .ais-page .ais-results-as-block .ais-hit, .search .ais-page .ais-hit {
-    	border: none;
-    	margin: 0;
-      	margin-left: 0;
-    	padding: 8px;
-	}
-  	.search .ais-page .ais-results-as-block .ais-hit--picture {
-    	width: 100%;
-    	height: 0;
-    	padding-bottom: 100%;
-    	position: relative;
-    	margin-left: 0;
-    	margin-right: 0;
-    	top: 0;
-    	left: 0;
-	}
-  	.search .ais-page .ais-results-as-block .ais-hit--details {
-    	margin-top: 16px;
-	}
-  	ol.ais-Hits-list {
-    	padding: 0;
-	}
-	.search .ais-hit--details {
-		display: flex;
-		flex-direction: column;
-	}
-	.search .ais-hit--details .ais-hit--title {
-		order: 2;
-	}
-	.search .ais-hit--details .ais-hit--subtitle {
-		order: 1;
-		padding-bottom: 4px;
-	}
-	.search .ais-hit--details .ais-hit--price {
-		order: 3;
-		padding-top: 8px;
-	}
+
+.search {
+    max-width: calc(20px * 2 + 2000px);
+    max-width: calc(var(--space-outer) * 2 + var(--max-width));
+    padding-top: 16px;
+}
+
+.search .ais-page .ais-search-header {
+    background: none;
+    margin-top: 0px;
+}
+
+.search .ais-page .ais-input {
+    border: none;
+    display: block;
+}
+
+.search .ais-page .ais-search-box-container {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 8px;
+}
+
+svg.ais-SearchBox-submitIcon {
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.search .ais-page .ais-input--label {
+    display: none;
+}
+
+.ais-page .ais-search-box-container {
+    display: block;
+    background-color: #F8F7F5;
+    border-radius: 50px;
+}
+
+.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form .ais-SearchBox-reset {
+    order: 3;
+    padding: 8px;
+    padding-right: 16px;
+}
+
+.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form .ais-SearchBox-submit {
+    order: 1;
+    padding: 8px;
+    padding-left: 18px;
+}
+
+.ais-page .ais-block .ais-SearchBox form.ais-SearchBox-form .ais-SearchBox-input {
+    order: 2;
+    padding-top: 10px;
+}
+
+
+/* Search Result Products */
+
+.search .ais-results-size-lg .ais-page .ais-results-as-block .ais-hit,
+.search .ais-page .ais-hit {
+    border: none;
+    margin: 0;
+    margin-left: 0;
+    padding: 8px;
+}
+
+.search .ais-page .ais-results-as-block .ais-hit--picture {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    top: 0;
+    left: 0;
+}
+
+.search .ais-page .ais-results-as-block .ais-hit--details {
+    margin-top: 16px;
+}
+
+ol.ais-Hits-list {
+    padding: 0;
+}
+
+.search .ais-hit--details {
+    display: flex;
+    flex-direction: column;
+}
+
+.search .ais-hit--details .ais-hit--title {
+    order: 2;
+}
+
+.search .ais-hit--details .ais-hit--subtitle {
+    order: 1;
+    padding-bottom: 4px;
+}
+
+.search .ais-hit--details .ais-hit--price {
+    order: 3;
+    padding-top: 8px;
+}
+
+
 /* End Search Result Page */
 
-  /* Instant search */  
-  	body .aa-dropdown-menu-size-lg .aa-columns-container {
-    	background-color: #29292c; 
-      	height: 400px;
-  	}
-  
-  
-  	body .algolia-autocomplete {
-        box-sizing: border-box;
-        border: none;
-        z-index: 10000;
-        color: white;
-        text-align: left;
-	}
-  
-  
- 	.aa-dropdown-menu .aa-product-info, .aa-dropdown-menu .aa-product-price {
-        color: white !important;
-    }
-  
-  	body .aa-dropdown-menu .aa-products-empty .aa-no-result { 
-      	color: white;
-    }
-  
-  	body .aa-dropdown-menu a, .aa-dropdown-menu a:hover, .aa-dropdown-menu a:focus, .aa-dropdown-menu a:active {
-      	color: white;
-      	font-weight: bold;
-    }
-  
-  	body .aa-dropdown-menu .aa-collections-header, .aa-dropdown-menu .aa-articles-header, .aa-dropdown-menu .aa-pages-header {
-      	color: white;
-    }
-  
-  
-  	body .aa-dropdown-menu .aa-highlight {
-        color: white;
-        font-weight: bold;
-	}
-  
-  /* moving the algolia search block up and to the right*/
-  	body .algolia-autocomplete {
-      	/*width: 650px !important;*/
-        top: 58px;
-        right: 116px;
-    }
-  
-  /* hiding the 'quick search result' default from shopify */
-  
-  	/* .quick-search__results {
+
+/* Instant search */
+
+body .aa-dropdown-menu-size-lg .aa-columns-container {
+    background-color: #29292c;
+    height: 400px;
+}
+
+body .algolia-autocomplete {
+    box-sizing: border-box;
+    border: none;
+    z-index: 10000;
+    color: white;
+    text-align: left;
+}
+
+.aa-dropdown-menu .aa-product-info,
+.aa-dropdown-menu .aa-product-price {
+    color: white !important;
+}
+
+body .aa-dropdown-menu .aa-products-empty .aa-no-result {
+    color: white;
+}
+
+body .aa-dropdown-menu a,
+.aa-dropdown-menu a:hover,
+.aa-dropdown-menu a:focus,
+.aa-dropdown-menu a:active {
+    color: white;
+    font-weight: bold;
+}
+
+body .aa-dropdown-menu .aa-collections-header,
+.aa-dropdown-menu .aa-articles-header,
+.aa-dropdown-menu .aa-pages-header {
+    color: white;
+}
+
+body .aa-dropdown-menu .aa-highlight {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* moving the algolia search block up and to the right*/
+
+body .algolia-autocomplete {
+    /*width: 650px !important;*/
+    top: 58px;
+    right: 116px;
+}
+
+
+/* hiding the 'quick search result' default from shopify */
+
+
+/* .quick-search__results {
       	visibility: hidden !important; 
     } */
-	/* more specific version for hiding shopify results in instant search */ 
-	.quick-search__container .quick-search__results {
-		height: 0px;
-		overflow: hidden;
-		display: none;
-	}
-  
- 	/* should make the bakcground on mobile and tablet dark */
-	/* 
+
+
+/* more specific version for hiding shopify results in instant search */
+
+.quick-search__container .quick-search__results {
+    height: 0px;
+    overflow: hidden;
+    display: none;
+}
+
+
+/* should make the bakcground on mobile and tablet dark */
+
+
+/* 
   	 @media only screen and (max-width: 1292px) {
 
 		.aa-dropdown-menu-size-lg .aa-columns-container {
@@ -223,30 +293,33 @@ p.swatch-name {
 		}
 	}
 	*/
-	body .algolia-autocomplete {
-		background: #29292c;
-	}
-	
-  
-  /* remove white line between search result and categori */ 
-  
- /* change hover color */
-  body .aa-dropdown-menu .aa-cursor {
-     	background: #dfdfdf; 
-  }
-  
-  /* turn off search bar from hamburger menu to the left from 641px and bigger. 
+
+body .algolia-autocomplete {
+    background: #29292c;
+}
+
+
+/* remove white line between search result and categori */
+
+
+/* change hover color */
+
+body .aa-dropdown-menu .aa-cursor {
+    background: #dfdfdf;
+}
+
+
+/* turn off search bar from hamburger menu to the left from 641px and bigger. 
   	 the shopping cart and the hamburger menu has the same class name */
-  @media only screen and (min-width: 641px) {
+
+@media only screen and (min-width: 641px) {
     body .drawer-menu__search-input {
-      	visibility: hidden;
+        visibility: hidden;
     }
-    
     .drawer-menu__header {
-      	visibility: hidden;
+        visibility: hidden;
     }
-    
     body .drawer-menu__all-links ul:not(.drawer-menu__footer) {
         top: -25px;
     }
-  }
+}
