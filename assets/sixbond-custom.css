@@ -227,8 +227,8 @@ body .algolia-autocomplete {
     text-align: left;
 }
 
-.aa-dropdown-menu .aa-product-info,
-.aa-dropdown-menu .aa-product-price {
+body .aa-dropdown-menu .aa-product-info,
+body .aa-dropdown-menu .aa-product-price {
     color: white !important;
 }
 
@@ -237,16 +237,16 @@ body .aa-dropdown-menu .aa-products-empty .aa-no-result {
 }
 
 body .aa-dropdown-menu a,
-.aa-dropdown-menu a:hover,
-.aa-dropdown-menu a:focus,
-.aa-dropdown-menu a:active {
+body .aa-dropdown-menu a:hover,
+body .aa-dropdown-menu a:focus,
+body .aa-dropdown-menu a:active {
     color: white;
     font-weight: bold;
 }
 
 body .aa-dropdown-menu .aa-collections-header,
-.aa-dropdown-menu .aa-articles-header,
-.aa-dropdown-menu .aa-pages-header {
+body .aa-dropdown-menu .aa-articles-header,
+body .aa-dropdown-menu .aa-pages-header {
     color: white;
 }
 
