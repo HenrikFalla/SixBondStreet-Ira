@@ -281,19 +281,9 @@ body .algolia-autocomplete {
     right: 133px !important;
 }
 
-
-/*.algolia-autocomplete element.style {
-    display: block;
-    margin-left: auto;
-    width: 520px;
-}*/
-
 body .aa-dropdown-menu-size-lg .aa-right-column {
     border-left: none;
 }
-
-
-/* change hover color */
 
 body .aa-dropdown-menu .aa-cursor {
     background: none;
