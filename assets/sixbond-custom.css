@@ -300,6 +300,9 @@ body .aa-dropdown-menu .aa-cursor {
     body .drawer-menu__all-links ul:not(.drawer-menu__footer) {
         top: -25px;
     }
+    .drawer-menu__panel form {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 973px) {
