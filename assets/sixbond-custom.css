@@ -34,7 +34,7 @@ p.swatch-name {
     font-size: 12px;
     max-width: 70px;
 }
-form.product-form {
+form.product-form .product-form__controls-group {
     max-height: 250px;
     overflow: scroll;
 }
