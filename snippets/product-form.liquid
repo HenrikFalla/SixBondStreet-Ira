@@ -48,8 +48,8 @@
                     style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }})"
                     tabindex="0"
                   >
-				  <!-- Custom Henrik --><span>{{ value}}</span><!-- End Custom Henrik -->
                   </a>
+				  <!-- Custom Henrik --><span>{{ value}}</span><!-- End Custom Henrik -->
                 {% endfor %}
                 <select
                   id="Option{{ option.position }}"
