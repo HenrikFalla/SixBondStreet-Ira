@@ -14,8 +14,9 @@ p, span {
     padding-top: 32px;
 }
 .product__color-swatch {
-    width: 60px;
-    height: 60px;
+    width: 22%;
+    height: auto;
+    aspect-ratio: 1;
 }
 .swatch-images {
     display: flex;
@@ -33,7 +34,10 @@ p.swatch-name {
     font-size: 12px;
     max-width: 70px;
 }
-
+form.product-form {
+    max-height: 250px;
+    overflow: scroll;
+}
 /* Article template SixBondStreet */
 /* Header section */
 .article .article__image {
