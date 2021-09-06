@@ -10,7 +10,7 @@
   assign first_3d_model = product.media | where: "media_type", "model" | first
   assign enable_video_looping = section.settings.enable_video_looping
 %}
-
+{%- if product.metafields.inventory.ShappifyHidden == 'true' -%}{%- break -%}{%- endif -%}
 <section
   class="
     product
