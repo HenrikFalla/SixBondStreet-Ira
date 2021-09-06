@@ -49,6 +49,7 @@
                     style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }})"
                     tabindex="0"
                   >
+				  <span>{{ value}}</span>
                   </a>
                 {% endfor %}
                 <select
