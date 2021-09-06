@@ -14,9 +14,11 @@ p, span {
     padding-top: 32px;
 }
 .product__color-swatch {
-    width: 22%;
+    width: calc(100% / 3 - 16px);
     height: auto;
     aspect-ratio: 1;
+    margin: 0;
+    margin: 8px;
 }
 .swatch-images {
     display: flex;
