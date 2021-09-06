@@ -46,7 +46,7 @@
     "search_show_pages": true,
     "search_show_price": true,
     "search_show_vendor": false,
-    "swatch_options": "Color, Colour, Tekstil, Treverk, Stoff",
+    "swatch_options": "Color, Colour, Tekstil, Treverk, Stoff, Tekstilfarge",
     "chip_options": "Size",
     "cart_enable_ajax": true,
     "cart_enable_quick_shop": false,
