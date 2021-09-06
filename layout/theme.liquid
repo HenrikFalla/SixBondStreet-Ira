@@ -66,6 +66,8 @@
   <!-- END SixBondStreet CUSTOM  -->
 
   {{ content_for_header }}
+	{% if template == 'product' and product.metafields.inventory.ShappifyHidden or product.type contains '_HIDDEN_' %}<meta name='robots' content='noindex'>{% endif %}
+	{%- render 'bold-common' -%}
   <!-- Algolia head -->
     {{ 'algolia_config.js' | asset_url | script_tag }}
 

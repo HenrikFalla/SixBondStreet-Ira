@@ -150,6 +150,7 @@
 
             <div class="collection__grid grid">
               {% for product in collection.products %}
+				{%- if product.metafields.inventory.ShappifyHidden == 'true' -%}{%- continue -%}{%- endif -%}
                 <div class="grid__item grid__item--{{ per_row }} animate animate-up">
                   {% render 'product-item' with
                     product: product,

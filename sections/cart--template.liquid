@@ -41,11 +41,12 @@
                   {% if item.original_price > item.final_price %}
                     <s>{{ item.original_price | money }}</s>
                   {% endif %}
-                  {{ item.final_price | money }}
+                  <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" data-item-key="{{item.key}}" style="display:none !important;"></span>{{ item.final_price | money }}
+				  
                 </div>
 
                 {% render 'unit-price' item: item %}
-
+				<span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_properties" style="display:none !important;"></span>
                 {%- assign property_size = item.properties | size -%}
 
                 {% if property_size > 0 %}
@@ -104,7 +105,8 @@
               {% if item.original_line_price > item.final_line_price %}
                 <s>{{ item.original_line_price | money }}</s><br/>
               {% endif %}
-              {{ item.final_line_price | money }}
+              <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" data-item-key="{{item.key}}" style="display:none !important;"></span>{{ item.final_line_price | money }}
+			  
             </div>
           </div>
         {%- endfor -%}
@@ -142,7 +144,8 @@
               {%- endif -%}
             {%- endcapture -%}
             
-            <p class="ff-heading fs-heading-base">{{ cart.total_price | money }}</p>
+            <p class="ff-heading fs-heading-base"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;"></span>
+{{ cart.total_price | money }}</p>
             <p class="cart__footer-tax-note fs-body-small">{{ taxes_shipping_checkout }}</p>
             <div class="cart__footer-actions">
               <input type="submit" name="update" class="btn" value="{{ 'cart.general.update' | t }}">
