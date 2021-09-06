@@ -77,7 +77,8 @@
               {{ current_variant.compare_at_price | money }}
             {% endif %}
           </s>
-          <!-- Custom Stock Display for Product - Henrik -->
+          <p><span class="variant-inventory">{{ current_variant.inventory_quantity }}</span> på lager.</p>
+          {% comment %}<!-- Custom Stock Display for Product - Henrik -->
 		<div class="stock-availability">
 		{% if variant.options > 1 %}
           	{% if current_variant.available == true %}
@@ -112,7 +113,7 @@
     	{% endif %}
   		{% endfor %}
   		</select>
-        <!-- End of custom stock display - Henrik -->
+        <!-- End of custom stock display - Henrik -->{% endcomment %}
           {% render 'unit-price' item: current_variant %}
           {% render 'stock-qty' item: current_variant %}
         </div>
@@ -177,7 +178,14 @@
     {{ product.media | where: 'media_type', 'model' | json }}
   </script>
 {% endunless %}
-
+<!-- #E2S Script må med for å vise antall -->
+<script>
+  var inv_qty = {};
+  {% for var in product.variants %}
+    inv_qty[{{- var.id -}}] = {{ var.inventory_quantity | default: 0 }};
+  {% endfor %}
+ </script>
+ <!-- Slutt Script -->
 
 {% schema %}
   {
