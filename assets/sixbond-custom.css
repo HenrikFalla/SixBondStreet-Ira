@@ -210,3 +210,108 @@ ol.ais-Hits-list {
 
 
 /* End Search Result Page */
+
+
+/* Instant search */
+
+body .aa-dropdown-menu-size-lg .aa-columns-container {
+    background-color: #29292c;
+    height: 400px;
+}
+
+body .algolia-autocomplete {
+    box-sizing: border-box;
+    border: none;
+    z-index: 10000;
+    color: white;
+    text-align: left;
+}
+
+body .aa-dropdown-menu .aa-product-info,
+body .aa-dropdown-menu .aa-product-price {
+    color: white;
+}
+
+body .aa-dropdown-menu .aa-products-empty .aa-no-result {
+    color: white;
+}
+
+body .aa-dropdown-menu a,
+body .aa-dropdown-menu a:hover,
+body .aa-dropdown-menu a:focus,
+body .aa-dropdown-menu a:active {
+    color: white;
+    font-weight: bold;
+}
+
+body .aa-dropdown-menu .aa-collections-header,
+body .aa-dropdown-menu .aa-articles-header,
+body .aa-dropdown-menu .aa-pages-header {
+    color: white;
+}
+
+body .aa-dropdown-menu .aa-highlight {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* moving the algolia search block up and to the right*/
+
+body .algolia-autocomplete {
+    top: 58px;
+    right: 116px;
+}
+
+
+/* more specific version for hiding shopify results in instant search */
+
+.quick-search__container .quick-search__results {
+    height: 0px;
+    overflow: hidden;
+    display: none;
+}
+
+
+/* makes the bakcground on mobile and tablet dark */
+
+body .algolia-autocomplete {
+    background: #29292c;
+    width: 520px !important;
+    right: 133px !important;
+}
+
+body .aa-dropdown-menu-size-lg .aa-right-column {
+    border-left: none;
+}
+
+body .aa-dropdown-menu .aa-cursor {
+    background: none;
+}
+
+.aa-dropdown-menu .aa-cursor:hover {
+    text-decoration: underline;
+}
+
+
+/* turn off search bar from hamburger menu to the left from 641px and bigger. 
+  	 the shopping cart and the hamburger menu has the same class name */
+
+@media only screen and (min-width: 641px) {
+    body .drawer-menu__search-input {
+        visibility: hidden;
+    }
+    .drawer-menu__header {
+        visibility: hidden;
+    }
+    .drawer-menu__panel form {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 973px) {
+    body .algolia-autocomplete {
+        top: 58px;
+        right: 45px;
+    }
+}
