@@ -36,7 +36,7 @@ p.swatch-name {
 }
 form.product-form .product-form__controls-group {
     max-height: 250px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 /* Article template SixBondStreet */
 /* Header section */
