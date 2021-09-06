@@ -40,6 +40,17 @@ form.product-form .product-form__controls-group {
     max-height: 250px;
     overflow-y: scroll;
 }
+form.product-form .product-form__controls-group::-webkit-scrollbar {
+    width: 8px;
+}
+form.product-form .product-form__controls-group::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #f8f7f5;
+}
+form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
+    background: #d7d1c6;
+    border-radius: 10px;
+}
 /* Article template SixBondStreet */
 /* Header section */
 .article .article__image {
