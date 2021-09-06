@@ -88,15 +88,16 @@
             {% endif %}
           </s>
           <!-- SixBondStreet CUSTOM - Henrik -->
+		  <span class="variant-inventory">
 			{% if variant.options > 1 %}
 				{% if current_variant.available == true %}
 					{% if current_variant.inventory_quantity > 0 %}
-						<span data-stock-availability class="variant-inventory">{{ current_variant.inventory_quantity }} på lager.</span>
+						{{ current_variant.inventory_quantity }} på lager.
 					{% else %}
-						<span data-stock-availability class="variant-inventory">Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}</span>
+						Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}
 					{% endif %}
 				{% else %}
-					<span data-stock-availability class="variant-inventory">Utsolgt</span>
+					Utsolgt
 				{% endif %}          	
 			{% else %}
 				{% if current_variant.available == true %}
@@ -109,6 +110,7 @@
 					<span data-stock-availability>Utsolgt</span>
 				{% endif %}
 			{% endif %}
+			</span>
 			<select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
 				{% for variant in product.variants %}
 				{% if variant.available %}
