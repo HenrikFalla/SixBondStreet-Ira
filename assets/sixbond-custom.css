@@ -111,6 +111,10 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 .product-item__text .product__vendor {
     margin-bottom: 0;
 }
+/* Remove default Badges */
+.grid__item .product-item__meta .product-item__badges {
+    display: none;
+}
 /* End Catalog Page */
 /* Search Result Page */
 /* Input Search */
