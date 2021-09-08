@@ -259,8 +259,9 @@ body .aa-dropdown-menu .aa-highlight {
 /* moving the algolia search block up and to the right*/
 
 body .algolia-autocomplete {
-    top: 58px;
-    right: 116px;
+    position: fixed;
+    top: 56.9px;
+    left: 24.1%;
 }
 
 
