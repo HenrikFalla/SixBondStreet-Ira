@@ -313,3 +313,9 @@ body .quick-search.active.visible {
         right: 45px;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    body span.algolia-autocomplete {
+        max-width: 75vw;
+    }
+}
