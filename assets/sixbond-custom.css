@@ -293,6 +293,10 @@ body .aa-dropdown-menu .aa-cursor {
     text-decoration: underline;
 }
 
+body .quick-search.active.visible {
+    width: 70%;
+}
+
 
 /* turn off search bar from hamburger menu to the left from 641px and bigger. 
   	 the shopping cart and the hamburger menu has the same class name */
