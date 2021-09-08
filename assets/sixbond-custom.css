@@ -299,6 +299,9 @@ body .quick-search.active.visible {
     .drawer-menu__panel form {
         display: none;
     }
+    body span.algolia-autocomplete {
+        width: 335px;
+    }
 }
 
 @media only screen and (min-width: 973px) {
