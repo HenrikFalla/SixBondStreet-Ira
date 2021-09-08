@@ -301,12 +301,6 @@ body .quick-search.active.visible {
     }
 }
 
-@media only screen and (max-width: 640px) {
-    body span.algolia-autocomplete {
-        width: 335px !important;
-    }
-}
-
 @media only screen and (min-width: 973px) {
     body span.algolia-autocomplete {
         top: 58px;
@@ -314,7 +308,7 @@ body .quick-search.active.visible {
     }
 }
 
-@media only screen and (max-width: 339px) {
+@media only screen and (max-width: 640px) {
     body span.algolia-autocomplete {
         max-width: 75vw;
     }
