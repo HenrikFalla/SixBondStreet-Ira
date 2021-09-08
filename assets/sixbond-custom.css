@@ -1,6 +1,7 @@
 /* Settings */
 :root {
-	--max-width-large-page: 1200px
+	--max-width-large-page: 1200px;
+	--sxbs-sale-color: #ff7d25;
 }
 /* TYPOGRAPHY */
 /* h1, h2, h3, h4, h5, h6 {
