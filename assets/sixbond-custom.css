@@ -219,15 +219,6 @@ body .aa-dropdown-menu-size-lg .aa-columns-container {
     height: 400px;
 }
 
-
-/*body .algolia-autocomplete {
-    box-sizing: border-box;
-    border: none;
-    z-index: 10000;
-    color: white;
-    text-align: left;
-}*/
-
 body .aa-dropdown-menu .aa-product-info,
 body .aa-dropdown-menu .aa-product-price {
     color: white;
@@ -262,6 +253,8 @@ body .aa-dropdown-menu .aa-highlight {
 body span.algolia-autocomplete {
     position: fixed;
     background: #29292c;
+    color: white;
+    border: none;
     width: 70%;
     top: 56.9px;
     left: 24.1%;
