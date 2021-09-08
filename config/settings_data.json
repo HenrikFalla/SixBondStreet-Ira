@@ -38,7 +38,7 @@
     "meta_letter_spacing": 75,
     "meta_base_size": 14,
     "font_body": "raleway_n4",
-    "body_letter_spacing": 25,
+    "body_letter_spacing": 75,
     "body_base_size": 14,
     "enable_section_borders": false,
     "corner_radius": 4,
@@ -543,7 +543,8 @@
           "enabled": true,
           "heading": "Recommended",
           "per_row": 3,
-          "rows": 1
+          "rows": 1,
+          "aspect_ratio": "natural"
         }
       },
       "collection--template": {
