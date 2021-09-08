@@ -89,7 +89,7 @@
 			{%- assign amount_saved = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price -%}
           <span class="sale sxbs-on-sale">{{ product.price | money }}<span>
           {% render 'unit-price' item: current_variant %}
-		  <span class"on-sale saved_percentage">{{ amount_saved | round }}% avslag</span>
+		  <span class="on-sale saved_percentage">{{ amount_saved | round }}% avslag</span>
         {% endif %}
 
       {% else %}
