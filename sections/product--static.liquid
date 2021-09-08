@@ -79,7 +79,11 @@
         <h1 class="product-single__title ff-heading fs-heading-base c-heading">{{ product.title }}</h1>
 
         <div class="product__price fs-body-base">
-          <span data-price>{{ current_variant.price | money }}</span>
+			{% if current_variant.compare_at_price > current_variant.price %}
+				<span data-price class="sxbs-on-sale">{{ current_variant.price | money }}</span>
+			{% else %}
+				<span data-price>{{ current_variant.price | money }}</span>
+			{% endif %}
 
           <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
           <s data-compare-price>
@@ -87,7 +91,7 @@
               {{ current_variant.compare_at_price | money }}
             {% endif %}
           </s>
-          <!-- SixBondStreet CUSTOM - Henrik -->
+          {% comment %} SixBondStreet CUSTOM - Henrik {% endcomment %}
 			{% if variant.options > 1 %}
 				{% if current_variant.available == true %}
 					{% if current_variant.inventory_quantity > 0 %}
@@ -120,7 +124,7 @@
 			{% endif %}
 			{% endfor %}
 			</select>
-        <!-- END SixBondStreet CUSTOM - Henrik -->
+        {% comment %} End SixBondStreet CUSTOM - Henrik {% endcomment %}
           {% render 'unit-price' item: current_variant %}
           {% render 'stock-qty' item: current_variant %}
         </div>
