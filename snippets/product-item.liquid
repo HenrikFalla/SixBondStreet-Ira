@@ -86,8 +86,10 @@
 		  </span>
 		{% comment %} END CUSTOM SixBondStreet Henrik {% endcomment %}
         {% else %}
+			{% assign amount_saved = product.price / product.compare_at_price * 10 %}
           <span class="sale sxbs-on-sale">{{ product.price | money }}<span>
           {% render 'unit-price' item: current_variant %}
+		  <span class"on-sale saved_percentage">{{ amount_saved }}% avslag</span>
         {% endif %}
 
       {% else %}
