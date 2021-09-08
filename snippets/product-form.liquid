@@ -26,7 +26,11 @@
     <div class="product-form__controls-group">
       {% for option in product.options_with_values %}
         {%- assign option_name = option.name | downcase -%}
-
+		{% comment %}
+			SixBondStreet Custom Henrik
+			check if variant is sold out
+		{% endcomment %}
+		
         <div class="pf-container">
           <div class="pf-element js-enabled {% if button_options contains option_name %}pf-element--flexible{% endif %}">
             <label for="Option{{ option.position }}" class="pf-label fs-body-base">
@@ -38,17 +42,33 @@
               ProductForm, registered as an option input, and made available
               at ProductForm.optionsInputs
             {% endcomment %}
+			{% comment %}
+				Sixbondstreet Custom 
+			{% endcomment %}
+			{% assign option_index = forloop.index %}
+			{% comment %}
+				Sixbondstreet Custom 
+			{% endcomment %}
             {%- if swatch_options contains option_name and show_swatches-%}
               <div class="product-form__color-swatches" data-option-buttons>
                 {% for value in option.values %}
-                  <a
-                    href="#"
-                    data-button="{{ value }}"
-                    class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}"
-                    style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }})"
-                    tabindex="0"
-                  >
-                  </a>
+					{% comment %}
+						Sixbondstreet Custom 
+					{% endcomment %}
+					{% unless product.variants[forloop.index0].available  %}
+						<p>Utsolgt</p>
+					{% endunless %}
+					{% comment %}
+						Sixbondstreet Custom 
+					{% endcomment %}
+					<a
+						href="#"
+						data-button="{{ value }}"
+						class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}"
+						style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }})"
+						tabindex="0"
+					>
+					</a>
                 {% endfor %}
                 <select
                   id="Option{{ option.position }}"
