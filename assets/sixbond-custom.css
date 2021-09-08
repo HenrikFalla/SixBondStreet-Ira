@@ -277,8 +277,8 @@ body .algolia-autocomplete {
 
 body .algolia-autocomplete {
     background: #29292c;
-    width: 520px !important;
-    right: 133px !important;
+    width: 70%;
+    right: 133px;
 }
 
 body .aa-dropdown-menu-size-lg .aa-right-column {
