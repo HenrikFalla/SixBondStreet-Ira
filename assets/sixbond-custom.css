@@ -260,6 +260,8 @@ body .aa-dropdown-menu .aa-highlight {
 
 body .algolia-autocomplete {
     position: fixed;
+    background: #29292c;
+    width: 70%;
     top: 56.9px;
     left: 24.1%;
 }
@@ -271,15 +273,6 @@ body .algolia-autocomplete {
     height: 0px;
     overflow: hidden;
     display: none;
-}
-
-
-/* makes the bakcground on mobile and tablet dark */
-
-body .algolia-autocomplete {
-    background: #29292c;
-    width: 70%;
-    right: 133px;
 }
 
 body .aa-dropdown-menu-size-lg .aa-right-column {
