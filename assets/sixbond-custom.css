@@ -13,6 +13,12 @@ p, span {
 } */
 .sxbs-on-sale {
 	color: var(--sxbs-sale-color);
+	font-weight: bold;
+}
+span.on-sale.saved_percentage {
+    display: block;
+    font-weight: bold;
+    color: var(--sxbs-sale-color);
 }
 /* Swatches */
 .product-form__color-swatches {
