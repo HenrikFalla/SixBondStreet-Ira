@@ -78,9 +78,17 @@
         <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
         <s class="t-subdued">{{ product.compare_at_price | money }}</s>
 
-        {% if product.price_varies %}
+		{% comment %}
+		Original
+		{% if product.price_varies %}
           {%- assign sale_price = product.price | money -%}
           {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+		{% endcomment %}
+		{% comment %} CUSTOM SixBondStreet Henrik {% endcomment %}
+        {% if product.price_varies %}
+          {%- assign sale_price = product.price | money -%}
+          {{ 'products.product.from_lowest_price_html' | t: lowest_price: sale_price }}
+		{% comment %} END CUSTOM SixBondStreet Henrik {% endcomment %}
         {% else %}
           <span class="sale">{{ product.price | money }}<span>
           {% render 'unit-price' item: current_variant %}
