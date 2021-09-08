@@ -87,7 +87,9 @@
 		{% comment %} CUSTOM SixBondStreet Henrik {% endcomment %}
         {% if product.price_varies %}
           {%- assign sale_price = product.price | money -%}
+		  <span class="sxbs-on-sale">
           {{ 'products.product.from_lowest_price_html' | t: lowest_price: sale_price }}
+		  </span>
 		{% comment %} END CUSTOM SixBondStreet Henrik {% endcomment %}
         {% else %}
           <span class="sale">{{ product.price | money }}<span>
