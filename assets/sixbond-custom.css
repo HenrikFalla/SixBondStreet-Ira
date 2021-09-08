@@ -303,7 +303,7 @@ body .quick-search.active.visible {
 
 @media only screen and (max-width: 640px) {
     body span.algolia-autocomplete {
-        width: 335px;
+        width: 335px !important;
     }
 }
 
