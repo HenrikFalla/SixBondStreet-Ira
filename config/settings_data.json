@@ -39,7 +39,7 @@
     "font_body": "raleway_n4",
     "body_letter_spacing": 25,
     "enable_section_borders": false,
-    "corner_radius": 0,
+    "corner_radius": 4,
     "enable_page_transitions": true,
     "search_max_result_size": 4,
     "search_show_articles": true,
