@@ -10,6 +10,9 @@
 p, span {
 	letter-spacing: 1px;
 } */
+.sxbs-on-sale {
+	color: var(--sxbs-sale-color);
+}
 /* Swatches */
 .product-form__color-swatches {
     padding-top: 32px;
