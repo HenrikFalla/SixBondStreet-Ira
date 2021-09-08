@@ -55,7 +55,17 @@
 					<a
 						href="#"
 						data-button="{{ value }}"
-						class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}{% comment %}Sixbondstreet Custom  endcomment %}{% unless product.variants[forloop.index0].available  %}sxbs-variant-sold-out{% endunless %}{% comment %}Sixbondstreet Custom {% endcomment %}"
+						class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}
+						{% comment %}
+							Sixbondstreet Custom 
+						{% endcomment %}
+						{% unless product.variants[forloop.index0].available  %}
+							sxbs-variant-sold-out
+						{% endunless %}
+						{% comment %}
+							Sixbondstreet Custom 
+						{% endcomment %}
+						"
 						style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }})"
 						tabindex="0"
 					>
