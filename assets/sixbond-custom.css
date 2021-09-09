@@ -310,6 +310,7 @@ body .quick-search.active.visible {
 
 @media only screen and (max-width: 640px) {
     body span.algolia-autocomplete {
-        max-width: 75vw;
+        width: var(--menu-width);
+        max-width: var(--menu-max-width);
     }
 }
