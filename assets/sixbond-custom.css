@@ -255,9 +255,6 @@ body span.algolia-autocomplete {
     background: #29292c;
     color: white;
     border: none;
-    width: 70% !important;
-    top: 58px;
-    left: 91.85px;
 }
 
 
@@ -310,7 +307,8 @@ body .quick-search.active.visible {
 
 @media only screen and (max-width: 640px) {
     body span.algolia-autocomplete {
-        width: var(--menu-width);
+        width: var(--menu-width) !important;
         max-width: var(--menu-max-width);
+        left: 0 !important;
     }
 }
