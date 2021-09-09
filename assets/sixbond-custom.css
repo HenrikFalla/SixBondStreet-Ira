@@ -255,9 +255,9 @@ body span.algolia-autocomplete {
     background: #29292c;
     color: white;
     border: none;
-    width: 70%;
-    top: 56.9px;
-    left: 24.1%;
+    width: 70% !important;
+    top: 58px;
+    left: 91.85px;
 }
 
 
