@@ -40,6 +40,9 @@ span.on-sale.saved_percentage {
 	margin: 0;
 	margin-bottom: 8px;
 }
+.variant__option span.variant__title {
+    font-size: 14px;
+}
 .swatch-images {
     display: flex;
     flex-direction: column;
