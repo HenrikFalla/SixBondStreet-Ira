@@ -203,14 +203,16 @@
           "1600315401018-0": {
             "type": "image",
             "settings": {
-              "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0582\/7490\/6309\/files\/Fibreguard.mp4",
+              "image": "shopify:\/\/shop_images\/Varens_TrenderArtboard_1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Varens_TrenderArtboard_2.jpg",
+              "video_url": "",
               "meta": "",
-              "title": "This is your slideshow",
-              "subheading": "<p>Use it to make a dramatic first impression with high-quality imagery and minimal text. Using the button below to link to whatever is most appropriate.<\/p>",
+              "title": "Høstens Interiørtrender 2021",
+              "subheading": "<p><br\/>Høstens trender for 2021 bærer tydelig preg av bærekraft, naturmaterialer og godt håndverk. Vi har blitt mer selektive til hva som kommer over dørterskelen.<br\/><br\/><\/p>",
               "max_width_subheading": 26,
-              "link_text": "Shop now",
+              "link_text": "Les mer her",
               "link": "#",
-              "alignment": "left_center"
+              "alignment": "center_center"
             }
           }
         },
