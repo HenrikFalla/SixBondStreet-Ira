@@ -43,6 +43,11 @@ span.on-sale.saved_percentage {
 .variant__option span.variant__title {
     font-size: 14px;
 }
+@media screen and (max-width: 1024) {
+	.variant__option span.variant__title {
+		font-size: 12px;
+	}
+}
 .swatch-images {
     display: flex;
     flex-direction: column;
