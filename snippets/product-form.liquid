@@ -52,17 +52,15 @@
             {%- if swatch_options contains option_name and show_swatches-%}
               <div class="product-form__color-swatches" data-option-buttons>
                 {% for value in option.values %}
+					{% if product.variants[forloop.index0].available %}
 					<div class="variant__option">
+					{% else %}
+					<div class="variant__option sxbs-variant-sold-out">
+					{% endif %}
 					<a
 						href="#"
 						data-button="{{ value }}"
-						class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}
-						{% comment %} Sixbondstreet Custom {% endcomment %}
-						{% unless product.variants[forloop.index0].available  %}
-							sxbs-variant-sold-out
-						{% endunless %}
-						{% comment %} End Sixbondstreet Custom {% endcomment %}
-						"
+						class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}"
 						style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }})"
 						tabindex="0"
 					>
