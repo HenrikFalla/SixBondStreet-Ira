@@ -62,7 +62,7 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
     background: #d7d1c6;
     border-radius: 10px;
 }
-.product-form__color-swatches a.sxbs-variant-sold-out {
+.product-form__color-swatches .sxbs-variant-sold-out {
     display: none;
 }
 /* Article template SixBondStreet */
