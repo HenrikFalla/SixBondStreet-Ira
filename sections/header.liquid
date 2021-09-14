@@ -89,7 +89,7 @@
   <div class="header__right">
 	{% comment %} Custom SixBondStreet Henrik {% endcomment %}
 	{%- if style == 'inline' -%}
-		<div class="header__links header__secondary" data-navigation>
+		<div class="header__links header__secondary {{ secondary_menu.handle }}" data-navigation>
 		{% render 'navigation-alt' with secondary_menu: links, mega_navs: blocks %}
 		</div>
 	{%- endif -%}
