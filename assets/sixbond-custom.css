@@ -41,11 +41,11 @@ span.on-sale.saved_percentage {
 	margin-bottom: 8px;
 }
 .variant__option span.variant__title {
-    font-size: 14px;
+    font-size: 12px;
 }
-@media (max-width: 1024) {
+@media (min-width: 1024px) {
 	.variant__option span.variant__title {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 .swatch-images {
