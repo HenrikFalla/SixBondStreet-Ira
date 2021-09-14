@@ -16,6 +16,7 @@
 
   assign blocks = section.blocks
   assign links = linklists[menu].links
+  assign links_alt = linklists[secondary_menu].links
 %}
 
 {% capture header_classes %}
@@ -90,7 +91,7 @@
 	{% comment %} Custom SixBondStreet Henrik {% endcomment %}
 	{%- if style == 'inline' -%}
 		<div class="header__links header__secondary {{ secondary_menu.handle }}" data-navigation>
-		{% render 'navigation-alt' with secondary_menu: links, mega_navs: blocks %}
+		{% render 'navigation-alt' with secondary_menu: links_alt, mega_navs: blocks %}
 		</div>
 	{%- endif -%}
 	{% comment %} End Custom SixBondStreet Henrik {% endcomment %}
