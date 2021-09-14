@@ -24,12 +24,21 @@ span.on-sale.saved_percentage {
 .product-form__color-swatches {
     padding-top: 32px;
 }
-.product__color-swatch {
+.product__color-swatch, .variant__option {
     width: calc(100% / 3 - 16px);
     height: auto;
     aspect-ratio: 1;
     margin: 0;
     margin: 8px;
+}
+.variant__option {
+	display: flex;
+	flex-direction: column;
+}
+.variant__option .product__color-swatch {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 8px;
 }
 .swatch-images {
     display: flex;
