@@ -3,6 +3,7 @@
   assign logo_max_width = section.settings.logo_max_width
   assign logo_position = section.settings.logo_position
   assign menu = section.settings.menu
+  assing secondary_menu = section.settings.alt_menu
   assign style = section.settings.style
 
   assign transparent_home = section.settings.enable_transparent_home
@@ -84,7 +85,11 @@
       {% render 'navigation' with menu: links, mega_navs: blocks %}
     </div>
   {%- endif -%}
-
+  {%- if style == 'inline' -%}
+    <div class="header__links header__secondary" data-navigation>
+      {% render 'navigation' with alt_menu: links, mega_navs: blocks %}
+    </div>
+  {%- endif -%}
 
   <div class="header__right">
     <a class="header__icon-touch header__icon-touch--search no-transition" href="{{ routes.search_url }}" data-search>
