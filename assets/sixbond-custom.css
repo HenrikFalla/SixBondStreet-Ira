@@ -43,7 +43,7 @@ span.on-sale.saved_percentage {
 .variant__option span.variant__title {
     font-size: 12px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
 	.variant__option span.variant__title {
 		font-size: 14px;
 	}
