@@ -20,6 +20,10 @@ span.on-sale.saved_percentage {
     font-weight: bold;
     color: var(--sxbs-sale-color);
 }
+/* Product Page */
+.product__policies {
+    display: none;
+}
 /* Swatches */
 .product-form__color-swatches {
     padding-top: 32px;
