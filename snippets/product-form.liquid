@@ -52,6 +52,7 @@
             {%- if swatch_options contains option_name and show_swatches-%}
               <div class="product-form__color-swatches" data-option-buttons>
                 {% for value in option.values %}
+					<div class="variant__option">
 					<a
 						href="#"
 						data-button="{{ value }}"
@@ -68,6 +69,7 @@
 					</a>
 					{% comment %} Custom SixBondStreet Henrik {% endcomment %}
 					<span class="variant__title">{{ value }}</span>
+					</div>
 					{% comment %} End Custom SixBondStreet Henrik {% endcomment %}
                 {% endfor %}
                 <select
