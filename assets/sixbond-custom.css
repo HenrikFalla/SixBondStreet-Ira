@@ -91,7 +91,7 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 		display: flex;
 		align-items: center;
 		flex-shrink: 1;
-		overflow-x: scroll;
+		overflow-x: hidden;
 		-ms-overflow-style: none;
 		scrollbar-width: none;
 	}
