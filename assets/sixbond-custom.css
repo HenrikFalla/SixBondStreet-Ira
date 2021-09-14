@@ -83,6 +83,18 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 		margin: 20px auto;
 	}
 }
+.header__links_alt {
+    display: none;
+}
+@media (min-width: 60em)
+.header__links_alt {
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 /* end header section */
 /* article content */
 .article__content {
