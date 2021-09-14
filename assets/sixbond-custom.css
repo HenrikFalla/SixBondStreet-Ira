@@ -25,7 +25,7 @@ span.on-sale.saved_percentage {
     padding-top: 32px;
 }
 .product__color-swatch, .variant__option {
-    width: calc(100% / 3 - 16px);
+    width: calc(100% / 4 - 16px);
     height: auto;
     aspect-ratio: 1;
     margin: 0;
