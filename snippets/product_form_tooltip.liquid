@@ -8,7 +8,7 @@
 				<script>
 					tippy('#{{ value | remove:" " }}', {
 						trigger: 'mouseenter focus',
-						content: '<div',
+						content: '{{ value }}',
 						allowHTML: true,
 					});
 				</script>
