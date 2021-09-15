@@ -277,6 +277,10 @@ p, span {
             padding: 0 24px;
         }
         
+        .aa-dropdown-menu-size-sm .aa-right-column {
+            padding: 24px 12px 0 24px;
+        }
+        
         @media only screen and (min-width: 641px) {
             body span.algolia-autocomplete {
                 width: 70vw !important;
