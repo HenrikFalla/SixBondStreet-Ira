@@ -6,7 +6,7 @@
 		{% for value in option.values %}
 			{% if product.variants[forloop.index0].available %}
 				<script>
-					tippy('#{{ value }}', {
+					tippy('#{{ value | remove:" " }}', {
 						content: 'Tooltip test {{ value | remove:" " }}',
 						allowHTML: true,
 					});
