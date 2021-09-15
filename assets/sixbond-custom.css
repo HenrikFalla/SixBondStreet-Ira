@@ -303,7 +303,7 @@ body span.algolia-autocomplete {
     .drawer-menu__panel form {
         display: none;
     }
-    body .aa-left-column {
+    body .aa-dropdown-menu-size-sm .aa-left-column {
         padding: 0 24px;
     }
 }
