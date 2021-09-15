@@ -335,6 +335,12 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	}
 /* End Search Result Page */
 /* Tippy Tooltip */
+.tippy-box {
+	background-color: #29292c;
+}
+.tippy-arrow {
+	color: #29292c;
+}
 .tippy-content {
 	max-width: 250px;
 	padding: 8px;
