@@ -307,10 +307,10 @@ body span.algolia-autocomplete {
 
 @media only screen and (min-width: 641px) {
     body span.algolia-autocomplete {
-        width: 70vw!important;
+        width: 70vw !important;
         max-width: calc(100vw - 50px);
-        right: 132px!important;
-        left: auto!important;
+        right: 132px !important;
+        left: auto !important;
     }
 }
 
