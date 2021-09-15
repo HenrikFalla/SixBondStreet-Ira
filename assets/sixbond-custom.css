@@ -69,11 +69,11 @@ p.swatch-name {
     font-size: 12px;
     max-width: 70px;
 }
-form.product-form .product-form__controls-group {
+/* form.product-form .product-form__controls-group {
     max-height: 300px;
     overflow-y: scroll;
 	overflow-x: hidden;
-}
+} */
 form.product-form .product-form__controls-group::-webkit-scrollbar {
     width: 8px;
 }
