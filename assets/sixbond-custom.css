@@ -334,3 +334,20 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 		opacity: 1;
 	}
 /* End Search Result Page */
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+/* IE < 8 */
