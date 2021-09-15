@@ -269,8 +269,7 @@ p, span {
         .drawer-menu__panel form {
             display: none;
         }
-        body .aa-dropdown-menu-size-xs .aa-left-column,
-        .aa-dropdown-menu-size-sm .aa-left-column {
+        body .aa-left-column {
             padding: 0 24px;
         }
     }
