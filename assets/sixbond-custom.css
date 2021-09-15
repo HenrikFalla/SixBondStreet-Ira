@@ -271,7 +271,7 @@ p, span {
         }
         body .aa-dropdown-menu-size-xs .aa-without-powered-by .aa-left-column,
         .aa-dropdown-menu-size-sm .aa-without-powered-by .aa-left-column {
-            padding: 0 24px;
+            padding: 0 24px !important;
         }
     }
     
