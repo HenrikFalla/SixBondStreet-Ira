@@ -446,12 +446,13 @@
           "1601240654390-1": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN.jpg",
               "video_url": "",
               "meta": "",
               "title": "This is the Collage",
-              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "subheading": "<p><br\/>Personlig shoppingopplevelse online. Våre konsulenter er nå online og klare for å møte deg. Velg mellom online videokonsultasjon, e-post eller telefon.<br\/><br\/><\/p>",
               "max_width_subheading": 24,
-              "link_text": "Shop the collection",
+              "link_text": "Book time i dag",
               "link": "#",
               "alignment": "left_split",
               "opacity_overlay": 20
@@ -464,8 +465,8 @@
         ],
         "settings": {
           "color_overlay": "#191919",
-          "color_heading": "#020202",
-          "color_subheading": "#131313",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
           "color_background_button": "#000000",
           "color_text_button": "#ffffff",
           "enable_full_width": true
