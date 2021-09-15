@@ -7,9 +7,9 @@
 			{% if product.variants[forloop.index0].available %}
 				<script>
 					tippy('#{{ value | remove:" " }}', {
+						trigger: 'mouseenter focus',
 						content: '<div',
 						allowHTML: true,
-						trigger: click,
 					});
 				</script>
 			{% endif %}
