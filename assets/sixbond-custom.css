@@ -303,8 +303,7 @@ body span.algolia-autocomplete {
     .drawer-menu__panel form {
         display: none;
     }
-    .aa-dropdown-menu-size-xs .aa-without-powered-by .aa-left-column,
-    .aa-dropdown-menu-size-sm .aa-without-powered-by .aa-left-column {
+    body .aa-left-column {
         padding: 0 24px !important;
     }
 }
