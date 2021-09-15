@@ -283,6 +283,8 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
     	margin-right: 0;
     	top: 0;
     	left: 0;
+		overflow: hidden;
+		border-radius: 5px;
 	}
   	.search .ais-page .ais-results-as-block .ais-hit--details {
     	margin-top: 16px;
