@@ -309,7 +309,7 @@ body span.algolia-autocomplete {
     body span.algolia-autocomplete {
         width: 70vw !important;
         max-width: calc(100vw - 50px);
-        right: 133px !important;
+        right: 132.5px !important;
         left: auto !important;
     }
 }
@@ -318,6 +318,6 @@ body span.algolia-autocomplete {
     body span.algolia-autocomplete {
         width: 70vw !important;
         max-width: calc(100vw - 50px);
-        right: 133px !important;
+        right: 132.5px !important;
     }
 }
