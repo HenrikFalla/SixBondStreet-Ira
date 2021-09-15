@@ -68,12 +68,14 @@
 					{% comment %} Custom SixBondStreet Henrik {% endcomment %}
 					<span class="variant__title">{{ value }}</span>
 					</div>
+                    {% if product.variants[forloop.index0].available %}
                     <div class="tooltip__container">
                         <div class="tooltip__content">
                             <img class="tooltip__image" src="{{ value | handle | append: '.' | append: file_extension | file_url }}" alt="{{ value }}"></img>
                             <span class="tooltip__name">{{ value }}</span>
                         </div>
                     </div>
+                    {% endif %}
 					{% comment %} End Custom SixBondStreet Henrik {% endcomment %}
                 {% endfor %}
                 <select
