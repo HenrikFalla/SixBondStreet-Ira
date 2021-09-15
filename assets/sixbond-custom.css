@@ -299,20 +299,18 @@ body .quick-search.active.visible {
     }
 }
 
+body span.algolia-autocomplete {
+    width: 355px !important;
+    max-width: calc(100vw - 50px);
+    left: 0 !important;
+}
+
 @media only screen and (min-width: 641px) {
     body span.algolia-autocomplete {
         width: 70vw!important;
         max-width: calc(100vw - 50px);
         right: 132px!important;
         left: auto!important;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    body span.algolia-autocomplete {
-        width: 355px !important;
-        max-width: calc(100vw - 50px);
-        left: 0 !important;
     }
 }
 
