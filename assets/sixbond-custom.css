@@ -256,6 +256,10 @@ p, span {
         max-width: calc(100vw - 50px);
         left: 0 !important;
     }
+    
+    body .aa-left-column {
+        padding: 0 24px;
+    }
     /* turn off search bar from hamburger menu to the left from 641px and bigger. 
   	 the shopping cart and the hamburger menu has the same class name */
     
@@ -268,9 +272,6 @@ p, span {
         }
         .drawer-menu__panel form {
             display: none;
-        }
-        body .aa-left-column {
-            padding: 0 24px;
         }
     }
     
