@@ -279,7 +279,7 @@ body .aa-dropdown-menu .aa-cursor {
 }
 
 body .quick-search.active.visible {
-    width: 70%;
+    max-width: calc(100vw - 50px);
 }
 
 
