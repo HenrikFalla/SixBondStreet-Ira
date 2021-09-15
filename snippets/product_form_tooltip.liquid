@@ -1,0 +1,17 @@
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+{% unless product.has_only_default_variant %}
+	{% for option in product.options_with_values %}
+		{% assign option_index = forloop.index %}
+		{% for value in option.values %}
+			{% if product.variants[forloop.index0].available %}
+				<script>
+					tippy('#{{ value }}', {
+						content: 'Tooltip test {{ value }}',
+						allowHTML: true,
+					});
+				</script>
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+{% endunless %}
