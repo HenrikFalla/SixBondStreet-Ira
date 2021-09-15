@@ -50,7 +50,7 @@
 				Sixbondstreet Custom 
 			{% endcomment %}
             {%- if swatch_options contains option_name and show_swatches-%}
-              <div class="product-form__color-swatches" data-option-buttons>
+              <div class="product-form__color-swatches clearfix" data-option-buttons>
                 {% for value in option.values %}
 					{% if product.variants[forloop.index0].available %}
 					<div class="variant__option">
