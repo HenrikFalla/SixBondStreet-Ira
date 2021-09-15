@@ -206,8 +206,8 @@
               "image": "shopify:\/\/shop_images\/Varens_TrenderArtboard_1.jpg",
               "mobile_image": "shopify:\/\/shop_images\/Varens_TrenderArtboard_2.jpg",
               "video_url": "",
-              "meta": "",
-              "title": "Høstens Interiørtrender 2021",
+              "meta": "2021",
+              "title": "Høstens Interiørtrender",
               "subheading": "<p><br\/>Høstens trender for 2021 bærer tydelig preg av bærekraft, naturmaterialer og godt håndverk. Vi har blitt mer selektive til hva som kommer over dørterskelen.<br\/><br\/><\/p>",
               "max_width_subheading": 26,
               "link_text": "Les mer her",
@@ -431,12 +431,13 @@
           "1601240654390-0": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/NyheterArtboard_3.jpg",
               "video_url": "",
               "meta": "",
-              "title": "This is the Collage",
-              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "title": "Høstens Nyheter",
+              "subheading": "<p>Se alle nyhetene for høsten<\/p>",
               "max_width_subheading": 24,
-              "link_text": "Shop the collection",
+              "link_text": "Se produktene her",
               "link": "#",
               "alignment": "left_split",
               "opacity_overlay": 10
