@@ -67,7 +67,6 @@
 					</a>
 					{% comment %} Custom SixBondStreet Henrik {% endcomment %}
 					<span class="variant__title">{{ value }}</span>
-					</div>
                     {% if product.variants[forloop.index0].available %}
                     <div class="tooltip__container">
                         <div class="tooltip__content">
@@ -76,6 +75,7 @@
                         </div>
                     </div>
                     {% endif %}
+					</div>
 					{% comment %} End Custom SixBondStreet Henrik {% endcomment %}
                 {% endfor %}
                 <select
