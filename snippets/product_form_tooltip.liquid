@@ -8,7 +8,7 @@
 				<script>
 					tippy('#{{ value | remove:" " }}', {
 						trigger: 'mouseenter focus',
-						content: '{{ value }}',
+						content: '<img class="tippy-image__tooltip" src="{{ value | handle | append: '.' | append: file_extension | file_url }}" alt="{{ value }}"></img><span class="tippy-text__tooltip">{{ value }}</span>',
 						allowHTML: true,
 					});
 				</script>
