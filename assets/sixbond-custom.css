@@ -1,6 +1,6 @@
     /* Settings */
     
-    :root {
+     :root {
         --max-width-large-page: 1200px
     }
     /* TYPOGRAPHY */
@@ -269,7 +269,8 @@ p, span {
         .drawer-menu__panel form {
             display: none;
         }
-        body .aa-left-column {
+        body .aa-dropdown-menu-size-xs .aa-without-powered-by .aa-left-column,
+        .aa-dropdown-menu-size-sm .aa-without-powered-by .aa-left-column {
             padding: 0 24px;
         }
     }
