@@ -73,6 +73,7 @@ form.product-form .product-form__controls-group {
     max-height: 300px;
     overflow-y: scroll;
 	overflow-x: hidden;
+	padding-right: 8px;
 }
 form.product-form .product-form__controls-group::-webkit-scrollbar {
     width: 8px;
