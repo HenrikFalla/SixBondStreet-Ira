@@ -334,3 +334,12 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 		opacity: 1;
 	}
 /* End Search Result Page */
+/* Tippy Tooltip */
+.tippy-content {
+	max-width: 250px;
+	padding: 8px;
+}
+img.tippy-image__tooltip {
+	width: 100%;
+	border-radius: 5px;
+}
