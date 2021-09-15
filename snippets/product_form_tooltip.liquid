@@ -7,8 +7,9 @@
 			{% if product.variants[forloop.index0].available %}
 				<script>
 					tippy('#{{ value | remove:" " }}', {
-						content: 'Tooltip test {{ value | remove:" " }}',
+						content: '<div',
 						allowHTML: true,
+						trigger: 'focus',
 					});
 				</script>
 			{% endif %}
