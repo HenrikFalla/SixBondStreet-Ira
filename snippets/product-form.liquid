@@ -53,7 +53,7 @@
               <div class="product-form__color-swatches" data-option-buttons>
                 {% for value in option.values %}
 					{% if product.variants[forloop.index0].available %}
-					<div class="variant__option" id="{{ value | strip }}">
+					<div class="variant__option" id="{{ value | remove:" " }}">
 					{% else %}
 					<div class="variant__option sxbs-variant-sold-out">
 					{% endif %}
