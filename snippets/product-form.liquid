@@ -68,7 +68,9 @@
 					{% comment %} Custom SixBondStreet Henrik {% endcomment %}
                     <div class="variant_info">
                         {% unless product.variants[forloop.index0].inventory_quantity == 0 %}
-                        <div class="in_stock__variant_orb"></div>
+                        <div class="in_stock__variant_orb">
+                            <div class="in_stock__variant_orb_inner"></div>
+                        </div>
                         {% endunless %}
 					    <span class="variant__title">{{ value }}</span>
                     </div>
