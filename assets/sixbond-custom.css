@@ -97,7 +97,7 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	display: flex;
 	flex-direction: row;
 }
-.variant_info .in_stock__variant_orb {
+.variant_info .in_stock__variant_orb, .in_stock__variant_orb {
 	display: block;
 	width: 10px;
 	height: 10px;
