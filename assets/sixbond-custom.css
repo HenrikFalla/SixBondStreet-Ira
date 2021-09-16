@@ -199,6 +199,7 @@ a#in-stock { /* Hide pill for "in stock" tag */
 .collection-in-stock__toggle {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 8px;
 }
 .collection-in-stock__toggle .in_stock_toggle {
 	display: block;
