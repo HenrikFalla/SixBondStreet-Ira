@@ -163,7 +163,7 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	--s-max-width: 800px;	
 }
 /* end article page settings */
-/* Catalog Page */
+/* Collection Page */
 .product-item__image-link:after {
     content: '';
     display: block;
@@ -191,6 +191,9 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 }
 .product-item__meta .product-item__text {
 	width: 100%;
+}
+a#in-stock { /* Hide pill for "in stock" tag */
+	display: none;
 }
 /* Remove default Badges */
 .product-item__meta .product-item__badges {
