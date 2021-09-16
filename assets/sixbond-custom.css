@@ -178,6 +178,15 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 .product-item__text .product__label {
 	display: flex;
 	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+}
+.product__label .in_stock__variant_orb {
+	margin-top: 7px;
+	float: right;
+}
+.product-item__meta .product-item__text {
+	width: 100%;
 }
 /* Remove default Badges */
 .product-item__meta .product-item__badges {
