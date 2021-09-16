@@ -1,16 +1,11 @@
 {% assign in_stock_tag = 'in stock' %}
 <div class="collection-in-stock__toggle">
 	{% if current_tags contains in_stock_tag %}
-	    {{ assign toggle_url = link_to_remove_tag: in_stock_tag }}
-		{{ assign toggle_class = 'in_stock_show_all' }}
+	    {{ assign toggle_url = 'remove tag' | link_to_remove_tag: in_stock_tag }}
 	{% else %}
-	    {{ assign toggle_url = link_to_add_tag: in_stock_tag }}
-		{{ assign toggle_class = 'in_stock_show_only' }}
+	    {{ assign toggle_url = 'add tag' | link_to_add_tag: in_stock_tag }}
 	{% endif %}
-	<div class="{{ toggle_class }}">
-		<a href="{{ toggle_url }}">{{ toggle_class }}</a>
-	</div>
-	
+	<div class="">{{ toggle_url }}</div>
 </div>
 <div class="collection-sidebar">
   {% if collection.all_tags.size > 0 and filter_style != 'hidden' %}
