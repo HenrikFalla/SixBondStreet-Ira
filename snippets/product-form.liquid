@@ -66,10 +66,12 @@
 					>
 					</a>
 					{% comment %} Custom SixBondStreet Henrik {% endcomment %}
-                    {% unless product.variants[forloop.index0].inventory_quantity == 0 %}
-                    <div class="in_stock__variant_orb"></div>
-                    {% endunless %}
-					<span class="variant__title">{{ value }}</span>
+                    <div class="variant_info">
+                        {% unless product.variants[forloop.index0].inventory_quantity == 0 %}
+                        <div class="in_stock__variant_orb"></div>
+                        {% endunless %}
+					    <span class="variant__title">{{ value }}</span>
+                    </div>
                     </div>
 					{% comment %} End Custom SixBondStreet Henrik {% endcomment %}
                 {% endfor %}
