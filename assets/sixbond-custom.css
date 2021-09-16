@@ -214,10 +214,13 @@ a#in-stock { /* Hide pill for "in stock" tag */
 	display: block;
 	border-radius: 10px;
 	background: #fff;
+	margin-top: 2px;
 }
 .collection-in-stock__toggle .inactive a {
-	margin-top: 2px;
 	margin-left: 2px;
+}
+.collection-in-stock__toggle .active a {
+	margin-left: 12px;
 }
 /* Remove default Badges */
 .product-item__meta .product-item__badges {
