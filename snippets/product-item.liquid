@@ -82,12 +82,12 @@
         <h4><a href="#">{{ 'sections.featured_products.placeholder.product_title' | t }}</a></h4>
       {%- else -%}
         <div class="product__label">
+            <h4><a href="{{ product.url }}">{{ product.title }}</a></h4>
             {% unless in_stock == false %}
                 <div class="in_stock__variant_orb">
                     <div class="in_stock__variant_orb_inner"></div>
                 </div>
             {% endunless %}
-            <h4><a href="{{ product.url }}">{{ product.title }}</a></h4>
         </div>
       {%- endif -%}
 
