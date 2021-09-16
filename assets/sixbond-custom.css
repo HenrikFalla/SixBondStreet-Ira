@@ -195,6 +195,30 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 a#in-stock { /* Hide pill for "in stock" tag */
 	display: none;
 }
+/* Filter styling - In Stock Toggle */
+.collection-in-stock__toggle {
+	display: flex;
+	flex-direction: row;
+}
+.collection-in-stock__toggle .in_stock_toggle {
+	display: block;
+	width: 30px;
+	height: 20px;
+	background: #29292c;
+	border-radius: 10px;
+	margin-right: 4px;
+}
+.collection-in-stock__toggle .in_stock_toggle a {
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-radius: 10px;
+	background: #fff;
+}
+.collection-in-stock__toggle .inactive a {
+	margin-top: 2px;
+	margin-left: 2px;
+}
 /* Remove default Badges */
 .product-item__meta .product-item__badges {
     display: none;
