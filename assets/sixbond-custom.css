@@ -104,7 +104,7 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	background: rgb(94 255 114 / 47%);
 	shape-outside: circle();
 	clip-path: circle();
-	margin-top: 2px;
+	margin-top: 0px;
 }
 .in_stock__variant_orb_inner {
 	width: 4px;
