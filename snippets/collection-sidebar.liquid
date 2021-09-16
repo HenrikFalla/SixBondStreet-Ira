@@ -1,8 +1,9 @@
+{% assign in_stock_tag = 'in stock' %}
 <div class="collection-in-stock__toggle">
-	{% if current_tags contains 'in stock' %}
-	    {{ 'remove tag' | link_to_remove_tag: 'in-stock' }}
+	{% if current_tags contains in_stock_tag %}
+	    {{ 'remove tag' | link_to_remove_tag: in_stock_tag }}
 	{% else %}
-	    {{ 'add tag' | link_to_add_tag: 'in-stock' }}
+	    {{ 'add tag' | link_to_add_tag: in_stock_tag }}
 	{% endif %}
 </div>
 <div class="collection-sidebar">
