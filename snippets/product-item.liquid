@@ -81,6 +81,7 @@
         <h4><a href="#">{{ 'sections.featured_products.placeholder.product_title' | t }}</a></h4>
       {%- else -%}
         <div class="product__label">
+            {{ current_variant.inventory_quantity }}
             {% unless in_stock == false %}
                 <div class="in_stock__variant_orb">
                     <div class="in_stock__variant_orb_inner"></div>
