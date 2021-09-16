@@ -4,6 +4,13 @@
   endif
 
   assign current_variant = product.selected_or_first_available_variant
+  assign in_stock = false
+
+  for variant in product.variants
+    if variant.inventory_quantity > 0
+        assign in_stock = true
+    endif
+  endfor
 
   assign disabled_image_style = false
   if aspect_ratio != 'natural'
@@ -69,7 +76,7 @@
         <h4><a href="#">{{ 'sections.featured_products.placeholder.product_title' | t }}</a></h4>
       {%- else -%}
         <div class="product__label">
-            {% unless current_variant.inventory_quantity == 0 %}
+            {% unless in_stock == false %}
                 <div class="in_stock__variant_orb">
                     <div class="in_stock__variant_orb_inner"></div>
                 </div>
