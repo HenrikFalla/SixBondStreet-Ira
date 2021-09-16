@@ -222,6 +222,16 @@ a#in-stock { /* Hide pill for "in stock" tag */
 .collection-in-stock__toggle .active a {
 	margin-left: 12px;
 }
+.collection-in-stock__toggle .in_stock__variant_orb {
+	margin-top: 5px;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+.collection-in-stock__toggle span.toggle_text {
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 3px;
+}
 /* Remove default Badges */
 .product-item__meta .product-item__badges {
     display: none;
