@@ -106,6 +106,9 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	clip-path: circle();
 	margin-top: 0px;
 }
+.variant_info .in_stock__variant_orb {
+	margin-right: 2px;
+}
 .in_stock__variant_orb_inner {
 	width: 4px;
 	height: 4px;
