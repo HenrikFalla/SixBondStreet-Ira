@@ -5,7 +5,7 @@
 
   assign current_variant = product.selected_or_first_available_variant
   assign in_stock = false
-  if product.options.size > 1
+  if product.variants.size > 1
       for variant in product.variants
         if variant.inventory_quantity > 0
             assign in_stock = true
