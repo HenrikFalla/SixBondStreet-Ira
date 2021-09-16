@@ -68,7 +68,14 @@
       {%- if placeholder -%}
         <h4><a href="#">{{ 'sections.featured_products.placeholder.product_title' | t }}</a></h4>
       {%- else -%}
-        <h4><a href="{{ product.url }}">{{ product.title }}</a></h4>
+        <div class="product__label">
+            {% unless current_variant.inventory_quantity == 0 %}
+                <div class="in_stock__variant_orb">
+                    <div class="in_stock__variant_orb_inner"></div>
+                </div>
+            {% endunless %}
+            <h4><a href="{{ product.url }}">{{ product.title }}</a></h4>
+        </div>
       {%- endif -%}
 
       {% if placeholder %}
