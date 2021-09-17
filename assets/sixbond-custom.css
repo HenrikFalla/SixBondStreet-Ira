@@ -297,3 +297,11 @@ p, span {
                 right: 133.1px !important;
             }
         }
+        
+        @media only screen and (min-width: 2013px) {
+            body span.algolia-autocomplete {
+                width: 70vw !important;
+                max-width: calc(100vw - 50px);
+                right: 133.1px !important;
+            }
+        }
