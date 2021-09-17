@@ -225,6 +225,10 @@ p, span {
             background: #29292c;
             color: white;
             border: none;
+            max-width: 70vw;
+            width: 355px !important;
+            max-width: calc(100vw - 50px);
+            left: 0 !important;
         }
         /* more specific version for hiding shopify results in instant search */
         
@@ -249,12 +253,6 @@ p, span {
         body .quick-search.active.visible {
             width: 70vw;
             max-width: calc(100vw - 50px);
-        }
-        
-        body span.algolia-autocomplete {
-            width: 355px !important;
-            max-width: calc(100vw - 50px);
-            left: 0 !important;
         }
         /* turn off search bar from hamburger menu to the left from 641px and bigger. 
   	 the shopping cart and the hamburger menu has the same class name */
@@ -297,11 +295,10 @@ p, span {
                 right: 133.1px !important;
             }
         }
-        
-        @media only screen and (min-width: 2013px) {
+        /* @media only screen and (min-width: 2013px) {
             body span.algolia-autocomplete {
                 width: 70vw !important;
                 max-width: calc(100vw - 50px);
                 right: 133.1px !important;
             }
-        }
+        } */
