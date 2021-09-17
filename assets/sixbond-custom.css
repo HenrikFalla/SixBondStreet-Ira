@@ -99,7 +99,9 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 }
 .variant_info .in_stock__variant_orb, .in_stock__variant_orb {
 	display: block;
+	min-width: 10px;
 	width: 10px;
+	min-height: 10px;
 	height: 10px;
 	background: rgb(94 255 114 / 47%);
 	shape-outside: circle();
