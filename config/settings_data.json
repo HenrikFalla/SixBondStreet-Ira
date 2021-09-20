@@ -444,8 +444,8 @@
               "max_width_subheading": 24,
               "link_text": "Se produktene her",
               "link": "#",
-              "alignment": "left_split",
-              "opacity_overlay": 10
+              "alignment": "left_bottom",
+              "opacity_overlay": 20
             }
           },
           "1601240654390-1": {
@@ -459,7 +459,7 @@
               "max_width_subheading": 24,
               "link_text": "Book time i dag",
               "link": "#",
-              "alignment": "left_split",
+              "alignment": "left_bottom",
               "opacity_overlay": 20
             }
           }
