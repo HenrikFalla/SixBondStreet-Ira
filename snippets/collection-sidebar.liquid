@@ -116,6 +116,7 @@
           {%- if option.value == collection.sort_by -%}
             {%- assign is_active = true -%}
           {%- endif -%}
+		  {{ option.name }}
           {% render 'filter-item' with
             label: option.name,
             type: 'radio',
