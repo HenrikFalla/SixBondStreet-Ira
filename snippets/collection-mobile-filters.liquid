@@ -1,5 +1,5 @@
 {% assign in_stock_tag = 'in stock' %}
-<div class="collection-in-stock__toggle">
+<div class="collection-in-stock__toggle collection-in-stock__toggle-mobile">
 	{% if current_tags contains in_stock_tag %}
 	<div class="in_stock_toggle active">
 		{{ ' ' | link_to_remove_tag: in_stock_tag }}
