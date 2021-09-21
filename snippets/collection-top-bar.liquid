@@ -1,6 +1,5 @@
 {% if current_tags.size > 0 or collection.sort_by != blank %}
   <div class="collection-top-bar">
-  test
     <div class="collection-top-bar__active-elements">
       {% for tag in current_tags %}
         {% assign label = tag %}
@@ -14,7 +13,7 @@
         {% assign url = label | link_to_remove_tag: tag | split: '"' %}
         {% assign url = url[1] %}
 
-        <a href="{{ url }}" id="{{ tag | handle }}" class="pill pill--solid fs-body-base no-transition {{ tag | handle }}" data-pill="filter" data-tag="{{ tag | handle }}">
+        <a href="{{ url }}" id="{{ tag | handle }}" class="pill pill--solid fs-body-base no-transition" data-pill="filter" data-tag="{{ tag | handle }}">
           {{ label }}
           {% render 'icon' with icon: 'close' %}
         </a>
