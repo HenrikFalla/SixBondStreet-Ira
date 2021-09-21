@@ -130,7 +130,8 @@
           "9b3f5243-d157-4ce9-87c0-1020082cbdb4": {
             "type": "mega_nav",
             "settings": {
-              "dropdown_parent_link": "Interiør"
+              "dropdown_parent_link": "Interiør",
+              "mega_nav_featured_image": "shopify:\/\/shop_images\/Varens_TrenderArtboard_1.jpg"
             }
           },
           "09872ac1-7e13-46fb-a549-8f2feed97623": {
