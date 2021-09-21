@@ -71,6 +71,7 @@
         <div class="collection-sidebar__group" data-group="{{ heading }}">
           {% render 'collection-sidebar-heading' with heading: heading %}
           <ul>
+			{{ heading }}
             {% for tag in collection.all_tags %}
               {% assign cat = tag | split: '_' | first %}
 
@@ -116,7 +117,6 @@
           {%- if option.value == collection.sort_by -%}
             {%- assign is_active = true -%}
           {%- endif -%}
-		  {{ heading }}
           {% render 'filter-item' with
             label: option.name,
             type: 'radio',
