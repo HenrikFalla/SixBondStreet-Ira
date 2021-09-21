@@ -622,7 +622,7 @@ body .aa-dropdown-menu .aa-highlight {
 /* moving the algolia search block up and to the right*/
 
 body span.algolia-autocomplete {
-    position: fixed;
+    position: fixed!important;
     background: #29292c;
     color: white;
     border: none;
