@@ -126,10 +126,17 @@
               "dropdown_parent_link": "Møbler",
               "mega_nav_featured_image": "shopify:\/\/shop_images\/Mobler_Image_meganav.jpg"
             }
+          },
+          "9b3f5243-d157-4ce9-87c0-1020082cbdb4": {
+            "type": "mega_nav",
+            "settings": {
+              "dropdown_parent_link": "Interiør"
+            }
           }
         },
         "block_order": [
-          "c86b95e4-c30d-4106-9baa-aee4810cecd6"
+          "c86b95e4-c30d-4106-9baa-aee4810cecd6",
+          "9b3f5243-d157-4ce9-87c0-1020082cbdb4"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/Logo_simplified.png",
