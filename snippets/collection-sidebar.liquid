@@ -68,7 +68,6 @@
     {%- if filter_style == 'by_group' -%}
       {% for category in categories %}
         {%- assign heading = category -%}
-		{% unless heading == "Lagerstatus:På" %}
         <div class="collection-sidebar__group" data-group="{{ heading }}">
           {% render 'collection-sidebar-heading' with heading: heading %}
           <ul>
@@ -101,7 +100,6 @@
             {% endfor %}
           </ul>
         </div>
-	    {% endunless %}
       {% endfor %}
 
     {%- endif -%}
