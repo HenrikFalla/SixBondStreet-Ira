@@ -257,9 +257,17 @@ a#in-stock { /* Hide pill for "in stock" tag */
 	font-weight: bold;
 	margin-top: 3px;
 }
+.collection-in-stock__toggle-mobile {
+	display: block;
+}
+@media (min-width: 40em) {
+	.collection-in-stock__toggle-mobile {
+		display: none;
+	}
+}
 /* Remove default Badges */
 .product-item__meta .product-item__badges {
-    display: none;
+	display: none;
 }
 /* End Catalog Page */
 /* Search Result Page */
