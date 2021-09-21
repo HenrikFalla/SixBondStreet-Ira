@@ -132,11 +132,19 @@
             "settings": {
               "dropdown_parent_link": "Interiør"
             }
+          },
+          "09872ac1-7e13-46fb-a549-8f2feed97623": {
+            "type": "mega_nav",
+            "disabled": true,
+            "settings": {
+              "dropdown_parent_link": "Belysning"
+            }
           }
         },
         "block_order": [
           "c86b95e4-c30d-4106-9baa-aee4810cecd6",
-          "9b3f5243-d157-4ce9-87c0-1020082cbdb4"
+          "9b3f5243-d157-4ce9-87c0-1020082cbdb4",
+          "09872ac1-7e13-46fb-a549-8f2feed97623"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/Logo_simplified.png",
