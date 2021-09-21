@@ -1,3 +1,20 @@
+{% assign in_stock_tag = 'in stock' %}
+<div class="collection-in-stock__toggle">
+	{% if current_tags contains in_stock_tag %}
+	<div class="in_stock_toggle active">
+		{{ ' ' | link_to_remove_tag: in_stock_tag }}
+	</div>
+	<span class="toggle_text">Vis alle produkter</span>
+	{% else %}
+	<div class="in_stock_toggle inactive">
+		{{ ' ' | link_to_add_tag: in_stock_tag }}
+	</div>
+	<div class="in_stock__variant_orb">
+		<div class="in_stock__variant_orb_inner"></div>
+	</div>
+	<span class="toggle_text">Vis kun produkter på lager</span>
+	{% endif %}
+</div>
 <div class="collection-top-bar__filters">
   {% if collection.all_tags.size > 0 and filter_style != 'hidden' %}
     {% if filter_style == 'by_group' %}
