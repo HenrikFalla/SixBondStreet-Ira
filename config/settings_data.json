@@ -437,11 +437,10 @@
       },
       "1600315479900": {
         "type": "blog-posts--dynamic",
-        "disabled": true,
         "settings": {
           "title": "Blog posts",
-          "blog": "",
-          "per_row": 3,
+          "blog": "nr-6",
+          "per_row": 4,
           "rows": 1,
           "aspect_ratio": "square"
         }
