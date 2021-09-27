@@ -168,7 +168,8 @@
         </div>
       {% endif %}
     </div>
-    {% if product.media.size > 3 %}
+  </div>
+  {% if product.media.size > 3 %}
         <div class="product__media-container secondary-gallery">
           <div class="product__media product__media--{{ media_layout }}" data-slider>
 	        {%- for media in product.media -%}
@@ -208,7 +209,6 @@
     <div class="product__reviews">
       <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
     </div>
-  </div>
 
   {%- assign images = product.media | where: 'media_type', 'image' -%}
   {% render 'lightbox' with images: images %}
