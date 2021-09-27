@@ -36,6 +36,21 @@ span.on-sale.saved_percentage {
 	width: calc(100% / 3);
 	float: left;
 }
+.mobile-only{
+	display: block;
+}
+.desktop-only {
+	display: none;
+}
+@media screen (min-width: 640px) {
+	.mobile-only {
+		display: none;
+	}
+
+	.desktop-only {
+		display: block;
+	}
+}
 /* Swatches */
 
 .product-form__color-swatches {
