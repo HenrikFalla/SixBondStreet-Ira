@@ -25,11 +25,7 @@
   <div class="product__content">
     <div class="product__media-container">
       <div class="product__media product__media--{{ media_layout }}" data-slider>
-        {%- for media in product.media -%}
-          <div class="product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
-            {% render 'media', media: media, featured_media: featured_media, loop_video: enable_video_looping  %}
-          </div>
-        {%- endfor -%}
+        
         {% assign count.counts == 0, 1, 2 %}
         {% for counts in count.counts %}
             <div class="product__media-item {% if product.media[{{ counts }}].id == featured_media.id %}initial{% endif %}" data-slide>
