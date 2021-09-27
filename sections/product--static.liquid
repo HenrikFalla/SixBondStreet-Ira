@@ -25,13 +25,11 @@
   <div class="product__content">
     <div class="product__media-container">
       <div class="product__media product__media--{{ media_layout }}" data-slider>
-        
-        
-        {% for i in (0..2) %}
-            <div class="product__media-item {% if product.media[i].id == featured_media.id %}initial{% endif %}" data-slide>
-                {% render 'media', media: product.media[i], featured_media: featured_media, loop_video: enable_video_looping  %}
-            </div>
-        {% endfor %}
+        {%- for media in product.media -%}
+          <div class="product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
+            {% render 'media', media: media, featured_media: featured_media, loop_video: enable_video_looping  %}
+          </div>
+        {%- endfor -%}
 
         {%- if product.media.size > 1 -%}
           {% render 'carousel-pagination' %}
