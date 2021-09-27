@@ -205,7 +205,7 @@
     </div>
   </div>
   {% if product.media.size > 3 %}
-        <div class="product__media-container secondary-gallery">
+        <div class="product__media-container secondary-gallery desktop-only">
           <div class="product__media product__media--{{ media_layout }}" data-slider>
             {% assign i-size = product.media.size %}
 	        {% for i in (3..i-size) %}
