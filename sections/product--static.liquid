@@ -25,20 +25,15 @@
   <div class="product__content">
     <div class="product__media-container">
       <div class="product__media product__media--{{ media_layout }}" data-slider>
-        {% assign mainloop = true %}
-        {% assign counter = 0 %}
         {%- for media in product.media -%}
           <div class="product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
             {% render 'media', media: media, featured_media: featured_media, loop_video: enable_video_looping  %}
           </div>
-          {% increment counter %}
-          {% if counter == 3 %}{% break %}{% endif %}
         {%- endfor -%}
-        {% comment %}
+
         {%- if product.media.size > 1 -%}
           {% render 'carousel-pagination' %}
         {%- endif -%}
-        {% endcomment %}
       </div>
 
       <noscript>
