@@ -25,37 +25,39 @@
   <div class="product__content">
     <div class="product__media-container">
       <div class="product__media product__media--{{ media_layout }}" data-slider>
-        {%- for media in product.media -%}
-          <div class="product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
-            {% render 'media', media: media, featured_media: featured_media, loop_video: enable_video_looping  %}
-          </div>
-        {%- endfor -%}
+	
+	
+	    {% for i in (0..2) %}
+		    <div class="product__media-item {% if product.media[i].id == featured_media.id %}initial{% endif %}" data-slide>
+			    {% render 'media', media: product.media[i], featured_media: featured_media, loop_video: enable_video_looping  %}
+		    </div>
+	    {% endfor %}
 
-        {%- if product.media.size > 1 -%}
-          {% render 'carousel-pagination' %}
-        {%- endif -%}
+	    {%- if product.media.size > 1 -%}
+	      {% render 'carousel-pagination' %}
+	    {%- endif -%}
       </div>
 
       <noscript>
-        {% capture product_image_size %}{{ height }}x{% endcapture %}
-        <img src="{{ featured_media | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_media.alt }}" id="FeaturedMedia-{{ section.id }}" class="product-featured-media" style="max-width: {{ height }}px;">
+	    {% capture product_image_size %}{{ height }}x{% endcapture %}
+	    <img src="{{ featured_media | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_media.alt }}" id="FeaturedMedia-{{ section.id }}" class="product-featured-media" style="max-width: {{ height }}px;">
       </noscript>
 
       {%- if first_3d_model -%}
-        <button
-          aria-label="{{ 'products.product.view_in_space_label' | t }}"
-          class="product__view-in-space btn btn--full"
-          data-in-your-space
-          data-shopify-xr
-          data-shopify-model3d-id="{{ first_3d_model.id }}"
-          data-shopify-title="{{ product.title | escape }}"
-          data-shopify-xr-hidden
-        >
-          <span>
-            {% render 'icon' with icon: '3d' %}
-            <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
-          </span>
-        </button>
+	    <button
+	      aria-label="{{ 'products.product.view_in_space_label' | t }}"
+	      class="product__view-in-space btn btn--full"
+	      data-in-your-space
+	      data-shopify-xr
+	      data-shopify-model3d-id="{{ first_3d_model.id }}"
+	      data-shopify-title="{{ product.title | escape }}"
+	      data-shopify-xr-hidden
+	    >
+	      <span>
+		    {% render 'icon' with icon: '3d' %}
+		    <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
+	      </span>
+	    </button>
       {%- endif -%}
     </div>
 
