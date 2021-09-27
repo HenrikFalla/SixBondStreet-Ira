@@ -36,9 +36,9 @@ span.on-sale.saved_percentage {
 	width: calc(100% / 3);
 	float: left;
 }
-.secondary-gallery {
-	width: 100%!important;
-	margin-top: 16px!important;
+.product__media-container.secondary-gallery.desktop-only {
+	width: 100%;
+	margin-top: 16px;
 	margin-left: 0;
 	margin-right: 0;
 }
