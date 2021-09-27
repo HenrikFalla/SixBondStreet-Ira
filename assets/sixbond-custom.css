@@ -32,6 +32,10 @@ span.on-sale.saved_percentage {
 .fs-body-base {
 	max-width: 90vw;
 }
+.secondary-gallery .product__media-item {
+	width: calc(100% / 3);
+	float: left;
+}
 /* Swatches */
 
 .product-form__color-swatches {
