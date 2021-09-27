@@ -42,7 +42,7 @@ span.on-sale.saved_percentage {
 .desktop-only {
 	display: none;
 }
-@media screen (min-width: 640px) {
+@media (min-width: 640px) {
 	.mobile-only {
 		display: none;
 	}
