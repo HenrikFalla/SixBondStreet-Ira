@@ -196,7 +196,7 @@
         aria-hidden="true"
       >{{ 'products.product.loader_label' | t }}</p>
 
-      <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description | strip_html | truncatewords: 80 }}</div>
+      <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description | strip_html | truncatewords: 65 }}</div>
 
       {% if section.settings.show_share_buttons %}
         <div class="product__share" data-share="{{ 'product.share' | t }}">
