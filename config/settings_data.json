@@ -256,9 +256,10 @@
           "1601239747479": {
             "type": "image",
             "settings": {
-              "video_url": "",
+              "image": "shopify:\/\/shop_images\/bilde-trenderaw21-035617-RSgh4bvL.jpg",
+              "video_url": "shopify:\/\/blogs\/nr-6\/hostens-interiortrender-2021",
               "meta": "",
-              "title": "",
+              "title": "Høstens interiørtrender",
               "subheading": "",
               "max_width_subheading": 28,
               "link_text": "",
@@ -270,15 +271,16 @@
           "1600315418706-1": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/rektangel-pantone-006-885569-FHM8oBke.jpg",
               "video_url": "",
               "meta": "",
-              "title": "This is the Collage",
-              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
-              "max_width_subheading": 24,
-              "link_text": "Shop now",
-              "link": "#",
+              "title": "Årets Pantone farger 2021",
+              "subheading": "<p><br\/>I år er det ikke bare èn med to farger fra Pantone; PANTONE 17-5104 Ultimate Gray + PANTONE 13-0647 Illuminating. To individuelle fargetoner som belyser hvordan to ulike elementer kommer sammen for å støtte hverandre. Den grå fargetonen defineres som praktisk og bunnsolid, den gule representerer optimisme og varme.<\/p>",
+              "max_width_subheading": 44,
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/blogs\/nr-6\/arets-pantone-farger-2021-ultimate-gray-illuminating",
               "alignment": "left_center",
-              "opacity_overlay": 90
+              "opacity_overlay": 70
             }
           },
           "1600315418706-0": {
@@ -380,13 +382,13 @@
           "1600315451525-0": {
             "type": "collection",
             "settings": {
-              "collection": ""
+              "collection": "bokser"
             }
           },
           "1600315451525-1": {
             "type": "collection",
             "settings": {
-              "collection": ""
+              "collection": "boel-jan"
             }
           }
         },
