@@ -252,6 +252,7 @@
     {% for tag in product.tags %}
         {% for article in blog-vedlikehold.articles %}
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: article.handle %}
+            {{ handle-check }}
             {% if handle-check == tag %}
                 <span>{{ article.handle }}</span>
                 {{ article.content }}
