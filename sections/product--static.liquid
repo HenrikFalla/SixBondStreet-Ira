@@ -249,11 +249,9 @@
 
   {%- assign images = product.media | where: 'media_type', 'image' -%}
   {% render 'lightbox' with images: images %}
-    {{ blog-vedlikehold.title }}
     {% for tag in product.tags %}
-        {{ tag }}
         {% for article in blog-vedlikehold.articles %}
-            {{ article.handle }}
+            <span>{{ article.handle }}</span>
             {% if article.handle == tag %}
                 {{ article.content }}
             {% endif %}
