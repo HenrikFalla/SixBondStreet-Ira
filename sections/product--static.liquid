@@ -252,7 +252,7 @@
     {{ blog-vedlikehold.title }}
     {% for tag in product.tags %}
         {{ tag }}
-        {% for article in blog-vedlikehold %}
+        {% for article in blog-vedlikehold.articles %}
             {{ article.handle }}
             {% if article.handle == tag %}
                 {{ article.content }}
