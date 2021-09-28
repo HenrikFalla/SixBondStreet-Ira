@@ -251,7 +251,6 @@
   {% render 'lightbox' with images: images %}
     {% for tag in product.tags %}
         {% for article in blog-vedlikehold.articles %}
-            <span>{{ article.handle }}</span>
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: article.handle %}
             {% if handle-check == tag %}
                 <span>{{ article.handle }}</span>
