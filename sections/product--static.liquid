@@ -251,9 +251,9 @@
   {% render 'lightbox' with images: images %}
     {% for tag in product.tags %}
         {% for article in blog-vedlikehold.articles %}
-            {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: article.handle %}
+            {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag %}
             {{ handle-check }}
-            {% if handle-check == tag %}
+            {% if handle-check == article.handle %}
                 <span>{{ article.handle }}</span>
                 {{ article.content }}
             {% endif %}
