@@ -251,10 +251,10 @@
   {% render 'lightbox' with images: images %}
     {{ blog-vedlikehold.title }}
     {% for tag in product.tags %}
-        
+        {{ tag }}
         {% for article in blog-vedlikehold %}
-            {{ article.title }}
-            {% if article.title == tag %}
+            {{ article.handle }}
+            {% if article.handle == tag %}
                 {{ article.content }}
             {% endif %}
         {% endfor %}
