@@ -254,8 +254,13 @@
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag %}
             {% if handle-check == article.handle %}
                 <div class="vedlikehold">
-                <h2>{{ article.title }}</h2>
-                {{ article.content }}
+                    <div class="vedlikehold-image">
+                        {{ article.image }}
+                    </div>
+                    <div class="vedlikehold-text">
+                        <h2>{{ article.title }}</h2>
+                        {{ article.content }}
+                    </div>
                 </div>
             {% endif %}
         {% endfor %}
