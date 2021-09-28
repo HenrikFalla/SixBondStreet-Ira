@@ -562,7 +562,8 @@
           "enable_payment_button": false,
           "enable_full_width": true,
           "media_layout": "column",
-          "enable_video_looping": true
+          "enable_video_looping": true,
+          "vedlikehold": "vedlikehold"
         }
       },
       "recommended-products--static": {
