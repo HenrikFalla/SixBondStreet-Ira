@@ -254,6 +254,7 @@
             <span>{{ article.handle }}</span>
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: article.handle %}
             {% if handle-check == tag %}
+                <span>{{ article.handle }}</span>
                 {{ article.content }}
             {% endif %}
         {% endfor %}
