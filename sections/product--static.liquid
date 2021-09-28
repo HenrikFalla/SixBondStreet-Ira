@@ -248,9 +248,19 @@
 
   {%- assign images = product.media | where: 'media_type', 'image' -%}
   {% render 'lightbox' with images: images %}
-  {% for tag in product.tags %}
-    {{ tag }}
-  {% endfor %}
+    {% assign blog-vedl = null %}
+    {% for blog in blogs %}
+        {% if blog.title == "Vedlikehold" %}
+            {% assign blog-vedl = blog %}
+        {% endif %}
+    {% endfor %}
+    {% for tag in product.tags %}
+        {% for article in blog-vedl %}
+            {% if article.title == tag %}
+                {{ article.content }}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
 </section>
 <script>
   window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)}
