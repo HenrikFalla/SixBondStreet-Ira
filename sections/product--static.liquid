@@ -256,6 +256,7 @@
     {% endfor %}
     {% for tag in product.tags %}
         {% for article in blog-vedl %}
+            {{ article.title }}
             {% if article.title == tag %}
                 {{ article.content }}
             {% endif %}
