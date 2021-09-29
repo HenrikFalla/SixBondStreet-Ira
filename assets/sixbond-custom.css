@@ -306,6 +306,7 @@ a#in-stock { /* Hide pill for "in stock" tag */
 .collection-in-stock__toggle .in_stock_toggle {
 	display: block;
 	width: 30px;
+	min-width: 30px;
 	height: 20px;
 	background: #29292c;
 	border-radius: 10px;
