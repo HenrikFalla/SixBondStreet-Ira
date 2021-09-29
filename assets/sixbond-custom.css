@@ -290,6 +290,7 @@ a#in-stock { /* Hide pill for "in stock" tag */
     margin: 4px 2px;
     padding: 0;
     border: none;
+    pointer-events: none;
 }
 .product-options__collection span {
     font-size: 12px;
