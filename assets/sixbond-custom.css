@@ -281,6 +281,21 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 a#in-stock { /* Hide pill for "in stock" tag */
 	display: none;
 }
+.product-options__collection {
+	display: flex;
+	flex-direction: row;
+}
+.product-options__collection .product__color-swatch {
+    width: 20px;
+    margin: 4px 2px;
+    padding: 0;
+    border: none;
+}
+.product-options__collection span {
+    font-size: 12px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
 /* Filter styling - In Stock Toggle */
 .collection-in-stock__toggle {
 	display: flex;
