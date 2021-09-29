@@ -142,7 +142,7 @@
 
   </div>
   {% comment %} Visning av options under product item i collection {% endcomment %}
-  {{ product.options.size }}
+  {{ product.options[0].values.size }}
   {{ product.options[0].values[0] }}
   {% unless product.has_only_default_variant %}
     {% for i in (0..2) %}
