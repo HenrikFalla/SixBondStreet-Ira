@@ -142,8 +142,8 @@
 
   </div>
   {% comment %} Visning av options under product item i collection {% endcomment %}
-  {{ product.options_with_values[0].values[0] }}
   {% unless product.has_only_default_variant %}
+  <div class="product-options__collection">
     {% for i in (0..2) %}
         <div 
             class="product__color-swatch"
@@ -152,5 +152,7 @@
         >
         </div>
     {% endfor %}
+    <span>+ {{ product.options_with_values[0].values.size | minus: 3 }}</span>
+    </div>
   {% endunless %}
 </div>
