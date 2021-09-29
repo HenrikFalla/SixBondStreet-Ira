@@ -344,6 +344,13 @@ a#in-stock { /* Hide pill for "in stock" tag */
 		display: none;
 	}
 }
+/* General filter styling */
+/* Tablet size Filter Styling */
+@media (min-width:40em) and (max-width: 60em ) {
+	.collection__sidebar {
+		width: 160px;
+	}
+}
 /* Remove default Badges */
 .product-item__meta .product-item__badges {
 	display: none;
