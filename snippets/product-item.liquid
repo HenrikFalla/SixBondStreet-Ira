@@ -143,11 +143,11 @@
   </div>
   {% comment %} Visning av options under product item i collection {% endcomment %}
   {{ product.options.size }}
-  {% if product.options.size > 1 %}
+  {% unless product.has_only_default_variant %}
     {% for i in (0..2) %}
         <div 
             class="product__color-swatch"
-            style="background-color: {{ product.options[forloop.index0].value | lowercase | replace: ' ', '' }}; background-image: url({{ product.options[forloop.index0].value | handle | append: '.' | append: jpeg | file_url }})"
+            style="background-color: {{ product.options[0].values[forloop.index0] | lowercase | replace: ' ', '' }}; background-image: url({{ product.options[0].values[forloop.index0] | handle | append: '.' | append: jpeg | file_url }})"
             tabindex="0"
         >
         </div>
