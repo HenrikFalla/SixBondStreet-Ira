@@ -143,16 +143,16 @@
   </div>
   {% comment %} Visning av options under product item i collection {% endcomment %}
   {% unless product.has_only_default_variant %}
-  <div class="product-options__collection">
-    {% for i in (0..2) %}
-        <div 
-            class="product__color-swatch"
-            style="background-color: {{ product.options_with_values[0].values[forloop.index0] | lowercase | replace: ' ', '' }}; background-image: url({{ product.options_with_values[0].values[forloop.index0] | handle | append: '.' | append: 'jpg' | file_url }})"
-            tabindex="0"
-        >
-        </div>
-    {% endfor %}
-    <span>+ {{ product.options_with_values[0].values.size | minus: 3 }}</span>
-    </div>
+      <div class="product-options__collection">
+        {% for i in (0..2) %}
+            <div 
+                class="product__color-swatch"
+                style="background-color: {{ product.options_with_values[0].values[forloop.index0] | lowercase | replace: ' ', '' }}; background-image: url({{ product.options_with_values[0].values[forloop.index0] | handle | append: '.' | append: 'jpg' | file_url }})"
+                tabindex="0"
+            >
+            </div>
+        {% endfor %}
+        <span> + {{ product.options_with_values[0].values.size | minus: 3 }}</span>
+     </div>
   {% endunless %}
 </div>
