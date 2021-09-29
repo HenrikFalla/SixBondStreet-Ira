@@ -570,10 +570,10 @@
         "type": "recommended-products--static",
         "settings": {
           "enabled": true,
-          "heading": "Recommended",
+          "heading": "Ofte kjøpt sammen med",
           "per_row": 3,
           "rows": 1,
-          "aspect_ratio": "natural"
+          "aspect_ratio": "square"
         }
       },
       "collection--template": {
