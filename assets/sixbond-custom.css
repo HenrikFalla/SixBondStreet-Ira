@@ -123,6 +123,20 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 .product-form__color-swatches .sxbs-variant-sold-out {
     display: none;
 }
+.pf-shop__container {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 16px;
+}
+.pf-shop__container .pf__actions {
+    margin: 0;
+    width: 100%;
+}
+.pf-shop__container .pf-container__qty {
+    width: 25%;
+    margin: 0;
+}
+
 /* In stock display for variants */
 .variant_info {
 	display: flex;
@@ -267,8 +281,6 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 .product-item__text .product__label {
 	display: flex;
 	flex-direction: row;
-	//width: 100%;
-	//justify-content: space-between;
 }
 .product__label .in_stock__variant_orb {
 	margin-top: 7px;
