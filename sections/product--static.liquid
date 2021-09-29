@@ -104,11 +104,11 @@
 			<!-- SixBondStreet CUSTOM -->
 			{%- assign vendorHandle = product.vendor | handle -%}
 			{%- if collections[vendorHandle].products.size > 0 -%}
-			<a href="{{ collections[vendorHandle].url }}">
-			<div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div>
-			</a>
+			    <a href="{{ collections[vendorHandle].url }}">
+			    <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div>
+			    </a>
 			{%- else -%}
-			<div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
+			    <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
 			{%- endif -%}
 			<!-- END SixBondStreet CUSTOM -->
 			<!-- <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div> -->
