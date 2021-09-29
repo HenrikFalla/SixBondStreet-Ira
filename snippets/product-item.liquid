@@ -142,6 +142,7 @@
 
   </div>
   {% comment %} Visning av options under product item i collection {% endcomment %}
+  {{ product.options.size }}
   {% if product.options.size > 1 %}
     {% for i in (0..2) %}
         <div 
