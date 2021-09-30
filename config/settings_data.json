@@ -179,11 +179,10 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "d652cb66-da13-4cdb-9522-ded0c627c26a": {
+          "8907fbeb-aedd-4ecf-845a-79e3950ce7b4": {
             "type": "links",
-            "disabled": true,
             "settings": {
-              "title": "Kontakt oss",
+              "title": "",
               "link_list": "footer"
             }
           },
@@ -194,19 +193,11 @@
               "title": "Åpningstider",
               "text": "<p>Man - Ons: 11:00 - 19:00<br\/>Tors: 11:00 - 20:00<br\/>Fre: 11:00 - 19:00<br\/>Lør: 10:00 - 16:00<\/p>"
             }
-          },
-          "8907fbeb-aedd-4ecf-845a-79e3950ce7b4": {
-            "type": "links",
-            "settings": {
-              "title": "",
-              "link_list": "footer"
-            }
           }
         },
         "block_order": [
-          "d652cb66-da13-4cdb-9522-ded0c627c26a",
-          "c4f553af-66fe-4e23-bc9c-a7a83d158532",
-          "8907fbeb-aedd-4ecf-845a-79e3950ce7b4"
+          "8907fbeb-aedd-4ecf-845a-79e3950ce7b4",
+          "c4f553af-66fe-4e23-bc9c-a7a83d158532"
         ],
         "settings": {
           "show_locale_selector": true,
