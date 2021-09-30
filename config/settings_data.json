@@ -181,6 +181,7 @@
         "blocks": {
           "d652cb66-da13-4cdb-9522-ded0c627c26a": {
             "type": "links",
+            "disabled": true,
             "settings": {
               "title": "Kontakt oss",
               "link_list": "footer"
@@ -188,23 +189,24 @@
           },
           "c4f553af-66fe-4e23-bc9c-a7a83d158532": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "title": "Åpningstider",
               "text": "<p>Man - Ons: 11:00 - 19:00<br\/>Tors: 11:00 - 20:00<br\/>Fre: 11:00 - 19:00<br\/>Lør: 10:00 - 16:00<\/p>"
             }
           },
-          "f0c659ac-07a5-4769-9de6-3cce9ab7b94f": {
-            "type": "newsletter",
+          "8907fbeb-aedd-4ecf-845a-79e3950ce7b4": {
+            "type": "links",
             "settings": {
-              "title": "Nyhetsbrev",
-              "text": "<p>Hold deg oppdatert på nyheter, trender og kampanjer ved å melde deg på vårt nyhetsbrev. Legg igjen e-posten din her.<\/p>"
+              "title": "",
+              "link_list": "footer"
             }
           }
         },
         "block_order": [
           "d652cb66-da13-4cdb-9522-ded0c627c26a",
           "c4f553af-66fe-4e23-bc9c-a7a83d158532",
-          "f0c659ac-07a5-4769-9de6-3cce9ab7b94f"
+          "8907fbeb-aedd-4ecf-845a-79e3950ce7b4"
         ],
         "settings": {
           "show_locale_selector": true,
@@ -704,6 +706,60 @@
           "show_pagination": true,
           "show_author": true
         }
+      },
+      "1632985524a87701b3": {
+        "type": "text-columns-with-images--dynamic",
+        "blocks": {
+          "1632985524a87701b3-0": {
+            "type": "column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/img-7286-790183-Ym8HnCbV.jpg",
+              "title": "Tekstilprøver",
+              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
+              "link": "#",
+              "link_text": "Bestill prøver"
+            }
+          },
+          "1632985524a87701b3-1": {
+            "type": "column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_d756bbea-3e17-4512-a06a-ff2d5af4c091.jpg",
+              "title": "Interiørtjenester",
+              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
+              "link": "#",
+              "link_text": "Book time"
+            }
+          },
+          "1632985524a87701b3-2": {
+            "type": "column",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/utsnitt_teknisk_tekstil_info_1.jpg",
+              "title": "Vedlikehold",
+              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
+              "link": "#",
+              "link_text": "Les mer"
+            }
+          }
+        },
+        "block_order": [
+          "1632985524a87701b3-0",
+          "1632985524a87701b3-1",
+          "1632985524a87701b3-2"
+        ],
+        "settings": {
+          "per_row": 3,
+          "image_max_width": 100,
+          "circle": true
+        }
+      },
+      "16329855288f7a5eb8": {
+        "type": "newsletter--dynamic",
+        "settings": {
+          "title": "Meld deg på vårt nyhetsbrev",
+          "subheading": "<p>Hold deg oppdatert på nyheter, trender og kampanjer ved å melde deg på vårt nyhetsbrev. <\/p>",
+          "subheading_max_width": 70,
+          "placeholder": "Skriv inn din e-postadressen og trykk enter"
+        }
       }
     },
     "content_for_index": [
@@ -717,7 +773,9 @@
       "1600315468934",
       "1600315479900",
       "1600315444066",
-      "1601241721814"
+      "1601241721814",
+      "1632985524a87701b3",
+      "16329855288f7a5eb8"
     ]
   },
   "presets": {
