@@ -784,6 +784,16 @@ the shopping cart and the hamburger menu has the same class name */
     padding: 24px 12px 0 24px;
 }
 
+
+/* footer start */
+
+.footer__links ul {
+    display: flex;
+}
+
+
+/* footer end */
+
 @media only screen and (min-width: 641px) {
     body span.algolia-autocomplete {
         width: 70vw !important;
