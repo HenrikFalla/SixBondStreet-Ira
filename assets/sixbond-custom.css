@@ -788,7 +788,7 @@ the shopping cart and the hamburger menu has the same class name */
 /* footer start */
 
 .footer__links ul {
-    display: flex;
+    display: flex !important;
 }
 
 
