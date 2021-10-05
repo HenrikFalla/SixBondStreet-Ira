@@ -946,11 +946,11 @@ the shopping cart and the hamburger menu has the same class name */
 }
 
 .left__box .left__content {
-    justify-content: space-between;
+    display: flex;
 }
 
 .right__box .right__content {
-    justify-content: space-between;
+    display: flex;
 }
 
 .button {
