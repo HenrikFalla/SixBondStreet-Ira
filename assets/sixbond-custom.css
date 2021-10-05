@@ -964,7 +964,7 @@ the shopping cart and the hamburger menu has the same class name */
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 16px 0px;
     cursor: pointer;
 }
 
