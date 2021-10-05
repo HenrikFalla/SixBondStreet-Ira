@@ -931,7 +931,6 @@ the shopping cart and the hamburger menu has the same class name */
 .extended__footer {
     display: flex;
     justify-content: space-evenly;
-    margin: 10px;
     padding: 10px;
 }
 
