@@ -367,13 +367,24 @@
         ]
       },
       {
-        "id": "text",
-        "type": "richtext",
-        "label": "Text",
-        "default": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>"
-        }
-      ]
-    },
+        "type": "links",
+        "name": "Links",
+        "settings": [
+          {
+            "id": "title",
+            "type": "text",
+            "label": "Heading",
+            "info": "We strongly recommend including a heading because it functions as a toggle on smaller screen sizes.",
+            "default": "Links"
+          },
+          {
+            "id": "link_list",
+            "type": "link_list",
+            "label": "Footer menu",
+            "default": "footer"
+          }
+        ]
+      },
       {
         "type": "links",
         "name": "Links",
