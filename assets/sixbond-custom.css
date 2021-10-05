@@ -957,7 +957,7 @@ the shopping cart and the hamburger menu has the same class name */
     background-color: #332D22;
     /* warm dark */
     border: none;
-    border-radius: 12%;
+    border-radius: 30px;
     color: white;
     padding: 20px;
     text-align: center;
