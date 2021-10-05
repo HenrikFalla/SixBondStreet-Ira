@@ -930,7 +930,10 @@ the shopping cart and the hamburger menu has the same class name */
 
 .extended__footer {
     display: flex;
-    background-color: blue;
+}
+
+.extended__footer .left__box {
+    background-color: #f8f7f5;
 }
 
 
