@@ -933,23 +933,23 @@ the shopping cart and the hamburger menu has the same class name */
     flex-direction: column;
 }
 
-.extended__footer .left__box {
+.extended__footer .top__box {
     background-color: #f8f7f5;
     text-align: center;
     padding: 10px;
 }
 
-.extended__footer .right__box {
+.extended__footer .bottom__box {
     background-color: rgba(248, 247, 245, 0.6);
     text-align: center;
     padding: 10px;
 }
 
-.left__box .left__content {
+.top__box .top__content {
     display: flex;
 }
 
-.right__box .right__content {
+.bottom__box .bottom__content {
     display: flex;
 }
 
