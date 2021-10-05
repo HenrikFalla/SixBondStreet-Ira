@@ -22,12 +22,7 @@
   endif
 %}
 
-<footer
-  class="footer"
-  data-section-id="{{ section.id }}"
-  data-section-type="footer"
->
-  {% comment %}
+ {% comment %}
   Extended footer start
   {% endcomment %}
   <div class="extended__footer">
@@ -37,6 +32,13 @@
   {% comment %}
   Extended footer end
   {% endcomment %}
+
+<footer
+  class="footer"
+  data-section-id="{{ section.id }}"
+  data-section-type="footer"
+>
+
 
   <div class="footer__groups">
     {% for block in content %}
