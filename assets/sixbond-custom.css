@@ -937,12 +937,13 @@ the shopping cart and the hamburger menu has the same class name */
 
 .extended__footer .left__box {
     background-color: #f8f7f5;
+    text-align: center;
     width: 50%;
 }
 
 .extended__footer .right__box {
     background-color: rgba(248, 247, 245, 0.6);
-    /* The background color with 60% opacity */
+    text-align: center;
     width: 50%;
 }
 
