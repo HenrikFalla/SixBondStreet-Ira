@@ -132,13 +132,7 @@
             {% endif %}
           </s>
 {% comment %}E2S span {% endcomment %}
-     <p><span class="variant-inventory">
-            {% if current_variant.inventory_quantity > 0%}
-            <div class="in_stock__variant_orb">
-			<div class="in_stock__variant_orb_inner"></div>
-		</div>     {% endif %}
-            
-            {{ current_variant.inventory_quantity }}</span> på lager.</p>
+    
  {% comment %} end E2S span {% endcomment %}
  
                <div class="stock-availability">
@@ -203,7 +197,7 @@
 			{% if variant.options > 1 %}
 				{% if current_variant.available == true %}
 					{% if current_variant.inventory_quantity > 0 %}
-						<span data-stock-availability>{{ current_variant.inventory_quantity }} på lagere.</span>
+						<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
 					{% else %}
 						<span data-stock-availability>Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}</span>
 					{% endif %}
@@ -213,7 +207,13 @@
 			{% else %}
 				{% if current_variant.available == true %}
 					{% if product.variants.first.inventory_quantity > 0 %}
-						<span data-stock-availability>{{ product.variants.first.inventory_quantity }} på lagerf.</span>
+					 <p><span class="variant-inventory">
+            {% if current_variant.inventory_quantity > 0%}
+            <div class="in_stock__variant_orb">
+			<div class="in_stock__variant_orb_inner"></div>
+		</div>     {% endif %}
+            
+            {{ current_variant.inventory_quantity }}</span> på lager.</p>
 					{% else %}
 						<span data-stock-availability>Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
 					{% endif %}
