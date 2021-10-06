@@ -180,6 +180,7 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 }
 .variant_info .out_stock__variant_orb {
 	margin-right: 2px;
+  display:inline-block;vertical-align:middle
 }
 .out_stock__variant_orb_inner {
 	width: 4px;
