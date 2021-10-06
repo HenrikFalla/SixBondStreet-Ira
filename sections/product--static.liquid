@@ -98,7 +98,7 @@
     </div>
 
     <div class="product__details grid__item grid__item--one-third">
-      <div class="product-single__meta {{ current_variant.metafields.product_data.leveringstid }}">
+      <div class="product-single__meta {{ product.metafields.product_data.leveringstid }}">
 
         {%- if show_vendor -%}
 			<!-- SixBondStreet CUSTOM -->
@@ -132,8 +132,29 @@
             {% endif %}
           </s>
 {% comment %}E2S span {% endcomment %}
-          <p><span class="variant-inventory">{{ current_variant.inventory_quantity }}</span> på lager.</p>
+          <p class="{% if current_variant.inventory_quantity > 0%} color-success {% endif %}"><span class="variant-inventory">{{ current_variant.inventory_quantity }}</span> på lager.</p>
  {% comment %} end E2S span {% endcomment %}
+ 
+               <div class="stock-availability">
+          {% if variant.options > 1 %}
+          	{% if current_variant.available == true %}
+          		{% if current_variant.inventory_quantity > 0 %}
+          			<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
+          		{% else %}
+          			<span data-stock-availability class="color-error">Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}</span>
+          		{% endif %}
+          	{% else %}
+          		<span data-stock-availability>Utsolgt</span>
+            	{% endif %}
+            {% else %}
+        	{% if current_variant.available == false %}
+            <span data-stock-availability class="color-error">Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
+            	{% endif %}  
+            
+          	{% endif %}         
+          
+          </div>    
+ 
           {% comment %}<!-- Custom Stock Display for Product - Henrik -->
 		<div class="stock-availability">
 		{% if variant.options > 1 %}
@@ -147,11 +168,12 @@
           		<span data-stock-availability>Utsolgt</span>
           	{% endif %}          	
 		{% else %}
+		<span data-stock-availability>Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
           	{% if current_variant.available == true %}
           		{% if product.variants.first.inventory_quantity > 0 %}
           			<span data-stock-availability>{{ product.variants.first.inventory_quantity }} på lager.</span>
           		{% else %}
-          			<span data-stock-availability>Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
+          			<span data-stock-availability class="color-error">Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
           		{% endif %}
             {% else %}
             	<span data-stock-availability>Utsolgt</span>
@@ -309,6 +331,10 @@
         {% endfor %}
     {% endfor %}
 </section>
+<style>
+  .color-error{color:red;}
+  .color-success{color:green;}
+</style>
 <script>
   window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)}
   {% assign models = product.media | where: 'media_type', 'model' | json %}
