@@ -166,7 +166,7 @@
 		{% if variant.options > 1 %}
           	{% if current_variant.available == true %}
           		{% if current_variant.inventory_quantity > 0 %}
-          			<span data-stock-availability>{{ current_variant.inventory_quantity }} på lagerr.</span>
+          			<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
           		{% else %}
           			<span data-stock-availability>Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}</span>
           		{% endif %}
@@ -203,7 +203,7 @@
 			{% if variant.options > 1 %}
 				{% if current_variant.available == true %}
 					{% if current_variant.inventory_quantity > 0 %}
-						<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
+						<span data-stock-availability>{{ current_variant.inventory_quantity }} på lagere.</span>
 					{% else %}
 						<span data-stock-availability>Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}</span>
 					{% endif %}
@@ -213,7 +213,7 @@
 			{% else %}
 				{% if current_variant.available == true %}
 					{% if product.variants.first.inventory_quantity > 0 %}
-						<span data-stock-availability>{{ product.variants.first.inventory_quantity }} på lager.</span>
+						<span data-stock-availability>{{ product.variants.first.inventory_quantity }} på lagerf.</span>
 					{% else %}
 						<span data-stock-availability>Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
 					{% endif %}
