@@ -3,6 +3,7 @@
   assign logo_max_width = section.settings.logo_max_width
   assign logo_position = section.settings.logo_position
   assign menu = section.settings.menu
+  assign secondary_menu = section.settings.alt_menu
   assign style = section.settings.style
 
   assign transparent_home = section.settings.enable_transparent_home
@@ -15,6 +16,7 @@
 
   assign blocks = section.blocks
   assign links = linklists[menu].links
+  assign links_alt = linklists[secondary_menu].links
 %}
 
 {% capture header_classes %}
@@ -84,9 +86,15 @@
       {% render 'navigation' with menu: links, mega_navs: blocks %}
     </div>
   {%- endif -%}
-
-
+  
   <div class="header__right">
+	{% comment %} Custom SixBondStreet Henrik {% endcomment %}
+	{%- if style == 'inline' -%}
+		<div class="header__links-alt header__secondary {{ secondary_menu.handle }}" data-navigation>
+		{% render 'navigation-alt' with secondary_menu: links_alt, mega_navs: blocks %}
+		</div>
+	{%- endif -%}
+	{% comment %} End Custom SixBondStreet Henrik {% endcomment %}
     <a class="header__icon-touch header__icon-touch--search no-transition" href="{{ routes.search_url }}" data-search>
       {% render 'icon-button' with icon: 'search' %}
     </a>
@@ -160,6 +168,11 @@
         "label": "Main menu",
         "default": "main-menu"
       },
+	  {
+        "type": "link_list",
+		"id": "alt_menu",
+		"label": "Secondary Menu"
+	  },
       {
         "id": "style",
         "type": "select",

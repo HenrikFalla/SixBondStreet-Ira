@@ -4,6 +4,18 @@
   endif
 
   assign current_variant = product.selected_or_first_available_variant
+  assign in_stock = false
+  if product.variants.size > 1
+      for variant in product.variants
+        if variant.inventory_quantity > 0
+            assign in_stock = true
+        endif
+      endfor
+    else
+        if current_variant.inventory_quantity > 0
+            assign in_stock = true
+        endif
+    endif
 
   assign disabled_image_style = false
   if aspect_ratio != 'natural'
@@ -54,10 +66,29 @@
 
   <div class="product-item__meta fs-body-base c-body">
     <div class="product-item__text ff-body">
+		<!-- SixBondStreet CUSTOM -->
+		{%- if product.handle -%}
+			{%- assign vendorHandle = product.vendor | handle -%}
+			{%- if collections[vendorHandle].products.size > 0 -%}
+			<a href="{{ collections[vendorHandle].url }}">
+			<div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div>
+            </a>
+			{%- else -%}
+			<div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
+			{%- endif -%}
+		{%- endif -%}
+		<!-- END SixBondStreet CUSTOM -->
       {%- if placeholder -%}
         <h4><a href="#">{{ 'sections.featured_products.placeholder.product_title' | t }}</a></h4>
       {%- else -%}
-        <h4><a href="{{ product.url }}">{{ product.title }}</a></h4>
+        <div class="product__label">
+            <h4><a href="{{ product.url }}">{{ product.title }}</a></h4>
+            {% unless in_stock == false %}
+                <div class="in_stock__variant_orb">
+                    <div class="in_stock__variant_orb_inner"></div>
+                </div>
+            {% endunless %}
+        </div>
       {%- endif -%}
 
       {% if placeholder %}
@@ -66,13 +97,19 @@
       {% elsif product.compare_at_price > product.price %}
         <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
         <s class="t-subdued">{{ product.compare_at_price | money }}</s>
-
+	
+		{% comment %} CUSTOM SixBondStreet Henrik {% endcomment %}
         {% if product.price_varies %}
           {%- assign sale_price = product.price | money -%}
-          {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+		  <span class="sale sxbs-on-sale">
+          {{ 'products.product.from_lowest_price_html' | t: lowest_price: sale_price }}
+		  </span>
+		{% comment %} END CUSTOM SixBondStreet Henrik {% endcomment %}
         {% else %}
-          <span class="sale">{{ product.price | money }}<span>
+			{%- assign amount_saved = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price -%}
+          <span class="sale sxbs-on-sale">{{ product.price | money }}<span>
           {% render 'unit-price' item: current_variant %}
+		  <span class="on-sale saved_percentage">{{ amount_saved | round }}% avslag</span>
         {% endif %}
 
       {% else %}
@@ -104,4 +141,18 @@
     {%- endif -%}
 
   </div>
+  {% comment %} Visning av options under product item i collection {% endcomment %}
+  {% unless product.has_only_default_variant %}
+      <div class="product-options__collection">
+        {% for i in (0..2) %}
+            <div 
+                class="product__color-swatch"
+                style="background-color: {{ product.options_with_values[0].values[forloop.index0] | lowercase | replace: ' ', '' }}; background-image: url({{ product.options_with_values[0].values[forloop.index0] | handle | append: '.' | append: 'jpg' | file_url }})"
+                tabindex="0"
+            >
+            </div>
+        {% endfor %}
+        <span> + {{ product.options_with_values[0].values.size | minus: 3 }}</span>
+     </div>
+  {% endunless %}
 </div>

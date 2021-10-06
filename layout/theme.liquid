@@ -61,9 +61,9 @@
   {% render 'theme-setup' %}
   {% render 'theme-setting-vars' %}
   {{ 'index.css' | asset_url | stylesheet_tag }}
-  <!-- CUSTOM CSS -->
+  <!-- SixBondStreet CUSTOM -->
   {{ 'sixbond-custom.css' | asset_url | stylesheet_tag }}
-  <!-- END CUSTOM CSS  -->
+  <!-- END SixBondStreet CUSTOM  -->
 
   {{ content_for_header }}
   <!-- Algolia head -->
@@ -107,6 +107,8 @@
 <script src="{{ 'algolia_instant_search.js' | asset_url }}" defer></script>
   <!-- /Algolia head -->
 
+
+  {% render 'shogun-head' %}
 </head>
 
 <body
@@ -142,5 +144,14 @@
   {%- endif -%}
 
   <script src="{{ 'index.js' | asset_url }}" defer="defer"></script>
+  <!-- SixBondStreet CUSTOM -->
+  <style>
+	@font-face {
+		font-family: "Fontello";
+		src: url('{{ "fontello.woff2" | asset_url }}');
+	}
+  </style>
+  <!-- END SixBondStreet CUSTOM -->
+{% include 'profitmetrics-origin' %}
 </body>
 </html>

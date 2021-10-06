@@ -9,6 +9,7 @@
   assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media
   assign first_3d_model = product.media | where: "media_type", "model" | first
   assign enable_video_looping = section.settings.enable_video_looping
+  assign blog-vedlikehold = blogs[section.settings.vedlikehold]
 %}
 
 <section
@@ -23,39 +24,76 @@
 >
 
   <div class="product__content">
-    <div class="product__media-container">
+    <div class="product__media-container mobile-only">
       <div class="product__media product__media--{{ media_layout }}" data-slider>
-        {%- for media in product.media -%}
-          <div class="product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
-            {% render 'media', media: media, featured_media: featured_media, loop_video: enable_video_looping  %}
-          </div>
-        {%- endfor -%}
+	    {%- for media in product.media -%}
+	      <div class="product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
+		    {% render 'media', media: media, featured_media: featured_media, loop_video: enable_video_looping  %}
+	      </div>
+	    {%- endfor -%}
 
-        {%- if product.media.size > 1 -%}
-          {% render 'carousel-pagination' %}
-        {%- endif -%}
+	    {%- if product.media.size > 1 -%}
+	      {% render 'carousel-pagination' %}
+	    {%- endif -%}
       </div>
 
       <noscript>
-        {% capture product_image_size %}{{ height }}x{% endcapture %}
-        <img src="{{ featured_media | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_media.alt }}" id="FeaturedMedia-{{ section.id }}" class="product-featured-media" style="max-width: {{ height }}px;">
+	    {% capture product_image_size %}{{ height }}x{% endcapture %}
+	    <img src="{{ featured_media | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_media.alt }}" id="FeaturedMedia-{{ section.id }}" class="product-featured-media" style="max-width: {{ height }}px;">
       </noscript>
 
       {%- if first_3d_model -%}
-        <button
-          aria-label="{{ 'products.product.view_in_space_label' | t }}"
-          class="product__view-in-space btn btn--full"
-          data-in-your-space
-          data-shopify-xr
-          data-shopify-model3d-id="{{ first_3d_model.id }}"
-          data-shopify-title="{{ product.title | escape }}"
-          data-shopify-xr-hidden
-        >
-          <span>
-            {% render 'icon' with icon: '3d' %}
-            <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
-          </span>
-        </button>
+	    <button
+	      aria-label="{{ 'products.product.view_in_space_label' | t }}"
+	      class="product__view-in-space btn btn--full"
+	      data-in-your-space
+	      data-shopify-xr
+	      data-shopify-model3d-id="{{ first_3d_model.id }}"
+	      data-shopify-title="{{ product.title | escape }}"
+	      data-shopify-xr-hidden
+	    >
+	      <span>
+		    {% render 'icon' with icon: '3d' %}
+		    <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
+	      </span>
+	    </button>
+      {%- endif -%}
+    </div>
+    <div class="product__media-container desktop-only">
+      <div class="product__media product__media--{{ media_layout }}" data-slider>
+	
+	
+	    {% for i in (0..2) %}
+		    <div class="product__media-item {% if product.media[i].id == featured_media.id %}initial{% endif %}" data-slide>
+			    {% render 'media', media: product.media[i], featured_media: featured_media, loop_video: enable_video_looping  %}
+		    </div>
+	    {% endfor %}
+
+	    {%- if product.media.size > 1 -%}
+	      {% render 'carousel-pagination' %}
+	    {%- endif -%}
+      </div>
+
+      <noscript>
+	    {% capture product_image_size %}{{ height }}x{% endcapture %}
+	    <img src="{{ featured_media | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_media.alt }}" id="FeaturedMedia-{{ section.id }}" class="product-featured-media" style="max-width: {{ height }}px;">
+      </noscript>
+
+      {%- if first_3d_model -%}
+	    <button
+	      aria-label="{{ 'products.product.view_in_space_label' | t }}"
+	      class="product__view-in-space btn btn--full"
+	      data-in-your-space
+	      data-shopify-xr
+	      data-shopify-model3d-id="{{ first_3d_model.id }}"
+	      data-shopify-title="{{ product.title | escape }}"
+	      data-shopify-xr-hidden
+	    >
+	      <span>
+		    {% render 'icon' with icon: '3d' %}
+		    <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
+	      </span>
+	    </button>
       {%- endif -%}
     </div>
 
@@ -63,13 +101,29 @@
       <div class="product-single__meta">
 
         {%- if show_vendor -%}
-          <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div>
-        {%- endif -%}
+			<!-- SixBondStreet CUSTOM -->
+			{%- assign vendorHandle = product.vendor | handle -%}
+			{%- if collections[vendorHandle].products.size > 0 -%}
+			    <a href="{{ collections[vendorHandle].url }}">
+			    <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div>
+			    </a>
+			{%- else -%}
+			    <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
+			{%- endif -%}
+			<!-- END SixBondStreet CUSTOM -->
+			<!-- <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div> -->
+		{%- endif -%}
 
         <h1 class="product-single__title ff-heading fs-heading-base c-heading">{{ product.title }}</h1>
 
         <div class="product__price fs-body-base">
-          <span data-price>{{ current_variant.price | money }}</span>
+			{% comment %} CUSTOM SixBondStreet - Henrik {% endcomment %}
+			{% if current_variant.compare_at_price > current_variant.price %}
+				<span data-price class="sxbs-on-sale">{{ current_variant.price | money }}</span>
+			{% else %}
+				<span data-price>{{ current_variant.price | money }}</span>
+			{% endif %}
+			{% comment %} END CUSTOM SixBondStreet - Henrik {% endcomment %}
 
           <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
           <s data-compare-price>
@@ -77,7 +131,9 @@
               {{ current_variant.compare_at_price | money }}
             {% endif %}
           </s>
+{% comment %}E2S span {% endcomment %}
           <p><span class="variant-inventory">{{ current_variant.inventory_quantity }}</span> på lager.</p>
+ {% comment %} end E2S span {% endcomment %}
           {% comment %}<!-- Custom Stock Display for Product - Henrik -->
 		<div class="stock-availability">
 		{% if variant.options > 1 %}
@@ -114,6 +170,42 @@
   		{% endfor %}
   		</select>
         <!-- End of custom stock display - Henrik -->{% endcomment %}
+
+          {% comment %} SixBondStreet CUSTOM - Henrik {% endcomment %}
+			{% if variant.options > 1 %}
+				{% if current_variant.available == true %}
+					{% if current_variant.inventory_quantity > 0 %}
+						<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
+					{% else %}
+						<span data-stock-availability>Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}</span>
+					{% endif %}
+				{% else %}
+					<span data-stock-availability>Utsolgt</span>
+				{% endif %}          	
+			{% else %}
+				{% if current_variant.available == true %}
+					{% if product.variants.first.inventory_quantity > 0 %}
+						<span data-stock-availability>{{ product.variants.first.inventory_quantity }} på lager.</span>
+					{% else %}
+						<span data-stock-availability>Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
+					{% endif %}
+				{% else %}
+					<span data-stock-availability>Utsolgt</span>
+				{% endif %}
+			{% endif %}
+			<select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+				{% for variant in product.variants %}
+				{% if variant.available %}
+			<option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+				{{ variant.title }}
+			</option>
+			{% else %}
+			<option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+			{% endif %}
+			{% endfor %}
+			</select>
+        {% comment %} End SixBondStreet CUSTOM - Henrik {% endcomment %}
+        
           {% render 'unit-price' item: current_variant %}
           {% render 'stock-qty' item: current_variant %}
         </div>
@@ -145,7 +237,7 @@
         aria-hidden="true"
       >{{ 'products.product.loader_label' | t }}</p>
 
-      <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
+      <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description | strip_html | truncatewords: 65 }}</div>
 
       {% if section.settings.show_share_buttons %}
         <div class="product__share" data-share="{{ 'product.share' | t }}">
@@ -153,16 +245,70 @@
         </div>
       {% endif %}
     </div>
+  </div>
+  {% if product.media.size > 3 %}
+        <div class="product__media-container secondary-gallery desktop-only">
+          <div class="product__media product__media--{{ media_layout }}" data-slider>
+            {% assign i-size = product.media.size %}
+	        {% for i in (3..i-size) %}
+		    <div class="product__media-item {% if product.media[i].id == featured_media.id %}initial{% endif %}" data-slide>
+			    {% render 'media', media: product.media[i], featured_media: featured_media, loop_video: enable_video_looping  %}
+		    </div>
+	    {% endfor %}
 
+	        {%- if product.media.size > 1 -%}
+	          {% render 'carousel-pagination' %}
+	        {%- endif -%}
+          </div>
+
+          <noscript>
+	        {% capture product_image_size %}{{ height }}x{% endcapture %}
+	        <img src="{{ featured_media | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_media.alt }}" id="FeaturedMedia-{{ section.id }}" class="product-featured-media" style="max-width: {{ height }}px;">
+          </noscript>
+
+          {%- if first_3d_model -%}
+	        <button
+	          aria-label="{{ 'products.product.view_in_space_label' | t }}"
+	          class="product__view-in-space btn btn--full"
+	          data-in-your-space
+	          data-shopify-xr
+	          data-shopify-model3d-id="{{ first_3d_model.id }}"
+	          data-shopify-title="{{ product.title | escape }}"
+	          data-shopify-xr-hidden
+	        >
+	          <span>
+		        {% render 'icon' with icon: '3d' %}
+		        <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
+	          </span>
+	        </button>
+          {%- endif -%}
+        </div>
+    {% endif %}
     <div class="product__reviews">
       <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
     </div>
-  </div>
 
   {%- assign images = product.media | where: 'media_type', 'image' -%}
   {% render 'lightbox' with images: images %}
+    {% for tag in product.tags %}
+        {% for article in blog-vedlikehold.articles %}
+            {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag %}
+            {% if handle-check == article.handle %}
+                <div class="vedlikehold">
+                    {% render 'image' with
+                         image: article.image,
+                        wrapper_class: 'vedlikehold-image',
+                        disable_style: disabled_image_style
+                    %}
+                    <div class="vedlikehold-text">
+                        <h2>{{ article.title }}</h2>
+                        {{ article.content }}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
 </section>
-
 <script>
   window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)}
   {% assign models = product.media | where: 'media_type', 'model' | json %}
@@ -178,6 +324,7 @@
     {{ product.media | where: 'media_type', 'model' | json }}
   </script>
 {% endunless %}
+
 <!-- #E2S Script må med for å vise antall -->
 <script>
   var inv_qty = {};
@@ -186,6 +333,14 @@
   {% endfor %}
  </script>
  <!-- Slutt Script -->
+=======
+{% render 'product_form_tooltip' with
+	product: product,
+	current_variant: current_variant,
+	show_quantity: section.settings.show_quantity_input,
+	show_dynamic_checkout: section.settings.enable_payment_button,
+	show_swatches: section.settings.show_swatches,
+%}
 
 {% schema %}
   {
@@ -253,6 +408,11 @@
         "type": "checkbox",
         "label": "Enable video looping",
         "default": true
+      },
+      {
+        "id": "vedlikehold",
+        "type": "blog",
+        "label": "Vedlikehold"
       }
     ]
   }

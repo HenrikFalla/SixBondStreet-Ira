@@ -13,7 +13,7 @@
         {% assign url = label | link_to_remove_tag: tag | split: '"' %}
         {% assign url = url[1] %}
 
-        <a href="{{ url }}" class="pill pill--solid fs-body-base no-transition" data-pill="filter" data-tag="{{ tag | handle }}">
+        <a href="{{ url }}" id="{{ tag | handle }}" class="pill pill--solid fs-body-base no-transition" data-pill="filter" data-tag="{{ tag | handle }}">
           {{ label }}
           {% render 'icon' with icon: 'close' %}
         </a>
