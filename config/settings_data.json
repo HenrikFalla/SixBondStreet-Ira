@@ -253,7 +253,6 @@
       },
       "1600315418706": {
         "type": "collage--dynamic",
-        "disabled": true,
         "blocks": {
           "1601239747479": {
             "type": "image",
@@ -341,7 +340,6 @@
       },
       "1600315444066": {
         "type": "featured-products--dynamic",
-        "disabled": true,
         "blocks": {
           "1601493613565": {
             "type": "product",
@@ -379,7 +377,6 @@
       },
       "1600315451525": {
         "type": "collection-list--dynamic",
-        "disabled": true,
         "blocks": {
           "1600315451525-0": {
             "type": "collection",
@@ -406,7 +403,6 @@
       },
       "1600315468934": {
         "type": "slideshow--dynamic",
-        "disabled": true,
         "blocks": {
           "1600315468934-0": {
             "type": "image",
@@ -498,7 +494,6 @@
       },
       "1601241721814": {
         "type": "gallery--dynamic",
-        "disabled": true,
         "blocks": {
           "1601241721814-3": {
             "type": "image",
@@ -632,7 +627,6 @@
       },
       "1601498256106": {
         "type": "image-with-text--dynamic",
-        "disabled": true,
         "settings": {
           "video_url": "",
           "image_width": "standard",
@@ -648,7 +642,6 @@
       },
       "1601499234365": {
         "type": "featured-collection--dynamic",
-        "disabled": true,
         "settings": {
           "collection": "",
           "title": "New Arrivals",
@@ -709,6 +702,7 @@
       },
       "1632985524a87701b3": {
         "type": "text-columns-with-images--dynamic",
+        "disabled": true,
         "blocks": {
           "1632985524a87701b3-0": {
             "type": "column",
@@ -754,6 +748,7 @@
       },
       "16329855288f7a5eb8": {
         "type": "newsletter--dynamic",
+        "disabled": true,
         "settings": {
           "title": "Meld deg på vårt nyhetsbrev",
           "subheading": "<p>Hold deg oppdatert på nyheter, trender og kampanjer ved å melde deg på vårt nyhetsbrev. <\/p>",
