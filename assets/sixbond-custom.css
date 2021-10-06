@@ -166,6 +166,33 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	margin: auto;
 	margin-top: 3px;
 }
+  
+  .variant_info .out_stock__variant_orb, .out_stock__variant_orb {
+	display: block;
+	min-width: 10px;
+	width: 10px;
+	min-height: 10px;
+	height: 10px;
+	background: rgb(255 112 108 / 47%);
+	shape-outside: circle();
+	clip-path: circle();
+	margin-top: 0px;
+}
+.variant_info .out_stock__variant_orb {
+	margin-right: 2px;
+}
+.out_stock__variant_orb_inner {
+	width: 4px;
+	height: 4px;
+	display: block;
+	background: #FF140E;
+	shape-outside: circle();
+	clip-path: circle();
+	margin: auto;
+	margin-top: 3px;
+}
+  
+  
 /* Vedlikehold Section product page */
 .vedlikehold {
 	display: flex;
