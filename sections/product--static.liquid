@@ -132,7 +132,13 @@
             {% endif %}
           </s>
 {% comment %}E2S span {% endcomment %}
-          <p class="{% if current_variant.inventory_quantity > 0%} color-success {% endif %}"><span class="variant-inventory">{{ current_variant.inventory_quantity }}</span> på lager.</p>
+     <p><span class="variant-inventory">
+            {% if current_variant.inventory_quantity > 0%}
+            <div class="in_stock__variant_orb">
+			<div class="in_stock__variant_orb_inner"></div>
+		</div>     {% endif %}
+            
+            {{ current_variant.inventory_quantity }}</span> på lager.</p>
  {% comment %} end E2S span {% endcomment %}
  
                <div class="stock-availability">
