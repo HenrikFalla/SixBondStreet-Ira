@@ -23,7 +23,7 @@
 				</div>
 			{% endif %}
 
-			{% elsif block.type == 'links' %}
+			{% elsif block.type == 'linklist' %}
 				<div class="extended-footer-block extended-footer-block__links">
 					 {% unless block.settings.image == nul %}
 						<div class="extended-footer__image">
@@ -33,7 +33,11 @@
 					 <div class="extended-footer__content">
 						<h1>{{ block.settings.heading }}</h1>
 						<p>{{ block.settings.subheading }}</p>
-						<a href="{{ block.settings.link }}">{{ block.settings.link_text }}</a>
+						<ul class_="extended-footer__links">
+							{% for link in linklists[block.settings.link_list].links %}
+								<li><a href="{{ link.url }}">{{ link.title }}</a></li>
+							{% endfor %}
+						</ul>
 					</div>
 				</div>
 			{% endif %}
