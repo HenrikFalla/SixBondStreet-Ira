@@ -1,6 +1,20 @@
 ﻿{% liquid
 	assign content = section.blocks
 %}
+<div
+	class="extended-footer"
+	data-section-id="{{ section.id }}"
+	data-section-type="footer"
+>
+	<div class="extended-footer-groups">
+		{% for block in content %}
+			{% if block.type == 'text'  %}
+				<div class="extended-footer-block extended-footer-block__text">
+					{{ block.settings.text }}
+				</div>
+		{% endfor %}
+	</div>
+</div>
 
 {% schema %}
 	{
