@@ -769,6 +769,7 @@
           },
           "67bbd6a2-e5f3-4aea-b1f9-7072e8054463": {
             "type": "linklist",
+            "disabled": true,
             "settings": {
               "title": "Vedlikehold",
               "subheading": "<p>Litt tekst her<\/p>",
