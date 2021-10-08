@@ -25,7 +25,7 @@
 			{% if block.type == 'text'  %}
 				<div class="extended-footer-block extended-footer-block__text extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
 					 {% unless block.settings.image == nul %}
-						<div class="extended-footer__image" style="background: url({{ block.settings.image | img_url: '800x' }}) no-repeat; background-size: cover;">
+						<div class="extended-footer__image" style="background: url({{ block.settings.image | img_url: '800x' }}) no-repeat center; background-size: cover;">
 						</div>
 					 {% endunless %}
 					 <div class="extended-footer__content"
@@ -41,7 +41,7 @@
 			{% elsif block.type == 'linklist' %}
 				<div class="extended-footer-block extended-footer-block__links extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
 					 {% unless block.settings.image == nul %}
-						<div class="extended-footer__image" style="background: url({{ block.settings.image | img_url: '800x' }}) no-repeat; background-size: cover;">
+						<div class="extended-footer__image" style="background: url({{ block.settings.image | img_url: '800x' }}) no-repeat center; background-size: cover;">
 						</div>
 					 {% endunless %}
 					 <div class="extended-footer__content"
@@ -61,7 +61,7 @@
 			{% elsif block.type == 'newsletter' %}
 				<div class="extended-footer-block extended-footer-block__newsletter extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
 					{% unless block.settings.image == nul %}
-						<div class="extended-footer__image" style="background: url({{ block.settings.image | img_url: '800x' }}) no-repeat; background-size: cover;">
+						<div class="extended-footer__image" style="background: url({{ block.settings.image | img_url: '800x' }}) no-repeat center; background-size: cover;">
 						</div>
 					 {% endunless %}
 					 <div class="extended-footer__content"
