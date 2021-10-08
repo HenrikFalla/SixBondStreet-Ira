@@ -829,6 +829,16 @@ the shopping cart and the hamburger menu has the same class name */
 .extended-footer .extended-footer-groups .extended-footer-block .extended-footer__content a {
 	text-decoration: underline dotted;
 }
+input#Email {
+	background: #fff;
+	width: 100%;
+	max-width: 300px;
+	margin: auto;
+	padding: 8px 20px;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px rgb(168 161 161 / 26%);
+	display: block;
+}
 @media (min-width:40em) {
 	.extended-footer .extended-footer-groups .extended-100 {
 		padding: 65px 20%;
