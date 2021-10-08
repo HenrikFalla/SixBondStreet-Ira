@@ -146,7 +146,7 @@
 		</div> Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}</span>
           		{% endif %}
           	{% else %}
-          		<span data-stock-availability>Utsolgt</span>
+          		<span data-stock-availability>{% comment %}Utsolgt{% endcomment %}</span>
             	{% endif %}
             {% else %}
         	{% if current_variant.available == false %}
