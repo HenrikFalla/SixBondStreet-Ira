@@ -787,7 +787,23 @@ the shopping cart and the hamburger menu has the same class name */
 
 /* footer start */
 
-
+.extended-footer-groups {
+	display: flex;
+	flex-flow: wrap;
+}
+.extended-footer-groups .extended-footer-block {
+    overflow: hidden;
+    float: left;
+    margin: 0;
+}
+.extended-footer-groups .extended-100 {
+    width: 100%;
+    flex: 100%;
+}
+.extended-footer-groups .extended-50 {
+    width: 100%;
+    flex: 50%;
+}
 
 /* footer end */
 
