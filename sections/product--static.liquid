@@ -131,7 +131,6 @@
               {{ current_variant.compare_at_price | money }}
             {% endif %}
           </s>
-{% comment %}E2S span {% endcomment %}
     
  {% comment %} end E2S span {% endcomment %}
  
@@ -227,7 +226,7 @@
                           Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
 					{% endif %}
 				{% else %}
-					<span data-stock-availability>Utsolgt</span>
+					<span data-stock-availability></span>
 				{% endif %}
 			{% endif %}
 			<select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
