@@ -38,6 +38,35 @@
 						</ul>
 					</div>
 				</div>
+			{% elsif block.type == 'newsletter' %}
+				<div class="extended-footer-block extended-footer-block__newsletter">
+					{% unless block.settings.image == nul %}
+						<div class="extended-footer__image">
+							<img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt }}" />
+						</div>
+					 {% endunless %}
+					 <div class="extended-footer__content">
+						 <h1>{{ block.settings.title }}</h1>
+						 <p>{{ block.settings.subheading }}</p>
+						{% form 'customer', class: 'newsletter__form' %}
+						{{ form.errors | default_errors }}
+							{% if form.posted_successfully? %}
+								<p class="newsletter__success fs-body-base">{{ 'general.newsletter_form.confirmation' | t }}</p>
+							{% else %}
+								<input type="hidden" name="contact[tags]" value="newsletter">
+								<input type="email"
+								class="input newsletter__input"
+								name="contact[email]"
+								id="Email"
+								value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
+								placeholder="{{ block.settings.placeholder }}"
+								autocorrect="off"
+								autocapitalize="off"
+								>
+							{% endif %}
+						{% endform %}
+					</div>
+				</div>
 			{% endif %}
 		{% endfor %}
 	</div>
