@@ -226,7 +226,7 @@
                           Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
 					{% endif %}
 				{% else %}
-					<span data-stock-availability></span>
+					<span data-stock-availability>{% comment %}Evt. kommentar- ikke på lager e.l. {% endcomment %}</span>
 				{% endif %}
 			{% endif %}
 			<select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
