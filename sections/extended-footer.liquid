@@ -1,6 +1,7 @@
 ﻿{% liquid
 	assign content = section.blocks
 	assign blocks_count = section.blocks.size
+	assign colours_bg = "e3e2e1,e8e7e6,edeceb,f2f1f0" | split: ","
 %}
 
 {% if blocks_count == 1 %}
@@ -22,7 +23,7 @@
 		{% assign i = 0 %}
 		{% for block in content %}
 			{% if block.type == 'text'  %}
-				<div class="extended-footer-block extended-footer-block__text extended-{{ n-size[i] }}">
+				<div class="extended-footer-block extended-footer-block__text extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
 					 {% unless block.settings.image == nul %}
 						<div class="extended-footer__image">
 							<img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt }}" />
@@ -35,7 +36,7 @@
 					</div>
 				</div>
 			{% elsif block.type == 'linklist' %}
-				<div class="extended-footer-block extended-footer-block__links extended-{{ n-size[i] }}">
+				<div class="extended-footer-block extended-footer-block__links extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
 					 {% unless block.settings.image == nul %}
 						<div class="extended-footer__image">
 							<img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt }}" />
@@ -52,7 +53,7 @@
 					</div>
 				</div>
 			{% elsif block.type == 'newsletter' %}
-				<div class="extended-footer-block extended-footer-block__newsletter extended-{{ n-size[i] }}">
+				<div class="extended-footer-block extended-footer-block__newsletter extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
 					{% unless block.settings.image == nul %}
 						<div class="extended-footer__image">
 							<img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt }}" />
