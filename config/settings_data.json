@@ -782,7 +782,7 @@
               "title": "Nyhetsbrev",
               "subheading": "<p>Ikke gå glipp av noe<\/p>",
               "subheading_max_width": 70,
-              "placeholder": "Skriv inn din epost her"
+              "placeholder": ""
             }
           }
         },
