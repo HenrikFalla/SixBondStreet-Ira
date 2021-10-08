@@ -768,10 +768,39 @@
               "link_text": "Book time her",
               "link": "#"
             }
+          },
+          "67bbd6a2-e5f3-4aea-b1f9-7072e8054463": {
+            "type": "linklist",
+            "settings": {
+              "title": "Vedlikehold",
+              "subheading": "<p>Litt tekst her<\/p>",
+              "link_list": "vedlikehold"
+            }
+          },
+          "58244e45-cb62-4762-9da7-7b230ae105c5": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Nyhetsbrev",
+              "subheading": "<p>Ikke gå glipp av noe<\/p>",
+              "subheading_max_width": 70,
+              "placeholder": "Skriv inn din epost her"
+            }
+          },
+          "60e1fc85-4f5f-40af-8e54-6a9d3bac6188": {
+            "type": "text",
+            "settings": {
+              "heading": "Gratis tekstilprøver",
+              "subheading": "<p>Bestill gratis tekstilprøver i dag<\/p>",
+              "link_text": "Bestill gratis tekstilprøve her",
+              "link": "shopify:\/\/pages\/gratis-tekstilprover"
+            }
           }
         },
         "block_order": [
-          "4dceb123-5a57-46e0-a24c-fca4fba8424f"
+          "4dceb123-5a57-46e0-a24c-fca4fba8424f",
+          "67bbd6a2-e5f3-4aea-b1f9-7072e8054463",
+          "58244e45-cb62-4762-9da7-7b230ae105c5",
+          "60e1fc85-4f5f-40af-8e54-6a9d3bac6188"
         ],
         "settings": {
         }
