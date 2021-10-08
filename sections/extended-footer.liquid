@@ -22,6 +22,21 @@
 					</div>
 				</div>
 			{% endif %}
+
+			{% elsif block.type == 'links' %}
+				<div class="extended-footer-block extended-footer-block__links">
+					 {% unless block.settings.image == nul %}
+						<div class="extended-footer__image">
+							<img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt }}" />
+						</div>
+					 {% endunless %}
+					 <div class="extended-footer__content">
+						<h1>{{ block.settings.heading }}</h1>
+						<p>{{ block.settings.subheading }}</p>
+						<a href="{{ block.settings.link }}">{{ block.settings.link_text }}</a>
+					</div>
+				</div>
+			{% endif %}
 		{% endfor %}
 	</div>
 </div>
