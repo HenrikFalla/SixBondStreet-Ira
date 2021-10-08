@@ -1,4 +1,4 @@
-{% liquid
+﻿{% liquid
 	assign content = section.blocks
 %}
 
@@ -41,28 +41,45 @@
 						"label": "CTA link"
 					}
 				]
-			},
-			{
-				"type": "newsletter",
+				},
 				"name": "Newsletter",
+				"class": "inline-section",
 				"settings": [
-					{
-						"id": "image",
-						"type": "image_picker",
-						"label": "Image"
-					},
 					{
 						"id": "title",
 						"type": "text",
 						"label": "Heading",
-						"info": "We strongly recommend including a heading because it functions as a toggle on smaller screen sizes.",
-						"default": "Newsletter"
+						"default": "Sign up for our newsletter"
 					},
 					{
-						"id": "text",
+						"id": "subheading",
 						"type": "richtext",
-						"label": "Text",
-						"default": "<p>Subscribe for store updates and discounts.</p>"
+						"label": "Subheading"
+					},
+					{
+						"id": "subheading_max_width",
+						"type": "range",
+						"label": "Subheading max width",
+						"default": 70,
+						"min": 40,
+						"max": 90,
+						"step": 5
+					},
+					{
+						"id": "placeholder",
+						"type": "text",
+						"label": "Input placeholder",
+						"default": "Enter your email address and press return →"
+					},
+					{
+						"type": "paragraph",
+						"content": "Customers who subscribe will have their email address added to the “accepts marketing” [customer list](/admin/customers?query=&accepts_marketing=1)."
+					}
+					],
+					"presets": [
+					{
+						"name": "Newsletter",
+						"category": "Promotional"
 					}
 				]
 			}
