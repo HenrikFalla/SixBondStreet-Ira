@@ -4,13 +4,13 @@
 %}
 
 {% if blocks_count == 1 %}
-	{% assign n-size = "John, Paul, George, Ringo" | split: ", " %}
+	{% assign n-size = "100" | split: "," %}
 {% elsif blocks_count == 2 %}
-	{% assign n-size = "John, Paul, George, Ringo" | split: ", " %}
+	{% assign n-size = "50,50" | split: "," %}
 {% elsif blocks_count == 3 %}
-	{% assign n-size = "John, Paul, George, Ringo" | split: ", " %}
+	{% assign n-size = "50,50,100" | split: "," %}
 {% elsif blocks_count == 4 %}
-	{% assign n-size = "John, Paul, George, Ringo" | split: ", " %}
+	{% assign n-size = "50,50,50,50" | split: "," %}
 {% endif %}
 
 <div
