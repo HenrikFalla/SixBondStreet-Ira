@@ -811,7 +811,7 @@ the shopping cart and the hamburger menu has the same class name */
 	max-width: 200px;
 	width: 100%;
 }
-.extended-footer .extended-footer-groups .extended-footer-block {
+.extended-footer .extended-footer-groups .extended-50, .extended-footer .extended-footer-groups .extended-100 {
 	padding: 32px;
 }
 .extended-footer .extended-footer-groups .extended-footer-block > div {
@@ -823,8 +823,8 @@ the shopping cart and the hamburger menu has the same class name */
     margin-right: 32px;
 }
 @media (min-width:40em) {
-	.extended-footer-groups .extended-100 {
-		padding: 32px 20%;
+	.extended-footer .extended-footer-groups .extended-100 {
+		padding: 65px 20%;
 	}
 }
 @media (max-width: 40em) {
