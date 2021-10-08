@@ -179,6 +179,13 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "c4f553af-66fe-4e23-bc9c-a7a83d158532": {
+            "type": "text",
+            "settings": {
+              "title": "Kontakt oss",
+              "text": "<p>Tlf: 45 09 99 00<\/p><p>Kundeservice@sixbondstreet.no<\/p><p><strong>Åpningstider<\/strong><\/p><p>Man - Ons: 11:00 - 19:00<\/p><p>Tors: 11:00 - 20:00<\/p><p>Fre: 11:00 - 19:00<br\/>Lør: 10:00 - 16:00<br\/><strong>Showroom<\/strong><br\/>Drammensveien 130<br\/>0277 Oslo<\/p>"
+            }
+          },
           "8907fbeb-aedd-4ecf-845a-79e3950ce7b4": {
             "type": "links",
             "settings": {
@@ -186,26 +193,17 @@
               "link_list": "footer"
             }
           },
-          "c4f553af-66fe-4e23-bc9c-a7a83d158532": {
-            "type": "text",
-            "disabled": true,
-            "settings": {
-              "title": "Åpningstider",
-              "text": "<p>Man - Ons: 11:00 - 19:00<br\/>Tors: 11:00 - 20:00<br\/>Fre: 11:00 - 19:00<br\/>Lør: 10:00 - 16:00<\/p>"
-            }
-          },
           "518c5315-c457-4e74-b87e-92f9338f2f4d": {
             "type": "links",
-            "disabled": true,
             "settings": {
-              "title": "Links",
-              "link_list": ""
+              "title": "Vedlikehold",
+              "link_list": "vedlikehold"
             }
           }
         },
         "block_order": [
-          "8907fbeb-aedd-4ecf-845a-79e3950ce7b4",
           "c4f553af-66fe-4e23-bc9c-a7a83d158532",
+          "8907fbeb-aedd-4ecf-845a-79e3950ce7b4",
           "518c5315-c457-4e74-b87e-92f9338f2f4d"
         ],
         "settings": {
