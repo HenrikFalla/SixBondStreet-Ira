@@ -5,12 +5,12 @@ This file can be re-written at any time.
 
 {% if article %}
   {% assign content = article %}
-{% elsif collection %}
-  {% assign content = collection %}
 {% elsif page %}
   {% assign content = page %}
 {% elsif product %}
   {% assign content = product %}
+{% elsif collection %}
+  {% assign content = collection %}
 {% endif %}
 {% render 'shogun-products', content: content %}
 {% schema %}
