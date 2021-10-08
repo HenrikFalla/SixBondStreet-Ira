@@ -81,7 +81,8 @@
 					</div>
 				</div>
 			{% endif %}
-			<h1>{% increment i %}</h1>
+			{% assign i = i | plus: 1 %}
+			{{ i }}
 		{% endfor %}
 	</div>
 </div>
