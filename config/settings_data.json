@@ -776,11 +776,21 @@
               "subheading": "<p>Litt tekst her<\/p>",
               "link_list": "vedlikehold"
             }
+          },
+          "58244e45-cb62-4762-9da7-7b230ae105c5": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Nyhetsbrev",
+              "subheading": "<p>Ikke gå glipp av noe<\/p>",
+              "subheading_max_width": 70,
+              "placeholder": "Skriv inn din epost her"
+            }
           }
         },
         "block_order": [
           "4dceb123-5a57-46e0-a24c-fca4fba8424f",
-          "67bbd6a2-e5f3-4aea-b1f9-7072e8054463"
+          "67bbd6a2-e5f3-4aea-b1f9-7072e8054463",
+          "58244e45-cb62-4762-9da7-7b230ae105c5"
         ],
         "settings": {
         }
