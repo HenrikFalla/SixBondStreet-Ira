@@ -768,10 +768,19 @@
               "link_text": "Book time her",
               "link": "#"
             }
+          },
+          "67bbd6a2-e5f3-4aea-b1f9-7072e8054463": {
+            "type": "linklist",
+            "settings": {
+              "title": "Vedlikehold",
+              "subheading": "<p>Litt tekst her<\/p>",
+              "link_list": "vedlikehold"
+            }
           }
         },
         "block_order": [
-          "4dceb123-5a57-46e0-a24c-fca4fba8424f"
+          "4dceb123-5a57-46e0-a24c-fca4fba8424f",
+          "67bbd6a2-e5f3-4aea-b1f9-7072e8054463"
         ],
         "settings": {
         }
