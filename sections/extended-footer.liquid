@@ -12,6 +12,9 @@
 {% elsif blocks_count == 4 %}
 	{% assign n-size = "50,50,50,50" | split: "," %}
 {% endif %}
+{{ n-size[0] }}
+{{ n-size[1] }}
+{{ n-size[2] }}
 
 <div
 	class="extended-footer"
@@ -82,7 +85,6 @@
 				</div>
 			{% endif %}
 			{% assign i = i | plus: 1 %}
-			{{ i }}
 		{% endfor %}
 	</div>
 </div>
