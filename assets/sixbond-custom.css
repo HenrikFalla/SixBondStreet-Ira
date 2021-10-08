@@ -821,6 +821,7 @@ the shopping cart and the hamburger menu has the same class name */
 }
 .extended-footer .extended-footer-groups .extended-footer-block .extended-footer__image {
     margin-right: 32px;
+	width: 200px;
 }
 .extended-footer .extended-footer-groups .extended-footer-block .extended-footer__content p {
 	margin: 8px 0;
