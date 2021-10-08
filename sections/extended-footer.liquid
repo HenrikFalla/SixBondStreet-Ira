@@ -1,5 +1,16 @@
 ﻿{% liquid
 	assign content = section.blocks
+	assign blocks_count = section.blocks.size
+
+	if blocks_count == 1
+		assign size = "100" | split ','
+	elsif blocks_count == 2
+		assign size = "50,50" | split ','
+	elsif blocks_count == 3
+		assign size = "50,50,100" | split ','
+	elsif blocks_count == 4
+		assign size = "50,50,50,50" | split ','
+	endif
 %}
 <div
 	class="extended-footer"
@@ -7,9 +18,10 @@
 	data-section-type="footer"
 >
 	<div class="extended-footer-groups">
+		{% assign i = 0 %}
 		{% for block in content %}
 			{% if block.type == 'text'  %}
-				<div class="extended-footer-block extended-footer-block__text">
+				<div class="extended-footer-block extended-footer-block__text extended-{{ size[i] }}">
 					 {% unless block.settings.image == nul %}
 						<div class="extended-footer__image">
 							<img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt }}" />
@@ -22,7 +34,7 @@
 					</div>
 				</div>
 			{% elsif block.type == 'linklist' %}
-				<div class="extended-footer-block extended-footer-block__links">
+				<div class="extended-footer-block extended-footer-block__links extended-{{ size[i] }}">
 					 {% unless block.settings.image == nul %}
 						<div class="extended-footer__image">
 							<img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt }}" />
@@ -39,7 +51,7 @@
 					</div>
 				</div>
 			{% elsif block.type == 'newsletter' %}
-				<div class="extended-footer-block extended-footer-block__newsletter">
+				<div class="extended-footer-block extended-footer-block__newsletter extended-{{ size[i] }}">
 					{% unless block.settings.image == nul %}
 						<div class="extended-footer__image">
 							<img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt }}" />
@@ -68,6 +80,7 @@
 					</div>
 				</div>
 			{% endif %}
+			{% increment i %}
 		{% endfor %}
 	</div>
 </div>
