@@ -24,12 +24,15 @@
 		{% for block in content %}
 			{% if block.type == 'text'  %}
 				<div class="extended-footer-block extended-footer-block__text extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
-					 {% unless block.settings.image == nul %}
-						<div class="extended-footer__image">
-							<img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt }}" />
+					 {{% unless block.settings.image == nul %}
+						<div class="extended-footer__image" style="background: url("{{ block.settings.image | img_url: '800x' }}") no-repeat; background-size: cover;">
 						</div>
 					 {% endunless %}
-					 <div class="extended-footer__content">
+					 <div class="extended-footer__content"
+						{% unless block.settings.image == nul %}
+							style="flex: 60%;"
+						{% endunless %}
+					 >
 						<h1>{{ block.settings.heading }}</h1>
 						<p>{{ block.settings.subheading }}</p>
 						<a href="{{ block.settings.link }}">{{ block.settings.link_text }}</a>
@@ -38,11 +41,14 @@
 			{% elsif block.type == 'linklist' %}
 				<div class="extended-footer-block extended-footer-block__links extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
 					 {% unless block.settings.image == nul %}
-						<div class="extended-footer__image">
-							<img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt }}" />
+						<div class="extended-footer__image" style="background: url("{{ block.settings.image | img_url: '800x' }}") no-repeat; background-size: cover;">
 						</div>
 					 {% endunless %}
-					 <div class="extended-footer__content">
+					 <div class="extended-footer__content"
+						{% unless block.settings.image == nul %}
+							style="flex: 60%;"
+						{% endunless %}
+					 >
 						<h1>{{ block.settings.title }}</h1>
 						<p>{{ block.settings.subheading }}</p>
 						<ul class_="extended-footer__links">
@@ -55,11 +61,14 @@
 			{% elsif block.type == 'newsletter' %}
 				<div class="extended-footer-block extended-footer-block__newsletter extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
 					{% unless block.settings.image == nul %}
-						<div class="extended-footer__image">
-							<img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt }}" />
+						<div class="extended-footer__image" style="background: url("{{ block.settings.image | img_url: '800x' }}") no-repeat; background-size: cover;">
 						</div>
 					 {% endunless %}
-					 <div class="extended-footer__content">
+					 <div class="extended-footer__content"
+						{% unless block.settings.image == nul %}
+							style="flex: 60%;"
+						{% endunless %}
+					 >
 						 <h1>{{ block.settings.title }}</h1>
 						 <p>{{ block.settings.subheading }}</p>
 						{% form 'customer', class: 'newsletter__form' %}
