@@ -1,0 +1,209 @@
+﻿{% liquid
+	assign content = section.blocks
+	assign blocks_count = section.blocks.size
+	assign colours_bg = "e3e2e1,e8e7e6,edeceb,f2f1f0" | split: ","
+%}
+
+{% if blocks_count == 1 %}
+	{% assign n-size = "100" | split: "," %}
+{% elsif blocks_count == 2 %}
+	{% assign n-size = "50,50" | split: "," %}
+{% elsif blocks_count == 3 %}
+	{% assign n-size = "50,50,100" | split: "," %}
+{% elsif blocks_count == 4 %}
+	{% assign n-size = "50,50,50,50" | split: "," %}
+{% endif %}
+
+<div
+	class="extended-footer"
+	data-section-id="{{ section.id }}"
+	data-section-type="footer"
+>
+	<div class="extended-footer-groups">
+		{% assign i = 0 %}
+		{% for block in content %}
+			{% if block.type == 'text'  %}
+				<div class="extended-footer-block extended-footer-block__text extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
+					 {% unless block.settings.image == nul %}
+						<div class="extended-footer__image" style="background: url({{ block.settings.image | img_url: '800x' }}) no-repeat center; background-size: cover;">
+						</div>
+					 {% endunless %}
+					 <div class="extended-footer__content"
+						{% unless block.settings.image == nul %}
+							style="flex: 60%;"
+						{% endunless %}
+					 >
+						<h1>{{ block.settings.heading }}</h1>
+						<p>{{ block.settings.subheading }}</p>
+						<a href="{{ block.settings.link }}">{{ block.settings.link_text }}</a>
+					</div>
+				</div>
+			{% elsif block.type == 'linklist' %}
+				<div class="extended-footer-block extended-footer-block__links extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
+					 {% unless block.settings.image == nul %}
+						<div class="extended-footer__image" style="background: url({{ block.settings.image | img_url: '800x' }}) no-repeat center; background-size: cover;">
+						</div>
+					 {% endunless %}
+					 <div class="extended-footer__content"
+						{% unless block.settings.image == nul %}
+							style="flex: 60%;"
+						{% endunless %}
+					 >
+						<h1>{{ block.settings.title }}</h1>
+						<p>{{ block.settings.subheading }}</p>
+						<ul class_="extended-footer__links">
+							{% for link in linklists[block.settings.link_list].links %}
+								<li><a href="{{ link.url }}">{{ link.title }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			{% elsif block.type == 'newsletter' %}
+				<div class="extended-footer-block extended-footer-block__newsletter extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
+					{% unless block.settings.image == nul %}
+						<div class="extended-footer__image" style="background: url({{ block.settings.image | img_url: '800x' }}) no-repeat center; background-size: cover;">
+						</div>
+					 {% endunless %}
+					 <div class="extended-footer__content"
+						{% unless block.settings.image == nul %}
+							style="flex: 60%;"
+						{% endunless %}
+					 >
+						 <h1>{{ block.settings.title }}</h1>
+						 <p>{{ block.settings.subheading }}</p>
+						{% form 'customer', class: 'newsletter__form' %}
+						{{ form.errors | default_errors }}
+							{% if form.posted_successfully? %}
+								<p class="newsletter__success fs-body-base">{{ 'general.newsletter_form.confirmation' | t }}</p>
+							{% else %}
+								<input type="hidden" name="contact[tags]" value="newsletter">
+								<input type="email"
+								class="input newsletter__input"
+								name="contact[email]"
+								id="Email"
+								value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
+								placeholder="{{ block.settings.placeholder }}"
+								autocorrect="off"
+								autocapitalize="off"
+								>
+							{% endif %}
+						{% endform %}
+					</div>
+				</div>
+			{% endif %}
+			{% assign i = i | plus: 1 %}
+		{% endfor %}
+	</div>
+</div>
+
+{% schema %}
+	{
+		"name": "Extended Footer",
+		"class": "extended-footer__parent",
+		"max_blocks": 4,
+		"blocks": [
+			{
+				"type": "text",
+				"name": "Block with image",
+				"settings": [
+					{
+						"id": "image",
+						"type": "image_picker",
+						"label": "Image"
+					},
+					{
+						"id": "heading",
+						"type": "text",
+						"label": "Heading",
+						"info": "Info",
+						"default": "Tittel her"
+					},
+					{
+						"id": "subheading",
+						"type": "richtext",
+						"label": "Subheading",
+						"default": "<p>Skriv tekst her</p>"
+					},
+					{
+						"id": "link_text",
+						"type": "text",
+						"label": "CTA text"
+					},
+					{
+						"id": "link",
+						"type": "url",
+						"label": "CTA link"
+					}
+				]
+			},
+			{
+				"type": "newsletter",
+				"name": "Newsletter",
+				"settings": [
+					{
+						"id": "image",
+						"type": "image_picker",
+						"label": "Image"
+					},
+					{
+						"id": "title",
+						"type": "text",
+						"label": "Heading",
+						"default": "Sign up for our newsletter"
+					},
+					{
+						"id": "subheading",
+						"type": "richtext",
+						"label": "Subheading"
+					},
+					{
+						"id": "subheading_max_width",
+						"type": "range",
+						"label": "Subheading max width",
+						"default": 70,
+						"min": 40,
+						"max": 90,
+						"step": 5
+					},
+					{
+						"id": "placeholder",
+						"type": "text",
+						"label": "Input placeholder",
+						"default": "Skriv inn eposten din og trykk enter →"
+					},
+					{
+						"type": "paragraph",
+						"content": "Customers who subscribe will have their email address added to the “accepts marketing” [customer list](/admin/customers?query=&accepts_marketing=1)."
+					}
+				]
+			},
+			{
+				"type": "linklist",
+				"name": "Linklist",
+				"settings": [
+					{
+						"id": "image",
+						"type": "image_picker",
+						"label": "Image"
+					},
+					{
+						"id": "title",
+						"type": "text",
+						"label": "Heading",
+						"default": "Tittel"
+					},
+					{
+						"id": "subheading",
+						"type": "richtext",
+						"label": "Subheading"
+					},
+					{
+						"id": "link_list",
+						"type": "link_list",
+						"label": "Link List"
+					}
+				]
+			}
+		]
+	}
+{% endschema %}

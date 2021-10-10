@@ -787,10 +787,72 @@ the shopping cart and the hamburger menu has the same class name */
 
 /* footer start */
 
-.footer__links ul {
-    display: flex !important;
+.extended-footer-groups {
+	display: flex;
+	flex-flow: wrap;
 }
-
+.extended-footer-groups .extended-footer-block {
+    overflow: hidden;
+    float: left;
+    margin: 0;
+}
+.extended-footer-groups .extended-100 {
+    width: 100%;
+    flex: 100%;
+}
+.extended-footer-groups .extended-50 {
+    width: 100%;
+    flex: 50%;
+}
+.extended-footer .extended-footer-groups .extended-footer-block__text {
+	display: flex;
+}
+.extended-footer .extended-footer-groups .extended-footer__image img {
+	max-width: 200px;
+	width: 100%;
+}
+.extended-footer .extended-footer-groups .extended-50, .extended-footer .extended-footer-groups .extended-100 {
+	padding: 62px;
+}
+.extended-footer .extended-footer-groups .extended-footer-block > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.extended-footer .extended-footer-groups .extended-footer-block .extended-footer__image {
+    margin-right: 32px;
+	width: 200px;
+}
+.extended-footer .extended-footer-groups .extended-footer-block .extended-footer__content p {
+	margin: 8px 0;
+}
+.extended-footer .extended-footer-groups .extended-footer-block .extended-footer__content a {
+	text-decoration: underline dotted;
+}
+input#Email {
+	background: #fff;
+	width: 100%;
+	max-width: 300px;
+	margin: auto;
+	padding: 8px 20px;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px rgb(168 161 161 / 26%);
+	display: block;
+}
+.extended-footer .extended-footer-groups .extended-100 .extended-footer__content {
+	max-width: 800px;
+	margin: auto;
+}
+@media (min-width:40em) {
+	.extended-footer .extended-footer-groups .extended-100 {
+		padding: 65px 20%;
+	}
+}
+@media (max-width: 40em) {
+	.extended-footer-groups .extended-50 {
+		flex: 100%;
+	}
+}
 
 /* footer end */
 
