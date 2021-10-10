@@ -848,7 +848,7 @@ input#Email {
 		padding: 65px 20%;
 	}
 }
-@media (max-width: 40em) {
+@media (max-width: 60em) {
 	.extended-footer-groups .extended-50 {
 		flex: 100%;
 	}
