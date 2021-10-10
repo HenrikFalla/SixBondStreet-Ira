@@ -843,7 +843,7 @@ input#Email {
 	max-width: 800px;
 	margin: auto;
 }
-@media (min-width:40em) {
+@media (min-width:60em) {
 	.extended-footer .extended-footer-groups .extended-100 {
 		padding: 65px 20%;
 	}
