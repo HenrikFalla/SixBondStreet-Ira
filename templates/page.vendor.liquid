@@ -26,7 +26,8 @@
 			{% endif %}
 			<div class="vendor__image" background=""></div>
 			<h2>{{ collections[my_collection_handle_stripped].title }}</h2>
-			<p>{{ collections[my_collection_handle_stripped].description | truncate: 60 }}</p>
+			<p>{{ collections[my_collection_handle_stripped].description | truncate: 120 }}</p>
+			<p class="link-text__vendor">Se produktene her</p>
 		</a>
 	{% endif %}
 {% endfor %}
