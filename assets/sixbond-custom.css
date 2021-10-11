@@ -886,6 +886,8 @@ input#Email {
 	.page .vendor-list a {
 		width: 33%;
 		width: calc( 100% / 3 );
+		max-width: 33%;
+		max-width: calc( 100% / 3 );
 		flex: 33%;
 		flex: calc( 100% / 3 );
 	}
