@@ -793,19 +793,6 @@
         ],
         "settings": {
         }
-      },
-      "collection-infinite-scroll": {
-        "type": "collection-infinite-scroll",
-        "settings": {
-          "enable_infinite_scroll": true,
-          "container_selector": ".collection__main",
-          "path": ".pagination__next",
-          "append": ".collection__main .collection__grid",
-          "hide_nav": "collection__pagination",
-          "status": "",
-          "status_info": "Laster inn...",
-          "status_end": "Ingen flere produkter"
-        }
       }
     },
     "content_for_index": [
