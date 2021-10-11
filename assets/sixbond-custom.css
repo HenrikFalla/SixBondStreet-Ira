@@ -855,6 +855,28 @@ input#Email {
 }
 
 /* footer end */
+/* Brand Page */
+.page .vendor-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.page .vendor-list a {
+    flex: 30%;
+    width: 30%;
+    padding: 16px;
+}
+.page .vendor-list a .vendor-image__featured {
+    padding-top: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.page .vendor-list a h2 {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    letter-spacing: 2px;
+}
+/* Brand Page End */
 
 @media only screen and (min-width: 641px) {
     body span.algolia-autocomplete {
