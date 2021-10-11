@@ -22,7 +22,7 @@
 	{% if its_a_match %}
 		<a href="/collections/{{ product_vendor | handleize }}">
 			{% if collections[my_collection_handle_stripped].featured_image %}
-				<div class="vendor-image__featured" background="src{{ collections[my_collection_handle_stripped].featured_image | img_url: '1024px' }} cover no-repeat"></div>
+				<div class="vendor-image__featured" background="src({{ collections[my_collection_handle_stripped].featured_image | img_url: '1024px' }}) cover no-repeat"></div>
 			{% endif %}
 			<div class="vendor__image" background=""></div>
 			<h2>{{collections[my_collection_handle_stripped].title}}</h2>
