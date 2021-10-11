@@ -876,6 +876,10 @@ input#Email {
     margin-bottom: 4px;
     letter-spacing: 2px;
 }
+.page .vendor-list a .link-text__vendor {
+    margin-top: 8px;
+    text-decoration: underline dotted;
+}
 @media (min-width: 40em) {
 	.page .vendor-list a {
 		width: 50%;
