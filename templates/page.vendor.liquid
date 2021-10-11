@@ -27,9 +27,9 @@
 			<div class="vendor__image" background=""></div>
 			<h2>{{ collections[my_collection_handle_stripped].title }}</h2>
 			{% if collections[my_collection_handle_stripped].description.size > 120 %}
-				<p>{{ collections[my_collection_handle_stripped].description | truncate: 120 }}</p>
+				<p>{{ collections[my_collection_handle_stripped].description | truncate: 120 | strip_html }}</p>
 			{% else %}
-				<p>{{ collections[my_collection_handle_stripped].description }}</p>
+				<p>{{ collections[my_collection_handle_stripped].description | strip_html }}</p>
 			{% endif %}
 			<p class="link-text__vendor">Se produktene her</p>
 		</a>
