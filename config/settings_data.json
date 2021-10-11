@@ -799,7 +799,7 @@
         "settings": {
           "enable_infinite_scroll": true,
           "container_selector": ".collection__grid",
-          "path": ".pagination__next",
+          "path": ".collection__pagination .pagination__next",
           "append": ".collection__grid .grid__item",
           "hide_nav": ".collection__pagination",
           "status": "",
