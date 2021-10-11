@@ -7,7 +7,7 @@
 
 {% render 'pages--page' %}
 
-<ul class="vendor-list block-grid three-up mobile one-up">
+<div class="vendor-list block-grid three-up mobile one-up">
 {% for product_vendor in shop.vendors %}
 	{% assign its_a_match = false %}
 	{% capture my_collection_handle %} {{ product_vendor | handleize | strip | escape  }} {% endcapture %}
@@ -20,9 +20,9 @@
 	{% endfor %}
 
 	{% if its_a_match %}
-		<li class="vendor-list-item"><a href="/collections/{{ product_vendor | handleize }}">{{ product_vendor }}</a></li>
-	{% else %}
-		<li class="vendor-list-item">{{ product_vendor | link_to_vendor }}</li>
+		<a href="/collections/{{ product_vendor | handleize }}">{{ product_vendor }}
+			<h2>{{collections[my_collection_handle_stripped].title}}</h2>
+		</a>
 	{% endif %}
 {% endfor %}
-</ul>
+</div>
