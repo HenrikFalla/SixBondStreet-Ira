@@ -25,7 +25,8 @@
 				<div class="vendor-image__featured" style=" background: url('{{ collections[my_collection_handle_stripped].image | img_url: '1000x1000' }}') no-repeat center center; background-size:cover;"></div>
 			{% endif %}
 			<div class="vendor__image" background=""></div>
-			<h2>{{collections[my_collection_handle_stripped].title}}</h2>
+			<h2>{{ collections[my_collection_handle_stripped].title }}</h2>
+			<p>{{ collections[my_collection_handle_stripped].description }}</p>
 		</a>
 	{% endif %}
 {% endfor %}
