@@ -355,19 +355,19 @@
           "1601493613565": {
             "type": "product",
             "settings": {
-              "product": ""
+              "product": "802957"
             }
           },
           "1601493619899": {
             "type": "product",
             "settings": {
-              "product": ""
+              "product": "802959"
             }
           },
           "1601493636098": {
             "type": "product",
             "settings": {
-              "product": ""
+              "product": "802953"
             }
           }
         },
@@ -377,11 +377,12 @@
           "1601493636098"
         ],
         "settings": {
+          "image": "shopify:\/\/shop_images\/fotokunst_-_vogue_october_1965_-_85x85cm.jpg",
           "image_position": "left",
-          "title": "Featured Products",
-          "subheading": "Use this section to show off a few of your favourite products",
+          "title": "Harrison kolleksjonen",
+          "subheading": "Oppbevar med stil ved hjelp av møbler fra den elegante og tidløse Harrison kolleksjonen.",
           "link": "\/",
-          "link_text": "Shop the Collection",
+          "link_text": "Se utvalget her",
           "enable_contrast": true,
           "enable_full_width": true
         }
@@ -398,7 +399,7 @@
           "1600315451525-1": {
             "type": "collection",
             "settings": {
-              "collection": "boel-jan"
+              "collection": "mille-notti"
             }
           },
           "6949c029-563d-4b15-911c-f23b77aca5a8": {
@@ -426,12 +427,14 @@
           "1600315468934-0": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/dsf0239_1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/dsf0239_square.jpg",
               "video_url": "",
               "meta": "",
-              "title": "This is your slideshow",
-              "subheading": "<p>Use it to make a dramatic first impression with high-quality imagery and minimal text. Using the button below to link to whatever is most appropriate.<\/p>",
+              "title": "Møbler designet av & for SixBondStreet",
+              "subheading": "<p>Her finner du vårt utvalg av egenproduserte møbler.<\/p>",
               "max_width_subheading": 26,
-              "link_text": "Shop now",
+              "link_text": "Se utvalget her",
               "link": "#",
               "alignment": "left_center"
             }
@@ -467,10 +470,25 @@
       "1601240654390": {
         "type": "collage--dynamic",
         "blocks": {
+          "1601240654390-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN.jpg",
+              "video_url": "",
+              "meta": "",
+              "title": "Interiørtjenester",
+              "subheading": "<p>Personlig shoppingopplevelse online. Våre konsulenter er nå online og klare for å møte deg. Velg mellom online videokonsultasjon, e-post eller telefon.<br\/><br\/><\/p>",
+              "max_width_subheading": 24,
+              "link_text": "Book time i dag",
+              "link": "#",
+              "alignment": "left_bottom",
+              "opacity_overlay": 20
+            }
+          },
           "1601240654390-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/NyheterArtboard_3.jpg",
+              "image": "shopify:\/\/shop_images\/singolo_darkgrey_detail_square_1_1296x_39472a77-0fcf-4f22-b80d-b433d31d1d0a.jpg",
               "video_url": "",
               "meta": "",
               "title": "Høstens Nyheter",
@@ -481,26 +499,11 @@
               "alignment": "left_bottom",
               "opacity_overlay": 20
             }
-          },
-          "1601240654390-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN.jpg",
-              "video_url": "",
-              "meta": "",
-              "title": "This is the Collage",
-              "subheading": "<p><br\/>Personlig shoppingopplevelse online. Våre konsulenter er nå online og klare for å møte deg. Velg mellom online videokonsultasjon, e-post eller telefon.<br\/><br\/><\/p>",
-              "max_width_subheading": 24,
-              "link_text": "Book time i dag",
-              "link": "#",
-              "alignment": "left_bottom",
-              "opacity_overlay": 20
-            }
           }
         },
         "block_order": [
-          "1601240654390-0",
-          "1601240654390-1"
+          "1601240654390-1",
+          "1601240654390-0"
         ],
         "settings": {
           "color_overlay": "#191919",
@@ -517,13 +520,7 @@
           "1601241721814-3": {
             "type": "image",
             "settings": {
-              "text": "",
-              "link": "#"
-            }
-          },
-          "1601241721814-4": {
-            "type": "image",
-            "settings": {
+              "image": "shopify:\/\/shop_images\/dsf0239_square.jpg",
               "text": "",
               "link": "#"
             }
@@ -531,6 +528,15 @@
           "1601241721814-5": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/fotokunst_-_vogue_october_1965_-_85x85cm.jpg",
+              "text": "",
+              "link": "#"
+            }
+          },
+          "1601241721814-4": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/lounge_by_tone_kroken_002.jpg",
               "text": "",
               "link": "#"
             }
@@ -538,11 +544,11 @@
         },
         "block_order": [
           "1601241721814-3",
-          "1601241721814-4",
-          "1601241721814-5"
+          "1601241721814-5",
+          "1601241721814-4"
         ],
         "settings": {
-          "title": "Gallery",
+          "title": "La deg inspirere",
           "link_text": "See all",
           "link": "",
           "aspect_ratio": "square",
@@ -648,14 +654,15 @@
       "1601498256106": {
         "type": "image-with-text--dynamic",
         "settings": {
+          "image": "shopify:\/\/shop_images\/82049336_98.jpg",
           "video_url": "",
           "image_width": "standard",
           "image_position": "left",
-          "title": "Image with text",
-          "text": "<p>Use these sections to promote a particular feature with editorial photography.<\/p>",
+          "title": "Nyhet!",
+          "text": "<p><strong>Bloomingville <\/strong><br\/>Drevet av en fascinasjon av nordisk stil og livsstil, etablerte grunnlegger Betina Stampe Bloomingville i år 2000.<br\/>Hun lyktes med en slik lidenskap og hengivenhet at selskapet ble en del av Regent Holding i 2014.<br\/><br\/><\/p>",
           "max_width_text": 20,
-          "link": "#",
-          "link_text": "Shop the Collection",
+          "link": "shopify:\/\/collections\/bloomingville",
+          "link_text": "Se utvalget her",
           "enable_contrast": true,
           "enable_full_width": true
         }
@@ -663,8 +670,8 @@
       "1601499234365": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "",
-          "title": "New Arrivals",
+          "collection": "sprekenhus",
+          "title": "Alexander Sprekenhus",
           "per_row": 3,
           "rows": 1,
           "aspect_ratio": "natural"
@@ -782,7 +789,6 @@
           "4dceb123-5a57-46e0-a24c-fca4fba8424f": {
             "type": "text",
             "settings": {
-              "image": "shopify:\/\/shop_images\/img-7286-790183-Ym8HnCbV.jpg",
               "heading": "Interiørtjeneste",
               "subheading": "<p>Litt info om interiørtjenesten og hvor utrolig fantastisk den er!<\/p>",
               "link_text": "Book time her",
