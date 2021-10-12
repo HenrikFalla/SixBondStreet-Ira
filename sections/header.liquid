@@ -31,7 +31,9 @@
     header--transparent-home
   {% endif %}
   {% if transparent_collection and template.name == 'collection' %}
+		{% if collection.image != blank %}
     header--transparent-collection
+		{% endif %}
   {% endif %}
   {% if shop.customer_accounts_enabled %}
     header--has-accounts
