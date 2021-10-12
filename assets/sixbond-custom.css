@@ -166,6 +166,15 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	margin: auto;
 	margin-top: 3px;
 }
+/* Description */
+.description__container {
+	display: block;
+	position: relative;
+}
+div#description {
+	position: absolute;
+	top: -80px;
+}
 /* Vedlikehold Section product page */
 .vedlikehold {
 	display: flex;
