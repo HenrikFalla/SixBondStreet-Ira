@@ -294,7 +294,8 @@
   {%- assign images = product.media | where: 'media_type', 'image' -%}
   {% render 'lightbox' with images: images %}
     <div>
-        <h1 id="description">Beskrivelse</h1>
+        <div id="description"></div>
+        <h1>Beskrivelse</h1>
         {{ product.description }}
     </div>
     {% for tag in product.tags %}
