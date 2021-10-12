@@ -199,12 +199,23 @@
               "title": "Vedlikehold",
               "link_list": "vedlikehold"
             }
+          },
+          "29703fe4-84d8-444f-8993-18fb9b590a23": {
+            "type": "about",
+            "settings": {
+              "about": "Om SixBondStreet",
+              "about_text": "<p>Hos oss skal du få det du ikke finner alle andre steder.  Gjennom spennende kolleksjoner med internasjonalt uttrykk, kvalitet og fornuftige priser skal vi gjennom vår nettbutikk inspirere deg til et vakrere hjem.<\/p>",
+              "about_link": "shopify:\/\/pages\/om-oss",
+              "trygg_id": "1624",
+              "trygg_text": "<p>SixBondStreet AS er godkjent av Trygg e-Handel, det betyr at du kan kjenne deg trygg og sikker når du handler fra oss. Trygg e-Handels formål er å beskytte deg som forbruker – kun stabile og seriøse nettbutikker kan bli godkjent til å benytte Trygg e-Handel merket. Du kan lese mer om Trygg e-Handel og dine rettigheter som forbruker på www.tryggehandel.no. <\/p>"
+            }
           }
         },
         "block_order": [
           "c4f553af-66fe-4e23-bc9c-a7a83d158532",
           "8907fbeb-aedd-4ecf-845a-79e3950ce7b4",
-          "518c5315-c457-4e74-b87e-92f9338f2f4d"
+          "518c5315-c457-4e74-b87e-92f9338f2f4d",
+          "29703fe4-84d8-444f-8993-18fb9b590a23"
         ],
         "settings": {
           "show_locale_selector": true,
