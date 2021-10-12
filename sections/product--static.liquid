@@ -236,9 +236,9 @@
         role="alert"
         aria-hidden="true"
       >{{ 'products.product.loader_label' | t }}</p>
-      {% assign truncated_description = product.description | strip_html | truncatewords: 45 %}
+      {% assign truncated_description = product.description | strip_html | truncatewords: 25 %}
       {% if truncated_description contains '...' %}
-        <div class="product-single__description rte rte--product fs-body-base" data-description>{{ truncated_description }}</div>
+        <div class="product-single__description rte rte--product fs-body-base" data-description><p>{{ truncated_description }}</p><a href="#description">Les mer</a></div>
       {% else %}
         <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
       {% endif %}
