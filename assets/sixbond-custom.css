@@ -170,6 +170,11 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 .description__container {
 	display: block;
 	position: relative;
+	padding: 16px;
+}
+.description__container p {
+	font-size: 14px;
+	letter-spacing: .5px;
 }
 div#description {
 	position: absolute;
