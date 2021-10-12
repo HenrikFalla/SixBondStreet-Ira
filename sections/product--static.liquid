@@ -316,7 +316,7 @@
         {% assign handle-check = blog-merke.title | downcase | append: "/" | append: vendorHandle %}
         {% if handle-check == article.handle %}
             <div class="vedlikehold">
-                <div class="block__image-blog" style="background: url({{ article.image | img_url: '1200' }}) no-repeat; background-size: cover;"></div>
+                <div class="vedlikehold-image" style="background: url({{ article.image | img_url: '1200' }}) no-repeat; background-size: cover;"></div>
                 <div class="vedlikehold-text">
                     <h2 class="block-title">{{ article.title }}</h1>
                     {{ article.content }}
@@ -329,7 +329,7 @@
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag %}
             {% if handle-check == article.handle %}
                 <div class="vedlikehold">
-                    <div class="block__image-blog" style="background: url({{ article.image | img_url: '1200' }}) no-repeat; background-size: cover;"></div>
+                    <div class="vedlikehold-image" style="background: url({{ article.image | img_url: '1200' }}) no-repeat; background-size: cover;"></div>
                     <div class="vedlikehold-text">
                         <h2 class="block-title">{{ article.title }}</h2>
                         {{ article.content }}
