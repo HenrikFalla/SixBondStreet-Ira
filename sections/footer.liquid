@@ -54,6 +54,9 @@
               <div class="fs-body-base footer__text">{{ block.settings.text }}</div>
               {% render 'newsletter-form' with id: 'footer-subscribe' %}
             </div>
+          {% elsif block.type == 'about' %}
+            <div class="footer__about">
+                <div class
           {%- endif -%}
         </div>
       </div>
@@ -327,7 +330,7 @@
         "name": "About",
         "settings": [
             {
-                "id": "about",
+                "id": "title",
                 "type": "text",
                 "label": "Paragraph title",
                 "default": "Om SixBondStreet"
