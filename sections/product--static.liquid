@@ -312,7 +312,7 @@
         <h1>Beskrivelse</h1>
         {{ product.description }}
     </div>
-    {% for article in blog-vedlikehold.articles %}
+    {% for article in blog-merke.articles %}
         <p>{{ article.handle }}</p>
         <p>{{ blog-merke.title | downcase | append: "/" | append: vendorHandle }}</p>
         {% assign handle-check = blog-merke.title | downcase | append: "/" | append: vendorHandle %}
