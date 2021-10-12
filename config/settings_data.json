@@ -203,7 +203,7 @@
           "29703fe4-84d8-444f-8993-18fb9b590a23": {
             "type": "about",
             "settings": {
-              "about": "Om SixBondStreet",
+              "title": "Om SixBondStreet",
               "about_text": "<p>Hos oss skal du få det du ikke finner alle andre steder.  Gjennom spennende kolleksjoner med internasjonalt uttrykk, kvalitet og fornuftige priser skal vi gjennom vår nettbutikk inspirere deg til et vakrere hjem.<\/p>",
               "about_link": "shopify:\/\/pages\/om-oss",
               "trygg_id": "1624",
@@ -579,7 +579,8 @@
           "enable_full_width": true,
           "media_layout": "column",
           "enable_video_looping": true,
-          "vedlikehold": "vedlikehold"
+          "vedlikehold": "vedlikehold",
+          "merke": "merker"
         }
       },
       "recommended-products--static": {
