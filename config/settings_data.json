@@ -394,7 +394,7 @@
           "1600315451525-0": {
             "type": "collection",
             "settings": {
-              "collection": "dekkebrikker"
+              "collection": "bokser"
             }
           },
           "1600315451525-1": {
@@ -489,7 +489,7 @@
           "1601240654390-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/singolo_darkgrey_detail_square_1_1296x_39472a77-0fcf-4f22-b80d-b433d31d1d0a.jpg",
+              "image": "shopify:\/\/shop_images\/hostens_nyheter_forside.jpg",
               "video_url": "",
               "meta": "",
               "title": "Høstens Nyheter",
