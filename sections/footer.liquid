@@ -57,7 +57,7 @@
           {% elsif block.type == 'about' %}
             <div class="footer__about">
                 {% if block.settings.about_link %}<a href="{{ block.settings.about_link }}">{% endif %}
-                <div class="fs-body-base footer__text">{{ block.settings.about_text }}</div>
+                    <div class="fs-body-base footer__text">{{ block.settings.about_text }}</div>
                 {% if block.settings.about_link %}</a>{% endif %}
             </div>
           {%- endif -%}
