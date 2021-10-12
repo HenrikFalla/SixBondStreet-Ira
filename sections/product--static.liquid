@@ -313,6 +313,8 @@
         {{ product.description }}
     </div>
     {% for article in blog-vedlikehold.articles %}
+        <p>{{ article.handle }}</p>
+        <p>{{ blog-merke.title | downcase | append: "/" | append: vendorHandle }}</p>
         {% assign handle-check = blog-merke.title | downcase | append: "/" | append: vendorHandle %}
         {% if handle-check == article.handle %}
             <div class="vedlikehold">
