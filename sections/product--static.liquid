@@ -10,6 +10,21 @@
   assign first_3d_model = product.media | where: "media_type", "model" | first
   assign enable_video_looping = section.settings.enable_video_looping
   assign blog-vedlikehold = blogs[section.settings.vedlikehold]
+  assign blog-merke = blogs[section.settings.merke]
+  assign vendorHandle = product.vendor | handle
+
+  assign sittedybde = product.metafields.product_data.sittedybde
+  assign sittehoyde = product.metafields.product_data.sittehoyde
+  assign armlene = product.metafields.product_data.hoyde_armlene
+  assign produktvekt = product.metafields.product_data.produktvekt
+  assign diameter = product.metafields.product_data.diameter
+  assign bredde = product.metafields.product_data.produktbredde
+  assign dybde = product.metafields.product_data.produktdybde
+  assign lengde = product.metafields.product_data.produktlengde
+  assign hoyde = product.metafields.product_data.sittehoyde
+  assign kolli = product.metafields.product_data.antall_kolli
+
+
 %}
 
 <section
@@ -102,7 +117,6 @@
 
         {%- if show_vendor -%}
 			<!-- SixBondStreet CUSTOM -->
-			{%- assign vendorHandle = product.vendor | handle -%}
 			{%- if collections[vendorHandle].products.size > 0 -%}
 			    <a href="{{ collections[vendorHandle].url }}">
 			    <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div>
@@ -298,6 +312,22 @@
         <h1>Beskrivelse</h1>
         {{ product.description }}
     </div>
+    {% for article in blog-vedlikehold.articles %}
+        {% assign handle-check = blog-merke.title | downcase | append: "/" | append: vendorHandle %}
+        {% if handle-check == article.handle %}
+            <div class="vedlikehold">
+                {% render 'image' with
+                    image: article.image,
+                    wrapper_class: 'vedlikehold-image',
+                    disable_style: disabled_image_style
+                %}
+                <div class="vedlikehold-text">
+                    <h2>{{ article.title }}</h2>
+                    {{ article.content }}
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
     {% for tag in product.tags %}
         {% for article in blog-vedlikehold.articles %}
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag %}
@@ -421,6 +451,12 @@
         "id": "vedlikehold",
         "type": "blog",
         "label": "Vedlikehold"
+      },
+      {
+        "id": "merke",
+        "type": "blog",
+        "label": "Merke",
+        "info": "Velg hvilken blog som skal hente info for info om merke."
       }
     ]
   }
