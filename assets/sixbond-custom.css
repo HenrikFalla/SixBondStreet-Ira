@@ -368,6 +368,20 @@ a#in-stock { /* Hide pill for "in stock" tag */
 .product-item__meta .product-item__badges {
 	display: none;
 }
+/* Simple header Catalog Page */
+.collection__simple-header {
+	margin-top: 85px;
+}
+.collection__simple-header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 69px;
+    display: block;
+    background: #474644;
+}
 /* End Catalog Page */
 /* Search Result Page */
 /* Input Search */
