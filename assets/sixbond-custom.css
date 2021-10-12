@@ -192,8 +192,7 @@ div#description {
 }
 .blog-block .blog-block__image {
 	width: 100%;
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-top: 100%;
 }
 .blog-block .blog-block__text {
 	width: 100%;
@@ -219,6 +218,7 @@ div#description {
 	}
 	.blog-block .blog-block__image {
 		width: 40%;
+		padding-top:auto;
 	}
 	.blog-block .blog-block__text {
 		width: 60%;
