@@ -284,6 +284,7 @@
           },
           "1600315418706-0": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "video_url": "",
               "meta": "",
@@ -298,6 +299,7 @@
           },
           "1601239752134": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "video_url": "",
               "meta": "",
@@ -387,16 +389,24 @@
             "settings": {
               "collection": "boel-jan"
             }
+          },
+          "6949c029-563d-4b15-911c-f23b77aca5a8": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": ""
+            }
           }
         },
         "block_order": [
           "1600315451525-0",
-          "1600315451525-1"
+          "1600315451525-1",
+          "6949c029-563d-4b15-911c-f23b77aca5a8"
         ],
         "settings": {
           "title": "Collections",
           "per_row": 2,
-          "aspect_ratio": "natural"
+          "aspect_ratio": "landscape"
         }
       },
       "1600315468934": {
