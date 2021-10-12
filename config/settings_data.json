@@ -149,7 +149,7 @@
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/Logo_simplified.png",
-          "logo_max_width": 270,
+          "logo_max_width": 280,
           "menu": "main-menu",
           "alt_menu": "alt-menu",
           "style": "inline",
