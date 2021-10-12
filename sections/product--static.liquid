@@ -237,8 +237,8 @@
         aria-hidden="true"
       >{{ 'products.product.loader_label' | t }}</p>
       {% assign truncated_description = product.description | strip_html | truncatewords: 45 %}
-      {% if truncated_description contains "..." %}
-        <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description | strip_html | truncatewords: 65 }}</div>
+      {% if truncated_description contains '...' %}
+        <div class="product-single__description rte rte--product fs-body-base" data-description>{{ truncated_description }}</div>
       {% else %}
         <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
       {% endif %}
