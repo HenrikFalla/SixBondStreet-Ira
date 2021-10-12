@@ -183,6 +183,9 @@ div#description {
 .description__container h1 {
 	margin-bottom: 8px;
 }
+.description__container h2 {
+	margin-bottom: 16px;
+}
 /* Vedlikehold Section product page */
 .blog-block {
 	display: flex;
