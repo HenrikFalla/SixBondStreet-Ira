@@ -199,12 +199,22 @@
               "title": "Vedlikehold",
               "link_list": "vedlikehold"
             }
+          },
+          "809aba24-f75e-4761-b383-2f843d06e505": {
+            "type": "about",
+            "settings": {
+              "about": "Om SixBondStreet",
+              "about_text": "<p>Hos oss skal du få det du ikke finner alle andre steder.  Gjennom spennende kolleksjoner med internasjonalt uttrykk, kvalitet og fornuftige priser skal vi gjennom vår nettbutikk inspirere deg til et vakrere hjem.<\/p>",
+              "trygg_id": "1234",
+              "trygg_text": ""
+            }
           }
         },
         "block_order": [
           "c4f553af-66fe-4e23-bc9c-a7a83d158532",
           "8907fbeb-aedd-4ecf-845a-79e3950ce7b4",
-          "518c5315-c457-4e74-b87e-92f9338f2f4d"
+          "518c5315-c457-4e74-b87e-92f9338f2f4d",
+          "809aba24-f75e-4761-b383-2f843d06e505"
         ],
         "settings": {
           "show_locale_selector": true,
