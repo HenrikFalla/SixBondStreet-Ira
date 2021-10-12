@@ -331,9 +331,9 @@
       "1600315431677": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "spisestue",
-          "title": "Featured collection",
-          "per_row": 3,
+          "collection": "nyheter",
+          "title": "Nyheter",
+          "per_row": 4,
           "rows": 1,
           "aspect_ratio": "natural"
         }
