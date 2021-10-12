@@ -56,7 +56,8 @@
             </div>
           {% elsif block.type == 'about' %}
             <div class="footer__about">
-                <div class
+                <div class="fs-body-base footer__text">{{ block.settings.about_text }}</div>
+            </div>
           {%- endif -%}
         </div>
       </div>
