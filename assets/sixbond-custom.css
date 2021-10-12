@@ -218,7 +218,7 @@ div#description {
 	}
 	.blog-block .blog-block__image {
 		width: 40%;
-		padding-top:auto;
+		padding-top: 0;
 	}
 	.blog-block .blog-block__text {
 		width: 60%;
