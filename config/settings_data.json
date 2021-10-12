@@ -496,7 +496,7 @@
               "subheading": "<p>Se alle nyhetene for høsten<\/p>",
               "max_width_subheading": 24,
               "link_text": "Se produktene her",
-              "link": "#",
+              "link": "shopify:\/\/collections\/nyheter",
               "alignment": "left_bottom",
               "opacity_overlay": 20
             }
