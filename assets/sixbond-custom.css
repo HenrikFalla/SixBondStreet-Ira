@@ -175,6 +175,9 @@ div#description {
 	position: absolute;
 	top: -80px;
 }
+.description__container h1 {
+	margin-bottom: 8px;
+}
 /* Vedlikehold Section product page */
 .vedlikehold {
 	display: flex;
