@@ -869,7 +869,13 @@ input#Email {
 		flex: 100%;
 	}
 }
-
+/* Tryg E-Handel */
+img#trygg-logo {
+	max-width: 55px;
+}
+.trygg_ehandel {
+	margin-top: 12px;
+}
 /* footer end */
 /* Brand Page */
 .page .vendor-list {
