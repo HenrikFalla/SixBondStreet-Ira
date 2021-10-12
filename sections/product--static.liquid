@@ -236,9 +236,12 @@
         role="alert"
         aria-hidden="true"
       >{{ 'products.product.loader_label' | t }}</p>
-
-      <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description | strip_html | truncatewords: 65 }}</div>
-
+      {% assign truncated_description = product.description | strip_html | truncatewords: 45 %}
+      {% if truncated_description contains '...' %}
+        <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description | strip_html | truncatewords: 65 }}</div>
+      {% else %}
+        <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
+      {% endif %}
       {% if section.settings.show_share_buttons %}
         <div class="product__share" data-share="{{ 'product.share' | t }}">
           {% render 'share-block', share_title: product.title, url: product.url, share_image: product.featured_media %}
