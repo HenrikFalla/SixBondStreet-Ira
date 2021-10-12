@@ -265,6 +265,7 @@
         "blocks": {
           "1601239747479": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/bilde-trenderaw21-035617-RSgh4bvL.jpg",
               "video_url": "shopify:\/\/blogs\/nr-6\/hostens-interiortrender-2021",
@@ -290,7 +291,7 @@
               "link_text": "Les mer her",
               "link": "shopify:\/\/blogs\/nr-6\/arets-pantone-farger-2021-ultimate-gray-illuminating",
               "alignment": "left_center",
-              "opacity_overlay": 70
+              "opacity_overlay": 0
             }
           },
           "1600315418706-0": {
@@ -333,9 +334,9 @@
         "settings": {
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
-          "color_subheading": "#b8b8b8",
+          "color_subheading": "#ffffff",
           "color_background_button": "#ffffff",
-          "color_text_button": "#020202",
+          "color_text_button": "#000000",
           "enable_full_width": true
         }
       },
@@ -446,12 +447,12 @@
         "settings": {
           "desktop_height": 100,
           "mobile_height": 100,
-          "opacity_overlay": 70,
+          "opacity_overlay": 20,
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
-          "color_subheading": "#b8b8b8",
+          "color_subheading": "#ffffff",
           "color_background_button": "#ffffff",
-          "color_text_button": "#212121",
+          "color_text_button": "#000000",
           "duration_autoplay": 4,
           "enable_parallax": false,
           "enable_full_width": true
