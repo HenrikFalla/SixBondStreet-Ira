@@ -293,6 +293,10 @@
 
   {%- assign images = product.media | where: 'media_type', 'image' -%}
   {% render 'lightbox' with images: images %}
+    <div id="description">
+        <h1>Beskrivelse</h1>
+        {% product.description %}
+    </div>
     {% for tag in product.tags %}
         {% for article in blog-vedlikehold.articles %}
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag %}
