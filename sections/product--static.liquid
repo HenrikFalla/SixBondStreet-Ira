@@ -295,7 +295,7 @@
   {% render 'lightbox' with images: images %}
     <div id="description">
         <h1>Beskrivelse</h1>
-        {% product.description %}
+        {{ product.description }}
     </div>
     {% for tag in product.tags %}
         {% for article in blog-vedlikehold.articles %}
