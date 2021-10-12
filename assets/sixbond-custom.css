@@ -184,43 +184,43 @@ div#description {
 	margin-bottom: 8px;
 }
 /* Vedlikehold Section product page */
-.vedlikehold {
+.blog-block {
 	display: flex;
 	flex-direction: column;
 	margin-top: 16px;
 	margin-bottom: 16px;
 }
-.vedlikehold .vedlikehold-image {
+.blog-block .blog-block__image {
 	width: 100%;
 	padding-top: 16px;
 	padding-bottom: 16px;
 }
-.vedlikehold .vedlikehold-text {
+.blog-block .blog-block__text {
 	width: 100%;
 	padding: 16px;
 }
-.vedlikehold .vedlikehold-text h2 {
+.blog-block .blog-block__text h2 {
 	margin-bottom: 8px;
 	text-transform: capitalize;
 	font-size: 22px;
 }
-.vedlikehold .vedlikehold-text p, .vedlikehold .vedlikehold-text span {
+.blog-block .blog-block__text p, .blog-block .blog-block__text span {
 	margin-top: 6px;
 	margin-bottom: 6px;
 	font-size: 14px;
 	letter-spacing: 0.5px;
 }
-.vedlikehold .vedlikehold-text p {
-    margin-bottom: 16px;
+.blog-block .vedlikehold-text p {
+	margin-bottom: 16px;
 }
 @media (min-width: 60em) {
-	.vedlikehold {
+	.blog-block {
 		flex-direction: row;
 	}
-	.vedlikehold .vedlikehold-image {
+	.blog-block .blog-block__image {
 		width: 40%;
 	}
-	.vedlikehold .vedlikehold-text {
+	.blog-block .blog-block__text {
 		width: 60%;
 	}
 }
