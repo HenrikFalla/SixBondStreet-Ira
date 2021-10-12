@@ -210,6 +210,9 @@ div#description {
 	font-size: 14px;
 	letter-spacing: 0.5px;
 }
+.vedlikehold .vedlikehold-text p {
+    margin-bottom: 16px;
+}
 @media (min-width: 60em) {
 	.vedlikehold {
 		flex-direction: row;
