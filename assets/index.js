@@ -14369,7 +14369,7 @@
 
               	if(updatedqty == 0)
                 {
-                 document.querySelector(".variant-inventory").insertAdjacentHTML("beforeBegin","<div class='in_stock__variant_orb'><div class='in_stock__variant_orb_inner'></div></div>');
+                 document.querySelector(".variant-inventory").insertAdjacentHTML("beforeBegin","<div class='in_stock__variant_orb'><div class='in_stock__variant_orb_inner'></div></div>");
                 }
               
               
