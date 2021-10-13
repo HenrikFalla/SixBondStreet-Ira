@@ -51,6 +51,9 @@ span.on-sale.saved_percentage {
 .desktop-only {
 	display: none;
 }
+a .product__vendor {
+	text-decoration: none;
+}
 @media (min-width: 40em) {
 	.mobile-only {
 		display: none;
