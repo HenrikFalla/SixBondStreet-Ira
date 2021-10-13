@@ -15,12 +15,11 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-    jQuery(document).ready(function() {
+      jQuery(document).ready(function() {
 $(".product-form__color-swatches").find("div").on("click", function selectNode(e) {
 console.log($(this).find("a").attr('data-meta'));
 });
     });
-  
 </script>
 {% form 'product',
   product,
@@ -60,7 +59,7 @@ console.log($(this).find("a").attr('data-meta'));
 				Sixbondstreet Custom 
 			{% endcomment %}
             {%- if swatch_options contains option_name and show_swatches-%}
-              <div class="product-form__color-swatches" data-option-buttons 					  data-meta=" {{ product.variants[forloop.index0].metafields.product_data.leveringstid }}">
+              <div class="product-form__color-swatches" data-option-buttons>
                 {% for value in option.values %}
 					{% if product.variants[forloop.index0].available %}
 					<div class="variant__option" id="{{ value | remove:" " }}">
@@ -73,7 +72,7 @@ console.log($(this).find("a").attr('data-meta'));
 						class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}"
 						style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }})"
 						tabindex="0"
->
+					  data-meta=" {{ product.variants[forloop.index0].metafields.product_data.leveringstid }}">
 					</a>
 					{% comment %} Custom SixBondStreet Henrik {% endcomment %}
                     <div class="variant_info">
