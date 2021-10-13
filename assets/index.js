@@ -14369,6 +14369,7 @@
 
               	if(updatedqty > 0)
                 {
+                  console.log(this);
                   document.querySelector(".trigger_orb").style.display="inline-block";
                 }
               
