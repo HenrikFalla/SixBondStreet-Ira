@@ -14372,7 +14372,7 @@
           
                   document.querySelector(".trigger_orb").style.display="inline-block";
                 }
-                      console.log(t);
+
                  console.log(t.dataset.variant);
               
                 
