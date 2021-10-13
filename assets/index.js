@@ -14367,7 +14367,7 @@
               var updatedqty = inv_qty[variantid];
               document.querySelector(".variant-inventory").innerHTML = updatedqty;
 
-              
+              	console.log(updatedqty);
               
               
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
