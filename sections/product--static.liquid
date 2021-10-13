@@ -135,9 +135,7 @@
  {% comment %} end E2S span {% endcomment %}
  
             <p>
-                {% capture instockorb %}   <div class="in_stock__variant_orb">
-			<div class="in_stock__variant_orb_inner"></div>
-		</div>    {% endcapture %}
+                {% assign instockorb= '<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>'   %}
           
           
                {% if current_variant.inventory_quantity > 0 %}
