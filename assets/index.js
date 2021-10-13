@@ -14373,7 +14373,7 @@
                   document.querySelector(".trigger_orb").style.display="inline-block";
                 }
 const btns=document.querySelectorAll('.product-form__color-swatches > div');
-[...btns].forEach(btn => console.log(btn.querySelector('.selected').getAttribute('data-meta')))
+[...btns].forEach(btn => console.log(btn.querySelector('.selected')))
 
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
 				var n = function(t, e) {
