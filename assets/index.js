@@ -14374,7 +14374,10 @@
                 }
                       console.log(e.title);
               
-               
+                var selectorr = document.querySelector("select#Option1 option");
+                selectorr.forEach(function(item){
+item
+        });    
               
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
 				var n = function(t, e) {
