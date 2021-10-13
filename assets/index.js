@@ -14369,7 +14369,7 @@
 
               	if(updatedqty == 0)
                 {
-               
+                  document.querySelector(".trigger_orb").style.display="inline-block";
                 }
               
               
