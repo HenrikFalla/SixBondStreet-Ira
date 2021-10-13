@@ -14372,8 +14372,8 @@
           
                   document.querySelector(".trigger_orb").style.display="inline-block";
                 }
-var val = $('.product-form__color-swatches').find('.product__color-swatch.selected ').attr('data-meta');
-              console.log(val);
+const btns=document.querySelectorAll('.product-form__color-swatches > div');
+[...btns].forEach(btn => console.log(btn));
 
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
 				var n = function(t, e) {
