@@ -11308,12 +11308,10 @@
 	function Me(t) {
 		var e = h("select", t),
 			n = p("[data-button]", t),
-            ns = p("[data-button]", t),
 			r = m(n, "click", (function(t) {
 				t.preventDefault();
 				var r = t.currentTarget.dataset.button;
 				n.forEach((function(t) {
-                  console.log(E(t, "selected", t.dataset.button === r));
 					return E(t, "selected", t.dataset.button === r)
 				})), h('[value="'.concat(r, '"]'), e).selected = !0, e.dispatchEvent(new Event("change"))
 			}));
@@ -14374,8 +14372,7 @@
           
                   document.querySelector(".trigger_orb").style.display="inline-block";
                 }
-const btns=document.querySelectorAll('.product-form__color-swatches > div');
-[...btns].forEach(btn => console.log(btn.querySelector('.selected').getAttribute('data-meta')))
+
 
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
 				var n = function(t, e) {
