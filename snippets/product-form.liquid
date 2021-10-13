@@ -53,7 +53,7 @@
               <div class="product-form__color-swatches" data-option-buttons>
                 {% for value in option.values %}
 					{% if product.variants[forloop.index0].available %}
-					<div class="variant__option" id="{{ value | remove:" " }}" data-meta=" {{ product.variants[forloop.index0].metafields.product_data.leveringstid }}">
+					<div class="variant__option" id="{{ value | remove:" " }}" >
 					{% else %}
 					<div class="variant__option sxbs-variant-sold-out">
 					{% endif %}
@@ -83,7 +83,7 @@
                   name="options[{{ option.name | escape }}]"
                 >
                   {% for value in option.values %}
-                    <option value="{{ value | escape }}"
+                    <option value="{{ value | escape }}" data-meta=" {{ product.variants[forloop.index0].metafields.product_data.leveringstid }}"
                       {%- if option.selected_value == value -%}selected="selected"{%- endif -%}>
                       {{ value }}
                     </option>
