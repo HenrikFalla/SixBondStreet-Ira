@@ -14369,7 +14369,7 @@
 
               	if(updatedqty == 0)
                 {
-                  var lnk = '<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>';
+                  var lnk = "<div class='in_stock__variant_orb'><div class='in_stock__variant_orb_inner'></div></div>";
                  document.querySelector(".variant-inventory").innerHTML(lnk);
                 }
               
