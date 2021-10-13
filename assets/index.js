@@ -14372,7 +14372,7 @@
           
                   document.querySelector(".trigger_orb").style.display="inline-block";
                 }
-                      console.log(t);
+                      console.log(t.attr("data-meta"));
               
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
 				var n = function(t, e) {
