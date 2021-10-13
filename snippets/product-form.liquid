@@ -63,7 +63,7 @@ function selectNode(selected) {
 				Sixbondstreet Custom 
 			{% endcomment %}
             {%- if swatch_options contains option_name and show_swatches-%}
-              <div class="product-form__color-swatches" data-option-buttons>
+              <div class="product-form__color-swatches" data-option-buttons 					  data-meta=" {{ product.variants[forloop.index0].metafields.product_data.leveringstid }}">
                 {% for value in option.values %}
 					{% if product.variants[forloop.index0].available %}
 					<div class="variant__option" id="{{ value | remove:" " }}">
@@ -76,7 +76,7 @@ function selectNode(selected) {
 						class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}"
 						style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }})"
 						tabindex="0"
-					  data-meta=" {{ product.variants[forloop.index0].metafields.product_data.leveringstid }}">
+>
 					</a>
 					{% comment %} Custom SixBondStreet Henrik {% endcomment %}
                     <div class="variant_info">
