@@ -51,7 +51,7 @@ span.on-sale.saved_percentage {
 .desktop-only {
 	display: none;
 }
-a .product__vendor {
+.product-single__meta a, .header__links a, .header__right a, a.btn.btn--primary, .product-item a, .collection-item a, .ff-heading a, .footer__group-content a {
 	text-decoration: none;
 }
 @media (min-width: 40em) {
