@@ -14374,9 +14374,7 @@
                 }
                       console.log(e.title);
               
-                var selectorr = document.querySelector(".product-form__chip-select > option");
-    
-              
+
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
 				var n = function(t, e) {
 					return /variant=/.test(t) ? t.replace(/(variant=)[^&]+/, "$1" + e) : /\?/.test(t) ? t.concat("&variant=").concat(e) : t.concat("?variant=").concat(e)
