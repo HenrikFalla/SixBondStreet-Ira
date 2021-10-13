@@ -14375,9 +14375,11 @@
                       console.log(e.title);
               
                 var selectorr = document.querySelector(".product-form__chip-select > option");
-                selectorr.forEach(function(item){
-                 console.log(item)
-        });    
+              var array = $(selectorr).map(function() {
+    return [$.map($(this).data('meta'), function(v) {
+console.log(v);
+    })];
+}).get();
               
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
 				var n = function(t, e) {
