@@ -14372,7 +14372,13 @@
           
                   document.querySelector(".trigger_orb").style.display="inline-block";
                 }
+var li = $(".product-form__color-swatches").find(".variant__option a");
+li.on("click", {value: li.data("data-meta") } ,selectNode);
 
+//the function
+function selectNode(selected) {
+  console.log(selected.data.value);
+}
 
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
 				var n = function(t, e) {
