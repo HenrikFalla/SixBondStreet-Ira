@@ -14367,7 +14367,10 @@
               var updatedqty = inv_qty[variantid];
               document.querySelector(".variant-inventory").innerHTML = updatedqty;
 
-              	console.log(updatedqty);
+              	if(updatedqty>0)
+                {
+                 document.querySelector(".variant-inventory").prepend("<div class='in_stock__variant_orb'><div class='in_stock__variant_orb_inner'></div></div>");
+                }
               
               
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
