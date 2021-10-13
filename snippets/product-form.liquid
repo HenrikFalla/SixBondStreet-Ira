@@ -15,14 +15,7 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-    jQuery(document).ready(function() {
-var li = $(".product-form__color-swatches").find(".variant__option a");
-li.on("click", {value: li.data("meta") } ,selectNode);
-    });
-//the function
-function selectNode(selected) {
-  console.log(selected.data.value);
-}
+
 $(".product-form__color-swatches").find("li a").on("click", function selectNode(e) {
 console.log($(this).attr('data-meta'));
 });
