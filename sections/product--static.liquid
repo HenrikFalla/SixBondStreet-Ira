@@ -142,7 +142,7 @@
           			<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
           		{% else %}
           			<span data-stock-availability > <div class="out_stock__variant_orb">
-			<div class="out_stock__variant_orb_inner {{current_variant.metafields.product_data.leveringstid }}"></div>
+			<div class="out_stock__variant_orb_inner {{product.metafields.product_data.leveringstid }}"></div>
 		</div>{%if product.metafields.product_data.leveringstid == blank %} {%else %} Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}	{% endif %}</span>
           		{% endif %}
           	{% else %}
