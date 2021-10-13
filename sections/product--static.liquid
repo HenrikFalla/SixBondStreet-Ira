@@ -224,7 +224,7 @@
 						<span data-stock-availability> <div class="out_stock__variant_orb">
 			<div class="out_stock__variant_orb_inner {{variant.title}}"></div>
 		</div>
-                          Leveringstid: {{ variant.metafields.product_data.leveringstid }}</span>
+                	{% for variant in product.variants %}          Leveringstid: {{ variant.metafields.product_data.leveringstid }}</span>			{% endfor %}
 					{% endif %}
 				{% else %}
 					<span data-stock-availability>{% comment %}Evt. kommentar- ikke på lager e.l. {% endcomment %}</span>
