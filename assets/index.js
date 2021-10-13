@@ -14373,7 +14373,7 @@
                   document.querySelector(".trigger_orb").style.display="inline-block";
                 }
 
-                 console.log(t.dataset.variant);
+                 console.log(t.dataset.variant.metafields.product_data.leveringstid);
               
                 
               
