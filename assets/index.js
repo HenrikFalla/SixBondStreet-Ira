@@ -14374,7 +14374,7 @@
                 }
                       console.log(e.title);
               
-                var selectorr = document.querySelector("select#Option1 option");
+                var selectorr = document.querySelector("select#Option1 > option");
                 selectorr.forEach(function(item){
 item;
         });    
