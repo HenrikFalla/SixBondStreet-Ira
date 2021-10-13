@@ -152,7 +152,7 @@
         	{% if current_variant.available == false %}
             <span data-stock-availability> <div class="out_stock__variant_orb">
 			<div class="out_stock__variant_orb_inner"></div>
-		</div> {% unless product.metafields.product_data.leveringstid ==blank %}Leveringstid: {{ product.metafields.product_data.leveringstid }}{% endunless %}</span>
+		</div> {% unless product.metafields.product_data.leveringstid == blank %}Leveringstid: {{ product.metafields.product_data.leveringstid }}{% endunless %}</span>
             	{% endif %}  
                </div>    
           	{% endif %}         
