@@ -16,8 +16,8 @@
 
 <script>
     jQuery(document).ready(function() {
-$(".product-form__color-swatches").find("li").on("click", function selectNode(e) {
-console.log($(this).find("a").attr('data-meta'));
+$(".product-form__color-swatches").find("div a").on("click", function selectNode(e) {
+console.log($(this).attr('data-meta'));
 });
     });
   
