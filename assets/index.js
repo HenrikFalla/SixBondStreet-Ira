@@ -14372,7 +14372,7 @@
           
                   document.querySelector(".trigger_orb").style.display="inline-block";
                 }
-                      console.log(e.title);
+                      console.log(e.metafields.product_data.leveringstid);
               
                
               
