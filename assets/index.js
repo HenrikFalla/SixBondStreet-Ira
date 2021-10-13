@@ -14367,7 +14367,7 @@
               var updatedqty = inv_qty[variantid];
               document.querySelector(".variant-inventory").innerHTML = updatedqty;
 
-              	if(updatedqty = 0)
+              	if(updatedqty == 0)
                 {
                  document.querySelector(".variant-inventory").prepend('<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>');
                 }
