@@ -11308,12 +11308,12 @@
 	function Me(t) {
 		var e = h("select", t),
 			n = p("[data-button]", t),
-            ns = p("[data-meta]", t),
+            ns = p("[data-button]", t),
 			r = m(n, "click", (function(t) {
 				t.preventDefault();
-              console.log(ns);
 				var r = t.currentTarget.dataset.button;
 				n.forEach((function(t) {
+                  console.log(E(t, "selected", t.dataset.button === r));
 					return E(t, "selected", t.dataset.button === r)
 				})), h('[value="'.concat(r, '"]'), e).selected = !0, e.dispatchEvent(new Event("change"))
 			}));
