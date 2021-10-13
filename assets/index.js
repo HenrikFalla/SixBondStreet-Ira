@@ -14373,10 +14373,7 @@
                   document.querySelector(".trigger_orb").style.display="inline-block";
                 }
 
-                 console.log(t.dataset.variant.metafields.product_data.leveringstid);
-              
-                
-              
+  console.log($(".product-form__color-swatches").find(".selected").attr("data-meta"));     
 
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
 				var n = function(t, e) {
