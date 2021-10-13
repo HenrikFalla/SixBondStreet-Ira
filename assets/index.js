@@ -14373,7 +14373,7 @@
                   document.querySelector(".trigger_orb").style.display="inline-block";
                 }
                       console.log(t);
-                 console.log(variantid);
+                 console.log(t.dataset.variant);
               
                 
               
