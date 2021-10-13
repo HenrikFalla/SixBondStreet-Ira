@@ -13,6 +13,18 @@
 {%- endcapture %}
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    jQuery(document).ready(function() {
+var li = $(".product-form__color-swatches").find(".variant__option a");
+li.on("click", {value: li.data("data-meta") } ,selectNode);
+    });
+//the function
+function selectNode(selected) {
+  console.log(selected.data.value);
+}
+
+</script>
 {% form 'product',
   product,
   class: form_classes,
