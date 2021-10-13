@@ -16,6 +16,9 @@ letter-spacing: 2px;
 p, span {
 letter-spacing: 1px;
 } */
+a {
+	text-decoration: underline dotted;
+}
 .sxbs-on-sale {
 	color: var(--sxbs-sale-color);
 	font-weight: bold;
