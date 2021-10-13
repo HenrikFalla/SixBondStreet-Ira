@@ -14375,11 +14375,13 @@
                       console.log(e.title);
               
                 var selectorr = document.querySelector(".product-form__chip-select > option");
-              var array = $(selectorr).map(function() {
-    return [$.map($(this).data('meta'), function(v) {
-console.log(v);
-    })];
-}).get();
+        
+
+var arr = [];
+$(selectorr).each(function(){
+  var $this = $(this);
+  arr.push([ $this.data('meta')]);
+});
               
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
 				var n = function(t, e) {
