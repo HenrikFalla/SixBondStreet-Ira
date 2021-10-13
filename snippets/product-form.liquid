@@ -17,7 +17,7 @@
 <script>
       jQuery(document).ready(function() {
 $(".product-form__color-swatches").find("div").on("click", function selectNode(e) {
-console.log($(this).find("a").attr('data-meta'));
+$('.out_stock__variant_orb_inner span').innerHTML = $(this).find("a").attr('data-meta');
 });
     });
 </script>
