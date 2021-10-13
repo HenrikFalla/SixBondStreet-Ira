@@ -9956,7 +9956,7 @@
 	}
 
 	function p(t, e) {
-		return void 0 === e && (e = document), [].slice.call(e.querySelectorAll(t))
+// 		return void 0 === e && (e = document), [].slice.call(e.querySelectorAll(t))
 	}
 
 	function g(t, e) {
