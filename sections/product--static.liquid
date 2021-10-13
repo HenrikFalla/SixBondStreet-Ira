@@ -134,7 +134,7 @@
     
  {% comment %} end E2S span {% endcomment %}
  
-           
+            <p><span class="variant-inventory">{{ current_variant.inventory_quantity }}</span> på lager.</p>
           {% if variant.options > 1 %}
               <div class="stock-availability ">
           	{% if current_variant.available == true %}
@@ -214,7 +214,7 @@
 				{% if current_variant.available == true %}
 					{% if product.variants.first.inventory_quantity > 0 %}
 					 <p><span class="variant-inventory">
-            {% if current_variant.inventory_quantity > 0%}
+            {% if current_variant.inventory_quantity > 0 %}
             <div class="in_stock__variant_orb">
 			<div class="in_stock__variant_orb_inner"></div>
 		</div>     {% endif %}
