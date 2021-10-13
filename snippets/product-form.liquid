@@ -23,7 +23,11 @@ li.on("click", {value: li.data("meta") } ,selectNode);
 function selectNode(selected) {
   console.log(selected.data.value);
 }
-
+$(".product-form__color-swatches").find("li a").on("click", function selectNode(e) {
+console.log($(this).attr('data-meta'));
+});
+  
+  
 </script>
 {% form 'product',
   product,
