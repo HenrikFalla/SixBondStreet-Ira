@@ -14375,15 +14375,9 @@
                       console.log(e.title);
               
                 var selectorr = document.querySelector(".product-form__chip-select > option");
-        
-
-var arr = [];
-$(selectorr).each(function(){
-  var $this = $(this);
-  arr.push([ $this.data('meta')]);
-  console.log(arr)
-});
-              
+      selectorr.forEach(function(item){
+          $(e.title).filter(function() { return $(this).data('meta') === item; }).addClass('disabled');
+        });        
               
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
 				var n = function(t, e) {
