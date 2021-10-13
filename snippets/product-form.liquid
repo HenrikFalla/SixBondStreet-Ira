@@ -16,7 +16,7 @@
 
 <script>
     jQuery(document).ready(function() {
-var li = $(".product-form__color-swatches").find(".variant__option");
+var li = $(".product-form__color-swatches").find(".variant__option a");
 li.on("click", {value: li.data("meta") } ,selectNode);
     });
 //the function
