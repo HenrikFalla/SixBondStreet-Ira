@@ -51,7 +51,7 @@ span.on-sale.saved_percentage {
 .desktop-only {
 	display: none;
 }
-.product-single__meta a, .header__links a, .header__right a, a.btn.btn--primary, .product-item a, .collection-item a, .ff-heading a, .footer__group-content a, .vendor-list a, .filter-item a {
+.product-single__meta a, .header__links a, .header__right a, a.btn.btn--primary, .product-item a, .collection-item a, .ff-heading a, .footer__group-content a, .vendor-list a, .filter-item a, .collection-top-bar__filters a {
 	text-decoration: none;
 }
 @media (min-width: 40em) {
