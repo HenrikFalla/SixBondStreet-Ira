@@ -135,10 +135,14 @@
  {% comment %} end E2S span {% endcomment %}
  
             <p>
-               {% if current_variant.inventory_quantity > 0 %}
-             {% capture instockorb %}   <div class="in_stock__variant_orb">
+                {% capture instockorb %}   <div class="in_stock__variant_orb">
 			<div class="in_stock__variant_orb_inner"></div>
-		</div>    {% endcapture %} {% endif %}
+		</div>    {% endcapture %}
+          
+          
+               {% if current_variant.inventory_quantity > 0 %}
+          {{instockorb}}
+            {% endif %}
           <div class="trigger_orb" style="display:none">
             {{instockorb}}  </div>
               <span class="variant-inventory">{{ current_variant.inventory_quantity }}</span> på lager.</p>
