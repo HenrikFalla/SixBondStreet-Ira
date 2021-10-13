@@ -136,13 +136,11 @@
  
             <p>
                {% if current_variant.inventory_quantity > 0 %}
-            <div class="in_stock__variant_orb">
+             {% capture instockorb %}   <div class="in_stock__variant_orb">
 			<div class="in_stock__variant_orb_inner"></div>
-		</div>     {% endif %}
+		</div>    {% endcapture %} {% endif %}
           <div class="trigger_orb" style="display:none">
-            <div class="in_stock__variant_orb ">
-			<div class="in_stock__variant_orb_inner"></div>
-            </div>  </div>
+            {{instockorb}}  </div>
               <span class="variant-inventory">{{ current_variant.inventory_quantity }}</span> på lager.</p>
           {% if variant.options > 1 %}
               <div class="stock-availability ">
