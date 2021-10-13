@@ -15,11 +15,11 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-
+    jQuery(document).ready(function() {
 $(".product-form__color-swatches").find("li").on("click", function selectNode(e) {
 console.log($(this).find("a").attr('data-meta'));
 });
-  
+    });
   
 </script>
 {% form 'product',
