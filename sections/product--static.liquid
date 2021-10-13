@@ -134,8 +134,9 @@
     
  {% comment %} end E2S span {% endcomment %}
  
-               <div class="stock-availability ee">
+           
           {% if variant.options > 1 %}
+              <div class="stock-availability ">
           	{% if current_variant.available == true %}
           		{% if current_variant.inventory_quantity > 0 %}
           			<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
@@ -153,10 +154,10 @@
 			<div class="out_stock__variant_orb_inner"></div>
 		</div> Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
             	{% endif %}  
-            
+               </div>    
           	{% endif %}         
           
-          </div>    
+       
  
           {% comment %}<!-- Custom Stock Display for Product - Henrik -->
 		<div class="stock-availability">
