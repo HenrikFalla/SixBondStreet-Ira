@@ -49,7 +49,7 @@
               </label>
             </div>
           {% endif %}
-        <a href="{{ routes.cart_url }}" class="btn btn--primary btn--short btn--full">{{ 'quick_cart.go_to_cart' | t }}</a>
+        <a href="{{ routes.cart_url }}" class="btn btn--primary btn--short btn--full" data-terms-required="{{ settings.cart_terms_conditions_enable }}">{{ 'quick_cart.go_to_cart' | t }}</a>
       </div>
     </div>
 
