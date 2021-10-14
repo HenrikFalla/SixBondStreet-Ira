@@ -57,6 +57,11 @@ span.on-sale.saved_percentage {
 .product-single__description, .product-single__dimensions {
 	margin-bottom: 16px;
 }
+.product-single__dimensions ul {
+    margin-top: 12px;
+    list-style: circle;
+    padding-left: 16px;
+}
 @media (min-width: 40em) {
 	.mobile-only {
 		display: none;
