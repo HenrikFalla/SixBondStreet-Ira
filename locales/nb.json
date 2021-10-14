@@ -141,7 +141,10 @@
       "empty": "Handlekurven din er tom",
       "cookies_required": "Du må tillate informasjonskapsler for å bruke handlekurven",
       "continue_shopping": "Fortsett å handle",
-      "cart_error": "Det oppstod en feil mens vi prøvde å oppdatere handlekurven. Vennligst prøv igjen."
+      "cart_error": "Det oppstod en feil mens vi prøvde å oppdatere handlekurven. Vennligst prøv igjen.",
+      "terms": "Jeg godtar betingelser",
+      "terms_html": "Jeg godtar <a href='{{ url }}' target='_blank'>salgsbetingelsene<\/a>",
+      "terms_confirm": "Du må godta salgsbetingelser før du kan gå til kassen"
     },
     "label": {
       "discounted_total": "Total rabatt",
