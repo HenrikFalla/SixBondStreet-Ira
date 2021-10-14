@@ -7,10 +7,12 @@
 }
 ::selection {
 	background: #585550; /* WebKit/Blink Browsers */
+	color: #ffffff;
 }
 
 ::-moz-selection {
 	background: #585550; /* Gecko Browsers */
+	color: #ffffff;
 }
 /* TYPOGRAPHY */
 
