@@ -145,20 +145,8 @@
             <p class="ff-heading fs-heading-base">{{ cart.total_price | money }}</p>
             <p class="cart__footer-tax-note fs-body-small">{{ taxes_shipping_checkout }}</p>
             <div class="cart__footer-actions">
-              {% if settings.cart_terms_conditions_enable %}
-            <div class="cart__item-row cart__terms">
-              <input type="checkbox" id="CartTerms" class="cart__terms-checkbox">
-              <label for="CartTerms">
-                {% if settings.cart_terms_conditions_link != blank %}
-                  {{ 'cart.general.terms_html' | t: url: settings.cart_terms_conditions_link }}
-                {% else %}
-                  {{ 'cart.general.terms' | t }}
-                {% endif %}
-              </label>
-            </div>
-          {% endif %}
               <input type="submit" name="update" class="btn" value="{{ 'cart.general.update' | t }}">
-              <input type="submit" name="checkout" class="btn btn--primary" value="{{ 'cart.general.checkout' | t }}" data-terms-required="{{ settings.cart_terms_conditions_enable }}">
+              <input type="submit" name="checkout" class="btn btn--primary" value="{{ 'cart.general.checkout' | t }}">
             </div>
           </div>
 

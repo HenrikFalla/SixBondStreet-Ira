@@ -37,19 +37,7 @@
         {%- endcapture -%}
 
         <p>{{ 'cart.popup.quick_cart_note_html' | t: subtotal: "<span data-subtotal>$-.--</span>", shipping_taxes: taxes_shipping_checkout }}</p>
-        {% if settings.cart_terms_conditions_enable %}
-
-              <input type="checkbox" id="CartTermsDrawer" class="cart__terms-checkbox">
-              <label for="CartTermsDrawer">
-                {% if settings.cart_terms_conditions_link != blank %}
-                  {{ 'cart.general.terms_html' | t: url: settings.cart_terms_conditions_link }}
-                {% else %}
-                  {{ 'cart.general.terms' | t }}
-                {% endif %}
-              </label>
-
-          {% endif %}
-        <a href="{{ routes.cart_url }}" class="btn btn--primary btn--short btn--full" data-terms-required="{{ settings.cart_terms_conditions_enable }}">{{ 'quick_cart.go_to_cart' | t }}</a>
+        <a href="{{ routes.cart_url }}" class="btn btn--primary btn--short btn--full">{{ 'quick_cart.go_to_cart' | t }}</a>
       </div>
     </div>
 
