@@ -327,6 +327,7 @@
 
   {%- assign images = product.media | where: 'media_type', 'image' -%}
   {% render 'lightbox' with images: images %}
+  <section class="description">
     <div class="description__container">
         <div id="description"></div>
         <h2>Beskrivelse</h2>
@@ -360,6 +361,7 @@
             {% endif %}
         {% endfor %}
     {% endfor %}
+    </section>
 </section>
 <script>
   window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)}
