@@ -749,18 +749,18 @@ body .aa-dropdown-menu .aa-highlight {
     color: white;
     font-weight: bold;
 }
-
-
+.aa-dropdown-menu .aa-footer {
+	background-color: #29292c;
+}
 /* moving the algolia search block up and to the right*/
-
 body span.algolia-autocomplete, .algolia-autocomplete {
-    position: fixed!important;
-    background: #29292c;
-    color: white;
-    border: none;
-    width: 355px !important;
-    max-width: calc(100vw - 50px);
-    left: 0 !important;
+	position: fixed !important;
+	background: #29292c;
+	color: white;
+	border: none;
+	width: 355px !important;
+	max-width: calc(100vw - 50px);
+	left: 0 !important;
 }
 
 
