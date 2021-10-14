@@ -181,6 +181,10 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	margin-top: 3px;
 }
 /* Description */
+section.description {
+	max-width: 1100px;
+	margin: auto;
+}
 .description__container {
 	display: block;
 	position: relative;
