@@ -352,7 +352,7 @@
                     {% if article.image %}
                         <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;"></div>
                     {% endif %}
-                    <div class="blog-block__text">
+                    <div class="blog-block__text" {% unless article.image %}style="flex:100%;"{% endunless %}>
                         <h2 class="block-title">{{ article.title }}</h2>
                         {{ article.content }}
                     </div>
