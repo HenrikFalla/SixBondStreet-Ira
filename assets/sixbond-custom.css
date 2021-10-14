@@ -749,7 +749,7 @@ body .aa-dropdown-menu .aa-highlight {
     color: white;
     font-weight: bold;
 }
-.aa-dropdown-menu .aa-footer {
+.algolia-autocomplete .aa-dropdown-menu .aa-footer {
 	background-color: #29292c;
 }
 /* moving the algolia search block up and to the right*/
