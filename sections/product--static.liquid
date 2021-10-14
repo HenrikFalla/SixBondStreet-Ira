@@ -254,11 +254,12 @@
                 {% for dimensjon in dimensjoner %}
                     <li>
                         {% assign dim_i = 0 %}
-                        {% for value in dimensjon | split: ":" %}
+                        {% assign values_dim = dimensjon | split: ":" %}
+                        {% for value_dim in values_dim | split: ":" %}
                             {% if dim_i == 0 %}
-                                <strong>{{ value }}: </strong>
+                                <strong>{{ value_dim }}: </strong>
                             {% else %}
-                                {{ value }}
+                                {{ value_dim }}
                             {% endif %}
                             {% assign dim_i = dim_i | plus: 1 %}
                         {% endfor %}
