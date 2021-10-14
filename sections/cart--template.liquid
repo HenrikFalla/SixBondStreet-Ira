@@ -146,7 +146,7 @@
             <p class="cart__footer-tax-note fs-body-small">{{ taxes_shipping_checkout }}</p>
             <div class="cart__footer-actions">
               <input type="submit" name="update" class="btn" value="{{ 'cart.general.update' | t }}">
-              <input type="submit" name="checkout" class="btn btn--primary" value="{{ 'cart.general.checkout' | t }}">
+              <input type="submit" name="checkout" class="btn btn--primary" value="{{ 'cart.general.checkout' | t }}" data-terms-required="{{ settings.cart_terms_conditions_enable }}">
             </div>
           </div>
 
