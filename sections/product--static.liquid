@@ -255,14 +255,17 @@
                     <li>
                         {% assign dim_i = 0 %}
                         {% assign values_dim = dimensjon | split: ":" %}
-                        {% for value_dim in values_dim %}
-                            {% if dim_i == 0 %}
-                                <strong>{{ value_dim }}: </strong>
-                            {% else %}
-                                {{ value_dim }}
-                            {% endif %}
-                            {% assign dim_i = dim_i | plus: 1 %}
-                        {% endfor %}
+                        {% unless values_dim[1] = blank %}
+                            {% for value_dim in values_dim %}
+                                {% if dim_i == 0 %}
+                                    <strong>{{ value_dim }}: </strong>
+                                {% else %}
+                                    {{ value_dim }}
+                                {% endif %}
+                                {% assign dim_i = dim_i | plus: 1 %}
+                            {% endfor %}
+                        {% endunless %}
+                    </li>
                 {% endfor %}
             </ul>
         </div>
