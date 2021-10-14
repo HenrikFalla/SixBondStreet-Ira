@@ -257,6 +257,24 @@
       {% else %}
         <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
       {% endif %}
+      {% if dimensjoner.size > 0 %}
+        <div class="product-single__dimensions">
+            <ul>
+                {% for dimensjon in dimensjoner %}
+                    <li>
+                        {% assign dim_i = 0 %}
+                        {% for value in dimensjon | split: ":" %}
+                            {% if dim_i == 0 %}
+                                <strong>{{ value }}: </strong>
+                            {% else %}
+                                {{ value }}
+                            {% endif %}
+                            {% assign dim_i = dim_i | plus: 1 %}
+                        {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+      {% endif %}
       {% if section.settings.show_share_buttons %}
         <div class="product__share" data-share="{{ 'product.share' | t }}">
           {% render 'share-block', share_title: product.title, url: product.url, share_image: product.featured_media %}
