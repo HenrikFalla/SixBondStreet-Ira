@@ -54,6 +54,7 @@
     "cart_enable_quick_shop": false,
     "cart_quick_shop_show_quantity": false,
     "cart_show_notes": true,
+    "cart_terms_conditions_enable": true,
     "social_twitter_link": "",
     "social_facebook_link": "",
     "social_pinterest_link": "",
