@@ -223,7 +223,7 @@ div#description {
 	text-transform: capitalize;
 	font-size: 22px;
 }
-.blog-block .blog-block__text p, .blog-block .blog-block__text span {
+.blog-block .blog-block__text p, .blog-block .blog-block__text span, .blog-block ul, .blog-block ul li {
 	margin-top: 6px;
 	margin-bottom: 6px;
 	font-size: 14px;
