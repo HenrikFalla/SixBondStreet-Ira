@@ -204,7 +204,7 @@ div#description {
 .blog-block {
 	display: flex;
 	flex-direction: column;
-	padding:_16px;
+	padding: 16px;
 }
 .blog-block .blog-block__image {
 	width: 100%;
