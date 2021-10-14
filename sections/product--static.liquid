@@ -13,17 +13,18 @@
   assign blog-merke = blogs[section.settings.merke]
   assign vendorHandle = product.vendor | handle
 
-  assign sittedybde = product.metafields.product_data.sittedybde
-  assign sittehoyde = product.metafields.product_data.sittehoyde
-  assign armlene = product.metafields.product_data.hoyde_armlene
-  assign produktvekt = product.metafields.product_data.produktvekt
-  assign diameter = product.metafields.product_data.diameter
-  assign bredde = product.metafields.product_data.produktbredde
-  assign dybde = product.metafields.product_data.produktdybde
-  assign lengde = product.metafields.product_data.produktlengde
-  assign hoyde = product.metafields.product_data.sittehoyde
   assign kolli = product.metafields.product_data.antall_kolli
 
+  assign dimensjoner =
+    "Sittedybde" | append: ":" | append: product.metafields.product_data.sittedybde | append: "," 
+    | append: "Sittehøyde" | append: ":" | append: product.metafields.product_data.sittehoyde | append: ","
+    | append: "Armlene" | append: ":" | append: product.metafields.product_data.hoyde_armlene | append: ","
+    | append: "Diameter" | append: ":" | append: product.metafields.product_data.diameter | append: ","
+    | append: "Bredde" | append: ":" | append: product.metafields.product_data.produktbredde | append: ","
+    | append: "Dybde" | append: ":" | append: product.metafields.product_data.produktdybde | append: ","
+    | append: "Lengde" | append: ":" | append: product.metafields.product_data.produktlengde | append: ","
+    | append: "Høyde" | append: ":" | append: product.metafields.product_data.sittehoyde | append: ","
+    | append: "Vekt" | append: ":" | append: product.metafields.product_data.produktvekt | append: ","
 
 %}
 
