@@ -5,8 +5,13 @@
 	/* --sxbs-sale-color: #ff7d25; */
 	--sxbs-sale-color: #e36f21; /* Based on the Hermes Orange */
 }
+::selection {
+	background: #585550; /* WebKit/Blink Browsers */
+}
 
-
+::-moz-selection {
+	background: #585550; /* Gecko Browsers */
+}
 /* TYPOGRAPHY */
 
 
