@@ -255,7 +255,7 @@
                     <li>
                         {% assign dim_i = 0 %}
                         {% assign values_dim = dimensjon | split: ":" %}
-                        {% for value_dim in values_dim | split: ":" %}
+                        {% for value_dim in values_dim %}
                             {% if dim_i == 0 %}
                                 <strong>{{ value_dim }}: </strong>
                             {% else %}
