@@ -229,6 +229,9 @@ div#description {
 	font-size: 14px;
 	letter-spacing: 0.5px;
 }
+.blog-block ul {
+	list-style: circle;
+}
 .blog-block .vedlikehold-text p {
 	margin-bottom: 16px;
 }
