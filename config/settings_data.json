@@ -473,14 +473,14 @@
           "1601240654390-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN.jpg",
+              "image": "shopify:\/\/shop_images\/gine_margrethe_portrett.jpg",
               "video_url": "",
               "meta": "",
-              "title": "Interiørtjenester",
-              "subheading": "<p>Personlig shoppingopplevelse online. Våre konsulenter er nå online og klare for å møte deg. Velg mellom online videokonsultasjon, e-post eller telefon.<br\/><br\/><\/p>",
-              "max_width_subheading": 24,
-              "link_text": "Book time i dag",
-              "link": "#",
+              "title": "Hjemme hos Gine Margrethe",
+              "subheading": "<p><br\/>Gine Margrethe er et stilikon med mange jern i ilden. SixBondStreet besøkte henne for å snakke om trender, bærekraft og innredning av hjemmet.<br\/><br\/><\/p>",
+              "max_width_subheading": 20,
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/blogs\/nr-6\/inspirasjon-hjemme-hos-stilikonet-gine-margrethe",
               "alignment": "left_bottom",
               "opacity_overlay": 20
             }
