@@ -581,7 +581,7 @@
           "show_vendor": true,
           "show_swatches": true,
           "show_share_buttons": true,
-          "show_quantity_input": true,
+          "show_quantity_input": false,
           "enable_payment_button": false,
           "enable_full_width": true,
           "media_layout": "column",
