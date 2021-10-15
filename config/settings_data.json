@@ -488,14 +488,14 @@
           "1601240654390-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hostens_nyheter_forside.jpg",
+              "image": "shopify:\/\/shop_images\/hund_gine_margrethe.jpg",
               "video_url": "",
               "meta": "",
-              "title": "Høstens Nyheter",
-              "subheading": "<p>Se alle nyhetene for høsten<\/p>",
+              "title": "Se produktene her",
+              "subheading": "<p>Her finner du alle møblene og interiørartiklene Gine Margrethe har valgt til sitt hjem fra SixBondStreet.<\/p>",
               "max_width_subheading": 24,
               "link_text": "Se produktene her",
-              "link": "shopify:\/\/collections\/nyheter",
+              "link": "shopify:\/\/collections\/hjemme-hos-gine-margrethe",
               "alignment": "left_bottom",
               "opacity_overlay": 20
             }
