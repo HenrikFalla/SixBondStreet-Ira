@@ -99,11 +99,10 @@
           },
           "1601505997237": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "title": "Announce a sale or a new product line using this announcement bar.",
+              "title": "Fri frakt på alle ordre over 10'000,-",
               "link": "",
-              "color_background": "#1d1d1d",
+              "color_background": "#646464",
               "color_text": "#ffffff"
             }
           }
