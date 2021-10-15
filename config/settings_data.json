@@ -229,14 +229,14 @@
           "1600315401018-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Varens_TrenderArtboard_1.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/Varens_TrenderArtboard_2.jpg",
+              "image": "shopify:\/\/shop_images\/B17R1897.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/B17R1897.jpg",
               "video_url": "",
-              "meta": "2021",
-              "title": "Høstens Interiørtrender",
-              "subheading": "<p><br\/>Høstens trender for 2021 bærer tydelig preg av bærekraft, naturmaterialer og godt håndverk. Vi har blitt mer selektive til hva som kommer over dørterskelen.<br\/><br\/><\/p>",
-              "max_width_subheading": 26,
-              "link_text": "Les mer her",
+              "meta": "Nyhet",
+              "title": "Ny tekstilkolleksjon",
+              "subheading": "<p><br\/>Vi lanserer en ny, fargerik og sofistikert tekstilkolleksjon.<br\/><\/p>",
+              "max_width_subheading": 30,
+              "link_text": "Drøm deg bort her",
               "link": "shopify:\/\/blogs\/nr-6\/hostens-interiortrender-2021",
               "alignment": "center_center"
             }
