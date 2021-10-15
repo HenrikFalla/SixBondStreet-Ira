@@ -222,6 +222,8 @@ div#description {
 .blog-block .blog-block__text {
 	width: 100%;
 	padding: 16px;
+	padding-left: 0;
+	padding-right: 0;
 }
 .blog-block .blog-block__text h2 {
 	margin-bottom: 8px;
