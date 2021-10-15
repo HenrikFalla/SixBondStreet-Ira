@@ -89,11 +89,12 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "title": "Vi flytter lager",
               "link": "",
-              "color_background": "#fafafa",
-              "color_text": "#656565"
+              "color_background": "#232328",
+              "color_text": "#ffffff"
             }
           },
           "1601505997237": {
@@ -112,7 +113,7 @@
           "1601505997237"
         ],
         "settings": {
-          "enabled": false,
+          "enabled": true,
           "timing": 3
         }
       },
