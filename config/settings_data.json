@@ -89,9 +89,8 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "title": "Announce a sale or a new product line using this announcement bar.",
+              "title": "Vi flytter lager",
               "link": "",
               "color_background": "#fafafa",
               "color_text": "#656565"
