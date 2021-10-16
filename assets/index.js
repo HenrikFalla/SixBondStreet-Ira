@@ -11677,7 +11677,7 @@
 				escapeDeactivates: !1
 			});
 		Q.get().then(T), R("cart:updated", (function(t) {
-          console.log("ramit" + l.value);
+          console.log("ramit" + t.cart);
 			return T(t.cart)
 		}));
 		var y = m(n, "click", k),
