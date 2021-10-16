@@ -11677,6 +11677,7 @@
 				escapeDeactivates: !1
 			});
 		Q.get().then(T), R("cart:updated", (function(t) {
+          console.log("updated");
 			return T(t.cart)
 		}));
 		var y = m(n, "click", k),
