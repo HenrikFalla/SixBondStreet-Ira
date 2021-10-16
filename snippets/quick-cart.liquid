@@ -6,7 +6,7 @@
     assign color_background_button_hover_popup = settings.color_text_drawer | color_lighten: 20
   endif
 %}
-    {%- assign threshold_in_cents = 10000 | times: 100 -%}
+    {%- assign threshold_in_cents = settings.threshold | times: 100 -%}
  {% assign remaining_num = cart.total_price | minus: threshold_in_cents %}
     {% assign remaining_num_abs = remaining_num | abs %}
     {% if remaining_num > 0 %}
@@ -20,7 +20,7 @@
 <div
   class="quick-cart"
   data-quick-cart
-     data-threshold="12000"
+     data-threshold={{settings.threshold}}
   style="
     --color-button-background-hover: {{ color_background_button_hover_popup }};
   "
