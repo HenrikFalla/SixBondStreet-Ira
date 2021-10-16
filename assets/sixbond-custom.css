@@ -218,6 +218,7 @@ div#description {
 .blog-block .blog-block__image {
 	width: 100%;
 	padding-top: 100%;
+	margin-right: 0;
 }
 .blog-block .blog-block__text {
 	width: 100%;
@@ -249,6 +250,7 @@ div#description {
 	.blog-block .blog-block__image {
 		width: 40%;
 		padding-top: 0;
+		margin-right: 16px;
 	}
 	.blog-block .blog-block__text {
 		width: 60%;
