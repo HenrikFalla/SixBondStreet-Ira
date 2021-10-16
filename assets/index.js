@@ -11659,7 +11659,6 @@
 			s = h("[data-footer]", t),
 			c = h("[data-discounts]", s),
 			l = h("[data-subtotal]", s),
-            r = h("[data-subtotal]", s),
 			u = h("[data-add]", i),
 			d = h("[data-contents]", u);
 		e.on("click", "button[data-decrease]", (function(t, e) {
@@ -11740,7 +11739,7 @@
             threshold(subtot)
         }
       
-      	function threshold(subtotal){
+    	function threshold(subtotal){
           var elem = document.querySelector('.quick-cart');
 	var threshold = elem.getAttribute('data-threshold');
  
