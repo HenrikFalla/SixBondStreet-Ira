@@ -11659,6 +11659,7 @@
 			s = h("[data-footer]", t),
 			c = h("[data-discounts]", s),
 			l = h("[data-subtotal]", s),
+            r = h("[data-subtotal]", s),
 			u = h("[data-add]", i),
 			d = h("[data-contents]", u);
 		e.on("click", "button[data-decrease]", (function(t, e) {
@@ -11740,7 +11741,7 @@
         }
       
       	function threshold(subtotal){
-
+	
         var rr = subtotal/100;
         var threshold = 10000;
 console.log(rr,subtotal);
