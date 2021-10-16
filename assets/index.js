@@ -11677,7 +11677,7 @@
 				escapeDeactivates: !1
 			});
 		Q.get().then(T), R("cart:updated", (function(t) {
-          console.log("ramit" + t.cart);
+      
 			return T(t.cart)
 		}));
 		var y = m(n, "click", k),
@@ -11735,7 +11735,8 @@
 					return "<div>".concat(e, " (-").concat(K(n), ")</div>")
 				})), "\n      </ul>\n    "))
 			}(n), E(s, "visible", t.sorted.length), E(a, "visible", !t.sorted.length), E(c, "visible", n.length), l && (l.innerHTML = K(t.total_price))
-		}
+		    console.log("ramit" + t.cart);
+        }
 		return R("cart:open", (function(t, e) {
 			return A(e.flash)
 		})), R("cart:configureLoading", (function() {
