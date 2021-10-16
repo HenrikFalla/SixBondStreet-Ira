@@ -150,6 +150,7 @@
           		{% if current_variant.inventory_quantity > 0 %}
           			<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
           		{% else %}
+                
           			<span data-stock-availability > <div class="out_stock__variant_orb">
 			<div class="out_stock__variant_orb_inner "></div>
 		</div>{%if product.metafields.product_data.leveringstid == blank %} {%else %} Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}	{% endif %}</span>
@@ -228,7 +229,7 @@
 			<div class="in_stock__variant_orb_inner"></div>
 		</div>     {% endif %}
             
-            {{ current_variant.inventory_quantity }}</span> på lager.</p>	 {% endcomment %} 
+            {{ current_variant.inventory_quantity }}</span> på llager.</p>	 {% endcomment %} 
 					{% else %}
 						<span data-stock-availability class="dom-message"> <div class="out_stock__variant_orb">
 			<div class="out_stock__variant_orb_inner "></div>
