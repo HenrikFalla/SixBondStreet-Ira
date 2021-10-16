@@ -7,7 +7,7 @@
            
 //            var checker = document.getElementById('checkme');
 var sendbtn = document.getElementById('continue_button');
-             sendbtn.disabled;
+             sendbtn.disabled = true;
 // checker.onchange = function() {
 //   sendbtn.disabled = !!this.checked;
 // };
