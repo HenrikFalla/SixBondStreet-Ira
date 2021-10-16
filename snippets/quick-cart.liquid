@@ -6,7 +6,7 @@
     assign color_background_button_hover_popup = settings.color_text_drawer | color_lighten: 20
   endif
 %}
-    {%- assign threshold_in_cents = 1000 | times: 100 -%}
+    {%- assign threshold_in_cents = 10000 | times: 100 -%}
  {% assign remaining_num = cart.total_price | minus: threshold_in_cents %}
     {% assign remaining_num_abs = remaining_num | abs %}
     {% if remaining_num > 0 %}
