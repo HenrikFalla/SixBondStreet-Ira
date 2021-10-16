@@ -333,18 +333,6 @@
         <h2>Beskrivelse</h2>
         {{ product.description }}
     </div>
-    {% for article in blog-merke.articles %}
-        {% assign handle-check = blog-merke.title | downcase | append: "/" | append: vendorHandle %}
-        {% if handle-check == article.handle %}
-            <div class="blog-block">
-                <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;"></div>
-                <div class="blog-block__text">
-                    <h2 class="block-title">{{ article.title }}</h1>
-                    {{ article.content }}
-                </div>
-            </div>
-        {% endif %}
-    {% endfor %}
     {% for tag in product.tags %}
         {% for article in blog-vedlikehold.articles %}
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag %}
@@ -360,6 +348,18 @@
                 </div>
             {% endif %}
         {% endfor %}
+    {% endfor %}
+    {% for article in blog-merke.articles %}
+        {% assign handle-check = blog-merke.title | downcase | append: "/" | append: vendorHandle %}
+        {% if handle-check == article.handle %}
+            <div class="blog-block">
+                <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;"></div>
+                <div class="blog-block__text">
+                    <h2 class="block-title">{{ article.title }}</h1>
+                    {{ article.content }}
+                </div>
+            </div>
+        {% endif %}
     {% endfor %}
     </section>
 </section>
