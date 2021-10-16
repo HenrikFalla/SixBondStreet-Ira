@@ -4,5 +4,14 @@
          {
            
            console.log("ready");
+           
+//            var checker = document.getElementById('checkme');
+var sendbtn = document.getElementById('continue_button');
+             sendbtn.disabled;
+// checker.onchange = function() {
+//   sendbtn.disabled = !!this.checked;
+// };
+           
+           
          }
    
