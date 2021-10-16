@@ -9,19 +9,10 @@ document.querySelector(".step__footer").insertAdjacentHTML("beforeBegin",
            
            var checker = document.getElementById('agreement-input');
 var sendbtn = document.getElementById('continue_button');
-             sendbtn.disabled = true;
+//              sendbtn.disabled = true;
 checker.onchange = function() {
-if(this.checked)
- {
-  
-    sendbtn.disabled = "false";
- } 
- 
- else 
- {
-    sendbtn.disabled = "true";
-}
-}
+  sendbtn.disabled = !!this.checked;
+};
            
            
          }
