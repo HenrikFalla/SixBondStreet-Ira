@@ -11745,7 +11745,7 @@
  
         var rr = subtotal/100;
 
-console.log(rr,subtotal);
+console.log(threshold,subtotal);
         if(rr < threshold)
 
         {
