@@ -11743,7 +11743,7 @@
 
         var rr = subtotal/100;
         var threshold = 1000;
-
+console.log(rr,subtotal);
         if(rr < threshold)
 
         {
