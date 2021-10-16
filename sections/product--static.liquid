@@ -143,12 +143,12 @@
             {% endif %}
           <div class="trigger_orb" style="display:none">
             {{instockorb}}  </div>
-              <span class="variant-inventory">{{ current_variant.inventory_quantity }}</span> på lager.</p>
+              <span class="variant-inventory">{{ current_variant.inventory_quantity }}</span> på llager.</p>
           {% if variant.options > 1 %}
               <div class="stock-availability ">
           	{% if current_variant.available == true %}
           		{% if current_variant.inventory_quantity > 0 %}
-          			<span data-stock-availability>{{ current_variant.inventory_quantity }} på llager.</span>
+          			<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
           		{% else %}
                 
           			<span data-stock-availability > <div class="out_stock__variant_orb">
