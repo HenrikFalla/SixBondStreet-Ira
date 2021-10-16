@@ -11743,7 +11743,7 @@
       	function threshold(subtotal){
           var elem = document.querySelector('.quick-cart');
 	var threshold = elem.getAttribute('data-threshold');
-          console.log(typeId);
+ 
         var rr = subtotal/100;
 
 
