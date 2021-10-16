@@ -11735,11 +11735,12 @@
 					return "<div>".concat(e, " (-").concat(K(n), ")</div>")
 				})), "\n      </ul>\n    "))
 			}(n), E(s, "visible", t.sorted.length), E(a, "visible", !t.sorted.length), E(c, "visible", n.length), l && (l.innerHTML = K(t.total_price))
-		    threshold(t.total_price);
+		    var subtot = t.total_price;
+            threshold(subtot)
         }
       
-      	function threshold(rr){
-  console.log(t.total_price);
+      	function threshold(){
+  console.log("ee");
 //         var rr = subtotal/100;
 //         var threshold = 1000;
 
