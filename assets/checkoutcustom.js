@@ -3,7 +3,7 @@
            
          {
 document.querySelector(".step__footer").insertAdjacentHTML("beforeBegin",
-"<div><h1>I</h1><h2>was</h2><h3>inserted</h3></div>");
+"Jeg har lest og godkjenner <a href='/policies/terms-of-service'>kjøpsvilkårene</a>");
            
            console.log("ready");
            
