@@ -20,6 +20,7 @@ if(this.checked)
  else 
  {
     sendbtn.disabled = "true";
+}
 };
            
            
