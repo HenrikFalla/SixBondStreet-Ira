@@ -11739,27 +11739,27 @@
             threshold(subtot)
         }
       
-      	function threshold(i){
-  console.log(i);
-//         var rr = subtotal/100;
-//         var threshold = 1000;
+      	function threshold(subtotal){
 
-//         if(rr < threshold)
+        var rr = subtotal/100;
+        var threshold = 1000;
 
-//         {
-//           document.getElementById("free-shipping").style.display = "none";
-//           document.getElementById("paid-shipping").style.display = "block";
-//           document.getElementById("remaining_amount").innerHTML = threshold - rr;
-//         }
-//         else {
-//           document.getElementById("paid-shipping").style.display = "none";
-//           document.getElementById("free-shipping").style.display = "block";
+        if(rr < threshold)
 
-//         }
-//         if(rr == 0)
-//         {  
+        {
+          document.getElementById("free-shipping").style.display = "none";
+          document.getElementById("paid-shipping").style.display = "block";
+          document.getElementById("remaining_amount").innerHTML = threshold - rr;
+        }
+        else {
+          document.getElementById("paid-shipping").style.display = "none";
+          document.getElementById("free-shipping").style.display = "block";
 
-//           document.getElementById("paid-shipping").style.display = "none";}
+        }
+        if(rr == 0)
+        {  
+
+          document.getElementById("paid-shipping").style.display = "none";}
       }
         
         
