@@ -11,7 +11,7 @@ document.querySelector(".step__footer").insertAdjacentHTML("beforeBegin",
 var sendbtn = document.getElementById('continue_button');
 //              sendbtn.disabled = true;
 checker.onchange = function() {
-  sendbtn.disabled = !!this.checked;
+  sendbtn.disabled = !(this.checked);
 };
            
            
