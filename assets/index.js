@@ -11741,7 +11741,9 @@
         }
       
       	function threshold(subtotal){
-	
+          var elem = document.querySelector('.quick-cart');
+	var typeId = elem.getAttribute('data-threshold');
+          console.log(typeID);
         var rr = subtotal/100;
         var threshold = 10000;
 console.log(rr,subtotal);
