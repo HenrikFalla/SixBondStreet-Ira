@@ -9,9 +9,9 @@ document.querySelector(".step__footer").insertAdjacentHTML("beforeBegin",
            
            var checker = document.getElementById('agreement-input');
 var sendbtn = document.getElementById('continue_button');
-//              sendbtn.disabled = true;
+             sendbtn.disabled = true;
 checker.onchange = function() {
-  sendbtn.disabled = this.checked;
+  sendbtn.disabled = false = this.checked;
 };
            
            
