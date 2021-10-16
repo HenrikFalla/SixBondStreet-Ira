@@ -11742,11 +11742,11 @@
       
       	function threshold(subtotal){
           var elem = document.querySelector('.quick-cart');
-	var typeId = elem.getAttribute('data-threshold');
+	var threshold = elem.getAttribute('data-threshold');
           console.log(typeId);
         var rr = subtotal/100;
-        var threshold = 10000;
-console.log(rr,subtotal);
+
+
         if(rr < threshold)
 
         {
