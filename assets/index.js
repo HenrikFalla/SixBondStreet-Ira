@@ -11742,7 +11742,7 @@
       	function threshold(subtotal){
 
         var rr = subtotal/100;
-        var threshold = 1000;
+        var threshold = 10000;
 console.log(rr,subtotal);
         if(rr < threshold)
 
