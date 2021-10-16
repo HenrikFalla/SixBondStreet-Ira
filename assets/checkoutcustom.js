@@ -3,7 +3,7 @@
            
          {
 document.querySelector(".step__footer").insertAdjacentHTML("beforeBegin",
-"<label><input type='checkbox' class='input-checkbox'> Jeg har lest og godkjenner <a href='/policies/terms-of-service'>kjøpsvilkårene</a></label>");
+"<label id='agreement-label'><input type='checkbox' class='input-checkbox'> Jeg har lest og godkjenner <a href='/policies/terms-of-service'>kjøpsvilkårene</a></label>");
            
            console.log("ready");
            
