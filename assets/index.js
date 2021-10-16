@@ -11735,8 +11735,33 @@
 					return "<div>".concat(e, " (-").concat(K(n), ")</div>")
 				})), "\n      </ul>\n    "))
 			}(n), E(s, "visible", t.sorted.length), E(a, "visible", !t.sorted.length), E(c, "visible", n.length), l && (l.innerHTML = K(t.total_price))
-		    console.log("ramit" + t.total_price);
+		    threshold(t.total_price);
         }
+      
+      	function threshold(rr){
+  console.log(t.total_price);
+//         var rr = subtotal/100;
+//         var threshold = 1000;
+
+//         if(rr < threshold)
+
+//         {
+//           document.getElementById("free-shipping").style.display = "none";
+//           document.getElementById("paid-shipping").style.display = "block";
+//           document.getElementById("remaining_amount").innerHTML = threshold - rr;
+//         }
+//         else {
+//           document.getElementById("paid-shipping").style.display = "none";
+//           document.getElementById("free-shipping").style.display = "block";
+
+//         }
+//         if(rr == 0)
+//         {  
+
+//           document.getElementById("paid-shipping").style.display = "none";}
+      }
+        
+        
 		return R("cart:open", (function(t, e) {
 			return A(e.flash)
 		})), R("cart:configureLoading", (function() {
