@@ -198,12 +198,9 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	font-size: 15px;
 	border: 1px solid var(--color-border);
 }
-.active, .collapsible-button:hover {
-	background-color: #f0f0f0;
-}
 .collapsible-button:after {
 	content: '\002B';
-	color: white;
+	color: #333333;
 	font-weight: bold;
 	float: right;
 	margin-left: 5px;
@@ -216,7 +213,6 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
-	background-color: #f1f1f1;
 }
 /* Description */
 section.description {
