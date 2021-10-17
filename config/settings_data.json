@@ -518,6 +518,7 @@
       },
       "1601241721814": {
         "type": "gallery--dynamic",
+        "disabled": true,
         "blocks": {
           "1601241721814-3": {
             "type": "image",
@@ -839,6 +840,7 @@
       },
       "16342917447596cfdb": {
         "type": "map--dynamic",
+        "disabled": true,
         "blocks": {
           "16342917447596cfdb-0": {
             "type": "text",
@@ -871,6 +873,7 @@
       },
       "1634291761583837e3": {
         "type": "text-columns-with-images--dynamic",
+        "disabled": true,
         "blocks": {
           "1634291761583837e3-0": {
             "type": "column",
