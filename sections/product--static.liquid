@@ -17,6 +17,14 @@
 
   assign dimensjoner = "Sittedybde" | append: ":" | append: product.metafields.product_data.sittedybde | append: "," | append: "Sittehøyde" | append: ":" | append: product.metafields.product_data.sittehoyde | append: "," | append: "Armlene" | append: ":" | append: product.metafields.product_data.hoyde_armlene | append: "," | append: "Diameter" | append: ":" | append: product.metafields.product_data.diameter | append: "," | append: "Bredde" | append: ":" | append: product.metafields.product_data.produktbredde | append: "," | append: "Dybde" | append: ":" | append: product.metafields.product_data.produktdybde | append: "," | append: "Lengde" | append: ":" | append: product.metafields.product_data.produktlengde | append: "," | append: "Høyde" | append: ":" | append: product.metafields.product_data.sittehoyde | append: "," | append: "Vekt" | append: ":" | append: product.metafields.product_data.produktvekt | split: ","
 
+  for tag in product.tags
+	for article in blog-vedlikehold.articles
+		assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag
+		if handle-check == article.handle
+			assign materiale = tag
+		endif
+	endfor
+  endfor	
 %}
 
 <section
@@ -276,6 +284,13 @@
                     {% endfor %}
                 </ul>
             </div>
+            {% if materiale %}
+                 <button class="collapsible-button">Materiale</button>
+                 <div class="collapsible__list">
+                    <p>Materiale: {{ materiale }}</p>
+                    <a href="#vedlikehold">Les om vedlikehold her</a>
+                </div>
+            {% endif %}
         </div>
       {% endif %}
       {% if section.settings.show_share_buttons %}
