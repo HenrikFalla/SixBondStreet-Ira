@@ -354,6 +354,7 @@
         {% for article in blog-vedlikehold.articles %}
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag %}
             {% if handle-check == article.handle %}
+                <div id="vedlikehold"></div>
                 <div class="blog-block">
                     {% if article.image %}
                         <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;"></div>
