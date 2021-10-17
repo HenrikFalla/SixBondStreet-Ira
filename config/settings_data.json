@@ -389,6 +389,7 @@
       },
       "1600315451525": {
         "type": "collection-list--dynamic",
+        "disabled": true,
         "blocks": {
           "1600315451525-0": {
             "type": "collection",
@@ -654,14 +655,14 @@
       "1601498256106": {
         "type": "image-with-text--dynamic",
         "settings": {
-          "image": "shopify:\/\/shop_images\/82049336_98.jpg",
+          "image": "shopify:\/\/shop_images\/geilo_2-46_burnt_4.jpg",
           "video_url": "",
           "image_width": "standard",
           "image_position": "left",
           "title": "Nyhet!",
-          "text": "<p><strong>Bloomingville <\/strong><br\/>Drevet av en fascinasjon av nordisk stil og livsstil, etablerte grunnlegger Betina Stampe Bloomingville i år 2000.<br\/>Hun lyktes med en slik lidenskap og hengivenhet at selskapet ble en del av Regent Holding i 2014.<br\/><br\/><\/p>",
+          "text": "<p><strong>Fjellhytte kolleksjon <br\/><\/strong><br\/>SixBondStreet introduserer vår nye fjellhyttekolleksjon med tekstilkolleksjonen Geilo.<br\/><\/p>",
           "max_width_text": 20,
-          "link": "shopify:\/\/collections\/bloomingville",
+          "link": "#",
           "link_text": "Se utvalget her",
           "enable_contrast": true,
           "enable_full_width": true
@@ -908,6 +909,53 @@
           "image_max_width": 100,
           "circle": true
         }
+      },
+      "1634467668d8706b5a": {
+        "type": "collage--dynamic",
+        "blocks": {
+          "1634467668d8706b5a-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mot_palla.jpg",
+              "video_url": "",
+              "meta": "",
+              "title": "Møt vår innkjøper og designer Palla Masdottir",
+              "subheading": "<p>Lidenskapelig opptatt av materialer, håndtverk, bærekraft og mennesker.<\/p>",
+              "max_width_subheading": 18,
+              "link_text": "Les mer",
+              "link": "shopify:\/\/pages\/om-oss",
+              "alignment": "left_center",
+              "opacity_overlay": 50
+            }
+          },
+          "1634467668d8706b5a-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/crosby_lenestol_miljo.jpg",
+              "video_url": "",
+              "meta": "SixBondStreet",
+              "title": "Vår egenproduksjon",
+              "subheading": "<p>Her finner du møbler og interiørartikler designet av og for SixBondStreet. Vår historie begynte i 2012 med internasjonale impulser og et ønske om å levere det lille ekstra innen møbler og interiør.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/sixbondstreet",
+              "alignment": "left_center",
+              "opacity_overlay": 40
+            }
+          }
+        },
+        "block_order": [
+          "1634467668d8706b5a-0",
+          "1634467668d8706b5a-1"
+        ],
+        "settings": {
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
+          "color_background_button": "#000000",
+          "color_text_button": "#ffffff",
+          "enable_full_width": false
+        }
       }
     },
     "content_for_index": [
@@ -915,6 +963,7 @@
       "1601240654390",
       "1600315431677",
       "1601498256106",
+      "1634467668d8706b5a",
       "1600315451525",
       "1600315418706",
       "1601499234365",
