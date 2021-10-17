@@ -200,10 +200,21 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 .active, .collapsible-button:hover {
 	background-color: #555;
 }
+.collapsible-button:after {
+	content: '\002B';
+	color: white;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+.active:after {
+	content: "\2212";
+}
 .collapsible__list {
 	padding: 0 18px;
-	display: none;
+	max-height: 0;
 	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 	background-color: #f1f1f1;
 }
 /* Description */
