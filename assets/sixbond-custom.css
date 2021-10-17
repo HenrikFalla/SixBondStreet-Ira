@@ -215,6 +215,9 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	transition: max-height 0.2s ease-out;
 	border-top: none;
 }
+.collapsible__list div, .collapsible__list ul {
+    padding: 16px;
+}
 /* Description */
 section.description {
 	max-width: 1100px;
