@@ -281,16 +281,16 @@
           "1600315418706-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/rektangel-pantone-006-885569-FHM8oBke.jpg",
+              "image": "shopify:\/\/shop_images\/spiseplassen.jpg",
               "video_url": "",
-              "meta": "",
-              "title": "Årets Pantone farger 2021",
-              "subheading": "<p><br\/>I år er det ikke bare èn med to farger fra Pantone; PANTONE 17-5104 Ultimate Gray + PANTONE 13-0647 Illuminating. To individuelle fargetoner som belyser hvordan to ulike elementer kommer sammen for å støtte hverandre. Den grå fargetonen defineres som praktisk og bunnsolid, den gule representerer optimisme og varme.<\/p>",
-              "max_width_subheading": 44,
-              "link_text": "Les mer her",
-              "link": "shopify:\/\/blogs\/nr-6\/arets-pantone-farger-2021-ultimate-gray-illuminating",
-              "alignment": "left_center",
-              "opacity_overlay": 0
+              "meta": "Få stilen",
+              "title": "En vakker og innbydende spiseplass",
+              "subheading": "<p>Her finner du møblene og dekoren du trenger for å skape en vakker og innbydende spisestue. Gjør spiseplassen klar for festsesongen ved hjelp av en aldri så liten oppgradering på interiørfronten.<\/p>",
+              "max_width_subheading": 20,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/en-vakker-og-innbydende-spisestue",
+              "alignment": "left_bottom",
+              "opacity_overlay": 60
             }
           },
           "1600315418706-0": {
@@ -310,17 +310,17 @@
           },
           "1601239752134": {
             "type": "image",
-            "disabled": true,
             "settings": {
+              "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_d756bbea-3e17-4512-a06a-ff2d5af4c091.jpg",
               "video_url": "",
-              "meta": "",
-              "title": "This is the Collage",
-              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "meta": "Interiørtjenester",
+              "title": "Book en online interiørkonsultasjon",
+              "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. Interiørdesigneren vil sammen med deg komme frem til den beste løsningen for ditt hjem. <\/p>",
               "max_width_subheading": 24,
-              "link_text": "Shop the collection",
+              "link_text": "Book time her",
               "link": "#",
               "alignment": "left_center",
-              "opacity_overlay": 90
+              "opacity_overlay": 40
             }
           }
         },
