@@ -242,6 +242,9 @@ div#description, div#vedlikehold {
 .description__container h2 {
 	margin-bottom: 16px;
 }
+section.description h2 {
+	font-weight: 500;
+}
 /* Vedlikehold Section product page */
 .blog-block {
 	display: flex;
