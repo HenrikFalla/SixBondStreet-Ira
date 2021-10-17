@@ -979,12 +979,12 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/fotokunst_-_vogue_october_1965_-_85x85cm.jpg",
-              "meta": "Elegant oppbevaring",
+              "meta": "Møbelkolleksjon",
               "title": "Harrison kolleksjonen",
-              "subheading": "<p>Oppbevar med stil ved hjelp av møbler fra den elegante og tidløse Harrison kolleksjonen.<\/p>",
+              "subheading": "<p>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen. Designet av og for SixbondStreet.<\/p>",
               "max_width_subheading": 28,
               "link_text": "Se utvalget her",
-              "link": "\/",
+              "link": "shopify:\/\/collections\/harrison-kolleksjonen",
               "alignment": "left_split",
               "opacity_overlay": 60
             }
