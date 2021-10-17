@@ -351,6 +351,7 @@
       },
       "1600315444066": {
         "type": "featured-products--dynamic",
+        "disabled": true,
         "blocks": {
           "1601493613565": {
             "type": "product",
@@ -952,9 +953,69 @@
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
           "color_subheading": "#ffffff",
-          "color_background_button": "#000000",
-          "color_text_button": "#ffffff",
+          "color_background_button": "#ffffff",
+          "color_text_button": "#000000",
           "enable_full_width": false
+        }
+      },
+      "1634468547c34ee1d1": {
+        "type": "carousel--dynamic",
+        "blocks": {
+          "1634468547c34ee1d1-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/volare_grey_detail_3_1_3.jpg",
+              "meta": "Nyheter",
+              "title": "Høstens nyheter",
+              "subheading": "<p>Se alle nyhetene for høsten<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/nyheter",
+              "alignment": "left_split",
+              "opacity_overlay": 60
+            }
+          },
+          "1634468547c34ee1d1-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/fotokunst_-_vogue_october_1965_-_85x85cm.jpg",
+              "meta": "SixBondstreet",
+              "title": "Harrison kolleksjonen",
+              "subheading": "<p>Oppbevar med stil ved hjelp av møbler fra den elegante og tidløse Harrison kolleksjonen.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "\/",
+              "alignment": "left_split",
+              "opacity_overlay": 60
+            }
+          },
+          "1634468547c34ee1d1-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/north_kolleksjonen.jpg",
+              "meta": "Møbler til spiseplassen",
+              "title": "North kolleksjonen",
+              "subheading": "<p>North serien har sitt utspring fra atmosfæren rundt den norske kjøkken brisken. North serien er åpen, innbydende og gjestfri i sitt design. Med sitt vakre og enkle formspråk er North enkel å plassere i rommet. <\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Shop the Collection",
+              "link": "\/",
+              "alignment": "left_split",
+              "opacity_overlay": 60
+            }
+          }
+        },
+        "block_order": [
+          "1634468547c34ee1d1-0",
+          "1634468547c34ee1d1-1",
+          "1634468547c34ee1d1-2"
+        ],
+        "settings": {
+          "height_mobile": 80,
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#b8b8b8",
+          "color_background_button": "#ffffff",
+          "color_text_button": "#000000"
         }
       }
     },
@@ -964,6 +1025,7 @@
       "1600315431677",
       "1601498256106",
       "1634467668d8706b5a",
+      "1634468547c34ee1d1",
       "1600315451525",
       "1600315418706",
       "1601499234365",
