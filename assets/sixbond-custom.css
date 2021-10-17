@@ -245,6 +245,7 @@ div#description, div#vedlikehold {
 	display: flex;
 	flex-direction: column;
 	padding: 16px;
+	position: relative;
 }
 .blog-block .blog-block__image {
 	width: 100%;
