@@ -250,30 +250,32 @@
       {% endif %}
       {% if dimensjoner.size > 0 %}
         <div class="product-single__dimensions">
-            <h3>Dimensjoner</h3>
-            <ul>
-                {% for dimensjon in dimensjoner %}
-                    {% assign dim_i = 0 %}
-                    {% assign values_dim = dimensjon | split: ":" %}
-                    {% unless values_dim[1] == blank %}
-                    {% if values_dim[0] == "Vekt" %}
-                        {% assign dim_trail = "kg" %}
-                    {% else %}
-                        {% assign dim_trail = "cm" %}
-                    {% endif %}
-                        <li>
-                        {% for value_dim in values_dim %}
-                            {% if dim_i == 0 %}
-                                <strong>{{ value_dim }}: </strong>
-                            {% else %}
-                                {{ value_dim }} {{ dim_trail }}
-                            {% endif %}
-                            {% assign dim_i = dim_i | plus: 1 %}
-                        {% endfor %}
-                        </li>
-                    {% endunless %}
-                {% endfor %}
-            </ul>
+            <button class="collapsible-button">Dimensjoner</button>
+            <div class="dimensjoner__list">
+                <ul>
+                    {% for dimensjon in dimensjoner %}
+                        {% assign dim_i = 0 %}
+                        {% assign values_dim = dimensjon | split: ":" %}
+                        {% unless values_dim[1] == blank %}
+                        {% if values_dim[0] == "Vekt" %}
+                            {% assign dim_trail = "kg" %}
+                        {% else %}
+                            {% assign dim_trail = "cm" %}
+                        {% endif %}
+                            <li>
+                            {% for value_dim in values_dim %}
+                                {% if dim_i == 0 %}
+                                    <strong>{{ value_dim }}: </strong>
+                                {% else %}
+                                    {{ value_dim }} {{ dim_trail }}
+                                {% endif %}
+                                {% assign dim_i = dim_i | plus: 1 %}
+                            {% endfor %}
+                            </li>
+                        {% endunless %}
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
       {% endif %}
       {% if section.settings.show_share_buttons %}
@@ -369,6 +371,22 @@
   ShopifyXR('addModels', {{ models }});
 </script>
 <script src='//cdn.shopify.com/shopifycloud/shopify-xr-js/assets/v1.0/shopify-xr.en.js' defer='defer'></script>
+<script>
+    var coll = document.getElementsByClassName("collapsible-button");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+</script>
 
 {% unless product == empty %}
   <script type="application/json" id="ProductJson-{{ section.id }}">
