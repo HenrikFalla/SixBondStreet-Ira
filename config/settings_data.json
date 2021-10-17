@@ -672,8 +672,8 @@
       "1601499234365": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "sprekenhus",
-          "title": "Alexander Sprekenhus",
+          "collection": "hubsch",
+          "title": "Hübsch",
           "per_row": 3,
           "rows": 1,
           "aspect_ratio": "natural"
