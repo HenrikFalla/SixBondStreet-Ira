@@ -10,6 +10,21 @@
   assign first_3d_model = product.media | where: "media_type", "model" | first
   assign enable_video_looping = section.settings.enable_video_looping
   assign blog-vedlikehold = blogs[section.settings.vedlikehold]
+  assign blog-merke = blogs[section.settings.merke]
+  assign vendorHandle = product.vendor | handle
+
+  assign kolli = product.metafields.product_data.antall_kolli
+
+  assign dimensjoner = "Sittedybde" | append: ":" | append: product.metafields.product_data.sittedybde | append: "," | append: "Sittehøyde" | append: ":" | append: product.metafields.product_data.sittehoyde | append: "," | append: "Armlene" | append: ":" | append: product.metafields.product_data.hoyde_armlene | append: "," | append: "Diameter" | append: ":" | append: product.metafields.product_data.diameter | append: "," | append: "Bredde" | append: ":" | append: product.metafields.product_data.produktbredde | append: "," | append: "Dybde" | append: ":" | append: product.metafields.product_data.produktdybde | append: "," | append: "Lengde" | append: ":" | append: product.metafields.product_data.produktlengde | append: "," | append: "Høyde" | append: ":" | append: product.metafields.product_data.sittehoyde | append: "," | append: "Vekt" | append: ":" | append: product.metafields.product_data.produktvekt | split: ","
+
+  for tag in product.tags
+	for article in blog-vedlikehold.articles
+		assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag
+		if handle-check == article.handle
+			assign materiale = tag
+		endif
+	endfor
+  endfor	
 %}
 
 <section
@@ -102,7 +117,6 @@
 
         {%- if show_vendor -%}
 			<!-- SixBondStreet CUSTOM -->
-			{%- assign vendorHandle = product.vendor | handle -%}
 			{%- if collections[vendorHandle].products.size > 0 -%}
 			    <a href="{{ collections[vendorHandle].url }}">
 			    <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div>
@@ -283,9 +297,51 @@
         role="alert"
         aria-hidden="true"
       >{{ 'products.product.loader_label' | t }}</p>
-
-      <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description | strip_html | truncatewords: 65 }}</div>
-
+      {% assign truncated_description = product.description | strip_html | truncatewords: 25 %}
+      {% if truncated_description contains '...' %}
+        <div class="product-single__description rte rte--product fs-body-base" data-description><p>{{ truncated_description }}</p><a href="#description">Les mer</a></div>
+      {% else %}
+        <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
+      {% endif %}
+      {% if dimensjoner.size > 0 %}
+        <div class="product-single__dimensions">
+            <button class="collapsible-button">Dimensjoner</button>
+            <div class="collapsible__list">
+                <ul>
+                    {% for dimensjon in dimensjoner %}
+                        {% assign dim_i = 0 %}
+                        {% assign values_dim = dimensjon | split: ":" %}
+                        {% unless values_dim[1] == blank %}
+                        {% if values_dim[0] == "Vekt" %}
+                            {% assign dim_trail = "kg" %}
+                        {% else %}
+                            {% assign dim_trail = "cm" %}
+                        {% endif %}
+                            <li>
+                            {% for value_dim in values_dim %}
+                                {% if dim_i == 0 %}
+                                    <strong>{{ value_dim }}: </strong>
+                                {% else %}
+                                    {{ value_dim }} {{ dim_trail }}
+                                {% endif %}
+                                {% assign dim_i = dim_i | plus: 1 %}
+                            {% endfor %}
+                            </li>
+                        {% endunless %}
+                    {% endfor %}
+                </ul>
+            </div>
+            {% if materiale %}
+                 <button class="collapsible-button">Materiale</button>
+                 <div class="collapsible__list">
+                    <div>
+                        <p>Materiale: {{ materiale | capitalize }}</p>
+                        <a href="#vedlikehold">Les om vedlikehold her</a>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+      {% endif %}
       {% if section.settings.show_share_buttons %}
         <div class="product__share" data-share="{{ 'product.share' | t }}">
           {% render 'share-block', share_title: product.title, url: product.url, share_image: product.featured_media %}
@@ -337,24 +393,42 @@
 
   {%- assign images = product.media | where: 'media_type', 'image' -%}
   {% render 'lightbox' with images: images %}
+  <section class="description">
+    <div class="description__container">
+        <div id="description"></div>
+        <h2>Beskrivelse</h2>
+        {{ product.description }}
+    </div>
     {% for tag in product.tags %}
         {% for article in blog-vedlikehold.articles %}
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag %}
             {% if handle-check == article.handle %}
-                <div class="vedlikehold">
-                    {% render 'image' with
-                         image: article.image,
-                        wrapper_class: 'vedlikehold-image',
-                        disable_style: disabled_image_style
-                    %}
-                    <div class="vedlikehold-text">
-                        <h2>{{ article.title }}</h2>
+                <div class="blog-block">
+                    <div id="vedlikehold"></div>
+                    {% if article.image %}
+                        <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;"></div>
+                    {% endif %}
+                    <div class="blog-block__text" {% unless article.image %}style="flex:100%;"{% endunless %}>
+                        <h2 class="block-title">{{ article.title }}</h2>
                         {{ article.content }}
                     </div>
                 </div>
             {% endif %}
         {% endfor %}
     {% endfor %}
+    {% for article in blog-merke.articles %}
+        {% assign handle-check = blog-merke.title | downcase | append: "/" | append: vendorHandle %}
+        {% if handle-check == article.handle %}
+            <div class="blog-block">
+                <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;"></div>
+                <div class="blog-block__text">
+                    <h2 class="block-title">{{ article.title }}</h1>
+                    {{ article.content }}
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+    </section>
 </section>
 <style>
   .color-error{color:red;}
@@ -367,6 +441,22 @@
   ShopifyXR('addModels', {{ models }});
 </script>
 <script src='//cdn.shopify.com/shopifycloud/shopify-xr-js/assets/v1.0/shopify-xr.en.js' defer='defer'></script>
+<script>
+    var coll = document.getElementsByClassName("collapsible-button");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+</script>
 
 {% unless product == empty %}
   <script type="application/json" id="ProductJson-{{ section.id }}">
@@ -385,6 +475,7 @@
   {% endfor %}
  </script>
  <!-- Slutt Script -->
+
 {% render 'product_form_tooltip' with
 	product: product,
 	current_variant: current_variant,
@@ -464,6 +555,12 @@
         "id": "vedlikehold",
         "type": "blog",
         "label": "Vedlikehold"
+      },
+      {
+        "id": "merke",
+        "type": "blog",
+        "label": "Merke",
+        "info": "Velg hvilken blog som skal hente info for info om merke."
       }
     ]
   }

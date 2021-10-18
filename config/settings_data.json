@@ -48,7 +48,7 @@
     "search_show_pages": true,
     "search_show_price": true,
     "search_show_vendor": false,
-    "swatch_options": "Color, Colour, Tekstil, Treverk, Stoff, Tekstilfarge",
+    "swatch_options": "Color, Colour, Tekstil, Treverk, Stoff, Tekstilfarge, Tekstil, Velg Tekstil",
     "chip_options": "Size",
     "cart_enable_ajax": true,
     "cart_enable_quick_shop": false,
@@ -94,19 +94,18 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "title": "Announce a sale or a new product line using this announcement bar.",
+              "title": "Vi flytter lager",
               "link": "",
-              "color_background": "#fafafa",
-              "color_text": "#656565"
+              "color_background": "#232328",
+              "color_text": "#ffffff"
             }
           },
           "1601505997237": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "title": "Announce a sale or a new product line using this announcement bar.",
+              "title": "Fri frakt på alle ordre over 10.000,-",
               "link": "",
-              "color_background": "#1d1d1d",
+              "color_background": "#151515",
               "color_text": "#ffffff"
             }
           }
@@ -116,7 +115,7 @@
           "1601505997237"
         ],
         "settings": {
-          "enabled": false,
+          "enabled": true,
           "timing": 3
         }
       },
@@ -127,7 +126,7 @@
             "type": "mega_nav",
             "settings": {
               "dropdown_parent_link": "Møbler",
-              "mega_nav_featured_image": "shopify:\/\/shop_images\/Mobler_Image_meganav.jpg"
+              "mega_nav_featured_image": "shopify:\/\/shop_images\/dsf0239_1.jpg"
             }
           },
           "9b3f5243-d157-4ce9-87c0-1020082cbdb4": {
@@ -182,34 +181,43 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "c4f553af-66fe-4e23-bc9c-a7a83d158532": {
+            "type": "text",
+            "settings": {
+              "title": "Kontakt oss",
+              "text": "<p>Tlf: 45 09 99 00<\/p><p>Kundeservice@sixbondstreet.no<\/p><p><strong>Åpningstider<\/strong><\/p><p>Man - Ons: 11:00 - 19:00<\/p><p>Tors: 11:00 - 20:00<\/p><p>Fre: 11:00 - 19:00<br\/>Lør: 10:00 - 16:00<br\/><strong>Showroom<\/strong><br\/>Drammensveien 130<br\/>0277 Oslo<\/p>"
+            }
+          },
           "8907fbeb-aedd-4ecf-845a-79e3950ce7b4": {
             "type": "links",
             "settings": {
-              "title": "",
+              "title": "Kundeservice",
               "link_list": "footer"
-            }
-          },
-          "c4f553af-66fe-4e23-bc9c-a7a83d158532": {
-            "type": "text",
-            "disabled": true,
-            "settings": {
-              "title": "Åpningstider",
-              "text": "<p>Man - Ons: 11:00 - 19:00<br\/>Tors: 11:00 - 20:00<br\/>Fre: 11:00 - 19:00<br\/>Lør: 10:00 - 16:00<\/p>"
             }
           },
           "518c5315-c457-4e74-b87e-92f9338f2f4d": {
             "type": "links",
-            "disabled": true,
             "settings": {
-              "title": "Links",
-              "link_list": ""
+              "title": "Vedlikehold",
+              "link_list": "vedlikehold"
+            }
+          },
+          "29703fe4-84d8-444f-8993-18fb9b590a23": {
+            "type": "about",
+            "settings": {
+              "title": "Om SixBondStreet",
+              "about_text": "<p>Hos oss skal du få det du ikke finner alle andre steder.  Gjennom spennende kolleksjoner med internasjonalt uttrykk, kvalitet og fornuftige priser skal vi gjennom vår nettbutikk inspirere deg til et vakrere hjem.<\/p>",
+              "about_link": "shopify:\/\/pages\/om-oss",
+              "trygg_id": "1624",
+              "trygg_text": "<p>SixBondStreet AS er godkjent av Trygg e-Handel, det betyr at du kan kjenne deg trygg og sikker når du handler fra oss. Trygg e-Handels formål er å beskytte deg som forbruker – kun stabile og seriøse nettbutikker kan bli godkjent til å benytte Trygg e-Handel merket. Du kan lese mer om Trygg e-Handel og dine rettigheter som forbruker på www.tryggehandel.no. <\/p>"
             }
           }
         },
         "block_order": [
-          "8907fbeb-aedd-4ecf-845a-79e3950ce7b4",
           "c4f553af-66fe-4e23-bc9c-a7a83d158532",
-          "518c5315-c457-4e74-b87e-92f9338f2f4d"
+          "8907fbeb-aedd-4ecf-845a-79e3950ce7b4",
+          "518c5315-c457-4e74-b87e-92f9338f2f4d",
+          "29703fe4-84d8-444f-8993-18fb9b590a23"
         ],
         "settings": {
           "show_locale_selector": true,
@@ -224,15 +232,15 @@
           "1600315401018-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Varens_TrenderArtboard_1.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/Varens_TrenderArtboard_2.jpg",
+              "image": "shopify:\/\/shop_images\/B17R1897.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/B17R1897.jpg",
               "video_url": "",
-              "meta": "2021",
-              "title": "Høstens Interiørtrender",
-              "subheading": "<p><br\/>Høstens trender for 2021 bærer tydelig preg av bærekraft, naturmaterialer og godt håndverk. Vi har blitt mer selektive til hva som kommer over dørterskelen.<br\/><br\/><\/p>",
-              "max_width_subheading": 26,
-              "link_text": "Les mer her",
-              "link": "shopify:\/\/blogs\/nr-6\/hostens-interiortrender-2021",
+              "meta": "Nyhet",
+              "title": "Ny tekstilkolleksjon",
+              "subheading": "<p><br\/>Vi lanserer en ny, fargerik og sofistikert tekstilkolleksjon.<br\/><\/p>",
+              "max_width_subheading": 30,
+              "link_text": "Drøm deg bort her",
+              "link": "shopify:\/\/collections\/ny-tekstilkolleksjon-2021",
               "alignment": "center_center"
             }
           }
@@ -259,6 +267,7 @@
         "blocks": {
           "1601239747479": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/bilde-trenderaw21-035617-RSgh4bvL.jpg",
               "video_url": "shopify:\/\/blogs\/nr-6\/hostens-interiortrender-2021",
@@ -275,20 +284,21 @@
           "1600315418706-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/rektangel-pantone-006-885569-FHM8oBke.jpg",
+              "image": "shopify:\/\/shop_images\/innbydende_spiseplass_banner4.jpg",
               "video_url": "",
-              "meta": "",
-              "title": "Årets Pantone farger 2021",
-              "subheading": "<p><br\/>I år er det ikke bare èn med to farger fra Pantone; PANTONE 17-5104 Ultimate Gray + PANTONE 13-0647 Illuminating. To individuelle fargetoner som belyser hvordan to ulike elementer kommer sammen for å støtte hverandre. Den grå fargetonen defineres som praktisk og bunnsolid, den gule representerer optimisme og varme.<\/p>",
-              "max_width_subheading": 44,
-              "link_text": "Les mer her",
-              "link": "shopify:\/\/blogs\/nr-6\/arets-pantone-farger-2021-ultimate-gray-illuminating",
-              "alignment": "left_center",
-              "opacity_overlay": 70
+              "meta": "Få stilen",
+              "title": "En vakker og innbydende spiseplass",
+              "subheading": "<p>Gjør spiseplassen klar for festsesongen ved hjelp av en aldri så liten oppgradering på interiørfronten.<\/p>",
+              "max_width_subheading": 20,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/en-vakker-og-innbydende-spisestue",
+              "alignment": "left_bottom",
+              "opacity_overlay": 20
             }
           },
           "1600315418706-0": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "video_url": "",
               "meta": "",
@@ -304,15 +314,16 @@
           "1601239752134": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_d756bbea-3e17-4512-a06a-ff2d5af4c091.jpg",
               "video_url": "",
-              "meta": "",
-              "title": "This is the Collage",
-              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
-              "max_width_subheading": 24,
-              "link_text": "Shop the collection",
+              "meta": "Interiørtjenester",
+              "title": "Book en online interiørkonsultasjon",
+              "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. Interiørdesigneren vil sammen med deg komme frem til den beste løsningen for ditt hjem. <\/p>",
+              "max_width_subheading": 20,
+              "link_text": "Book time her",
               "link": "#",
-              "alignment": "left_center",
-              "opacity_overlay": 90
+              "alignment": "left_bottom",
+              "opacity_overlay": 30
             }
           }
         },
@@ -325,61 +336,25 @@
         "settings": {
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
-          "color_subheading": "#b8b8b8",
+          "color_subheading": "#ffffff",
           "color_background_button": "#ffffff",
-          "color_text_button": "#020202",
+          "color_text_button": "#000000",
           "enable_full_width": true
         }
       },
       "1600315431677": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "spisestue",
-          "title": "Featured collection",
-          "per_row": 3,
+          "collection": "nyheter",
+          "title": "Nyheter",
+          "per_row": 4,
           "rows": 1,
           "aspect_ratio": "natural"
         }
       },
-      "1600315444066": {
-        "type": "featured-products--dynamic",
-        "blocks": {
-          "1601493613565": {
-            "type": "product",
-            "settings": {
-              "product": ""
-            }
-          },
-          "1601493619899": {
-            "type": "product",
-            "settings": {
-              "product": ""
-            }
-          },
-          "1601493636098": {
-            "type": "product",
-            "settings": {
-              "product": ""
-            }
-          }
-        },
-        "block_order": [
-          "1601493613565",
-          "1601493619899",
-          "1601493636098"
-        ],
-        "settings": {
-          "image_position": "left",
-          "title": "Featured Products",
-          "subheading": "Use this section to show off a few of your favourite products",
-          "link": "\/",
-          "link_text": "Shop the Collection",
-          "enable_contrast": true,
-          "enable_full_width": true
-        }
-      },
       "1600315451525": {
         "type": "collection-list--dynamic",
+        "disabled": true,
         "blocks": {
           "1600315451525-0": {
             "type": "collection",
@@ -390,49 +365,76 @@
           "1600315451525-1": {
             "type": "collection",
             "settings": {
-              "collection": "boel-jan"
+              "collection": "louise-roe"
+            }
+          },
+          "6949c029-563d-4b15-911c-f23b77aca5a8": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": ""
             }
           }
         },
         "block_order": [
           "1600315451525-0",
-          "1600315451525-1"
+          "1600315451525-1",
+          "6949c029-563d-4b15-911c-f23b77aca5a8"
         ],
         "settings": {
-          "title": "Collections",
+          "title": "",
           "per_row": 2,
-          "aspect_ratio": "natural"
+          "aspect_ratio": "landscape"
         }
       },
       "1600315468934": {
         "type": "slideshow--dynamic",
         "blocks": {
-          "1600315468934-0": {
+          "5543d107-76de-4039-80ed-45566e815fa4": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/B17R1623.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/hjemmekontor_mobil.jpg",
+              "video_url": "",
+              "meta": "Få stilen",
+              "title": "Hjemmekontoret",
+              "subheading": "<p>Her finner du alt du trenger til hjemmekontoret.<\/p>",
+              "max_width_subheading": 24,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/hjemmekontoret",
+              "alignment": "left_center"
+            }
+          },
+          "1600315468934-0": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B17R0501.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/B17R0464.jpg",
               "video_url": "",
               "meta": "",
-              "title": "This is your slideshow",
-              "subheading": "<p>Use it to make a dramatic first impression with high-quality imagery and minimal text. Using the button below to link to whatever is most appropriate.<\/p>",
+              "title": "Møbler designet av & for SixBondStreet",
+              "subheading": "<p>Her finner du vårt utvalg av egenproduserte møbler.<\/p>",
               "max_width_subheading": 26,
-              "link_text": "Shop now",
+              "link_text": "Se utvalget her",
               "link": "#",
               "alignment": "left_center"
             }
           }
         },
         "block_order": [
+          "5543d107-76de-4039-80ed-45566e815fa4",
           "1600315468934-0"
         ],
         "settings": {
           "desktop_height": 100,
           "mobile_height": 100,
-          "opacity_overlay": 70,
+          "opacity_overlay": 20,
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
-          "color_subheading": "#b8b8b8",
+          "color_subheading": "#ffffff",
           "color_background_button": "#ffffff",
-          "color_text_button": "#212121",
+          "color_text_button": "#000000",
           "duration_autoplay": 4,
           "enable_parallax": false,
           "enable_full_width": true
@@ -443,48 +445,48 @@
         "settings": {
           "title": "Nettmagasinet Nr. 6",
           "blog": "nr-6",
-          "per_row": 4,
+          "per_row": 2,
           "rows": 1,
-          "aspect_ratio": "square"
+          "aspect_ratio": "natural"
         }
       },
       "1601240654390": {
         "type": "collage--dynamic",
         "blocks": {
-          "1601240654390-0": {
+          "1601240654390-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/NyheterArtboard_3.jpg",
+              "image": "shopify:\/\/shop_images\/youtube_gm_bilde.jpg",
               "video_url": "",
               "meta": "",
-              "title": "Høstens Nyheter",
-              "subheading": "<p>Se alle nyhetene for høsten<\/p>",
-              "max_width_subheading": 24,
-              "link_text": "Se produktene her",
-              "link": "#",
+              "title": "Hjemme hos Gine Margrethe",
+              "subheading": "<p><br\/>Gine Margrethe er et stilikon med mange jern i ilden. SixBondStreet besøkte henne for å snakke om trender, bærekraft og innredning av hjemmet.<br\/><br\/><\/p>",
+              "max_width_subheading": 20,
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/blogs\/nr-6\/inspirasjon-hjemme-hos-stilikonet-gine-margrethe",
               "alignment": "left_bottom",
               "opacity_overlay": 20
             }
           },
-          "1601240654390-1": {
+          "1601240654390-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN.jpg",
+              "image": "shopify:\/\/shop_images\/hund_gine_margrethe.jpg",
               "video_url": "",
               "meta": "",
-              "title": "This is the Collage",
-              "subheading": "<p><br\/>Personlig shoppingopplevelse online. Våre konsulenter er nå online og klare for å møte deg. Velg mellom online videokonsultasjon, e-post eller telefon.<br\/><br\/><\/p>",
-              "max_width_subheading": 24,
-              "link_text": "Book time i dag",
-              "link": "#",
+              "title": "",
+              "subheading": "<p>Her finner du alle møblene og interiørartiklene Gine Margrethe har valgt til sitt hjem fra SixBondStreet.<\/p>",
+              "max_width_subheading": 26,
+              "link_text": "Se produktene her",
+              "link": "shopify:\/\/collections\/hjemme-hos-gine-margrethe",
               "alignment": "left_bottom",
               "opacity_overlay": 20
             }
           }
         },
         "block_order": [
-          "1601240654390-0",
-          "1601240654390-1"
+          "1601240654390-1",
+          "1601240654390-0"
         ],
         "settings": {
           "color_overlay": "#191919",
@@ -493,44 +495,6 @@
           "color_background_button": "#f8f7f5",
           "color_text_button": "#333333",
           "enable_full_width": true
-        }
-      },
-      "1601241721814": {
-        "type": "gallery--dynamic",
-        "blocks": {
-          "1601241721814-3": {
-            "type": "image",
-            "settings": {
-              "text": "",
-              "link": "#"
-            }
-          },
-          "1601241721814-4": {
-            "type": "image",
-            "settings": {
-              "text": "",
-              "link": "#"
-            }
-          },
-          "1601241721814-5": {
-            "type": "image",
-            "settings": {
-              "text": "",
-              "link": "#"
-            }
-          }
-        },
-        "block_order": [
-          "1601241721814-3",
-          "1601241721814-4",
-          "1601241721814-5"
-        ],
-        "settings": {
-          "title": "Gallery",
-          "link_text": "See all",
-          "link": "",
-          "aspect_ratio": "square",
-          "per_row": 3
         }
       },
       "blog--template": {
@@ -558,12 +522,13 @@
           "show_vendor": true,
           "show_swatches": true,
           "show_share_buttons": true,
-          "show_quantity_input": true,
+          "show_quantity_input": false,
           "enable_payment_button": false,
           "enable_full_width": true,
           "media_layout": "column",
           "enable_video_looping": true,
-          "vedlikehold": "vedlikehold"
+          "vedlikehold": "vedlikehold",
+          "merke": "merker"
         }
       },
       "recommended-products--static": {
@@ -588,7 +553,7 @@
           "color_heading": "#ffffff",
           "color_subheading": "#e1e1e1",
           "show_sidebar": true,
-          "show_sort": true,
+          "show_sort": false,
           "filter_style": "by_group",
           "per_row": 3,
           "per_page": 24,
@@ -631,14 +596,15 @@
       "1601498256106": {
         "type": "image-with-text--dynamic",
         "settings": {
+          "image": "shopify:\/\/shop_images\/a-snow-capped-mountain-overlooks-a-lake-lined-with-trees.jpg",
           "video_url": "",
           "image_width": "standard",
           "image_position": "left",
-          "title": "Image with text",
-          "text": "<p>Use these sections to promote a particular feature with editorial photography.<\/p>",
+          "title": "Nyhet!",
+          "text": "<p><strong>Fjellhytte kolleksjonen<br\/><\/strong><br\/>Vi introduserer vår nye fjellhyttekolleksjon med tekstilmøbler som passer perfekt på fjellhytta. <br\/><\/p>",
           "max_width_text": 20,
-          "link": "#",
-          "link_text": "Shop the Collection",
+          "link": "shopify:\/\/collections\/fjellhytte-kolleksjonen",
+          "link_text": "Se utvalget her",
           "enable_contrast": true,
           "enable_full_width": true
         }
@@ -646,8 +612,8 @@
       "1601499234365": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "",
-          "title": "New Arrivals",
+          "collection": "bloomingville",
+          "title": "Bloomingville",
           "per_row": 3,
           "rows": 1,
           "aspect_ratio": "natural"
@@ -758,6 +724,197 @@
           "subheading_max_width": 70,
           "placeholder": "Skriv inn din e-postadressen og trykk enter"
         }
+      },
+      "extended-footer": {
+        "type": "extended-footer",
+        "blocks": {
+          "4dceb123-5a57-46e0-a24c-fca4fba8424f": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_d756bbea-3e17-4512-a06a-ff2d5af4c091.jpg",
+              "heading": "Interiørtjeneste",
+              "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. Interiørdesigneren vil sammen med deg komme frem til den beste løsningen for ditt hjem. <\/p>",
+              "link_text": "Book time her",
+              "link": "#"
+            }
+          },
+          "60e1fc85-4f5f-40af-8e54-6a9d3bac6188": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/img-7286-790183-Ym8HnCbV.jpg",
+              "heading": "Gratis tekstilprøver",
+              "subheading": "<p>Ikke sikker på hvilken tekstil du skal velge? Bestill 5 gratis tekstilprøver hjem til deg så du kan få et bedre inntrykk av hvordan den vil se ut i ditt hjem.<\/p>",
+              "link_text": "Bestill gratis tekstilprøve her",
+              "link": "shopify:\/\/pages\/gratis-tekstilprover"
+            }
+          },
+          "58244e45-cb62-4762-9da7-7b230ae105c5": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Nyhetsbrev",
+              "subheading": "<p>Hold deg oppdatert på nyheter, inspirasjon, kampanjer og spennende samarbeid.<\/p>",
+              "subheading_max_width": 70,
+              "placeholder": "Skriv inn eposten din og trykk enter →"
+            }
+          }
+        },
+        "block_order": [
+          "4dceb123-5a57-46e0-a24c-fca4fba8424f",
+          "60e1fc85-4f5f-40af-8e54-6a9d3bac6188",
+          "58244e45-cb62-4762-9da7-7b230ae105c5"
+        ],
+        "settings": {
+        }
+      },
+      "16342916002aed89e6": {
+        "type": "video--dynamic",
+        "settings": {
+          "title": "Inspirasjon hjemme hos stilikonet Gine Margrethe",
+          "subheading": "<p>Gine Margrethe Qvale er til stor inspirasjon for mange. Hun inspirerer både på mote- og interiørfronten med sin elegante, kreative og fargerike stil. <\/p>",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=RabsUXjOLOA",
+          "image": "shopify:\/\/shop_images\/forside_ginemargrethe.jpg",
+          "opacity_overlay": 50,
+          "color_overlay": "#000000",
+          "color_text": "#ffffff"
+        }
+      },
+      "1634467668d8706b5a": {
+        "type": "collage--dynamic",
+        "blocks": {
+          "1634467668d8706b5a-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mot_palla.jpg",
+              "video_url": "",
+              "meta": "",
+              "title": "Møt vår innkjøper og designer Palla Masdottir",
+              "subheading": "<p>Lidenskapelig opptatt av materialer, håndtverk, bærekraft og mennesker.<\/p>",
+              "max_width_subheading": 18,
+              "link_text": "Les mer",
+              "link": "shopify:\/\/pages\/var-designer",
+              "alignment": "left_bottom",
+              "opacity_overlay": 30
+            }
+          },
+          "1634467668d8706b5a-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B17R1509.jpg",
+              "video_url": "",
+              "meta": "SixBondStreet",
+              "title": "Vår egenproduksjon",
+              "subheading": "<p>Her finner du møbler og interiørartikler designet av og for SixBondStreet. Vår historie begynte i 2012 med internasjonale impulser og et ønske om å levere det lille ekstra innen møbler og interiør.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/sixbondstreet",
+              "alignment": "left_bottom",
+              "opacity_overlay": 30
+            }
+          }
+        },
+        "block_order": [
+          "1634467668d8706b5a-0",
+          "1634467668d8706b5a-1"
+        ],
+        "settings": {
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
+          "color_background_button": "#ffffff",
+          "color_text_button": "#000000",
+          "enable_full_width": false
+        }
+      },
+      "1634468547c34ee1d1": {
+        "type": "carousel--dynamic",
+        "blocks": {
+          "1634468547c34ee1d1-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/volare_grey_detail_3_1_3.jpg",
+              "meta": "Nyheter",
+              "title": "Høstens nyheter",
+              "subheading": "<p>Se alle nyhetene for høsten<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/nyheter",
+              "alignment": "center_center",
+              "opacity_overlay": 30
+            }
+          },
+          "1634468547c34ee1d1-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Harrison_Skrivebord_120cm_-_Sort_milj.jpg",
+              "meta": "Møbelkolleksjon",
+              "title": "Harrison kolleksjonen",
+              "subheading": "<p>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen. Designet av og for SixbondStreet.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/harrison-kolleksjonen",
+              "alignment": "center_center",
+              "opacity_overlay": 30
+            }
+          },
+          "1634468547c34ee1d1-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B17R1594.jpg",
+              "meta": "Møbel kolleksjon",
+              "title": "North kolleksjonen",
+              "subheading": "<p><br\/>Med sitt vakre og enkle formspråk er møblene fra North kolleksjonen enkel å plassere i rommet.<br\/><br\/><\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/north-kolleksjonen",
+              "alignment": "center_center",
+              "opacity_overlay": 30
+            }
+          }
+        },
+        "block_order": [
+          "1634468547c34ee1d1-0",
+          "1634468547c34ee1d1-1",
+          "1634468547c34ee1d1-2"
+        ],
+        "settings": {
+          "height_mobile": 70,
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
+          "color_background_button": "#ffffff",
+          "color_text_button": "#000000"
+        }
+      },
+      "1634540189e5c83ea4": {
+        "type": "featured-products--dynamic",
+        "blocks": {
+          "a4a5c961-a19f-4af1-ac13-dac16532299a": {
+            "type": "product",
+            "settings": {
+              "product": "broadway-spisestol-m-armlene-sort-ask"
+            }
+          },
+          "d524ce78-4a16-4c84-abf9-137590f77559": {
+            "type": "product",
+            "settings": {
+              "product": "broadway-spisestol-sort-ask"
+            }
+          }
+        },
+        "block_order": [
+          "a4a5c961-a19f-4af1-ac13-dac16532299a",
+          "d524ce78-4a16-4c84-abf9-137590f77559"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/broadway_spiseplass_forside.jpg",
+          "image_position": "left",
+          "title": "Broadway spisestol",
+          "subheading": "Stolen gir en generøs og innbydende følelse og den sorte trerammen sørger for et kontinentalt og eksklusivt uttrykk.",
+          "link": "shopify:\/\/products\/broadway-spisestol-m-armlene-sort-ask",
+          "link_text": "Les mer",
+          "enable_contrast": true,
+          "enable_full_width": true
+        }
       }
     },
     "content_for_index": [
@@ -765,15 +922,17 @@
       "1601240654390",
       "1600315431677",
       "1601498256106",
+      "1634467668d8706b5a",
+      "1634468547c34ee1d1",
       "1600315451525",
       "1600315418706",
       "1601499234365",
       "1600315468934",
-      "1600315479900",
-      "1600315444066",
-      "1601241721814",
       "1632985524a87701b3",
-      "16329855288f7a5eb8"
+      "16329855288f7a5eb8",
+      "16342916002aed89e6",
+      "1634540189e5c83ea4",
+      "1600315479900"
     ]
   },
   "presets": {

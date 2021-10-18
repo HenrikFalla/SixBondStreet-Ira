@@ -54,6 +54,18 @@
               <div class="fs-body-base footer__text">{{ block.settings.text }}</div>
               {% render 'newsletter-form' with id: 'footer-subscribe' %}
             </div>
+          {% elsif block.type == 'about' %}
+            <div class="footer__about">
+                {% if block.settings.about_link %}<a href="{{ block.settings.about_link }}">{% endif %}
+                    <div class="fs-body-base footer__text">{{ block.settings.about_text }}</div>
+                {% if block.settings.about_link %}</a>{% endif %}
+                {% if block.settings.trygg_id %}
+                    <div class="trygg_ehandel">
+                        <script src="//www.tryggehandel.no/?cid={{ block.settings.trygg_id }}&logo=1"></script>
+                        <div class="fs-body-base footer__text" style="font-size: 8px;">{{ block.settings.trygg_text }}</div>
+                    </div>
+                {% endif %}
+            </div>
           {%- endif -%}
         </div>
       </div>
@@ -301,7 +313,7 @@
         "default": true
       }
     ],
-    "max_blocks": 3,
+    "max_blocks": 4,
     "blocks": [
       {
         "type": "text",
@@ -320,6 +332,39 @@
             "label": "Text",
             "default": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>"
           }
+        ]
+      },
+      {
+        "type": "about",
+        "name": "About",
+        "settings": [
+            {
+                "id": "title",
+                "type": "text",
+                "label": "Paragraph title",
+                "default": "Om SixBondStreet"
+            },
+            {
+                "id": "about_text",
+                "type": "richtext",
+                "label": "Paragraph text"
+            },
+            {
+                "id": "about_link",
+                "type": "url",
+                "label": "Link to about us"
+            },
+            {
+                "id": "trygg_id",
+                "type": "text",
+                "label": "Trygg E-Handel Store ID",
+                "default": "1234"
+            },
+            {
+                "id": "trygg_text",
+                "type": "richtext",
+                "label": "About text for Trygg E-Handel"
+            }
         ]
       },
       {
