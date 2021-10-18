@@ -387,6 +387,21 @@
       "1600315468934": {
         "type": "slideshow--dynamic",
         "blocks": {
+          "5543d107-76de-4039-80ed-45566e815fa4": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hjemmekontor_oakland.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/miljo_hjemmekontor_fc1ee73d-b718-4ae3-bec1-c59b7890e9df.jpg",
+              "video_url": "",
+              "meta": "",
+              "title": "",
+              "subheading": "",
+              "max_width_subheading": 30,
+              "link_text": "",
+              "link": "",
+              "alignment": "left_center"
+            }
+          },
           "1600315468934-0": {
             "type": "image",
             "settings": {
@@ -404,6 +419,7 @@
           }
         },
         "block_order": [
+          "5543d107-76de-4039-80ed-45566e815fa4",
           "1600315468934-0"
         ],
         "settings": {
