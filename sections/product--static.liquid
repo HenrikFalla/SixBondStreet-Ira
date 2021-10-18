@@ -323,6 +323,11 @@
             {% endif %}
         </div>
       {% endif %}
+      {% if section.settings.show_share_buttons %}
+        <div class="product__share" data-share="{{ 'product.share' | t }}">
+          {% render 'share-block', share_title: product.title, url: product.url, share_image: product.featured_media %}
+        </div>
+      {% endif %}
     </div>
 
       {%- comment -%}
@@ -342,11 +347,6 @@
         role="alert"
         aria-hidden="true"
       >{{ 'products.product.loader_label' | t }}</p>
-      {% if section.settings.show_share_buttons %}
-        <div class="product__share" data-share="{{ 'product.share' | t }}">
-          {% render 'share-block', share_title: product.title, url: product.url, share_image: product.featured_media %}
-        </div>
-      {% endif %}
     </div>
   </div>
   {% if product.media.size > 3 %}
