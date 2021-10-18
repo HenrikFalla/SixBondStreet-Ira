@@ -278,7 +278,7 @@
           show_dynamic_checkout: section.settings.enable_payment_button,
           show_swatches: section.settings.show_swatches,
         %}
-      </div>
+      
 
       {%- comment -%}
         Live region for announcing updated price and availability to screen readers
@@ -347,6 +347,7 @@
           {% render 'share-block', share_title: product.title, url: product.url, share_image: product.featured_media %}
         </div>
       {% endif %}
+      </div>
     </div>
   </div>
   {% if product.media.size > 3 %}
