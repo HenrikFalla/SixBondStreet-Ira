@@ -712,7 +712,7 @@
           "1632985524a87701b3-2": {
             "type": "column",
             "settings": {
-              "image": "shopify:\/\/shop_images\/safe_payment.png",
+              "image": "shopify:\/\/shop_images\/safe_payment_solid.png",
               "title": "Trygg betaling",
               "text": "",
               "link": "#",
