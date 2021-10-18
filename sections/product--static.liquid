@@ -278,7 +278,13 @@
           show_dynamic_checkout: section.settings.enable_payment_button,
           show_swatches: section.settings.show_swatches,
         %}
-      </div>
+        {% assign truncated_description = product.description | strip_html | truncatewords: 25 %}
+        {% if truncated_description contains '...' %}
+            <div class="product-single__description rte rte--product fs-body-base" data-description><p>{{ truncated_description }}</p><a href="#description">Les mer</a></div>
+        {% else %}
+            <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
+        {% endif %}
+    </div>
 
       {%- comment -%}
         Live region for announcing updated price and availability to screen readers
@@ -297,12 +303,7 @@
         role="alert"
         aria-hidden="true"
       >{{ 'products.product.loader_label' | t }}</p>
-      {% assign truncated_description = product.description | strip_html | truncatewords: 25 %}
-      {% if truncated_description contains '...' %}
-        <div class="product-single__description rte rte--product fs-body-base" data-description><p>{{ truncated_description }}</p><a href="#description">Les mer</a></div>
-      {% else %}
-        <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
-      {% endif %}
+      
       {% if dimensjoner.size > 0 %}
         <div class="product-single__dimensions">
             <button class="collapsible-button">Dimensjoner</button>
