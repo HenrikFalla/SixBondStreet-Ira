@@ -46,6 +46,13 @@ span.on-sale.saved_percentage {
 
 /* Product Page */
 
+span.dom-message {
+    margin-bottom: var(--spacing-large);
+    display: block;
+    font-size: 14px;
+    margin-top: -14px;
+}
+
 .product__policies {
     display: none;
 }
