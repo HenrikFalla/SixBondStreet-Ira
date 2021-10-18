@@ -402,7 +402,8 @@
     {% for tag in product.tags %}
         {% for article in blog-vedlikehold.articles %}
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag %}
-            {{ handle-check }}
+            <p>{{ handle-check }}</p>
+            <p>{{ article.handle }}</p>
             {% if handle-check == article.handle %}
                 <div class="blog-block">
                     <div id="vedlikehold"></div>
