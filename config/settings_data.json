@@ -549,7 +549,7 @@
           "color_heading": "#ffffff",
           "color_subheading": "#e1e1e1",
           "show_sidebar": true,
-          "show_sort": true,
+          "show_sort": false,
           "filter_style": "by_group",
           "per_row": 3,
           "per_page": 24,
