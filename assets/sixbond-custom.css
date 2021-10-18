@@ -219,7 +219,7 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	font-size: 14px;
 }
 .collapsible__list div, .collapsible__list ul {
-    padding: 16px;
+    padding: 4px;
 }
 /* Share Buttons Product Page */
 .product__share {
