@@ -284,27 +284,7 @@
         {% else %}
             <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
         {% endif %}
-    </div>
-
-      {%- comment -%}
-        Live region for announcing updated price and availability to screen readers
-      {%- endcomment -%}
-      <p class="visually-hidden" data-product-status
-        aria-live="polite"
-        role="status"
-      ></p>
-
-      {%- comment -%}
-        Live region for announcing that the product form has been submitted and the
-        product is in the process being added to the cart
-      {%- endcomment -%}
-      <p class="visually-hidden" data-loader-status
-        aria-live="assertive"
-        role="alert"
-        aria-hidden="true"
-      >{{ 'products.product.loader_label' | t }}</p>
-      
-      {% if dimensjoner.size > 0 %}
+        {% if dimensjoner.size > 0 %}
         <div class="product-single__dimensions">
             <button class="collapsible-button">Dimensjoner</button>
             <div class="collapsible__list">
@@ -343,6 +323,25 @@
             {% endif %}
         </div>
       {% endif %}
+    </div>
+
+      {%- comment -%}
+        Live region for announcing updated price and availability to screen readers
+      {%- endcomment -%}
+      <p class="visually-hidden" data-product-status
+        aria-live="polite"
+        role="status"
+      ></p>
+
+      {%- comment -%}
+        Live region for announcing that the product form has been submitted and the
+        product is in the process being added to the cart
+      {%- endcomment -%}
+      <p class="visually-hidden" data-loader-status
+        aria-live="assertive"
+        role="alert"
+        aria-hidden="true"
+      >{{ 'products.product.loader_label' | t }}</p>
       {% if section.settings.show_share_buttons %}
         <div class="product__share" data-share="{{ 'product.share' | t }}">
           {% render 'share-block', share_title: product.title, url: product.url, share_image: product.featured_media %}
