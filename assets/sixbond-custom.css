@@ -226,6 +226,10 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	border: none;
 	margin: auto;
 }
+.share-block__icon .icon {
+	width: 28px;
+	height: 28px;
+}
 /* Description */
 section.description {
 	max-width: 1100px;
