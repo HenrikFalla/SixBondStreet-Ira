@@ -790,7 +790,7 @@
               "link_text": "Les mer",
               "link": "shopify:\/\/pages\/var-designer",
               "alignment": "left_bottom",
-              "opacity_overlay": 50
+              "opacity_overlay": 30
             }
           },
           "1634467668d8706b5a-1": {
@@ -805,7 +805,7 @@
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/sixbondstreet",
               "alignment": "left_bottom",
-              "opacity_overlay": 40
+              "opacity_overlay": 30
             }
           }
         },
