@@ -885,7 +885,7 @@
           "link": "shopify:\/\/products\/broadway-spisestol-m-armlene-sort-ask",
           "link_text": "Les mer",
           "enable_contrast": true,
-          "enable_full_width": false
+          "enable_full_width": true
         }
       }
     },
