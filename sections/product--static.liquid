@@ -399,10 +399,8 @@
         var content = this.nextElementSibling;
         if (content.style.maxHeight){
           content.style.maxHeight = null;
-          content.style.border = null;
         } else {
           content.style.maxHeight = content.scrollHeight + "px";
-          content.style.border = "1px solid var(--color-border)"
         } 
       });
     }
