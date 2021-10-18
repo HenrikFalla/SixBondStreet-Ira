@@ -96,7 +96,7 @@ a.btn.btn--primary,
 
 .product-single__dimensions ul {
     margin-top: 0;
-    list-style: circle;
+    list-style: none;
     padding-left: 16px;
 }
 
@@ -277,7 +277,7 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 
 .collapsible__list {
     padding: 0;
-    padding-left: 46px;
+    padding-left: 22px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
