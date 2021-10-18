@@ -782,6 +782,15 @@ ol.ais-Hits-list {
 
 
 /* End Search Result Page */
+
+
+/* removing bottom line */
+
+.video__overlay-content {
+    border-bottom: none;
+}
+
+
 /* Tippy Tooltip */
 .tippy-box {
 	background-color: #29292c;
