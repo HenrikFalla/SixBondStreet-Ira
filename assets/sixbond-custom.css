@@ -63,7 +63,7 @@ span.on-sale.saved_percentage {
 	margin-bottom: 16px;
 }
 .product-single__dimensions ul {
-    margin-top: 12px;
+    margin-top: 0;
     list-style: circle;
     padding-left: 16px;
 }
@@ -208,7 +208,7 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	content: "\2212";
 }
 .collapsible__list {
-	padding: 0 18px;
+	padding: 0;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
