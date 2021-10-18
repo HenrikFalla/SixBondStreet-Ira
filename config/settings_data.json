@@ -349,45 +349,6 @@
           "aspect_ratio": "natural"
         }
       },
-      "1600315444066": {
-        "type": "featured-products--dynamic",
-        "disabled": true,
-        "blocks": {
-          "1601493613565": {
-            "type": "product",
-            "settings": {
-              "product": "802957"
-            }
-          },
-          "1601493619899": {
-            "type": "product",
-            "settings": {
-              "product": "802959"
-            }
-          },
-          "1601493636098": {
-            "type": "product",
-            "settings": {
-              "product": "802953"
-            }
-          }
-        },
-        "block_order": [
-          "1601493613565",
-          "1601493619899",
-          "1601493636098"
-        ],
-        "settings": {
-          "image": "shopify:\/\/shop_images\/fotokunst_-_vogue_october_1965_-_85x85cm.jpg",
-          "image_position": "left",
-          "title": "Harrison kolleksjonen",
-          "subheading": "Oppbevar med stil ved hjelp av møbler fra den elegante og tidløse Harrison kolleksjonen.",
-          "link": "\/",
-          "link_text": "Se utvalget her",
-          "enable_contrast": true,
-          "enable_full_width": true
-        }
-      },
       "1600315451525": {
         "type": "collection-list--dynamic",
         "disabled": true,
@@ -514,48 +475,6 @@
           "color_background_button": "#f8f7f5",
           "color_text_button": "#333333",
           "enable_full_width": true
-        }
-      },
-      "1601241721814": {
-        "type": "gallery--dynamic",
-        "disabled": true,
-        "blocks": {
-          "1601241721814-3": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/dsf0239_square.jpg",
-              "text": "",
-              "link": "#"
-            }
-          },
-          "1601241721814-5": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/fotokunst_-_vogue_october_1965_-_85x85cm.jpg",
-              "text": "",
-              "link": "#"
-            }
-          },
-          "1601241721814-4": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/lounge_by_tone_kroken_002.jpg",
-              "text": "",
-              "link": "#"
-            }
-          }
-        },
-        "block_order": [
-          "1601241721814-3",
-          "1601241721814-5",
-          "1601241721814-4"
-        ],
-        "settings": {
-          "title": "La deg inspirere",
-          "link_text": "See all",
-          "link": "",
-          "aspect_ratio": "square",
-          "per_row": 3
         }
       },
       "blog--template": {
@@ -838,82 +757,6 @@
           "color_text": "#ffffff"
         }
       },
-      "16342917447596cfdb": {
-        "type": "map--dynamic",
-        "disabled": true,
-        "blocks": {
-          "16342917447596cfdb-0": {
-            "type": "text",
-            "settings": {
-              "title": "Hours",
-              "text": "<p>Weekdays: 10am – 5pm<br\/>Saturdays: 11am – 5pm<br\/>Sundays: 12pm – 4pm<\/p>"
-            }
-          },
-          "16342917447596cfdb-1": {
-            "type": "text",
-            "settings": {
-              "title": "Address",
-              "text": "<p>123 Water St.<br\/>Vancouver, BC  F1L 2U3<br\/>(604) 000-000<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "16342917447596cfdb-0",
-          "16342917447596cfdb-1"
-        ],
-        "settings": {
-          "image_position": "left",
-          "title": "Map section",
-          "subheading": "Use this section to show off your physical retail location.",
-          "link": "\/",
-          "link_text": "Get directions",
-          "enable_contrast": true,
-          "enable_full_width": false
-        }
-      },
-      "1634291761583837e3": {
-        "type": "text-columns-with-images--dynamic",
-        "disabled": true,
-        "blocks": {
-          "1634291761583837e3-0": {
-            "type": "column",
-            "settings": {
-              "title": "Heading",
-              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
-              "link": "#",
-              "link_text": "Link text"
-            }
-          },
-          "1634291761583837e3-1": {
-            "type": "column",
-            "settings": {
-              "title": "Heading",
-              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
-              "link": "#",
-              "link_text": "Link text"
-            }
-          },
-          "1634291761583837e3-2": {
-            "type": "column",
-            "settings": {
-              "title": "Heading",
-              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
-              "link": "#",
-              "link_text": "Link text"
-            }
-          }
-        },
-        "block_order": [
-          "1634291761583837e3-0",
-          "1634291761583837e3-1",
-          "1634291761583837e3-2"
-        ],
-        "settings": {
-          "per_row": 3,
-          "image_max_width": 100,
-          "circle": true
-        }
-      },
       "1634467668d8706b5a": {
         "type": "collage--dynamic",
         "blocks": {
@@ -1020,6 +863,30 @@
           "color_background_button": "#ffffff",
           "color_text_button": "#000000"
         }
+      },
+      "1634540189e5c83ea4": {
+        "type": "featured-products--dynamic",
+        "blocks": {
+          "a4a5c961-a19f-4af1-ac13-dac16532299a": {
+            "type": "product",
+            "settings": {
+              "product": "broadway-spisestol-m-armlene-sort-ask"
+            }
+          }
+        },
+        "block_order": [
+          "a4a5c961-a19f-4af1-ac13-dac16532299a"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/B17R1782.jpg",
+          "image_position": "left",
+          "title": "Broadway spisestol",
+          "subheading": "Stolen gir en generøs og innbydende følelse og den sorte trerammen sørger for et kontinentalt og eksklusivt uttrykk.",
+          "link": "shopify:\/\/products\/broadway-spisestol-m-armlene-sort-ask",
+          "link_text": "Les mer",
+          "enable_contrast": true,
+          "enable_full_width": false
+        }
       }
     },
     "content_for_index": [
@@ -1033,14 +900,11 @@
       "1600315418706",
       "1601499234365",
       "1600315468934",
-      "1600315444066",
-      "1601241721814",
       "1632985524a87701b3",
       "16329855288f7a5eb8",
       "16342916002aed89e6",
       "1600315479900",
-      "16342917447596cfdb",
-      "1634291761583837e3"
+      "1634540189e5c83ea4"
     ]
   },
   "presets": {
