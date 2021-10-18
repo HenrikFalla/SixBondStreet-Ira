@@ -975,7 +975,7 @@
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/nyheter",
               "alignment": "center_center",
-              "opacity_overlay": 60
+              "opacity_overlay": 30
             }
           },
           "1634468547c34ee1d1-1": {
@@ -989,21 +989,21 @@
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/harrison-kolleksjonen",
               "alignment": "center_center",
-              "opacity_overlay": 60
+              "opacity_overlay": 30
             }
           },
           "1634468547c34ee1d1-2": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/north_kolleksjonen.jpg",
-              "meta": "Møbler til spiseplassen",
+              "meta": "Møbel kolleksjon",
               "title": "North kolleksjonen",
-              "subheading": "<p>North kolleksjonen har sitt utspring fra atmosfæren rundt den norske kjøkken brisken. Sittemøblene er åpne, innbydende og gjestfri i sitt design. Med sitt vakre og enkle formspråk er møblene enkel å plassere i rommet. <\/p>",
+              "subheading": "<p><br\/>Med sitt vakre og enkle formspråk er møblene fra North kolleksjonen enkel å plassere i rommet.<br\/><br\/><\/p>",
               "max_width_subheading": 28,
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/north-kolleksjonen",
               "alignment": "center_center",
-              "opacity_overlay": 60
+              "opacity_overlay": 30
             }
           }
         },
@@ -1013,10 +1013,10 @@
           "1634468547c34ee1d1-2"
         ],
         "settings": {
-          "height_mobile": 80,
+          "height_mobile": 70,
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
-          "color_subheading": "#b8b8b8",
+          "color_subheading": "#ffffff",
           "color_background_button": "#ffffff",
           "color_text_button": "#000000"
         }
