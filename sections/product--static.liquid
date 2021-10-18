@@ -19,7 +19,7 @@
 
 %}
 
-{% for tag i product.tags %}
+{% for tag in product.tags %}
     <p class="test-tags">{{ tag }}</p>
     {% if tag contains "Materiale_" %}
         {% if mats %}
