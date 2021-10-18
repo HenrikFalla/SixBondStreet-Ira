@@ -442,9 +442,9 @@
         "settings": {
           "title": "Nettmagasinet Nr. 6",
           "blog": "nr-6",
-          "per_row": 4,
+          "per_row": 2,
           "rows": 1,
-          "aspect_ratio": "square"
+          "aspect_ratio": "natural"
         }
       },
       "1601240654390": {
