@@ -17,13 +17,13 @@
 
   assign dimensjoner = "Sittedybde" | append: ":" | append: product.metafields.product_data.sittedybde | append: "," | append: "Sittehøyde" | append: ":" | append: product.metafields.product_data.sittehoyde | append: "," | append: "Armlene" | append: ":" | append: product.metafields.product_data.hoyde_armlene | append: "," | append: "Diameter" | append: ":" | append: product.metafields.product_data.diameter | append: "," | append: "Bredde" | append: ":" | append: product.metafields.product_data.produktbredde | append: "," | append: "Dybde" | append: ":" | append: product.metafields.product_data.produktdybde | append: "," | append: "Lengde" | append: ":" | append: product.metafields.product_data.produktlengde | append: "," | append: "Høyde" | append: ":" | append: product.metafields.product_data.sittehoyde | append: "," | append: "Vekt" | append: ":" | append: product.metafields.product_data.produktvekt | split: ","
 
-  for tag in product.tags
-    <p class="test-tags">{{ tag }}</p>
-	if tag contains "Materiale_"
+  for t-ag in product.tags
+    <p class="test-tags">{{ t-ag }}</p>
+	if t-ag contains "Materiale_"
         if mats
-            assign mats = materiale | append: ", " | append: tag | remove_first: "Materiale_"
+            assign mats = mats | append: ", " | append: t-ag | remove_first: "Materiale_"
         else
-            assign mats = tag | remove_first: "Materiale_"
+            assign mats = t-ag | remove_first: "Materiale_"
         endif
   endfor
   if mats
