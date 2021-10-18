@@ -305,6 +305,7 @@
                                         {% assign dim_trail = "cm" %}
                                     {% endif %}
                                     <li>
+                                        {% assign dim_i == 0 %}
                                         {% for value_dim in values_dim %}
                                             {% if dim_i == 0 %}
                                                 <strong>{{ value_dim }}: </strong>
