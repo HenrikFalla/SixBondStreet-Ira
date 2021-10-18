@@ -390,16 +390,16 @@
           "5543d107-76de-4039-80ed-45566e815fa4": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hjemmekontor_oakland.jpg",
+              "image": "shopify:\/\/shop_images\/B17R1623.jpg",
               "mobile_image": "shopify:\/\/shop_images\/miljo_hjemmekontor_fc1ee73d-b718-4ae3-bec1-c59b7890e9df.jpg",
               "video_url": "",
               "meta": "Få stilen",
               "title": "Hjemmekontor",
               "subheading": "<p>Her finner du alt du trenger til hjemmekontoret.<\/p>",
-              "max_width_subheading": 30,
+              "max_width_subheading": 24,
               "link_text": "Se utvalget her",
               "link": "#",
-              "alignment": "center_center"
+              "alignment": "left_center"
             }
           },
           "1600315468934-0": {
