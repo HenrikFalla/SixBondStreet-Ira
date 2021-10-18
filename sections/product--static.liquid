@@ -20,7 +20,6 @@
 %}
 
 {% for tag in product.tags %}
-    <p class="test-tags">{{ tag }}</p>
     {% if tag contains "Materiale_" %}
         {% if mats %}
             {% assign mats = mats | append: ", " | append: tag | remove_first: "Materiale_" %}
@@ -324,11 +323,9 @@
             {% if materialer %}
                 <button class="collapsible-button">Materiale</button>
                 <div class="collapsible__list">
-                    <p>{{ mats }}
+                    <p>{{ mats }}</p>
                 </div>
             {% endif %}
-            {{ materialer }}
-            {{ mats }}
         </div>
       {% if section.settings.show_share_buttons %}
         <div class="product__share" data-share="{{ 'product.share' | t }}">
