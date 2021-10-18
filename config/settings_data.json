@@ -872,10 +872,17 @@
             "settings": {
               "product": "broadway-spisestol-m-armlene-sort-ask"
             }
+          },
+          "d524ce78-4a16-4c84-abf9-137590f77559": {
+            "type": "product",
+            "settings": {
+              "product": "broadway-spisestol-sort-ask"
+            }
           }
         },
         "block_order": [
-          "a4a5c961-a19f-4af1-ac13-dac16532299a"
+          "a4a5c961-a19f-4af1-ac13-dac16532299a",
+          "d524ce78-4a16-4c84-abf9-137590f77559"
         ],
         "settings": {
           "image": "shopify:\/\/shop_images\/B17R1782.jpg",
