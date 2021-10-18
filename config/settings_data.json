@@ -285,7 +285,7 @@
               "video_url": "",
               "meta": "Få stilen",
               "title": "En vakker og innbydende spiseplass",
-              "subheading": "<p>Her finner du møblene og dekoren du trenger for å skape en vakker og innbydende spisestue. Gjør spiseplassen klar for festsesongen ved hjelp av en aldri så liten oppgradering på interiørfronten.<\/p>",
+              "subheading": "<p>Gjør spiseplassen klar for festsesongen ved hjelp av en aldri så liten oppgradering på interiørfronten.<\/p>",
               "max_width_subheading": 20,
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/en-vakker-og-innbydende-spisestue",
@@ -316,10 +316,10 @@
               "meta": "Interiørtjenester",
               "title": "Book en online interiørkonsultasjon",
               "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. Interiørdesigneren vil sammen med deg komme frem til den beste løsningen for ditt hjem. <\/p>",
-              "max_width_subheading": 24,
+              "max_width_subheading": 20,
               "link_text": "Book time her",
               "link": "#",
-              "alignment": "left_center",
+              "alignment": "left_bottom",
               "opacity_overlay": 40
             }
           }
