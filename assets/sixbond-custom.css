@@ -203,6 +203,8 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	font-weight: bold;
 	float: left;
 	margin-right: 5px;
+	margin-top: -2px;
+	font-size: 20px;
 }
 .active:after {
 	content: "\2212";
