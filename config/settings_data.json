@@ -446,7 +446,7 @@
         "settings": {
           "desktop_height": 100,
           "mobile_height": 100,
-          "opacity_overlay": 20,
+          "opacity_overlay": 30,
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
           "color_subheading": "#ffffff",
