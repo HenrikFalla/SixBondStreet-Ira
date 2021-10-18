@@ -226,6 +226,9 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	border: none;
 	margin: auto;
 }
+.collapsible__list {
+	border: none;
+}
 .share-block__icon .icon {
 	width: 28px;
 	height: 28px;
