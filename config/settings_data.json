@@ -788,14 +788,14 @@
               "max_width_subheading": 18,
               "link_text": "Les mer",
               "link": "shopify:\/\/pages\/om-oss",
-              "alignment": "left_center",
+              "alignment": "left_bottom",
               "opacity_overlay": 50
             }
           },
           "1634467668d8706b5a-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/crosby_lenestol_miljo.jpg",
+              "image": "shopify:\/\/shop_images\/B17R1509.jpg",
               "video_url": "",
               "meta": "SixBondStreet",
               "title": "Vår egenproduksjon",
@@ -803,7 +803,7 @@
               "max_width_subheading": 28,
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/sixbondstreet",
-              "alignment": "left_center",
+              "alignment": "left_bottom",
               "opacity_overlay": 40
             }
           }
