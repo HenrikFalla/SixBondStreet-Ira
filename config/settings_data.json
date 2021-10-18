@@ -48,7 +48,7 @@
     "search_show_pages": true,
     "search_show_price": true,
     "search_show_vendor": false,
-    "swatch_options": "Color, Colour, Tekstil, Treverk, Stoff, Tekstilfarge, Tekstil",
+    "swatch_options": "Color, Colour, Tekstil, Treverk, Stoff, Tekstilfarge, Tekstil, Velg Tekstil",
     "chip_options": "Size",
     "cart_enable_ajax": true,
     "cart_enable_quick_shop": false,
@@ -281,11 +281,11 @@
           "1600315418706-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/spiseplassen.jpg",
+              "image": "shopify:\/\/shop_images\/B17R1679.jpg",
               "video_url": "",
               "meta": "Få stilen",
               "title": "En vakker og innbydende spiseplass",
-              "subheading": "<p>Her finner du møblene og dekoren du trenger for å skape en vakker og innbydende spisestue. Gjør spiseplassen klar for festsesongen ved hjelp av en aldri så liten oppgradering på interiørfronten.<\/p>",
+              "subheading": "<p>Gjør spiseplassen klar for festsesongen ved hjelp av en aldri så liten oppgradering på interiørfronten.<\/p>",
               "max_width_subheading": 20,
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/en-vakker-og-innbydende-spisestue",
@@ -316,10 +316,10 @@
               "meta": "Interiørtjenester",
               "title": "Book en online interiørkonsultasjon",
               "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. Interiørdesigneren vil sammen med deg komme frem til den beste løsningen for ditt hjem. <\/p>",
-              "max_width_subheading": 24,
+              "max_width_subheading": 20,
               "link_text": "Book time her",
               "link": "#",
-              "alignment": "left_center",
+              "alignment": "left_bottom",
               "opacity_overlay": 40
             }
           }
@@ -347,45 +347,6 @@
           "per_row": 4,
           "rows": 1,
           "aspect_ratio": "natural"
-        }
-      },
-      "1600315444066": {
-        "type": "featured-products--dynamic",
-        "disabled": true,
-        "blocks": {
-          "1601493613565": {
-            "type": "product",
-            "settings": {
-              "product": "802957"
-            }
-          },
-          "1601493619899": {
-            "type": "product",
-            "settings": {
-              "product": "802959"
-            }
-          },
-          "1601493636098": {
-            "type": "product",
-            "settings": {
-              "product": "802953"
-            }
-          }
-        },
-        "block_order": [
-          "1601493613565",
-          "1601493619899",
-          "1601493636098"
-        ],
-        "settings": {
-          "image": "shopify:\/\/shop_images\/fotokunst_-_vogue_october_1965_-_85x85cm.jpg",
-          "image_position": "left",
-          "title": "Harrison kolleksjonen",
-          "subheading": "Oppbevar med stil ved hjelp av møbler fra den elegante og tidløse Harrison kolleksjonen.",
-          "link": "\/",
-          "link_text": "Se utvalget her",
-          "enable_contrast": true,
-          "enable_full_width": true
         }
       },
       "1600315451525": {
@@ -426,11 +387,27 @@
       "1600315468934": {
         "type": "slideshow--dynamic",
         "blocks": {
-          "1600315468934-0": {
+          "5543d107-76de-4039-80ed-45566e815fa4": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/dsf0239_1.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/dsf0239_square.jpg",
+              "image": "shopify:\/\/shop_images\/B17R1623.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/hjemmekontor_mobil.jpg",
+              "video_url": "",
+              "meta": "Få stilen",
+              "title": "Hjemmekontoret",
+              "subheading": "<p>Her finner du alt du trenger til hjemmekontoret.<\/p>",
+              "max_width_subheading": 24,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/hjemmekontoret",
+              "alignment": "left_center"
+            }
+          },
+          "1600315468934-0": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B17R0501.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/B17R0464.jpg",
               "video_url": "",
               "meta": "",
               "title": "Møbler designet av & for SixBondStreet",
@@ -443,6 +420,7 @@
           }
         },
         "block_order": [
+          "5543d107-76de-4039-80ed-45566e815fa4",
           "1600315468934-0"
         ],
         "settings": {
@@ -464,9 +442,9 @@
         "settings": {
           "title": "Nettmagasinet Nr. 6",
           "blog": "nr-6",
-          "per_row": 4,
+          "per_row": 2,
           "rows": 1,
-          "aspect_ratio": "square"
+          "aspect_ratio": "natural"
         }
       },
       "1601240654390": {
@@ -514,48 +492,6 @@
           "color_background_button": "#f8f7f5",
           "color_text_button": "#333333",
           "enable_full_width": true
-        }
-      },
-      "1601241721814": {
-        "type": "gallery--dynamic",
-        "disabled": true,
-        "blocks": {
-          "1601241721814-3": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/dsf0239_square.jpg",
-              "text": "",
-              "link": "#"
-            }
-          },
-          "1601241721814-5": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/fotokunst_-_vogue_october_1965_-_85x85cm.jpg",
-              "text": "",
-              "link": "#"
-            }
-          },
-          "1601241721814-4": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/lounge_by_tone_kroken_002.jpg",
-              "text": "",
-              "link": "#"
-            }
-          }
-        },
-        "block_order": [
-          "1601241721814-3",
-          "1601241721814-5",
-          "1601241721814-4"
-        ],
-        "settings": {
-          "title": "La deg inspirere",
-          "link_text": "See all",
-          "link": "",
-          "aspect_ratio": "square",
-          "per_row": 3
         }
       },
       "blog--template": {
@@ -614,7 +550,7 @@
           "color_heading": "#ffffff",
           "color_subheading": "#e1e1e1",
           "show_sidebar": true,
-          "show_sort": true,
+          "show_sort": false,
           "filter_style": "by_group",
           "per_row": 3,
           "per_page": 24,
@@ -657,14 +593,14 @@
       "1601498256106": {
         "type": "image-with-text--dynamic",
         "settings": {
-          "image": "shopify:\/\/shop_images\/geilo_2-46_burnt_4.jpg",
+          "image": "shopify:\/\/shop_images\/geilo_hytte.jpg",
           "video_url": "",
           "image_width": "standard",
           "image_position": "left",
           "title": "Nyhet!",
-          "text": "<p><strong>Fjellhytte kolleksjon <br\/><\/strong><br\/>SixBondStreet introduserer vår nye fjellhyttekolleksjon med tekstilkolleksjonen Geilo.<br\/><\/p>",
+          "text": "<p><strong>Fjellhytte kolleksjonen<br\/><\/strong><br\/>Vi introduserer vår nye fjellhyttekolleksjon med tekstilmøbler som passer perfekt på fjellhytta. <br\/><\/p>",
           "max_width_text": 20,
-          "link": "#",
+          "link": "shopify:\/\/collections\/fjellhytte-kolleksjonen",
           "link_text": "Se utvalget her",
           "enable_contrast": true,
           "enable_full_width": true
@@ -673,8 +609,8 @@
       "1601499234365": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "hubsch",
-          "title": "Hübsch",
+          "collection": "bloomingville",
+          "title": "Bloomingville",
           "per_row": 3,
           "rows": 1,
           "aspect_ratio": "natural"
@@ -838,82 +774,6 @@
           "color_text": "#ffffff"
         }
       },
-      "16342917447596cfdb": {
-        "type": "map--dynamic",
-        "disabled": true,
-        "blocks": {
-          "16342917447596cfdb-0": {
-            "type": "text",
-            "settings": {
-              "title": "Hours",
-              "text": "<p>Weekdays: 10am – 5pm<br\/>Saturdays: 11am – 5pm<br\/>Sundays: 12pm – 4pm<\/p>"
-            }
-          },
-          "16342917447596cfdb-1": {
-            "type": "text",
-            "settings": {
-              "title": "Address",
-              "text": "<p>123 Water St.<br\/>Vancouver, BC  F1L 2U3<br\/>(604) 000-000<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "16342917447596cfdb-0",
-          "16342917447596cfdb-1"
-        ],
-        "settings": {
-          "image_position": "left",
-          "title": "Map section",
-          "subheading": "Use this section to show off your physical retail location.",
-          "link": "\/",
-          "link_text": "Get directions",
-          "enable_contrast": true,
-          "enable_full_width": false
-        }
-      },
-      "1634291761583837e3": {
-        "type": "text-columns-with-images--dynamic",
-        "disabled": true,
-        "blocks": {
-          "1634291761583837e3-0": {
-            "type": "column",
-            "settings": {
-              "title": "Heading",
-              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
-              "link": "#",
-              "link_text": "Link text"
-            }
-          },
-          "1634291761583837e3-1": {
-            "type": "column",
-            "settings": {
-              "title": "Heading",
-              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
-              "link": "#",
-              "link_text": "Link text"
-            }
-          },
-          "1634291761583837e3-2": {
-            "type": "column",
-            "settings": {
-              "title": "Heading",
-              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
-              "link": "#",
-              "link_text": "Link text"
-            }
-          }
-        },
-        "block_order": [
-          "1634291761583837e3-0",
-          "1634291761583837e3-1",
-          "1634291761583837e3-2"
-        ],
-        "settings": {
-          "per_row": 3,
-          "image_max_width": 100,
-          "circle": true
-        }
-      },
       "1634467668d8706b5a": {
         "type": "collage--dynamic",
         "blocks": {
@@ -928,14 +788,14 @@
               "max_width_subheading": 18,
               "link_text": "Les mer",
               "link": "shopify:\/\/pages\/om-oss",
-              "alignment": "left_center",
+              "alignment": "left_bottom",
               "opacity_overlay": 50
             }
           },
           "1634467668d8706b5a-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/crosby_lenestol_miljo.jpg",
+              "image": "shopify:\/\/shop_images\/B17R1509.jpg",
               "video_url": "",
               "meta": "SixBondStreet",
               "title": "Vår egenproduksjon",
@@ -943,7 +803,7 @@
               "max_width_subheading": 28,
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/sixbondstreet",
-              "alignment": "left_center",
+              "alignment": "left_bottom",
               "opacity_overlay": 40
             }
           }
@@ -975,7 +835,7 @@
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/nyheter",
               "alignment": "center_center",
-              "opacity_overlay": 60
+              "opacity_overlay": 30
             }
           },
           "1634468547c34ee1d1-1": {
@@ -989,21 +849,21 @@
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/harrison-kolleksjonen",
               "alignment": "center_center",
-              "opacity_overlay": 60
+              "opacity_overlay": 30
             }
           },
           "1634468547c34ee1d1-2": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/north_kolleksjonen.jpg",
-              "meta": "Møbler til spiseplassen",
+              "image": "shopify:\/\/shop_images\/B17R1594.jpg",
+              "meta": "Møbel kolleksjon",
               "title": "North kolleksjonen",
-              "subheading": "<p>North kolleksjonen har sitt utspring fra atmosfæren rundt den norske kjøkken brisken. Sittemøblene er åpne, innbydende og gjestfri i sitt design. Med sitt vakre og enkle formspråk er møblene enkel å plassere i rommet. <\/p>",
+              "subheading": "<p><br\/>Med sitt vakre og enkle formspråk er møblene fra North kolleksjonen enkel å plassere i rommet.<br\/><br\/><\/p>",
               "max_width_subheading": 28,
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/north-kolleksjonen",
               "alignment": "center_center",
-              "opacity_overlay": 60
+              "opacity_overlay": 30
             }
           }
         },
@@ -1013,12 +873,43 @@
           "1634468547c34ee1d1-2"
         ],
         "settings": {
-          "height_mobile": 80,
+          "height_mobile": 70,
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
-          "color_subheading": "#b8b8b8",
+          "color_subheading": "#ffffff",
           "color_background_button": "#ffffff",
           "color_text_button": "#000000"
+        }
+      },
+      "1634540189e5c83ea4": {
+        "type": "featured-products--dynamic",
+        "blocks": {
+          "a4a5c961-a19f-4af1-ac13-dac16532299a": {
+            "type": "product",
+            "settings": {
+              "product": "broadway-spisestol-m-armlene-sort-ask"
+            }
+          },
+          "d524ce78-4a16-4c84-abf9-137590f77559": {
+            "type": "product",
+            "settings": {
+              "product": "broadway-spisestol-sort-ask"
+            }
+          }
+        },
+        "block_order": [
+          "a4a5c961-a19f-4af1-ac13-dac16532299a",
+          "d524ce78-4a16-4c84-abf9-137590f77559"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/broadway_spiseplass_forside.jpg",
+          "image_position": "left",
+          "title": "Broadway spisestol",
+          "subheading": "Stolen gir en generøs og innbydende følelse og den sorte trerammen sørger for et kontinentalt og eksklusivt uttrykk.",
+          "link": "shopify:\/\/products\/broadway-spisestol-m-armlene-sort-ask",
+          "link_text": "Les mer",
+          "enable_contrast": true,
+          "enable_full_width": true
         }
       }
     },
@@ -1033,14 +924,11 @@
       "1600315418706",
       "1601499234365",
       "1600315468934",
-      "1600315479900",
-      "1600315444066",
-      "1601241721814",
       "1632985524a87701b3",
       "16329855288f7a5eb8",
       "16342916002aed89e6",
-      "16342917447596cfdb",
-      "1634291761583837e3"
+      "1634540189e5c83ea4",
+      "1600315479900"
     ]
   },
   "presets": {
