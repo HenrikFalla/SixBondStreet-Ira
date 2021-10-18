@@ -673,8 +673,8 @@
       "1601499234365": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "hubsch",
-          "title": "Hübsch",
+          "collection": "bloomingville",
+          "title": "Bloomingville",
           "per_row": 3,
           "rows": 1,
           "aspect_ratio": "natural"
