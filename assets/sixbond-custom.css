@@ -213,6 +213,7 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 	border-top: none;
+	font-size: 14px;
 }
 .collapsible__list div, .collapsible__list ul {
     padding: 16px;
