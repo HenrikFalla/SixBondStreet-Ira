@@ -1202,12 +1202,13 @@ img#trygg-logo {
     margin-top: 12px;
 }
 
-
+/* Payemnt Icons */
+.payment-icons svg {
+    width: 80px;
+    heigth: 50px;
+}
 /* footer end */
-
-
 /* Brand Page */
-
 .page .vendor-list {
     display: flex;
     flex-direction: row;
