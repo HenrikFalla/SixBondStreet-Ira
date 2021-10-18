@@ -394,11 +394,11 @@
               "mobile_image": "shopify:\/\/shop_images\/hjemmekontor_mobil.jpg",
               "video_url": "",
               "meta": "Få stilen",
-              "title": "Hjemmekontor",
+              "title": "Hjemmekontoret",
               "subheading": "<p>Her finner du alt du trenger til hjemmekontoret.<\/p>",
               "max_width_subheading": 24,
               "link_text": "Se utvalget her",
-              "link": "#",
+              "link": "shopify:\/\/collections\/hjemmekontoret",
               "alignment": "left_center"
             }
           },
