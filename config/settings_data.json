@@ -243,10 +243,27 @@
               "link": "shopify:\/\/collections\/ny-tekstilkolleksjon-2021",
               "alignment": "center_center"
             }
+          },
+          "0d505ca3-4094-4a11-b19b-30fa90729e9b": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B17R1897.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/B17R1897.jpg",
+              "video_url": "",
+              "meta": "SixBondStreet",
+              "title": "Et bærekraftig valg",
+              "subheading": "<p>Vi ønsker å gjøre det lettere for våre kunder å handle smartere og mer bærekraftig. Våre tekstilmøbler er FibreGuard sertifisert.<br\/><\/p>",
+              "max_width_subheading": 24,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/et-bedre-tekstilvalg",
+              "alignment": "center_center"
+            }
           }
         },
         "block_order": [
-          "1600315401018-0"
+          "1600315401018-0",
+          "0d505ca3-4094-4a11-b19b-30fa90729e9b"
         ],
         "settings": {
           "desktop_height": 100,
@@ -428,8 +445,8 @@
         ],
         "settings": {
           "desktop_height": 100,
-          "mobile_height": 100,
-          "opacity_overlay": 20,
+          "mobile_height": 80,
+          "opacity_overlay": 30,
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
           "color_subheading": "#ffffff",
