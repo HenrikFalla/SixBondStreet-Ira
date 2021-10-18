@@ -11677,6 +11677,7 @@
 				escapeDeactivates: !1
 			});
 		Q.get().then(T), R("cart:updated", (function(t) {
+      
 			return T(t.cart)
 		}));
 		var y = m(n, "click", k),
@@ -11734,7 +11735,36 @@
 					return "<div>".concat(e, " (-").concat(K(n), ")</div>")
 				})), "\n      </ul>\n    "))
 			}(n), E(s, "visible", t.sorted.length), E(a, "visible", !t.sorted.length), E(c, "visible", n.length), l && (l.innerHTML = K(t.total_price))
-		}
+		    var subtot = t.total_price;
+            threshold(subtot)
+        }
+      
+    	function threshold(subtotal){
+          var elem = document.querySelector('.quick-cart');
+	var threshold = elem.getAttribute('data-threshold');
+ 
+        var rr = subtotal/100;
+
+// console.log(threshold,subtotal);
+        if(rr < threshold)
+
+        {
+          document.getElementById("free-shipping").style.display = "none";
+          document.getElementById("paid-shipping").style.display = "block";
+          document.getElementById("remaining_amount").innerHTML = threshold - rr;
+        }
+        else {
+          document.getElementById("paid-shipping").style.display = "none";
+          document.getElementById("free-shipping").style.display = "block";
+
+        }
+        if(rr == 0)
+        {  
+
+          document.getElementById("paid-shipping").style.display = "none";}
+      }
+        
+        
 		return R("cart:open", (function(t, e) {
 			return A(e.flash)
 		})), R("cart:configureLoading", (function() {
@@ -14367,9 +14397,13 @@
               var updatedqty = inv_qty[variantid];
               document.querySelector(".variant-inventory").innerHTML = updatedqty;
 
-              
-              
-              
+              	if(updatedqty > 0)
+                {
+          
+                  document.querySelector(".trigger_orb").style.display="inline-block";
+                }
+
+
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
 				var n = function(t, e) {
 					return /variant=/.test(t) ? t.replace(/(variant=)[^&]+/, "$1" + e) : /\?/.test(t) ? t.concat("&variant=").concat(e) : t.concat("?variant=").concat(e)

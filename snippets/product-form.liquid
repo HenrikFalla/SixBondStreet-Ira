@@ -11,7 +11,16 @@
   {%- if show_dynamic_checkout and product.has_only_default_variant %} product-form--payment-button-no-variants {%- endif -%}
   {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
 {%- endcapture %}
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<script>
+      jQuery(document).ready(function() {
+$(".product-form__color-swatches").find("div").on("click", function selectNode(e) {
+$('.dom-message span').html( $(this).find("a").attr('data-meta'));
+});
+    });
+</script>
 {% form 'product',
   product,
   class: form_classes,
@@ -63,7 +72,7 @@
 						class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}"
 						style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }})"
 						tabindex="0"
-					>
+					  data-meta=" {{ product.variants[forloop.index0].metafields.product_data.leveringstid }}">
 					</a>
 					{% comment %} Custom SixBondStreet Henrik {% endcomment %}
                     <div class="variant_info">
