@@ -338,7 +338,7 @@
               "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. Interiørdesigneren vil sammen med deg komme frem til den beste løsningen for ditt hjem. <\/p>",
               "max_width_subheading": 20,
               "link_text": "Book time her",
-              "link": "#",
+              "link": "shopify:\/\/pages\/interiortjeneste",
               "alignment": "left_bottom",
               "opacity_overlay": 30
             }
@@ -688,36 +688,35 @@
       },
       "1632985524a87701b3": {
         "type": "text-columns-with-images--dynamic",
-        "disabled": true,
         "blocks": {
           "1632985524a87701b3-0": {
             "type": "column",
             "settings": {
-              "image": "shopify:\/\/shop_images\/img-7286-790183-Ym8HnCbV.jpg",
-              "title": "Tekstilprøver",
-              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
+              "image": "shopify:\/\/shop_images\/shipped_0433dece-e93b-493d-b515-b5906a5d371f.png",
+              "title": "Fri frakt på ordre over 10.000,-",
+              "text": "",
               "link": "#",
-              "link_text": "Bestill prøver"
+              "link_text": ""
             }
           },
           "1632985524a87701b3-1": {
             "type": "column",
             "settings": {
-              "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_d756bbea-3e17-4512-a06a-ff2d5af4c091.jpg",
-              "title": "Interiørtjenester",
-              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
+              "image": "shopify:\/\/shop_images\/circular-arrow.png",
+              "title": "30 dager åpent kjøp",
+              "text": "",
               "link": "#",
-              "link_text": "Book time"
+              "link_text": ""
             }
           },
           "1632985524a87701b3-2": {
             "type": "column",
             "settings": {
-              "image": "shopify:\/\/shop_images\/utsnitt_teknisk_tekstil_info_1.jpg",
-              "title": "Vedlikehold",
-              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
+              "image": "shopify:\/\/shop_images\/safe_payment_solid.png",
+              "title": "Trygg betaling",
+              "text": "",
               "link": "#",
-              "link_text": "Les mer"
+              "link_text": ""
             }
           }
         },
@@ -752,7 +751,7 @@
               "heading": "Interiørtjeneste",
               "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. Interiørdesigneren vil sammen med deg komme frem til den beste løsningen for ditt hjem. <\/p>",
               "link_text": "Book time her",
-              "link": "#"
+              "link": "shopify:\/\/pages\/interiortjeneste"
             }
           },
           "60e1fc85-4f5f-40af-8e54-6a9d3bac6188": {
@@ -937,6 +936,7 @@
     "content_for_index": [
       "1600315401018",
       "1601240654390",
+      "1632985524a87701b3",
       "1600315431677",
       "1601498256106",
       "1634467668d8706b5a",
@@ -945,7 +945,6 @@
       "1600315418706",
       "1601499234365",
       "1600315468934",
-      "1632985524a87701b3",
       "16329855288f7a5eb8",
       "16342916002aed89e6",
       "1634540189e5c83ea4",
