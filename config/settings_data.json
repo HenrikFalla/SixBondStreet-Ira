@@ -404,6 +404,7 @@
           },
           "1600315468934-0": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/B17R0501.jpg",
               "mobile_image": "shopify:\/\/shop_images\/B17R0464.jpg",
