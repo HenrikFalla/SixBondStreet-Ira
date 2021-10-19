@@ -153,123 +153,32 @@
     
  {% comment %} end E2S span {% endcomment %}
  
-            <p>
-                {% assign instockorb= '<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>'   %}
-          
-          
-               {% if current_variant.inventory_quantity > 0 %}
-          {{instockorb}}
-           
-          <div class="trigger_orb" style="display:none">
-            {{instockorb}}  </div>
-              <span class="variant-inventory">{{ current_variant.inventory_quantity }} på lager.</span></p> {% endif %}
-          {% if variant.options > 1 %}
-              <div class="stock-availability ">
-          	{% if current_variant.available == true %}
-          		{% if current_variant.inventory_quantity > 0 %}
-          			<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
-          		{% else %}
-                
-          			<span data-stock-availability > <div class="out_stock__variant_orb">
-			<div class="out_stock__variant_orb_inner "></div>
-		</div>{%if product.metafields.product_data.leveringstid == blank %} {%else %} Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}	{% endif %}</span>
-          		{% endif %}
-          	{% else %}
-          		<span data-stock-availability>{% comment %}Utsolgt{% endcomment %}</span>
-            	{% endif %}
-            {% else %}
-        	{% if current_variant.available == false %}
-            <span data-stock-availability> <div class="out_stock__variant_orb">
-			<div class="out_stock__variant_orb_inner"></div>
-		</div> {% unless product.metafields.product_data.leveringstid == blank %}Leveringstid: {{ product.metafields.product_data.leveringstid }}{% endunless %}</span>
-            	{% endif %}  
-               </div>    
-          	{% endif %}         
-          
-       
- 
-          {% comment %}<!-- Custom Stock Display for Product - Henrik -->
-		<div class="stock-availability">
-		{% if variant.options > 1 %}
-          	{% if current_variant.available == true %}
-          		{% if current_variant.inventory_quantity > 0 %}
-          			<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
-          		{% else %}
-          			<span data-stock-availability>Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}</span>
-          		{% endif %}
-          	{% else %}
-          		<span data-stock-availability>Utsolgt</span>
-          	{% endif %}          	
-		{% else %}
-		<span data-stock-availability>Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
-          	{% if current_variant.available == true %}
-          		{% if product.variants.first.inventory_quantity > 0 %}
-          			<span data-stock-availability>{{ product.variants.first.inventory_quantity }} på lager.</span>
-          		{% else %}
-          			<span data-stock-availability > <div class="out_stock__variant_orb">
-			<div class="out_stock__variant_orb_inner"></div>
-		</div> Leveringstid: {{ product.metafields.product_data.leveringstid }}</span>
-          		{% endif %}
-            {% else %}
-            	<span data-stock-availability>Utsolgt</span>
-            {% endif %}
-		{% endif %}
-		</div>
-        <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
-  			{% for variant in product.variants %}
-    		{% if variant.available %}
-      	<option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
-        	{{ variant.title }}
-      	</option>
-    	{% else %}
-      	<option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
-    	{% endif %}
-  		{% endfor %}
-  		</select>
-        <!-- End of custom stock display - Henrik -->{% endcomment %}
+          <p>
+               {% assign instockorb= '<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>'   %}
 
-          {% comment %} SixBondStreet CUSTOM - Henrik {% endcomment %}
-			{% if variant.options > 1 %}
-				{% if current_variant.available == true %}
-					{% if current_variant.inventory_quantity > 0 %}
-						<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
-					{% else %}
-						<span data-stock-availability>Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}</span>
-					{% endif %}
-				{% else %}
-					<span data-stock-availability>Utsolgt</span>
-				{% endif %}          	
-			{% else %}
-				{% if current_variant.available == true %}
-					{% if product.variants.first.inventory_quantity > 0 %}
-			 {% comment %} 		 <p ><span class="variant-inventory">
-            {% if current_variant.inventory_quantity > 0 %}
-            <div class="in_stock__variant_orb">
-			<div class="in_stock__variant_orb_inner"></div>
-		</div>     {% endif %}
-            
-            {{ current_variant.inventory_quantity }}</span> på lager.</p>	 {% endcomment %} 
-					{% else %}
-						<span data-stock-availability class="dom-message"> <div class="out_stock__variant_orb">
-			<div class="out_stock__variant_orb_inner "></div>
-		</div>
-                          Leveringstid: <span>{{ variant.metafields.product_data.leveringstid }}</span></span>
-					{% endif %}
-				{% else %}
-					<span data-stock-availability>{% comment %}Evt. kommentar- ikke på lager e.l. {% endcomment %}</span>
-				{% endif %}
-			{% endif %}
-			<select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
-				{% for variant in product.variants %}
+              <div class="trigger_orb" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}>{{instockorb}}</div>
+          	  <span class="variant-inventory" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}><span>{{ current_variant.inventory_quantity }}</span> på lager.</span>
+              <span data-stock-availability class="dom-message" {% if current_variant.inventory_quantity > 0 %}style="display:none"{% endif %}>
+                Leveringstid: <span>
+                {% if current_variant.metafields.product_data.leveringstid != blank %}
+                	{{ current_variant.metafields.product_data.leveringstid }}
+                {% else %}
+            	    {{ product.metafields.product_data.leveringstid }}
+                {% endif %}
+                </span>
+              </span>
+          </p>
+		  <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+		  	{% for variant in product.variants %}
 				{% if variant.available %}
-			<option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
-				{{ variant.title }}
-			</option>
-			{% else %}
-			<option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
-			{% endif %}
-			{% endfor %}
-			</select>
+				<option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+					{{ variant.title }}
+				</option>
+				{% else %}
+				<option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+				{% endif %}
+		  	{% endfor %}
+		  </select>
         {% comment %} End SixBondStreet CUSTOM - Henrik {% endcomment %}
         
           {% render 'unit-price' item: current_variant %}

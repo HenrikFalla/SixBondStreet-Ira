@@ -14395,12 +14395,18 @@
 				
 //               "inv_qty" returns whole object of all variants.           
               var updatedqty = inv_qty[variantid];
-              document.querySelector(".variant-inventory").innerHTML = updatedqty;
+              
+              document.querySelector(".variant-inventory span").innerHTML = updatedqty;
 
               	if(updatedqty > 0)
                 {
-          
+                  document.querySelector(".variant-inventory").style.display="inline";
+                  document.querySelector(".dom-message").style.display="none";
                   document.querySelector(".trigger_orb").style.display="inline-block";
+                } else {
+                  document.querySelector(".variant-inventory").style.display="none";
+                  document.querySelector(".dom-message").style.display="inline";
+                  document.querySelector(".trigger_orb").style.display="none";
                 }
 
 
