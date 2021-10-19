@@ -14407,6 +14407,7 @@ if (typeof(element) != 'undefined' && element != null)
                 {
           
                   document.querySelector(".trigger_orb").style.display="inline-block";
+                  document.querySelector('has-variant > span').style.display="none";
                 }
               else{   document.querySelector(".trigger_orb").style.display="none";}
 
