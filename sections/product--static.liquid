@@ -237,18 +237,26 @@
 			{% else %}
 				{% if current_variant.available == true %}
 					{% if product.variants.first.inventory_quantity > 0 %}
-			 {% comment %} 		 <p ><span class="variant-inventory">
+		 <p ><span class="variant-inventory">	 {% comment %} 		
             {% if current_variant.inventory_quantity > 0 %}
             <div class="in_stock__variant_orb">
 			<div class="in_stock__variant_orb_inner"></div>
 		</div>     {% endif %}
             
-            {{ current_variant.inventory_quantity }}</span> på lager.</p>	 {% endcomment %} 
+            {{ current_variant.inventory_quantity }}</span> på lager.	 {% endcomment %} </p>
 					{% else %}
 						<span data-stock-availability class="dom-message"> <div class="out_stock__variant_orb">
 			<div class="out_stock__variant_orb_inner "></div>
 		</div>
-                          Leveringstid: <span>{{ variant.metafields.product_data.leveringstid }}</span></span>
+                          Leveringstid: <span>
+                          
+                          
+                          
+                          {{ variant.metafields.product_data.leveringstid }}
+                          
+                          
+                          
+                          </span></span>
 					{% endif %}
 				{% else %}
 					<span data-stock-availability>{% comment %}Evt. kommentar- ikke på lager e.l. {% endcomment %}</span>
