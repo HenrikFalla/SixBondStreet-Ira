@@ -14401,8 +14401,8 @@ if (typeof(element) != 'undefined' && element != null)
 {
     element.innerHTML = updatedqty;
 }
-//         document.querySelector(".trigger_orb > span").style.display = updatedqty > 0 ? "inline-block" : "none";
-//                document.querySelector(".has-variant > span").style.display = updatedqty > 0 ? "none" : "block";
+        document.querySelector("#stock_qty").style.display = updatedqty > 0 ? "inline-block" : "none";
+               document.querySelector("#delivery-time").style.display = updatedqty > 0 ? "none" : "block";
 
              
 
