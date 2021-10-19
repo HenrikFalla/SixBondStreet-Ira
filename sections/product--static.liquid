@@ -165,9 +165,12 @@
                 </div>
 						<span data-stock-availability id="delivery-time">
                       
+                            Leveringstid:
                           
-                          
-                          {% if current_variant.metafields.product_data.leveringstid != blank %}    Leveringstid: {{current_variant.metafields.product_data.leveringstid}}{% endif %}
+                          {% if current_variant.metafields.product_data.leveringstid != blank %}   {{current_variant.metafields.product_data.leveringstid}}  
+                          {% else %}
+                          {{product.metafields.product_data.leveringstid }}
+                          {% endif %}
                       </span>
                       
                       
