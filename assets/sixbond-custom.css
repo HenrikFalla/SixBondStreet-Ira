@@ -1199,6 +1199,7 @@ input#Email {
         flex-direction: column;
     }
     .extended-footer .extended-footer-groups .extended-footer-block .extended-footer__image {
+        width: 100%;
         min-height: 200px;
         margin: auto;
         margin-bottom: 12px;
