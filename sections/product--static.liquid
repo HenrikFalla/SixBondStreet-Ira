@@ -166,9 +166,18 @@
 						<span data-stock-availability id="delivery-time">
                           Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}
                       </span>
+                      
+                      
 				</div>
         
-  
+  {% if current_variant.inventory_quantity > 0 %} 
+        
+        <style>        #delivery-time{display:none}</style>
+        	{% else %}
+        
+        
+        
+          {% endif %}
         
         
 				{% else %}
