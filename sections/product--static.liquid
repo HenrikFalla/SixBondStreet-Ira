@@ -171,13 +171,9 @@
 				</div>
         
   {% if current_variant.inventory_quantity > 0 %} 
-        
-        <style>        #delivery-time{display:none}</style>
-        	{% else %}
-        
-              <style>        #stock_qty{display:none}</style>
-        
-          {% endif %}
+ <style>   #delivery-time{display:none}</style>
+  {% else %}<style>  #stock_qty{display:none}</style>
+ {% endif %}
         
         
 				{% else %}
