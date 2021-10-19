@@ -167,7 +167,7 @@
                 
           			<span data-stock-availability > <div class="out_stock__variant_orb">
 			<div class="out_stock__variant_orb_inner "></div>
-		</div>{%if product.metafields.product_data.leveringstid == blank %} {%else %} Leveringstiid: {{ current_variant.metafields.product_data.leveringstid }}	{% endif %}</span>
+		</div>{%if product.metafields.product_data.leveringstid == blank %} {%else %} Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}	{% endif %}</span>
           		{% endif %}
           	{% else %}
           		<span data-stock-availability>{% comment %}Utsolgt{% endcomment %}</span>
@@ -248,7 +248,7 @@
 						<span data-stock-availability class="dom-message"> <div class="out_stock__variant_orb">
 			<div class="out_stock__variant_orb_inner "></div>
 		</div>
-                          Leveringstid: <span>{{ variant.metafields.product_data.leveringstid }}</span></span>
+                          Leverinngstid: <span>{{ variant.metafields.product_data.leveringstid }}</span></span>
 					{% endif %}
 				{% else %}
 					<span data-stock-availability>{% comment %}Evt. kommentar- ikke på lager e.l. {% endcomment %}</span>
