@@ -231,11 +231,7 @@
     
 <div class="trigger_orb" style="display:none">
             {{instockorb}}  {{ current_variant.inventory_quantity }} på lager. </div><br>
-					{% if current_variant.inventory_quantity > 0 %}
-						
-					{% else %}
-						<span data-stock-availability>Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}</span>
-					{% endif %}
+				
         
         
         
