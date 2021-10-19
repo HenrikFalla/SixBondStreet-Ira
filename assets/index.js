@@ -14395,7 +14395,7 @@
 				console.log(variantid );
 //               "inv_qty" returns whole object of all variants.           
               var updatedqty = inv_qty[variantid];
-              document.querySelector(".variant-inventory").innerHTML = updatedqty;
+//               document.querySelector(".variant-inventory").innerHTML = updatedqty;
 
               	if(updatedqty > 0)
                 {
