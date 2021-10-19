@@ -185,10 +185,10 @@
 		  		{% if product.variants.first.inventory_quantity > 0 %}
         
 		 <p ><span class="variant-inventory">	 {% comment %} 		
-            {% if current_variant.inventory_quantity > 0 %}
+           
             <div class="in_stock__variant_orb">
 			<div class="in_stock__variant_orb_inner"></div>
-		</div>     {% endif %}
+		</div>    
             
             {{ current_variant.inventory_quantity }} på lager.	 {% endcomment %} </p>
 					{% else %}
