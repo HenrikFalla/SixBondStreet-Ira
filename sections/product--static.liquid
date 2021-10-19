@@ -254,12 +254,6 @@
 				{% if current_variant.available == true %}
 					{% if product.variants.first.inventory_quantity > 0 %}
 		
-          <p>     {% if current_variant.inventory_quantity > 0 %}
-          {{instockorb}}
-           
-          <div class="trigger_orb" style="display:none">
-            {{instockorb}}  </div>
-              <span class="variant-inventory">{{ current_variant.inventory_quantity }} på lager.</span></p> {% endif %}
 					{% else %}
 						<span data-stock-availability class="dom-message"> <div class="out_stock__variant_orb">
 			<div class="out_stock__variant_orb_inner "></div>
