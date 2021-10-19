@@ -14396,7 +14396,12 @@
 //               "inv_qty" returns whole object of all variants.           
               var updatedqty = inv_qty[variantid];
               console.log(updatedqty);
-              document.querySelector(".variant-inventory").innerHTML = updatedqty;
+      var element =  document.querySelector('.variant-inventory');
+if (typeof(element) != 'undefined' && element != null)
+{
+    element.innerHTML = updatedqty;
+}
+          
 
               	if(updatedqty > 0)
                 {
