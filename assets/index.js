@@ -14402,15 +14402,9 @@ if (typeof(element) != 'undefined' && element != null)
     element.innerHTML = updatedqty;
 }
         document.querySelector(".trigger_orb").style.display = updatedqty > 0 ? "inline-block" : "none";
+               document.querySelector(".has-variant > span").style.display = updatedqty > 0 ? "none" : "block";
 
-              	if(updatedqty > 0)
-                {
-                  document.querySelector('.has-variant > span').style.display="none";
-                }
-              else{   
-                     document.querySelector('.has-variant > span').style.display="block";
-                  }
-
+             
 
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
 				var n = function(t, e) {
