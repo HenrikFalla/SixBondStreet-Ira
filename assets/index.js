@@ -14401,7 +14401,7 @@ if (typeof(element) != 'undefined' && element != null)
 {
     element.innerHTML = updatedqty;
 }
-          
+          updatedqty > 0 ? 
 
               	if(updatedqty > 0)
                 {
