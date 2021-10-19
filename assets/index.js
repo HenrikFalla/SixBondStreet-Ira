@@ -14392,7 +14392,7 @@
               //  console.log("Endringer / Changes - to show # per variant on variant change");
 //            get id of selected variant	
               var variantid = t.dataset.variant.id;
-				
+				console.log(variantid );
 //               "inv_qty" returns whole object of all variants.           
               var updatedqty = inv_qty[variantid];
               document.querySelector(".variant-inventory").innerHTML = updatedqty;
