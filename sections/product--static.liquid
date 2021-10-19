@@ -195,13 +195,7 @@
 						<span data-stock-availability class="dom-message"> <div class="out_stock__variant_orb">
 			<div class="out_stock__variant_orb_inner "></div>
 		</div>
-                          Leveringstid: <span>
-                          
-                           {{ current_variant.metafields.product_data.leveringstid }}
-                          
-                        
-                          
-                          </span></span>
+                          Leveringstid: <span>{{product.metafields.product_data.leveringstid }} </span></span>
 					{% endif %}
 				{% else %}
 					<span data-stock-availability>{% comment %}Evt. kommentar- ikke på lager e.l. {% endcomment %}</span>
