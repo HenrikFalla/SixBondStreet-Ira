@@ -152,12 +152,6 @@
                 {% assign instockorb= '<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>'   %}
           
           
-               {% if current_variant.inventory_quantity > 0 %}
-          {{instockorb}}
-           
-          <div class="trigger_orb" style="display:none">
-            {{instockorb}}  </div>
-              <span class="variant-inventory">{{ current_variant.inventory_quantity }} på lager.</span></p> {% endif %}
           {% if variant.options > 1 %}
               <div class="stock-availability ">
           	{% if current_variant.available == true %}
