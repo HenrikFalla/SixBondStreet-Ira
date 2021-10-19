@@ -167,9 +167,10 @@
                       
                             Leveringstid:
                           
-                          {% if current_variant.metafields.product_data.leveringstid != blank %}   {{current_variant.metafields.product_data.leveringstid}}  
+                          {% if current_variant.metafields.product_data.leveringstid != blank %}
+                          <span>{{current_variant.metafields.product_data.leveringstid}}  </span>
                           {% else %}
-                          {{product.metafields.product_data.leveringstid }}
+                          <span> {{product.metafields.product_data.leveringstid }}</span>
                           {% endif %}
                       </span>
                       
