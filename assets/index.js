@@ -14401,15 +14401,13 @@ if (typeof(element) != 'undefined' && element != null)
 {
     element.innerHTML = updatedqty;
 }
-          updatedqty > 0 ? 
+        document.querySelector(".trigger_orb").style.display = updatedqty > 0 ? "inline-block" : "none";
 
               	if(updatedqty > 0)
                 {
-          
-                  document.querySelector(".trigger_orb").style.display="inline-block";
                   document.querySelector('.has-variant > span').style.display="none";
                 }
-              else{   document.querySelector(".trigger_orb").style.display="none";
+              else{   
                      document.querySelector('.has-variant > span').style.display="block";
                   }
 
