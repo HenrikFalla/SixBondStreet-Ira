@@ -156,10 +156,15 @@
 			{%  if product.variants.size >  1 %}
         
 				{% if current_variant.available == true %}
-        <div class="has-variant">
+       			
+        			<div class="has-variant">
     
-<div class="trigger_orb" style="display:none">
-            {{instockorb}}  {{ current_variant.inventory_quantity }} på lager. </div><br>
+					<div class="trigger_orb" style="display:none">
+                        {{instockorb}}
+                         {{ current_variant.inventory_quantity }} på lager. 
+                      </div>
+                      
+                      <br>
 					{% if current_variant.inventory_quantity > 0 %}
 <!-- 						<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span> -->
 					{% else %}
@@ -179,16 +184,15 @@
 				{% endif %}        
         
         
-			{% else %} <!--variant.options -->
-                 <div class="variant-inventory">	 
-				{% if current_variant.available == true %}
-		  		{% if product.variants.first.inventory_quantity > 0 %}
+			{% else %} <!--product.variants.size <  1 -->
         
-	
-
-                    <span class="in_stock__variant_orb">
-                    <span class="in_stock__variant_orb_inner"></span>
-                </span>    
+        
+        
+                 <div class="variant-inventory">	 
+                  {% if current_variant.available == true %}
+                  {% if product.variants.first.inventory_quantity > 0 %}
+        
+					{{instockorb}} 
             
                   <span>{{ current_variant.inventory_quantity }} på lager.	</span>
                   
