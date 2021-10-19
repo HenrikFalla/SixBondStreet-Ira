@@ -1116,6 +1116,9 @@ the shopping cart and the hamburger menu has the same class name */
 
 /* footer start */
 
+.footer__group-content p {
+    min-height: 12px;
+}
 .extended-footer-groups {
     display: flex;
     flex-flow: wrap;
