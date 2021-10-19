@@ -14393,7 +14393,9 @@
 //            get id of selected variant	
               var variantid = t.dataset.variant.id;
 			
-//               "inv_qty" returns whole object of all variants.           
+//               "inv_qty" returns whole object of all variants.   
+              
+//               ramit work
               var updatedqty = inv_qty[variantid];
               console.log(updatedqty);
       var element =  document.querySelector('#stock_qty span');
