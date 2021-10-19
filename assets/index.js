@@ -14408,6 +14408,7 @@ if (typeof(element) != 'undefined' && element != null)
           
                   document.querySelector(".trigger_orb").style.display="inline-block";
                 }
+              else{   document.querySelector(".trigger_orb").style.display="none";}
 
 
 				if (Ut(this.container, e), !e) return $o(h("[data-add-to-cart]", this.container), !1), void(this.availability && this.availability.unload());
