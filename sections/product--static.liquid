@@ -159,14 +159,14 @@
        			
         			<div class="has-variant">
     
-					<div class="trigger_orb" >
-                     <span>   {{instockorb}}
-                       <span>   {{ current_variant.inventory_quantity }} </span> på lager.</span> 
-                      </div>
+					
+                    {{instockorb}}
+                      {{ current_variant.inventory_quantity }}  på lager.
+                
 						<span data-stock-availability>Leveringstid: {{ current_variant.metafields.product_data.leveringstid }}</span>
 				
         
-        </div>
+  
         
         
 				{% else %}
