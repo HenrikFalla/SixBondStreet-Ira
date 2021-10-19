@@ -1135,6 +1135,7 @@ the shopping cart and the hamburger menu has the same class name */
 .extended-footer-groups .extended-50 {
     width: 100%;
     flex: 50%;
+    flex-direction: row;
 }
 
 .extended-footer .extended-footer-groups .extended-footer-block__text {
@@ -1160,6 +1161,7 @@ the shopping cart and the hamburger menu has the same class name */
 .extended-footer .extended-footer-groups .extended-footer-block .extended-footer__image {
     margin-right: 32px;
     width: 200px;
+    min-height: auto;
 }
 
 .extended-footer .extended-footer-groups .extended-footer-block .extended-footer__content p {
@@ -1192,6 +1194,16 @@ input#Email {
     }
 }
 
+@media (max-width: 40em) {
+    .extended-footer-groups .extended-50 {
+        flex-direction: column;
+    }
+    .extended-footer .extended-footer-groups .extended-footer-block .extended-footer__image {
+        min-height: 200px;
+        margin: auto;
+        margin-bottom: 12px;
+    }
+}
 @media (max-width: 60em) {
     .extended-footer-groups .extended-50 {
         flex: 100%;
