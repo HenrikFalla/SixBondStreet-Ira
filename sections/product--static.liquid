@@ -180,11 +180,11 @@
         
         
 			{% else %} <!--variant.options -->
- 
+                 <div class="variant-inventory">	 
 				{% if current_variant.available == true %}
 		  		{% if product.variants.first.inventory_quantity > 0 %}
         
-                <div class="variant-inventory">	 	
+	
 
                     <span class="in_stock__variant_orb">
                     <span class="in_stock__variant_orb_inner"></span>
@@ -202,8 +202,9 @@
                     Leveringstid: <span>{{product.metafields.product_data.leveringstid }} 
                     </span>
                   </span>
-                          </div>
+                    
 					{% endif %}
+                         </div>
 				{% else %}
 					<span data-stock-availability>{% comment %}Evt. kommentar- ikke på lager e.l. {% endcomment %}</span>
 				{% endif %}
