@@ -72,7 +72,7 @@ $('.dom-message span').html( $(this).find("a").attr('data-meta'));
 						class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}"
 						style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }})"
 						tabindex="0"
-					  data-meta=" {{ product.variants[forloop.index0].metafields.product_data.leveringstid }}">
+					    data-meta="{% if product.variants[forloop.index0].metafields.product_data.leveringstid != blank %}{{ product.variants[forloop.index0].metafields.product_data.leveringstid }}{% else %}{{ product.metafields.product_data.leveringstid }}{% endif %}">
 					</a>
 					{% comment %} Custom SixBondStreet Henrik {% endcomment %}
                     <div class="variant_info">
