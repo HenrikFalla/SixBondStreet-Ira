@@ -223,7 +223,64 @@
   		</select>
         <!-- End of custom stock display - Henrik -->{% endcomment %}
 
-         
+          {% comment %} SixBondStreet CUSTOM - Henrik {% endcomment %}
+			{% if variant.options > 1 %}
+        
+				{% if current_variant.available == true %}
+        
+        
+        
+					{% if current_variant.inventory_quantity > 0 %}
+						<span data-stock-availability>{{ current_variant.inventory_quantity }} på lager.</span>
+					{% else %}
+						<span data-stock-availability>Leveringsttid: {{ current_variant.metafields.product_data.leveringstid }}</span>
+					{% endif %}
+        
+        
+        
+        
+				{% else %}
+        
+        
+        
+					<span data-stock-availability>Utsolgt</span>
+        
+        
+				{% endif %}        
+        
+        
+			{% else %} <!--variant.options -->
+        
+				{% if current_variant.available == true %}
+					{% if product.variants.first.inventory_quantity > 0 %}
+		 <p ><span class="variant-inventory">	 {% comment %} 		
+            {% if current_variant.inventory_quantity > 0 %}
+            <div class="in_stock__variant_orb">
+			<div class="in_stock__variant_orb_inner"></div>
+		</div>     {% endif %}
+            
+            {{ current_variant.inventory_quantity }} på lager.	 {% endcomment %} </p>
+					{% else %}
+						<span data-stock-availability class="dom-message"> <div class="out_stock__variant_orb">
+			<div class="out_stock__variant_orb_inner "></div>
+		</div>
+                          Leveringstid: <span>
+                          
+                           {{ current_variant.metafields.product_data.leveringstid }}
+                          
+                          {% if variant.metafields.product_data.leveringstid %}
+                          {%else %}
+                          
+                          
+                          {{product.metafields.product_data.leveringstid }}
+                          	{% endif %}
+                          
+                          </span></span>
+					{% endif %}
+				{% else %}
+					<span data-stock-availability>{% comment %}Evt. kommentar- ikke på lager e.l. {% endcomment %}</span>
+				{% endif %}
+			{% endif %}
 			<select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
 				{% for variant in product.variants %}
 				{% if variant.available %}
