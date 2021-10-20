@@ -76,7 +76,7 @@ $('.dom-message span').html( $(this).find("a").attr('data-meta'));
 					</a>
 					{% comment %} Custom SixBondStreet Henrik {% endcomment %}
                     <div class="variant_info">
-                        {% unless product.variants[forloop.index0].inventory_quantity == 0 %}
+                        {% unless product.variants[forloop.index0].inventory_quantity < 1 %}
                         <div class="in_stock__variant_orb">
                             <div class="in_stock__variant_orb_inner"></div>
                         </div>
