@@ -338,7 +338,7 @@ section.description {
     font-size: 14px;
     letter-spacing: .5px;
     color: black;
-    line-height: 0.5cm;
+    line-height: 150%;
 }
 
 div#description,
