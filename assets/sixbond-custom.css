@@ -32,6 +32,10 @@ a {
     text-decoration: underline dotted;
 }
 
+p {
+    line-height: 150%;
+}
+
 .sxbs-on-sale {
     color: var(--sxbs-sale-color);
     font-weight: bold;
@@ -337,8 +341,6 @@ section.description {
 .description__container p {
     font-size: 14px;
     letter-spacing: .5px;
-    color: black;
-    line-height: 150%;
 }
 
 div#description,
