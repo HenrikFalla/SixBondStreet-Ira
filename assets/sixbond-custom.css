@@ -46,10 +46,11 @@ span.on-sale.saved_percentage {
     font-weight: bold;
     color: var(--sxbs-sale-color);
 }
-
-
+/* Drawer Menu */
+.drawer-menu__link {
+    text-decoration: none;
+}
 /* Product Page */
-
 span.dom-message {
     margin-bottom: var(--spacing-large);
     display: inline;
