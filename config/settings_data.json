@@ -931,12 +931,47 @@
           "enable_contrast": true,
           "enable_full_width": true
         }
+      },
+      "163516359475b3ea53": {
+        "type": "collection-list--dynamic",
+        "disabled": true,
+        "blocks": {
+          "163516359475b3ea53-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "rask-levering-stue"
+            }
+          },
+          "163516359475b3ea53-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "rask-levering-for-jul-spisestue"
+            }
+          },
+          "163516359475b3ea53-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "rask-levering-for-jul-soverom"
+            }
+          }
+        },
+        "block_order": [
+          "163516359475b3ea53-0",
+          "163516359475b3ea53-1",
+          "163516359475b3ea53-2"
+        ],
+        "settings": {
+          "title": "Levering før jul",
+          "per_row": 3,
+          "aspect_ratio": "natural"
+        }
       }
     },
     "content_for_index": [
       "1600315401018",
       "1601240654390",
       "1632985524a87701b3",
+      "163516359475b3ea53",
       "1600315431677",
       "1601498256106",
       "1634467668d8706b5a",
