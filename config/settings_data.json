@@ -944,13 +944,13 @@
           "163516359475b3ea53-1": {
             "type": "collection",
             "settings": {
-              "collection": "rask-levering-for-jul-spisestue"
+              "collection": "levering-for-jul-spisestue"
             }
           },
           "163516359475b3ea53-2": {
             "type": "collection",
             "settings": {
-              "collection": "rask-levering-for-jul-soverom"
+              "collection": "levering-for-jul-soverom"
             }
           }
         },
