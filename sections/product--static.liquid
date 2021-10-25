@@ -236,7 +236,7 @@
                     <p>{{ mats }}</p>
                 </div>
             {% endif %}
-            {% unless product.options.size > 0 %}
+            {% unless product.variants.size > 1 %}
                 <button class="collapsible-button">Ytterligere informasjon</button>
                 <div class="collapsible__list">
                     <p><strong>Varenummer:</strong> {{ product.selected_or_first_available_variant.sku }}</p>
