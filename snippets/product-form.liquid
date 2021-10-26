@@ -61,7 +61,7 @@ $('.dom-message span').html( $(this).find("a").attr('data-meta'));
             {%- if swatch_options contains option_name and show_swatches-%}
               <div class="product-form__color-swatches" data-option-buttons>
                 {% for value in option.values %}
-                    {% assign file-url = value | handle | append: '.' | append: file_extension %}
+                    {% assign file-url = value | handle | append: '.' | append: file_extension | file_url %}
 					{% if product.variants[forloop.index0].available %}
 					<div class="variant__option" id="{{ value | remove:" " }}">
 					{% else %}
