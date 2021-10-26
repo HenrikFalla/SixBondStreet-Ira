@@ -501,5 +501,12 @@
       "resume": "Forsett {{ video_title }} video",
       "close": "Lukk {{ video_title }} video"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "complete_purchase_button_label": "Bestill og betal"
+      }
+    }
   }
 }
