@@ -146,6 +146,17 @@ a.btn.btn--primary,
     width: 100%;
     margin: 0;
     margin-bottom: 8px;
+    height: 0;
+    padding: 0;
+    padding-top: 100%;
+    padding-top: calc(100% - 6px);
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -mox-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .variant__option span.variant__title {
@@ -535,6 +546,7 @@ a#in-stock {
 
 .product-options__collection .product__color-swatch {
     width: 20px;
+    height: 20px;
     margin: 4px 2px;
     padding: 0;
     border: none;

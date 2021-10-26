@@ -1,5 +1,5 @@
 {% liquid
-  assign file_extension = 'jpg'
+  assign file_extension = 'png'
   assign swatch_options = settings.swatch_options | downcase | split: ', '
   assign chip_options = settings.chip_options | downcase | split: ', '
   assign button_options = swatch_options | concat: chip_options
