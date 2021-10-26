@@ -146,6 +146,13 @@ a.btn.btn--primary,
     width: 100%;
     margin: 0;
     margin-bottom: 8px;
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -mox-background-size: cover;
+    -webkit-backgorund-size: cover;
+    backgorund-size: cover;
+    background-repeat: no-repeat;
 }
 
 .variant__option span.variant__title {
