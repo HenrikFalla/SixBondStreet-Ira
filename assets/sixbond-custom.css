@@ -150,8 +150,8 @@ a.btn.btn--primary,
     background-attachment: scroll;
     -o-background-size: cover;
     -mox-background-size: cover;
-    -webkit-backgorund-size: cover;
-    backgorund-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -542,6 +542,7 @@ a#in-stock {
 
 .product-options__collection .product__color-swatch {
     width: 20px;
+    height: 20px;
     margin: 4px 2px;
     padding: 0;
     border: none;
