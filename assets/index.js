@@ -14117,7 +14117,7 @@
 			})), this.delegate.on("click", "[data-clear]", (function(t) {
 				t.preventDefault(), B("collection:clear")
 			})), this.delegate.on("click", "[data-pagination]", (function(t) {
-              console.log("r");
+            window.scrollTo(0, 0);
 				t.preventDefault();
 				var n = t.target.href || t.target.closest("a").href;
 				e.renderView(n)
