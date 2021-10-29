@@ -14117,7 +14117,12 @@
 			})), this.delegate.on("click", "[data-clear]", (function(t) {
 				t.preventDefault(), B("collection:clear")
 			})), this.delegate.on("click", "[data-pagination]", (function(t) {
-            window.scrollTo(0, 0);
+            const tabScroll = document.getQuerySelector(".collection__content");
+window.scrollTo({
+  'behavior': 'smooth',
+  'left': 0,
+  'top': tabScroll.offsetTop - 80
+});
 				t.preventDefault();
 				var n = t.target.href || t.target.closest("a").href;
 				e.renderView(n)
