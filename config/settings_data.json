@@ -90,16 +90,6 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "title": "Vi flytter lager",
-              "link": "",
-              "color_background": "#232328",
-              "color_text": "#ffffff"
-            }
-          },
           "1601505997237": {
             "type": "announcement",
             "settings": {
@@ -108,11 +98,20 @@
               "color_background": "#151515",
               "color_text": "#ffffff"
             }
+          },
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "title": "Vi flytter lager. Det må påregnes noe forsinkelse ved levering.",
+              "link": "",
+              "color_background": "#232328",
+              "color_text": "#ffffff"
+            }
           }
         },
         "block_order": [
-          "announcement-bar-0",
-          "1601505997237"
+          "1601505997237",
+          "announcement-bar-0"
         ],
         "settings": {
           "enabled": true,
