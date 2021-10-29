@@ -14117,7 +14117,7 @@
 			})), this.delegate.on("click", "[data-clear]", (function(t) {
 				t.preventDefault(), B("collection:clear")
 			})), this.delegate.on("click", "[data-pagination]", (function(t) {
-            const tabScroll = document.getElementById("root");
+            const tabScroll = document.querySelector(".collection__content");
 window.scrollTo({
   'behavior': 'smooth',
   'left': 0,
