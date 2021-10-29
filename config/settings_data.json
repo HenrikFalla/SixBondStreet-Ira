@@ -947,6 +947,12 @@
               "collection": "levering-for-jul-spisestue"
             }
           },
+          "f532988b-2800-46e6-9565-9a3a7bd9e19a": {
+            "type": "collection",
+            "settings": {
+              "collection": "levering-for-jul-interior-tekstiler"
+            }
+          },
           "163516359475b3ea53-2": {
             "type": "collection",
             "settings": {
@@ -957,11 +963,12 @@
         "block_order": [
           "163516359475b3ea53-0",
           "163516359475b3ea53-1",
+          "f532988b-2800-46e6-9565-9a3a7bd9e19a",
           "163516359475b3ea53-2"
         ],
         "settings": {
           "title": "Levering før jul",
-          "per_row": 3,
+          "per_row": 4,
           "aspect_ratio": "natural"
         }
       }
