@@ -115,7 +115,7 @@
         ],
         "settings": {
           "enabled": true,
-          "timing": 3
+          "timing": 5
         }
       },
       "header": {
