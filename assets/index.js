@@ -14117,11 +14117,11 @@
 			})), this.delegate.on("click", "[data-clear]", (function(t) {
 				t.preventDefault(), B("collection:clear")
 			})), this.delegate.on("click", "[data-pagination]", (function(t) {
-            const tabScroll = document.getQuerySelector(".collection__content");
+            const tabScroll = document.getElementById("root");
 window.scrollTo({
   'behavior': 'smooth',
   'left': 0,
-  'top': tabScroll.offsetTop - 80
+  'top': tabScroll.offsetTop - 20
 });
 				t.preventDefault();
 				var n = t.target.href || t.target.closest("a").href;
