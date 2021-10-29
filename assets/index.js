@@ -14121,7 +14121,7 @@
 window.scrollTo({
   'behavior': 'smooth',
   'left': 0,
-  'top': tabScroll.offsetTop+100
+  'top': tabScroll.offsetTop - 80
 });
 				t.preventDefault();
 				var n = t.target.href || t.target.closest("a").href;
