@@ -26,8 +26,8 @@
 				<div class="extended-footer-block extended-footer-block__text extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
 					 {% unless block.settings.image == nul %}
 						{% render 'image' with
-							id: product.media[0].id,
-							image: product.media[0].preview_image,
+							id: block.settings.image.id,
+							image: block.settings.image.preview_image,
 							wrapper_class: 'extended-footer__image',
 							disable_style: disabled_image_style
 						%}
