@@ -147,7 +147,7 @@
         {% for i in (0..2) %}
             <div 
                 class="product__color-swatch"
-                style="background-color: {{ product.options_with_values[0].values[forloop.index0] | lowercase | replace: ' ', '' }}; background-image: url({{ product.options_with_values[0].values[forloop.index0] | handle | append: '.' | append: 'jpg' | file_url }})"
+                style="background-color: {{ product.options_with_values[0].values[forloop.index0] | lowercase | replace: ' ', '' }}; background-image: url({{ product.options_with_values[0].values[forloop.index0] | handle | append: '.' | append: 'jpg' | file_img_url: '50x50' }})"
                 tabindex="0"
             >
             </div>
