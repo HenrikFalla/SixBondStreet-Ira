@@ -6,7 +6,7 @@
 		{% assign option_index = forloop.index %}
 		{% for value in option.values %}
 			{% if product.variants[forloop.index0].available %}
-				{% assign file-url = value | handle | append: '.' | append: file_extension | asset_img_url: '500x' %}
+				{% assign file-url = value | handle | append: '.' | append: file_extension | file_img_url: '500x500' %}
 				<script>
 					tippy('#{{ value | remove:" " }}', {
 						trigger: 'mouseenter focus',
