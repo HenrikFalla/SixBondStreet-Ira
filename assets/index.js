@@ -14598,3 +14598,8 @@ window.scrollTo({
 			}))
 		}(), te(document.querySelector("[data-store-availability-modal]")), window.SHA = "unknown"
 }]);
+$(document).ready(function () {
+
+	$("img.lazyload").lazyload();
+
+});
