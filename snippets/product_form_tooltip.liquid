@@ -6,12 +6,13 @@
 		{% assign option_index = forloop.index %}
 		{% for value in option.values %}
 			{% if product.variants[forloop.index0].available %}
+				{% assign file-url = value | handle | append: '.' | append: file_extension | img_url: '500x500' %}
 				<script>
-					$document.ready(tippy('#{{ value | remove:" " }}', {
+					tippy('#{{ value | remove:" " }}', {
 						trigger: 'mouseenter focus',
-						content: '<img class="tippy-image__tooltip" src="{{ value | handle | append: '.' | append: file_extension | file_url }}" alt="{{ value }}"></img><span class="tippy-text__tooltip">{{ value }}</span>',
+						content: '<img class="tippy-image__tooltip" data-src="{{ file-url }}" alt="{{ value }}"></img><span class="tippy-text__tooltip">{{ value }}</span>',
 						allowHTML: true,
-					}));
+					});
 				</script>
 			{% endif %}
 		{% endfor %}
