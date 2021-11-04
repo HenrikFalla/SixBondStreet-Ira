@@ -25,8 +25,12 @@
 			{% if block.type == 'text'  %}
 				<div class="extended-footer-block extended-footer-block__text extended-{{ n-size[i] }}" style="background-color: #{{ colours_bg[i] }};">
 					 {% unless block.settings.image == nul %}
-						<div class="extended-footer__image" style="background: url({{ block.settings.image | img_url: '800x' }}) no-repeat center; background-size: cover;">
-						</div>
+						{% render 'image' with
+							id: block.settings.image.id,
+							image: block.settings.image,
+							wrapper_class: 'extended-footer__image',
+							disable_style: 'disabled_image_style'
+						%}
 					 {% endunless %}
 					 <div class="extended-footer__content"
 						{% unless block.settings.image == nul %}
