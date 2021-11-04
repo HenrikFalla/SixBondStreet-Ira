@@ -7,11 +7,11 @@
 		{% for value in option.values %}
 			{% if product.variants[forloop.index0].available %}
 				<script>
-					tippy('#{{ value | remove:" " }}', {
+					$document.ready(tippy('#{{ value | remove:" " }}', {
 						trigger: 'mouseenter focus',
 						content: '<img class="tippy-image__tooltip" src="{{ value | handle | append: '.' | append: file_extension | file_url }}" alt="{{ value }}"></img><span class="tippy-text__tooltip">{{ value }}</span>',
 						allowHTML: true,
-					});
+					}));
 				</script>
 			{% endif %}
 		{% endfor %}
