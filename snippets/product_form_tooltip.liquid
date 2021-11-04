@@ -10,7 +10,7 @@
 				<script>
 					tippy('#{{ value | remove:" " }}', {
 						trigger: 'mouseenter focus',
-						content: '<img class="tippy-image__tooltip" data-src="{{ file-url }}" alt="{{ value }}"></img><span class="tippy-text__tooltip">{{ value }}</span>',
+						content: '<img class="tippy-image__tooltip" src="{{ file-url }}" alt="{{ value }}"></img><span class="tippy-text__tooltip">{{ value }}</span>',
 						allowHTML: true,
 					});
 				</script>
