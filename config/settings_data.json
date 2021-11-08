@@ -231,9 +231,9 @@
           "1600315401018-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/B17R1897.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/B17R1897.jpg",
-              "video_url": "",
+              "image": "shopify:\/\/shop_images\/B17R1893.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/B17R1893.jpg",
+              "video_url": "https:\/\/vimeo.com\/642633121",
               "meta": "Nyhet",
               "title": "Ny tekstilkolleksjon",
               "subheading": "<p><br\/>Vi lanserer en ny, fargerik og sofistikert tekstilkolleksjon.<br\/><\/p>",
@@ -970,9 +970,22 @@
           "per_row": 4,
           "aspect_ratio": "natural"
         }
+      },
+      "163636653234176613": {
+        "type": "video--dynamic",
+        "disabled": true,
+        "settings": {
+          "title": "Ny tekstilkolleksjon",
+          "subheading": "<p>Vi har lansert en ny, fargerik og sofistikert tekstilkolleksjon.<\/p>",
+          "video_url": "https:\/\/vimeo.com\/642633121",
+          "opacity_overlay": 30,
+          "color_overlay": "#000000",
+          "color_text": "#ffffff"
+        }
       }
     },
     "content_for_index": [
+      "163636653234176613",
       "1600315401018",
       "1601240654390",
       "1632985524a87701b3",
