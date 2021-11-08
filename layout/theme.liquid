@@ -60,9 +60,9 @@
 
   {% render 'theme-setup' %}
   {% render 'theme-setting-vars' %}
-  {{ 'index.css' | asset_url | stylesheet_tag }}
+  {{ 'index.scss.css' | asset_url | stylesheet_tag }}
   <!-- SixBondStreet CUSTOM -->
-  {{ 'sixbond-custom.css' | asset_url | stylesheet_tag }}
+  {{ 'sixbond-custom.scss.css' | asset_url | stylesheet_tag }}
   <!-- END SixBondStreet CUSTOM  -->
 
   {{ content_for_header }}
