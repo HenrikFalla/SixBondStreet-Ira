@@ -152,7 +152,7 @@
           "logo": "shopify:\/\/shop_images\/Logo_simplified.png",
           "logo_max_width": 270,
           "menu": "main-menu",
-          "menu-mobile": "mobile-menu",
+          "mobile-menu": "mobile-menu",
           "alt_menu": "alt-menu",
           "style": "inline",
           "logo_position": "center",
