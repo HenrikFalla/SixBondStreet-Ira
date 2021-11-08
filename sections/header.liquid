@@ -118,7 +118,7 @@
   {% render 'quick-cart' %}
 </header>
 
-{% render 'drawer-menu' with menu: menu %}
+{% render 'drawer-menu' with menu: menu-mobile %}
 
 
 <style>
@@ -169,6 +169,11 @@
         "type": "link_list",
         "label": "Main menu",
         "default": "main-menu"
+      },
+      {
+        "id": "menu-mobile",
+        "type": "link_list",
+        "Label": "Mobile Menu"
       },
 	  {
         "type": "link_list",
