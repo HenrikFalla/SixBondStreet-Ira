@@ -3,6 +3,7 @@
   assign logo_max_width = section.settings.logo_max_width
   assign logo_position = section.settings.logo_position
   assign menu = section.settings.menu
+  assign mobile-menu = section.settings.mobile-menu
   assign secondary_menu = section.settings.alt_menu
   assign style = section.settings.style
 
@@ -118,7 +119,7 @@
   {% render 'quick-cart' %}
 </header>
 
-{% render 'drawer-menu' with menu: menu %}
+{% render 'drawer-menu' with menu: mobile-menu %}
 
 
 <style>
@@ -169,6 +170,11 @@
         "type": "link_list",
         "label": "Main menu",
         "default": "main-menu"
+      },
+      {
+        "id": "mobile-menu",
+        "type": "link_list",
+        "label": "Mobile Menu"
       },
 	  {
         "type": "link_list",
