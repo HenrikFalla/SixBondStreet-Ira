@@ -784,6 +784,7 @@
       },
       "16342916002aed89e6": {
         "type": "video--dynamic",
+        "disabled": true,
         "settings": {
           "title": "Inspirasjon hjemme hos stilikonet Gine Margrethe",
           "subheading": "<p>Gine Margrethe Qvale er til stor inspirasjon for mange. Hun inspirerer både på mote- og interiørfronten med sin elegante, kreative og fargerike stil. <\/p>",
