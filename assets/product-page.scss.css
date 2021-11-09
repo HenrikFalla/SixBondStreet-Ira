@@ -1,5 +1,26 @@
 input.qtyplus, input.qtyminus {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid #e3dede;
+    padding-top: 0px;
+    margin-top: 2.5px;
+}
+input.qtyplus {
+    padding-top: 1px;
+}
+.pf-container__qty .pf-element {
+    display: flex;
+    flex-direction: row;
+}
+.pf-container__qty .pf-element .pf-input {
+    padding-top: 1px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
+.pf-container__qty .pf-element {
+    padding: 6px;
+    padding-top: calc(var(--font-size-body-base) * 1);
 }
