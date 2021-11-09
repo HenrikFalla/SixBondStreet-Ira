@@ -17,6 +17,7 @@
 >
     {% if aspect_ratio %}
         {% assign aspect_ratio_calculated = width | divide_by: height %}
+        {{ aspect_ratio_calculated }}
         <img
             class="image__img lazyload {% if preload %}lazypreload{% endif %} {{ image_class }}"
             src="{{ image | img_url: '150x150' }}"
