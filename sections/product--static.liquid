@@ -275,6 +275,7 @@
             {% assign width = '500' %}
             {% assign height = '375' %}
             {% assign aspect_ratio = width | append: 'x' | append: height %}
+            {{ aspect_ratio }}
             {% assign i-size = product.media.size %}
 	        {% for i in (3..i-size) %}
 		        <div class="product__media-item {% if product.media[i].id == featured_media.id %}initial{% endif %}" data-slide>
