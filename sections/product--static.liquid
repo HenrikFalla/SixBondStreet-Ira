@@ -272,12 +272,15 @@
   {% if product.media.size > 3 %}
         <div class="product__media-container secondary-gallery desktop-only">
           <div class="product__media product__media--{{ media_layout }}" data-slider>
+            {% assign width = '500' %}
+            {% assign height = '375' %}
+            {% assign aspect_ratio = width | append: 'x' | append: height %}
             {% assign i-size = product.media.size %}
 	        {% for i in (3..i-size) %}
-		    <div class="product__media-item {% if product.media[i].id == featured_media.id %}initial{% endif %}" data-slide>
-			    {% render 'media', media: product.media[i], featured_media: featured_media, loop_video: enable_video_looping  %}
-		    </div>
-	    {% endfor %}
+		        <div class="product__media-item {% if product.media[i].id == featured_media.id %}initial{% endif %}" data-slide>
+			        {% render 'media', media: product.media[i], featured_media: featured_media, loop_video: enable_video_looping, width: width, height: height, aspect_ratio: aspect_ratio  %}
+		        </div>
+	        {% endfor %}
 
 	        {%- if product.media.size > 1 -%}
 	          {% render 'carousel-pagination' %}

@@ -11,11 +11,19 @@
 >
   {%- if media.media_type == 'image' -%}
     <a class="media__image" href="#" data-open="{{ media.id }}">
-      {% render 'image' with image: media %}
+        {% if aspect_ratio %}
+            {% render 'image' with image: media, aspect_ratio: aspect_ratio, height: height, width: width %}
+        {% else %}
+            {% render 'image' with image: media %}
+        {% endif %}
     </a>
 
   {%- elsif media.media_type == 'video' -%}
-    {{ media | video_tag: image_size: "1024x" }}
+    {% if aspect_ratio %}
+        {{ media | video_tag: image_size: aspect_ratio }}
+    {% else %}
+        {{ media | video_tag: image_size: "1024x" }}
+    {% endif %}
 
   {%- elsif media.media_type == 'external_video' -%}
     {%- liquid
