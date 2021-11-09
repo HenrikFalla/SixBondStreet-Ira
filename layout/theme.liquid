@@ -64,7 +64,9 @@
   <!-- SixBondStreet CUSTOM -->
   {{ 'sixbond-custom.scss.css' | asset_url | stylesheet_tag }}
   <!-- END SixBondStreet CUSTOM  -->
-
+  {% if template.name == 'product' %}
+    {{ 'product-page.scss.css' | asset_url | stylesheet_tag }}
+  {% endif %}
   {{ content_for_header }}
   <!-- Algolia head -->
     {{ 'algolia_config.js' | asset_url | script_tag }}
