@@ -274,7 +274,7 @@
           <div class="product__media product__media--{{ media_layout }}" data-slider>
             {% assign width = '500' %}
             {% assign height = '375' %}
-            {% assign aspect_ratio = width | append: 'x' | append: height %}
+            {% assign aspect_ratio = width | append: 'x' | append: height | json %}
             {{ aspect_ratio }}
             {% assign i-size = product.media.size %}
 	        {% for i in (3..i-size) %}
