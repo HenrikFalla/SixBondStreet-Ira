@@ -20,7 +20,7 @@
         {% assign aspect_ratio_calculated = calc_width | divided_by: asp_height %}
         {{ asp_width }}
         {{ asp_height }}
-        {{ aspect_ratio_calculated }}
+        {{ aspect_ratio }}
         <img
             class="image__img lazyload {% if preload %}lazypreload{% endif %} {{ image_class }}"
             src="{{ image | img_url: '150x150' }}"
