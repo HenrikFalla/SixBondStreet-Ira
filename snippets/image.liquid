@@ -24,7 +24,7 @@
         <img
             class="image__img lazyload {% if preload %}lazypreload{% endif %} {{ image_class }}"
             src="{{ image | img_url: '150x150' }}"
-            data-src="{{ img_url }}"
+            data-src="{{ img_url: aspect_ratio }}"
             data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
             data-aspectratio="{{ aspect_ratio_calculated }}"
             data-sizes="auto"
