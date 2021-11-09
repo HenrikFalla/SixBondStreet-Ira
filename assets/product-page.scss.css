@@ -1,9 +1,5 @@
-input.qtyplus {
+input.qtyplus, input.qtyminus {
     width: 25px;
     height: 25px;
-}
-
-input.qtyminus {
-    width: 25px;
-    height: 25px;
+    cursor: pointer;
 }
