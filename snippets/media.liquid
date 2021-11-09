@@ -12,7 +12,7 @@
   {%- if media.media_type == 'image' -%}
     <a class="media__image" href="#" data-open="{{ media.id }}">
         {% if aspect_ratio %}
-            {% render 'image' with image: media, aspect_ratio: aspect_ratio, height: height, width: width %}
+            {% render 'image' with image: media, aspect_ratio: aspect_ratio, asp_height: height, asp_width: width %}
         {% else %}
             {% render 'image' with image: media %}
         {% endif %}
