@@ -273,7 +273,7 @@
         <div class="product__media-container secondary-gallery desktop-only">
           <div class="product__media product__media--{{ media_layout }}" data-slider>
             {% assign crop = 'center' %}
-            {% assign i-size = product.media.size %}
+            {% assign i-size = product.media.size | minus: 1 %}
             {{ i-size }}
 	        {% for i in (3..i-size) %}
                 {{ i }}
