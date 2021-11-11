@@ -2,8 +2,9 @@ input.qtyminus, input.qtyplus {
     -webkit-appearance: none;
     border-radius: 2px;
     border: 1px solid #e3dede;
-    padding: 8px;
-    padding-top: 2px;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 input.qtyplus {
     padding-top: 3px;
