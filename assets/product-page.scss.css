@@ -1,28 +1,27 @@
-input.qtyplus, input.qtyminus {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+input.qtyminus, input.qtyplus {
+    -webkit-appearance: none;
     border-radius: 2px;
     border: 1px solid #e3dede;
-    padding-top: 0px;
-    margin-top: 2.5px;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 input.qtyplus {
-    padding-top: 1px;
+    padding-top: 3px;
 }
-.pf-container__qty .pf-element {
+    .pf-container__qty .pf-element {
     display: flex;
     flex-direction: row;
+    padding: 0;
+    height: 25px;
+    margin-top: 12px;
+    margin-right: 12px;
 }
 .pf-container__qty .pf-element .pf-input {
     padding-top: 1px;
     height: 25px;
     width: 25px;
     text-align: center;
-}
-.pf-container__qty .pf-element {
-    padding: 6px;
-    padding-top: calc(var(--font-size-body-base) * 1);
 }
 /* Secondary Gallery (Desktop only) */
 .secondary-gallery .product__media {
