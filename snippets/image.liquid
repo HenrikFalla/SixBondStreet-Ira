@@ -2,6 +2,7 @@
 {%- assign height = image.height | times: 1.0 | default: 1.0 -%}
 {%- assign width = image.width | times: 1.0 | default: 1.0 -%}
 
+
 {%- assign padding_top = height | divided_by: width | times: 100 | append: "%" -%}
 
 {%- if id == blank -%}
@@ -14,15 +15,27 @@
     style="padding-top: {{ padding_top }}"
   {% endunless %}
 >
-  <img
-    class="image__img lazyload {% if preload %}lazypreload{% endif %} {{ image_class }}"
-    src="{{ image | img_url: '150x150' }}"
-    data-src="{{ img_url }}"
-    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-    data-aspectratio="{{ image.aspect_ratio }}"
-    data-sizes="auto"
-    alt="{{ image.alt | escape }}"
-  >
+    {% if crop %}
+        <img
+            class="image__img lazyload {% if preload %}lazypreload{% endif %} {{ image_class }}"
+            src="{{ image | img_url: '150x150' }}"
+            data-src="{{ image | img_url: '450x', crop: 'center' }}"
+            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+            data-aspectratio="{{ aspect_ratio_calculated }}"
+            data-sizes="auto"
+            alt="{{ image.alt | escape }}"
+          >
+    {% else %}
+          <img
+            class="image__img lazyload {% if preload %}lazypreload{% endif %} {{ image_class }}"
+            src="{{ image | img_url: '150x150' }}"
+            data-src="{{ img_url }}"
+            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+            data-aspectratio="{{ image.aspect_ratio }}"
+            data-sizes="auto"
+            alt="{{ image.alt | escape }}"
+          >
+    {% endif %}
 </div>
 
 <noscript>

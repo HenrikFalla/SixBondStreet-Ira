@@ -24,3 +24,25 @@ input.qtyplus {
     padding: 6px;
     padding-top: calc(var(--font-size-body-base) * 1);
 }
+/* Secondary Gallery (Desktop only) */
+.secondary-gallery .product__media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.secondary-gallery .product__media-item {
+    float: none;
+    display: block;
+}
+/* Lightbox */
+.lightbox__images .flickity-viewport{
+    max-height: 100vh;
+}
+.lightbox__image .image {
+    display: flex;
+    justify-content: center;
+}
+.lightbox__image .image img {
+    max-height: 100vh;
+    width: auto;
+}
