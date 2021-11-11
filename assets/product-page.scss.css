@@ -34,3 +34,12 @@ input.qtyplus {
     float: none;
     display: block;
 }
+/* Lightbox */
+.lightbox__image .image {
+    display: flex;
+    justify-content: center;
+}
+.lightbox__image .image img {
+    max-height: 100vh;
+    width: auto;
+}
