@@ -35,6 +35,9 @@ input.qtyplus {
     display: block;
 }
 /* Lightbox */
+.lightbox__images .flickity-viewport{
+    max-height: 100vh;
+}
 .lightbox__image .image {
     display: flex;
     justify-content: center;
