@@ -61,6 +61,8 @@
   {% render 'theme-setup' %}
   {% render 'theme-setting-vars' %}
   {{ 'index.scss.css' | asset_url | stylesheet_tag }}
+    <link rel="preload" href="{{ 'index-deferred.scss.css | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
+    <noscript><link rel="stylesheet" href="{{ 'index-deferred.scss.css | asset_url }}"></noscript>
   <!-- SixBondStreet CUSTOM -->
   {{ 'sixbond-custom.scss.css' | asset_url | stylesheet_tag }}
   <!-- END SixBondStreet CUSTOM  -->
