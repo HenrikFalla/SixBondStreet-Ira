@@ -1,5 +1,4 @@
-{% assign settings = section.settings %}
-{% assign nosto_settings = 'frontpage-nosto-' | append: settings.nosto.nosto-id %}
+{% assign nosto_settings = 'frontpage-nosto-' | append: sectipon.settings.nosto-id %}
 {{ nosto_settings }}
 {% render 'nosto-element', id: 'frontpage-nosto-{{ settings.nosto_section.nosto-id}}'%}
 {% schema %}
