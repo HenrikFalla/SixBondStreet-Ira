@@ -971,6 +971,12 @@
           "per_row": 4,
           "aspect_ratio": "natural"
         }
+      },
+      "1637248375ff2240f0": {
+        "type": "nosto--dynamic",
+        "settings": {
+          "nosto": 1
+        }
       }
     },
     "content_for_index": [
@@ -989,7 +995,8 @@
       "16329855288f7a5eb8",
       "16342916002aed89e6",
       "1634540189e5c83ea4",
-      "1600315479900"
+      "1600315479900",
+      "1637248375ff2240f0"
     ]
   },
   "presets": {
