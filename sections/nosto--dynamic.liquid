@@ -1,6 +1,13 @@
-{% assign nosto_settings = 'frontpage-nosto-' | append: section.settings.nosto %}
-{{ nosto_settings }}
-{% render 'nosto-element', id: {{ nosto_settings }} %}
+{% assign nosto_setting = section.settings.nosto %}
+{% if nosto_setting == 1 %}
+    {% render 'nosto-element', id: 'frontpage-nosto-1' %}
+{% elsif nosto_setting == 2 %}
+    {% render 'nosto-element', id: 'frontpage-nosto-2' %}
+{% elsif nosto_setting == 3 %}
+    {% render 'nosto-element', id: 'frontpage-nosto-3' %}
+{% elsif nosto_setting == 4 %}
+    {% render 'nosto-element', id: 'frontpage-nosto-4' %}
+{% endif %}
 {% schema %}
     {
         "name": "Nosto",
