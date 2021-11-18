@@ -1,4 +1,4 @@
-{% assign nosto_settings = 'frontpage-nosto-' | append: sectipon.settings.nosto-id %}
+{% assign nosto_settings = 'frontpage-nosto-' | append: section.settings.nosto %}
 {{ nosto_settings }}
 {% render 'nosto-element', id: 'frontpage-nosto-{{ settings.nosto_section.nosto-id}}'%}
 {% schema %}
@@ -7,7 +7,7 @@
         "class": "nosto-section",
         "settings": [
             {
-                "id": "nosto-id",
+                "id": "nosto",
                 "type": "range",
                 "label": "Select which nosto section to display",
                 "info": "Numbers 1 through 4 reference spesific sections set up in the nosto admin panel",
