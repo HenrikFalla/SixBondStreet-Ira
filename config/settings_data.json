@@ -972,6 +972,23 @@
           "per_row": 4,
           "aspect_ratio": "natural"
         }
+      },
+      "1637319215d5db3082": {
+        "type": "image-with-text--dynamic",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/forside_kontraster.jpg",
+          "video_url": "",
+          "image_width": "standard",
+          "image_position": "left",
+          "title": "Kontraster",
+          "text": "<p>Interiør uten noen form for kontrast kan ofte oppfattes som monotont og blasst. <\/p><p>Les mer om hvordan du går frem når du skal bruke kontrast som virkemiddel.<\/p>",
+          "max_width_text": 34,
+          "link": "\/pages\/gi-hjemmet-ditt-energi-ved-bruk-av-kontraster",
+          "link_text": "Les mer her",
+          "enable_contrast": true,
+          "enable_full_width": false
+        }
       }
     },
     "content_for_index": [
@@ -979,6 +996,7 @@
       "1601240654390",
       "1632985524a87701b3",
       "163516359475b3ea53",
+      "1637319215d5db3082",
       "1600315431677",
       "1601498256106",
       "1634467668d8706b5a",
