@@ -1321,3 +1321,10 @@ img#trygg-logo {
 .nosto-ribbon {
     opacity: 1!important;
 }
+#frontpage-nosto-1 .nosto-block, #frontpage-nosto-1 .nosto-block a, #frontpage-nosto-1 .nosto-block span,
+#frontpage-nosto-2 .nosto-block, #frontpage-nosto-2 .nosto-block a, #frontpage-nosto-2 .nosto-block span,
+#frontpage-nosto-3 .nosto-block, #frontpage-nosto-3 .nosto-block a, #frontpage-nosto-3 .nosto-block span,
+#frontpage-nosto-4 .nosto-block, #frontpage-nosto-4 .nosto-block a, #frontpage-nosto-4 .nosto-block span {
+    font-family: 'Raleway';
+    font-weight: 400;
+}
