@@ -1357,8 +1357,8 @@ img#trygg-logo {
 #notfound-nosto-1 .nosto-header,
 #notfound-nosto-2 .nosto-header {
     font-weight: 400!important;
-    text-align: left;
-    padding-left: 12px;
+    text-align: left!important;
+    margin-left: 12px;
 }
 .nosto-product-info {
     padding-left: 12px;
