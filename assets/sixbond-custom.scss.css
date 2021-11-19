@@ -1363,6 +1363,8 @@ img#trygg-logo {
 .nosto-product-info {
     padding-left: 12px;
 }
-#categorypage-nosto-2, #frontpage-nosto-3, #productpage-nosto-3, #searchpage-nosto-2 {
+.nosto_element {
     width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
 }
