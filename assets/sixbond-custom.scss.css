@@ -1325,6 +1325,12 @@ img#trygg-logo {
 #frontpage-nosto-2 .nosto-block, #frontpage-nosto-2 .nosto-block a, #frontpage-nosto-2 .nosto-block span,
 #frontpage-nosto-3 .nosto-block, #frontpage-nosto-3 .nosto-block a, #frontpage-nosto-3 .nosto-block span,
 #frontpage-nosto-4 .nosto-block, #frontpage-nosto-4 .nosto-block a, #frontpage-nosto-4 .nosto-block span {
-    font-family: 'Raleway';
+    font-family: 'Raleway'!important;
     font-weight: 400;
+}
+#frontpage-nosto-1 .nosto-header,
+#frontpage-nosto-2 .nosto-header,
+#frontpage-nosto-3 .nosto-header,
+#frontpage-nosto-4 .nosto-header {
+    font-weight: 400;;
 }
