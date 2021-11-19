@@ -1382,4 +1382,5 @@ img#trygg-logo {
     padding-bottom: 100%;
     background: rgb(127 93 0 / 1%);
     z-index: 10000;
+    border-radius: 5px;
 }
