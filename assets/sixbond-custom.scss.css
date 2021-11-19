@@ -1368,3 +1368,18 @@ img#trygg-logo {
     padding-left: 16px;
     padding-right: 16px;
 }
+.nosto-image-container {
+    max-height: 0px!important;
+    padding-bottom: 100%;
+}
+.nosto-block a:after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 100%;
+    background: rgb(127 43 35 / 1%);
+    z-index: 10000;
+}
