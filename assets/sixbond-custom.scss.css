@@ -1328,3 +1328,9 @@ img#trygg-logo {
     font-family: 'Raleway';
     font-weight: 400;
 }
+#frontpage-nosto-1 .nosto-product-info,
+#frontpage-nosto-2 .nosto-product-info,
+#frontpage-nosto-3 .nosto-product-info,
+#frontpage-nosto-4 .nosto-product-info {
+    text-align: left;
+}
