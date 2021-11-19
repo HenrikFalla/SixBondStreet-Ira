@@ -1332,5 +1332,5 @@ img#trygg-logo {
 #frontpage-nosto-2 .nosto-header,
 #frontpage-nosto-3 .nosto-header,
 #frontpage-nosto-4 .nosto-header {
-    font-weight: 400;;
+    font-weight: 400!important;
 }
