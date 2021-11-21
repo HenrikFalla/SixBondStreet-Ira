@@ -101,6 +101,7 @@
           },
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "title": "Vi flytter lager. Det må påregnes noe forsinkelse ved levering.",
               "link": "",
