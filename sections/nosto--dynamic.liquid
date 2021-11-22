@@ -1,0 +1,36 @@
+{% liquid 
+    assign nosto_setting = section.settings.nosto
+    if nosto_setting == 1
+        render 'nosto-element', id: 'frontpage-nosto-1'
+    elsif nosto_setting == 2
+        render 'nosto-element', id: 'frontpage-nosto-2'
+    elsif nosto_setting == 3
+        render 'nosto-element', id: 'frontpage-nosto-3'
+    elsif nosto_setting == 4
+        render 'nosto-element', id: 'frontpage-nosto-4'
+    endif
+%}
+{% schema %}
+    {
+        "name": "Nosto",
+        "class": "nosto-section",
+        "settings": [
+            {
+                "id": "nosto",
+                "type": "range",
+                "label": "Select which nosto section to display",
+                "info": "Numbers 1 through 4 reference spesific sections set up in the nosto admin panel",
+                "min": 1,
+                "max": 4,
+                "step": 1,
+                "default": 1
+            }
+        ],
+        "presets": [
+            {
+                "name": "Nosto",
+                "category": "Product"
+            }
+        ]
+    }
+{% endschema %}

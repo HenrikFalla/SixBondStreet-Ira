@@ -1317,3 +1317,70 @@ img#trygg-logo {
         right: 133.1px !important;
     }
 }
+/* Nosto */
+.nosto-ribbon {
+    opacity: 1!important;
+}
+#frontpage-nosto-1 .nosto-block, #frontpage-nosto-1 .nosto-block a, #frontpage-nosto-1 .nosto-block span,
+#frontpage-nosto-2 .nosto-block, #frontpage-nosto-2 .nosto-block a, #frontpage-nosto-2 .nosto-block span,
+#frontpage-nosto-3 .nosto-block, #frontpage-nosto-3 .nosto-block a, #frontpage-nosto-3 .nosto-block span,
+#frontpage-nosto-4 .nosto-block, #frontpage-nosto-4 .nosto-block a, #frontpage-nosto-4 .nosto-block span,
+#productpage-nosto-1 .nosto-block, #productpage-nosto-1 .nosto-block a, #productpage-nosto-1 .nosto-block span,
+#productpage-nosto-2 .nosto-block, #productpage-nosto-2 .nosto-block a, #productpage-nosto-2 .nosto-block span,
+#productpage-nosto-3 .nosto-block, #productpage-nosto-3 .nosto-block a, #productpage-nosto-3 .nosto-block span,
+#categorypage-nosto-1 .nosto-block, #categorypage-nosto-1 .nosto-block a, #categorypage-nosto-1 .nosto-block span,
+#categorypage-nosto-2 .nosto-block, #categorypage-nosto-2 .nosto-block a, #categorypage-nosto-2 .nosto-block span,
+#cartpage-nosto-1 .nosto-block, #cartpage-nosto-1 .nosto-block a, #cartpage-nosto-1 .nosto-block span,
+#cartpage-nosto-2 .nosto-block, #cartpage-nosto-2 .nosto-block a, #cartpage-nosto-2 .nosto-block span,
+#cartpage-nosto-3 .nosto-block, #cartpage-nosto-3 .nosto-block a, #cartpage-nosto-3 .nosto-block span,
+#searchpage-nosto-1 .nosto-block, #searchpage-nosto-1 .nosto-block a, #searchpage-nosto-1 .nosto-block span,
+#searchpage-nosto-2 .nosto-block, #searchpage-nosto-2 .nosto-block a, #searchpage-nosto-2 .nosto-block span,
+#notfound-nosto-1 .nosto-block, #notfound-nosto-1 .nosto-block a, #notfound-nosto-1 .nosto-block span,
+#notfound-nosto-2 .nosto-block, #notfound-nosto-2 .nosto-block a, #notfound-nosto-2 .nosto-block span {
+    font-family: 'Raleway'!important;
+    font-weight: 400;
+}
+#frontpage-nosto-1 .nosto-header,
+#frontpage-nosto-2 .nosto-header,
+#frontpage-nosto-3 .nosto-header,
+#frontpage-nosto-4 .nosto-header,
+#productpage-nosto-1 .nosto-header,
+#productpage-nosto-2 .nosto-header,
+#productpage-nosto-3 .nosto-header,
+#categorypage-nosto-1 .nosto-header,
+#categorypage-nosto-2 .nosto-header,
+#cartpage-nosto-1 .nosto-header,
+#cartpage-nosto-2 .nosto-header,
+#cartpage-nosto-3 .nosto-header,
+#searchpage-nosto-1 .nosto-header,
+#searchpage-nosto-2	.nosto-header,
+#notfound-nosto-1 .nosto-header,
+#notfound-nosto-2 .nosto-header {
+    font-weight: 400!important;
+    text-align: left!important;
+    margin-left: 12px;
+}
+.nosto-product-info {
+    padding-left: 12px;
+}
+.nosto_element {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.nosto-image-container {
+    max-height: 0px!important;
+    padding-bottom: 100%;
+}
+.nosto-block a:after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 100%;
+    background: rgb(127 93 0 / 1%);
+    z-index: 10000;
+    border-radius: 5px;
+}
