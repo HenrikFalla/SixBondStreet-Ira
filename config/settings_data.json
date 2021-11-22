@@ -976,7 +976,6 @@
       },
       "1637319215d5db3082": {
         "type": "image-with-text--dynamic",
-        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/forside_kontraster.jpg",
           "video_url": "",
