@@ -230,21 +230,6 @@
       "1600315401018": {
         "type": "slideshow--dynamic",
         "blocks": {
-          "1600315401018-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/B17R1893.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/B17R1893.jpg",
-              "video_url": "https:\/\/player.vimeo.com\/external\/649427732.hd.mp4?s=92e3e19777642adcd1414879ff4f3c5675458e0e&profile_id=175",
-              "meta": "Nyhet",
-              "title": "Ny tekstilkolleksjon",
-              "subheading": "<p><br\/>Vi lanserer en ny, fargerik og sofistikert tekstilkolleksjon.<br\/><\/p>",
-              "max_width_subheading": 30,
-              "link_text": "Drøm deg bort her",
-              "link": "shopify:\/\/pages\/v-r-tekstilkolleksjon",
-              "alignment": "center_center"
-            }
-          },
           "0d505ca3-4094-4a11-b19b-30fa90729e9b": {
             "type": "image",
             "disabled": true,
@@ -260,11 +245,42 @@
               "link": "shopify:\/\/collections\/et-bedre-tekstilvalg",
               "alignment": "center_center"
             }
+          },
+          "b21a831d-0821-4c1c-88a1-05b7eddc49ab": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/leveringforjul_stue.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/leveringforjul_stue_mobil.jpg",
+              "video_url": "",
+              "meta": "Stue",
+              "title": "Rask levering",
+              "subheading": "<p>Her finner du garantert noe du ønsker deg til stuen din. Alt du finner her er lagerført. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
+              "max_width_subheading": 30,
+              "link_text": "Se utvalget her",
+              "link": "\/collections\/levering-f-r-jul-stue",
+              "alignment": "left_center"
+            }
+          },
+          "1600315401018-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B17R1893.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/B17R1893.jpg",
+              "video_url": "https:\/\/player.vimeo.com\/external\/649427732.hd.mp4?s=92e3e19777642adcd1414879ff4f3c5675458e0e&profile_id=175",
+              "meta": "Nyhet",
+              "title": "Ny tekstilkolleksjon",
+              "subheading": "<p><br\/>Vi lanserer en ny, fargerik og sofistikert tekstilkolleksjon.<br\/><\/p>",
+              "max_width_subheading": 30,
+              "link_text": "Drøm deg bort her",
+              "link": "shopify:\/\/pages\/v-r-tekstilkolleksjon",
+              "alignment": "center_center"
+            }
           }
         },
         "block_order": [
-          "1600315401018-0",
-          "0d505ca3-4094-4a11-b19b-30fa90729e9b"
+          "0d505ca3-4094-4a11-b19b-30fa90729e9b",
+          "b21a831d-0821-4c1c-88a1-05b7eddc49ab",
+          "1600315401018-0"
         ],
         "settings": {
           "desktop_height": 100,
@@ -937,16 +953,16 @@
       "163516359475b3ea53": {
         "type": "collection-list--dynamic",
         "blocks": {
-          "163516359475b3ea53-0": {
-            "type": "collection",
-            "settings": {
-              "collection": "levering-f-r-jul-stue"
-            }
-          },
           "163516359475b3ea53-1": {
             "type": "collection",
             "settings": {
               "collection": "levering-for-jul-spisestue"
+            }
+          },
+          "163516359475b3ea53-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "levering-for-jul-soverom"
             }
           },
           "f532988b-2800-46e6-9565-9a3a7bd9e19a": {
@@ -955,18 +971,18 @@
               "collection": "levering-for-jul-interior-tekstiler"
             }
           },
-          "163516359475b3ea53-2": {
+          "163516359475b3ea53-0": {
             "type": "collection",
             "settings": {
-              "collection": "levering-for-jul-soverom"
+              "collection": "levering-f-r-jul-stue"
             }
           }
         },
         "block_order": [
-          "163516359475b3ea53-0",
           "163516359475b3ea53-1",
+          "163516359475b3ea53-2",
           "f532988b-2800-46e6-9565-9a3a7bd9e19a",
-          "163516359475b3ea53-2"
+          "163516359475b3ea53-0"
         ],
         "settings": {
           "title": "Levering før jul",
