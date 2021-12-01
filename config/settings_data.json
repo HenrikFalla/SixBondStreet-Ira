@@ -385,41 +385,6 @@
           "aspect_ratio": "natural"
         }
       },
-      "1600315451525": {
-        "type": "collection-list--dynamic",
-        "disabled": true,
-        "blocks": {
-          "1600315451525-0": {
-            "type": "collection",
-            "settings": {
-              "collection": "bokser"
-            }
-          },
-          "1600315451525-1": {
-            "type": "collection",
-            "settings": {
-              "collection": "louise-roe"
-            }
-          },
-          "6949c029-563d-4b15-911c-f23b77aca5a8": {
-            "type": "collection",
-            "disabled": true,
-            "settings": {
-              "collection": ""
-            }
-          }
-        },
-        "block_order": [
-          "1600315451525-0",
-          "1600315451525-1",
-          "6949c029-563d-4b15-911c-f23b77aca5a8"
-        ],
-        "settings": {
-          "title": "",
-          "per_row": 2,
-          "aspect_ratio": "landscape"
-        }
-      },
       "1600315468934": {
         "type": "slideshow--dynamic",
         "blocks": {
@@ -645,9 +610,9 @@
       "1601499234365": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "louise-roe",
-          "title": "Louise Roe",
-          "per_row": 3,
+          "collection": "levering-for-jul-interior-tekstiler",
+          "title": "Perfekte julegaver",
+          "per_row": 4,
           "rows": 1,
           "aspect_ratio": "natural"
         }
@@ -747,16 +712,6 @@
           "circle": true
         }
       },
-      "16329855288f7a5eb8": {
-        "type": "newsletter--dynamic",
-        "disabled": true,
-        "settings": {
-          "title": "Meld deg på vårt nyhetsbrev",
-          "subheading": "<p>Hold deg oppdatert på nyheter, trender og kampanjer ved å melde deg på vårt nyhetsbrev. <\/p>",
-          "subheading_max_width": 70,
-          "placeholder": "Skriv inn din e-postadressen og trykk enter"
-        }
-      },
       "extended-footer": {
         "type": "extended-footer",
         "blocks": {
@@ -796,19 +751,6 @@
           "58244e45-cb62-4762-9da7-7b230ae105c5"
         ],
         "settings": {
-        }
-      },
-      "16342916002aed89e6": {
-        "type": "video--dynamic",
-        "disabled": true,
-        "settings": {
-          "title": "Inspirasjon hjemme hos stilikonet Gine Margrethe",
-          "subheading": "<p>Gine Margrethe Qvale er til stor inspirasjon for mange. Hun inspirerer både på mote- og interiørfronten med sin elegante, kreative og fargerike stil. <\/p>",
-          "video_url": "https:\/\/www.youtube.com\/watch?v=RabsUXjOLOA",
-          "image": "shopify:\/\/shop_images\/forside_ginemargrethe.jpg",
-          "opacity_overlay": 50,
-          "color_overlay": "#000000",
-          "color_text": "#ffffff"
         }
       },
       "1634467668d8706b5a": {
@@ -1071,12 +1013,9 @@
       "1638345766debd5a11",
       "1634467668d8706b5a",
       "1634468547c34ee1d1",
-      "1600315451525",
       "1600315418706",
       "1601499234365",
       "1600315468934",
-      "16329855288f7a5eb8",
-      "16342916002aed89e6",
       "1634540189e5c83ea4",
       "1600315479900"
     ]
