@@ -1037,6 +1037,57 @@
           "enable_contrast": true,
           "enable_full_width": false
         }
+      },
+      "1638345766debd5a11": {
+        "type": "slideshow--dynamic",
+        "blocks": {
+          "1638345766debd5a11-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B17R1893.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/kontraster_varmt_kaldt_001.jpg",
+              "video_url": "https:\/\/player.vimeo.com\/external\/649427732.hd.mp4?s=92e3e19777642adcd1414879ff4f3c5675458e0e&profile_id=175",
+              "meta": "Nyhet",
+              "title": "Ny tekstilkolleksjon",
+              "subheading": "<p>Vi lanserer en ny, fargerik og sofistikert tekstilkolleksjon.<\/p>",
+              "max_width_subheading": 30,
+              "link_text": "Drøm deg bort her",
+              "link": "\/pages\/v-r-tekstilkolleksjon",
+              "alignment": "left_center"
+            }
+          },
+          "1638345766debd5a11-1": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "video_url": "",
+              "meta": "Slideshow",
+              "title": "This is your slideshow",
+              "subheading": "<p>Use it to make a dramatic first impression with high-quality imagery and minimal text. Using the button below to link to whatever is most appropriate.<\/p>",
+              "max_width_subheading": 30,
+              "link_text": "Shop now",
+              "link": "#",
+              "alignment": "left_center"
+            }
+          }
+        },
+        "block_order": [
+          "1638345766debd5a11-0",
+          "1638345766debd5a11-1"
+        ],
+        "settings": {
+          "desktop_height": 100,
+          "mobile_height": 100,
+          "opacity_overlay": 60,
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#b8b8b8",
+          "color_background_button": "#000000",
+          "color_text_button": "#ffffff",
+          "duration_autoplay": 4,
+          "enable_parallax": false,
+          "enable_full_width": false
+        }
       }
     },
     "content_for_index": [
@@ -1048,6 +1099,7 @@
       "1637319215d5db3082",
       "1600315431677",
       "1601498256106",
+      "1638345766debd5a11",
       "1634467668d8706b5a",
       "1634468547c34ee1d1",
       "1600315451525",
