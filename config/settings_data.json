@@ -967,6 +967,7 @@
       },
       "163516359475b3ea53": {
         "type": "collection-list--dynamic",
+        "disabled": true,
         "blocks": {
           "163516359475b3ea53-1": {
             "type": "collection",
@@ -1018,7 +1019,7 @@
           "link": "\/pages\/gi-hjemmet-ditt-energi-ved-bruk-av-kontraster",
           "link_text": "Les mer her",
           "enable_contrast": true,
-          "enable_full_width": false
+          "enable_full_width": true
         }
       },
       "16381949978e24d4c3": {
