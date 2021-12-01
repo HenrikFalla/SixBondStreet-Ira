@@ -263,8 +263,8 @@
           "abac927d-823a-42ee-a6bf-09a10aa5b901": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/julegaver_forside_laptop.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/julegaver_forside_mobil.jpg",
+              "image": "shopify:\/\/shop_images\/forside_laptop_julegaver.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/forside_mobil_julegaver.jpg",
               "video_url": "",
               "meta": "Perfekte julegaver",
               "title": "Rask levering",
