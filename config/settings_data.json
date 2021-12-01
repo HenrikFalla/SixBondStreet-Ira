@@ -260,6 +260,21 @@
               "alignment": "left_center"
             }
           },
+          "abac927d-823a-42ee-a6bf-09a10aa5b901": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/julegaver_forside_laptop.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/julegaver_forside_mobil.jpg",
+              "video_url": "",
+              "meta": "Perfekte julegaver",
+              "title": "Rask levering",
+              "subheading": "<p>Årets fineste julegaver finner du her. Den heldige mottakeren vil ha glede av gaven i lang tid. Alt du finner her er lagerført og leveringsklart i god tid før jul. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
+              "max_width_subheading": 30,
+              "link_text": "Se utvalget her",
+              "link": "\/collections\/levering-for-jul-interior-tekstiler",
+              "alignment": "left_center"
+            }
+          },
           "1600315401018-0": {
             "type": "image",
             "settings": {
@@ -279,6 +294,7 @@
         "block_order": [
           "b21a831d-0821-4c1c-88a1-05b7eddc49ab",
           "f4d5b79a-8745-4638-96aa-754fd01434df",
+          "abac927d-823a-42ee-a6bf-09a10aa5b901",
           "1600315401018-0"
         ],
         "settings": {
