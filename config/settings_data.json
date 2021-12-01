@@ -242,7 +242,7 @@
               "max_width_subheading": 30,
               "link_text": "Se utvalget her",
               "link": "\/collections\/levering-f-r-jul-stue",
-              "alignment": "left_center"
+              "alignment": "center_center"
             }
           },
           "f4d5b79a-8745-4638-96aa-754fd01434df": {
@@ -257,7 +257,7 @@
               "max_width_subheading": 30,
               "link_text": "Se utvalget her",
               "link": "\/collections\/levering-for-jul-spisestue",
-              "alignment": "left_center"
+              "alignment": "center_center"
             }
           },
           "abac927d-823a-42ee-a6bf-09a10aa5b901": {
@@ -272,7 +272,7 @@
               "max_width_subheading": 30,
               "link_text": "Se utvalget her",
               "link": "\/collections\/levering-for-jul-interior-tekstiler",
-              "alignment": "left_center"
+              "alignment": "center_center"
             }
           }
         },
