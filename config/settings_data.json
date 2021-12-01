@@ -1037,27 +1037,12 @@
               "max_width_subheading": 30,
               "link_text": "Drøm deg bort her",
               "link": "\/pages\/v-r-tekstilkolleksjon",
-              "alignment": "left_center"
-            }
-          },
-          "1638345766debd5a11-1": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "video_url": "",
-              "meta": "Slideshow",
-              "title": "This is your slideshow",
-              "subheading": "<p>Use it to make a dramatic first impression with high-quality imagery and minimal text. Using the button below to link to whatever is most appropriate.<\/p>",
-              "max_width_subheading": 30,
-              "link_text": "Shop now",
-              "link": "#",
-              "alignment": "left_center"
+              "alignment": "center_center"
             }
           }
         },
         "block_order": [
-          "1638345766debd5a11-0",
-          "1638345766debd5a11-1"
+          "1638345766debd5a11-0"
         ],
         "settings": {
           "desktop_height": 100,
