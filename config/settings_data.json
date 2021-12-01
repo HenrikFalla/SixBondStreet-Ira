@@ -274,28 +274,12 @@
               "link": "\/collections\/levering-for-jul-interior-tekstiler",
               "alignment": "left_center"
             }
-          },
-          "1600315401018-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/B17R1893.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/B17R1893.jpg",
-              "video_url": "https:\/\/player.vimeo.com\/external\/649427732.hd.mp4?s=92e3e19777642adcd1414879ff4f3c5675458e0e&profile_id=175",
-              "meta": "Nyhet",
-              "title": "Ny tekstilkolleksjon",
-              "subheading": "<p><br\/>Vi lanserer en ny, fargerik og sofistikert tekstilkolleksjon.<br\/><\/p>",
-              "max_width_subheading": 30,
-              "link_text": "Drøm deg bort her",
-              "link": "shopify:\/\/pages\/v-r-tekstilkolleksjon",
-              "alignment": "center_center"
-            }
           }
         },
         "block_order": [
           "b21a831d-0821-4c1c-88a1-05b7eddc49ab",
           "f4d5b79a-8745-4638-96aa-754fd01434df",
-          "abac927d-823a-42ee-a6bf-09a10aa5b901",
-          "1600315401018-0"
+          "abac927d-823a-42ee-a6bf-09a10aa5b901"
         ],
         "settings": {
           "desktop_height": 100,
