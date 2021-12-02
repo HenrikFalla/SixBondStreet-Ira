@@ -988,7 +988,7 @@
         ],
         "settings": {
           "desktop_height": 100,
-          "mobile_height": 100,
+          "mobile_height": 50,
           "opacity_overlay": 0,
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
@@ -997,7 +997,7 @@
           "color_text_button": "#ffffff",
           "duration_autoplay": 4,
           "enable_parallax": false,
-          "enable_full_width": false
+          "enable_full_width": true
         }
       }
     },
