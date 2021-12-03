@@ -999,10 +999,28 @@
           "enable_parallax": false,
           "enable_full_width": true
         }
+      },
+      "16385254706ef46bdf": {
+        "type": "image-with-text--dynamic",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_1.jpg",
+          "video_url": "",
+          "image_width": "standard",
+          "image_position": "right",
+          "title": "Gratis interiørkonsultasjon",
+          "text": "<p>Personlig møte med en interiørkonsulent via video, telefon eller i showroom.<\/p>",
+          "max_width_text": 34,
+          "link": "\/pages\/interiortjeneste",
+          "link_text": "Book time nå",
+          "enable_contrast": true,
+          "enable_full_width": false
+        }
       }
     },
     "content_for_index": [
       "1600315401018",
+      "16385254706ef46bdf",
       "16381949978e24d4c3",
       "1601240654390",
       "1632985524a87701b3",
