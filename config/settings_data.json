@@ -274,12 +274,29 @@
               "link": "\/collections\/levering-for-jul-interior-tekstiler",
               "alignment": "center_center"
             }
+          },
+          "7e700e3c-8313-4873-abd5-b58023311a2b": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/sofa_lagerfort_banner.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/sofa_lagerfort_banner.jpg",
+              "video_url": "",
+              "meta": "Sofa på lager",
+              "title": "Rask levering",
+              "subheading": "<p>Her finner du alle våre lagerførte sofaer. Vi har et bredt sortiment med ulike sofamodeller. <\/p>",
+              "max_width_subheading": 30,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/sofa-pa-lager",
+              "alignment": "center_center"
+            }
           }
         },
         "block_order": [
           "b21a831d-0821-4c1c-88a1-05b7eddc49ab",
           "f4d5b79a-8745-4638-96aa-754fd01434df",
-          "abac927d-823a-42ee-a6bf-09a10aa5b901"
+          "abac927d-823a-42ee-a6bf-09a10aa5b901",
+          "7e700e3c-8313-4873-abd5-b58023311a2b"
         ],
         "settings": {
           "desktop_height": 100,
