@@ -230,6 +230,21 @@
       "1600315401018": {
         "type": "slideshow--dynamic",
         "blocks": {
+          "f4d5b79a-8745-4638-96aa-754fd01434df": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/spisestue_forside_desember21.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/spisestue_forside_desember21.jpg",
+              "video_url": "",
+              "meta": "Spisestue",
+              "title": "Rask levering",
+              "subheading": "<p>Alt du finner her er lagerført og leveringsklart i god tid før jul. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
+              "max_width_subheading": 30,
+              "link_text": "Se utvalget her",
+              "link": "\/collections\/levering-for-jul-spisestue",
+              "alignment": "center_center"
+            }
+          },
           "b21a831d-0821-4c1c-88a1-05b7eddc49ab": {
             "type": "image",
             "settings": {
@@ -260,21 +275,6 @@
               "alignment": "center_center"
             }
           },
-          "f4d5b79a-8745-4638-96aa-754fd01434df": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/spisesstue_forside_blastoler.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/spisesstue_forside_blastoler.jpg",
-              "video_url": "",
-              "meta": "Spisestue",
-              "title": "Rask levering",
-              "subheading": "<p>Alt du finner her er lagerført og leveringsklart i god tid før jul. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
-              "max_width_subheading": 30,
-              "link_text": "Se utvalget her",
-              "link": "\/collections\/levering-for-jul-spisestue",
-              "alignment": "center_center"
-            }
-          },
           "7e700e3c-8313-4873-abd5-b58023311a2b": {
             "type": "image",
             "disabled": true,
@@ -293,9 +293,9 @@
           }
         },
         "block_order": [
+          "f4d5b79a-8745-4638-96aa-754fd01434df",
           "b21a831d-0821-4c1c-88a1-05b7eddc49ab",
           "abac927d-823a-42ee-a6bf-09a10aa5b901",
-          "f4d5b79a-8745-4638-96aa-754fd01434df",
           "7e700e3c-8313-4873-abd5-b58023311a2b"
         ],
         "settings": {
