@@ -395,8 +395,8 @@
       "1600315431677": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "nyheter",
-          "title": "Nyheter",
+          "collection": "louise-roe",
+          "title": "Louise Roe",
           "per_row": 4,
           "rows": 1,
           "aspect_ratio": "natural"
