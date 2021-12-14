@@ -825,8 +825,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/volare_grey_detail_3_1_3.jpg",
               "meta": "Nyheter",
-              "title": "Høstens nyheter",
-              "subheading": "<p>Se alle nyhetene for høsten<\/p>",
+              "title": "Vinterens nyheter",
+              "subheading": "<p>Se alle nyhetene for vinteren<\/p>",
               "max_width_subheading": 28,
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/nyheter",
