@@ -1048,7 +1048,7 @@
               "max_width_subheading": 28,
               "link_text": "Se utvalget her",
               "link": "#",
-              "alignment": "center_center",
+              "alignment": "center_bottom",
               "opacity_overlay": 50
             }
           },
