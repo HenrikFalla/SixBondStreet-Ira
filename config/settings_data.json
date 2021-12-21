@@ -610,6 +610,7 @@
       },
       "1601498256106": {
         "type": "image-with-text--dynamic",
+        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/lenox_hyttetekstiler_gra_bla_square.jpg",
           "video_url": "",
@@ -1035,12 +1036,11 @@
       },
       "164008427524d9f8aa": {
         "type": "collage--dynamic",
-        "disabled": true,
         "blocks": {
           "164008427524d9f8aa-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner_fjellhytte_kolleksjonen.jpg",
+              "image": "shopify:\/\/shop_images\/banner_fjellhytte_kolleksjonen_003.jpg",
               "video_url": "",
               "meta": "Nyhet",
               "title": "Fjellhytte kolleksjonen",
@@ -1048,8 +1048,8 @@
               "max_width_subheading": 28,
               "link_text": "Se utvalget her",
               "link": "#",
-              "alignment": "left_bottom",
-              "opacity_overlay": 60
+              "alignment": "center_center",
+              "opacity_overlay": 50
             }
           },
           "164008427524d9f8aa-1": {
@@ -1075,7 +1075,7 @@
         "settings": {
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
-          "color_subheading": "#b8b8b8",
+          "color_subheading": "#ffffff",
           "color_background_button": "#000000",
           "color_text_button": "#ffffff",
           "enable_full_width": true
