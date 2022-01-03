@@ -1080,16 +1080,64 @@
           "color_text_button": "#ffffff",
           "enable_full_width": true
         }
+      },
+      "1641219531a9e76cfa": {
+        "type": "collage--dynamic",
+        "blocks": {
+          "1641219531a9e76cfa-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_entree.jpg",
+              "video_url": "",
+              "meta": "Inspirasjon",
+              "title": "ENTRÉEN",
+              "subheading": "<p>Her finner du alt du trenger av møbler og interiørartikler for å skape et innbydende, stilstikkert og komplett førsteinntrykk i entréen.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/entreen",
+              "alignment": "left_center",
+              "opacity_overlay": 60
+            }
+          },
+          "1641219531a9e76cfa-1": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "video_url": "",
+              "meta": "Meta",
+              "title": "This is the Collage",
+              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Shop the collection",
+              "link": "#",
+              "alignment": "left_center",
+              "opacity_overlay": 60
+            }
+          }
+        },
+        "block_order": [
+          "1641219531a9e76cfa-0",
+          "1641219531a9e76cfa-1"
+        ],
+        "settings": {
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
+          "color_background_button": "#000000",
+          "color_text_button": "#ffffff",
+          "enable_full_width": true
+        }
       }
     },
     "content_for_index": [
       "164008427524d9f8aa",
       "16385254706ef46bdf",
       "1601498256106",
+      "1641219531a9e76cfa",
       "16381949978e24d4c3",
       "1600315401018",
-      "1632985524a87701b3",
       "1601240654390",
+      "1632985524a87701b3",
       "163516359475b3ea53",
       "1637319215d5db3082",
       "1600315431677",
