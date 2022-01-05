@@ -6,14 +6,17 @@
     {% else %}
       <input type="hidden" name="contact[tags]" value="newsletter">
       <div class="newsletter__input-container">
+        <label for="newsletterForm-{{id}}-emailInput" class="visually-hidden">{{ 'general.newsletter_form.email_placeholder' | t }}</label>
         <input
+          id="newsletterForm-{{id}}-emailInput"
           type="email"
-          class="input input--round"
+          class="input input--round text-input-on-dark-background"
           name="contact[email]"
           value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
           placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
           autocorrect="off"
           autocapitalize="off">
+          <button class="visually-hidden" type="submit">Submit</button>
       </div>
     {% endif %}
   {% endform %}

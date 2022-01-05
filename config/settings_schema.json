@@ -2,10 +2,10 @@
   {
     "name": "theme_info",
     "theme_name": "Ira",
-    "theme_version": "3.5.1",
+    "theme_version": "4.0.0",
     "theme_author": "Fluorescent Design Inc.",
-    "theme_documentation_url": "https:\/\/fluorescent.co\/help\/ira",
-    "theme_support_url": "https:\/\/fluorescent.co\/help\/contact"
+    "theme_documentation_url": "https://fluorescent.co/help/ira",
+    "theme_support_url": "https://fluorescent.co/help/contact"
   },
   {
     "name": {
@@ -384,7 +384,7 @@
     ]
   },
   {
-    "name": "Search",
+    "name": "Quick Search",
     "settings": [
       {
         "id": "search_max_result_size",
@@ -465,27 +465,6 @@
         "label": "Show quick shop quantity input",
         "info": "If quantity inputs are hidden, quantities will default to 1.",
         "default": false
-      },
-      {
-        "type": "checkbox",
-        "id": "cart_show_notes",
-        "label": "Enable cart notes",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "cart_terms_conditions_enable",
-        "label": "Enable terms and conditions checkbox"
-      },
-      {
-        "type": "text",
-        "id": "threshold",
-        "label": "Free Shipping Threshold"
-      },
-      {
-        "type": "url",
-        "id": "cart_terms_conditions_link",
-        "label": "Terms and conditions page"
       }
     ]
   },
@@ -500,55 +479,55 @@
         "type": "text",
         "id": "social_twitter_link",
         "label": "Twitter link",
-        "info": "https:\/\/twitter.com\/shopify"
+        "info": "https://twitter.com/shopify"
       },
       {
         "type": "text",
         "id": "social_facebook_link",
         "label": "Facebook link",
-        "info": "https:\/\/facebook.com\/shopify"
+        "info": "https://facebook.com/shopify"
       },
       {
         "type": "text",
         "id": "social_pinterest_link",
         "label": "Pinterest link",
-        "info": "https:\/\/pinterest.com\/shopify"
+        "info": "https://pinterest.com/shopify"
       },
       {
         "type": "text",
         "id": "social_instagram_link",
         "label": "Instagram link",
-        "info": "https:\/\/instagram.com\/shopify"
+        "info": "https://instagram.com/shopify"
       },
       {
         "type": "text",
         "id": "social_snapchat_link",
         "label": "Snapchat link",
-        "info": "https:\/\/snapchat.com\/add\/shopify"
+        "info": "https://snapchat.com/add/shopify"
       },
       {
         "type": "text",
         "id": "social_tumblr_link",
         "label": "Tumblr link",
-        "info": "https:\/\/shopify.tumblr.com"
+        "info": "https://shopify.tumblr.com"
       },
       {
         "type": "text",
         "id": "social_youtube_link",
         "label": "Youtube link",
-        "info": "https:\/\/youtube.com\/shopify"
+        "info": "https://youtube.com/shopify"
       },
       {
         "type": "text",
         "id": "social_vimeo_link",
         "label": "Vimeo link",
-        "info": "https:\/\/vimeo.com\/shopify"
+        "info": "https://vimeo.com/shopify"
       },
       {
         "type": "text",
         "id": "social_linkedin_link",
         "label": "LinkedIn link",
-        "info": "https:\/\/linkedin.com\/company\/shopify"
+        "info": "https://linkedin.com/company/shopify"
       }
     ]
   },

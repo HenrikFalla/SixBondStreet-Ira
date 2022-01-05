@@ -4,19 +4,10 @@
   endif
 
   assign current_variant = product.selected_or_first_available_variant
-  assign in_stock = false
-  if product.variants.size > 1
-      for variant in product.variants
-        if variant.inventory_quantity > 0
-            assign in_stock = true
-        endif
-      endfor
-    else
-        if current_variant.inventory_quantity > 0
-            assign in_stock = true
-        endif
-    endif
 
+  if aspect_ratio == blank
+    assign aspect_ratio = 'natural'
+  endif 
   assign disabled_image_style = false
   if aspect_ratio != 'natural'
     assign disabled_image_style = true
@@ -24,13 +15,19 @@
 -%}
 
 <div class="product-item product-item--{{ aspect_ratio }}">
-  {%- if placeholder -%}
+  {%- if product == blank -%}
     <div class="placeholder-image">
       {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
     </div>
-  {%- elsif product.featured_media -%}
+  {%- else -%}
     <div class="product-item__media">
-      <a class="product-item__image-link borders" href="{{ product.url }}">
+      <a class="product-item__image-link borders" href="{{ product.url }}" 
+        {%- if product -%}
+          title="{{product.title}}""
+        {%- else -%}
+          title="{{ 'sections.featured_products.placeholder.product_title' | t }}"
+        {%- endif -%}
+      >
         {%- if multiple_images -%}
           {% render 'image' with
             id: product.media[0].id,
@@ -44,12 +41,18 @@
             disable_style: true
           %}
         {%- else -%}
-          {% render 'image' with
-            id: product.featured_media.id,
-            image: product.featured_media,
-            wrapper_class: 'product-item__image',
-            disable_style: disabled_image_style
-          %}
+          {% if product.featured_media %}
+            {% render 'image' with
+              id: product.featured_media.id,
+              image: product.featured_media,
+              wrapper_class: 'product-item__image',
+              disable_style: disabled_image_style
+            %}
+          {% else %}
+            <div class="placeholder-image">
+              {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            </div>
+          {% endif %}
         {%- endif -%}
       </a>
       {% if product.available and settings.cart_enable_quick_shop %}
@@ -57,69 +60,41 @@
           <button class="btn btn--primary btn--full" data-quick-add="{{ product.handle }}">{{ 'product.quick_add' | t }}</button>
         </div>
       {% endif %}
-
-      <div class="product-item__stars">
-        <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
-      </div>
     </div>
   {%- endif -%}
 
   <div class="product-item__meta fs-body-base c-body">
     <div class="product-item__text ff-body">
-		<!-- SixBondStreet CUSTOM -->
-		{%- if product.handle -%}
-			{%- assign vendorHandle = product.vendor | handle -%}
-			{%- if collections[vendorHandle].products.size > 0 -%}
-			<a href="{{ collections[vendorHandle].url }}">
-			<div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div>
-            </a>
-			{%- else -%}
-			<div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
-			{%- endif -%}
-		{%- endif -%}
-		<!-- END SixBondStreet CUSTOM -->
-      {%- if placeholder -%}
-        <h4><a href="#">{{ 'sections.featured_products.placeholder.product_title' | t }}</a></h4>
+      {%- if product and product != blank -%}
+        <h4><a href="{{ product.url }}">{{ product.title }}</a></h4>
       {%- else -%}
-        <div class="product__label">
-            <h4><a href="{{ product.url }}">{{ product.title }}</a></h4>
-            {% unless in_stock == false %}
-                <div class="in_stock__variant_orb">
-                    <div class="in_stock__variant_orb_inner"></div>
-                </div>
-            {% endunless %}
-        </div>
+        <h4><a href="/" >{{ 'sections.featured_products.placeholder.product_title' | t }}</a></h4>
       {%- endif -%}
 
-      {% if placeholder %}
-        {{ 9999 | money }}
+      {% if product != blank %}
+        {% if product.compare_at_price > product.price %}
+          <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+          <s class="t-subdued">{{ product.compare_at_price | money }}</s>
 
-      {% elsif product.compare_at_price > product.price %}
-        <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
-        <s class="t-subdued">{{ product.compare_at_price | money }}</s>
-	
-		{% comment %} CUSTOM SixBondStreet Henrik {% endcomment %}
-        {% if product.price_varies %}
-          {%- assign sale_price = product.price | money -%}
-		  <span class="sale sxbs-on-sale">
-          {{ 'products.product.from_lowest_price_html' | t: lowest_price: sale_price }}
-		  </span>
-		{% comment %} END CUSTOM SixBondStreet Henrik {% endcomment %}
-        {% else %}
-			{%- assign amount_saved = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price -%}
-          <span class="sale sxbs-on-sale">{{ product.price | money }}<span>
+          {% if product.price_varies %}
+            {%- assign sale_price = product.price | money -%}
+            {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+          {% else %}
+            <span class="sale">{{ product.price | money }}<span>
+          {% endif %}
           {% render 'unit-price' item: current_variant %}
-		  <span class="on-sale saved_percentage">{{ amount_saved | round }}% avslag</span>
-        {% endif %}
 
-      {% else %}
-        {% if product.price_varies %}
-          {%- assign price = product.price | money -%}
-          {{ 'products.product.from_lowest_price_html' | t: lowest_price: price }}
         {% else %}
-          {{ product.price | money }}
-        {% endif %}
+          {% if product.price_varies %}
+            {%- assign price = product.price | money -%}
+            {{ 'products.product.from_lowest_price_html' | t: lowest_price: price }}
+          {% else %}
+            {{ product.price | money }}
+          {% endif %}
 
+        {% endif %}
+      {% else %}
+        {{ 9999 | money }}
       {% endif %}
 
     </div>
@@ -141,18 +116,4 @@
     {%- endif -%}
 
   </div>
-  {% comment %} Visning av options under product item i collection {% endcomment %}
-  {% unless product.has_only_default_variant %}
-      <div class="product-options__collection">
-        {% for i in (0..2) %}
-            <div 
-                class="product__color-swatch"
-                style="background-color: {{ product.options_with_values[0].values[forloop.index0] | lowercase | replace: ' ', '' }}; background-image: url({{ product.options_with_values[0].values[forloop.index0] | handle | append: '.' | append: 'jpg' | file_img_url: '50x50' }})"
-                tabindex="0"
-            >
-            </div>
-        {% endfor %}
-        <span> + {{ product.options_with_values[0].values.size | minus: 3 }}</span>
-     </div>
-  {% endunless %}
 </div>

@@ -1,9 +1,32 @@
-{%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+{% comment %}this is lazySizes specific image that we want to faze out{% endcomment %}
+{% if image.preview_image %}
+{%- assign image = image.preview_image -%}{%- comment -%} hack - nicer way? {%- endcomment -%}
+{% endif %}
 {%- assign height = image.height | times: 1.0 | default: 1.0 -%}
 {%- assign width = image.width | times: 1.0 | default: 1.0 -%}
-
-
 {%- assign padding_top = height | divided_by: width | times: 100 | append: "%" -%}
+
+{% if sizes != blank %}
+  {%- assign useRias = false %}
+  {% capture srcSet %}
+                              {{ image | img_url: '180x', format: 'jpg' }} 180w,
+                              {{ image | img_url: '320x', format: 'jpg' }} 320w,
+                              {{ image | img_url: '360x', format: 'jpg' }} 360w,
+                              {{ image | img_url: '540x', format: 'jpg' }} 540w,
+                              {{ image | img_url: '640x', format: 'jpg' }} 640w,
+                              {{ image | img_url: '720x', format: 'jpg' }} 720w,
+                              {{ image | img_url: '900x', format: 'jpg' }} 900w
+  {% if image.width > 1080 %}, {{ image | img_url: '1080x', format: 'jpg' }} 1080w {% endif %}
+  {% if image.width > 1296 %}, {{ image | img_url: '1296x', format: 'jpg' }} 1296w {% endif %}
+  {% if image.width > 1512 %}, {{ image | img_url: '1512x', format: 'jpg' }} 1512w {% endif %}
+  {% if image.width > 1728 %}, {{ image | img_url: '1728x', format: 'jpg' }} 1728w {% endif %}
+  {% if image.width > 2048 %}, {{ image | img_url: '2048x', format: 'jpg' }} 2048w {% endif %}
+  {% endcapture %}
+{% else %}
+  {%- assign useRias = true %}
+  {%- assign sizes = "auto" -%}
+  {%- assign rias_img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+{% endif %}
 
 {%- if id == blank -%}
   {%- assign id = image.id -%}
@@ -15,27 +38,26 @@
     style="padding-top: {{ padding_top }}"
   {% endunless %}
 >
-    {% if crop %}
-        <img
-            class="image__img lazyload {% if preload %}lazypreload{% endif %} {{ image_class }}"
-            src="{{ image | img_url: '150x150' }}"
-            data-src="{{ image | img_url: '450x', crop: 'center' }}"
-            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-            data-aspectratio="{{ aspect_ratio_calculated }}"
-            data-sizes="auto"
-            alt="{{ image.alt | escape }}"
-          >
+  <img
+    class="image__img lazyload {% if preload %}lazypreload{% endif %} {{ image_class }}"
+    src="{{ image | img_url: '300x300' }}"
+    {% if useRias %}
+      data-src="{{ rias_img_url }}"
+      data-widths="[180, 320, 360, 540, 640, 720, 900, 1080, 1296, 1512, 1728, 2048]"
     {% else %}
-          <img
-            class="image__img lazyload {% if preload %}lazypreload{% endif %} {{ image_class }}"
-            src="{{ image | img_url: '150x150' }}"
-            data-src="{{ img_url }}"
-            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-            data-aspectratio="{{ image.aspect_ratio }}"
-            data-sizes="auto"
-            alt="{{ image.alt | escape }}"
-          >
+      data-srcset="{{srcSet}}"
     {% endif %}
+    data-aspectratio="{{ image.aspect_ratio }}"
+    data-sizes="{{sizes}}"
+    alt="{{ image.alt | escape }}"
+    {% if setLoadingAttribute %}{% comment %} often unset so that lazysizes autosets this attr {% endcomment %}
+      {% if prioritizeLoading %}
+        loading="eager"
+      {% else %}
+        loading="lazy"
+      {% endif %}
+    {% endif %}
+  >
 </div>
 
 <noscript>

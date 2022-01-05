@@ -6,21 +6,10 @@
     assign color_background_button_hover_popup = settings.color_text_drawer | color_lighten: 20
   endif
 %}
-    {%- assign threshold_in_cents = settings.threshold | times: 100 -%}
- {% assign remaining_num = cart.total_price | minus: threshold_in_cents %}
-    {% assign remaining_num_abs = remaining_num | abs %}
-    {% if remaining_num > 0 %}
-    <style>#paid-shipping{display:none}</style>     
-    {% elsif remaining_num_abs == threshold_in_cents %}
-    <style>#paid-shipping{display:none}#free-shipping{display:none}</style>  
-    {% else %}
-    <style>#free-shipping{display:none}</style>
 
- {% endif %}
 <div
   class="quick-cart"
   data-quick-cart
-     data-threshold={{settings.threshold}}
   style="
     --color-button-background-hover: {{ color_background_button_hover_popup }};
   "
@@ -30,17 +19,11 @@
   <div class="quick-cart__container">
     <div class="quick-cart__cart visible" data-cart data-scroll-lock-ignore>
       <div class="quick-cart__header">{{ 'quick_cart.cart' | t }}</div>
-         <p class="Text--subdued" id="paid-shipping">
-      Handle for <span id="remaining_amount">
-      {{ cart.total_price | minus: threshold_in_cents | abs | money_without_trailing_zeros }}</span>
-      kr mer og få gratis frakt!
-
-    </p>
-       <p class="Text--subdued " id="free-shipping">Gratis frakt!</p>
-      
-      
-      <div class="quick-cart__items" data-items>Freeship?</div>
-      <div class="quick_cart__empty ff-body" data-empty>{{ 'quick_cart.empty' | t }}</div>
+      <div class="quick-cart__items" data-items></div>
+      <div class="quick_cart__empty ff-body" data-empty
+      >{{ 'quick_cart.empty' | t }}
+      <a href="#" tabindex="0" data-close role="button">{{ 'quick_cart.shop_cta' | t }}</a>.
+    </div>
       <div class="quick-cart__footer ff-body ta-c" data-footer>
         <div class="quick-cart__discounts c-subdued" data-discounts></div>
 
@@ -71,13 +54,3 @@
     </div>
   </div>
 </div>
-
-
-
-    <style>
-      .Text--subdued{background: #fff;
-    color: #000;
-    text-align: center;
-    padding: 5px 0;}
-    
-    </style>

@@ -39,7 +39,7 @@
       <div class="drawer-menu__header">
         <input
           name="q"
-          class="drawer-menu__search-input"
+          class="input drawer-menu__search-input text-input-on-dark-background"
           placeholder="{{ 'sections.drawer_menu.search_placeholder' | t }}"
           data-input
         />
@@ -85,7 +85,7 @@
                       {{ 'sections.drawer_menu.language' | t }}
                       {% render 'icon' with icon: 'arrow-drop-down' %}
                     </a>
-                    <ul class="drawer-menu__list drawer-menu__list--sub">
+                    <ul class="drawer-menu__list drawer-menu__list--sub" aria-hidden="true" aria-expanded="false">
                       <li class="drawer-menu__item drawer-menu__item--heading">
                         <button class="drawer-menu__link" data-item="secondaryHeading">
                           <span>{{ 'sections.drawer_menu.language' | t }}</span>
@@ -113,7 +113,7 @@
                       {{ 'sections.drawer_menu.currency' | t }}
                       {% render 'icon' with icon: 'arrow-drop-down' %}
                     </a>
-                    <ul class="drawer-menu__list drawer-menu__list--sub">
+                    <ul class="drawer-menu__list drawer-menu__list--sub" aria-hidden="true" aria-expanded="false">
                       <li class="drawer-menu__item drawer-menu__item--heading">
                         <button class="drawer-menu__link" data-item="secondaryHeading">
                           <span>{{ 'sections.drawer_menu.currency' | t }}</span>

@@ -1,133 +1,118 @@
-{% assign in_stock_tag = 'in stock' %}
-<div class="collection-in-stock__toggle">
-	{% if current_tags contains in_stock_tag %}
-		<div class="in_stock_toggle active">
-			{{ ' ' | link_to_remove_tag: in_stock_tag }}
-		</div>
-		<span class="toggle_text">Vis alle produkter</span>
-	{% else %}
-		<div class="in_stock_toggle inactive">
-			{{ ' ' | link_to_add_tag: in_stock_tag }}
-		</div>
-		<div class="in_stock__variant_orb">
-			<div class="in_stock__variant_orb_inner"></div>
-		</div>
-		<span class="toggle_text">Vis kun produkter på lager</span>	    
-	{% endif %}
-</div>
 <div class="collection-sidebar">
-  {% if collection.all_tags.size > 0 and filter_style != 'hidden' %}
-
-    {%- if filter_style == 'by_tag' -%}
-      <div class="collection-sidebar__group" data-group="{{ 'collections.tags.title' | t }}">
-        {%- assign heading = 'collections.tags.title' | t -%}
-        {% render 'collection-sidebar-heading' with heading: heading %}
-        <ul>
-        {% for tag in collection.all_tags %}
-          {% assign is_in_category = false %}
-          {% assign cat = tag | split: '_' | first %}
-          {% unless cat == tag %}
-            {% if categories contains cat %}
-              {% assign is_in_category = true %}
-            {% endif %}
-          {% endunless %}
-
-          {%- capture tag_text -%}
-            {% if is_in_category %}
-              {{ tag | remove_first: cat | remove_first: '_' }}
-            {% else %}
-              {{ tag }}
-            {% endif %}
-          {%- endcapture -%}
-
-          {% if current_tags contains tag %}
-            {% assign is_active = true %}
-            {% assign url = tag_text | link_to_remove_tag: tag | split: '"' %}
-            {% assign url = url[1] %}
-          {% else %}
-            {% assign is_active = false %}
-            {% assign url = tag_text | link_to_add_tag: tag | split: '"' %}
-            {% assign url = url[1] %}
-          {% endif %}
-
-          {% render 'filter-item' with
-            type: 'checkbox',
-            label: tag_text,
-            active: is_active,
-            url: url,
-            
-            key: 'tag',
-            val: tag
-          %}
-        {% endfor %}
-        </ul>
-      </div>
+  <form data-filter-form data-primary-filter-form data-update-results-on-change="true">
+    {%- comment -%} Keep search term within form {%- endcomment -%}
+    {%- if results.terms -%}
+      <input type="hidden" name="q" value="{{ results.terms | escape }}">
+      <input name="options[prefix]" type="hidden" value="last">
     {%- endif -%}
+    {%- if show_filter and results.filters -%}
+      {% for filter in results.filters %}
+        <div class="collection-sidebar__group">
+          {% render 'collection-sidebar-heading' with heading: filter.label %}
 
+          {%- case filter.type -%}
+            {%- when 'list' -%}
+              {%- liquid
+                assign group_name = filter.label | handleize
+                assign list_modifiers = ''
+                if swatch_options contains group_name or chip_options contains group_name
+                  assign list_modifiers = list_modifiers | append: ' is-flex'
+                endif
+                if swatch_options contains group_name
+                  assign list_modifiers = list_modifiers | append: ' has-swatch'
+                elsif chip_options contains group_name
+                  assign list_modifiers = list_modifiers | append: ' has-chip'
+                endif
+              -%}
 
-    {%- if filter_style == 'by_group' -%}
-      {% for category in categories %}
-        {%- assign heading = category -%}
-        <div class="collection-sidebar__group" data-group="{{ heading }}">
-          {% render 'collection-sidebar-heading' with heading: heading %}
-          <ul>
-            {% for tag in collection.all_tags %}
-              {% assign cat = tag | split: '_' | first %}
+              <ul class="collection-sidebar__group{{ list_modifiers }}">
+                {%- for filter_value in filter.values -%}
+                  {%- liquid
+                    if filter_value.active
+                      assign url = filter_value.url_to_remove
+                    else
+                      assign url = filter_value.url_to_add
+                    endif
+                  -%}
 
-              {% if cat != tag and category == cat %}
-                {% assign label = tag | remove_first: cat | remove_first: '_' %}
+                  {%- if swatch_options contains group_name -%}
+                    {% render 'filter-item' with
+                      type: 'swatch',
+                      forloop: forloop,
+                      filter_value: filter_value,
+                      scope: "sidebar"
+                    %}
+                  {%- elsif chip_options contains group_name -%}
+                    {% render 'filter-item' with
+                      type: 'chip',
+                      forloop: forloop,
+                      filter_value: filter_value,
+                      scope: "sidebar"
+                    %}
+                  {%- else -%}
+                    {% render 'filter-item' with
+                      type: 'checkbox',
+                      forloop: forloop,
+                      filter_value: filter_value,
+                      scope: "sidebar"
+                    %}
+                  {%- endif -%}
+                {%- endfor -%}
+              </ul>
+            {%- when 'price_range' -%}
+              {% liquid
+                assign max_price_amount = filter.range_max | money | escape
+              %}
+              <div class="price-range" data-price-range>
+                <div class="price-range-input-wrapper">
+                  <div class="price-range-input">
+                    <span class="price-range-currency">{{ cart.currency.symbol }}</span>
+                    <input
+                      data-min-range-input
+                      data-range-input
+                      class="input"
+                      name="{{ filter.min_value.param_name }}"
+                      id="filter-{{ filter.label | escape }}"
+                      {%- if filter.min_value.value -%}
+                        value="{{ filter.min_value.value | divided_by: 100 }}"
+                      {%- endif -%}
+                      type="number"
+                      placeholder="0"
+                      min="0"
+                      max="{{ filter.range_max | divided_by: 100 | ceil }}"/>
+                    <label class="price-range-label visually-hidden" for="filter-{{ filter.label | escape }}">{{ 'filters.from' | t }}</label>
+                  </div>
+                  <span class="price-range-separator">&ndash;</span>
+                  <div class="price-range-input">
+                    <span class="price-range-currency">{{ cart.currency.symbol }}</span>
+                    <input
+                      data-max-range-input
+                      data-range-input
+                      class="input"
+                      name="{{ filter.max_value.param_name }}"
+                      id="filter-{{ filter.label | escape }}"
+                      {%- if filter.max_value.value -%}
+                        value="{{ filter.max_value.value | divided_by: 100 }}"
+                      {%- endif -%}
+                      type="number"
+                      placeholder="{{ filter.range_max | divided_by: 100 | ceil }}"
+                      min="0"
+                      max="{{ filter.range_max | divided_by: 100 | ceil }}"/>
+                    <label class="price-range-label visually-hidden" for="filter-{{ filter.label | escape }}">{{ 'filters.to' | t }}</label>
+                  </div>
+                </div>
+              </div>
 
-                {% if current_tags contains tag %}
-                  {% assign is_active = true %}
-                  {% assign url = label | link_to_remove_tag: tag | split: '"' %}
-                  {% assign url = url[1] %}
-                {% else %}
-                  {% assign is_active = false %}
-                  {% assign url = label | link_to_add_tag: tag | split: '"' %}
-                  {% assign url = url[1] %}
-                {% endif %}
-
-                {% render 'filter-item' with
-                  type: 'checkbox',
-                  label: label,
-                  active: is_active,
-                  url: url,
-
-                  key: 'tag',
-                  val: tag
-                %}
-              {% endif %}
-            {% endfor %}
-          </ul>
+          {%- endcase -%}
         </div>
       {% endfor %}
-
     {%- endif -%}
-  {% endif %}
 
-
-  {% if show_sort %}
-    {%- assign heading = 'collections.sorting.title' | t -%}
-    <div class="collection-sidebar__group" data-group="{{ heading }}">
-      {% render 'collection-sidebar-heading' with heading: heading %}
-      <ul>
-        {% for option in collection.sort_options %}
-          {%- assign is_active = false -%}
-          {%- if option.value == collection.sort_by -%}
-            {%- assign is_active = true -%}
-          {%- endif -%}
-          {% render 'filter-item' with
-            label: option.name,
-            type: 'radio',
-            active: is_active,
-            url: '#',
-            
-            key: 'sort',
-            val: option.value
-          %}
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
-
+    {% if show_sort %}
+      {% render 'collection-sort' with
+        results: results, 
+      %}
+    {% endif %}
+  </form>
 </div>
+
