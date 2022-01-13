@@ -1016,6 +1016,21 @@
       "164008427524d9f8aa": {
         "type": "collage--dynamic",
         "blocks": {
+          "164008427524d9f8aa-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/varens_trender_forside_banner.jpg",
+              "video_url": "",
+              "meta": "Trender",
+              "title": "Vårens interiørtrender",
+              "subheading": "<p>Vår designer og innkjøper Palla Masdottir forteller om vårens viktigste interiørtrender.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "La deg inspirere",
+              "link": "\/pages\/interi-rtrender-v-ren-2022",
+              "alignment": "center_bottom",
+              "opacity_overlay": 30
+            }
+          },
           "164008427524d9f8aa-0": {
             "type": "image",
             "disabled": true,
@@ -1031,26 +1046,11 @@
               "alignment": "center_center",
               "opacity_overlay": 50
             }
-          },
-          "164008427524d9f8aa-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/varens_trender_forside_banner.jpg",
-              "video_url": "",
-              "meta": "Trender",
-              "title": "Vårens interiørtrender",
-              "subheading": "<p>Vår designer og innkjøper Palla Masdottir forteller om vårens viktigste interiørtrender.<\/p>",
-              "max_width_subheading": 28,
-              "link_text": "La deg inspirere",
-              "link": "\/pages\/interi-rtrender-v-ren-2022",
-              "alignment": "center_bottom",
-              "opacity_overlay": 30
-            }
           }
         },
         "block_order": [
-          "164008427524d9f8aa-0",
-          "164008427524d9f8aa-1"
+          "164008427524d9f8aa-1",
+          "164008427524d9f8aa-0"
         ],
         "settings": {
           "color_overlay": "#000000",
@@ -1117,10 +1117,51 @@
           "rows": 1,
           "aspect_ratio": "natural"
         }
+      },
+      "164208296949c113f9": {
+        "type": "collection-list--dynamic",
+        "blocks": {
+          "164208296949c113f9-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "drommefanger"
+            }
+          },
+          "164208296949c113f9-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "gjenfodt-anonym"
+            }
+          },
+          "164208296949c113f9-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "komfort-lounge"
+            }
+          },
+          "eff1a6c9-97bb-425a-8b6d-86d091c3568e": {
+            "type": "collection",
+            "settings": {
+              "collection": "apenbaring"
+            }
+          }
+        },
+        "block_order": [
+          "164208296949c113f9-0",
+          "164208296949c113f9-1",
+          "164208296949c113f9-2",
+          "eff1a6c9-97bb-425a-8b6d-86d091c3568e"
+        ],
+        "settings": {
+          "title": "Få stilen - Vårens interiørtrender",
+          "per_row": 4,
+          "aspect_ratio": "natural"
+        }
       }
     },
     "content_for_index": [
       "164008427524d9f8aa",
+      "164208296949c113f9",
       "1601498256106",
       "1600315431677",
       "1641219531a9e76cfa",
