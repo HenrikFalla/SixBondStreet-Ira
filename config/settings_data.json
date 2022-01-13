@@ -895,6 +895,7 @@
       },
       "1634540189e5c83ea4": {
         "type": "featured-products--dynamic",
+        "disabled": true,
         "blocks": {
           "a4a5c961-a19f-4af1-ac13-dac16532299a": {
             "type": "product",
@@ -1106,6 +1107,16 @@
           "color_text_button": "#ffffff",
           "enable_full_width": true
         }
+      },
+      "16420803631d9d001b": {
+        "type": "featured-collection--dynamic",
+        "settings": {
+          "collection": "fjellhytte-kolleksjonen",
+          "title": "Midtown serien",
+          "per_row": 3,
+          "rows": 1,
+          "aspect_ratio": "natural"
+        }
       }
     },
     "content_for_index": [
@@ -1120,13 +1131,14 @@
       "1634467668d8706b5a",
       "1632985524a87701b3",
       "1600315418706",
+      "16420803631d9d001b",
+      "1634540189e5c83ea4",
       "1601240654390",
       "1601499234365",
       "1600315468934",
       "1637319215d5db3082",
       "1638345766debd5a11",
-      "1600315479900",
-      "1634540189e5c83ea4"
+      "1600315479900"
     ]
   },
   "presets": {
