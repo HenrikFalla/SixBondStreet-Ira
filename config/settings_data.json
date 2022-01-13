@@ -628,8 +628,8 @@
       "1601499234365": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "levering-for-jul-interior-tekstiler",
-          "title": "Perfekte julegaver",
+          "collection": "sprekenhus",
+          "title": "Alexander Sprekenhus",
           "per_row": 4,
           "rows": 1,
           "aspect_ratio": "natural"
@@ -924,49 +924,9 @@
           "enable_full_width": true
         }
       },
-      "163516359475b3ea53": {
-        "type": "collection-list--dynamic",
-        "disabled": true,
-        "blocks": {
-          "163516359475b3ea53-1": {
-            "type": "collection",
-            "settings": {
-              "collection": "levering-for-jul-spisestue"
-            }
-          },
-          "163516359475b3ea53-2": {
-            "type": "collection",
-            "settings": {
-              "collection": "levering-for-jul-soverom"
-            }
-          },
-          "f532988b-2800-46e6-9565-9a3a7bd9e19a": {
-            "type": "collection",
-            "settings": {
-              "collection": "levering-for-jul-interior-tekstiler"
-            }
-          },
-          "163516359475b3ea53-0": {
-            "type": "collection",
-            "settings": {
-              "collection": "levering-f-r-jul-stue"
-            }
-          }
-        },
-        "block_order": [
-          "163516359475b3ea53-1",
-          "163516359475b3ea53-2",
-          "f532988b-2800-46e6-9565-9a3a7bd9e19a",
-          "163516359475b3ea53-0"
-        ],
-        "settings": {
-          "title": "Levering før jul",
-          "per_row": 4,
-          "aspect_ratio": "natural"
-        }
-      },
       "1637319215d5db3082": {
         "type": "image-with-text--dynamic",
+        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/forside_kontraster.jpg",
           "video_url": "",
@@ -1000,6 +960,7 @@
       },
       "1638345766debd5a11": {
         "type": "slideshow--dynamic",
+        "disabled": true,
         "blocks": {
           "1638345766debd5a11-0": {
             "type": "image",
@@ -1036,6 +997,7 @@
       },
       "16385254706ef46bdf": {
         "type": "image-with-text--dynamic",
+        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_1.jpg",
           "video_url": "",
@@ -1152,18 +1114,17 @@
       "1600315431677",
       "1641219531a9e76cfa",
       "16381949978e24d4c3",
+      "1634468547c34ee1d1",
       "1600315401018",
       "16385254706ef46bdf",
-      "1601240654390",
-      "1632985524a87701b3",
-      "163516359475b3ea53",
-      "1637319215d5db3082",
-      "1638345766debd5a11",
       "1634467668d8706b5a",
-      "1634468547c34ee1d1",
+      "1632985524a87701b3",
       "1600315418706",
+      "1601240654390",
       "1601499234365",
       "1600315468934",
+      "1637319215d5db3082",
+      "1638345766debd5a11",
       "1600315479900",
       "1634540189e5c83ea4"
     ]
