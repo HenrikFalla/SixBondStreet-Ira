@@ -1035,7 +1035,7 @@
           "164008427524d9f8aa-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/varenstrender_banner_22.jpg",
+              "image": "shopify:\/\/shop_images\/varens_trender_forside_banner.jpg",
               "video_url": "",
               "meta": "Trender",
               "title": "Vårens interiørtrender",
@@ -1043,7 +1043,7 @@
               "max_width_subheading": 28,
               "link_text": "La deg inspirere",
               "link": "\/pages\/interi-rtrender-v-ren-2022",
-              "alignment": "center_center",
+              "alignment": "center_bottom",
               "opacity_overlay": 30
             }
           }
