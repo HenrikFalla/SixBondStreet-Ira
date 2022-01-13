@@ -408,8 +408,8 @@
           "5543d107-76de-4039-80ed-45566e815fa4": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hjemmekontor_banner_forside_desember_001.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/hjemmekontor_banner_forside_desember_001.jpg",
+              "image": "shopify:\/\/shop_images\/hjemmekontoret_forside_vare22_002.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/hjemmekontoret_forside_vare22_002.jpg",
               "video_url": "",
               "meta": "Få stilen",
               "title": "Hjemmekontoret",
@@ -417,7 +417,7 @@
               "max_width_subheading": 24,
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/hjemmekontoret",
-              "alignment": "left_center"
+              "alignment": "center_center"
             }
           },
           "1600315468934-0": {
