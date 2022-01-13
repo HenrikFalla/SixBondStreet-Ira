@@ -1039,6 +1039,7 @@
         "blocks": {
           "164008427524d9f8aa-0": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/banner_fjellhytte_kolleksjonen_003.jpg",
               "video_url": "",
@@ -1054,17 +1055,17 @@
           },
           "164008427524d9f8aa-1": {
             "type": "image",
-            "disabled": true,
             "settings": {
+              "image": "shopify:\/\/shop_images\/varenstrender_banner_22.jpg",
               "video_url": "",
-              "meta": "Meta",
-              "title": "This is the Collage",
-              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "meta": "Trender",
+              "title": "Vårens interiørtrender",
+              "subheading": "<p>Vår designer og innkjøper Palla Masdottir introduserer vårens viktigste interiørtrender.<\/p>",
               "max_width_subheading": 28,
-              "link_text": "Shop the collection",
-              "link": "#",
-              "alignment": "left_center",
-              "opacity_overlay": 60
+              "link_text": "La deg inspirere",
+              "link": "\/pages\/interi-rtrender-v-ren-2022",
+              "alignment": "center_center",
+              "opacity_overlay": 30
             }
           }
         },
