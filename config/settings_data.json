@@ -1111,9 +1111,9 @@
       "16420803631d9d001b": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "fjellhytte-kolleksjonen",
+          "collection": "midtown-kolleksjonen",
           "title": "Midtown serien",
-          "per_row": 3,
+          "per_row": 4,
           "rows": 1,
           "aspect_ratio": "natural"
         }
