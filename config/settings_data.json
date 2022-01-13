@@ -395,8 +395,8 @@
       "1600315431677": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "louise-roe",
-          "title": "Louise Roe",
+          "collection": "nyheter",
+          "title": "Nyheter",
           "per_row": 4,
           "rows": 1,
           "aspect_ratio": "natural"
@@ -1132,16 +1132,16 @@
     },
     "content_for_index": [
       "164008427524d9f8aa",
-      "16385254706ef46bdf",
       "1601498256106",
+      "1600315431677",
+      "1600315401018",
       "1641219531a9e76cfa",
       "16381949978e24d4c3",
-      "1600315401018",
+      "16385254706ef46bdf",
       "1601240654390",
       "1632985524a87701b3",
       "163516359475b3ea53",
       "1637319215d5db3082",
-      "1600315431677",
       "1638345766debd5a11",
       "1634467668d8706b5a",
       "1634468547c34ee1d1",
