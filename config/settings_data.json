@@ -862,12 +862,27 @@
               "alignment": "center_center",
               "opacity_overlay": 30
             }
+          },
+          "91dc111b-bdcd-446c-919b-6660895b0208": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Mathias_duma_001.jpg",
+              "meta": "",
+              "title": "Miljøsofa aka “Møbelflipperen” x SixBondStree",
+              "subheading": "<p>Miljøsofa aka “Møbelflipperen” & SixBondStreet ønsker å ta sin del av ansvaret og bruke vår felles kunnskap til å gi nytt liv til brukte møbler.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Les mer her",
+              "link": "\/pages\/m-flipperen",
+              "alignment": "right_split",
+              "opacity_overlay": 20
+            }
           }
         },
         "block_order": [
           "1634468547c34ee1d1-0",
           "1634468547c34ee1d1-1",
-          "1634468547c34ee1d1-2"
+          "1634468547c34ee1d1-2",
+          "91dc111b-bdcd-446c-919b-6660895b0208"
         ],
         "settings": {
           "height_mobile": 70,
