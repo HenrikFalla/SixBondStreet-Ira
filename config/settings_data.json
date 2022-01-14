@@ -893,55 +893,6 @@
           "color_text_button": "#000000"
         }
       },
-      "1634540189e5c83ea4": {
-        "type": "featured-products--dynamic",
-        "disabled": true,
-        "blocks": {
-          "a4a5c961-a19f-4af1-ac13-dac16532299a": {
-            "type": "product",
-            "settings": {
-              "product": "broadway-spisestol-m-armlene-sort-ask"
-            }
-          },
-          "d524ce78-4a16-4c84-abf9-137590f77559": {
-            "type": "product",
-            "settings": {
-              "product": "broadway-spisestol-sort-ask"
-            }
-          }
-        },
-        "block_order": [
-          "a4a5c961-a19f-4af1-ac13-dac16532299a",
-          "d524ce78-4a16-4c84-abf9-137590f77559"
-        ],
-        "settings": {
-          "image": "shopify:\/\/shop_images\/broadway_spiseplass_forside.jpg",
-          "image_position": "left",
-          "title": "Broadway spisestol",
-          "subheading": "Stolen gir en generøs og innbydende følelse og den sorte trerammen sørger for et kontinentalt og eksklusivt uttrykk.",
-          "link": "shopify:\/\/products\/broadway-spisestol-m-armlene-sort-ask",
-          "link_text": "",
-          "enable_contrast": true,
-          "enable_full_width": true
-        }
-      },
-      "1637319215d5db3082": {
-        "type": "image-with-text--dynamic",
-        "disabled": true,
-        "settings": {
-          "image": "shopify:\/\/shop_images\/forside_kontraster.jpg",
-          "video_url": "",
-          "image_width": "standard",
-          "image_position": "left",
-          "title": "Kontraster",
-          "text": "<p>Interiør uten noen form for kontrast kan ofte oppfattes som monotont og blasst. <\/p><p>Les mer om hvordan du går frem når du skal bruke kontrast som virkemiddel.<\/p>",
-          "max_width_text": 34,
-          "link": "\/pages\/gi-hjemmet-ditt-energi-ved-bruk-av-kontraster",
-          "link_text": "Les mer her",
-          "enable_contrast": true,
-          "enable_full_width": true
-        }
-      },
       "16381949978e24d4c3": {
         "type": "image-with-text--dynamic",
         "disabled": true,
@@ -955,60 +906,6 @@
           "max_width_text": 34,
           "link": "\/pages\/m-flipperen",
           "link_text": "Les mer her",
-          "enable_contrast": true,
-          "enable_full_width": false
-        }
-      },
-      "1638345766debd5a11": {
-        "type": "slideshow--dynamic",
-        "disabled": true,
-        "blocks": {
-          "1638345766debd5a11-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/B17R1893.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/kontraster_varmt_kaldt_001.jpg",
-              "video_url": "https:\/\/player.vimeo.com\/external\/649427732.hd.mp4?s=92e3e19777642adcd1414879ff4f3c5675458e0e&profile_id=175",
-              "meta": "Nyhet",
-              "title": "Ny tekstilkolleksjon",
-              "subheading": "<p>Vi lanserer en ny, fargerik og sofistikert tekstilkolleksjon.<\/p>",
-              "max_width_subheading": 30,
-              "link_text": "Drøm deg bort her",
-              "link": "\/pages\/v-r-tekstilkolleksjon",
-              "alignment": "center_center"
-            }
-          }
-        },
-        "block_order": [
-          "1638345766debd5a11-0"
-        ],
-        "settings": {
-          "desktop_height": 100,
-          "mobile_height": 50,
-          "opacity_overlay": 0,
-          "color_overlay": "#000000",
-          "color_heading": "#ffffff",
-          "color_subheading": "#b8b8b8",
-          "color_background_button": "#000000",
-          "color_text_button": "#ffffff",
-          "duration_autoplay": 4,
-          "enable_parallax": false,
-          "enable_full_width": true
-        }
-      },
-      "16385254706ef46bdf": {
-        "type": "image-with-text--dynamic",
-        "disabled": true,
-        "settings": {
-          "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_1.jpg",
-          "video_url": "",
-          "image_width": "standard",
-          "image_position": "right",
-          "title": "Gratis interiørkonsultasjon",
-          "text": "<p>Personlig møte med en interiørkonsulent via video, telefon eller i showroom.<\/p>",
-          "max_width_text": 34,
-          "link": "\/pages\/interiortjeneste",
-          "link_text": "Book time nå",
           "enable_contrast": true,
           "enable_full_width": false
         }
@@ -1108,16 +1005,6 @@
           "enable_full_width": true
         }
       },
-      "16420803631d9d001b": {
-        "type": "featured-collection--dynamic",
-        "settings": {
-          "collection": "midtown-kolleksjonen",
-          "title": "Midtown kolleksjonen",
-          "per_row": 4,
-          "rows": 1,
-          "aspect_ratio": "natural"
-        }
-      },
       "164208296949c113f9": {
         "type": "collection-list--dynamic",
         "blocks": {
@@ -1158,52 +1045,6 @@
           "aspect_ratio": "natural"
         }
       },
-      "16421473055052b8b6": {
-        "type": "text-columns-with-images--dynamic",
-        "disabled": true,
-        "blocks": {
-          "16421473055052b8b6-0": {
-            "type": "column",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/lenox_rod_miljo.jpg",
-              "title": "FJELLHYTTE KOLLEKSJONEN",
-              "text": "Vi introduserer vår nye fjellhytte kolleksjon med tekstilmøbler som passer perfekt på fjellhytta.",
-              "link": "shopify:\/\/collections\/fjellhytte-kolleksjonen",
-              "link_text": "Se utvalget her"
-            }
-          },
-          "16421473055052b8b6-1": {
-            "type": "column",
-            "disabled": true,
-            "settings": {
-              "title": "Heading",
-              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
-              "link": "#",
-              "link_text": "Link text"
-            }
-          },
-          "16421473055052b8b6-2": {
-            "type": "column",
-            "disabled": true,
-            "settings": {
-              "title": "Heading",
-              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
-              "link": "#",
-              "link_text": "Link text"
-            }
-          }
-        },
-        "block_order": [
-          "16421473055052b8b6-0",
-          "16421473055052b8b6-1",
-          "16421473055052b8b6-2"
-        ],
-        "settings": {
-          "per_row": 1,
-          "image_max_width": 200,
-          "circle": true
-        }
-      },
       "16421485616619ee4f": {
         "type": "image-with-text--dynamic",
         "settings": {
@@ -1219,6 +1060,53 @@
           "enable_contrast": true,
           "enable_full_width": true
         }
+      },
+      "164215194880a53461": {
+        "type": "collage--dynamic",
+        "blocks": {
+          "164215194880a53461-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/midtown_kolleksjonen_forside.jpg",
+              "video_url": "",
+              "meta": "SixBondStreet",
+              "title": "Midtown kolleksjonen",
+              "subheading": "<p>Tidløse og elegante produkter til hele hjemmet.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/midtown-kolleksjonen",
+              "alignment": "right_bottom",
+              "opacity_overlay": 50
+            }
+          },
+          "164215194880a53461-1": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "video_url": "",
+              "meta": "Meta",
+              "title": "This is the Collage",
+              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Shop the collection",
+              "link": "#",
+              "alignment": "left_center",
+              "opacity_overlay": 60
+            }
+          }
+        },
+        "block_order": [
+          "164215194880a53461-0",
+          "164215194880a53461-1"
+        ],
+        "settings": {
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
+          "color_background_button": "#ffffff",
+          "color_text_button": "#000000",
+          "enable_full_width": true
+        }
       }
     },
     "content_for_index": [
@@ -1227,23 +1115,18 @@
       "1601498256106",
       "1641219531a9e76cfa",
       "16381949978e24d4c3",
-      "1634468547c34ee1d1",
-      "1600315401018",
-      "16420803631d9d001b",
-      "16385254706ef46bdf",
-      "16421485616619ee4f",
-      "16421473055052b8b6",
-      "1634467668d8706b5a",
       "1632985524a87701b3",
-      "1600315418706",
+      "1600315401018",
+      "1634468547c34ee1d1",
+      "164215194880a53461",
+      "1634467668d8706b5a",
+      "16421485616619ee4f",
       "1600315431677",
-      "1634540189e5c83ea4",
-      "1601240654390",
+      "1600315418706",
       "1601499234365",
       "1600315468934",
-      "1637319215d5db3082",
-      "1638345766debd5a11",
-      "1600315479900"
+      "1600315479900",
+      "1601240654390"
     ]
   },
   "presets": {
