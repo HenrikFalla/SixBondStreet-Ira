@@ -821,20 +821,6 @@
       "1634468547c34ee1d1": {
         "type": "carousel--dynamic",
         "blocks": {
-          "1634468547c34ee1d1-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/nordal_interior_trender_nyheter.jpg",
-              "meta": "Nyheter",
-              "title": "Vårens nyheter",
-              "subheading": "<p>Se alle nyhetene for våren<\/p>",
-              "max_width_subheading": 28,
-              "link_text": "Se utvalget her",
-              "link": "shopify:\/\/collections\/nyheter",
-              "alignment": "center_center",
-              "opacity_overlay": 30
-            }
-          },
           "1634468547c34ee1d1-1": {
             "type": "image",
             "settings": {
@@ -849,18 +835,32 @@
               "opacity_overlay": 30
             }
           },
+          "1634468547c34ee1d1-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nordal_interior_trender_nyheter.jpg",
+              "meta": "Nyheter",
+              "title": "Vårens nyheter",
+              "subheading": "<p>Se alle nyhetene for våren<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/nyheter",
+              "alignment": "center_center",
+              "opacity_overlay": 30
+            }
+          },
           "1634468547c34ee1d1-2": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/B17R1594.jpg",
               "meta": "Møbel kolleksjon",
               "title": "North kolleksjonen",
-              "subheading": "<p><br\/>Med sitt vakre og enkle formspråk er møblene fra North kolleksjonen enkel å plassere i rommet.<br\/><br\/><\/p>",
+              "subheading": "<p>Med sitt vakre og enkle formspråk er møblene fra North kolleksjonen enkel å plassere i rommet.<\/p>",
               "max_width_subheading": 28,
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/north-kolleksjonen",
               "alignment": "center_center",
-              "opacity_overlay": 30
+              "opacity_overlay": 20
             }
           },
           "91dc111b-bdcd-446c-919b-6660895b0208": {
@@ -879,8 +879,8 @@
           }
         },
         "block_order": [
-          "1634468547c34ee1d1-0",
           "1634468547c34ee1d1-1",
+          "1634468547c34ee1d1-0",
           "1634468547c34ee1d1-2",
           "91dc111b-bdcd-446c-919b-6660895b0208"
         ],
