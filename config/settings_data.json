@@ -299,7 +299,7 @@
           "7e700e3c-8313-4873-abd5-b58023311a2b"
         ],
         "settings": {
-          "desktop_height": 100,
+          "desktop_height": 85,
           "mobile_height": 50,
           "opacity_overlay": 30,
           "color_overlay": "#000000",
@@ -442,7 +442,7 @@
           "1600315468934-0"
         ],
         "settings": {
-          "desktop_height": 100,
+          "desktop_height": 85,
           "mobile_height": 50,
           "opacity_overlay": 30,
           "color_overlay": "#000000",
