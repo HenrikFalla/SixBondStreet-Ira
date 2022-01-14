@@ -1033,6 +1033,7 @@
           },
           "164008427524d9f8aa-0": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/banner_fjellhytte_kolleksjonen_003.jpg",
               "video_url": "",
@@ -1163,7 +1164,7 @@
           "16421473055052b8b6-0": {
             "type": "column",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner_fjellhytte_kolleksjonen_003.jpg",
+              "image": "shopify:\/\/shop_images\/lenox_rod_miljo.jpg",
               "title": "Fjellhytte kolleksjonen",
               "text": "Vi introduserer vår nye fjellhyttekolleksjon med tekstilmøbler som passer perfekt på fjellhytta.",
               "link": "shopify:\/\/collections\/fjellhytte-kolleksjonen",
