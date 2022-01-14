@@ -840,8 +840,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/nordal_interior_trender_nyheter.jpg",
               "meta": "Nyheter",
-              "title": "Vårens nyheter",
-              "subheading": "<p>Her finner du alle vårens nyheter.<\/p>",
+              "title": "Nyheter",
+              "subheading": "<p>Her finner du alle våre nyheter.<\/p>",
               "max_width_subheading": 28,
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/nyheter",
