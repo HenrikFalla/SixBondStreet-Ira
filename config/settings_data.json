@@ -1160,6 +1160,7 @@
       },
       "16421473055052b8b6": {
         "type": "text-columns-with-images--dynamic",
+        "disabled": true,
         "blocks": {
           "16421473055052b8b6-0": {
             "type": "column",
@@ -1202,6 +1203,22 @@
           "image_max_width": 200,
           "circle": true
         }
+      },
+      "16421485616619ee4f": {
+        "type": "image-with-text--dynamic",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/lenox_rod_miljo.jpg",
+          "video_url": "",
+          "image_width": "standard",
+          "image_position": "left",
+          "title": "FJELLHYTTE KOLLEKSJONEN",
+          "text": "<p>Vi introduserer vår nye fjellhytte kolleksjon med tekstilmøbler som passer perfekt på fjellhytta.<\/p>",
+          "max_width_text": 34,
+          "link": "shopify:\/\/collections\/fjellhytte-kolleksjonen",
+          "link_text": "Se utvalget her",
+          "enable_contrast": true,
+          "enable_full_width": true
+        }
       }
     },
     "content_for_index": [
@@ -1209,11 +1226,12 @@
       "164208296949c113f9",
       "1601498256106",
       "1641219531a9e76cfa",
-      "16420803631d9d001b",
       "16381949978e24d4c3",
       "1634468547c34ee1d1",
       "1600315401018",
+      "16420803631d9d001b",
       "16385254706ef46bdf",
+      "16421485616619ee4f",
       "16421473055052b8b6",
       "1634467668d8706b5a",
       "1632985524a87701b3",
