@@ -916,7 +916,7 @@
           "164008427524d9f8aa-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/varenstrender_med_palla.jpg",
+              "image": "shopify:\/\/shop_images\/varens_trender_forside_banner_002.jpg",
               "video_url": "",
               "meta": "Trender",
               "title": "VÅRENS INTERIØRTRENDER",
@@ -924,7 +924,7 @@
               "max_width_subheading": 28,
               "link_text": "La deg inspirere",
               "link": "\/pages\/interi-rtrender-v-ren-2022",
-              "alignment": "center_bottom",
+              "alignment": "left_bottom",
               "opacity_overlay": 30
             }
           },
