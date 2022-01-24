@@ -973,7 +973,7 @@
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/entreen",
               "alignment": "left_center",
-              "opacity_overlay": 30
+              "opacity_overlay": 40
             }
           },
           "1641219531a9e76cfa-1": {
@@ -988,7 +988,7 @@
               "link_text": "Les mer her",
               "link": "\/pages\/slik-innreder-du-med-m-nstrete-tekstiler",
               "alignment": "left_center",
-              "opacity_overlay": 60
+              "opacity_overlay": 40
             }
           }
         },
