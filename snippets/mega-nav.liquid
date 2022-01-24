@@ -43,7 +43,7 @@
       {%- endif -%}
 
         {%- if has_children -%}
-          <ul class="mega-nav__list" data-depth="1" data-submenu="{{ link.handle }}" hidden>
+          <ul class="mega-nav__list" data-depth="1" data-submenu="{{ link.handle }}">
             <li class="mega-nav__heading"><a href="{{ link.url }}">{{ link.title }}</a></li>
             {%- for link in link.links -%}
               <li class="mega-nav__item">

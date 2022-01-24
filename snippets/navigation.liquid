@@ -24,16 +24,15 @@
       endif
     %}
 
-    <li {% if has_children %}data-submenu-parent{% endif %}>
+    <li>
       <a
         href="{{ link.url }}"
         class="{% if no_transition %}no-transition{% endif %} {% if link.active %}active{% endif %}"
         data-link
         {% if has_meganav %}
-          data-mega="true"
+          data-mega
         {% elsif has_children %}
-          data-parent="true"
-          data-top-level-parent="true"
+          data-parent
         {% endif %}
       >
         {{ link.title }}

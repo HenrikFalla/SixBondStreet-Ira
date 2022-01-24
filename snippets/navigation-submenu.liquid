@@ -14,10 +14,6 @@
         {% if has_children %}data-parent{% endif %}
       >
         {{ link.title }}
-
-        {% if has_children %}
-          {% render 'icon' with icon: 'arrow-drop-down' %}
-        {% endif %}
       </a>
 
       {%- if has_children -%}

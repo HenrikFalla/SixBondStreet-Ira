@@ -10,26 +10,16 @@
   {% endif %}
 >
   {%- if media.media_type == 'image' -%}
-    <a class="media__image" 
-      {% if link_to_product %}
-        href="{{product.url}}"
-        title="View product"
-      {% else %}
-        href="{{ media | img_url: '2000x' }}"
-        title="Open Image" 
-        target="_blank" 
-        rel="noopener"
-      {% endif %}
-        data-open="{{ media.id }}">
-      {% render 'nativeImage' with 
-        image: media, 
-        sizes: sizes, 
-        prioritizeLoading: prioritizeLoading 
-      %}
+    <a class="media__image" href="#" data-open="{{ media.id }}">
+        {% if crop %}
+            {% render 'image' with image: media, crop: crop %}
+        {% else %}
+            {% render 'image' with image: media %}
+        {% endif %}
     </a>
 
   {%- elsif media.media_type == 'video' -%}
-    {{ media | video_tag: image_size: "1024x" }}
+        {{ media | video_tag: image_size: "1024x" }}
 
   {%- elsif media.media_type == 'external_video' -%}
     {%- liquid
@@ -44,7 +34,7 @@
 
   {%- elsif media.media_type == 'model' -%}
     {{ media | model_viewer_tag: reveal: 'interaction', toggleable: true }}
-    <button aria-label="{{ 'general.accessibility.load_3d_model' | t }}" class="model-poster" style="background-image: url({{ media | img_url: '1000x' }})">
+    <a href="#" class="model-poster" style="background-image: url({{ media | img_url: '1000x' }})">
       <span class="media-badge model in-poster">
         {% render 'icon' with icon: '3d-button-control' %}
       </span>

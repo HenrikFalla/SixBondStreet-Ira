@@ -1,11 +1,11 @@
 <script>
-  console.log('Ira v4.0.0 by Fluorescent');
+  console.log('Ira v3.5.1 by Fluorescent');
 
   document.documentElement.className = document.documentElement.className.replace('no-js', '');
 
   window.theme = {
-    version: 'v4.0.0',
-    moneyFormat: "{{ shop.money_format }}",
+    version: 'v3.5.1',
+    moneyFormat: "{{ shop.money_format | escape }}",
     routes: {
       root: "{{ routes.root_url }}",
       cart: {
@@ -16,9 +16,7 @@
       },
       // Manual routes until Shopify adds support
       products: "{% if routes.root_url == '/' %}/products{% else %}{{ routes.root_url }}/products{% endif %}",
-      productRecommendations: "{{ routes.product_recommendations_url }}",
-      predictive_search_url: '{{ routes.predictive_search_url }}'
-
+      productRecommendations: "{{ routes.product_recommendations_url }}"
     },
     strings: {
       product: {
@@ -38,10 +36,6 @@
         },
         view_all: {{ 'search.view_all' | t | json }},
         no_results: {{ 'search.no_results' | t | json }}
-      },
-      accessibility: {
-        play_video: {{ 'general.accessibility.play' | t | json }},
-        pause_video: {{ 'general.accessibility.pause' | t | json }}
       }
     }
   }

@@ -2,7 +2,6 @@
   "general": {
     "accessibility": {
       "skip_to_content": "Skip to content",
-      "skip_to_products": "Skip to products",
       "close_modal": "Close",
       "carousel_next": "Move to next carousel slide",
       "carousel_previous": "Move to previous carousel slide",
@@ -14,16 +13,7 @@
       "refresh_page": "Choosing a selection results in a full page refresh.",
       "selection_help": "Press the space key then arrow keys to make a selection.",
       "unit_price_separator": "per",
-      "error": "Error",
-      "pause": "Pause",
-      "play": "Play",
-      "play_video": "Play video",
-      "increment": "Incrememnt",
-      "decrement": "Decrement",
-      "previous": "Previous",
-      "next": "Next",
-      "load_3d_model": "Load 3D Model",
-      "carousel_select": "Move carousel to slide {{ number }}"
+      "error": "Error"
     },
     "meta": {
       "tags": "Tagged \"{{ tags }}\"",
@@ -40,7 +30,6 @@
       "current_page": "Page {{ current }} of {{ total }}"
     },
     "password_page": {
-      "toggle": "Toggle password form",
       "login_form_heading": "Enter store using password",
       "login_form_password_label": "Password",
       "login_form_password_placeholder": "Your password",
@@ -83,7 +72,6 @@
       "dropdown_label": "Language"
     }
   },
- 
   "sections": {
     "blog_posts": {
       "more": "more"
@@ -91,7 +79,7 @@
     "drawer_menu": {
       "account": {
         "logged_out": "Register / Login",
-        "logged_in": "My account"
+        "logged_in": "Logout"
       },
       "currency": "Currency",
       "language": "Language",
@@ -223,9 +211,7 @@
       "regular_total": "Regular total",
       "remove": "Remove {{ product }}",
       "total": "Total",
-      "update": "Update",
-      "increase": "Increase",
-      "decrease": "Decrease"
+      "update": "Update"
     },
     "popup": {
       "added_to_cart": "Just added to your cart",
@@ -258,15 +244,11 @@
     },
     "tags": {
       "title": "Tags"
+    },
+    "filters": {
+      "title_tags": "Filter by",
+      "all_tags": "All products"
     }
-  },
-  "filters": {
-    "price": "Price",
-    "from": "From",
-    "to": "To",
-    "clear": "Clear",
-    "clear_all": "Clear all",
-    "clear_filters": "Clear filters"
   },
   "customer": {
     "account": {
@@ -407,12 +389,6 @@
     }
   },
   "products": {
-    "inventory": {
-      "in_stock": "In stock, ready to be shipped",
-      "label": "Stock",
-      "low_stock": "Limited quantities left",
-      "sold_out": "Re-stocking soon!"
-    },
     "product": {
       "regular_price": "Regular price",
       "sold_out": "Sold out",
@@ -435,28 +411,25 @@
       "view_in_space": "View in your space",
       "view_in_space_label": "View in your space, loads item in augmented reality window",
       "selling_plan_options": "Purchase options",
-      "selling_plan_one_time": "One time purchase",
-      "quantity_error": "Quantity selected exceeds current stock"
+      "selling_plan_one_time": "One time purchase"
     }
   },
-  
   "gift_cards": {
-		"issued": {
-			"active": "Expires on {{ expiry }}",
-			"add_to_apple_wallet": "Add to Apple Wallet",
-			"disabled": "Disabled",
-			"expired": "Expired on {{ expiry }}",
-			"gift_card_code": "Gift card code",
-			"initial_value": "Gift card value: {{ value }}",
-			"print": "Print this gift card",
-			"qr_image_alt": "QR code — scan to redeem gift card",
-			"redeem": "Use this code at checkout to redeem your gift card",
-			"remaining_html": "{{ balance }} left",
-			"shop_link": "Start shopping",
-			"subtext": "Your gift card",
-			"title_html": "Here's your {{ value }} gift card for {{ shop }}!"
-		}
-	},
+    "issued": {
+      "title_html": "Here's your {{ value }} gift card for {{ shop }}!",
+      "subtext": "Your gift card",
+      "gift_card_code": "Gift card code",
+      "disabled": "Disabled",
+      "expired": "Expired on {{ expiry }}",
+      "active": "Expires on {{ expiry }}",
+      "redeem_html": "Use this code at checkout to redeem your {{ value }} gift card",
+      "shop_link": "Start shopping",
+      "print": "Print this gift card",
+      "remaining_html": "{{ balance }} left",
+      "add_to_apple_wallet": "Add to Apple Wallet",
+      "qr_image_alt": "QR code — scan to redeem gift card"
+    }
+  },
 
   "account": {
     "add_address": "Add Address",
@@ -505,14 +478,13 @@
       "one": "{{ count }} result for “{{ terms }}”",
       "other": "{{ count }} results for “{{ terms }}”"
     },
-    "title": "Search",
+    "title": "Search our site",
     "view_all": "View all"
   },
   "quick_cart": {
     "cart": "Cart",
     "go_to_cart": "Go to cart",
-    "empty": "Your cart is currently empty.",
-    "shop_cta": "Keep Shopping"
+    "empty": "Your cart is currently empty."
   },
   "store_availability": {
     "general": {

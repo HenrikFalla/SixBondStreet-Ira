@@ -2,7 +2,7 @@
 {% assign announcements = section.blocks %}
 
 {% assign visible = false %}
-{% if announcements.size > 0 %}
+{% if section.settings.enabled and announcements.size > 0 %}
   {% assign visible = true %}
 {% endif %}
 
@@ -12,7 +12,6 @@
     data-section-id="{{ section.id }}"
     data-section-type="announcement-bar"
     data-timing="{{ timing_in_ms }}"
-    data-announcement-bar-item-count="{{announcements.size}}"
   >
     {% for block in announcements %}
       <div
@@ -43,12 +42,18 @@
 
 {% schema %}
   {
-    "name": "t:sections.announcement_bar.name",
+    "name": "Announcement bar",
     "settings": [
+      {
+        "id": "enabled",
+        "type": "checkbox",
+        "label": "Show announcement",
+        "default": true
+      },
       {
         "type": "range",
         "id": "timing",
-        "label": "t:sections.announcement_bar.settings.timing.label",
+        "label": "Time between announcements",
         "min": 3,
         "max": 15,
         "step": 1,
@@ -59,30 +64,30 @@
     "blocks": [
       {
         "type": "announcement",
-        "name": "t:sections.announcement_bar.blocks.name",
+        "name": "Announcement",
         "settings": [
           {
             "id": "title",
             "type": "text",
-            "label": "t:sections.announcement_bar.blocks.settings.title.label",
+            "label": "Announcement text",
             "default": "Announce something here"
           },
           {
             "id": "link",
             "type": "url",
-            "label": "t:sections.announcement_bar.blocks.settings.link.label",
+            "label": "Announcement link",
             "info": "Optional"
           },
           {
             "id": "color_background",
             "type": "color",
-            "label": "t:sections.announcement_bar.blocks.settings.color_background.label",
+            "label": "Background color",
             "default": "#1D1D1D"
           },
           {
             "id": "color_text",
             "type": "color",
-            "label": "t:sections.announcement_bar.blocks.settings.color_text.label",
+            "label": "Text color",
             "default": "#FFFFFF"
           }
         ]
@@ -93,7 +98,7 @@
         {
           "type": "announcement",
           "settings": {
-            "title": "t:sections.announcement_bar.default.blocks.announcement.title"
+            "title": "Announce a sale or a new product line using this announcement bar."
           }
         }
       ]

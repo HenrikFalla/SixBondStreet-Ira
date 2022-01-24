@@ -8,7 +8,6 @@
 
   {{ form.errors | default_errors }}
 
-  <label for="ContactFormName" class="visually-hidden">{{ 'contact.form.name' | t }}</label>
   <input
     type="text"
     name="contact[name]"
@@ -18,7 +17,6 @@
     value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}"
   />
 
-  <label for="ContactFormEmail" class="visually-hidden">{{ 'contact.form.email' | t }}</label>
   <input
     type="email"
     name="contact[email]"
@@ -30,8 +28,7 @@
     autocomplete="off"
     autocapitalize="off"
   >
-  
-  <label for="ContactFormPhone" class="visually-hidden">{{ 'contact.form.phone' | t }}</label>
+
   <input
     type="tel"
     name="contact[phone]"
@@ -42,7 +39,6 @@
     pattern="[0-9\-]*"
   >
 
-  <label for="ContactFormMessage" class="visually-hidden">{{ 'contact.form.message' | t }}</label>
   <textarea
     rows="10"
     name="contact[body]"

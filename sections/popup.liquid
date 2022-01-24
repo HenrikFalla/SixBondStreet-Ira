@@ -10,7 +10,6 @@
     data-timeout="10000"
     style="
       --image-position: {{ section.settings.image_position }};
-      --image-opacity: {{ section.settings.image_opacity | divided_by: 100.0}};
       --color-background: {{ section.settings.color_background }};
       --color-background-input: {{ section.settings.color_background_input }};
       --color-text: {{ section.settings.color_text }};
@@ -27,7 +26,7 @@
           disable_style: true
         %}
       {%- endif -%}
-      <a href="#" data-close class="popup__close" title="Close">{% render 'icon' with icon: 'close' %}</a>
+      <a href="#" data-close class="popup__close">{% render 'icon' with icon: 'close' %}</a>
 
       <div class="popup__content">
         {%- if heading != blank -%}
@@ -47,79 +46,69 @@
 
 {% schema %}
   {
-    "name": "t:sections.popup.name",
+    "name": "Popup",
     "settings": [
       {
         "id": "enable_popup",
         "type": "checkbox",
-        "label": "t:sections.popup.settings.enable_popup.label",
-        "info": "t:sections.popup.settings.enable_popup.info",
+        "label": "Enable",
+        "info": "Show a popup the first time the user's cursor leaves your site.",
         "default": false
       },
       {
         "id": "image",
         "type": "image_picker",
-        "label": "t:sections.popup.settings.image.label"
+        "label": "Image"
       },
       {
         "id": "image_position",
         "type": "select",
-        "label": "t:sections.popup.settings.image_position.label",
+        "label": "Image position",
         "options": [
-          { "label": "t:sections.popup.settings.image_position.options.top", "value": "top" },
-          { "label": "t:sections.popup.settings.image_position.options.center", "value": "center" },
-          { "label": "t:sections.popup.settings.image_position.options.bottom", "value": "bottom" }
+          { "label": "Top", "value": "top" },
+          { "label": "Center", "value": "center" },
+          { "label": "Bottom", "value": "bottom" }
         ],
         "default": "center"
       },
       {
-        "id": "image_opacity",
-        "type": "range",
-        "label": "t:sections.popup.settings.image_opacity.label",
-        "min": 0,
-        "max": 100,
-        "step": 5,
-        "default": 50,
-        "unit": "%"
-      },
-      {
         "id": "title",
         "type": "text",
-        "label": "t:sections.popup.settings.title.label",
+        "label": "Heading",
         "default": "Sign up for our newsletter"
       },
       {
         "id": "subheading",
         "type": "textarea",
-        "label": "t:sections.popup.settings.subheading.label",
+        "label": "Subheading",
         "default": "We only send emails once or twice a month and only about good things."
       },
       {
         "type": "header",
-        "content": "t:sections.popup.settings.header_style"
+        "content": "Style"
       },
       {
         "id": "color_background",
         "type": "color",
-        "label": "t:sections.popup.settings.color_background.label",
+        "label": "Background",
         "default": "#000000"
       },
       {
         "id": "color_text",
         "type": "color",
-        "label": "t:sections.popup.settings.color_text.label",
+        "label": "Text",
         "default": "#ffffff"
       },
       {
         "id": "color_background_input",
         "type": "color",
-        "label": "t:sections.popup.settings.color_background_input.label",
+        "label": "Input background",
         "default": "#ffffff"
       },
       {
         "id": "color_text_input",
         "type": "color",
-        "label": "t:sections.popup.settings.color_text_input.label",
+        "label": "Input text",
         "default": "#1d1d1d"
       }
     ]
