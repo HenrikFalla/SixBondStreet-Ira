@@ -41,7 +41,7 @@
 
     <div class="video__overlay visible" data-overlay>
       <div class="video__overlay-content">
-        <button class="video__play" data-play-button>
+        <button class="video__play" data-play-button title="{{ 'general.accessibility.play' | t}}">
           {% render 'icon' with icon: 'play_arrow' %}
         </button>
         <div>
@@ -71,39 +71,39 @@
 
 {% schema %}
   { 
-    "name": "Video",
+    "name": "t:sections.video.name",
     "class": "grid-section",
     "settings": [
       {
         "id": "title",
         "type": "text",
-        "label": "Heading"
+        "label": "t:sections.video.settings.title.label"
       },
       {
         "id": "subheading",
         "type": "richtext",
-        "label": "Subheading"
+        "label": "t:sections.video.settings.subheading.label"
       },
       {
         "id": "video_url",
         "type": "video_url",
-        "label": "Video URL",
+        "label": "t:sections.video.settings.video_url.label",
         "accept": ["youtube", "vimeo"],
         "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
       },
       {
         "id": "image",
         "type": "image_picker",
-        "label": "Image"
+        "label": "t:sections.video.settings.image.label"
       },
       {
         "type": "header",
-        "content": "Style"
+        "content": "t:sections.video.settings.style_header.content"
       },
       {
         "id": "opacity_overlay",
         "type": "range",
-        "label": "Overlay opacity",
+        "label": "t:sections.video.settings.opacity_overlay.label",
         "min": 0,
         "max": 100,
         "step": 10,
@@ -113,19 +113,19 @@
       {
         "id": "color_overlay",
         "type": "color",
-        "label": "Overlay",
+        "label": "t:sections.video.settings.color_overlay.label",
         "default": "#000000"
       },
       {
         "id": "color_text",
         "type": "color",
-        "label": "Text",
+        "label": "t:sections.video.settings.color_text.label",
         "default": "#ffffff"
       }
     ],
     "presets": [
       {
-        "name": "Video",
+        "name": "t:sections.video.presets.name",
         "category": "Video",
         "settings": {
           "title": "Featured video",
