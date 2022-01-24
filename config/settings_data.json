@@ -53,10 +53,6 @@
     "cart_enable_ajax": true,
     "cart_enable_quick_shop": false,
     "cart_quick_shop_show_quantity": false,
-    "cart_show_notes": true,
-    "cart_terms_conditions_enable": true,
-    "threshold": "10000",
-    "cart_terms_conditions_link": "shopify:\/\/pages\/kjopsbetingelser",
     "social_twitter_link": "",
     "social_facebook_link": "",
     "social_pinterest_link": "",
@@ -81,6 +77,10 @@
     "checkout_accent_color": "#333333",
     "checkout_button_color": "#333333",
     "checkout_error_color": "#e32c2b",
+    "cart_show_notes": true,
+    "cart_terms_conditions_enable": true,
+    "threshold": "10000",
+    "cart_terms_conditions_link": "shopify:\/\/pages\/kjopsbetingelser",
     "quick_cart_note": "Your subtotal today is [subtotal]. Shipping and taxes will be calculated at checkout.",
     "color_text_meta": "#a6a6a6",
     "color_text_meta_contrast": "#a5a5a5",
@@ -92,6 +92,7 @@
         "blocks": {
           "1601505997237": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "title": "Fri frakt på alle ordre over 10.000,-",
               "link": "",
@@ -101,6 +102,7 @@
           },
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "title": "Vi flytter lager. Det må påregnes noe forsinkelse ved levering.",
               "link": "",
@@ -114,7 +116,6 @@
           "announcement-bar-0"
         ],
         "settings": {
-          "enabled": true,
           "timing": 5
         }
       },
@@ -152,7 +153,6 @@
           "logo": "shopify:\/\/shop_images\/Logo_simplified.png",
           "logo_max_width": 270,
           "menu": "main-menu",
-          "mobile-menu": "mobile-menu",
           "alt_menu": "alt-menu",
           "style": "inline",
           "logo_position": "center",
@@ -170,6 +170,7 @@
         "settings": {
           "enable_popup": false,
           "image_position": "center",
+          "image_opacity": 50,
           "title": "Sign up for our newsletter",
           "subheading": "We only send emails once or twice a month and only about good things.",
           "color_background": "#000000",
@@ -782,18 +783,6 @@
         "settings": {
         }
       },
-      "16342916002aed89e6": {
-        "type": "video--dynamic",
-        "settings": {
-          "title": "Inspirasjon hjemme hos stilikonet Gine Margrethe",
-          "subheading": "<p>Gine Margrethe Qvale er til stor inspirasjon for mange. Hun inspirerer både på mote- og interiørfronten med sin elegante, kreative og fargerike stil. <\/p>",
-          "video_url": "https:\/\/www.youtube.com\/watch?v=RabsUXjOLOA",
-          "image": "shopify:\/\/shop_images\/forside_ginemargrethe.jpg",
-          "opacity_overlay": 50,
-          "color_overlay": "#000000",
-          "color_text": "#ffffff"
-        }
-      },
       "1634467668d8706b5a": {
         "type": "collage--dynamic",
         "blocks": {
@@ -993,7 +982,6 @@
       "1601499234365",
       "1600315468934",
       "16329855288f7a5eb8",
-      "16342916002aed89e6",
       "1634540189e5c83ea4",
       "1600315479900",
       "1637248375ff2240f0"
@@ -1094,7 +1082,6 @@
             "1600989314555"
           ],
           "settings": {
-            "enabled": true,
             "timing": 3
           }
         },
@@ -1703,7 +1690,6 @@
             "announcement-bar-0"
           ],
           "settings": {
-            "enabled": true,
             "timing": 3
           }
         },
@@ -2357,7 +2343,6 @@
             "1601505997237"
           ],
           "settings": {
-            "enabled": true,
             "timing": 3
           }
         },
