@@ -978,15 +978,15 @@
           },
           "1641219531a9e76cfa-1": {
             "type": "image",
-            "disabled": true,
             "settings": {
+              "image": "shopify:\/\/shop_images\/monster_blogg_008.jpg",
               "video_url": "",
-              "meta": "Meta",
-              "title": "This is the Collage",
-              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "meta": "Inspirasjon",
+              "title": "Slik innreder du med mønster",
+              "subheading": "<p>Interiørdesigner Marie guider deg frem til hvordan du kan innrede med mønster.<\/p>",
               "max_width_subheading": 28,
-              "link_text": "Shop the collection",
-              "link": "#",
+              "link_text": "Les mer her",
+              "link": "\/pages\/slik-innreder-du-med-m-nstrete-tekstiler",
               "alignment": "left_center",
               "opacity_overlay": 60
             }
