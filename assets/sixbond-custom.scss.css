@@ -16,7 +16,9 @@
     background: #e5e3dc;
     /* Gecko Browsers */
 }
-
+html {
+    scroll-behavior: smooth;
+}
 
 /* TYPOGRAPHY */
 
