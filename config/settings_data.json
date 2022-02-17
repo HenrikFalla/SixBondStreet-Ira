@@ -1002,7 +1002,7 @@
           "color_subheading": "#ffffff",
           "color_background_button": "#ffffff",
           "color_text_button": "#000000",
-          "enable_full_width": true
+          "enable_full_width": false
         }
       },
       "164208296949c113f9": {
@@ -1047,6 +1047,7 @@
       },
       "16421485616619ee4f": {
         "type": "image-with-text--dynamic",
+        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/lenox_rod_miljo.jpg",
           "video_url": "",
@@ -1107,16 +1108,64 @@
           "color_text_button": "#000000",
           "enable_full_width": true
         }
+      },
+      "1645091337d2239f7a": {
+        "type": "collage--dynamic",
+        "blocks": {
+          "1645091337d2239f7a-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/lenox_rod_miljo.jpg",
+              "video_url": "",
+              "meta": "Inspirasjon",
+              "title": "Fjellhytte kolleksjonen",
+              "subheading": "<p>Vi introduserer vår nye fjellhytte kolleksjon med tekstilmøbler som passer perfekt på fjellhytta.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/fjellhytte-kolleksjonen",
+              "alignment": "left_bottom",
+              "opacity_overlay": 20
+            }
+          },
+          "1645091337d2239f7a-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/forside_fjellhytta_inspirasjon.jpg",
+              "video_url": "",
+              "meta": "Få stilen",
+              "title": "Inspirasjon til fjellhytta",
+              "subheading": "<p>Her finner du alt du trenger for å innrede en innbydende, komfortabel, lun og tidløs fjellhytte.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/inspirasjon-til-fjellhytta",
+              "alignment": "left_bottom",
+              "opacity_overlay": 20
+            }
+          }
+        },
+        "block_order": [
+          "1645091337d2239f7a-0",
+          "1645091337d2239f7a-1"
+        ],
+        "settings": {
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
+          "color_background_button": "#000000",
+          "color_text_button": "#ffffff",
+          "enable_full_width": true
+        }
       }
     },
     "content_for_index": [
       "164008427524d9f8aa",
       "164208296949c113f9",
+      "1645091337d2239f7a",
       "1601498256106",
-      "1641219531a9e76cfa",
-      "16381949978e24d4c3",
       "1632985524a87701b3",
       "1600315401018",
+      "1641219531a9e76cfa",
+      "16381949978e24d4c3",
       "1634468547c34ee1d1",
       "164215194880a53461",
       "1634467668d8706b5a",
