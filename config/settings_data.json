@@ -1155,6 +1155,23 @@
           "color_text_button": "#ffffff",
           "enable_full_width": true
         }
+      },
+      "1647442765d5229954": {
+        "type": "image-with-text--dynamic",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/arets_hagemobler.jpg",
+          "video_url": "",
+          "image_width": "standard",
+          "image_position": "left",
+          "title": "Forhåndsbestill årets utemøbler",
+          "text": "<p>Årets hagemøbler er laget av teak og er forventet på lager i uke 13 2022. Begrenset antall.<\/p>",
+          "max_width_text": 34,
+          "link": "#",
+          "link_text": "Se utvalget her",
+          "enable_contrast": true,
+          "enable_full_width": true
+        }
       }
     },
     "content_for_index": [
@@ -1175,7 +1192,8 @@
       "1600315418706",
       "1601499234365",
       "1600315468934",
-      "1601240654390"
+      "1601240654390",
+      "1647442765d5229954"
     ]
   },
   "presets": {
