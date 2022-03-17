@@ -907,30 +907,30 @@
               "max_width_subheading": 30,
               "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/arets-utemobler-2022",
-              "alignment": "center_center",
+              "alignment": "center_bottom",
               "opacity_overlay": 40
             }
           },
-          "164008427524d9f8aa-1": {
+          "28d1c8e7-8aef-401c-93d2-498b6b6fe445": {
             "type": "image",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/plla_forside_trender_hoyoppl_003.jpg",
+              "image": "shopify:\/\/shop_images\/michael-fousert-lE5-z4nTCTQ-unsplash.jpg",
               "video_url": "",
-              "meta": "Trender",
-              "title": "Vårens interiørtrender",
-              "subheading": "<p>Vår designer og innkjøper Palla Masdottir forteller om vårens viktigste interiørtrender.<\/p>",
+              "meta": "Nyhet",
+              "title": "Vi kommer til Bergen!",
+              "subheading": "<p>31 mars 2022 åpner SixBondStreet showroom i Bergen. Bli med på åpningen.<\/p>",
               "max_width_subheading": 28,
-              "link_text": "La deg inspirere",
-              "link": "\/pages\/interi-rtrender-v-ren-2022",
-              "alignment": "left_bottom",
-              "opacity_overlay": 30
+              "link_text": "SE HER",
+              "link": "https:\/\/fb.me\/e\/1pg4v4qKN",
+              "alignment": "center_bottom",
+              "opacity_overlay": 40
             }
           }
         },
         "block_order": [
           "7dba8207-ccbb-4fda-a939-d72d4b25e312",
-          "164008427524d9f8aa-1"
+          "28d1c8e7-8aef-401c-93d2-498b6b6fe445"
         ],
         "settings": {
           "color_overlay": "#000000",
@@ -1157,6 +1157,7 @@
       },
       "1647511056eb3ca2f6": {
         "type": "text-columns-with-images--dynamic",
+        "disabled": true,
         "blocks": {
           "1647511056eb3ca2f6-0": {
             "type": "column",
@@ -1198,16 +1199,34 @@
           "image_max_width": 100,
           "circle": true
         }
+      },
+      "164752254623acba9e": {
+        "type": "image-with-text--dynamic",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/bergen_img_forside_apning_rektangulaert.png",
+          "video_url": "",
+          "image_width": "standard",
+          "image_position": "right",
+          "title": "Vi kommer til Bergen!",
+          "text": "<p>31 mars åpner SixBondStreet showroom i Bergen. Bli med på åpningen.<\/p>",
+          "max_width_text": 34,
+          "link": "https:\/\/fb.me\/e\/1pg4v4qKN",
+          "link_text": "SE HER",
+          "enable_contrast": true,
+          "enable_full_width": true
+        }
       }
     },
     "content_for_index": [
       "164008427524d9f8aa",
+      "164752254623acba9e",
       "1647511056eb3ca2f6",
-      "1647442765d5229954",
       "164208296949c113f9",
+      "1647442765d5229954",
+      "1600315431677",
       "1645091337d2239f7a",
       "1632985524a87701b3",
-      "1600315431677",
       "1600315401018",
       "1641219531a9e76cfa",
       "16381949978e24d4c3",
