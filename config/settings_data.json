@@ -608,23 +608,6 @@
           "per_row": 3
         }
       },
-      "1601498256106": {
-        "type": "image-with-text--dynamic",
-        "disabled": true,
-        "settings": {
-          "image": "shopify:\/\/shop_images\/lenox_hyttetekstiler_gra_bla_square.jpg",
-          "video_url": "",
-          "image_width": "standard",
-          "image_position": "left",
-          "title": "Nyhet!",
-          "text": "<p><strong>Fjellhytte kolleksjonen<br\/><\/strong><br\/>Vi introduserer vår nye fjellhyttekolleksjon med tekstilmøbler som passer perfekt på fjellhytta. <br\/><\/p>",
-          "max_width_text": 20,
-          "link": "shopify:\/\/collections\/fjellhytte-kolleksjonen",
-          "link_text": "Se utvalget her",
-          "enable_contrast": true,
-          "enable_full_width": true
-        }
-      },
       "1601499234365": {
         "type": "featured-collection--dynamic",
         "settings": {
@@ -913,13 +896,29 @@
       "164008427524d9f8aa": {
         "type": "collage--dynamic",
         "blocks": {
+          "7dba8207-ccbb-4fda-a939-d72d4b25e312": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/arets_hagemobler.jpg",
+              "video_url": "",
+              "meta": "Nyhet",
+              "title": "Forhåndsbestill årets hagemøbler nå",
+              "subheading": "<p>Årets møbler til uteområdet defineres som tidløse, elegante og romslige. Møblene er laget av ubehandlet teak. Forventet på lager i uke 13 2022. Kun et begrenset antall tilgjengelig.<\/p>",
+              "max_width_subheading": 30,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/arets-utemobler-2022",
+              "alignment": "center_center",
+              "opacity_overlay": 40
+            }
+          },
           "164008427524d9f8aa-1": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/plla_forside_trender_hoyoppl_003.jpg",
               "video_url": "",
               "meta": "Trender",
-              "title": "VÅRENS INTERIØRTRENDER",
+              "title": "Vårens interiørtrender",
               "subheading": "<p>Vår designer og innkjøper Palla Masdottir forteller om vårens viktigste interiørtrender.<\/p>",
               "max_width_subheading": 28,
               "link_text": "La deg inspirere",
@@ -927,27 +926,11 @@
               "alignment": "left_bottom",
               "opacity_overlay": 30
             }
-          },
-          "164008427524d9f8aa-0": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "image": "shopify:\/\/shop_images\/banner_fjellhytte_kolleksjonen_003.jpg",
-              "video_url": "",
-              "meta": "Nyhet",
-              "title": "Fjellhytte kolleksjonen",
-              "subheading": "<p>Vi introduserer vår nye fjellhyttekolleksjon med tekstilmøbler som passer perfekt på fjellhytta. <br\/><\/p>",
-              "max_width_subheading": 28,
-              "link_text": "Se utvalget her",
-              "link": "shopify:\/\/collections\/fjellhytte-kolleksjonen",
-              "alignment": "center_bottom",
-              "opacity_overlay": 50
-            }
           }
         },
         "block_order": [
-          "164008427524d9f8aa-1",
-          "164008427524d9f8aa-0"
+          "7dba8207-ccbb-4fda-a939-d72d4b25e312",
+          "164008427524d9f8aa-1"
         ],
         "settings": {
           "color_overlay": "#000000",
@@ -1159,15 +1142,15 @@
       "1647442765d5229954": {
         "type": "image-with-text--dynamic",
         "settings": {
-          "image": "shopify:\/\/shop_images\/arets_hagemobler.jpg",
+          "image": "shopify:\/\/shop_images\/plla_forside_trender_hoyoppl_003.jpg",
           "video_url": "",
           "image_width": "standard",
           "image_position": "left",
-          "title": "Forhåndsbestill årets hagemøbler nå",
-          "text": "<p>Årets møbler til uteområdet defineres som tidløse, elegante og romslige. Møblene er laget av ubehandlet teak. Forventet på lager i uke 13 2022. Kun et begrenset antall tilgjengelig.<\/p>",
+          "title": "Vårens interiørtrender",
+          "text": "<p>Vår designer og innkjøper Palla Masdottir forteller om vårens viktigste interiørtrender.<\/p>",
           "max_width_text": 34,
-          "link": "shopify:\/\/collections\/arets-utemobler-2022",
-          "link_text": "Se utvalget her",
+          "link": "shopify:\/\/blogs\/nr-6\/varens-interiortrender-2022",
+          "link_text": "Les mer her",
           "enable_contrast": true,
           "enable_full_width": true
         }
@@ -1175,10 +1158,9 @@
     },
     "content_for_index": [
       "164008427524d9f8aa",
-      "164208296949c113f9",
-      "1647442765d5229954",
-      "1601498256106",
       "1632985524a87701b3",
+      "1647442765d5229954",
+      "164208296949c113f9",
       "1645091337d2239f7a",
       "1600315431677",
       "1600315401018",
