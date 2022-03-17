@@ -628,8 +628,8 @@
       "1601499234365": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "hudson-valley",
-          "title": "Hudson Valley",
+          "collection": "101-copenhagen",
+          "title": "101 Copenhagen",
           "per_row": 4,
           "rows": 1,
           "aspect_ratio": "natural"
