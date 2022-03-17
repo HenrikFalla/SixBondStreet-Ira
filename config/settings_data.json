@@ -1202,7 +1202,6 @@
       },
       "164752254623acba9e": {
         "type": "image-with-text--dynamic",
-        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/bergen_img_forside_apning_rektangulaert.png",
           "video_url": "",
@@ -1210,7 +1209,7 @@
           "image_position": "right",
           "title": "Vi kommer til Bergen!",
           "text": "<p>31 mars åpner SixBondStreet showroom i Bergen. Bli med på åpningen.<\/p>",
-          "max_width_text": 34,
+          "max_width_text": 38,
           "link": "https:\/\/fb.me\/e\/1pg4v4qKN",
           "link_text": "SE HER",
           "enable_contrast": true,
