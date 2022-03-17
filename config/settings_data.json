@@ -32,14 +32,14 @@
     "font_heading": "raleway_n4",
     "capitalize_headings": false,
     "heading_letter_spacing": 75,
-    "heading_base_size": 26,
+    "heading_base_size": 28,
     "font_meta": "raleway_n4",
     "capitalize_meta": false,
     "meta_letter_spacing": 75,
     "meta_base_size": 14,
     "font_body": "raleway_n4",
     "body_letter_spacing": 75,
-    "body_base_size": 14,
+    "body_base_size": 16,
     "enable_section_borders": false,
     "corner_radius": 4,
     "enable_page_transitions": true,
@@ -1155,21 +1155,8 @@
           "enable_full_width": true
         }
       },
-      "16475107696397be14": {
-        "type": "rich-text--dynamic",
-        "disabled": true,
-        "settings": {
-          "title": "Vi kommer til Bergen!",
-          "text": "<p>31 mars åpner SixBondStreet showroom i Bergen. Bli med på åpningen.<\/p>",
-          "link": "https:\/\/fb.me\/e\/1pg4v4qKN",
-          "link_text": "Se her",
-          "max_width": 680,
-          "alignment": "center"
-        }
-      },
       "1647511056eb3ca2f6": {
         "type": "text-columns-with-images--dynamic",
-        "disabled": true,
         "blocks": {
           "1647511056eb3ca2f6-0": {
             "type": "column",
@@ -1214,13 +1201,12 @@
       }
     },
     "content_for_index": [
-      "16475107696397be14",
-      "1647511056eb3ca2f6",
       "164008427524d9f8aa",
-      "1632985524a87701b3",
+      "1647511056eb3ca2f6",
       "1647442765d5229954",
       "164208296949c113f9",
       "1645091337d2239f7a",
+      "1632985524a87701b3",
       "1600315431677",
       "1600315401018",
       "1641219531a9e76cfa",
