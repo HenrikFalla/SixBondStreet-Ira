@@ -1154,6 +1154,18 @@
           "enable_contrast": true,
           "enable_full_width": true
         }
+      },
+      "16475107696397be14": {
+        "type": "rich-text--dynamic",
+        "disabled": true,
+        "settings": {
+          "title": "Vi kommer til Bergen!",
+          "text": "<p>31 mars åpner SixBondStreet showroom i Bergen. Bli med på åpningen.<\/p>",
+          "link": "https:\/\/fb.me\/e\/1pg4v4qKN",
+          "link_text": "Se her",
+          "max_width": 680,
+          "alignment": "center"
+        }
       }
     },
     "content_for_index": [
@@ -1174,7 +1186,8 @@
       "1600315418706",
       "1601499234365",
       "1600315468934",
-      "1601240654390"
+      "1601240654390",
+      "16475107696397be14"
     ]
   },
   "presets": {
