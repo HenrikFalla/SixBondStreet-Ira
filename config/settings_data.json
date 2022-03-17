@@ -1166,9 +1166,56 @@
           "max_width": 680,
           "alignment": "center"
         }
+      },
+      "1647511056eb3ca2f6": {
+        "type": "text-columns-with-images--dynamic",
+        "disabled": true,
+        "blocks": {
+          "1647511056eb3ca2f6-0": {
+            "type": "column",
+            "settings": {
+              "title": "Vi kommer til Bergen!",
+              "text": "31 mars åpner SixBondStreet showroom i Bergen. Bli med på åpningen.",
+              "link": "https:\/\/fb.me\/e\/1pg4v4qKN",
+              "link_text": "SE HER"
+            }
+          },
+          "1647511056eb3ca2f6-1": {
+            "type": "column",
+            "disabled": true,
+            "settings": {
+              "title": "Heading",
+              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
+              "link": "#",
+              "link_text": "Link text"
+            }
+          },
+          "1647511056eb3ca2f6-2": {
+            "type": "column",
+            "disabled": true,
+            "settings": {
+              "title": "Heading",
+              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
+              "link": "#",
+              "link_text": "Link text"
+            }
+          }
+        },
+        "block_order": [
+          "1647511056eb3ca2f6-0",
+          "1647511056eb3ca2f6-1",
+          "1647511056eb3ca2f6-2"
+        ],
+        "settings": {
+          "per_row": 1,
+          "image_max_width": 100,
+          "circle": true
+        }
       }
     },
     "content_for_index": [
+      "16475107696397be14",
+      "1647511056eb3ca2f6",
       "164008427524d9f8aa",
       "1632985524a87701b3",
       "1647442765d5229954",
@@ -1186,8 +1233,7 @@
       "1600315418706",
       "1601499234365",
       "1600315468934",
-      "1601240654390",
-      "16475107696397be14"
+      "1601240654390"
     ]
   },
   "presets": {
