@@ -1215,6 +1215,16 @@
           "enable_contrast": true,
           "enable_full_width": true
         }
+      },
+      "1647601048f15a5766": {
+        "type": "blog-posts--dynamic",
+        "settings": {
+          "title": "Nye merker",
+          "blog": "merker",
+          "per_row": 4,
+          "rows": 1,
+          "aspect_ratio": "square"
+        }
       }
     },
     "content_for_index": [
@@ -1223,8 +1233,9 @@
       "1647511056eb3ca2f6",
       "164208296949c113f9",
       "1647442765d5229954",
-      "1600315431677",
+      "1647601048f15a5766",
       "1645091337d2239f7a",
+      "1600315431677",
       "1632985524a87701b3",
       "1600315401018",
       "1641219531a9e76cfa",
