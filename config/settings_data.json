@@ -1154,6 +1154,52 @@
           "enable_contrast": true,
           "enable_full_width": true
         }
+      },
+      "164802989305c97a02": {
+        "type": "collage--dynamic",
+        "disabled": true,
+        "blocks": {
+          "164802989305c97a02-0": {
+            "type": "image",
+            "settings": {
+              "video_url": "",
+              "meta": "Inspirasjon",
+              "title": "Komfortable og elegante spisestoler",
+              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Shop the collection",
+              "link": "shopify:\/\/blogs\/nr-6\/komfortable-og-elegante-spisestoler",
+              "alignment": "left_center",
+              "opacity_overlay": 50
+            }
+          },
+          "164802989305c97a02-1": {
+            "type": "image",
+            "settings": {
+              "video_url": "",
+              "meta": "Meta",
+              "title": "This is the Collage",
+              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Shop the collection",
+              "link": "#",
+              "alignment": "left_center",
+              "opacity_overlay": 60
+            }
+          }
+        },
+        "block_order": [
+          "164802989305c97a02-0",
+          "164802989305c97a02-1"
+        ],
+        "settings": {
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
+          "color_background_button": "#ffffff",
+          "color_text_button": "#000000",
+          "enable_full_width": false
+        }
       }
     },
     "content_for_index": [
@@ -1174,7 +1220,8 @@
       "1600315418706",
       "1601499234365",
       "1600315468934",
-      "1601240654390"
+      "1601240654390",
+      "164802989305c97a02"
     ]
   },
   "presets": {
