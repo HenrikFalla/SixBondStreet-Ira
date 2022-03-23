@@ -807,6 +807,7 @@
         "blocks": {
           "1634468547c34ee1d1-1": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/banner_forside_harrison_22.jpg",
               "meta": "Møbelkolleksjon",
@@ -822,7 +823,7 @@
           "1634468547c34ee1d1-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Uten_navn-3.jpg",
+              "image": "shopify:\/\/shop_images\/banner_forside_nyheter.jpg",
               "meta": "Nyheter",
               "title": "Nyheter",
               "subheading": "<p>Her finner du alle våre nyheter.<\/p>",
@@ -1160,11 +1161,11 @@
       "164752254623acba9e",
       "1632985524a87701b3",
       "1600315401018",
+      "16381949978e24d4c3",
       "1600315431677",
       "1647442765d5229954",
       "164208296949c113f9",
       "1634468547c34ee1d1",
-      "16381949978e24d4c3",
       "1645091337d2239f7a",
       "1641219531a9e76cfa",
       "1600315479900",
