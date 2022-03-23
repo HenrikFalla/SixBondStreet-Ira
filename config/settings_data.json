@@ -1167,7 +1167,7 @@
               "title": "Komfortable og elegante spisestoler",
               "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
               "max_width_subheading": 28,
-              "link_text": "Shop the collection",
+              "link_text": "Se utvalget her",
               "link": "shopify:\/\/blogs\/nr-6\/komfortable-og-elegante-spisestoler",
               "alignment": "left_center",
               "opacity_overlay": 50
@@ -1177,11 +1177,11 @@
             "type": "image",
             "settings": {
               "video_url": "",
-              "meta": "Meta",
-              "title": "This is the Collage",
+              "meta": "Inspirasjon",
+              "title": "Spisebord med uttrekk",
               "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
               "max_width_subheading": 28,
-              "link_text": "Shop the collection",
+              "link_text": "Se utvalget her",
               "link": "#",
               "alignment": "left_center",
               "opacity_overlay": 60
