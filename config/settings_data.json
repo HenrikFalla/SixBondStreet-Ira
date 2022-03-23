@@ -879,16 +879,15 @@
       },
       "16381949978e24d4c3": {
         "type": "image-with-text--dynamic",
-        "disabled": true,
         "settings": {
-          "image": "shopify:\/\/shop_images\/78178_lyra_armchair_belfort_lantern_screen_square.jpg",
+          "image": "shopify:\/\/shop_images\/190327_SBS1849_kopi.jpg",
           "video_url": "",
           "image_width": "standard",
           "image_position": "left",
           "title": "Harrison kolleksjonen",
           "text": "<p>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen. Designet av og for SixbondStreet.<\/p>",
           "max_width_text": 34,
-          "link": "shopify:\/\/collections\/brafab",
+          "link": "shopify:\/\/collections\/harrison-kolleksjonen",
           "link_text": "Se utvalget her",
           "enable_contrast": true,
           "enable_full_width": false
