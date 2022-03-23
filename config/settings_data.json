@@ -879,17 +879,16 @@
       },
       "16381949978e24d4c3": {
         "type": "image-with-text--dynamic",
-        "disabled": true,
         "settings": {
-          "image": "shopify:\/\/shop_images\/Mathias_duma_001.jpg",
+          "image": "shopify:\/\/shop_images\/78178_lyra_armchair_belfort_lantern_screen_square.jpg",
           "video_url": "",
           "image_width": "standard",
           "image_position": "left",
-          "title": "Miljøsofa aka “Møbelflipperen” x SixBondStreet",
-          "text": "<p>Miljøsofa aka “Møbelflipperen” & SixBondStreet ønsker å ta sin del av ansvaret og bruke vår felles kunnskap til å gi nytt liv til brukte møbler.<\/p>",
+          "title": "Lagerførte hagemøbler & tilbehør",
+          "text": "<p>Her finner du lagerførte møbler- og tilbehør til uteplassen fra den svenske leverandøren Brafab. <\/p>",
           "max_width_text": 34,
-          "link": "\/pages\/m-flipperen",
-          "link_text": "Les mer her",
+          "link": "shopify:\/\/collections\/brafab",
+          "link_text": "Se utvalget her",
           "enable_contrast": true,
           "enable_full_width": false
         }
@@ -1029,23 +1028,6 @@
           "aspect_ratio": "natural"
         }
       },
-      "16421485616619ee4f": {
-        "type": "image-with-text--dynamic",
-        "disabled": true,
-        "settings": {
-          "image": "shopify:\/\/shop_images\/lenox_rod_miljo.jpg",
-          "video_url": "",
-          "image_width": "standard",
-          "image_position": "left",
-          "title": "FJELLHYTTE KOLLEKSJONEN",
-          "text": "<p>Vi introduserer vår nye fjellhytte kolleksjon med tekstilmøbler som passer perfekt på fjellhytta.<\/p>",
-          "max_width_text": 34,
-          "link": "shopify:\/\/collections\/fjellhytte-kolleksjonen",
-          "link_text": "Se utvalget her",
-          "enable_contrast": true,
-          "enable_full_width": true
-        }
-      },
       "164215194880a53461": {
         "type": "collage--dynamic",
         "blocks": {
@@ -1156,51 +1138,6 @@
           "enable_full_width": true
         }
       },
-      "1647511056eb3ca2f6": {
-        "type": "text-columns-with-images--dynamic",
-        "disabled": true,
-        "blocks": {
-          "1647511056eb3ca2f6-0": {
-            "type": "column",
-            "settings": {
-              "title": "Vi kommer til Bergen!",
-              "text": "31 mars åpner SixBondStreet showroom i Bergen. Bli med på åpningen.",
-              "link": "https:\/\/fb.me\/e\/1pg4v4qKN",
-              "link_text": "SE HER"
-            }
-          },
-          "1647511056eb3ca2f6-1": {
-            "type": "column",
-            "disabled": true,
-            "settings": {
-              "title": "Heading",
-              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
-              "link": "#",
-              "link_text": "Link text"
-            }
-          },
-          "1647511056eb3ca2f6-2": {
-            "type": "column",
-            "disabled": true,
-            "settings": {
-              "title": "Heading",
-              "text": "Introduce your vision, or explain why what you do or sell is superior to your competitors.",
-              "link": "#",
-              "link_text": "Link text"
-            }
-          }
-        },
-        "block_order": [
-          "1647511056eb3ca2f6-0",
-          "1647511056eb3ca2f6-1",
-          "1647511056eb3ca2f6-2"
-        ],
-        "settings": {
-          "per_row": 1,
-          "image_max_width": 100,
-          "circle": true
-        }
-      },
       "164752254623acba9e": {
         "type": "image-with-text--dynamic",
         "settings": {
@@ -1216,29 +1153,16 @@
           "enable_contrast": true,
           "enable_full_width": true
         }
-      },
-      "1647601048f15a5766": {
-        "type": "blog-posts--dynamic",
-        "disabled": true,
-        "settings": {
-          "title": "Nye merker",
-          "blog": "merker",
-          "per_row": 4,
-          "rows": 1,
-          "aspect_ratio": "square"
-        }
       }
     },
     "content_for_index": [
       "164008427524d9f8aa",
       "164752254623acba9e",
-      "1647511056eb3ca2f6",
       "1632985524a87701b3",
       "1600315401018",
       "1600315431677",
       "1647442765d5229954",
       "164208296949c113f9",
-      "1647601048f15a5766",
       "1634468547c34ee1d1",
       "1645091337d2239f7a",
       "1641219531a9e76cfa",
@@ -1246,7 +1170,6 @@
       "1600315479900",
       "164215194880a53461",
       "1634467668d8706b5a",
-      "16421485616619ee4f",
       "1600315418706",
       "1601499234365",
       "1600315468934",
