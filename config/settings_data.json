@@ -1167,7 +1167,7 @@
               "title": "Komfortable og elegante spisestoler",
               "subheading": "<p>Er du på jakt etter spisestoler som både er elegante og komfortable? Da kan vi varmt anbefale Madison eller Como. De leveres både med og uten armlener. <\/p>",
               "max_width_subheading": 28,
-              "link_text": "Se utvalget her",
+              "link_text": "Les mer her",
               "link": "shopify:\/\/blogs\/nr-6\/komfortable-og-elegante-spisestoler",
               "alignment": "left_center",
               "opacity_overlay": 40
@@ -1175,17 +1175,17 @@
           },
           "164802989305c97a02-1": {
             "type": "image",
-            "disabled": true,
             "settings": {
+              "image": "shopify:\/\/shop_images\/forside_rundespisebord_inngagn_blogg.jpg",
               "video_url": "",
               "meta": "Inspirasjon",
-              "title": "Spisebord med uttrekk",
-              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "title": "Runde spisebord alle vil ha",
+              "subheading": "<p>Bordene er skapt for å kunne lage en innbydende og fleksibel spisegruppe. Det skal være enkelt å få plass til en ekstra gjest...<\/p>",
               "max_width_subheading": 28,
-              "link_text": "Se utvalget her",
-              "link": "#",
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/blogs\/nr-6\/runde-spisebord-alle-vil-ha",
               "alignment": "left_center",
-              "opacity_overlay": 60
+              "opacity_overlay": 40
             }
           }
         },
@@ -1211,8 +1211,8 @@
       "16381949978e24d4c3",
       "1634468547c34ee1d1",
       "1600315431677",
-      "1641219531a9e76cfa",
       "164802989305c97a02",
+      "1641219531a9e76cfa",
       "1645091337d2239f7a",
       "1600315479900",
       "1647442765d5229954",
