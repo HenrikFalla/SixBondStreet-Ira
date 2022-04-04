@@ -1141,6 +1141,7 @@
       },
       "164752254623acba9e": {
         "type": "image-with-text--dynamic",
+        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/bergen_img_forside_apning_rektangulaert.png",
           "video_url": "",
