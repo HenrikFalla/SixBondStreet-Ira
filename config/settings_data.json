@@ -945,6 +945,36 @@
       "1641219531a9e76cfa": {
         "type": "collage--dynamic",
         "blocks": {
+          "91b9323b-efb3-418f-842c-fec999df03cf": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/styling_sofabord_rektangulaert.jpg",
+              "video_url": "",
+              "meta": "Guide",
+              "title": "Slik styler du kvadratiske og rektangulære sofabord",
+              "subheading": "<p>Vi har laget en liten guide som tar deg gjennom hele prosessen og laget noen tips, så du enkelt kan style ditt eget sofabord hjemme. <\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/blogs\/nr-6\/hvordan-style-et-kvadratisk-eller-rektangulaert-sofabord",
+              "alignment": "left_center",
+              "opacity_overlay": 50
+            }
+          },
+          "d3adef1e-2684-4801-8e7b-787fd5cf63bb": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/style_rundt_sofabord.jpg",
+              "video_url": "",
+              "meta": "Guide",
+              "title": "Slik styler du et rundt sofabord",
+              "subheading": "<p>Vi guider deg til hvordan du enkelt kan style et rundt sofabord.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/blogs\/nr-6\/hvordan-style-et-rundt-sofabord",
+              "alignment": "left_center",
+              "opacity_overlay": 40
+            }
+          },
           "1641219531a9e76cfa-0": {
             "type": "image",
             "settings": {
@@ -962,6 +992,7 @@
           },
           "1641219531a9e76cfa-1": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/monster_blogg_008.jpg",
               "video_url": "",
@@ -977,6 +1008,8 @@
           }
         },
         "block_order": [
+          "91b9323b-efb3-418f-842c-fec999df03cf",
+          "d3adef1e-2684-4801-8e7b-787fd5cf63bb",
           "1641219531a9e76cfa-0",
           "1641219531a9e76cfa-1"
         ],
@@ -1259,8 +1292,8 @@
       "1600315401018",
       "16381949978e24d4c3",
       "1634468547c34ee1d1",
-      "1600315431677",
       "164802989305c97a02",
+      "1600315431677",
       "1641219531a9e76cfa",
       "1645091337d2239f7a",
       "1600315479900",
