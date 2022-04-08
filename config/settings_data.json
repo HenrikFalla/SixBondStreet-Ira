@@ -861,13 +861,28 @@
               "alignment": "right_split",
               "opacity_overlay": 20
             }
+          },
+          "bf4e7cde-0ac4-430d-b855-b19a648ef7cd": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/interior_banner_sbs.jpg",
+              "meta": "Nyhet",
+              "title": "Interiørvarer fra SixBondStreet",
+              "subheading": "<p>Her finner du våre egne interiørvarer. Alt fra dekorative skulpturer til pynteputer og metervare.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/interiorvarer-fra-sixbondstreet",
+              "alignment": "left_split",
+              "opacity_overlay": 60
+            }
           }
         },
         "block_order": [
           "1634468547c34ee1d1-1",
           "1634468547c34ee1d1-0",
           "1634468547c34ee1d1-2",
-          "91dc111b-bdcd-446c-919b-6660895b0208"
+          "91dc111b-bdcd-446c-919b-6660895b0208",
+          "bf4e7cde-0ac4-430d-b855-b19a648ef7cd"
         ],
         "settings": {
           "height_mobile": 50,
