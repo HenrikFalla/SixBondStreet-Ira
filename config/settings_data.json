@@ -287,7 +287,7 @@
             "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/bilde-trenderaw21-035617-RSgh4bvL.jpg",
-              "video_url": "shopify:\/\/blogs\/nr-6\/hostens-interiortrender-2021",
+              "video_url": "shopify:\/\/blogs\/inspirasjon\/hostens-interiortrender-2021",
               "meta": "",
               "title": "Høstens interiørtrender",
               "subheading": "",
@@ -461,7 +461,7 @@
         "type": "blog-posts--dynamic",
         "settings": {
           "title": "Nettmagasinet Nr. 6",
-          "blog": "nr-6",
+          "blog": "inspirasjon",
           "per_row": 2,
           "rows": 1,
           "aspect_ratio": "natural"
@@ -480,7 +480,7 @@
               "subheading": "<p><br\/>Gine Margrethe er et stilikon med mange jern i ilden. SixBondStreet besøkte henne for å snakke om trender, bærekraft og innredning av hjemmet.<br\/><br\/><\/p>",
               "max_width_subheading": 20,
               "link_text": "Les mer her",
-              "link": "shopify:\/\/blogs\/nr-6\/inspirasjon-hjemme-hos-stilikonet-gine-margrethe",
+              "link": "shopify:\/\/blogs\/inspirasjon\/inspirasjon-hjemme-hos-stilikonet-gine-margrethe",
               "alignment": "left_bottom",
               "opacity_overlay": 20
             }
