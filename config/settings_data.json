@@ -320,7 +320,7 @@
             "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/bilde-trenderaw21-035617-RSgh4bvL.jpg",
-              "video_url": "shopify:\/\/blogs\/nr-6\/hostens-interiortrender-2021",
+              "video_url": "shopify:\/\/blogs\/inspirasjon\/hostens-interiortrender-2021",
               "meta": "",
               "title": "Høstens interiørtrender",
               "subheading": "",
@@ -459,7 +459,7 @@
         "type": "blog-posts--dynamic",
         "settings": {
           "title": "Nettmagasin",
-          "blog": "nr-6",
+          "blog": "inspirasjon",
           "per_row": 2,
           "rows": 1,
           "aspect_ratio": "natural"
@@ -478,7 +478,7 @@
               "subheading": "<p><br\/>Gine Margrethe er et stilikon med mange jern i ilden. SixBondStreet besøkte henne for å snakke om trender, bærekraft og innredning av hjemmet.<br\/><br\/><\/p>",
               "max_width_subheading": 20,
               "link_text": "Les mer her",
-              "link": "shopify:\/\/blogs\/nr-6\/inspirasjon-hjemme-hos-stilikonet-gine-margrethe",
+              "link": "shopify:\/\/blogs\/inspirasjon\/inspirasjon-hjemme-hos-stilikonet-gine-margrethe",
               "alignment": "left_bottom",
               "opacity_overlay": 20
             }
@@ -970,7 +970,7 @@
               "subheading": "<p>Vi har laget en liten guide som tar deg gjennom hele prosessen og laget noen tips, så du enkelt kan style ditt eget sofabord hjemme. <\/p>",
               "max_width_subheading": 28,
               "link_text": "Les mer her",
-              "link": "shopify:\/\/blogs\/nr-6\/hvordan-style-et-kvadratisk-eller-rektangulaert-sofabord",
+              "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-style-et-kvadratisk-eller-rektangulaert-sofabord",
               "alignment": "left_center",
               "opacity_overlay": 50
             }
@@ -985,7 +985,7 @@
               "subheading": "<p>Vi guider deg til hvordan du enkelt kan style et rundt sofabord.<\/p>",
               "max_width_subheading": 28,
               "link_text": "Les mer her",
-              "link": "shopify:\/\/blogs\/nr-6\/hvordan-style-et-rundt-sofabord",
+              "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-style-et-rundt-sofabord",
               "alignment": "left_center",
               "opacity_overlay": 40
             }
@@ -1181,7 +1181,7 @@
           "title": "Vårens interiørtrender",
           "text": "<p>Vår designer og innkjøper Palla Masdottir forteller om vårens viktigste interiørtrender.<\/p>",
           "max_width_text": 34,
-          "link": "shopify:\/\/blogs\/nr-6\/varens-interiortrender-2022",
+          "link": "shopify:\/\/blogs\/inspirasjon\/varens-interiortrender-2022",
           "link_text": "Les mer her",
           "enable_contrast": true,
           "enable_full_width": true
@@ -1217,7 +1217,7 @@
               "subheading": "<p>Er du på jakt etter spisestoler som både er elegante og komfortable? Da kan vi varmt anbefale Madison eller Como. De leveres både med og uten armlener. <\/p>",
               "max_width_subheading": 28,
               "link_text": "Les mer her",
-              "link": "shopify:\/\/blogs\/nr-6\/komfortable-og-elegante-spisestoler",
+              "link": "shopify:\/\/blogs\/inspirasjon\/komfortable-og-elegante-spisestoler",
               "alignment": "left_center",
               "opacity_overlay": 40
             }
@@ -1232,7 +1232,7 @@
               "subheading": "<p>Bordene er skapt for å kunne lage en innbydende og fleksibel spisegruppe. Det skal være enkelt å få plass til en ekstra gjest...<\/p>",
               "max_width_subheading": 28,
               "link_text": "Les mer her",
-              "link": "shopify:\/\/blogs\/nr-6\/runde-spisebord-alle-vil-ha",
+              "link": "shopify:\/\/blogs\/inspirasjon\/runde-spisebord-alle-vil-ha",
               "alignment": "left_center",
               "opacity_overlay": 40
             }
@@ -1264,7 +1264,7 @@
               "subheading": "<p>Interiørtjenesten kommer nå til flere byer. Hils på våre lokale interiørkonsulenter i Bergen.<\/p>",
               "max_width_subheading": 28,
               "link_text": "Les mer her",
-              "link": "shopify:\/\/blogs\/nr-6\/bli-kjent-med-vare-interiorkonsulenter-i-bergen",
+              "link": "shopify:\/\/blogs\/inspirasjon\/bli-kjent-med-vare-interiorkonsulenter-i-bergen",
               "alignment": "center_center",
               "opacity_overlay": 40
             }
