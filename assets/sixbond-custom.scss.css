@@ -5,6 +5,7 @@
     /* --sxbs-sale-color: #ff7d25; */
     --sxbs-sale-color: #e36f21;
     /* Based on the Hermes Orange */
+    --sxbs-accent-color: #F3F1EB;
 }
 
 ::selection {
@@ -214,23 +215,6 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 .product-form__color-swatches .sxbs-variant-sold-out {
     display: none;
 }
-
-.pf-shop__container {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 16px;
-}
-
-.pf-shop__container .pf__actions {
-    margin: 0;
-    width: 100%;
-}
-
-.pf-shop__container .pf-container__qty {
-    width: 25%;
-    margin: 0;
-}
-
 
 /* In stock display for variants */
 

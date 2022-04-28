@@ -1,28 +1,83 @@
+.pf-container__qty .pf-element .pf-input {
+    padding-top: 1px;
+    height: 25px;
+    width: 28px;
+    text-align: center;
+}
+.pf-shop__container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.pf-shop__container .pf__actions {
+    margin: 0;
+    width: 65%;
+}
+.pf-shop__container .pf-container__qty {
+    width: 35%;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.pf-shop__container .pf__actions .btn.product-form__cart-submit {
+    height: 45px;
+}
+.pf-shop__container .pf__actions .btn.product-form__cart-submit span {
+    font-size: 0.8em;
+}
+.pf-container__qty .pf-element {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    background: --sxbs-accent-color;
+    padding: 3px;
+    border-radius: 20px;
+    justify-content: flex-start;
+    width: auto;
+    max-height: 31px;
+}
 input.qtyminus, input.qtyplus {
     -webkit-appearance: none;
-    border-radius: 2px;
-    border: 1px solid #e3dede;
-    height: 100%;
-    padding-left: 8px;
-    padding-right: 8px;
+    background: #FFF;
+    border-radius: 20px;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
 input.qtyplus {
     padding-top: 3px;
 }
-    .pf-container__qty .pf-element {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    height: 25px;
-    margin-top: 12px;
-    margin-right: 12px;
+@media (min-width: 425px) {
+    .pf-shop__container .pf-container__qty {
+        width: 30%;
+    }
+    .pf-shop__container .pf__actions {
+        width: 70%
+    }
 }
-.pf-container__qty .pf-element .pf-input {
-    padding-top: 1px;
-    height: 25px;
-    width: 25px;
-    text-align: center;
+@media (min-width: 960px) {
+    .pf-shop__container .pf-container__qty {
+        width: 35%
+    }
+    .pf-shop__container .pf__actions {
+        width: 65%
+    }
 }
+@media (min-width: 1440px) {
+    .pf-shop__container .pf-container__qty {
+        width: 25%;
+    }
+    .pf-shop__container .pf__actions {
+        width: 75%
+    }
+}
+
 /* Secondary Gallery (Desktop only) */
 .secondary-gallery .product__media {
     display: flex;
