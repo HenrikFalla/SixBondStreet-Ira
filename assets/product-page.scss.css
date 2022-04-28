@@ -1,3 +1,6 @@
+:root {
+    --sxbs-accent-color: #F3F1EB;
+} 
 .pf-container__qty .pf-element .pf-input {
     padding-top: 1px;
     height: 25px;
