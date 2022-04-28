@@ -35,7 +35,7 @@
     flex-direction: row;
     height: auto;
     align-items: center;
-    background: --sxbs-accent-color;
+    background: var(--sxbs-accent-color);
     padding: 3px;
     border-radius: 20px;
     justify-content: flex-start;
