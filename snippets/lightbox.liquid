@@ -45,7 +45,7 @@
           data-slide
           data-slide-index="{{ forloop.index0 }}"
         >
-          {% render 'image' with image: image %}
+          {% render 'image' with image: image, disable_style: true %}
         </div>
       {%- endfor -%}
     </div>

@@ -11,7 +11,7 @@
 {%- endif -%}
 
 {%- assign currency_visible = false -%}
-{%- if shop.enabled_currencies.size > 1 -%}
+{%- if localization.available_countries.size > 1 -%}
   {%- assign currency_visible = true -%}
 {%- endif -%}
 
@@ -39,7 +39,7 @@
       <div class="drawer-menu__header">
         <input
           name="q"
-          class="drawer-menu__search-input"
+          class="input drawer-menu__search-input text-input-on-dark-background"
           placeholder="{{ 'sections.drawer_menu.search_placeholder' | t }}"
           data-input
         />
@@ -64,7 +64,7 @@
         </div>
 
         {%- if account_visible or language_visible or currency_visible -%}
-          <ul class="drawer-menu__footer" data-footer>
+          <ul class="drawer-menu__footer" data-footer data-scroll-lock-ignore>
             {%- if account_visible -%}
               <li class="drawer-menu__item" data-list-item>
                 <a class="drawer-menu__link" href="{{ routes.account_url }}">
@@ -85,7 +85,7 @@
                       {{ 'sections.drawer_menu.language' | t }}
                       {% render 'icon' with icon: 'arrow-drop-down' %}
                     </a>
-                    <ul class="drawer-menu__list drawer-menu__list--sub">
+                    <ul class="drawer-menu__list drawer-menu__list--sub" aria-hidden="true" aria-expanded="false">
                       <li class="drawer-menu__item drawer-menu__item--heading">
                         <button class="drawer-menu__link" data-item="secondaryHeading">
                           <span>{{ 'sections.drawer_menu.language' | t }}</span>
@@ -113,26 +113,26 @@
                       {{ 'sections.drawer_menu.currency' | t }}
                       {% render 'icon' with icon: 'arrow-drop-down' %}
                     </a>
-                    <ul class="drawer-menu__list drawer-menu__list--sub">
+                    <ul class="drawer-menu__list drawer-menu__list--sub drawer-menu__list--country-selector" aria-hidden="true" aria-expanded="false">
                       <li class="drawer-menu__item drawer-menu__item--heading">
                         <button class="drawer-menu__link" data-item="secondaryHeading">
                           <span>{{ 'sections.drawer_menu.currency' | t }}</span>
                           {% render 'icon' with icon: 'arrow-drop-down' %}
                         </button>
                       </li>
-                      {% for currency in form.available_currencies %}
+                      {% for country in localization.available_countries %}
                         <li class="drawer-menu__item" data-list-item>
-                          <a class="drawer-menu__link drawer-menu__link--cb" href="#" data-item="currency" data-value="{{ currency.iso_code }}">
+                          <a class="drawer-menu__link drawer-menu__link--cb" href="#" data-item="currency" data-value="{{ country.iso_code }}">
                             <div class="drawer-menu__radio">
-                              {% if currency.iso_code == form.current_currency.iso_code %}<div></div>{% endif %}
+                              {% if country.iso_code == localization.country.iso_code %}<div></div>{% endif %}
                             </div>
-                            <span>{{ currency.iso_code }} {%- if currency.symbol -%}{{ currency.symbol }}{%- endif -%}</span>
+                            <span>{{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})</span>
                           </a>
                         </li>
                       {%- endfor -%}
                     </ul>
                   </li>
-                  <input type="hidden" name="currency_code" id="CurrencySelector" value="{{ form.current_currency.iso_code }}" data-currency-input />
+                  <input type="hidden" name="country_code" id="CurrencySelector" value="{{ localization.country.iso_code }}" data-currency-input />
                 {%- endif -%}
               {%- endform -%}
             {%- endif -%}

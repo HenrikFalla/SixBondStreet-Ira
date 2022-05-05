@@ -22,7 +22,7 @@
         data-input
       />
       <div class="quick-search__actions">
-        <a class="quick-search__clear" href="#" data-clear>
+        <a class="quick-search__clear" href="#" data-clear tabindex="-1">
           {% render 'icon' with icon: 'close' %}
         </a>
         <button class="quick-search__submit" type="submit">
@@ -30,11 +30,6 @@
         </button>
       </div>
     </div>
-    {% comment %}
-      Start SixBondStreet CUSTOM
-      Removing quick search html from template. Instead of just hiding it with css only.
-      <div class="quick-search__results" data-results></div>
-      End SixBondStreet CUSTOM
-    {% endcomment %}
+    <div class="quick-search__results" data-results></div>
   </form>
 </div>

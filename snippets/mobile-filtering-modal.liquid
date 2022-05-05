@@ -1,15 +1,24 @@
-<div class="collection-sidebar">
-  <form data-filter-form>
-    {%- comment -%} Keep search term within form {%- endcomment -%}
-    {%- if results.terms -%}
-      <input type="hidden" name="q" value="{{ results.terms | escape }}">
-      <input name="options[prefix]" type="hidden" value="last">
-    {%- endif -%}
-    {%- if show_filter and results.filters -%}
-      {% for filter in results.filters %}
-        <div class="collection-sidebar__group">
-          {% render 'collection-sidebar-heading' with heading: filter.label %}
+{% capture footer_markup %}
+  <div class="collection-modal__footer">
+    <button class="btn" data-button="clear">{{ 'filters.clear' | t }}</button>
+    <button class="btn btn--primary" data-button="apply">{{ 'filters.apply' | t }}</button>
+  </div>
+{% endcapture %}
 
+
+<form data-filter-form>
+{% if results.filters %}
+  {% for filter in results.filters %}
+    {% comment %} Share this loop with the mobile filter modals {% endcomment %}
+    <div class="collection-modal" data-mobile-modal="{{ filter.label | handleize }}">      
+      <div class="collection-modal__heading">
+        <div class="ff-heading fs-heading-base">{{ filter.label }}</div>
+        <div data-close-icon>
+          {% render 'icon' with icon: 'close' %}
+        </div>
+      </div>
+      <div class="collection-modal__content" data-scroll-lock-ignore>
+        <div>
           {%- case filter.type -%}
             {%- when 'list' -%}
               {%- liquid
@@ -24,8 +33,7 @@
                   assign list_modifiers = list_modifiers | append: ' has-chip'
                 endif
               -%}
-
-              <ul class="collection-sidebar__group{{ list_modifiers }}">
+              <ul>
                 {%- for filter_value in filter.values -%}
                   {%- liquid
                     if filter_value.active
@@ -40,26 +48,26 @@
                       type: 'swatch',
                       forloop: forloop,
                       filter_value: filter_value,
-                      scope: "sidebar"
+                      scope: "mobile_modal"
                     %}
                   {%- elsif chip_options contains group_name -%}
                     {% render 'filter-item' with
                       type: 'chip',
                       forloop: forloop,
                       filter_value: filter_value,
-                      scope: "sidebar"
+                      scope: "mobile_modal"
                     %}
                   {%- else -%}
                     {% render 'filter-item' with
                       type: 'checkbox',
                       forloop: forloop,
                       filter_value: filter_value,
-                      scope: "sidebar"
+                      scope: "mobile_modal"
                     %}
                   {%- endif -%}
                 {%- endfor -%}
               </ul>
-            {%- when 'price_range' -%}
+              {%- when 'price_range' -%}
               {% liquid
                 assign max_price_amount = filter.range_max | money | escape
               %}
@@ -105,15 +113,46 @@
 
           {%- endcase -%}
         </div>
-      {% endfor %}
-    {%- endif -%}
+      </div>
+      {{ footer_markup }}
+    </div>
+  {% endfor %}
+{% endif %}
 
-    {% if show_sort %}
-      {% render 'collection-sort' with
-        results: results, 
-        scope: 'sidebar'
-      %}
-    {% endif %}
-  </form>
-</div>
+{% if show_sort %}
+  <div class="collection-modal" data-mobile-modal="__sort">
+    
+      <div class="collection-modal__heading">
+        <div class="ff-heading fs-heading-base">{{ 'collections.sorting.title' | t }}</div>
+        <div data-close-icon>
+          {% render 'icon' with icon: 'close' %}
+        </div>
+      </div>
+      <div class="collection-modal__content" data-scroll-lock-ignore>
+        <form data-filter-form>
+        <ul>
+          {% for option in results.sort_options %}
+            {%- assign is_active = false -%}
+            {%- if option.value == results.sort_by -%}
+              {%- assign is_active = true -%}
+            {%- endif -%}
+            {% render 'sort-item' with
+              label: option.name,
+              type: 'radio',
+              active: is_active,
+              key: 'sort',
+              val: option.value,
+              option: option,
+              scope: 'mobile-filter'
+            %}
+          {% endfor %}
+        </ul>
+        </form>
+      </div>
+      {{ footer_markup }}
+    </form>
+  </div>
+{% endif %}
+</form>
 
+<div class="collection-modal__wash" data-mobile-wash></div>
