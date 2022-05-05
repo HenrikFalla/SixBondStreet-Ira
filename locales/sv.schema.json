@@ -1,0 +1,1646 @@
+{
+	"sections": {
+		"announcement_bar": {
+			"blocks": {
+				"name": "Text",
+				"settings": {
+					"color_background": {
+						"label": "Couleur de fond"
+					},
+					"color_text": {
+						"label": "Text färg"
+					},
+					"link": {
+						"label": "Meddelandelänk"
+					},
+					"title": {
+						"label": "Meddelandetext"
+					}
+				}
+			},
+			"default": {
+				"blocks": {
+					"announcement": {
+						"title": "Meddela en försäljning eller ett nytt produktsortiment med hjälp av den här annonseringsfältet."
+					}
+				}
+			},
+			"name": "Meddelandefält",
+			"settings": {
+				"enabled": {
+					"label": "Meddelande om utställningen"
+				},
+				"timing": {
+					"label": "Tid mellan Meddelanden"
+				}
+			}
+		},
+		"blog_posts": {
+			"name": "Blogginlägg",
+			"presets": {
+				"name": "Blogginlägg"
+			},
+			"settings": {
+				"aspect_ratio": {
+					"label": "Bildförhållande",
+					"options": {
+						"landscape": "Landskap (3:2)",
+						"natural": "Naturlig",
+						"portrait": "Porträtt (2:3)",
+						"square": "Square (1:1)"
+					}
+				},
+				"blog": {
+					"label": "Blogg"
+				},
+				"per_row": {
+					"label": "Artiklar per rad"
+				},
+				"rows": {
+					"label": "Rader"
+				},
+				"title": {
+					"label": "Rubrik"
+				}
+			}
+		},
+		"carousel": {
+			"blocks": {
+				"name": "Bild",
+				"settings": {
+					"alignment": {
+						"label": "Textjustering",
+						"options": {
+							"center_bottom": "Nedre mitten",
+							"center_center": "Mitten centrum",
+							"center_split": "Delad mittpunkt",
+							"center_top": "Övre mitten",
+							"left_bottom": "Nedre vänster",
+							"left_center": "Mitten vänster",
+							"left_split": "Split vänster",
+							"left_top": "Övre vänster",
+							"right_bottom": "Nedre höger",
+							"right_center": "Mitten höger",
+							"right_split": "Dela höger",
+							"right_top": "Övre höger"
+						}
+					},
+					"image": {
+						"label": "Bild"
+					},
+					"link": {
+						"label": "Knapplänk"
+					},
+					"link_text": {
+						"label": "Knappetikett"
+					},
+					"max_width_subheading": {
+						"label": "Max textbredd"
+					},
+					"meta": {
+						"label": "Mini-rubrik"
+					},
+					"opacity_overlay": {
+						"label": "Överläggsopacitet"
+					},
+					"subheading": {
+						"label": "Underrubrik"
+					},
+					"title": {
+						"label": "Rubrik"
+					}
+				}
+			},
+			"name": "Karusell",
+			"settings": {
+				"color_background_button": {
+					"label": "Knapp bakgrund"
+				},
+				"color_heading": {
+					"label": "Rubrik"
+				},
+				"color_overlay": {
+					"label": "Överläggsfärg"
+				},
+				"color_subheading": {
+					"label": "Underrubrik"
+				},
+				"color_text_button": {
+					"label": "Knapptext"
+				},
+				"height_mobile": {
+					"info": "Procentuell andel av skärmens höjd",
+					"label": "Sektionshöjd på mobilen"
+				}
+			}
+		},
+		"collection_list": {
+			"blocks": {
+				"name": "Produktserie",
+				"settings": {
+					"collection": {
+						"label": "Produktserie"
+					}
+				}
+			},
+			"name": "Kollektionslista",
+			"settings": {
+				"aspect_ratio": {
+					"label": "Bildförhållande",
+					"options": {
+						"landscape": "Landskap (3:2)",
+						"natural": "Naturlig",
+						"portrait": "Porträtt (2:3)",
+						"square": "Square (1:1)"
+					}
+				},
+				"per_row": {
+					"label": "Kolumner per rad"
+				},
+				"title": {
+					"label": "Rubrik"
+				}
+			}
+		},
+		"custom_liquid": {
+			"name": "Anpassa Liquid",
+			"presets": {
+				"name": "Anpassa Liquid"
+			},
+			"settings": {
+				"custom_liquid": {
+					"label": "Anpassa Liquid"
+				}
+			}
+		},
+		"featured_collection": {
+			"name": "Produktserie",
+			"settings": {
+				"aspect_ratio": {
+					"label": "Bildförhållande",
+					"options": {
+						"landscape": "Landskap (3:2)",
+						"natural": "Naturlig",
+						"portrait": "Porträtt (2:3)",
+						"square": "Square (1:1)"
+					}
+				},
+				"collection": {
+					"label": "Produktserie"
+				},
+				"per_row": {
+					"label": "Produkter per rad"
+				},
+				"rows": {
+					"label": "Rader"
+				},
+				"title": {
+					"label": "Rubrik"
+				}
+			}
+		},
+		"featured_product": {
+			"name": "Utvalda produkter",
+			"presets": {
+				"name": "Utvalda produkter"
+			},
+			"settings": {
+				"enable_contrast": {
+					"info": "Konfigurera kontrastsektionens färger i temainställningarna",
+					"label": "Aktivera kontrast"
+				},
+				"enable_full_width": {
+					"info": "Om det är aktiverat kommer detta avsnitt att täcka hela fönstrets bredd.",
+					"label": "Aktivera full bredd"
+				},
+				"enable_payment_button": {
+					"info": "Genom att använda tillgängliga betalningsmetoder i butiken kan kunder se valt alternativ, till exempel PayPal eller Apple Pay. [Läs mer](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+					"label": "Visa dynamiska utcheckningsknappar"
+				},
+				"header_style": "Stil",
+				"product": {
+					"label": "Produkt"
+				},
+				"show_share_buttons": {
+					"label": "Visa knappar för social delning"
+				},
+				"show_swatches": {
+					"info": "Lägg till swatch-bildfiler i din butiks [filområde](/admin/settings/files). Se till att filnamnen matchar namnen på dina färgvarianter. Till exempel skulle en variant som heter Blue behöva en fil som heter 'blue.png'",
+					"label": "Visa provrutor"
+				},
+				"show_vendor": {
+					"label": "Visa Säljare"
+				}
+			}
+		},
+		"featured_products": {
+			"blocks": {
+				"name": "Produkt",
+				"settings": {
+					"product": {
+						"label": "Produkt"
+					}
+				}
+			},
+			"name": "Utvalda Produkter",
+			"presets": {
+				"name": "Utvalda Produkter"
+			},
+			"settings": {
+				"enable_contrast": {
+					"info": "Konfigurera kontrastsektionens färger i temainställningarna",
+					"label": "Aktivera kontrast"
+				},
+				"enable_full_width": {
+					"info": "Om det är aktiverat kommer detta avsnitt att täcka hela fönstrets bredd.",
+					"label": "Aktivera full bredd"
+				},
+				"image": {
+					"info": "Vi rekommenderar att du använder en bild där höjden är större än bredden.",
+					"label": "Bild"
+				},
+				"image_position": {
+					"label": "Bildens position",
+					"options": {
+						"left": "Vänster",
+						"right": "Höger"
+					}
+				},
+				"link": {
+					"label": "Länk"
+				},
+				"link_text": {
+					"label": "Länktext"
+				},
+				"style_section_header": "Stil",
+				"subheading": {
+					"label": "Underrubrik"
+				},
+				"title": {
+					"label": "Rubrik"
+				}
+			}
+		},
+		"footer": {
+			"blocks": {
+				"links": {
+					"name": "Länk",
+					"settings": {
+						"link_list": {
+							"label": "Sidfot-meny"
+						},
+						"title": {
+							"info": "Inkludera en rubrik för din text. Rubriken fungerar som en växling på mindre skärmstorlekar.",
+							"label": "Rubrik"
+						}
+					}
+				},
+				"newsletter": {
+					"name": "Nyhetsbrev",
+					"settings": {
+						"text": {
+							"label": "Text"
+						},
+						"title": {
+							"info": "Inkludera en rubrik för din text. Rubriken fungerar som en växling på mindre skärmstorlekar.",
+							"label": "Rubrik"
+						}
+					}
+				},
+				"text": {
+					"name": "Text",
+					"settings": {
+						"text": {
+							"label": "Text"
+						},
+						"title": {
+							"info": "Inkludera en rubrik för din text. Rubriken fungerar som en växling på mindre skärmstorlekar.",
+							"label": "Rubrik"
+						}
+					}
+				}
+			},
+			"name": "Sidfot",
+			"settings": {
+				"header": {
+					"content": "Språkväljare",
+					"info": "Om du vill lägga till ett språk går du till dina [språkinställningar.](/admin/settings/languages)"
+				},
+				"header_currency_selector": {
+					"content": "Valutaväljare",
+					"info": "För att lägga till en valuta går du till dina  [betalningsinställningar.](/admin/settings/payments)"
+				},
+				"header_payment_types": {
+					"content": "Betalningsmetoder",
+					"info": "Visar bara ikoner för de betalningsmetoder som din butik stöder."
+				},
+				"header_social_media": {
+					"content": "Sociala media",
+					"info": "Konfigurera kontolänkar i temainställningar."
+				},
+				"show_currency_selector": {
+					"label": "Aktivera Valutaväljare"
+				},
+				"show_locale_selector": {
+					"label": "Aktivera språkväljare"
+				},
+				"show_payment_icons": {
+					"label": "Visa betalningsikoner"
+				},
+				"show_social_icons": {
+					"label": "Visa sociala medier-ikoner"
+				}
+			}
+		},
+		"gallery": {
+			"blocks": {
+				"image": {
+					"name": "Bild",
+					"settings": {
+						"image": {
+							"label": "Bild"
+						},
+						"link": {
+							"label": "Länk"
+						},
+						"text": {
+							"label": "Text"
+						}
+					}
+				}
+			},
+			"name": "Galleri",
+			"settings": {
+				"aspect_ratio": {
+					"label": "Bildförhållande",
+					"options": {
+						"landscape": "Landskap (3:2)",
+						"natural": "Naturlig",
+						"portrait": "Porträtt (2:3)",
+						"square": "Square (1:1)"
+					}
+				},
+				"link": {
+					"label": "Länk"
+				},
+				"link_text": {
+					"label": "Länktext"
+				},
+				"per_row": {
+					"label": "Bilder per rad"
+				},
+				"title": {
+					"label": "Galleri"
+				}
+			}
+		},
+		"header": {
+			"blocks": {
+				"mega_nav_5_col": {
+					"name": "Mega nav (navigering med 5 kolumner)",
+					"settings": {
+						"dropdown_parent_link": {
+							"info": "Namnge länken i huvudmenyn som du vill att Mega nav ska visas från. [Läs mer](https://fluorescent.co/help/ira/header/#set-up-a-mega-nav-menu)",
+							"label": "Nedrullningsbar överordnad länk"
+						},
+						"featured_image": {
+							"label": "Utvald bild"
+						},
+						"featured_image_aspect_ratio": {
+							"label": "Bildformat",
+							"options": {
+								"landscape": "Liggande (3:2)",
+								"natural": "Naturlig",
+								"portrait": "Porträtt (2:3)",
+								"square": "Fyrkant (1:1)"
+							}
+						},
+						"featured_image_caption": {
+							"label": "Utvald bildtext"
+						},
+						"featured_image_link": {
+							"label": "Utvald bildlänk"
+						},
+						"featured_image_link_title": {
+							"label": "Utvald bildlänkstext"
+						}
+					}
+				},
+				"mega_nav_5_col_with_imgs": {
+					"name": "Mega nav (5-kolumner med bilder)",
+					"settings": {
+						"column_1_image": {
+							"label": "Kolumn 1 bild"
+						},
+						"column_2_image": {
+							"label": "Kolumn 2 bild"
+						},
+						"column_3_image": {
+							"label": "Kolumn 3 bild"
+						},
+						"column_4_image": {
+							"label": "Kolumn 4 bild"
+						},
+						"column_5_image": {
+							"label": "Kolumn 5 bild"
+						},
+						"column_images_aspect_ratio": {
+							"label": "Bildformat",
+							"options": {
+								"landscape": "Liggande (3:2)",
+								"natural": "Naturlig",
+								"portrait": "Porträtt (2:3)",
+								"square": "Fyrkant (1:1)"
+							}
+						},
+						"dropdown_parent_link": {
+							"info": "Namnge länken i huvudmenyn som du vill att Mega nav ska visas från. [Läs mer](https://fluorescent.co/help/ira/header/#set-up-a-mega-nav-menu)",
+							"label": "Nedrullningsbar överordnad länk"
+						},
+						"header_column_images": "Kolumnbilder"
+					}
+				},
+				"mega_nav_legacy": {
+					"name": "Rullgardinsmeny med två kolumner",
+					"settings": {
+						"dropdown_parent_link": {
+							"info": "Namnge länken i huvudmenyn som du vill att rullgardinsmenyn ska visas från. [Läs mer](https://fluorescent.co/help/ira/header/#set-up-a-mega-nav-menu)",
+							"label": "Nedrullningsbar överordnad länk"
+						},
+						"mega_nav_featured_image": {
+							"label": "Utvald bild"
+						}
+					}
+				},
+				"name": "Mega nav",
+				"settings": {
+					"dropdown_parent_link": {
+						"info": "Namnge länken i huvudmenyn som du vill att Mega nav ska visas från. [Läs mer](https://fluorescent.co/help/ira/header/#set-up-a-mega-nav-menu)",
+						"label": "Länk till överordnad dropdown"
+					},
+					"mega_nav_featured_image": {
+						"label": "Mega nav presenterad bild"
+					}
+				}
+			},
+			"name": "Rubrik",
+			"settings": {
+				"color_border_transparent": {
+					"label": "Gränsfärg"
+				},
+				"color_icon_transparent": {
+					"label": "Ikonfärg"
+				},
+				"color_text_transparent": {
+					"label": "Text färg"
+				},
+				"enable_transparent_collection": {
+					"info": "Den här inställningen kräver att du har samlingsbilder och att du har aktiverat full bredd i avsnittet Samlingssidor.",
+					"label": "Aktivera på samlingssidor"
+				},
+				"enable_transparent_home": {
+					"info": "Se till att du har ett bildspel eller ett Video-avsnitt som det första avsnittet på din hemsida.",
+					"label": "Aktivera på hemsidan"
+				},
+				"logo": {
+					"label": "Logotypbild"
+				},
+				"logo_max_width": {
+					"label": "Logotyp max bredd"
+				},
+				"logo_position": {
+					"label": "Logotypens position",
+					"options": {
+						"center": "Centrum",
+						"left": "Vänster"
+					}
+				},
+				"logo_transparent": {
+					"info": "Standardlogotypen kommer att användas om ingen bild har valts.",
+					"label": "Logotypbild"
+				},
+				"menu": {
+					"label": "Huvudmeny"
+				},
+				"opacity_border_transparent": {
+					"label": "Gränsens opacitet"
+				},
+				"style": {
+					"label": "Stil",
+					"options": {
+						"icon": "Menyikon",
+						"inline": "Inline"
+					}
+				},
+				"transparent_header_divider": "Transparent rubrik"
+			}
+		},
+		"image_with_text": {
+			"blocks": {
+				"button": {
+					"name": "Knapp",
+					"settings": {
+						"link": {
+							"label": "Länk"
+						},
+						"link_text": {
+							"label": "Länktext"
+						}
+					}
+				},
+				"heading": {
+					"name": "Rubrik",
+					"settings": {
+						"max_width": {
+							"label": "Max textbredd"
+						},
+						"section_heading": {
+							"label": "Rubrik"
+						}
+					}
+				},
+				"text": {
+					"name": "Text",
+					"settings": {
+						"max_width": {
+							"label": "Max textbredd"
+						},
+						"text": {
+							"label": "Text"
+						}
+					}
+				}
+			},
+			"name": "Bild med text",
+			"presets": {
+				"name": "Bild med text"
+			},
+			"settings": {
+				"enable_contrast": {
+					"info": "Konfigurera kontrastsektionens färger i temainställningarna",
+					"label": "Aktivera kontrast"
+				},
+				"enable_full_width": {
+					"info": "Om det är aktiverat kommer detta avsnitt att täcka hela fönstrets bredd.",
+					"label": "Aktivera full bredd"
+				},
+				"header_style": "Stil",
+				"image": {
+					"info": "Vi rekommenderar att du använder en bild där höjden är större än bredden.",
+					"label": "Bild"
+				},
+				"image_position": {
+					"label": "Bildens position",
+					"options": {
+						"left": "Vänster",
+						"right": "Höger"
+					}
+				},
+				"image_width": {
+					"label": "Bildbredd",
+					"options": {
+						"larger": "Större",
+						"standard": "Standard"
+					}
+				},
+				"max_width_text": {
+					"label": "Max textbredd"
+				},
+				"video_url": {
+					"info": "Använd en direktlänk till en .mp4 -videofil. [Läs mer här](https://fluorescent.co/help/ira/video-hero#add-a-video).",
+					"label": "Videolänk"
+				}
+			}
+		},
+		"list_collections": {
+			"blocks": {
+				"name": "Produktserie",
+				"settings": {
+					"collection": {
+						"label": "Produktserie"
+					}
+				}
+			},
+			"name": "Kollektionslistsida",
+			"settings": {
+				"aspect_ratio": {
+					"label": "Bildförhållande",
+					"options": {
+						"landscape": "Landskap (3:2)",
+						"natural": "Naturlig",
+						"portrait": "Porträtt (2:3)",
+						"square": "Square (1:1)"
+					}
+				},
+				"display_type": {
+					"label": "Välj samlingar att visa",
+					"options": {
+						"all": "Allt",
+						"selected": "Valda"
+					}
+				},
+				"explanation": "Alla dina samlingar är listade som standard. Om du vill anpassa listan väljer du ‘Valda’ och lägger till samlingsblock.",
+				"per_row": {
+					"label": "Samlingar per rad"
+				}
+			}
+		},
+		"main_article": {
+			"blocks": {
+				"content": {
+					"name": "Innehåll",
+					"settings": {
+						"blog_show_pagination": {
+							"info": "Sidnumrering visas när du har flera blogginlägg att visa",
+							"label": "Visa sidnumrering"
+						},
+						"blog_show_social_sharing": {
+							"label": "Visa sociala medier-ikoner"
+						}
+					}
+				},
+				"featured_image": {
+					"name": "Utvald bild"
+				},
+				"title": {
+					"name": "Rubrik",
+					"settings": {
+						"blog_show_date": {
+							"label": "Visa datum"
+						},
+						"blog_show_social_sharing": {
+							"label": "Visa sociala medier-ikoner"
+						}
+					}
+				}
+			},
+			"name": "Blogginlägg",
+			"settings": {
+				"show_pagination": {
+					"label": "Visa sidnumrering"
+				},
+				"show_share": {
+					"label": "Visa sociala medier-ikoner"
+				}
+			}
+		},
+		"main_blog": {
+			"blocks": {
+				"summary": {
+					"name": "Utdrag",
+					"settings": {
+						"show_link": {
+							"label": "Visa länk"
+						}
+					}
+				},
+				"title": {
+					"name": "Rubrik",
+					"settings": {
+						"show_date": {
+							"label": "Visa datum"
+						}
+					}
+				}
+			},
+			"name": "Blogginlägg",
+			"settings": {
+				"articles_per_row": {
+					"label": "Artiklar per rad",
+					"options": {
+						"three": "Tre",
+						"two": "Två"
+					}
+				},
+				"aspect_ratio": {
+					"label": "Bildförhållande",
+					"options": {
+						"landscape": "Landskap (3:2)",
+						"natural": "Naturlig",
+						"portrait": "Porträtt (2:3)",
+						"square": "Square (1:1)"
+					}
+				},
+				"header": {
+					"content": "Kort för blogginlägg"
+				},
+				"show_rss": {
+					"label": "Visa RSS-ikon"
+				}
+			}
+		},
+		"main_cart": {
+			"name": "Kundvagnssida",
+			"settings": {
+				"cart_show_notes": {
+					"info": "Gör det möjligt för kunderna att skriva en anteckning innan de går till kassan",
+					"label": "Aktivera automatiska kundvagnsuppdateringar"
+				}
+			}
+		},
+		"main_collection_grid": {
+			"name": "Produktrutnät",
+			"settings": {
+				"aspect_ratio": {
+					"label": "Bildförhållande",
+					"options": {
+						"landscape": "Landskap (3:2)",
+						"natural": "Naturlig",
+						"portrait": "Porträtt (2:3)",
+						"square": "Square (1:1)"
+					}
+				},
+				"header_grid": {
+					"content": "Produktrutnät"
+				},
+				"per_page": {
+					"label": "Produkter per rad"
+				},
+				"per_row": {
+					"label": "Produkter per rad"
+				},
+				"show_filter": {
+					"info": "Anpassa [filter](/admin/menyer)",
+					"label": "Visa filter"
+				},
+				"show_sidebar": {
+					"label": "Visa sidofältet"
+				},
+				"show_sort": {
+					"label": "Visa sorteringsalternativ"
+				}
+			}
+		},
+		"main_collection_intro": {
+			"name": "Samlingsbanner",
+			"settings": {
+				"collection_header_style": {
+					"label": "Samling bildstil",
+					"options": {
+						"full": "Bild i full bredd",
+						"half": "Halva bredden av bilden",
+						"text_only": "Endast text"
+					}
+				},
+				"color_heading": {
+					"label": "Rubrik"
+				},
+				"color_overlay": {
+					"label": "Överläggsfärg"
+				},
+				"color_subheading": {
+					"label": "Underrubrik"
+				},
+				"enable_full_width": {
+					"info": "Om det är aktiverat kommer detta avsnitt att täcka hela fönstrets bredd.",
+					"label": "Aktivera full bredd"
+				},
+				"header_full_width_styles": {
+					"content": "Stilar med full bredd",
+					"info": "Dessa inställningar gäller endast när bildstilen för samlingen är inställd på \"Full width image\" (bild med full bredd)."
+				},
+				"image_position": {
+					"info": "Om bilden beskärs kommer denna del att förbli synlig.",
+					"label": "Bildens position",
+					"options": {
+						"center_bottom": "Nedre mitten",
+						"center_center": "Mitten centrum",
+						"center_top": "Övre mitten",
+						"left_bottom": "Nedre vänster",
+						"left_center": "Mitten vänster",
+						"left_top": "Övre vänster",
+						"right_bottom": "Nedre höger",
+						"right_center": "Mitten höger",
+						"right_top": "Övre höger"
+					}
+				},
+				"max_width_text": {
+					"label": "Textens maxbredd"
+				},
+				"opacity_overlay": {
+					"label": "Överläggsopacitet"
+				},
+				"show_collection_description": {
+					"label": "Visa produktseriebeskrivning"
+				}
+			}
+		},
+		"main_page": {
+			"name": "Media"
+		},
+		"main_page_about": {
+			"blocks": {
+				"image": {
+					"name": "Bild",
+					"settings": {
+						"image": {
+							"label": "Bild"
+						},
+						"video_url": {
+							"info": "Använd en direktlänk till en .mp4 -videofil. [Läs mer här](https://fluorescent.co/help/ira/video-hero#add-a-video).",
+							"label": "Videolänk"
+						}
+					}
+				}
+			},
+			"name": "Om sidan",
+			"settings": {
+				"enable_full_width": {
+					"info": "Om det är aktiverat kommer detta avsnitt att täcka hela fönstrets bredd.",
+					"label": "Aktivera full bredd"
+				},
+				"intro": {
+					"label": "Intro"
+				}
+			}
+		},
+		"main_page_contact": {
+			"blocks": {
+				"image": {
+					"name": "Bild",
+					"settings": {
+						"image": {
+							"info": "Använd en bild med ett bredd till höjdförhållande på 2:3 (rekommenderas).",
+							"label": "Bild"
+						}
+					}
+				}
+			},
+			"name": "Kontaktsida"
+		},
+		"main_password": {
+			"name": "Lösenordssida",
+			"settings": {
+				"heading": {
+					"label": "Rubrik"
+				},
+				"show_share": {
+					"label": "Visa delningsknappar"
+				},
+				"text": {
+					"label": "Text"
+				}
+			}
+		},
+		"main_product": {
+			"blocks": {
+				"accordion": {
+					"name": "Dragspelsmeny",
+					"settings": {
+						"content": {
+							"label": "Text"
+						},
+						"heading": {
+							"info": "Inkludera en rubrik som förklarar innehållet.",
+							"label": "Dragspelsrubrik"
+						},
+						"style": {
+							"closed": "Stängd",
+							"label": "Stil",
+							"open": "Öppen"
+						}
+					}
+				},
+				"buy_buttons": {
+					"name": "Knapp för att betala i kassan",
+					"settings": {
+						"show_dynamic_checkout": {
+							"info": "Genom att använda tillgängliga betalningsmetoder i butiken kan kunder se valt alternativ, till exempel PayPal eller Apple Pay. [Läs mer](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+							"label": "Visa dynamiska kassaknappar"
+						}
+					}
+				},
+				"custom_liquid": {
+					"name": "Anpassa Liquid",
+					"presets": {
+						"name": "Anpassa Liquid"
+					},
+					"settings": {
+						"custom_liquid": {
+							"label": "Anpassa Liquid"
+						}
+					}
+				},
+				"description": {
+					"name": "Beskrivning"
+				},
+				"divider": {
+					"name": "Delare"
+				},
+				"inventory_counter": {
+					"name": "Indikator för lagernivå",
+					"settings": {
+						"inventory_max": {
+							"info": "Ange den ursprungliga kvantiteten för din produktinventering. Infoga en \"dynamisk källa\" för att välja olika kvantiteter för flera produkter. [Läs mer](https://fluorescent.co/help/spark/featured-product#inventory-counter)",
+							"label": "Baskvantitet av lager"
+						},
+						"low_inventory_threshold": {
+							"info": "Välj den produktkvantitetsnivå som ska utlösa ett meddelande om låg kvantitet. Infoga en \"dynamisk källa\" för att välja olika kvantiteter för flera produkter. [Läs mer](https://fluorescent.co/help/spark/featured-product#inventory-counter)",
+							"label": "Tröskelvärde för lågt lager"
+						}
+					}
+				},
+				"price": {
+					"name": "Pris"
+				},
+				"quantity_selector": {
+					"name": "Kvantitetsväljare"
+				},
+				"share_buttons": {
+					"name": "Visa delningsknappar"
+				},
+				"sku": {
+					"name": "SKU",
+					"settings": {
+						"prefix": {
+							"label": "SKU prefix"
+						}
+					}
+				},
+				"spacer": {
+					"name": "Avståndshållare",
+					"settings": {
+						"size": {
+							"label": "Storlek"
+						}
+					}
+				},
+				"text": {
+					"name": "Text",
+					"settings": {
+						"content": {
+							"label": "Innehåll"
+						}
+					}
+				},
+				"title": {
+					"name": "Namn"
+				},
+				"type": {
+					"name": "Typ av produkt",
+					"settings": {
+						"prefix": {
+							"label": "Prefix för typ"
+						}
+					}
+				},
+				"variant_picker": {
+					"name": "Variantväljare"
+				},
+				"vendor": {
+					"name": "Säljare"
+				}
+			},
+			"name": "Produktöversikt",
+			"settings": {
+				"enable_full_width": {
+					"info": "Om det är aktiverat kommer detta avsnitt att täcka hela fönstrets bredd.",
+					"label": "Aktivera full bredd"
+				},
+				"enable_sticky_sidebar": {
+					"info": "Håll sidofältet fixerat när kunderna bläddrar bland produktbilderna. Ett kort produktformulär rekommenderas.",
+					"label": "Aktivera klibbig sidebar"
+				},
+				"enable_video_looping": {
+					"label": "Aktivera video-loopning"
+				},
+				"media_layout": {
+					"label": "Layout",
+					"options": {
+						"column": "Kolumn",
+						"grid": "Rutnät"
+					}
+				},
+				"media_types_info": "Läs mer om [mediatyper](https://help.shopify.com/manual/products/product-media)."
+			}
+		},
+		"main_search": {
+			"name": "Sök på",
+			"settings": {
+				"aspect_ratio": {
+					"label": "Bildförhållande",
+					"options": {
+						"landscape": "Landskap (3:2)",
+						"natural": "Naturlig",
+						"portrait": "Porträtt (2:3)",
+						"square": "Square (1:1)"
+					}
+				},
+				"per_page": {
+					"label": "Produkter per rad"
+				},
+				"per_row": {
+					"label": "Produkter per rad"
+				},
+				"show_filter": {
+					"info": "Anpassa [filter](/admin/menyer)",
+					"label": "Visa filter"
+				},
+				"show_sidebar": {
+					"label": "Visa sidofältet"
+				},
+				"show_sort": {
+					"label": "Visa sorteringsalternativ"
+				}
+			}
+		},
+		"map": {
+			"blocks": {
+				"name": "Text",
+				"settings": {
+					"text": {
+						"label": "Text"
+					},
+					"title": {
+						"label": "Rubrik"
+					}
+				}
+			},
+			"name": "Karta",
+			"presets": {
+				"name": "Karta"
+			},
+			"settings": {
+				"enable_contrast": {
+					"info": "Konfigurera kontrastsektionens färger i temainställningarna",
+					"label": "Aktivera kontrast"
+				},
+				"enable_full_width": {
+					"info": "Om det är aktiverat kommer detta avsnitt att täcka hela fönstrets bredd.",
+					"label": "Aktivera full bredd"
+				},
+				"header_style": "Stil",
+				"image": {
+					"label": "Bild"
+				},
+				"image_position": {
+					"label": "Bildens position",
+					"options": {
+						"left": "Vänster",
+						"right": "Höger"
+					}
+				},
+				"link": {
+					"label": "Länk"
+				},
+				"link_text": {
+					"label": "Länktext"
+				},
+				"subheading": {
+					"label": "Underrubrik"
+				},
+				"title": {
+					"label": "Rubrik"
+				}
+			}
+		},
+		"mosaic_grid": {
+			"blocks": {
+				"large_horizontal_rect": {
+					"name": "L rektangel - horisontell"
+				},
+				"large_square": {
+					"name": "L kvadrat"
+				},
+				"large_vertical_rect": {
+					"name": "L rektangel - vertikal"
+				},
+				"medium_horizontal_rect": {
+					"name": "M rektangel - horisontell"
+				},
+				"medium_square": {
+					"name": "M kvadrat"
+				},
+				"medium_vertical_rect": {
+					"name": "M rektangel - vertikal"
+				},
+				"shared_settings": {
+					"name": "",
+					"settings": {
+						"background_color": {
+							"info": "Bestämmer bakgrundsfärgen för blocket när inget media används eller när du använder inställningen \"Innehåll\" Media Fit.",
+							"label": "bakgrund"
+						},
+						"color__header": {
+							"content": "Färg"
+						},
+						"color_background_button": {
+							"label": "Knapp bakgrund"
+						},
+						"color_subheading": {
+							"label": "UNDERRUBRIK"
+						},
+						"color_text": {
+							"label": "Rubrik"
+						},
+						"color_text_button": {
+							"label": "Knapp-text"
+						},
+						"color_text_container": {
+							"label": "Textbehållarebakgrund"
+						},
+						"focal_point": {
+							"label": "Media brännpunkt",
+							"options__1": "Övre vänstra",
+							"options__2": "Top Center",
+							"options__3": "Överst till höger",
+							"options__4": "Mitt vänster",
+							"options__5": "Middle Center",
+							"options__6": "Mitt höger",
+							"options__7": "Nedre vänstra",
+							"options__8": "Nedre centrum",
+							"options__9": "Nere till höger"
+						},
+						"image_picker": {
+							"label": "Bild"
+						},
+						"link": {
+							"label": "Knapplänk"
+						},
+						"link_text": {
+							"label": "Knappetikett"
+						},
+						"media_fit": {
+							"label": "Mediapassning",
+							"options__1": "Omslag",
+							"options__2": "Innehålla"
+						},
+						"overlay_color": {
+							"label": "Täcka över"
+						},
+						"overlay_opacity": {
+							"label": "Overlay opacitet"
+						},
+						"overline": {
+							"label": "Liten rubrik"
+						},
+						"subheading": {
+							"label": "UNDERRUBRIK"
+						},
+						"text_max_width": {
+							"label": "Max bredd på text"
+						},
+						"text_position": {
+							"center_bottom": "Nedre centrum",
+							"center_center": "Middle Center",
+							"center_split": "Delad mitt",
+							"center_top": "Top Center",
+							"label": "Textjustering",
+							"left_bottom": "Nedre vänstra",
+							"left_center": "Mitt vänster",
+							"left_split": "Dela vänster",
+							"left_top": "Övre vänstra",
+							"right_bottom": "Nere till höger",
+							"right_center": "Mitt höger",
+							"right_split": "Dela höger",
+							"right_top": "Överst till höger"
+						},
+						"title": {
+							"label": "Rubrik"
+						},
+						"video_url": {
+							"info": "Använd en direktlänk till en .mp4-videofil. [Läs mer här](https://fluorescent.co/help/spark/video-hero#add-a-video).",
+							"label": "Videolänk"
+						}
+					}
+				},
+				"small_square": {
+					"name": "S kvadrat"
+				}
+			},
+			"name": "Mosaik rutnät",
+			"names": {
+				"three_column": "3 kolumn mosaik rutnät",
+				"two_column": "2 kolumn mosaik rutnät"
+			},
+			"presets": {
+				"name": "Mosaik rutnät",
+				"names": {
+					"three_column": "3 kolumn mosaik rutnät",
+					"two_column": "2 kolumn mosaik rutnät"
+				}
+			},
+			"settings": {
+				"heading_alignment": {
+					"label": "Rubrikjustering",
+					"option_1": "vänster",
+					"option_2": "Centrum"
+				},
+				"overline": {
+					"label": "Liten rubrik"
+				},
+				"section_style": {
+					"label": "Stil",
+					"option_1": "Standard",
+					"option_2": "kontrast"
+				},
+				"style_header": {
+					"content": "Sektionsstil"
+				},
+				"subheading": {
+					"label": "UNDERRUBRIK"
+				},
+				"text_max_width": {
+					"label": "Max bredd på text"
+				},
+				"title": {
+					"label": "Rubrik"
+				}
+			}
+		},
+		"newsletter": {
+			"name": "Nyhetsbrev",
+			"presets": {
+				"name": "Nyhetsbrev"
+			},
+			"settings": {
+				"note": "Kunder som prenumererar kommer att lägga till sin e-postadress i ‘accepterar marknadsföring’ [kundlista](/admin/customers?query=&accepts_marketing=1).",
+				"placeholder": {
+					"label": "Platshållare för inmatning"
+				},
+				"subheading": {
+					"label": "Underrubrik"
+				},
+				"subheading_max_width": {
+					"label": "Max textbredd"
+				},
+				"title": {
+					"label": "Rubrik"
+				}
+			}
+		},
+		"popup": {
+			"name": "Popup",
+			"settings": {
+				"color_background": {
+					"label": "Bakgrund"
+				},
+				"color_background_input": {
+					"label": "Bakgrund för inmatning"
+				},
+				"color_text": {
+					"label": "Text"
+				},
+				"color_text_input": {
+					"label": "Inmatning av text"
+				},
+				"enable_popup": {
+					"info": "Visa en popup första gången användarens markör lämnar din webbplats.",
+					"label": "Aktivera"
+				},
+				"header_style": "Stil",
+				"image": {
+					"label": "Bild"
+				},
+				"image_opacity": {
+					"label": "Bildens opacitet"
+				},
+				"image_position": {
+					"label": "Bildens position",
+					"options": {
+						"bottom": "Botten",
+						"center": "Centrum",
+						"top": "Topp"
+					}
+				},
+				"subheading": {
+					"label": "Underrubrik"
+				},
+				"title": {
+					"label": "Rubrik"
+				}
+			}
+		},
+		"recommended_products": {
+			"blocks": {
+				"name": ""
+			},
+			"name": "Rekommenderade produkter",
+			"settings": {
+				"aspect_ratio": {
+					"label": "Bildförhållande",
+					"options": {
+						"landscape": "Landskap (3:2)",
+						"natural": "Naturlig",
+						"portrait": "Porträtt (2:3)",
+						"square": "Square (1:1)"
+					}
+				},
+				"enabled": {
+					"label": "Aktivera"
+				},
+				"heading": {
+					"label": "Rubrik"
+				},
+				"per_row": {
+					"label": "Inlägg per rad"
+				},
+				"rows": {
+					"label": "Rader"
+				}
+			}
+		},
+		"rich_text": {
+			"blocks": {
+				"button": {
+					"name": "Knapp",
+					"settings": {
+						"link": {
+							"label": "Länk"
+						},
+						"link_text": {
+							"label": "Länktext"
+						}
+					}
+				},
+				"heading": {
+					"name": "Rubrik",
+					"settings": {
+						"max_width": {
+							"label": "Max textbredd"
+						},
+						"section_heading": {
+							"label": "Rubrik"
+						}
+					}
+				},
+				"text": {
+					"name": "Text",
+					"settings": {
+						"max_width": {
+							"label": "Max textbredd"
+						},
+						"text": {
+							"label": "Text"
+						}
+					}
+				}
+			},
+			"name": "Rich text",
+			"presets": {
+				"name": "Rich text"
+			},
+			"settings": {
+				"alignment": {
+					"label": "Textjustering",
+					"options": {
+						"center": "Centrum",
+						"left": "Vänster"
+					}
+				}
+			}
+		},
+		"slideshow": {
+			"blocks": {
+				"slide": {
+					"name": "Diabild",
+					"settings": {
+						"alignment": {
+							"center_bottom": {
+								"label": "Nedre mitten"
+							},
+							"center_center": {
+								"label": "Mitten centrum"
+							},
+							"center_top": {
+								"label": "Övre mitten"
+							},
+							"label": "Textjustering",
+							"left_bottom": {
+								"label": "Nedre vänster"
+							},
+							"left_center": {
+								"label": "Mitten vänster"
+							},
+							"left_top": {
+								"label": "Övre vänster"
+							},
+							"right_bottom": {
+								"label": "Nedre höger"
+							},
+							"right_center": {
+								"label": "Mitten höger"
+							},
+							"right_top": {
+								"label": "Övre höger"
+							}
+						},
+						"color_background_button": {
+							"label": "Knapp bakgrund"
+						},
+						"color_heading": {
+							"label": "Rubrik"
+						},
+						"color_overlay": {
+							"label": "Överläggsfärg"
+						},
+						"color_settings_section_header": {
+							"label": "Färg"
+						},
+						"color_subheading": {
+							"label": "Underrubrik"
+						},
+						"color_text_button": {
+							"label": "Knapptext"
+						},
+						"desktop_image": {
+							"label": "Bild"
+						},
+						"heading_text_size": {
+							"label": "Rubrikstorlek"
+						},
+						"link": {
+							"label": "Knapplänk"
+						},
+						"link_text": {
+							"label": "Knappetikett"
+						},
+						"max_width_subheading": {
+							"label": "Max textbredd"
+						},
+						"meta": {
+							"label": "Mini-rubrik"
+						},
+						"mobile_image": {
+							"label": "Mobilbild"
+						},
+						"opacity_overlay": {
+							"label": "Överläggsopacitet"
+						},
+						"overlay_shadow": {
+							"label": "Textskuggningsmängd"
+						},
+						"subheading": {
+							"label": "UNDERRUBRIK"
+						},
+						"title": {
+							"label": "Rubrik"
+						},
+						"video_url": {
+							"info": "Använd en direktlänk till en .mp4 -videofil. [Läs mer här](https://fluorescent.co/help/ira/video-hero#add-a-video).",
+							"label": "Videolänk"
+						}
+					}
+				}
+			},
+			"name": "Bildspel",
+			"presets": {
+				"name": "Bildspel"
+			},
+			"settings": {
+				"color_dot": {
+					"label": "Färg på pricken"
+				},
+				"duration_autoplay": {
+					"label": "Tid mellan bilderna"
+				},
+				"enable_full_width": {
+					"info": "Om det är aktiverat kommer detta avsnitt att täcka hela fönstrets bredd.",
+					"label": "Aktivera full bredd"
+				},
+				"enable_parallax": {
+					"label": "Aktivera parallax"
+				},
+				"height": {
+					"label": "Höjd"
+				},
+				"mobile_height": {
+					"label": "Mobilhöjd"
+				}
+			}
+		},
+		"testimonials": {
+			"blocks": {
+				"name": "Kundberättelse",
+				"settings": {
+					"author": {
+						"label": "Autor"
+					},
+					"image": {
+						"label": "Bild"
+					},
+					"testimonial": {
+						"label": "Kundberättelse"
+					}
+				}
+			},
+			"name": "Kundberättelser",
+			"presets": {
+				"name": "Kundberättelser"
+			},
+			"settings": {
+				"link": {
+					"label": "Länk"
+				},
+				"link_text": {
+					"label": "Länktext"
+				},
+				"per_row": {
+					"label": "Kolumner per rad"
+				},
+				"title": {
+					"label": "Rubrik"
+				}
+			}
+		},
+		"text_columns_with_images": {
+			"blocks": {
+				"name": "Kolumn",
+				"settings": {
+					"image": {
+						"label": "Bild"
+					},
+					"link": {
+						"label": "Länk"
+					},
+					"link_text": {
+						"label": "Länktext"
+					},
+					"text": {
+						"label": "Text"
+					},
+					"title": {
+						"label": "Rubrik"
+					}
+				}
+			},
+			"name": "Textkolumner med bilder",
+			"presets": {
+				"name": "Textkolumner med bilder"
+			},
+			"settings": {
+				"circle": {
+					"label": "Visa bilden i en cirkel"
+				},
+				"image_max_width": {
+					"label": "Maximal bildbredd"
+				},
+				"per_row": {
+					"label": "Kolumner per rad"
+				}
+			}
+		},
+		"video": {
+			"name": "Video",
+			"presets": {
+				"name": "Video"
+			},
+			"settings": {
+				"color_overlay": {
+					"label": "Överläggsfärg"
+				},
+				"color_text": {
+					"label": "Text"
+				},
+				"image": {
+					"label": "Bild"
+				},
+				"opacity_overlay": {
+					"label": "Överläggsopacitet"
+				},
+				"style_header": {
+					"content": "Stil"
+				},
+				"subheading": {
+					"label": "UNDERRUBRIK"
+				},
+				"title": {
+					"label": "Rubrik"
+				},
+				"video_url": {
+					"label": "Video URL"
+				}
+			}
+		}
+	},
+	"shared": {
+		"aspect_ratio": {
+			"label": "Bildformat",
+			"options": {
+				"landscape": "Liggande (3:2)",
+				"natural": "Naturlig",
+				"portrait": "Porträtt (2:3)",
+				"square": "Fyrkant (1:1)"
+			}
+		},
+		"enable_full_width": {
+			"info": "Om den är aktiverad kommer denna sektion att sträcka sig över hela fönstrets bredd",
+			"label": "Aktivera full bredd"
+		},
+		"focal_point": {
+			"label": "Bildfokus",
+			"label_mobile": "Mobila bilder som fokuspunkt",
+			"options": {
+				"center_bottom": "Nedre mitten",
+				"center_center": "Mitten centrum",
+				"center_top": "Övre mitten",
+				"left_bottom": "Nedre vänster",
+				"left_center": "Mitten vänster",
+				"left_top": "Övre vänster",
+				"right_bottom": "Nedre höger",
+				"right_center": "Mitten höger",
+				"right_top": "Övre höger"
+			}
+		}
+	}
+}
