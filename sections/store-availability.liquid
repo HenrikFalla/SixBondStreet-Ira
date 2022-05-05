@@ -21,7 +21,7 @@
             {{ 'store_availability.general.pick_up_available_at_html' | t: location_name: closest_location.location.name }}
           </div>
           <div class="store-availability__information-stock">
-            {{ product_availability_icon }}<span>{{ 'store_availability.general.in_stock' | t }}&#44; {{ closest_location.pick_up_time }}</span>
+            {{ product_availability_icon }}<span>{{ 'store_availability.general.pick_up_available_time_html' | t: pickup_time: closest_location.pick_up_time }}</span>
           </div>
           <div class="store-availability__information-stores">
             <button type="button" class="store-availability__information-link" data-store-availability-modal-trigger aria-haspopup="dialog">
