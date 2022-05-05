@@ -61,6 +61,7 @@
   {% render 'theme-setup' %}
   {% render 'theme-setting-vars' %}
   {{ 'theme.css' | asset_url | stylesheet_tag }}
+  {{ 'sixbond-custom.css' | asset_url | stylesheet_tag }}
 
   {{ content_for_header }}
 </head>
