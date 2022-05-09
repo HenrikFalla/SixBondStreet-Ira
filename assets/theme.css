@@ -1484,7 +1484,7 @@ body.template-index .header--transparent-home:not(.is-sticky).header--has-transp
 .popup__bar{
   position:relative;
   width:100%;
-  /* background-color:var(--color-background); */
+  background-color:var(--color-background);
   padding:var(--space-outer);
   text-align:center;
   z-index:1;
