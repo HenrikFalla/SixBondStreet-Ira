@@ -30,11 +30,11 @@
         "slide-1"
       ],
       "settings": {
-        "desktop_height": 100,
-        "mobile_height": 100,
+        "desktop_height": 65,
+        "mobile_height": 65,
         "duration_autoplay": 4,
         "enable_parallax": false,
-        "enable_full_width": false,
+        "enable_full_width": true,
         "color_dot": "#777777"
       }
     },
