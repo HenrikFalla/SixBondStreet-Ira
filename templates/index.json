@@ -41,54 +41,56 @@
     "2-column-mosaic-grid": {
       "type": "2-column-mosaic-grid",
       "blocks": {
-        "small_square-1": {
-          "type": "small_square",
-          "settings": {
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "title": "This is your Mosaic 2 column grid",
-            "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
-            "text_max_width": 20,
-            "link_text": "",
-            "link": "",
-            "text_position": "left_top",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#B8B8B8",
-            "color_background_button": "#000000",
-            "color_text_button": "#ffffff",
-            "color_text_container": "",
-            "overlay_color": "#000",
-            "overlay_opacity": 60
-          }
-        },
         "small_square-2": {
           "type": "small_square",
           "settings": {
+            "image": "shopify:\/\/shop_images\/lenestol_sofabord_miljobilde_002.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "title": "This is your Mosaic 2 column grid",
-            "subheading": "<p>Mix and match between sizes, set a background color or fill, and add text to blocks that are medium or larger.<\/p>",
-            "text_max_width": 20,
-            "link_text": "",
-            "link": "",
-            "text_position": "left_top",
+            "title": "Gi uteplassen personlighet",
+            "subheading": "<p>Her finner du alt du trenger for å dekorere uteplassen din.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/dekor-til-uteplassen",
+            "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
-            "color_subheading": "#B8B8B8",
-            "color_background_button": "#000000",
-            "color_text_button": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#2d2d2d",
             "color_text_container": "",
             "overlay_color": "#000",
-            "overlay_opacity": 60
+            "overlay_opacity": 40
+          }
+        },
+        "small_square-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img-7286-790183-Ym8HnCbV_1.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Bli kjent med våre interiørkonsulenter i Bergen",
+            "subheading": "<p>Interiørtjenesten kommer nå til flere byer. Hils på våre lokale interiørkonsulenter i Bergen.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/bli-kjent-med-vare-interiorkonsulenter-i-bergen",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#2d2d2d",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 40
           }
         }
       },
       "block_order": [
-        "small_square-1",
-        "small_square-2"
+        "small_square-2",
+        "small_square-1"
       ],
       "settings": {
         "enable_full_width": false
