@@ -96,6 +96,44 @@
         "enable_full_width": false
       }
     },
+    "slideshow-3": {
+      "type": "slideshow",
+      "blocks": {
+        "1600985612177-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blogg_utemobler_styling_002.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "SixBondStreet",
+            "title": "Slik styler du uteplassen som en proff",
+            "subheading": "<p>Her får du tips og triks til hvordan du kan style uteplassen som en proff.<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Les mer her",
+            "link": "#",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#2d2d2d",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 50
+          }
+        }
+      },
+      "block_order": [
+        "1600985612177-0"
+      ],
+      "settings": {
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "duration_autoplay": 4,
+        "enable_parallax": false,
+        "enable_full_width": true,
+        "color_dot": "#777777"
+      }
+    },
     "featured-collection-1": {
       "type": "featured-collection",
       "settings": {
@@ -283,43 +321,6 @@
         "aspect_ratio": "natural"
       }
     },
-    "slideshow-3": {
-      "type": "slideshow",
-      "blocks": {
-        "1600985612177-0": {
-          "type": "image",
-          "settings": {
-            "focal_point": "center_center",
-            "focal_point_mobile": "center_center",
-            "video_url": "",
-            "meta": "",
-            "title": "This is your slideshow",
-            "subheading": "<p>Use it to make a dramatic first impression with high-quality imagery and minimal text. Using the button below to link to whatever is most appropriate.<\/p>",
-            "max_width_subheading": 30,
-            "link_text": "Shop now",
-            "link": "#",
-            "alignment": "left_center",
-            "color_heading": "#ffffff",
-            "color_subheading": "#b8b8b8",
-            "color_text_button": "#ffffff",
-            "color_background_button": "#000000",
-            "color_overlay": "#000000",
-            "opacity_overlay": 60
-          }
-        }
-      },
-      "block_order": [
-        "1600985612177-0"
-      ],
-      "settings": {
-        "desktop_height": 100,
-        "mobile_height": 100,
-        "duration_autoplay": 4,
-        "enable_parallax": false,
-        "enable_full_width": false,
-        "color_dot": "#777777"
-      }
-    },
     "gallery-1": {
       "type": "gallery",
       "blocks": {
@@ -362,6 +363,7 @@
   "order": [
     "slideshow-1",
     "2-column-mosaic-grid",
+    "slideshow-3",
     "featured-collection-1",
     "featured-products-1",
     "collection-list-1",
@@ -369,7 +371,6 @@
     "featured-collection-2",
     "carousel-1",
     "featured-collection-3",
-    "slideshow-3",
     "gallery-1"
   ]
 }
