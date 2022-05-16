@@ -134,6 +134,51 @@
         "color_dot": "#777777"
       }
     },
+    "1652734830e13bb44f": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "1652734830beeb48e1-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shipped_0433dece-e93b-493d-b515-b5906a5d371f.png",
+            "title": "Fri frakt på ordre over 10.000,-",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        },
+        "1652734830beeb48e1-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/circular-arrow.png",
+            "title": "30 dager åpent kjøp",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        },
+        "1652734830beeb48e1-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/safe_payment_solid.png",
+            "title": "Trygg betaling",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1652734830beeb48e1-0",
+        "1652734830beeb48e1-1",
+        "1652734830beeb48e1-2"
+      ],
+      "settings": {
+        "per_row": 3,
+        "image_max_width": 100,
+        "circle": true
+      }
+    },
     "featured-collection-1": {
       "type": "featured-collection",
       "settings": {
@@ -364,6 +409,7 @@
     "slideshow-1",
     "2-column-mosaic-grid",
     "slideshow-3",
+    "1652734830e13bb44f",
     "featured-collection-1",
     "featured-products-1",
     "collection-list-1",
