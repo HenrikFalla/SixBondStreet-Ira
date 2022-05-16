@@ -275,11 +275,35 @@
             "color_overlay": "#000000",
             "opacity_overlay": 60
           }
+        },
+        "aa5e017b-1522-457a-be6d-50a26eda3608": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forside_rask_levering_interior_mobil.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/forside_rask_levering_interior_mobil.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "Rask levering",
+            "title": "Interiørvarer",
+            "subheading": "<p>Her finner du et bredt utvalg interiørvarer. Alt du finner her er lagerført og leveringsklart. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#b8b8b8",
+            "color_text_button": "#2d2d2d",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 60
+          }
         }
       },
       "block_order": [
         "1600315468934-0",
-        "799849af-7884-4fc0-8a7c-a4df858c6048"
+        "799849af-7884-4fc0-8a7c-a4df858c6048",
+        "aa5e017b-1522-457a-be6d-50a26eda3608"
       ],
       "settings": {
         "desktop_height": 85,
