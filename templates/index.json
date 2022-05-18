@@ -442,6 +442,104 @@
         "enable_full_width": false
       }
     },
+    "collection-list-1": {
+      "type": "collection-list",
+      "blocks": {
+        "1600315451525-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "komfort-lounge"
+          }
+        },
+        "1600315451525-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "gjenfodt-anonym"
+          }
+        },
+        "f5c2ea0f-742b-4195-bffd-193cce87ee7a": {
+          "type": "collection",
+          "settings": {
+            "collection": "apenbaring"
+          }
+        },
+        "12a4035b-3f33-4ba8-9c89-f680b70d3477": {
+          "type": "collection",
+          "settings": {
+            "collection": "drommefanger"
+          }
+        }
+      },
+      "block_order": [
+        "1600315451525-0",
+        "1600315451525-1",
+        "f5c2ea0f-742b-4195-bffd-193cce87ee7a",
+        "12a4035b-3f33-4ba8-9c89-f680b70d3477"
+      ],
+      "settings": {
+        "title": "Få stilen - Vårens interiørtrender",
+        "per_row": 4,
+        "aspect_ratio": "natural"
+      }
+    },
+    "1652897399e459949a": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "16528973982c30ecc6-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gine_2fe96266-5f3b-4ba9-8704-9e5870b8113c.jpg",
+            "video_url": "",
+            "media_fit": "contain",
+            "focal_point": "center_center",
+            "title": "Hjemme hos Gine Margrethe",
+            "subheading": "<p>Gine Margrethe er et stilikon med mange jern i ilden. Vi besøkte henne for å snakke om trender, bærekraft og innredning av hjemmet.<\/p>",
+            "text_max_width": 20,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/inspirasjon-hjemme-hos-stilikonet-gine-margrethe",
+            "text_position": "right_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 40
+          }
+        },
+        "16528973982c30ecc6-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8470000183_miljobilde_1728x_4e6aa084-3267-42f4-9063-f62831caeb73.webp",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Krukker fra Muubs",
+            "subheading": "<p>Vi har en mengde krukker fra den danske leverandøren Muubs på lager for omgående levering. <\/p>",
+            "text_max_width": 26,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/muubs",
+            "text_position": "center_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "16528973982c30ecc6-1",
+        "16528973982c30ecc6-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
     "featured-collection-3": {
       "type": "featured-collection",
       "settings": {
@@ -489,32 +587,6 @@
         "aspect_ratio": "square",
         "per_row": 3
       }
-    },
-    "collection-list-1": {
-      "type": "collection-list",
-      "blocks": {
-        "1600315451525-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "1600315451525-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "1600315451525-0",
-        "1600315451525-1"
-      ],
-      "settings": {
-        "title": "Collections",
-        "per_row": 2,
-        "aspect_ratio": "natural"
-      }
     }
   },
   "order": [
@@ -528,8 +600,9 @@
     "carousel-1",
     "featured-collection-1",
     "1652897314e73ea667",
+    "collection-list-1",
+    "1652897399e459949a",
     "featured-collection-3",
-    "gallery-1",
-    "collection-list-1"
+    "gallery-1"
   ]
 }
