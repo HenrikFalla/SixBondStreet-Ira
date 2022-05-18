@@ -646,8 +646,67 @@
         "enable_full_width": true
       }
     },
+    "16529002771217d726": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "1652900276abcaa752-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/style_rundt_sofabord.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Hvordan style et rundt sofabord?",
+            "subheading": "<p>Vi guider deg til hvordan du går frem for å style et rundt sofabord.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-style-et-rundt-sofabord",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 40
+          }
+        },
+        "1652900276abcaa752-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/styling_sofabord_rektangulaert_1728x_2437c954-7572-4f55-adc2-3390a171c494.webp",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Hvordan style et kvadratisk sofabord?",
+            "subheading": "<p>Her finner du gudien til hvordan du styler et kvadratisk eller rektangulært sofabord.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-style-et-kvadratisk-eller-rektangulaert-sofabord",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "1652900276abcaa752-1",
+        "1652900276abcaa752-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
     "featured-collection-3": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "",
         "title": "Featured collection",
@@ -711,6 +770,7 @@
     "16528990354809b128",
     "16528993087ed8d422",
     "1652899360872e3c51",
+    "16529002771217d726",
     "featured-collection-3",
     "gallery-1"
   ]
