@@ -159,29 +159,29 @@
           "1600315542945": {
             "type": "text",
             "settings": {
-              "title": "About",
-              "text": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>"
+              "title": "Kontakt oss",
+              "text": "<p>Tlf: 45 09 99 00<br\/>Telefon åpen fra 10:00 - 16:00<br\/>Mandag til Fredag<br\/>Kundeservice@sixbondstreet.no<\/p><p><strong>Showroom<\/strong><\/p><p><a href=\"\/pages\/showroom-bergen\" title=\"Showroom Bergen\">Bergen →<\/a><br\/><a href=\"\/pages\/showroom-oslo\" title=\"Showroom Oslo\">Oslo →<\/a><\/p><p><a href=\"\/pages\/ledige-stillinger\" title=\"Ledige Stillinger\"><strong>Ledige stillinger<\/strong><\/a><\/p>"
             }
           },
           "1600315548142": {
             "type": "links",
             "settings": {
-              "title": "Links",
+              "title": "Kundeservice",
               "link_list": "footer"
             }
           },
-          "1600315553114": {
-            "type": "newsletter",
+          "6dacaa07-1045-40a0-9da4-0024bab4a030": {
+            "type": "links",
             "settings": {
-              "title": "Newsletter",
-              "text": "<p>We only send messages about once a month and only about good things. Subscribe below.<\/p>"
+              "title": "Vedlikehold",
+              "link_list": "vedlikehold"
             }
           }
         },
         "block_order": [
           "1600315542945",
           "1600315548142",
-          "1600315553114"
+          "6dacaa07-1045-40a0-9da4-0024bab4a030"
         ],
         "settings": {
           "show_locale_selector": true,
