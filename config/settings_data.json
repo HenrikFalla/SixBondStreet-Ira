@@ -142,7 +142,7 @@
       "popup": {
         "type": "popup",
         "settings": {
-          "enable_popup": true,
+          "enable_popup": false,
           "image_position": "center",
           "image_opacity": 50,
           "title": "Sign up for our newsletter",

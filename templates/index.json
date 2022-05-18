@@ -60,7 +60,7 @@
             "color_background_button": "#f8f7f5",
             "color_text_button": "#2d2d2d",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 40
           }
         },
@@ -83,7 +83,7 @@
             "color_background_button": "#f8f7f5",
             "color_text_button": "#2d2d2d",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 40
           }
         }
@@ -217,11 +217,11 @@
         "enable_full_width": true
       }
     },
-    "featured-collection-1": {
+    "featured-collection-2": {
       "type": "featured-collection",
       "settings": {
-        "collection": "north-hage-sixbondstreet",
-        "title": "Årets hagemøbler",
+        "collection": "nyheter",
+        "title": "NYHETER",
         "per_row": 4,
         "rows": 1,
         "aspect_ratio": "natural"
@@ -314,119 +314,49 @@
         "color_dot": "#777777"
       }
     },
-    "featured-collection-2": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "nyheter",
-        "title": "Featured collection",
-        "per_row": 4,
-        "rows": 1,
-        "aspect_ratio": "natural"
-      }
-    },
-    "featured-products-1": {
-      "type": "featured-products",
-      "blocks": {
-        "1600980531412": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        },
-        "1600980543030": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        },
-        "1600980550720": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "1600980531412",
-        "1600980543030",
-        "1600980550720"
-      ],
-      "settings": {
-        "image_position": "left",
-        "title": "Featured Products",
-        "subheading": "Use this section to show off a few of your favourite products",
-        "link": "\/",
-        "link_text": "Shop the collection",
-        "enable_contrast": true,
-        "enable_full_width": false
-      }
-    },
-    "collection-list-1": {
-      "type": "collection-list",
-      "blocks": {
-        "1600315451525-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "1600315451525-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "1600315451525-0",
-        "1600315451525-1"
-      ],
-      "settings": {
-        "title": "Collections",
-        "per_row": 2,
-        "aspect_ratio": "natural"
-      }
-    },
     "carousel-1": {
       "type": "carousel",
       "blocks": {
         "1600984449963-0": {
           "type": "image",
           "settings": {
-            "meta": "",
-            "title": "Carousel Section",
-            "subheading": "<p>Use this Section to showcase a rotating gallery of images.<\/p>",
-            "max_width_subheading": 34,
-            "link_text": "Shop the Collection",
-            "link": "\/",
-            "alignment": "left_split",
+            "image": "shopify:\/\/shop_images\/banner_forside_nyheter.jpg",
+            "meta": "Nyheter",
+            "title": "Nyheter",
+            "subheading": "<p>Her finner du alle våre nyheter.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/nyheter",
+            "alignment": "center_center",
             "opacity_overlay": 50
           }
         },
         "1600984449963-1": {
           "type": "image",
           "settings": {
-            "meta": "",
-            "title": "Carousel Section",
-            "subheading": "<p>Use this Section to showcase a rotating gallery of images.<\/p>",
-            "max_width_subheading": 34,
-            "link_text": "Shop the Collection",
-            "link": "\/",
-            "alignment": "left_split",
+            "image": "shopify:\/\/shop_images\/39958-01-05-649229f70d_1728x_3923321b-530f-40a2-bf3a-131a9fdae69b.webp",
+            "meta": "Inspirasjon",
+            "title": "Hytta ved sjøen",
+            "subheading": "<p>Med rikitge produkter kan du skap et interiør som minner om frisk sjøluft, lyse dager og god stemning. Har du hytte i nærheten av sjøen? <\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/inspirasjon-til-hytta-ved-sjoen",
+            "alignment": "center_center",
             "opacity_overlay": 30
           }
         },
         "1600984449963-2": {
           "type": "image",
           "settings": {
-            "meta": "",
-            "title": "Carousel Section",
-            "subheading": "<p>Use this Section to showcase a rotating gallery of images.<\/p>",
-            "max_width_subheading": 34,
-            "link_text": "Shop the Collection",
+            "image": "shopify:\/\/shop_images\/Mathias_duma_001.jpg",
+            "meta": "Bærekraft",
+            "title": "Miljøsofa aka “Møbelflipperen” x SixBondStree",
+            "subheading": "<p>Miljøsofa aka “Møbelflipperen” & SixBondStreet ønsker å ta sin del av ansvaret og bruke vår felles kunnskap til å gi nytt liv til brukte møbler.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Les mer her",
             "link": "\/",
-            "alignment": "left_split",
-            "opacity_overlay": 70
+            "alignment": "right_split",
+            "opacity_overlay": 20
           }
         }
       },
@@ -436,12 +366,22 @@
         "1600984449963-2"
       ],
       "settings": {
-        "height_mobile": 80,
+        "height_mobile": 50,
         "color_overlay": "#000000",
         "color_heading": "#ffffff",
         "color_subheading": "#ffffff",
-        "color_background_button": "#000000",
-        "color_text_button": "#ffffff"
+        "color_background_button": "#ffffff",
+        "color_text_button": "#000000"
+      }
+    },
+    "featured-collection-1": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "north-hage-sixbondstreet",
+        "title": "Årets hagemøbler",
+        "per_row": 4,
+        "rows": 1,
+        "aspect_ratio": "natural"
       }
     },
     "featured-collection-3": {
@@ -491,6 +431,32 @@
         "aspect_ratio": "square",
         "per_row": 3
       }
+    },
+    "collection-list-1": {
+      "type": "collection-list",
+      "blocks": {
+        "1600315451525-0": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1600315451525-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1600315451525-0",
+        "1600315451525-1"
+      ],
+      "settings": {
+        "title": "Collections",
+        "per_row": 2,
+        "aspect_ratio": "natural"
+      }
     }
   },
   "order": [
@@ -499,13 +465,12 @@
     "slideshow-3",
     "1652734830e13bb44f",
     "16527348348cad75b8",
-    "featured-collection-1",
-    "slideshow-2",
     "featured-collection-2",
-    "featured-products-1",
-    "collection-list-1",
+    "slideshow-2",
     "carousel-1",
+    "featured-collection-1",
     "featured-collection-3",
-    "gallery-1"
+    "gallery-1",
+    "collection-list-1"
   ]
 }
