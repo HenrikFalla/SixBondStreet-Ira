@@ -704,53 +704,240 @@
         "enable_full_width": false
       }
     },
-    "featured-collection-3": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "",
-        "title": "Featured collection",
-        "per_row": 3,
-        "rows": 1,
-        "aspect_ratio": "natural"
-      }
-    },
-    "gallery-1": {
-      "type": "gallery",
+    "165290045380c0c288": {
+      "type": "image-with-text",
       "blocks": {
-        "1600985067002-3": {
-          "type": "image",
+        "1652900453379d68e2-0": {
+          "type": "heading",
           "settings": {
-            "text": "",
-            "link": ""
+            "heading_title": "Harrison kolleksjonen"
           }
         },
-        "1600985067002-4": {
-          "type": "image",
+        "1652900453379d68e2-1": {
+          "type": "text",
           "settings": {
-            "text": "",
-            "link": ""
+            "text": "<p><strong>På lager for omgående levering. <\/strong>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen. <\/p>"
           }
         },
-        "1600985067002-5": {
-          "type": "image",
+        "1652900453379d68e2-2": {
+          "type": "button",
           "settings": {
-            "text": "",
-            "link": ""
+            "link": "shopify:\/\/collections\/harrison-kolleksjonen",
+            "link_text": "Se utvalget her"
           }
         }
       },
       "block_order": [
-        "1600985067002-3",
-        "1600985067002-4",
-        "1600985067002-5"
+        "1652900453379d68e2-0",
+        "1652900453379d68e2-1",
+        "1652900453379d68e2-2"
       ],
       "settings": {
-        "title": "Gallery",
-        "link_text": "See all",
-        "link": "shopify:\/\/pages\/about-us",
-        "aspect_ratio": "square",
-        "per_row": 3
+        "image": "shopify:\/\/shop_images\/hariison_kolleksjonen_bla_forside_600.jpg",
+        "video_url": "",
+        "image_width": "standard",
+        "image_position": "left",
+        "max_width_text": 34,
+        "enable_contrast": true,
+        "enable_full_width": true
+      }
+    },
+    "1652901112e701d6bb": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "1652901112d06ce325-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lenox_rod_miljo.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Fjellhytte kolleksjonen",
+            "subheading": "<p>Vi introduserer vår nye fjellhytte kolleksjon med tekstilmøbler som passer perfekt på fjellhytta.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/fjellhytte-kolleksjonen",
+            "text_position": "left_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 20
+          }
+        },
+        "1652901112d06ce325-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/plla_forside_trender_hoyoppl_003.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Vår designer Palla Masdottir",
+            "subheading": "<p>Palla er engasjert og lidenskapelig opptatt av design og produksjon. Hun er villig til å stå på barrikadene for å få frem bærekraftig produksjon og rettferdig handel.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/pages\/var-designer",
+            "text_position": "left_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "1652901112d06ce325-1",
+        "1652901112d06ce325-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "featured-collection-3": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "artwood",
+        "title": "Artwood",
+        "per_row": 4,
+        "rows": 1,
+        "aspect_ratio": "natural"
+      }
+    },
+    "1652901523c83035ab": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "1652901523a57054ab-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forside_rundespisebord_inngagn_blogg_1728x_5224c561-8bd8-4e9a-b166-7c2468314d85.webp",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Runde spisebord alle vil ha",
+            "subheading": "<p>Bordene er skapt for å kunne lage en innbydende og fleksibel spisegruppe. Det skal være enkelt å få plass til en ekstra gjest...<\/p>",
+            "text_max_width": 20,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/collections\/en-vakker-og-innbydende-spisestue",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 40
+          }
+        },
+        "1652901523a57054ab-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_1.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Book en online interiørkonsultasjon",
+            "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. <\/p>",
+            "text_max_width": 28,
+            "link_text": "Book time her",
+            "link": "shopify:\/\/pages\/interiortjeneste",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 40
+          }
+        },
+        "25e3da2e-78b5-4e7b-8336-587a468787bd": {
+          "type": "medium_vertical_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hjemmekontor_banner_forside_var_003.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Hjemmekontoret",
+            "subheading": "<p>Her finner du alt du trenger til hjemmekontoret.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/hjemmekontoret",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 0
+          }
+        },
+        "0fce378b-1f51-48cd-8955-b03c6da62ec3": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hund_gine_margrethe.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Hvordan fungerer FibreGuard?",
+            "subheading": "<p>Her finner du alt du trenger å vite om tekstiler som er FibreGuard sertifisert. <\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/pages\/v-r-tekstilkolleksjon",
+            "text_position": "center_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 50
+          }
+        },
+        "ff3a51b3-3ada-4e1d-a4d7-7a5f1a88a9a9": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forside_rask_levering_stue_mobil.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Våre tekstiler",
+            "subheading": "<p>Her kan du bli inspirert til hvordan du kan kombinere våre tekstiler, samt lese mer om utvalget.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/pages\/v-r-tekstilkolleksjon",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "1652901523a57054ab-1",
+        "1652901523a57054ab-2",
+        "25e3da2e-78b5-4e7b-8336-587a468787bd",
+        "0fce378b-1f51-48cd-8955-b03c6da62ec3",
+        "ff3a51b3-3ada-4e1d-a4d7-7a5f1a88a9a9"
+      ],
+      "settings": {
+        "enable_full_width": false
       }
     }
   },
@@ -771,7 +958,9 @@
     "16528993087ed8d422",
     "1652899360872e3c51",
     "16529002771217d726",
+    "165290045380c0c288",
+    "1652901112e701d6bb",
     "featured-collection-3",
-    "gallery-1"
+    "1652901523c83035ab"
   ]
 }
