@@ -18,9 +18,9 @@
             "link": "shopify:\/\/blogs\/merker\/north-hage-sixbondstreet",
             "alignment": "center_center",
             "color_heading": "#ffffff",
-            "color_subheading": "#b8b8b8",
-            "color_text_button": "#ffffff",
-            "color_background_button": "#000000",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#29292c",
+            "color_background_button": "#ffffff",
             "color_overlay": "#000000",
             "opacity_overlay": 50
           }
