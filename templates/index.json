@@ -384,6 +384,64 @@
         "aspect_ratio": "natural"
       }
     },
+    "1652897314e73ea667": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "1652897314482a1529-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_forside_sofaguiden_var.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Sofaguiden",
+            "subheading": "<p>Vi guider deg til hvordan du velger rikitg sofa.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-velge-riktig-sofa",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#B8B8B8",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        },
+        "1652897314482a1529-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_spisestue_raskLev.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Komfortable og elegante spisestoler",
+            "subheading": "<p>Er du på jakt etter spisestoler som både er elegante og komfortable? <\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/komfortable-og-elegante-spisestoler",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#B8B8B8",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        }
+      },
+      "block_order": [
+        "1652897314482a1529-1",
+        "1652897314482a1529-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
     "featured-collection-3": {
       "type": "featured-collection",
       "settings": {
@@ -469,6 +527,7 @@
     "slideshow-2",
     "carousel-1",
     "featured-collection-1",
+    "1652897314e73ea667",
     "featured-collection-3",
     "gallery-1",
     "collection-list-1"
