@@ -1,1 +1,43 @@
-{"sections":{"intro":{"type":"main-collection-intro","settings":{}},"main":{"type":"main-collection-grid","settings":{}},"featured":{"type":"featured-collection","settings":{}}},"order":["intro","main","featured"]}
+{
+  "sections": {
+    "intro": {
+      "type": "main-collection-intro",
+      "settings": {
+        "collection_header_style": "full",
+        "image_position": "center center",
+        "enable_full_width": true,
+        "show_collection_description": true,
+        "max_width_text": 30,
+        "opacity_overlay": 60,
+        "color_overlay": "#000000",
+        "color_heading": "#ffffff",
+        "color_subheading": "#e1e1e1"
+      }
+    },
+    "main": {
+      "type": "main-collection-grid",
+      "settings": {
+        "show_filter": true,
+        "show_sort": false,
+        "per_row": 3,
+        "per_page": 24,
+        "aspect_ratio": "square"
+      }
+    },
+    "featured": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "title": "Featured collection",
+        "per_row": 3,
+        "rows": 1,
+        "aspect_ratio": "natural"
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "main",
+    "featured"
+  ]
+}
