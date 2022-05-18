@@ -540,6 +540,112 @@
         "enable_full_width": false
       }
     },
+    "16528990354809b128": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Nettmagasin",
+        "blog": "inspirasjon",
+        "per_row": 2,
+        "rows": 1,
+        "aspect_ratio": "natural"
+      }
+    },
+    "16528993087ed8d422": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "165289930892de7a1d-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/entreen_forsdie_square.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_top",
+            "title": "Entréen",
+            "subheading": "<p>Mix and match between sizes, set a background color or fill, and add text to blocks that are medium or larger.<\/p>",
+            "text_max_width": 20,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/entreen",
+            "text_position": "center_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 40
+          }
+        },
+        "165289930892de7a1d-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gallerivegg_blogginnlegg_2048x_37540b91-2691-4746-b291-65554b2fff38.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Slik lager du en gallerivegg",
+            "subheading": "<p>Kombiner gamle skatter, arvegods og personlige bilder sammen med moderne elementer for et unikt og personlig resultat. <\/p>",
+            "text_max_width": 28,
+            "link_text": "Ler mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/slik-lager-du-en-dekorativ-gallerivegg",
+            "text_position": "center_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        }
+      },
+      "block_order": [
+        "165289930892de7a1d-1",
+        "165289930892de7a1d-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "1652899360872e3c51": {
+      "type": "image-with-text",
+      "blocks": {
+        "1652899360628764c1-0": {
+          "type": "heading",
+          "settings": {
+            "heading_title": "En vakker og innbydende spiseplass"
+          }
+        },
+        "1652899360628764c1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gi spiseplassen din et velfortjent løft. Her finner du et rikt utvalg av møbler og interiørartikler til spiseplassen.<\/p>"
+          }
+        },
+        "1652899360628764c1-2": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/collections\/en-vakker-og-innbydende-spisestue",
+            "link_text": "Les mer her"
+          }
+        }
+      },
+      "block_order": [
+        "1652899360628764c1-0",
+        "1652899360628764c1-1",
+        "1652899360628764c1-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/spisestue_lysvarlig_innbydende.jpg",
+        "video_url": "",
+        "image_width": "standard",
+        "image_position": "left",
+        "max_width_text": 34,
+        "enable_contrast": true,
+        "enable_full_width": true
+      }
+    },
     "featured-collection-3": {
       "type": "featured-collection",
       "settings": {
@@ -602,6 +708,9 @@
     "1652897314e73ea667",
     "collection-list-1",
     "1652897399e459949a",
+    "16528990354809b128",
+    "16528993087ed8d422",
+    "1652899360872e3c51",
     "featured-collection-3",
     "gallery-1"
   ]
