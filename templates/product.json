@@ -1,1 +1,104 @@
-{"sections":{"main":{"type":"main-product","blocks":{"title":{"type":"title","settings":{}},"vendor":{"type":"vendor","settings":{}},"price":{"type":"price","settings":{}},"divider":{"type":"divider","settings":{}},"description":{"type":"description","settings":{}},"variant_picker":{"type":"variant_picker","settings":{}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{}},"accordion":{"type":"accordion","settings":{}}},"block_order":["title","vendor","price","divider","variant_picker","quantity_selector","buy_buttons","description"],"settings":{}},"recommendations":{"type":"recommended-products","settings":{}}},"order":["main","recommendations"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "422395fc-49fe-48ec-a531-c89b8314004d": {
+          "type": "share_buttons",
+          "settings": {
+          }
+        },
+        "f138415d-c8df-4ec6-851d-147d64d93a46": {
+          "type": "accordion",
+          "settings": {
+            "style": "closed",
+            "heading": "Dimensjoner",
+            "content": "<p><strong>Diameter: <\/strong>{{ product.metafields.product_data.diameter.value }} cm<br\/><strong>Høyde: <\/strong>{{ product.metafields.product_data.produkth_yde.value }} cm<\/p>"
+          }
+        },
+        "a76d1c85-788a-479a-b903-898ce70fed9f": {
+          "type": "accordion",
+          "settings": {
+            "style": "closed",
+            "heading": "Ytterligere informasjon",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "divider",
+        "quantity_selector",
+        "variant_picker",
+        "buy_buttons",
+        "description",
+        "422395fc-49fe-48ec-a531-c89b8314004d",
+        "f138415d-c8df-4ec6-851d-147d64d93a46",
+        "a76d1c85-788a-479a-b903-898ce70fed9f"
+      ],
+      "settings": {
+        "enable_sticky_sidebar": true,
+        "enable_full_width": true,
+        "media_layout": "column",
+        "enable_video_looping": true
+      }
+    },
+    "recommendations": {
+      "type": "recommended-products",
+      "settings": {
+        "heading": "Ofte kjøpt sammen med",
+        "per_row": 3,
+        "rows": 1,
+        "aspect_ratio": "square"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "recommendations"
+  ]
+}
