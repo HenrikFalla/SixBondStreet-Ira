@@ -95,10 +95,45 @@
         "rows": 1,
         "aspect_ratio": "square"
       }
+    },
+    "16529056183a2eb7ef": {
+      "type": "collection-list",
+      "disabled": true,
+      "blocks": {
+        "16529056189b1ce296-0": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16529056189b1ce296-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16529056189b1ce296-2": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "16529056189b1ce296-0",
+        "16529056189b1ce296-1",
+        "16529056189b1ce296-2"
+      ],
+      "settings": {
+        "title": "Collection list",
+        "per_row": 3,
+        "aspect_ratio": "natural"
+      }
     }
   },
   "order": [
     "main",
-    "recommendations"
+    "recommendations",
+    "16529056183a2eb7ef"
   ]
 }
