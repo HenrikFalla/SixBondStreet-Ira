@@ -195,6 +195,47 @@
           "show_social_icons": true,
           "show_payment_icons": true
         }
+      },
+      "extended-footer": {
+        "type": "extended-footer",
+        "blocks": {
+          "c72925a7-d53d-4e0d-913f-691db264d460": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_540x_ceafa2d0-b4aa-446d-bc1a-836db39fa184.webp",
+              "heading": "Interiørtjeneste",
+              "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. Interiørdesigneren vil sammen med deg komme frem til den beste løsningen for ditt hjem. <\/p>",
+              "link_text": "Book time her",
+              "link": "shopify:\/\/pages\/interiortjeneste"
+            }
+          },
+          "2787a5a7-3698-4dde-b08b-a4fc4aecebc2": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/img-7286-790183-Ym8HnCbV_360x_ec520f53-0f11-4a06-a634-b2eba3010efc.webp",
+              "heading": "Gratis tekstilprøver",
+              "subheading": "<p>Ikke sikker på hvilken tekstil du skal velge? Bestill 5 gratis tekstilprøver hjem til deg så du kan få et bedre inntrykk av hvordan den vil se ut i ditt hjem.<\/p>",
+              "link_text": "Bestill gratis tekstilprøve her",
+              "link": "shopify:\/\/pages\/gratis-tekstilprover"
+            }
+          },
+          "7ead97f7-8334-4aca-b712-84e4e9c9c533": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Nyhetsbrev",
+              "subheading": "<p>Hold deg oppdatert på nyheter, inspirasjon, kampanjer og spennende samarbeid.<\/p>",
+              "subheading_max_width": 70,
+              "placeholder": "Skriv inn eposten din og trykk enter →"
+            }
+          }
+        },
+        "block_order": [
+          "c72925a7-d53d-4e0d-913f-691db264d460",
+          "2787a5a7-3698-4dde-b08b-a4fc4aecebc2",
+          "7ead97f7-8334-4aca-b712-84e4e9c9c533"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
