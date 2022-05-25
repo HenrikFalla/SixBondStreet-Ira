@@ -26,7 +26,7 @@
           {% render 'unit-price' item: current_variant %}
         </div>
   {%- when 'lead-time' -%}
-         <p>
+         
                {% assign instockorb= '<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>'   %}
 
               <div class="trigger_orb" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}>{{instockorb}}</div>
@@ -40,7 +40,7 @@
                 {% endif %}
                 </span>
               </span>
-          </p>
+         
   
       {%- when 'sku' -%}
         {% if request.design_mode or current_variant.sku != blank %}
