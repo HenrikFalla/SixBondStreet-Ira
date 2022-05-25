@@ -80,6 +80,11 @@
                                                                
       {%- if product and product != blank -%}
         <h4><a href="{{ product.url }}">{{ product.title }}</a></h4>
+       {% unless in_stock == false %}
+                <div class="in_stock__variant_orb">
+                    <div class="in_stock__variant_orb_inner"></div>
+                </div>
+            {% endunless %}
       {%- else -%}
         <h4><a href="/" >{{ 'sections.featured_products.placeholder.product_title' | t }}</a></h4>
       {%- endif -%}
