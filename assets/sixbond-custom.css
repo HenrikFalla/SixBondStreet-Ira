@@ -508,6 +508,7 @@ section.description h2 {
 .product-item__text .product__label {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .product__label .in_stock__variant_orb {
