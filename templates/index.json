@@ -873,10 +873,10 @@
             "overlay_opacity": 40
           }
         },
-        "25e3da2e-78b5-4e7b-8336-587a468787bd": {
-          "type": "medium_vertical_rect",
+        "da0eaf62-4e18-407a-9aa4-a1879b339d7f": {
+          "type": "medium_horizontal_rect",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hjemmekontor_banner_forside_var_003.jpg",
+            "image": "shopify:\/\/shop_images\/hjemmekontor_banner_forside_var_003_2048x_e5df758f-b0c0-41dd-82b7-bc34797cde79.webp",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -888,12 +888,12 @@
             "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
+            "color_subheading": "#eaeaea",
+            "color_background_button": "#000000",
+            "color_text_button": "#ffffff",
             "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_color": "#000",
+            "overlay_opacity": 30
           }
         },
         "0fce378b-1f51-48cd-8955-b03c6da62ec3": {
@@ -948,7 +948,7 @@
       "block_order": [
         "1652901523a57054ab-1",
         "1652901523a57054ab-2",
-        "25e3da2e-78b5-4e7b-8336-587a468787bd",
+        "da0eaf62-4e18-407a-9aa4-a1879b339d7f",
         "0fce378b-1f51-48cd-8955-b03c6da62ec3",
         "ff3a51b3-3ada-4e1d-a4d7-7a5f1a88a9a9"
       ],
