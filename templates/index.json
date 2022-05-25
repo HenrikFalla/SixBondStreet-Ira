@@ -126,8 +126,8 @@
         "1600985612177-0"
       ],
       "settings": {
-        "desktop_height": 65,
-        "mobile_height": 100,
+        "desktop_height": 50,
+        "mobile_height": 50,
         "duration_autoplay": 4,
         "enable_parallax": false,
         "enable_full_width": true,
