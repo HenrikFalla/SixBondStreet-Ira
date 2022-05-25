@@ -18,6 +18,11 @@
           "settings": {
           }
         },
+        "lead_time": {
+          "type": "lead_time",
+          "settings": {
+          }
+        },
         "divider": {
           "type": "divider",
           "disabled": true,
@@ -71,6 +76,7 @@
         "vendor",
         "title",
         "price",
+        "lead_time",
         "divider",
         "quantity_selector",
         "variant_picker",
