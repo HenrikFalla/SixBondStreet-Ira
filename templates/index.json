@@ -890,8 +890,8 @@
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#eaeaea",
-            "color_background_button": "#000000",
-            "color_text_button": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#2d2d2d",
             "color_text_container": "",
             "overlay_color": "#000000",
             "overlay_opacity": 30
