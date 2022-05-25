@@ -880,6 +880,7 @@
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
+            "meta": "Få stilen",
             "title": "Hjemmekontoret",
             "subheading": "<p>Her finner du alt du trenger til hjemmekontoret.<\/p>",
             "text_max_width": 28,
@@ -892,7 +893,7 @@
             "color_background_button": "#000000",
             "color_text_button": "#ffffff",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 30
           }
         },
