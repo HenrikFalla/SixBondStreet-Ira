@@ -25,6 +25,23 @@
           </s>
           {% render 'unit-price' item: current_variant %}
         </div>
+  {%- when 'lead-time' -%}
+         <p>
+               {% assign instockorb= '<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>'   %}
+
+              <div class="trigger_orb" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}>{{instockorb}}</div>
+          	  <span class="variant-inventory" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}><span>{{ current_variant.inventory_quantity }}</span> på lager.</span>
+              <span data-stock-availability class="dom-message" {% if current_variant.inventory_quantity > 0 %}style="display:none"{% endif %}>
+                Leveringstid: <span>
+                {% if current_variant.metafields.product_data.leveringstid != blank %}
+                	{{ current_variant.metafields.product_data.leveringstid }}
+                {% else %}
+            	    {{ product.metafields.product_data.leveringstid }}
+                {% endif %}
+                </span>
+              </span>
+          </p>
+  
       {%- when 'sku' -%}
         {% if request.design_mode or current_variant.sku != blank %}
           <div class="product__sku fs-body-base">
