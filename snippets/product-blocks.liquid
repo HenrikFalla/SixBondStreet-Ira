@@ -72,6 +72,7 @@
       {%- when 'quantity_selector' -%}
   
   {%comment%}
+  
         <div class="pf-container">
           <div class="pf-element pf-element__qty">
             <label class="pf-label fs-body-base" for="Quantity-{{ section.id }}">
@@ -95,7 +96,7 @@
           </div>
         </div>
   {%endcomment%}
-  
+    <div class="pf-shop__container">
    <div class="pf-container pf-container__qty">
           <div class="pf-element">
             {% comment %}
@@ -113,7 +114,7 @@
             <input type='button' value='+' class='qtyplus' field='quantity' />
           </div>
         </div>
-  
+  </div>
   
   
   
