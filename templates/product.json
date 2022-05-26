@@ -29,13 +29,13 @@
           "settings": {
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
+        "variant_picker": {
+          "type": "variant_picker",
           "settings": {
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
+        "quantity_selector": {
+          "type": "quantity_selector",
           "settings": {
           }
         },
@@ -78,8 +78,8 @@
         "price",
         "lead_time",
         "divider",
-        "quantity_selector",
         "variant_picker",
+        "quantity_selector",
         "buy_buttons",
         "description",
         "422395fc-49fe-48ec-a531-c89b8314004d",
