@@ -65,6 +65,13 @@
     {{ 'theme.css' | asset_url | stylesheet_tag }}
     {{ 'sixbond-custom.css' | asset_url | stylesheet_tag }}
 
+      <!-- SixBondStreet CUSTOM -->
+     {% if template.name == 'product' %}
+    {{ 'product-page.scss.css' | asset_url | stylesheet_tag }}
+  {% endif %}
+      <!-- END SixBondStreet CUSTOM  -->
+    
+    
     {{ content_for_header }}
   </head>
 
