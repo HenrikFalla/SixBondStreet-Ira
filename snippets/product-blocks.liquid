@@ -68,6 +68,8 @@
         </div>
         
       {%- when 'quantity_selector' -%}
+  
+  {%comment%}
         <div class="pf-container">
           <div class="pf-element pf-element__qty">
             <label class="pf-label fs-body-base" for="Quantity-{{ section.id }}">
@@ -90,6 +92,29 @@
             </div>
           </div>
         </div>
+  {%endcomment%}
+  
+   <div class="pf-container pf-container__qty">
+          <div class="pf-element">
+            {% comment %}
+            <label class="pf-label fs-body-base" for="Quantity-{{ section.id }}">
+              <span>{{ 'products.product.quantity' | t }}</span>
+            </label>
+            {% endcomment %}
+            <input type='button' value='-' class='qtyminus' field='quantity' />
+            <input
+              data-quantity-input
+              type="number" id="Quantity-{{ section.id }}"
+              name="quantity" value="1" min="1" pattern="[0-9]*"
+              class="pf-input"
+            >
+            <input type='button' value='+' class='qtyplus' field='quantity' />
+          </div>
+        </div>
+  
+  
+  
+  
       {%- when 'buy_buttons' -%}
         <div class="pf__message fs-body-base" data-error-message></div>
         <div class="pf__actions">
@@ -308,3 +333,6 @@
     {% endcase %}
   {%- endfor -%}
 </div>
+ 
+  
+   <script src="{{ 'qtySelector.js' | asset_url }}"></script>
