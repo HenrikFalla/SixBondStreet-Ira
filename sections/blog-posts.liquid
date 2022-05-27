@@ -30,7 +30,7 @@
  
       
        {% for article in blog.articles %}
-      {{article.title}}
+     {{vendor.title}}
         {% assign handle-check = blog.title | downcase | append: "/" | append: vendorHandle %}
         {% if handle-check == article.handle %}
             <div class="blog-block">
