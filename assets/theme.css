@@ -2934,7 +2934,7 @@ body.show-borders .blog__header{
 
     display:flex;
     align-items:center;
-    justify-content:space-between;
+    justify-content:flex-start;
     position:relative;
     margin:0;
     cursor:pointer;
