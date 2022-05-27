@@ -305,52 +305,6 @@
       {%- when 'reviews' -%}
         <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
 {% endcomment %}
-          
-            <div class="product-single__dimensions">
-            {% if dimensjoner.size > 0 %}
-                <button class="collapsible-button">Dimensjoner</button>
-                <div class="collapsible__list">
-                    <ul>
-                        {% for dimensjon in dimensjoner %}
-                            {% assign dim_i = o %}
-                            {% assign values_dim = dimensjon | split: ":" %}
-                            {% unless values_dim[1] == blank %}
-                                {% unless values_dim[1] == "0" %}
-                                    {% if values_dim[0] == "Vekt" %}
-                                        {% assign dim_trail = "kg" %}
-                                    {% else %}
-                                        {% assign dim_trail = "cm" %}
-                                    {% endif %}
-                                    <li>
-                                        {% assign dim_i = 0 %}
-                                        {% for value_dim in values_dim %}
-                                            {% if dim_i == 0 %}
-                                                <strong>{{ value_dim }}: </strong>
-                                            {% else %}
-                                                {{ value_dim }} {{ dim_trail }}
-                                            {% endif %}
-                                            {% assign dim_i = dim_i | plus: 1 %}
-                                        {% endfor %}
-                                    </li>
-                                {% endunless %}
-                            {% endunless %}
-                        {% endfor %}
-                    </ul>
-                </div>
-            {% endif %}
-            {% if materialer %}
-                <button class="collapsible-button">Materiale</button>
-                <div class="collapsible__list">
-                    <p>{{ mats }}</p>
-                </div>
-            {% endif %}
-            {% unless product.variants.size > 1 %}
-                <button class="collapsible-button">Ytterligere informasjon</button>
-                <div class="collapsible__list">
-                    <p><strong>Varenummer:</strong> {{ product.selected_or_first_available_variant.sku }}</p>
-                </div>
-            {% endunless %}
-        </div>
       {%- when 'accordion' -%}
         {%- assign prevIndex = forloop.index0 | minus: 1 -%}
         {%- assign nextIndex = forloop.index0 | plus: 1 -%}
