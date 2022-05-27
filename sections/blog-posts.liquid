@@ -22,6 +22,10 @@
   <div class="blog-posts__wrapper">
     <div class="blog-posts__grid mobile-carousel" data-slider>
       {%- if blog != blank -%}
+      
+     {% if request.page_type == 'product' %}
+  Do something
+{%else%}
         {%- for article in blog.articles limit: max_posts -%}
           <div class="blog-posts__item blog-posts__item--{{ per_row }} blog-posts__item--{{ aspect_ratio }}" data-slide>
             {%- if article.image -%}
@@ -35,6 +39,8 @@
               </a>
             {%- endif -%}
             <h4 class="ff-heading fs-heading-small c-heading"><a href="{{ article.url }}">{{ article.title }}</a></h4>
+        
+            
             <p class="blog-posts__item-excerpt fs-body-base">
               {{ article.excerpt_or_content | strip_html | truncate: 200 }}
               <a href="{{ article.url }}">{{ 'sections.blog_posts.more' | t }}</a>
@@ -42,6 +48,7 @@
           </div>
         {%- endfor -%}
 
+      {% endif %}
       {%- else -%}
 
         {% for i in (1..max_posts) %}
