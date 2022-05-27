@@ -2949,6 +2949,19 @@ body.show-borders .blog__header{
     transition:background-color 0.3s;
     margin-left:calc(var(--spacing-small) * -1)
   }
+  
+  .product--accordion .accordion__label:after{
+      content: '\002B';
+    color: #333333;
+    font-weight: bold;
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+    font-size: 20px;
+  
+  }
+  
+
 .product--accordion .accordion__label:hover, .product-single__description .accordion .accordion__label:hover{
       color:inherit;
       opacity:1;
