@@ -12,6 +12,8 @@
   endif
 %}
 
+
+
 <section
   class="blog-posts s-inline-section"
   data-section-id="{{ section.id }}"
@@ -24,7 +26,22 @@
       {%- if blog != blank -%}
       
      {% if request.page_type == 'product' %}
-  Do something
+
+      {%  assign blog-merke = blogs[section.settings.blog] %}
+      
+       {% for article in blog-merke.articles %}
+        {% assign handle-check = blog-merke.title | downcase | append: "/" | append: vendorHandle %}
+        {% if handle-check == article.handle %}
+            <div class="blog-block">
+                <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;"></div>
+                <div class="blog-block__text">
+                    <h2 class="block-title">{{ article.title }}</h1>
+                    {{ article.content }}
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+      
 {%else%}
         {%- for article in blog.articles limit: max_posts -%}
           <div class="blog-posts__item blog-posts__item--{{ per_row }} blog-posts__item--{{ aspect_ratio }}" data-slide>
