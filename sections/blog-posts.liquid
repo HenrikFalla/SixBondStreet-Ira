@@ -27,7 +27,7 @@
       
      {% if request.page_type == 'product' %}
 
- 
+ {%  assign vendorHandle = product.vendor | handle%}
       
        {% for article in blog.articles %}
 
