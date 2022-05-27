@@ -2957,7 +2957,7 @@ body.show-borders .blog__header{
     float: left;
     margin-right: 5px;
     margin-top: -2px;
-    font-size: 20px;
+    font-size: 20px;width:15px
   
   }
   .product--accordion .accordion__group[data-open='true'] .accordion__label:before, .product-single__description .accordion .accordion__group[data-open='true'] .accordion__label:before{
