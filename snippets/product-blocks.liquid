@@ -323,8 +323,39 @@
             {{ block.settings.heading }}
           </a>
           <div class="accordion__text fs-body-small">
-            {%if block.settings.heading  == 'Dimensjoner'%}   yes {%endif%}
-            {{ block.settings.content }}
+            {%if block.settings.heading  == 'Dimensjoner'%}  
+            
+              {% for dimensjon in dimensjoner %}
+                            {% assign dim_i = o %}
+                            {% assign values_dim = dimensjon | split: ":" %}
+                            {% unless values_dim[1] == blank %}
+                                {% unless values_dim[1] == "0" %}
+                                    {% if values_dim[0] == "Vekt" %}
+                                        {% assign dim_trail = "kg" %}
+                                    {% else %}
+                                        {% assign dim_trail = "cm" %}
+                                    {% endif %}
+                                    <li>
+                                        {% assign dim_i = 0 %}
+                                        {% for value_dim in values_dim %}
+                                            {% if dim_i == 0 %}
+                                                <strong>{{ value_dim }}: </strong>
+                                            {% else %}
+                                                {{ value_dim }} {{ dim_trail }}
+                                            {% endif %}
+                                            {% assign dim_i = dim_i | plus: 1 %}
+                                        {% endfor %}
+                                    </li>
+                                {% endunless %}
+                            {% endunless %}
+                        {% endfor %}
+            
+            
+            
+            {%else%}
+                     {{ block.settings.content }}
+            {%endif%}
+   
           </div>
         </div>
         {% if forloop.last or section.blocks[nextIndex].type != 'accordion' %}
