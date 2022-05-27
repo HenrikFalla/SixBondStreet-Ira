@@ -17,8 +17,7 @@
   data-section-id="{{ section.id }}"
   data-section-type="blog-posts"
 >
- {%unless  request.page_type == 'product'%} {% render 'section-header', heading: heading, url: blog.url %}
-  {%endunless%}
+  {% render 'section-header', heading: heading, url: blog.url %}
 
   <div class="blog-posts__wrapper">
     <div class="blog-posts__grid mobile-carousel" data-slider>
