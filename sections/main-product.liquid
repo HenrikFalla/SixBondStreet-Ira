@@ -53,7 +53,7 @@
           {%- else -%}
             {%- assign prioritizeLoading = false -%}
           {%- endif -%}
-        	    {% for i in (0..2) %}
+        
           <div class="product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
             {% render 'media' with
               media: media, 
@@ -64,7 +64,6 @@
               sizes: sizes
              %}
           </div>
-            {% endfor %}
         {%- endfor -%}
 
         {%- if product.media.size > 1 -%}
