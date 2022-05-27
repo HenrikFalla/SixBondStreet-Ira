@@ -27,10 +27,11 @@
       
      {% if request.page_type == 'product' %}
 
-      {%  assign blog-merke = blogs[section.settings.blog] %}
+ 
       
-       {% for article in blog-merke.articles %}
-        {% assign handle-check = blog-merke.title | downcase | append: "/" | append: vendorHandle %}
+       {% for article in blog %}
+      {{article.title}}
+        {% assign handle-check = blog.title | downcase | append: "/" | append: vendorHandle %}
         {% if handle-check == article.handle %}
             <div class="blog-block">
                 <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;"></div>
