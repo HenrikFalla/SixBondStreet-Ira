@@ -2875,6 +2875,10 @@ body.show-borders .blog__header{
   text-decoration:underline;
   color:var(--color-text-link);
 }
+  .product__vendor {
+    margin-bottom: 12px;
+    margin-bottom: var(--spacing-small);
+}
 .product__price s{
     opacity:0.5;
   }
