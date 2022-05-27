@@ -135,11 +135,22 @@
         "per_row": 3,
         "aspect_ratio": "natural"
       }
+    },
+    "16536511166b9a2ac9": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "merker",
+        "per_row": 1,
+        "rows": 1,
+        "aspect_ratio": "square"
+      }
     }
   },
   "order": [
     "main",
     "recommendations",
-    "16529056183a2eb7ef"
+    "16529056183a2eb7ef",
+    "16536511166b9a2ac9"
   ]
 }
