@@ -93,6 +93,16 @@
         "vedlikehold": "vedlikehold"
       }
     },
+    "16536511166b9a2ac9": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "merker",
+        "per_row": 1,
+        "rows": 1,
+        "aspect_ratio": "square"
+      }
+    },
     "recommendations": {
       "type": "recommended-products",
       "settings": {
@@ -135,22 +145,12 @@
         "per_row": 3,
         "aspect_ratio": "natural"
       }
-    },
-    "16536511166b9a2ac9": {
-      "type": "blog-posts",
-      "settings": {
-        "title": "Blog posts",
-        "blog": "merker",
-        "per_row": 1,
-        "rows": 1,
-        "aspect_ratio": "square"
-      }
     }
   },
   "order": [
     "main",
+    "16536511166b9a2ac9",
     "recommendations",
-    "16529056183a2eb7ef",
-    "16536511166b9a2ac9"
+    "16529056183a2eb7ef"
   ]
 }
