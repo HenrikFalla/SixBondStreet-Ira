@@ -323,6 +323,7 @@
             {{ block.settings.heading }}
           </a>
           <div class="accordion__text fs-body-small">
+            {%if block.settings.heading  == 'Dimensjoner'%}   yes {%endif%}
             {{ block.settings.content }}
           </div>
         </div>
