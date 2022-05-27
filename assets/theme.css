@@ -2984,7 +2984,7 @@ body.show-borders .blog__header{
     margin:0;
     padding-top:var(--spacing-extra-small);
     padding-bottom:var(--spacing-unit);
-    display:none;
+    display:none;padding-left:1.5rem
   }
 body.template-product #main > .shopify-section > .shopify-app-block{
     margin-left:var(--space-outer);
