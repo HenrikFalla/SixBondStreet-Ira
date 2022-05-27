@@ -6572,6 +6572,11 @@ html:not(.no-js) .navigation__submenu-item + .navigation__submenu-item{
 .product-blocks > :first-child{
   margin-top:0 !important;
 }
+      @media (min-width: 40em){
+.product__price {
+    margin-bottom: 40px;
+/*     margin-bottom: var(--spacing-large); */
+}}
 html[data-whatintent='mouse'] .pf-input:focus:focus-visible,
   html[data-whatintent='mouse'] .pf-input :focus.focus-visible{
     outline:none;
