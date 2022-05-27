@@ -19,8 +19,10 @@
   data-section-id="{{ section.id }}"
   data-section-type="blog-posts"
 >
+   {% if request.page_type == 'product' %}
+  {%else%}
   {% render 'section-header', heading: heading, url: blog.url %}
-
+{%endif%}
   <div class="blog-posts__wrapper">
     <div class="blog-posts__grid mobile-carousel" data-slider>
       {%- if blog != blank -%}
