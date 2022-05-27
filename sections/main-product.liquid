@@ -21,6 +21,12 @@
   else
     assign sizes = "(max-width: 640px) calc(100vw - 40px), (max-width: 960px) 50vw, 66vw"
   endif
+  
+   assign kolli = product.metafields.product_data.antall_kolli
+
+  assign dimensjoner = "Sittedybde" | append: ":" | append: product.metafields.product_data.sittedybde | append: "," | append: "Sittehøyde" | append: ":" | append: product.metafields.product_data.sittehoyde | append: "," | append: "Armlene" | append: ":" | append: product.metafields.product_data.hoyde_armlene | append: "," | append: "Diameter" | append: ":" | append: product.metafields.product_data.diameter | append: "," | append: "Bredde" | append: ":" | append: product.metafields.product_data.produktbredde | append: "," | append: "Dybde" | append: ":" | append: product.metafields.product_data.produktdybde | append: "," | append: "Lengde" | append: ":" | append: product.metafields.product_data.produktlengde | append: "," | append: "Høyde" | append: ":" | append: product.metafields.product_data.produkth_yde | append: "," | append: "Vekt" | append: ":" | append: product.metafields.product_data.produktvekt | split: ","
+  
+  
 %}
 
 <section
