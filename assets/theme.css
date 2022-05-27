@@ -2963,6 +2963,7 @@ body.show-borders .blog__header{
       margin:0;
       pointer-events:none;
       opacity:0.5;
+        display:none
     }
 .product--accordion .accordion__text, .product-single__description .accordion .accordion__text{
     margin:0;
