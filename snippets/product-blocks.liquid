@@ -58,7 +58,7 @@
         {% endif %}
       {%- when 'title' -%}
         {% if title_links_to_product %}<a href="{{product.url}}">{% endif %}
-        <h1 class="product-single__title ff-heading fs-heading-large c-heading">{{ product.title }}</h1>
+        <h1 class="product-single__title ff-heading fs-heading-base c-heading">{{ product.title }}</h1>
         {% if title_links_to_product %}</a>{% endif %}
       {%- when 'description' -%}
         <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
