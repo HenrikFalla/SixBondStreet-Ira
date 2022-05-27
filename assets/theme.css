@@ -2960,7 +2960,9 @@ body.show-borders .blog__header{
     font-size: 20px;
   
   }
-  
+  .product--accordion .accordion__group[data-open='true'] .accordion__label:before, .product-single__description .accordion .accordion__group[data-open='true'] .accordion__label:before{
+      content: "\2212"; 
+  }
 
 .product--accordion .accordion__label:hover, .product-single__description .accordion .accordion__label:hover{
       color:inherit;
