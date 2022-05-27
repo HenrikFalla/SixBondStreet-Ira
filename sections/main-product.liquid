@@ -16,6 +16,10 @@
   assign button_options = swatch_options | concat: chip_options
   assign enable_sticky_sidebar = section.settings.enable_sticky_sidebar
 
+  assign blog-vedlikehold = blogs[section.settings.vedlikehold]
+  assign blog-merke = blogs[section.settings.merke]
+  
+  
   if media_layout == "grid"
     assign sizes = "(max-width: 640px) calc(100vw - 40px), (max-width: 960px) calc(50vw / 2), calc(66vw / 2)"
   else
@@ -258,6 +262,11 @@
         "type": "checkbox",
         "label": "t:sections.main_product.settings.enable_video_looping.label",
         "default": true
+      },
+		{
+        "id": "vedlikehold",
+        "type": "blog",
+        "label": "Vedlikehold"
       }
     ],
     "blocks": [
