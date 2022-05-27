@@ -2950,7 +2950,7 @@ body.show-borders .blog__header{
     margin-left:calc(var(--spacing-small) * -1)
   }
   
-  .product--accordion .accordion__label:after{
+  .product--accordion .accordion__label:before{
       content: '\002B';
     color: #333333;
     font-weight: bold;
