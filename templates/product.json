@@ -60,7 +60,7 @@
           "settings": {
             "style": "closed",
             "heading": "Dimensjoner",
-            "content": "<p><strong>Diameter: <\/strong>{{ product.metafields.product_data.diameter.value }} cm<br\/><strong>Høyde: <\/strong>{{ product.metafields.product_data.produkth_yde.value }} cm<\/p>"
+            "content": ""
           }
         },
         "a76d1c85-788a-479a-b903-898ce70fed9f": {
