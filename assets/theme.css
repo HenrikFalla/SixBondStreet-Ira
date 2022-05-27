@@ -2945,7 +2945,7 @@ body.show-borders .blog__header{
     color:inherit;
     border-radius:2px;
     min-height:32px;
-    padding:calc(var(--spacing-unit) * 2) var(--spacing-small);
+    padding:calc(var(--spacing-unit)) var(--spacing-small);
     transition:background-color 0.3s;
     margin-left:calc(var(--spacing-small) * -1)
   }
