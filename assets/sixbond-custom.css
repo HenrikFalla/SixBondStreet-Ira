@@ -1200,6 +1200,7 @@ input#Email {
     .extended-footer .extended-footer-groups .extended-100 {
         padding: 65px 20%;
     }
+  body.template-product  .blog-posts.s-inline-section{margin-top:0}
 }
 
 @media (max-width: 40em) {
