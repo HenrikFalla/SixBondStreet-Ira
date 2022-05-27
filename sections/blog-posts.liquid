@@ -15,7 +15,7 @@
 
 
 <section
-  class="blog-posts s-inline-section"
+  class="blog-posts s-inline-section {% if request.page_type == 'product' %}description {%endif%}"
   data-section-id="{{ section.id }}"
   data-section-type="blog-posts"
 >
