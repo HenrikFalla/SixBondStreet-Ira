@@ -50,11 +50,6 @@
           "settings": {
           }
         },
-        "422395fc-49fe-48ec-a531-c89b8314004d": {
-          "type": "share_buttons",
-          "settings": {
-          }
-        },
         "f138415d-c8df-4ec6-851d-147d64d93a46": {
           "type": "accordion",
           "settings": {
@@ -70,6 +65,11 @@
             "heading": "Ytterligere informasjon",
             "content": ""
           }
+        },
+        "422395fc-49fe-48ec-a531-c89b8314004d": {
+          "type": "share_buttons",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -82,9 +82,9 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "422395fc-49fe-48ec-a531-c89b8314004d",
         "f138415d-c8df-4ec6-851d-147d64d93a46",
-        "a76d1c85-788a-479a-b903-898ce70fed9f"
+        "a76d1c85-788a-479a-b903-898ce70fed9f",
+        "422395fc-49fe-48ec-a531-c89b8314004d"
       ],
       "settings": {
         "enable_sticky_sidebar": true,
