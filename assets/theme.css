@@ -6573,7 +6573,7 @@ html:not(.no-js) .navigation__submenu-item + .navigation__submenu-item{
   margin-top:0 !important;
 }
       @media (min-width: 40em){
-.product__price {
+.product-lead-time {
     margin-bottom: 40px;
 /*     margin-bottom: var(--spacing-large); */
 }}
