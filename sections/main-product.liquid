@@ -157,6 +157,15 @@
 
   {%- assign images = product.media | where: 'media_type', 'image' -%}
   {% render 'lightbox' with images: images %}
+  
+   <section class="description">
+    <div class="description__container">
+        <div id="description"></div>
+        <h2>Beskrivelse</h2>
+        {{ product.description }}
+    </div>
+     
+  </section>
 </section>
 
 {%- assign models = product.media | where: 'media_type', 'model' | json -%}
