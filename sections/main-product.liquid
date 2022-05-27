@@ -27,18 +27,7 @@
 
   
 %}
-{% for tag in product.tags %}
-    {% if tag contains "Materiale_" %}
-        {% if mats %}
-            {% assign mats = mats | append: ", " | append: tag | remove_first: "Materiale_" %}
-        {% else %}
-            {% assign mats = tag | remove_first: "Materiale_" %}
-        {% endif %}
-    {% endif %}
-{% endfor %}
-{% if mats %}
-    {% assign materialer = mats | split: ", " %}
-{% endif %}
+
 
 <section
   class="
