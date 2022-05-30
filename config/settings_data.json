@@ -48,6 +48,7 @@
     "swatch_options": "Color, Colour, Tekstil, Treverk, Stoff, Tekstilfarge, Tekstil, Velg Tekstil",
     "cart_enable_ajax": true,
     "cart_enable_quick_shop": false,
+    "threshold": "10000",
     "cart_quick_shop_show_quantity": false,
     "social_twitter_link": "",
     "social_facebook_link": "",
