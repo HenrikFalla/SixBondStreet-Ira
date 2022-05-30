@@ -1,4 +1,5 @@
 {% for tag in product.tags %}
+{{tag}}
     {% if tag contains "Materiale_" %}
         {% if mats %}
             {% assign mats = mats | append: ", " | append: tag | remove_first: "Materiale_" %}
