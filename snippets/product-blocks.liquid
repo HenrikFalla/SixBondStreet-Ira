@@ -371,8 +371,8 @@
                         {% endfor %}
             
             
-            {%elsif materialer != null%}
-             <p>{{ mats }}</p>
+            {%if materialer != null%}
+             <p>{{ mats }}</p>{%endif%}
               {%elsif block.settings.heading  == 'Ytterligere informasjon'%}
        <strong>Varenummer:</strong> {{ product.selected_or_first_available_variant.sku }}
             
