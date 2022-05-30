@@ -460,9 +460,19 @@
         "default": true
       },
       {
+        "type": "checkbox",
+        "id": "cart_terms_conditions_enable",
+        "label": "Enable terms and conditions checkbox"
+      },
+      {
         "type": "text",
         "id": "threshold",
         "label": "Free Shipping Threshold"
+      },
+      {
+        "type": "url",
+        "id": "cart_terms_conditions_link",
+        "label": "Terms and conditions page"
       },
       {
         "type": "checkbox",
