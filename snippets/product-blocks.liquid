@@ -375,7 +375,9 @@
                             {% endunless %}
                         {% endfor %}
             
-            
+           {% elsif materialer %}
+              {{mats}}
+       
             
               {%elsif block.settings.heading  == 'Ytterligere informasjon'%}
        <strong>Varenummer:</strong> {{ product.selected_or_first_available_variant.sku }}
