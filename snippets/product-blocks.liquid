@@ -17,7 +17,7 @@
 
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<div class="product-blocks">
+<div class="product-blocks       {{materialer}}">
   {%- for block in section.blocks -%}
     {% case block.type %}
       {%- when '@app' -%}
@@ -377,7 +377,7 @@
       
             
               {%elsif block.settings.heading  == 'Ytterligere informasjon'%}
-       <strong>Varenummer :      {{materialer}}</strong> {{ product.selected_or_first_available_variant.sku }}
+       <strong>Varenummer </strong> {{ product.selected_or_first_available_variant.sku }}
             
             
             {%else%}
