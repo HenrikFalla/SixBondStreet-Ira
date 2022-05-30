@@ -95,6 +95,7 @@
         "422395fc-49fe-48ec-a531-c89b8314004d"
       ],
       "settings": {
+        "show_swatches": true,
         "enable_sticky_sidebar": true,
         "enable_full_width": true,
         "media_layout": "column",
