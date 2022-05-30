@@ -257,7 +257,7 @@
                 <div class="blog-block">
                     <div id="vedlikehold"></div>
                     {% if article.image %}
-                        <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;"></div>
+                        <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;    background-position: center;"></div>
                     {% endif %}
                     <div class="blog-block__text" {% unless article.image %}style="flex:100%;"{% endunless %}>
                         <h2 class="block-title">{{ article.title }}</h2>
@@ -271,7 +271,7 @@
         {% assign handle-check = blog-merke.title | downcase | append: "/" | append: vendorHandle %}
         {% if handle-check == article.handle %}
             <div class="blog-block">
-                <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;"></div>
+                <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;    background-position: center;"></div>
                 <div class="blog-block__text">
                     <h2 class="block-title">{{ article.title }}</h1>
                     {{ article.content }}
