@@ -371,8 +371,7 @@
                         {% endfor %}
             
             
-            {%if materialer != null%}
-             <p>{{ mats }}</p>{%endif%}
+            
               {%elsif block.settings.heading  == 'Ytterligere informasjon'%}
        <strong>Varenummer:</strong> {{ product.selected_or_first_available_variant.sku }}
             
@@ -380,7 +379,7 @@
             {%else%}
                      {{ block.settings.content }}
             {%endif%}
-   
+   {{mats}}
           </div>
         </div>
         {% if forloop.last or section.blocks[nextIndex].type != 'accordion' %}
