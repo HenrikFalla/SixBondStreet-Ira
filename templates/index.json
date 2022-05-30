@@ -956,6 +956,11 @@
       "settings": {
         "enable_full_width": false
       }
+    },
+    "nosto_index": {
+      "type": "nosto-index",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -978,6 +983,7 @@
     "165290045380c0c288",
     "1652901112e701d6bb",
     "featured-collection-3",
-    "1652901523c83035ab"
+    "1652901523c83035ab",
+    "nosto_index"
   ]
 }

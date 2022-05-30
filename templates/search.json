@@ -1,1 +1,24 @@
-{"sections":{"main":{"type":"main-search","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-search",
+      "settings": {
+      }
+    },
+    "nosto_search_prepend": {
+      "type": "nosto-search-prepend",
+      "settings": {
+      }
+    },
+    "nosto_search_append": {
+      "type": "nosto-search-append",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "nosto_search_prepend",
+    "main",
+    "nosto_search_append"
+  ]
+}

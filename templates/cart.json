@@ -1,1 +1,18 @@
-{"sections":{"main":{"type":"main-cart","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {
+      }
+    },
+    "nosto_cart": {
+      "type": "nosto-cart",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "nosto_cart"
+  ]
+}

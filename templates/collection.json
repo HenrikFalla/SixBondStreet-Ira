@@ -34,11 +34,23 @@
         "rows": 1,
         "aspect_ratio": "natural"
       }
+    },
+    "nosto_collection_prepend": {
+      "type": "nosto-collection-prepend",
+      "settings": {
+      }
+    },
+    "nosto_collection_append": {
+      "type": "nosto-collection-append",
+      "settings": {
+      }
     }
   },
   "order": [
+    "nosto_collection_prepend",
     "intro",
     "main",
-    "featured"
+    "featured",
+    "nosto_collection_append"
   ]
 }

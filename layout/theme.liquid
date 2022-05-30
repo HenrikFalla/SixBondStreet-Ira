@@ -154,6 +154,7 @@
     {% if useCustomEvents %}
     <script src="{{ 'custom-events.js' | asset_url }}"></script>
     {% endif %}
-  </body>
+  {% render 'nosto-tagging' %}
+</body>
 
 </html>
