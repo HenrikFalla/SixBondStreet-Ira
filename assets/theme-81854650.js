@@ -6750,7 +6750,7 @@ function getDefaultStyles(el, defaultDisplay) {
 function pxToNumber(px) {
     return +px.replace(/px/, '');
 }
-  console.log("updated");
+
 const selectors$b = {
   form: '.selectors-form',
   list: '[data-disclosure-list]',
