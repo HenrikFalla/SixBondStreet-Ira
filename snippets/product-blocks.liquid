@@ -223,6 +223,14 @@
                     {%- if swatch_options contains option_name -%}
                       <div class="product-form__color-swatches" data-option-buttons>
                         {% for value in option.values %}
+                          {% assign file-url = value | handle | append: '.' | append: file_extension %}
+					{% if product.variants[forloop.index0].available %}
+					<div class="variant__option" id="{{ value | remove:" " }}">
+					{% else %}
+					<div class="variant__option sxbs-variant-sold-out">
+					{% endif %}
+                      
+                      
                           <button
                             data-swatch-button="true"
                             data-label="{{ value }}"
@@ -232,6 +240,7 @@
                             style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: 'png' | file_url }})"
                           >
                           </button>
+                      </div>
                         {% endfor %}
                         <select
                           id="Option{{ option.position }}"
