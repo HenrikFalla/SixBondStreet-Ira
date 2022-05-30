@@ -324,10 +324,15 @@
             </select>
           </div>
         </div>
- <div class="product__reviews">
+{% comment %}      
+      {%- when 'reviews' -%}
+            <div class="product__reviews">
       <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
     </div>
-
+{% endcomment %}
+           <div class="product__reviews">
+      <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
+    </div>
       {%- when 'accordion' -%}
           
           
