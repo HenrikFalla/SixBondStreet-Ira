@@ -7851,6 +7851,7 @@ var svg = {
 };
 
 function QuickCart(node) {
+      console.log("updated");
   const delegate = new Delegate(node);
   const overlay = n$1('[data-overlay]', node);
   const cartTab = n$1('[data-cart]', node);
