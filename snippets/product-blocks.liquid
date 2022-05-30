@@ -17,7 +17,7 @@
 
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<div class="product-blocks       {{materialer}}">
+<div class="product-blocks ">
   {%- for block in section.blocks -%}
     {% case block.type %}
       {%- when '@app' -%}
@@ -119,7 +119,7 @@
           </div>
         </div>
   {%endcomment%}
-    <div class="pf-shop__container">
+    <div class="pf-shop__container       {{materialer}}">
    <div class="pf-container pf-container__qty">
           <div class="pf-element">
             {% comment %}
