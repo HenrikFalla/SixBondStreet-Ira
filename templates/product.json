@@ -57,6 +57,14 @@
             "content": ""
           }
         },
+        "503bed45-a61e-444e-b1ed-384e9e5ac9ff": {
+          "type": "accordion",
+          "settings": {
+            "style": "closed",
+            "heading": "Materiale",
+            "content": ""
+          }
+        },
         "a76d1c85-788a-479a-b903-898ce70fed9f": {
           "type": "accordion",
           "settings": {
@@ -82,6 +90,7 @@
         "buy_buttons",
         "description",
         "f138415d-c8df-4ec6-851d-147d64d93a46",
+        "503bed45-a61e-444e-b1ed-384e9e5ac9ff",
         "a76d1c85-788a-479a-b903-898ce70fed9f",
         "422395fc-49fe-48ec-a531-c89b8314004d"
       ],
