@@ -8000,8 +8000,33 @@
       if (subtotal) {
         subtotal.innerHTML = formatMoney(cart.total_price);
       }
+             var subtot = cart.total_price;
+            threshold(subtot)
     }
+    	function threshold(subtotal){
+          var elem = document.querySelector('.quick-cart');
+	var threshold = elem.getAttribute('data-threshold');
+ 
+        var rr = subtotal/100;
 
+// console.log(threshold,subtotal);
+        if(rr < threshold)
+
+        {
+          document.getElementById("free-shipping").style.display = "none";
+          document.getElementById("paid-shipping").style.display = "block";
+          document.getElementById("remaining_amount").innerHTML = threshold - rr;
+        }
+        else {
+          document.getElementById("paid-shipping").style.display = "none";
+          document.getElementById("free-shipping").style.display = "block";
+
+        }
+        if(rr == 0)
+        {  
+
+          document.getElementById("paid-shipping").style.display = "none";}
+      }
     function renderItems({
       sorted
     }) {
