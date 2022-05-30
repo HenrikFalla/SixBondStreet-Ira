@@ -6750,7 +6750,7 @@ function getDefaultStyles(el, defaultDisplay) {
 function pxToNumber(px) {
     return +px.replace(/px/, '');
 }
-
+  console.log("updated");
 const selectors$b = {
   form: '.selectors-form',
   list: '[data-disclosure-list]',
@@ -7851,7 +7851,7 @@ var svg = {
 };
 
 function QuickCart(node) {
-      console.log("updated");
+    
   const delegate = new Delegate(node);
   const overlay = n$1('[data-overlay]', node);
   const cartTab = n$1('[data-cart]', node);
