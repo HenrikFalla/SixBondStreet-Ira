@@ -374,10 +374,10 @@
                             {% endunless %}
                         {% endfor %}
             
-            {{materialer}}
+      
             
               {%elsif block.settings.heading  == 'Ytterligere informasjon'%}
-       <strong>Varenummer:</strong> {{ product.selected_or_first_available_variant.sku }}
+       <strong>Varenummer :      {{materialer}}</strong> {{ product.selected_or_first_available_variant.sku }}
             
             
             {%else%}
