@@ -26,14 +26,14 @@
   style="
     --image-position: {{ section.settings.image_position }};
   "
->
+style="display:none" >
   {% if search.performed %}
-    <h1 class="page__heading ff-heading fs-heading-base" style="display:none">{{ 'search.results_with_count' | t: terms: search.terms, count: search.results_count }}</h1>
+    <h1 class="page__heading ff-heading fs-heading-base">{{ 'search.results_with_count' | t: terms: search.terms, count: search.results_count }}</h1>
   {% else %}
     <h1 class="page__heading ff-heading fs-heading-base">{{ 'search.title' | t }}</h1>
   {% endif %}
 
-  <form action="{{ routes.search_url }}" class="search__form" method="get" role="search" style="display:none">
+  <form action="{{ routes.search_url }}" class="search__form" method="get" role="search">
     <input
       type="search"
       name="q"
