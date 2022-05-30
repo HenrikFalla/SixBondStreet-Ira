@@ -384,9 +384,7 @@
             {%else%}
                      {{ block.settings.content }}
             {%endif%}
-  {% if materialer %}
-              {{mats}}
-            {% endif %}
+
           </div>
         </div>
         {% if forloop.last or section.blocks[nextIndex].type != 'accordion' %}
