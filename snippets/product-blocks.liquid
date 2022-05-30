@@ -334,7 +334,7 @@
         {%- assign prevIndex = forloop.index0 | minus: 1 -%}
         {%- assign nextIndex = forloop.index0 | plus: 1 -%}
         {%- if forloop.first or section.blocks[prevIndex].type != 'accordion' -%}
-          <div class="accordion rte product--accordion product__block product__block--small       {{materialer}}">
+          <div class="accordion rte product--accordion product__block product__block--small ">
         {%- endif -%}
         <div
           class="accordion__group"
@@ -375,7 +375,7 @@
                         {% endfor %}
             
       
-            
+               
               {%elsif block.settings.heading  == 'Ytterligere informasjon'%}
        <strong>Varenummer </strong> {{ product.selected_or_first_available_variant.sku }}
             
