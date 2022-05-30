@@ -62,7 +62,7 @@
           "settings": {
             "style": "closed",
             "heading": "Materiale",
-            "content": ""
+            "content": "<p>{{ product.metafields.product_data.materiale | metafield_text }}<\/p>"
           }
         },
         "a76d1c85-788a-479a-b903-898ce70fed9f": {
