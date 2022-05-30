@@ -8028,7 +8028,7 @@
           document.getElementById("paid-shipping").style.display = "none";}
       }
     function renderItems({
-        console.log("updated");
+      
       sorted
     }) {
       return r(sorted.length > 0, sorted.reduce((markup, item) => markup += createItem(item), ''));
