@@ -7872,6 +7872,7 @@ function QuickCart(node) {
   delegate.on('click', 'button[data-increase]', (_, target) => {
     const qty = parseInt(n$1('[data-qty]', target.parentNode).innerHTML) + 1;
     cart.updateItem(target.dataset.increase, qty);
+        console.log("updated");
   });
   delegate.on('click', '.quick-cart__item-remove', (_, target) => {
     cart.updateItem(target.dataset.itemId, 0);
@@ -7968,7 +7969,7 @@ function QuickCart(node) {
   }
 
   function renderCart(cart) {
-    console.log("updated");
+//     console.log("updated");
     const {
       cart_level_discount_applications: cartDiscounts
     } = cart;
