@@ -26,6 +26,7 @@
     },
     "featured": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "",
         "title": "Featured collection",
