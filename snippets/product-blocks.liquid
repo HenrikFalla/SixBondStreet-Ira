@@ -240,6 +240,14 @@
                             style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: 'png' | file_url }})"
                           >
                           </button>
+                         <div class="variant_info">
+                        {% unless product.variants[forloop.index0].inventory_quantity < 1 %}
+                        <div class="in_stock__variant_orb">
+                            <div class="in_stock__variant_orb_inner"></div>
+                        </div>
+                        {% endunless %}
+					    <span class="variant__title">{{ value }}</span>
+                    </div>
                       </div>
                         {% endfor %}
                         <select
