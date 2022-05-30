@@ -7967,6 +7967,7 @@ function QuickCart(node) {
   }
 
   function renderCart(cart) {
+    console.log("updated");
     const {
       cart_level_discount_applications: cartDiscounts
     } = cart;
