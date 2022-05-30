@@ -2,7 +2,6 @@
   "sections": {
     "main": {
       "type": "main-search",
-      "disabled": true,
       "settings": {
         "show_filter": true,
         "show_sort": true,
