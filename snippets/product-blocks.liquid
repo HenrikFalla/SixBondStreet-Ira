@@ -342,10 +342,7 @@
           data-open="{% if block.settings.style == 'open' %}true{% else %}false{% endif %}"
           {{ block.shopify_attributes }}
         >
-          {%if mats != null%}
-          <a class="accordion__label" href="#">
-            {{ block.settings.heading }}
-          </a>
+          {% if mats == null and block.settings.heading == 'Materiale'%}
           {%else%}
             <a class="accordion__label" href="#">
             {{ block.settings.heading }}
