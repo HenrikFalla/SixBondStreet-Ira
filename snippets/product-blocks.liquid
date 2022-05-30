@@ -222,33 +222,17 @@
                     {% endcomment %}
                     {%- if swatch_options contains option_name -%}
                       <div class="product-form__color-swatches" data-option-buttons>
-                        { {% for value in option.values %}
-                    {% assign file-url = value | handle | append: '.' | append: file_extension %}
-					{% if product.variants[forloop.index0].available %}
-					<div class="variant__option" id="{{ value | remove:" " }}">
-					{% else %}
-					<div class="variant__option sxbs-variant-sold-out">
-					{% endif %}
-					<a
-						href="#"
-						data-button="{{ value }}"
-						class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}"
-						style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ file-url | file_img_url: '100x100' }})"
-						tabindex="0"
-					    data-meta="{% if product.variants[forloop.index0].metafields.product_data.leveringstid != blank %}{{ product.variants[forloop.index0].metafields.product_data.leveringstid }}{% else %}{{ product.metafields.product_data.leveringstid }}{% endif %}">
-					</a>
-					{% comment %} Custom SixBondStreet Henrik {% endcomment %}
-                    <div class="variant_info">
-                        {% unless product.variants[forloop.index0].inventory_quantity < 1 %}
-                        <div class="in_stock__variant_orb">
-                            <div class="in_stock__variant_orb_inner"></div>
-                        </div>
-                        {% endunless %}
-					    <span class="variant__title">{{ value }}</span>
-                    </div>
-                    </div>
-					{% comment %} End Custom SixBondStreet Henrik {% endcomment %}
-                {% endfor %}
+                        {% for value in option.values %}
+                          <button
+                            data-swatch-button="true"
+                            data-label="{{ value }}"
+                            aria-label="{{value}}"
+                            data-button="{{ value | handleize }}--{{ forloop.index0 }}"
+                            class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}"
+                            style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: 'png' | file_url }})"
+                          >
+                          </button>
+                        {% endfor %}
                         <select
                           id="Option{{ option.position }}"
                           class="product-form__chip-select"
