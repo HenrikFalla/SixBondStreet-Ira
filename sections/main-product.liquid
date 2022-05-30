@@ -302,6 +302,16 @@
 
 {% endunless %}
 
+
+{% render 'product_form_tooltip' with
+	product: product,
+	current_variant: current_variant,
+	show_quantity: section.settings.show_quantity_input,
+	show_dynamic_checkout: section.settings.enable_payment_button,
+	show_swatches: section.settings.show_swatches,
+%}
+
+
 {% schema %}
   {
     "name": "t:sections.main_product.name",
