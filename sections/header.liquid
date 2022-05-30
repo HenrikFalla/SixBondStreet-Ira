@@ -3,6 +3,8 @@
   assign logo_max_width = section.settings.logo_max_width
   assign logo_position = section.settings.logo_position
   assign menu = section.settings.menu
+  assign mobile-menu = section.settings.mobile-menu
+  assign secondary_menu = section.settings.alt_menu
   assign style = section.settings.style
 
   assign transparent_home = section.settings.enable_transparent_home
@@ -15,6 +17,7 @@
 
   assign blocks = section.blocks
   assign links = linklists[menu].links
+   assign links_alt = linklists[secondary_menu].links
 %}
 
 {% capture header_classes %}
@@ -124,7 +127,7 @@
   {% render 'quick-cart' %}
 </header>
 
-{% render 'drawer-menu' with menu: menu %}
+{% render 'drawer-menu' with menu: mobile-menu %}
 
 
 <style>
@@ -176,6 +179,16 @@
         "label": "t:sections.header.settings.menu.label",
         "default": "main-menu"
       },
+  		 {
+        "id": "mobile-menu",
+        "type": "link_list",
+        "label": "Mobile Menu"
+      },
+	  {
+        "type": "link_list",
+		"id": "alt_menu",
+		"label": "Secondary Menu"
+	  },
       {
         "id": "style",
         "type": "select",
