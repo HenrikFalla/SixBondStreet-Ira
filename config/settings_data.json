@@ -1248,16 +1248,17 @@
       "1653985539ecbae777": {
         "type": "image-with-text--dynamic",
         "settings": {
+          "image": "shopify:\/\/shop_images\/broadway_spisestoler_plass_rundtbodet.jpg",
           "video_url": "",
           "image_width": "standard",
           "image_position": "left",
-          "title": "Image with text",
-          "text": "<p>Use these sections to promote a particular feature with editorial photography.<\/p>",
+          "title": "En vakker og innbydende spiseplass",
+          "text": "<p>Gi spiseplassen din et velfortjent løft. Her finner du et rikt utvalg av møbler og interiørartikler til spiseplassen.<\/p>",
           "max_width_text": 34,
-          "link": "#",
-          "link_text": "Shop the collection",
+          "link": "shopify:\/\/collections\/en-vakker-og-innbydende-spisestue",
+          "link_text": "Les mer her",
           "enable_contrast": true,
-          "enable_full_width": false
+          "enable_full_width": true
         }
       }
     },
