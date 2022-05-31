@@ -1170,23 +1170,6 @@
           "enable_full_width": true
         }
       },
-      "164752254623acba9e": {
-        "type": "image-with-text--dynamic",
-        "disabled": true,
-        "settings": {
-          "image": "shopify:\/\/shop_images\/bergen_img_forside_apning_rektangulaert.png",
-          "video_url": "",
-          "image_width": "standard",
-          "image_position": "right",
-          "title": "Vi kommer til Bergen!",
-          "text": "<p>31 mars åpner SixBondStreet showroom i Bergen. Bli med på åpningen.<\/p>",
-          "max_width_text": 38,
-          "link": "https:\/\/fb.me\/e\/1pg4v4qKN",
-          "link_text": "SE HER",
-          "enable_contrast": true,
-          "enable_full_width": true
-        }
-      },
       "164802989305c97a02": {
         "type": "collage--dynamic",
         "blocks": {
@@ -1327,14 +1310,24 @@
           "color_text_button": "#000000",
           "enable_full_width": false
         }
+      },
+      "1653985266ebca961d": {
+        "type": "featured-collection--dynamic",
+        "settings": {
+          "collection": "modulsofa",
+          "title": "MODULSOFA",
+          "per_row": 4,
+          "rows": 1,
+          "aspect_ratio": "natural"
+        }
       }
     },
     "content_for_index": [
       "164008427524d9f8aa",
       "1649056299bbfde24d",
       "1653984567913f14b6",
-      "164752254623acba9e",
       "1632985524a87701b3",
+      "1653985266ebca961d",
       "1600315401018",
       "16381949978e24d4c3",
       "1634468547c34ee1d1",
