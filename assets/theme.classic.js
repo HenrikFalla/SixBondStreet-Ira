@@ -12068,7 +12068,8 @@
     }) {
 
 console.log(variant.id);
-
+         var variantid = variant.id;
+  var updatedqty = inv_qty[variantid];
               
               document.querySelector(".variant-inventory span").innerHTML = updatedqty;
 
