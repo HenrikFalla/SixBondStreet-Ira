@@ -395,8 +395,8 @@
       "1600315431677": {
         "type": "featured-collection--dynamic",
         "settings": {
-          "collection": "nyheter",
-          "title": "Nyheter",
+          "collection": "north-hage-sixbondstreet",
+          "title": "Årets hagemøbler",
           "per_row": 4,
           "rows": 1,
           "aspect_ratio": "natural"
@@ -1333,8 +1333,8 @@
       "1600315401018",
       "16381949978e24d4c3",
       "1634468547c34ee1d1",
-      "164802989305c97a02",
       "1600315431677",
+      "164802989305c97a02",
       "1641219531a9e76cfa",
       "1645091337d2239f7a",
       "1600315479900",
