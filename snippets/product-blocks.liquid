@@ -20,6 +20,7 @@
 <script>
       jQuery(document).ready(function() {
 $(".product-form__color-swatches").find("div").on("click", function selectNode(e) {
+  console.log(this);
 $('.dom-message span').html( $(this).find("button").attr('data-meta'));
 });
     });
