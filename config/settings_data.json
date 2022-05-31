@@ -364,16 +364,16 @@
           "1601239752134": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_d756bbea-3e17-4512-a06a-ff2d5af4c091.jpg",
+              "image": "shopify:\/\/shop_images\/styling_sofabord_rektangulaert.jpg",
               "video_url": "",
-              "meta": "Interiørtjenester",
-              "title": "Book en online interiørkonsultasjon",
-              "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. Interiørdesigneren vil sammen med deg komme frem til den beste løsningen for ditt hjem. <\/p>",
+              "meta": "Guide",
+              "title": "Hvordan style et kvadratisk sofabord?",
+              "subheading": "<p>Her finner du gudien til hvordan du styler et kvadratisk eller rektangulært sofabord.<\/p>",
               "max_width_subheading": 20,
-              "link_text": "Book time her",
-              "link": "shopify:\/\/pages\/interiortjeneste",
-              "alignment": "left_bottom",
-              "opacity_overlay": 30
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-style-et-kvadratisk-eller-rektangulaert-sofabord",
+              "alignment": "center_center",
+              "opacity_overlay": 40
             }
           }
         },
