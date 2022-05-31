@@ -233,7 +233,8 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
     background: rgb(94 255 114 / 47%);
     shape-outside: circle();
     clip-path: circle();
-    margin-top: 0px;
+    margin-top: 0px;vertical-align: middle;
+    display: inline-block;
 }
 
 .variant_info .in_stock__variant_orb {
