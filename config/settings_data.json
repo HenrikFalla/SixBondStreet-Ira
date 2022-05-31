@@ -1186,22 +1186,22 @@
               "max_width_subheading": 28,
               "link_text": "Les mer her",
               "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-velge-riktig-sofa",
-              "alignment": "left_center",
+              "alignment": "center_center",
               "opacity_overlay": 40
             }
           },
           "164802989305c97a02-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/comospisestol_miljo.jpg",
+              "image": "shopify:\/\/shop_images\/banner_spisestue_raskLev.jpg",
               "video_url": "",
               "meta": "Inspirasjon",
               "title": "Komfortable og elegante spisestoler",
-              "subheading": "<p>Er du på jakt etter spisestoler som både er elegante og komfortable? Da kan vi varmt anbefale Madison eller Como. De leveres både med og uten armlener. <\/p>",
+              "subheading": "<p>Er du på jakt etter spisestoler som både er elegante og komfortable? <\/p>",
               "max_width_subheading": 28,
               "link_text": "Les mer her",
               "link": "shopify:\/\/blogs\/inspirasjon\/komfortable-og-elegante-spisestoler",
-              "alignment": "left_center",
+              "alignment": "center_center",
               "opacity_overlay": 40
             }
           }
