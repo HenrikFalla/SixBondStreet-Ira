@@ -538,6 +538,8 @@ a#in-stock {
     padding: 0;
     border: none;
     pointer-events: none;
+  min-width: auto;
+    min-height: auto;
 }
 
 .product-options__collection span {
