@@ -1233,15 +1233,16 @@
           "16539935369a7046f6-1": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_540x_ceafa2d0-b4aa-446d-bc1a-836db39fa184.webp",
               "video_url": "",
-              "meta": "Meta",
-              "title": "This is the Collage",
-              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "meta": "Interiørtjenester",
+              "title": "Book en online interiørkonsultasjon",
+              "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. <\/p>",
               "max_width_subheading": 28,
-              "link_text": "Shop the collection",
-              "link": "#",
-              "alignment": "left_center",
-              "opacity_overlay": 60
+              "link_text": "Book time her",
+              "link": "shopify:\/\/pages\/interiortjeneste",
+              "alignment": "center_center",
+              "opacity_overlay": 40
             }
           }
         },
