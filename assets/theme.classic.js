@@ -2428,7 +2428,7 @@
           variant
         }
       }) => {
-      console.log("chanhed");
+ 
         // Update prices
         const price = t$3(selectors$e.price, scope);
         const comparePrice = t$3(selectors$e.comparePrice, scope);
@@ -12066,6 +12066,8 @@
       }
 
     }) {
+
+console.log("ee");
       // Update unit pricing
       updateUnitPrices(this.container, variant);
       updateSku(this.container, variant);
