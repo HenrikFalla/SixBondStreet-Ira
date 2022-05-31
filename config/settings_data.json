@@ -757,6 +757,7 @@
       },
       "1634467668d8706b5a": {
         "type": "collage--dynamic",
+        "disabled": true,
         "blocks": {
           "1634467668d8706b5a-0": {
             "type": "image",
@@ -944,6 +945,7 @@
       },
       "1641219531a9e76cfa": {
         "type": "collage--dynamic",
+        "disabled": true,
         "blocks": {
           "91b9323b-efb3-418f-842c-fec999df03cf": {
             "type": "image",
@@ -1130,14 +1132,14 @@
           "1645091337d2239f7a-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/forside_fjellhytta_inspirasjon.jpg",
+              "image": "shopify:\/\/shop_images\/plla_forside_trender_hoyoppl_003.jpg",
               "video_url": "",
-              "meta": "Få stilen",
-              "title": "Inspirasjon til fjellhytta",
-              "subheading": "<p>Her finner du alt du trenger for å innrede en innbydende, komfortabel, lun og tidløs fjellhytte.<\/p>",
+              "meta": "Inspirasjon",
+              "title": "Vår designer Palla Masdottir",
+              "subheading": "<p>Palla er engasjert og lidenskapelig opptatt av design og produksjon. Hun er villig til å stå på barrikadene for å få frem bærekraftig produksjon og rettferdig handel.<\/p>",
               "max_width_subheading": 28,
-              "link_text": "Se utvalget her",
-              "link": "shopify:\/\/collections\/inspirasjon-til-fjellhytta",
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/pages\/var-designer",
               "alignment": "left_bottom",
               "opacity_overlay": 20
             }
@@ -1158,6 +1160,7 @@
       },
       "1647442765d5229954": {
         "type": "image-with-text--dynamic",
+        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/plla_forside_trender_hoyoppl_003.jpg",
           "video_url": "",
@@ -1335,17 +1338,17 @@
       "1634468547c34ee1d1",
       "1600315431677",
       "164802989305c97a02",
-      "1641219531a9e76cfa",
-      "1645091337d2239f7a",
-      "1600315479900",
-      "1647442765d5229954",
       "164208296949c113f9",
+      "1601240654390",
+      "1641219531a9e76cfa",
+      "1600315479900",
       "164215194880a53461",
+      "1645091337d2239f7a",
+      "1647442765d5229954",
       "1634467668d8706b5a",
       "1600315418706",
       "1601499234365",
-      "1600315468934",
-      "1601240654390"
+      "1600315468934"
     ]
   },
   "presets": {
