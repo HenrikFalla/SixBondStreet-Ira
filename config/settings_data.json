@@ -1074,7 +1074,7 @@
           "color_subheading": "#ffffff",
           "color_background_button": "#ffffff",
           "color_text_button": "#000000",
-          "enable_full_width": true
+          "enable_full_width": false
         }
       },
       "1647442765d5229954": {
@@ -1260,6 +1260,22 @@
           "enable_contrast": true,
           "enable_full_width": true
         }
+      },
+      "165398666989f53a08": {
+        "type": "image-with-text--dynamic",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/hariison_kolleksjonen_bla_forside_600.jpg",
+          "video_url": "",
+          "image_width": "standard",
+          "image_position": "left",
+          "title": "Harrison kolleksjonen",
+          "text": "<p><strong>På lager for omgående levering. <\/strong>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen. <\/p>",
+          "max_width_text": 34,
+          "link": "shopify:\/\/collections\/harrison-kolleksjonen",
+          "link_text": "Se utvalget her",
+          "enable_contrast": true,
+          "enable_full_width": true
+        }
       }
     },
     "content_for_index": [
@@ -1279,6 +1295,7 @@
       "164215194880a53461",
       "1653985539ecbae777",
       "1600315418706",
+      "165398666989f53a08",
       "1645091337d2239f7a",
       "1601499234365",
       "1647442765d5229954",
