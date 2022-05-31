@@ -2440,7 +2440,7 @@
           comparePrice.forEach(el => el.innerHTML = variant.compare_at_price > variant.price ? formatMoney(variant.compare_at_price) : '');
         } // Update add to cart button
 
-
+console.log("changed");
         const text = n$1('[data-add-to-cart-text]', buyButton);
         const {
           langAvailable,
