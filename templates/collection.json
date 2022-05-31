@@ -1,5 +1,11 @@
 {
   "sections": {
+    "nosto_collection_prepend": {
+      "type": "nosto-collection-prepend",
+      "disabled": true,
+      "settings": {
+      }
+    },
     "intro": {
       "type": "main-collection-intro",
       "settings": {
@@ -33,11 +39,6 @@
         "per_row": 3,
         "rows": 1,
         "aspect_ratio": "natural"
-      }
-    },
-    "nosto_collection_prepend": {
-      "type": "nosto-collection-prepend",
-      "settings": {
       }
     },
     "nosto_collection_append": {
