@@ -822,6 +822,7 @@
           },
           "bf4e7cde-0ac4-430d-b855-b19a648ef7cd": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/interior_banner_sbs.jpg",
               "meta": "Interiør",
@@ -837,7 +838,7 @@
           "1634468547c34ee1d1-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner_forside_nyheter.jpg",
+              "image": "shopify:\/\/shop_images\/balloon_04_nyheter_005.jpg",
               "meta": "Nyheter",
               "title": "Nyheter",
               "subheading": "<p>Her finner du alle våre nyheter.<\/p>",
@@ -851,15 +852,15 @@
           "1634468547c34ee1d1-2": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/B17R1594.jpg",
-              "meta": "Møbel kolleksjon",
-              "title": "North kolleksjonen",
-              "subheading": "<p>Med sitt vakre og enkle formspråk er møblene fra North kolleksjonen enkel å plassere i rommet.<\/p>",
+              "image": "shopify:\/\/shop_images\/39958-01-05-649229f70d_1728x_3923321b-530f-40a2-bf3a-131a9fdae69b.webp",
+              "meta": "Inspirasjon",
+              "title": "Hytta ved sjøen",
+              "subheading": "<p>Med rikitge produkter kan du skap et interiør som minner om frisk sjøluft, lyse dager og god stemning. Har du hytte i nærheten av sjøen? <\/p>",
               "max_width_subheading": 28,
               "link_text": "Se utvalget her",
-              "link": "shopify:\/\/collections\/north-kolleksjonen",
+              "link": "shopify:\/\/collections\/inspirasjon-til-hytta-ved-sjoen",
               "alignment": "center_center",
-              "opacity_overlay": 20
+              "opacity_overlay": 30
             }
           },
           "91dc111b-bdcd-446c-919b-6660895b0208": {
@@ -895,6 +896,7 @@
       },
       "16381949978e24d4c3": {
         "type": "image-with-text--dynamic",
+        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/harrison_kolleksjonen_forside_22.jpg",
           "video_url": "",
