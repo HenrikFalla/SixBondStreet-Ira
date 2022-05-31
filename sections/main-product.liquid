@@ -301,7 +301,14 @@
   {% render 'ld-json-product' %}
 
 {% endunless %}
-
+<!-- #E2S Script må med for å vise antall -->
+<script>
+  var inv_qty = {};
+  {% for var in product.variants %}
+    inv_qty[{{- var.id -}}] = {{ var.inventory_quantity | default: 0 }};
+  {% endfor %}
+ </script>
+ <!-- Slutt Script -->
 
 {% render 'product_form_tooltip' with
 	product: product,
