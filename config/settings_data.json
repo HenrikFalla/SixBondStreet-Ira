@@ -334,15 +334,15 @@
           "1600315418706-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/liberty_oakland_miljobilde_001.jpg",
+              "image": "shopify:\/\/shop_images\/style_rundt_sofabord.jpg",
               "video_url": "",
-              "meta": "Få stilen",
-              "title": "En vakker og innbydende spiseplass",
-              "subheading": "<p>Gjør spiseplassen klar for festsesongen ved hjelp av en aldri så liten oppgradering på interiørfronten.<\/p>",
+              "meta": "Guide",
+              "title": "Hvordan style et rundt sofabord?",
+              "subheading": "<p>Vi guider deg til hvordan du går frem for å style et rundt sofabord.<\/p>",
               "max_width_subheading": 20,
-              "link_text": "Se utvalget her",
-              "link": "shopify:\/\/collections\/en-vakker-og-innbydende-spisestue",
-              "alignment": "left_bottom",
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-style-et-rundt-sofabord",
+              "alignment": "center_center",
               "opacity_overlay": 20
             }
           },
@@ -389,7 +389,7 @@
           "color_subheading": "#ffffff",
           "color_background_button": "#ffffff",
           "color_text_button": "#000000",
-          "enable_full_width": true
+          "enable_full_width": false
         }
       },
       "1600315431677": {
