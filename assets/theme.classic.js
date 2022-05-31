@@ -12068,6 +12068,7 @@
     }) {
 
 console.log(variant.id);
+console.log(inventory_quantity);
          var variantid = variant.id;
   var updatedqty = inv_qty[variantid];
               
