@@ -408,8 +408,8 @@
           "5543d107-76de-4039-80ed-45566e815fa4": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hjemmekontoret_forside_vare22_002.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/hjemmekontoret_forside_vare22_002.jpg",
+              "image": "shopify:\/\/shop_images\/hjemmekontor_banner_forside_var_003_2048x_e5df758f-b0c0-41dd-82b7-bc34797cde79.webp",
+              "mobile_image": "shopify:\/\/shop_images\/hjemmekontor_banner_forside_var_003_2048x_e5df758f-b0c0-41dd-82b7-bc34797cde79.webp",
               "video_url": "",
               "meta": "Få stilen",
               "title": "Hjemmekontoret",
@@ -1258,6 +1258,53 @@
           "color_text_button": "#000000",
           "enable_full_width": false
         }
+      },
+      "16539936460d286ae3": {
+        "type": "collage--dynamic",
+        "blocks": {
+          "16539936460d286ae3-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hund_gine_margrethe.jpg",
+              "video_url": "",
+              "meta": "Bærekraft",
+              "title": "Hvordan fungerer FibreGuard?",
+              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/blogs\/inspirasjon\/lettstelte-tekstiler-med-fibreguard",
+              "alignment": "center_bottom",
+              "opacity_overlay": 50
+            }
+          },
+          "16539936460d286ae3-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/forside_rask_levering_stue_mobil.jpg",
+              "video_url": "",
+              "meta": "Bærekraft",
+              "title": "Våre tekstiler",
+              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/collections\/ny-tekstilkolleksjon-2021",
+              "alignment": "center_bottom",
+              "opacity_overlay": 50
+            }
+          }
+        },
+        "block_order": [
+          "16539936460d286ae3-0",
+          "16539936460d286ae3-1"
+        ],
+        "settings": {
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
+          "color_background_button": "#ffffff",
+          "color_text_button": "#000000",
+          "enable_full_width": false
+        }
       }
     },
     "content_for_index": [
@@ -1281,6 +1328,7 @@
       "1645091337d2239f7a",
       "1601499234365",
       "16539935369a7046f6",
+      "16539936460d286ae3",
       "1600315468934"
     ]
   },
