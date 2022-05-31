@@ -755,54 +755,6 @@
         "settings": {
         }
       },
-      "1634467668d8706b5a": {
-        "type": "collage--dynamic",
-        "disabled": true,
-        "blocks": {
-          "1634467668d8706b5a-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/mot_palla.jpg",
-              "video_url": "",
-              "meta": "",
-              "title": "Palla Masdottir",
-              "subheading": "<p>Møt vår innkjøper og designer, Palla. Hun er lidenskapelig opptatt av materialer, håndtverk, bærekraft og mennesker.<\/p>",
-              "max_width_subheading": 14,
-              "link_text": "Les mer",
-              "link": "shopify:\/\/pages\/var-designer",
-              "alignment": "left_bottom",
-              "opacity_overlay": 30
-            }
-          },
-          "1634467668d8706b5a-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/B17R1509.jpg",
-              "video_url": "",
-              "meta": "SixBondStreet",
-              "title": "Vår egenproduksjon",
-              "subheading": "<p>Her finner du møbler og interiørartikler designet av og for SixBondStreet. Vår historie begynte i 2012 med internasjonale impulser og et ønske om å levere det lille ekstra innen møbler og interiør.<\/p>",
-              "max_width_subheading": 28,
-              "link_text": "Se utvalget her",
-              "link": "shopify:\/\/collections\/sixbondstreet",
-              "alignment": "left_bottom",
-              "opacity_overlay": 30
-            }
-          }
-        },
-        "block_order": [
-          "1634467668d8706b5a-0",
-          "1634467668d8706b5a-1"
-        ],
-        "settings": {
-          "color_overlay": "#000000",
-          "color_heading": "#ffffff",
-          "color_subheading": "#ffffff",
-          "color_background_button": "#ffffff",
-          "color_text_button": "#000000",
-          "enable_full_width": false
-        }
-      },
       "1634468547c34ee1d1": {
         "type": "carousel--dynamic",
         "blocks": {
@@ -1077,23 +1029,6 @@
           "enable_full_width": false
         }
       },
-      "1647442765d5229954": {
-        "type": "image-with-text--dynamic",
-        "disabled": true,
-        "settings": {
-          "image": "shopify:\/\/shop_images\/plla_forside_trender_hoyoppl_003.jpg",
-          "video_url": "",
-          "image_width": "standard",
-          "image_position": "left",
-          "title": "Vårens interiørtrender",
-          "text": "<p>Vår designer og innkjøper Palla Masdottir forteller om vårens viktigste interiørtrender.<\/p>",
-          "max_width_text": 34,
-          "link": "shopify:\/\/blogs\/inspirasjon\/varens-interiortrender-2022",
-          "link_text": "Les mer her",
-          "enable_contrast": true,
-          "enable_full_width": true
-        }
-      },
       "164802989305c97a02": {
         "type": "collage--dynamic",
         "blocks": {
@@ -1276,6 +1211,52 @@
           "enable_contrast": true,
           "enable_full_width": true
         }
+      },
+      "16539935369a7046f6": {
+        "type": "collage--dynamic",
+        "blocks": {
+          "16539935369a7046f6-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/forside_rundespisebord_inngagn_blogg_1728x_5224c561-8bd8-4e9a-b166-7c2468314d85.webp",
+              "video_url": "",
+              "meta": "Inspirasjon",
+              "title": "Runde spisebord alle vil ha",
+              "subheading": "<p>Bordene er skapt for å kunne lage en innbydende og fleksibel spisegruppe. Det skal være enkelt å få plass til en ekstra gjest...<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/blogs\/inspirasjon\/runde-spisebord-alle-vil-ha",
+              "alignment": "center_center",
+              "opacity_overlay": 40
+            }
+          },
+          "16539935369a7046f6-1": {
+            "type": "image",
+            "settings": {
+              "video_url": "",
+              "meta": "Meta",
+              "title": "This is the Collage",
+              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Shop the collection",
+              "link": "#",
+              "alignment": "left_center",
+              "opacity_overlay": 60
+            }
+          }
+        },
+        "block_order": [
+          "16539935369a7046f6-0",
+          "16539935369a7046f6-1"
+        ],
+        "settings": {
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
+          "color_background_button": "#ffffff",
+          "color_text_button": "#000000",
+          "enable_full_width": false
+        }
       }
     },
     "content_for_index": [
@@ -1298,8 +1279,7 @@
       "165398666989f53a08",
       "1645091337d2239f7a",
       "1601499234365",
-      "1647442765d5229954",
-      "1634467668d8706b5a",
+      "16539935369a7046f6",
       "1600315468934"
     ]
   },
