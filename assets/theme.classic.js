@@ -12063,6 +12063,7 @@
       dataset: {
         variant
       }
+console.log("changed");
     }) {
       // Update unit pricing
       updateUnitPrices(this.container, variant);
