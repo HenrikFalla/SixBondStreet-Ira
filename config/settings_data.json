@@ -1004,14 +1004,15 @@
           "164215194880a53461-1": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/gallerivegg_blogginnlegg_2048x_37540b91-2691-4746-b291-65554b2fff38.jpg",
               "video_url": "",
-              "meta": "Meta",
-              "title": "This is the Collage",
-              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "meta": "Guide",
+              "title": "Slik lager du en gallerivegg",
+              "subheading": "<p>Kombiner gamle skatter, arvegods og personlige bilder sammen med moderne elementer for et unikt og personlig resultat. <\/p>",
               "max_width_subheading": 28,
-              "link_text": "Shop the collection",
-              "link": "#",
-              "alignment": "left_center",
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/blogs\/inspirasjon\/slik-lager-du-en-dekorativ-gallerivegg",
+              "alignment": "center_center",
               "opacity_overlay": 60
             }
           }
