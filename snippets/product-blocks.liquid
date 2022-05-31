@@ -17,6 +17,13 @@
 
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+      jQuery(document).ready(function() {
+$(".product-form__color-swatches").find("div").on("click", function selectNode(e) {
+$('.dom-message span').html( $(this).find("a").attr('data-meta'));
+});
+    });
+</script>
 <div class="product-blocks">
   {%- for block in section.blocks -%}
     {% case block.type %}
