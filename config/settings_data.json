@@ -1244,6 +1244,21 @@
           "rows": 1,
           "aspect_ratio": "natural"
         }
+      },
+      "1653985539ecbae777": {
+        "type": "image-with-text--dynamic",
+        "settings": {
+          "video_url": "",
+          "image_width": "standard",
+          "image_position": "left",
+          "title": "Image with text",
+          "text": "<p>Use these sections to promote a particular feature with editorial photography.<\/p>",
+          "max_width_text": 34,
+          "link": "#",
+          "link_text": "Shop the collection",
+          "enable_contrast": true,
+          "enable_full_width": false
+        }
       }
     },
     "content_for_index": [
@@ -1261,6 +1276,7 @@
       "1601240654390",
       "1600315479900",
       "164215194880a53461",
+      "1653985539ecbae777",
       "1645091337d2239f7a",
       "1601499234365",
       "1647442765d5229954",
