@@ -1280,11 +1280,59 @@
           "color_text_button": "#000000",
           "enable_full_width": false
         }
+      },
+      "1653984567913f14b6": {
+        "type": "collage--dynamic",
+        "blocks": {
+          "1653984567913f14b6-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/blogg_utemobler_styling_002.jpg",
+              "video_url": "",
+              "meta": "SixBondStreet",
+              "title": "Slik styler du uteplassen som en proff",
+              "subheading": "<p>Her får du tips og triks til hvordan du kan style uteplassen som en proff.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Les mer her",
+              "link": "shopify:\/\/pages\/slik-styler-du-uteplassen-som-en-proff",
+              "alignment": "left_center",
+              "opacity_overlay": 50
+            }
+          },
+          "1653984567913f14b6-1": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "video_url": "",
+              "meta": "Meta",
+              "title": "This is the Collage",
+              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Shop the collection",
+              "link": "#",
+              "alignment": "left_center",
+              "opacity_overlay": 60
+            }
+          }
+        },
+        "block_order": [
+          "1653984567913f14b6-0",
+          "1653984567913f14b6-1"
+        ],
+        "settings": {
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
+          "color_background_button": "#ffffff",
+          "color_text_button": "#000000",
+          "enable_full_width": false
+        }
       }
     },
     "content_for_index": [
       "164008427524d9f8aa",
       "1649056299bbfde24d",
+      "1653984567913f14b6",
       "164752254623acba9e",
       "1632985524a87701b3",
       "1600315401018",
