@@ -245,7 +245,7 @@ $('.dom-message span').html( $(this).find("a").attr('data-meta'));
                             data-button="{{ value | handleize }}--{{ forloop.index0 }}"
                             class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}"
                             style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: 'png' | file_url }})"
-                          >
+                           data-meta="{% if product.variants[forloop.index0].metafields.product_data.leveringstid != blank %}{{ product.variants[forloop.index0].metafields.product_data.leveringstid }}{% else %}{{ product.metafields.product_data.leveringstid }}{% endif %}">
                           </button>
                          <div class="variant_info">
                         {% unless product.variants[forloop.index0].inventory_quantity < 1 %}
