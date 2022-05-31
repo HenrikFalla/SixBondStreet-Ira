@@ -5,6 +5,20 @@
 
   assign current_variant = product.selected_or_first_available_variant
 
+  assign in_stock = false
+  if product.variants.size > 1
+      for variant in product.variants
+        if variant.inventory_quantity > 0
+            assign in_stock = true
+        endif
+      endfor
+    else
+        if current_variant.inventory_quantity > 0
+            assign in_stock = true
+        endif
+    endif
+    
+    
   if aspect_ratio == blank
     assign aspect_ratio = 'natural'
   endif 
