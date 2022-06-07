@@ -886,6 +886,7 @@
       },
       "164208296949c113f9": {
         "type": "collection-list--dynamic",
+        "disabled": true,
         "blocks": {
           "164208296949c113f9-0": {
             "type": "collection",
@@ -1339,7 +1340,7 @@
           "link": "shopify:\/\/collections\/somerset-serien-som-passer-inn-hos-alle",
           "link_text": "Se utvalget her",
           "enable_contrast": true,
-          "enable_full_width": false
+          "enable_full_width": true
         }
       }
     },
@@ -1356,10 +1357,10 @@
       "165398666989f53a08",
       "164802989305c97a02",
       "1634468547c34ee1d1",
-      "164208296949c113f9",
-      "1601240654390",
       "1654588018d295d6c6",
+      "164208296949c113f9",
       "1600315479900",
+      "1601240654390",
       "164215194880a53461",
       "1653985539ecbae777",
       "1600315418706",
