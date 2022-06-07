@@ -1300,15 +1300,16 @@
           "1654584094562e967f-1": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/screenshot_ginemargrethe_003.jpg",
               "video_url": "",
-              "meta": "Meta",
-              "title": "This is the Collage",
-              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "meta": "Interiør",
+              "title": "Interiørvarer",
+              "subheading": "<p>Her finner du hele vårt interiørsortiment.<\/p>",
               "max_width_subheading": 28,
-              "link_text": "Shop the collection",
-              "link": "#",
-              "alignment": "left_center",
-              "opacity_overlay": 60
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/interior",
+              "alignment": "center_center",
+              "opacity_overlay": 40
             }
           }
         },
