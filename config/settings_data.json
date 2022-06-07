@@ -1129,26 +1129,10 @@
               "alignment": "left_center",
               "opacity_overlay": 50
             }
-          },
-          "1653984567913f14b6-1": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "video_url": "",
-              "meta": "Meta",
-              "title": "This is the Collage",
-              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
-              "max_width_subheading": 28,
-              "link_text": "Shop the collection",
-              "link": "#",
-              "alignment": "left_center",
-              "opacity_overlay": 60
-            }
           }
         },
         "block_order": [
-          "1653984567913f14b6-0",
-          "1653984567913f14b6-1"
+          "1653984567913f14b6-0"
         ],
         "settings": {
           "color_overlay": "#000000",
@@ -1294,13 +1278,60 @@
           "color_text_button": "#000000",
           "enable_full_width": false
         }
+      },
+      "1654584094562e967f": {
+        "type": "collage--dynamic",
+        "blocks": {
+          "1654584094562e967f-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/styling_pynteputer_004.jpg",
+              "video_url": "",
+              "meta": "Interiør",
+              "title": "Fotokunst",
+              "subheading": "<p>Her finner du alt du trenger for å oppgradere veggene dine.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Se utvalget her",
+              "link": "shopify:\/\/collections\/fotokunst",
+              "alignment": "center_center",
+              "opacity_overlay": 40
+            }
+          },
+          "1654584094562e967f-1": {
+            "type": "image",
+            "settings": {
+              "video_url": "",
+              "meta": "Meta",
+              "title": "This is the Collage",
+              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Shop the collection",
+              "link": "#",
+              "alignment": "left_center",
+              "opacity_overlay": 60
+            }
+          }
+        },
+        "block_order": [
+          "1654584094562e967f-0",
+          "1654584094562e967f-1"
+        ],
+        "settings": {
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
+          "color_background_button": "#ffffff",
+          "color_text_button": "#000000",
+          "enable_full_width": true
+        }
       }
     },
     "content_for_index": [
       "164008427524d9f8aa",
       "1649056299bbfde24d",
-      "1653984567913f14b6",
       "1632985524a87701b3",
+      "1653984567913f14b6",
+      "1654584094562e967f",
       "1653985266ebca961d",
       "1600315401018",
       "16381949978e24d4c3",
