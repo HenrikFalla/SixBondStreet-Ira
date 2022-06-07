@@ -150,7 +150,7 @@ https://flickity.metafizzy.co
   --max-width: 2000px;
   --max-width-small-page: 600px;
 
-  --spacing-unit: 4px;
+  /*--spacing-unit: 4px;*/
 
   --spacing-none: 0px;
   --spacing-extra-small: calc(var(--spacing-unit) * 2);
