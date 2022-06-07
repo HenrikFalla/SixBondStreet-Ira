@@ -1323,7 +1323,7 @@
           "color_subheading": "#ffffff",
           "color_background_button": "#ffffff",
           "color_text_button": "#000000",
-          "enable_full_width": true
+          "enable_full_width": false
         }
       }
     },
