@@ -1342,9 +1342,41 @@
           "enable_contrast": true,
           "enable_full_width": true
         }
+      },
+      "16547725365867f72c": {
+        "type": "collage--dynamic",
+        "disabled": true,
+        "blocks": {
+          "16547725365867f72c-0": {
+            "type": "image",
+            "settings": {
+              "video_url": "",
+              "meta": "Interiørtjenesten",
+              "title": "Gratis interiørkonsultasjon",
+              "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+              "max_width_subheading": 28,
+              "link_text": "Shop the collection",
+              "link": "#",
+              "alignment": "left_center",
+              "opacity_overlay": 60
+            }
+          }
+        },
+        "block_order": [
+          "16547725365867f72c-0"
+        ],
+        "settings": {
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
+          "color_background_button": "#ffffff",
+          "color_text_button": "#000000",
+          "enable_full_width": false
+        }
       }
     },
     "content_for_index": [
+      "16547725365867f72c",
       "164008427524d9f8aa",
       "1649056299bbfde24d",
       "1632985524a87701b3",
