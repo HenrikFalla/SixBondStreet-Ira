@@ -166,7 +166,7 @@
 <script>
  $('.collection-sidebar__group .in_stock_toggle').on('click', function(e) {
       $(this).toggleClass("inactive active");
-    $('#pa-lager').trigger('click');
+    $('[name=filter.v.availability]').trigger('click');
       e.preventDefault();
     });
 
