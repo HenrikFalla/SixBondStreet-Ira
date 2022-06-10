@@ -170,10 +170,10 @@
       e.preventDefault();
     });
 
+if ($('#filter--filter.v.availability--P%C3%A5%20lager--sidebar').is(':checked')) {
 
-    $('#filter--filter.v.availability--P%C3%A5%20lager--sidebar').change(function () {
-        $(".collection-sidebar__group .in_stock_toggle").toggleClass("active", this.checked).toggleClass("inactive", !this.checked);
-    }).change()
+        $(".collection-sidebar__group .in_stock_toggle").addClass("active");
+    });
 
   
   
