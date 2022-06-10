@@ -42,7 +42,7 @@
                   assign list_modifiers = list_modifiers | append: ' has-chip'
                 endif
               -%}
-
+{{group_name}}
               <ul class="collection-sidebar__group{{ list_modifiers }}">
                 {%- for filter_value in filter.values -%}
                   {%- liquid
