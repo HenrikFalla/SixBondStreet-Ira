@@ -1247,6 +1247,7 @@
       },
       "1654848864a6d435ae": {
         "type": "slideshow--dynamic",
+        "disabled": true,
         "blocks": {
           "1654848864a6d435ae-0": {
             "type": "image",
