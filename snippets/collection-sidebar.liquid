@@ -44,7 +44,7 @@
                   assign list_modifiers = list_modifiers | append: ' has-chip'
                 endif
               -%}
-{% if group_name == 'tilgjengelighet'%}
+
           
           <div class="collection-in-stock__toggle">
 	
@@ -58,7 +58,7 @@
 	
 </div>
           
-          {%else%}
+        
               <ul class="collection-sidebar__group{{ list_modifiers }}">
                 {%- for filter_value in filter.values -%}
                   {%- liquid
@@ -93,7 +93,7 @@
                   {%- endif -%}
                 {%- endfor -%}
               </ul>
-          {%endif%}
+     
           
           
           
