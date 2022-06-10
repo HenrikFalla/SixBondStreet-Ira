@@ -754,23 +754,6 @@
           "color_text_button": "#000000"
         }
       },
-      "16381949978e24d4c3": {
-        "type": "image-with-text--dynamic",
-        "disabled": true,
-        "settings": {
-          "image": "shopify:\/\/shop_images\/harrison_kolleksjonen_forside_22.jpg",
-          "video_url": "",
-          "image_width": "standard",
-          "image_position": "left",
-          "title": "Harrison kolleksjonen",
-          "text": "<p>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen. Designet av og for SixbondStreet.<\/p>",
-          "max_width_text": 34,
-          "link": "shopify:\/\/collections\/harrison-kolleksjonen",
-          "link_text": "Se utvalget her",
-          "enable_contrast": true,
-          "enable_full_width": false
-        }
-      },
       "164008427524d9f8aa": {
         "type": "collage--dynamic",
         "blocks": {
@@ -1149,6 +1132,7 @@
       },
       "1654584094562e967f": {
         "type": "collage--dynamic",
+        "disabled": true,
         "blocks": {
           "1654584094562e967f-0": {
             "type": "image",
@@ -1228,25 +1212,10 @@
               "link": "https:\/\/sixbondstreet.no\/pages\/interiortjeneste",
               "alignment": "left_center"
             }
-          },
-          "16548470169bde2fec-1": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "video_url": "",
-              "meta": "Slideshow",
-              "title": "This is your slideshow",
-              "subheading": "<p>Use it to make a dramatic first impression with high-quality imagery and minimal text. Using the button below to link to whatever is most appropriate.<\/p>",
-              "max_width_subheading": 30,
-              "link_text": "Shop now",
-              "link": "#",
-              "alignment": "left_center"
-            }
           }
         },
         "block_order": [
-          "16548470169bde2fec-0",
-          "16548470169bde2fec-1"
+          "16548470169bde2fec-0"
         ],
         "settings": {
           "desktop_height": 60,
@@ -1318,15 +1287,14 @@
     },
     "content_for_index": [
       "16548470169bde2fec",
+      "1654584094562e967f",
+      "16548470326539fea8",
       "164008427524d9f8aa",
       "1649056299bbfde24d",
       "1632985524a87701b3",
       "1653984567913f14b6",
-      "1654584094562e967f",
-      "16548470326539fea8",
       "1600315401018",
       "1654848864a6d435ae",
-      "16381949978e24d4c3",
       "1600315431677",
       "165398666989f53a08",
       "164802989305c97a02",
