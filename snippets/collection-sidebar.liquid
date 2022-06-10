@@ -44,7 +44,17 @@
               -%}
 {% if group_name == 'tilgjengelighet'%}
           
-          
+          <div class="collection-in-stock__toggle">
+	
+		<div class="in_stock_toggle inactive">
+			<a href="" title="Smalne inn søket til produkter som samsvarer med taggen in stock"> </a>
+		</div>
+		<div class="in_stock__variant_orb">
+			<div class="in_stock__variant_orb_inner"></div>
+		</div>
+		<span class="toggle_text">Vis kun produkter på lager</span>	    
+	
+</div>
           
           {%else%}
               <ul class="collection-sidebar__group{{ list_modifiers }}">
