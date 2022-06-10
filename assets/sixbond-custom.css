@@ -572,7 +572,7 @@ a#in-stock {
     margin-right: 4px;
 }
 
-.collection-in-stock__toggle .in_stock_toggle a {
+.collection-in-stock__toggle .in_stock_toggle a,.collection-in-stock__toggle .in_stock_toggle span {
     width: 16px;
     height: 16px;
     display: block;
@@ -581,11 +581,11 @@ a#in-stock {
     margin-top: 2px;
 }
 
-.collection-in-stock__toggle .inactive a {
+.collection-in-stock__toggle .inactive a ,.collection-in-stock__toggle .inactive span{
     margin-left: 2px;
 }
 
-.collection-in-stock__toggle .active a {
+.collection-in-stock__toggle .active a,.collection-in-stock__toggle .active span {
     margin-left: 12px;
 }
 
