@@ -580,6 +580,7 @@ a#in-stock {
     background: #fff;
     margin-top: 2px;
 }
+  .collection-sidebar__group .in_stock_toggle{cursor:pointer}
 
 .collection-in-stock__toggle .inactive a ,.collection-in-stock__toggle .inactive span{
     margin-left: 2px;
