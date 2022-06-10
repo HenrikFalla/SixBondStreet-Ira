@@ -256,6 +256,7 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
     display: inline-block
 }
 
+  .collection-in-stock__toggle .in_stock_toggle.inactive + .in_stock__variant_orb .in_stock__variant_orb_inner{background:#ff1610}
 
 /* Collapsible menus */
 
