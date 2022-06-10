@@ -1,4 +1,7 @@
 {% assign in_stock_tag = 'in stock' %}
+
+
+{%comment%}
 <div class="collection-in-stock__toggle">
 	{% if current_tags contains in_stock_tag %}
 		<div class="in_stock_toggle active">
@@ -15,6 +18,7 @@
 		<span class="toggle_text">Vis kun produkter på lager</span>	    
 	{% endif %}
 </div>
+{%endcomment%}
 <div class="collection-sidebar">
   <form data-filter-form>
     {%- comment -%} Keep search term within form {%- endcomment -%}
