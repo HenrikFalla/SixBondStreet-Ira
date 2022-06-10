@@ -259,7 +259,7 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
   .collection-in-stock__toggle .in_stock_toggle.inactive + .in_stock__variant_orb .in_stock__variant_orb_inner{background:#ff1610}
   .collection-in-stock__toggle .in_stock_toggle.inactive + .in_stock__variant_orb{
   
-  background:rgb(104 242 113 / 47%)
+  background:rgb(255 114 110 / 47%)
   }
 /* Collapsible menus */
 
