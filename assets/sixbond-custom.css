@@ -581,6 +581,7 @@ a#in-stock {
     margin-top: 2px;
 }
   .collection-sidebar__group .in_stock_toggle{cursor:pointer}
+  .filter-item__checkbox.pa_lager{display:none}
 
 .collection-in-stock__toggle .inactive a ,.collection-in-stock__toggle .inactive span{
     margin-left: 2px;
