@@ -24,7 +24,7 @@
     {%- endif -%}
     {%- if show_filter and results.filters -%}
       {% for filter in results.filters %}
-{%  assign group_name = filter.label | handleize%}
+
         <div class="collection-sidebar__group">
           {% render 'collection-sidebar-heading' with heading: filter.label %}
 
@@ -42,7 +42,7 @@
                   assign list_modifiers = list_modifiers | append: ' has-chip'
                 endif
               -%}
-{%unless group_name == 'tilgjengelighet'%}
+
               <ul class="collection-sidebar__group{{ list_modifiers }}">
                 {%- for filter_value in filter.values -%}
                   {%- liquid
@@ -77,7 +77,6 @@
                   {%- endif -%}
                 {%- endfor -%}
               </ul>
-          {%endunless%}
             {%- when 'price_range' -%}
               {% liquid
                 assign max_price_amount = filter.range_max | money | escape
