@@ -1343,41 +1343,61 @@
           "enable_full_width": true
         }
       },
-      "16547725365867f72c": {
-        "type": "collage--dynamic",
+      "16548470169bde2fec": {
+        "type": "slideshow--dynamic",
         "disabled": true,
         "blocks": {
-          "16547725365867f72c-0": {
+          "16548470169bde2fec-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_gratis_interiortjeneste.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/forisde_interiortjenesten_gratis_sommer_mobil.jpg",
+              "video_url": "",
+              "meta": "",
+              "title": "Gratis interiørkonsultasjon",
+              "subheading": "<p>I sommer ønsker vi å gi våre kjære kunder <strong>gratis <\/strong>interiørhjelp. Du kan benytte deg av våre interiørtjenester både online og ved fysisk oppmøte i Oslo eller Bergen. Gjelder ikke premium rom.<\/p>",
+              "max_width_subheading": 30,
+              "link_text": "Book time her",
+              "link": "https:\/\/sixbondstreet.no\/pages\/interiortjeneste",
+              "alignment": "left_center"
+            }
+          },
+          "16548470169bde2fec-1": {
             "type": "image",
             "disabled": true,
             "settings": {
               "video_url": "",
-              "meta": "Interiørtjenesten",
-              "title": "Gratis interiørkonsultasjon",
-              "subheading": "<p>I sommer ønsker vi å gi våre kjære kunder <strong>gratis <\/strong>interiørhjelp. Du kan benytte deg av våre interiørtjenester både online og ved fysisk oppmøte i Oslo eller Bergen.<\/p>",
-              "max_width_subheading": 28,
-              "link_text": "Shop the collection",
-              "link": "https:\/\/sixbondstreet.no\/pages\/interiortjeneste",
-              "alignment": "left_center",
-              "opacity_overlay": 40
+              "meta": "Slideshow",
+              "title": "This is your slideshow",
+              "subheading": "<p>Use it to make a dramatic first impression with high-quality imagery and minimal text. Using the button below to link to whatever is most appropriate.<\/p>",
+              "max_width_subheading": 30,
+              "link_text": "Shop now",
+              "link": "#",
+              "alignment": "left_center"
             }
           }
         },
         "block_order": [
-          "16547725365867f72c-0"
+          "16548470169bde2fec-0",
+          "16548470169bde2fec-1"
         ],
         "settings": {
+          "desktop_height": 60,
+          "mobile_height": 55,
+          "opacity_overlay": 60,
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
           "color_subheading": "#ffffff",
           "color_background_button": "#ffffff",
           "color_text_button": "#000000",
-          "enable_full_width": false
+          "duration_autoplay": 4,
+          "enable_parallax": false,
+          "enable_full_width": true
         }
       }
     },
     "content_for_index": [
-      "16547725365867f72c",
+      "16548470169bde2fec",
       "164008427524d9f8aa",
       "1649056299bbfde24d",
       "1632985524a87701b3",
