@@ -165,7 +165,8 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
  $('.collection-sidebar__group .in_stock_toggle').on('click', function(e) {
-      $(this).toggleClass("inactive active"); 
+      $(this).toggleClass("inactive active");
+    $('input[name=filter.v.availability]').trigger('click');
       e.preventDefault();
     });
 
