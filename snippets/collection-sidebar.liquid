@@ -50,6 +50,7 @@
               -%}
 
           
+      {%if  filter.label == 'Tilgjengelighet'%}
           <div class="collection-in-stock__toggle">
 	
 		<div class="in_stock_toggle inactive">
@@ -60,7 +61,7 @@
 		</div>
 		<span class="toggle_text">Vis kun produkter på lager</span>	    
 	
-</div>
+</div>{%endif%}
           
         
               <ul class="collection-sidebar__group{{ list_modifiers }}">
