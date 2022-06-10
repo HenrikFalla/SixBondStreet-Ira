@@ -1286,14 +1286,15 @@
           "1654848864a6d435ae-0": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/banner_merkevaresalg_tonekroken_003_2048x_71c2354c-22af-4cc5-a62d-98a5a20d27b3.webp",
               "video_url": "",
               "meta": "",
               "title": "Merkevaresalg",
-              "subheading": "<p>Use it to make a dramatic first impression with high-quality imagery and minimal text. Using the button below to link to whatever is most appropriate.<\/p>",
+              "subheading": "<p>Merkevaresalg med <span style=\"text-decoration:underline\"><strong>opptil 50% rabatt <\/strong><\/span>på en mengde møbler og interiørvarer. Nå har du muligheten til å sikre deg godbiter fra en av våre kjente merkevarer.<strong>Tilbudene gjelder fra <\/strong><span style=\"text-decoration:underline\"><strong>13.06.2022 <\/strong><\/span><strong>t.o.m <\/strong><span style=\"text-decoration:underline\"><strong>30.06.2022 <\/strong><\/span><strong>eller så langt lageret rekker.<\/strong><\/p>",
               "max_width_subheading": 30,
-              "link_text": "Shop now",
+              "link_text": "Se utvalget her",
               "link": "shopify:\/\/collections\/merkevaresalg",
-              "alignment": "left_center"
+              "alignment": "right_center"
             }
           }
         },
@@ -1303,7 +1304,7 @@
         "settings": {
           "desktop_height": 60,
           "mobile_height": 60,
-          "opacity_overlay": 40,
+          "opacity_overlay": 50,
           "color_overlay": "#000000",
           "color_heading": "#ffffff",
           "color_subheading": "#ffffff",
