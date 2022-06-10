@@ -1389,11 +1389,12 @@
         "type": "image-with-text--dynamic",
         "disabled": true,
         "settings": {
+          "image": "shopify:\/\/shop_images\/kampanje_klassikere_sommer.jpg",
           "video_url": "",
           "image_width": "standard",
           "image_position": "left",
           "title": "Våre klassikere til eksklusiv pris",
-          "text": "<p>Abonerer du på vårt nyhetsbrev får du nå i en begrenset periode <strong>20% på et rikt utvalg av våre bestselgere fra Harrison og Somerset kolleksjonen.<\/strong><\/p>",
+          "text": "<p>Abonerer du på vårt nyhetsbrev får du i en begrenset periode <strong>20% på et rikt utvalg av våre bestselgere fra Harrison og Somerset kolleksjonen.<\/strong><\/p>",
           "max_width_text": 34,
           "link": "\/collections\/vare-klassikere-til-eksklusiv-pris",
           "link_text": "Se utvalget her",
