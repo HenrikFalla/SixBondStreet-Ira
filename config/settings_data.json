@@ -1132,7 +1132,6 @@
       },
       "1654584094562e967f": {
         "type": "collage--dynamic",
-        "disabled": true,
         "blocks": {
           "1654584094562e967f-0": {
             "type": "image",
@@ -1196,7 +1195,6 @@
       },
       "16548470169bde2fec": {
         "type": "slideshow--dynamic",
-        "disabled": true,
         "blocks": {
           "16548470169bde2fec-0": {
             "type": "image",
@@ -1205,10 +1203,10 @@
               "mobile_image": "shopify:\/\/shop_images\/forisde_interiortjenesten_gratis_sommer_mobil.jpg",
               "video_url": "",
               "meta": "",
-              "title": "Gratis interiørkonsultasjon",
-              "subheading": "<p>I sommer ønsker vi å gi våre kjære kunder <strong>gratis <\/strong>interiørhjelp. Du kan benytte deg av våre interiørtjenester både online og ved fysisk oppmøte i Oslo eller Bergen. Gjelder ikke premium rom.<\/p>",
+              "title": "Gratis interiørhjelp",
+              "subheading": "<p>Gratis interiørhjelp hele sommeren til våre kjære kunder.  Våre dyktige interiørdesignere står klare for å hjelpe deg med valg av farger\/tekstiler, møblering og styling. Møt oss online via video eller i et av våre showroom i Oslo eller Bergen.<\/p>",
               "max_width_subheading": 30,
-              "link_text": "Book time her",
+              "link_text": "Book en gratis konsultasjon her",
               "link": "https:\/\/sixbondstreet.no\/pages\/interiortjeneste",
               "alignment": "left_center"
             }
@@ -1233,7 +1231,6 @@
       },
       "16548470326539fea8": {
         "type": "image-with-text--dynamic",
-        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/kampanje_klassikere_sommer.jpg",
           "video_url": "",
