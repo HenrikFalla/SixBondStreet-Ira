@@ -3,8 +3,8 @@
   {%- assign scope = scope | prepend: '--' -%}
 {%- endif -%}
 {% capture filter_id %}filter--{{ filter_value.param_name | url_escape | escape }}--{{ filter_value.label | url_escape | escape }}{{ scope }}{% endcapture %}
-
-<li class="{{ filter_value.label | replace: " ", '-' }} {{group_name}} filter-item{% if type == 'swatch' or type == 'chip' %} inline{% endif %}">
+{% assign tempid =  filter_value.label | replace: " ", '-' %}
+<li class=" {{group_name}} filter-item{% if type == 'swatch' or type == 'chip' %} inline{% endif %}">
   <label
     data-filter
     class="filter-item__content {% if filter_value.count == 0 and filter_value.active == false %}filter-item__content--disabled{% endif %}"
