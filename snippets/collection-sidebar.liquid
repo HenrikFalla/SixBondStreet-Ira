@@ -43,7 +43,7 @@
                 endif
               -%}
 
-              <ul class="collection-sidebar__group{{ list_modifiers }}">
+              <ul class="collection-sidebar__group{{ list_modifiers }} {{filter.label }}">
                 {%- for filter_value in filter.values -%}
                   {%- liquid
                     if filter_value.active
