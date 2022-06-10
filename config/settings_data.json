@@ -1278,6 +1278,41 @@
           "enable_contrast": true,
           "enable_full_width": false
         }
+      },
+      "1654848864a6d435ae": {
+        "type": "slideshow--dynamic",
+        "disabled": true,
+        "blocks": {
+          "1654848864a6d435ae-0": {
+            "type": "image",
+            "settings": {
+              "video_url": "",
+              "meta": "Slideshow",
+              "title": "This is your slideshow",
+              "subheading": "<p>Use it to make a dramatic first impression with high-quality imagery and minimal text. Using the button below to link to whatever is most appropriate.<\/p>",
+              "max_width_subheading": 30,
+              "link_text": "Shop now",
+              "link": "#",
+              "alignment": "left_center"
+            }
+          }
+        },
+        "block_order": [
+          "1654848864a6d435ae-0"
+        ],
+        "settings": {
+          "desktop_height": 60,
+          "mobile_height": 60,
+          "opacity_overlay": 40,
+          "color_overlay": "#000000",
+          "color_heading": "#ffffff",
+          "color_subheading": "#ffffff",
+          "color_background_button": "#ffffff",
+          "color_text_button": "#000000",
+          "duration_autoplay": 4,
+          "enable_parallax": false,
+          "enable_full_width": true
+        }
       }
     },
     "content_for_index": [
@@ -1304,7 +1339,8 @@
       "1645091337d2239f7a",
       "1600315468934",
       "16539935369a7046f6",
-      "16539936460d286ae3"
+      "16539936460d286ae3",
+      "1654848864a6d435ae"
     ]
   },
   "presets": {
