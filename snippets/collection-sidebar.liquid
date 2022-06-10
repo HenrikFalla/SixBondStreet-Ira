@@ -163,11 +163,23 @@
 </div>
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
+<script> $(document).ready(function () {
  $('.collection-sidebar__group .in_stock_toggle').on('click', function(e) {
-      $(this).toggleClass("inactive active");
+      if ($('#filter--filter.v.availability--P%C3%A5%20lager--sidebar').is(':checked')) {
+        {
+      $(this).addClass("active");
+        }
+        else{
     $('#filter--filter.v.availability--P%C3%A5%20lager--sidebar').trigger('click');
+                $(this).toggleClass("inactive active");
       e.preventDefault();
+        }
     });
 
+ 
+
+});
+  
+  
+  
 </script>
