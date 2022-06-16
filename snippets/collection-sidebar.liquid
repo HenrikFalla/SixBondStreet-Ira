@@ -30,7 +30,7 @@
       {% for filter in results.filters %}
 
         <div class="collection-sidebar__group">
-          
+             
           {%unless filter.label == 'Tilgjengelighet'%}
           {% render 'collection-sidebar-heading' with heading: filter.label %}
 			{%endunless%}
