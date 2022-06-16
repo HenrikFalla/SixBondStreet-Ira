@@ -153,7 +153,7 @@
           
           
           
-                 <ul class="collection-sidebar__group{{ list_modifiers }}  {%if  filter.label == 'Tilgjengelighet'%}hide-it {%endif%}">
+                 <ul class="collection-sidebar__group{{ list_modifiers }}  {%if  filter.label == 'In Stock'%}hide-it {%endif%}">
                 {%- for filter_value in filter.values -%}
                   {%- liquid
                     if filter_value.active
