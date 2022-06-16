@@ -28,7 +28,7 @@
     {%- endif -%}
     {%- if show_filter and results.filters -%}
       {% for filter in results.filters %}
-
+{{filter.label}}
         <div class="collection-sidebar__group">
           
           {%unless filter.label == 'Tilgjengelighet'%}
