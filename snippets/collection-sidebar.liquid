@@ -34,7 +34,9 @@
           {%unless filter.label == 'Tilgjengelighet'%}
           {% render 'collection-sidebar-heading' with heading: filter.label %}
 			{%endunless%}
+          {{filter.label}}
           {%- case filter.type -%}
+          
             {%- when 'list' -%}
               {%- liquid
                 assign group_name = filter.label | handleize
@@ -48,7 +50,7 @@
                   assign list_modifiers = list_modifiers | append: ' has-chip'
                 endif
               -%}
-{{filter.label}}
+
           
       {%if  filter.label == 'Tilgjengelighet'%}
           <div class="collection-in-stock__toggle">
