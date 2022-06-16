@@ -34,9 +34,7 @@
           {%unless filter.label == 'Tilgjengelighet'%}
           {% render 'collection-sidebar-heading' with heading: filter.label %}
 			{%endunless%}
-          {{filter.label}}
           {%- case filter.type -%}
-          
             {%- when 'list' -%}
               {%- liquid
                 assign group_name = filter.label | handleize
