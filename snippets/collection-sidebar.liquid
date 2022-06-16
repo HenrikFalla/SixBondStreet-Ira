@@ -64,10 +64,7 @@
 		<span class="toggle_text">Vis kun produkter på lager</span>	    
 	
 </div>{%endif%}
-          {%- for filter_value in filter.values -%}
-          
-          {{filter_value}}
-          {%endfor%}
+        
         
               <ul class="collection-sidebar__group{{ list_modifiers }}  {%if  filter.label == 'Tilgjengelighet'%}hide-it {%endif%}">
                 {%- for filter_value in filter.values -%}
