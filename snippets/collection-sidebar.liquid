@@ -147,7 +147,12 @@
                   </div>
                 </div>
               </div>
-
+  {%- when 'boolean' -%}
+          
+          
+          {{filter.type}}
+          
+          
           {%- endcase -%}
         </div>
       {% endfor %}
