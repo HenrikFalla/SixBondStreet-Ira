@@ -182,6 +182,104 @@
         "enable_full_width": false
       }
     },
+    "1655903749b7b25dde": {
+      "type": "slideshow",
+      "blocks": {
+        "1655903749038773c4-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_forside_topp_hagemobler_2022_003.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/288A5168.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "North Hage SixBondStreet",
+            "title": "Årest hagemøbler",
+            "subheading": "<p>Årets møbler til uteområdet defineres som tidløse, elegante og romslige. Møblene er laget av ubehandlet teak. <\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/north-hage-sixbondstreet",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "opacity_overlay": 40
+          }
+        }
+      },
+      "block_order": [
+        "1655903749038773c4-0"
+      ],
+      "settings": {
+        "desktop_height": 65,
+        "mobile_height": 65,
+        "duration_autoplay": 4,
+        "enable_parallax": true,
+        "enable_full_width": true,
+        "color_dot": "#777777"
+      }
+    },
+    "1655904214bdb65264": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "1655904214361113c8-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lenestol_sofabord_miljobilde_002.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Interiør",
+            "title": "Gi uteplassen personlighet",
+            "subheading": "<p>Her finner du alt du trenger for å dekorere uteplassen din.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/dekor-til-uteplassen",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 40
+          }
+        },
+        "1655904214361113c8-2": {
+          "type": "small_square",
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "",
+            "subheading": "",
+            "text_max_width": 28,
+            "link_text": "",
+            "link": "",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        }
+      },
+      "block_order": [
+        "1655904214361113c8-1",
+        "1655904214361113c8-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
     "16527348348cad75b8": {
       "type": "image-with-text",
       "disabled": true,
@@ -986,6 +1084,8 @@
     "1652734830e13bb44f",
     "2-column-mosaic-grid",
     "165590230686a4951c",
+    "1655903749b7b25dde",
+    "1655904214bdb65264",
     "16527348348cad75b8",
     "featured-collection-2",
     "slideshow-2",
