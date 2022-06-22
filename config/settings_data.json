@@ -113,26 +113,6 @@
       },
       "header": {
         "type": "header",
-        "blocks": {
-          "fd6b5a26-a7c0-4fa0-b367-7409d7c1aa92": {
-            "type": "mega_nav_legacy",
-            "settings": {
-              "dropdown_parent_link": "Møbler",
-              "mega_nav_featured_image": "shopify:\/\/shop_images\/dsf0239_1.jpg"
-            }
-          },
-          "52bbaa8e-558b-4095-8940-0784ce7c1c0c": {
-            "type": "mega_nav_legacy",
-            "settings": {
-              "dropdown_parent_link": "Interiør",
-              "mega_nav_featured_image": "shopify:\/\/shop_images\/Varens_TrenderArtboard_1.jpg"
-            }
-          }
-        },
-        "block_order": [
-          "fd6b5a26-a7c0-4fa0-b367-7409d7c1aa92",
-          "52bbaa8e-558b-4095-8940-0784ce7c1c0c"
-        ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/Untitled-2.png",
           "logo_max_width": 270,
