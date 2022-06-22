@@ -13,7 +13,7 @@
     assign locale_selector = true
   endif
 
-  if show_currency_selector and shop.enabled_currencies.size > 1
+  if show_currency_selector and localization.available_countries.size > 1
     assign currency_selector = true
   endif
 
@@ -144,6 +144,7 @@
 
   <div class="footer__credits">
     <p>{{ 'sections.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}.</p>
+    <p>{{ powered_by_link | replace: 'rel="nofollow"', 'rel="nofollow noopener"' }}</p>
   </div>
 </footer>
 
@@ -155,160 +156,46 @@
     "settings": [
       {
         "type": "header",
-        "content": {
-          "da": "Sprogvælger",
-          "de": "Sprachauswahl",
-          "en": "Language Selector",
-          "es": "Selector de idioma",
-          "fi": "Kielenvalitsin",
-          "fr": "Sélecteur de langue",
-          "hi": "भाषा चयनकर्ता",
-          "it": "Selettore lingua",
-          "ja": "言語セレクター",
-          "ko": "언어 선택기",
-          "nb": "Språkvelger",
-          "nl": "Taalkiezer",
-          "pt-BR": "Seletor de idiomas",
-          "pt-PT": "Seletor de Idioma",
-          "sv": "Språkväljare",
-          "th": "ตัวเลือกภาษา",
-          "zh-CN": "语言选择器",
-          "zh-TW": "語言選擇器"
-        },
-        "info": {
-          "da": "Du kan tilføje et sprog ved at gå til dine [sprogindstillinger.](/admin/settings/languages)",
-          "de": "Gehen Sie zu Ihren [Spracheinstellungen](/admin/settings/languages), um eine Sprache hinzuzufügen.",
-          "en": "To add a language, go to your [language settings.](/admin/settings/languages)",
-          "es": "Para agregar un idioma, ve a tu[configuración de idioma](/admin/settings/languages)",
-          "fi": "Lisää kieli siirtymällä [kieliasetuksiin.](/admin/settings/languages)",
-          "fr": "Pour ajouter une langue, allez dans vos [paramètres de langue.](/admin/settings/languages).",
-          "hi": "भाषा जोड़ने के लिए, अपने [language settings.](/admin/settings/languages) पर जाएं",
-          "it": "Per aggiungere una lingua, vai su [impostazioni della lingua.](/admin/settings/languages)",
-          "ja": "言語を追加するには、[言語設定](/admin/settings/languages) に移動します。",
-          "ko": "언어를 추가하려면 [언어 설정.](/admin/settings/languages)(으)로 이동하십시오.",
-          "nb": "For å legge til et språk, går du til dine [språkinnstillinger.](/admin/settings/languages)",
-          "nl": "Ga naar uw [taalinstellingen.](/admin/settings/languages) om een taal toe te voegen.",
-          "pt-BR": "Para adicionar um idioma, acesse suas [configurações de idioma. ](/admin/settings/languages)",
-          "pt-PT": "Para adicionar um idioma, aceda a [definições de idioma.](/admin/settings/languages)",
-          "sv": "För att lägga till ett språk, gå till dina [språkinställningar.](/admin/settings/languages)",
-          "th": "หากต้องการเพิ่มภาษา ให้ไปที่ [การตั้งค่าภาษา ](/admin/settings/languages) ของคุณ",
-          "zh-CN": "若要添加语言，请转到您的 [语言设置。](/admin/settings/languages)",
-          "zh-TW": "若要新增語言，請前往 [語言設定。](/admin/settings/languages)"
-        }
+        "content": "t:sections.footer.settings.header.content",
+        "info": "t:sections.footer.settings.header.info"
       },
       {
         "type": "checkbox",
         "id": "show_locale_selector",
-        "label": {
-          "da": "Vis sprogvælger",
-          "de": "Sprachauswahl anzeigen",
-          "en": "Show language selector",
-          "es": "Mostrar el selector de idioma",
-          "fi": "Näytä kielenvalitsin",
-          "fr": "Afficher le sélecteur de langue",
-          "hi": "मात्रा चयनकर्ता दिखाएं",
-          "it": "Mostra selettore lingua",
-          "ja": "言語セレクターを表示する",
-          "ko": "언어 선택기 표시",
-          "nb": "Vis språkvelger",
-          "nl": "Taalkiezer weergeven",
-          "pt-BR": "Mostrar seletor de idioma",
-          "pt-PT": "Mostrar seletor de idioma",
-          "sv": "Visa språkväljare",
-          "th": "แสดงตัวเลือกภาษา",
-          "zh-CN": "显示语言选择器",
-          "zh-TW": "顯示語言選擇器"
-        },
+        "label": "t:sections.footer.settings.show_locale_selector.label",
         "default": true
       },
       {
         "type": "header",
-        "content": {
-          "da": "Valutavælger",
-          "de": "Währungsauswahl",
-          "en": "Currency Selector",
-          "es": "Selector de moneda",
-          "fi": "Valuutanvalitsin",
-          "fr": "Sélecteur de devise",
-          "hi": "मुद्रा चयनकर्ता",
-          "it": "Selettore di valuta",
-          "ja": "通貨セレクター",
-          "ko": "통화 선택기",
-          "nb": "Valutavelger",
-          "nl": "Valutakiezer",
-          "pt-BR": "Seletor de moeda",
-          "pt-PT": "Seletor de Moeda",
-          "sv": "Valutaväljare",
-          "th": "ตัวเลือกสกุลเงิน",
-          "zh-CN": "货币选择器",
-          "zh-TW": "幣別選擇器"
-        },
-        "info": {
-          "da": "Du kan tilføje en valuta ved at gå til dine [betalingsindstillinger.](/admin/settings/payments)",
-          "de": "Gehen Sie zu Ihren [Zahlungseinstellungen](/admin/settings/payments), um eine Währung hinzuzufügen.",
-          "en": "To add a currency, go to your [payment settings.](/admin/settings/payments)",
-          "es": "Para agregar una moneda, ve a tu [configuración de pago.](/admin/settings/payments)",
-          "fi": "Lisää valuutta siirtymällä [maksuasetuksiisi.](/admin/settings/payments)",
-          "fr": "Pour ajouter une devise, allez dans vos [paramètres de paiement.](/admin/settings/payments)",
-          "hi": "कोई मुद्रा जोड़ने के लिए, अपनी [payment settings.](/admin/settings/payments) में जाएं",
-          "it": "Per aggiungere una valuta, vai su [impostazioni pagamento.](/admin/settings/payments)",
-          "ja": "通貨を追加するには、[決済設定](/admin/settings/payments) に移動します。",
-          "ko": "통화를 추가하려면 [결제 설정](/admin/settings/payments)(으)로 이동하십시오.",
-          "nb": "For å legge til en valuta, går du til [betalingsinnstillingene.](/admin/settings/payments)",
-          "nl": "Ga naar je [betaalinstellingen.](/admin/settings/payments) om een valuta toe te voegen.",
-          "pt-BR": "Para adicionar uma moeda, acesse as [configurações de pagamento.](/admin/settings/payments)",
-          "pt-PT": "Para adicionar uma moeda, aceda às suas [definições de pagamento.](/admin/settings/payments)",
-          "sv": "Gå till [payment settings ](/admin/settings/payments) för att lägga till en valuta.",
-          "th": "หากต้องการเพิ่มสกุลเงิน ให้ไปที่ [การตั้งค่าการชำระเงิน ](/admin/settings/payments)",
-          "zh-CN": "若要添加货币，请转到 [支付设置。](/admin/settings/payments)",
-          "zh-TW": "若要新增幣別，請前往 [付款設定。](/admin/settings/payments)"
-        }
+        "content": "t:sections.footer.settings.header_currency_selector.content",
+        "info": "t:sections.footer.settings.header_currency_selector.info"
       },
       {
         "type": "checkbox",
         "id": "show_currency_selector",
-        "label": {
-          "da": "Vis valutavælger",
-          "de": "Währungsauswahl anzeigen",
-          "en": "Show currency selector",
-          "es": "Mostrar el selector de moneda",
-          "fi": "Näytä valuutanvalitsin",
-          "fr": "Afficher le sélecteur de devise",
-          "hi": "मुद्रा चयनकर्ता दिखाएं",
-          "it": "Mostra selettore valuta",
-          "ja": "通貨セレクターを表示する",
-          "ko": "통화 선택기 표시",
-          "nb": "Vis valutavelger",
-          "nl": "Valutakiezer weergeven",
-          "pt-BR": "Mostrar seletor de moeda",
-          "pt-PT": "Mostrar seletor de moeda",
-          "sv": "Visa valutaväljare",
-          "th": "แสดงตัวเลือกสกุลเงิน",
-          "zh-CN": "货币选择器显示",
-          "zh-TW": "顯示幣別選擇器"
-        },
+        "label": "t:sections.footer.settings.show_currency_selector.label",
         "default": true
       },
       {
         "type": "header",
-        "content": "Social media",
-        "info": "Configure account links in theme settings."
+        "content": "t:sections.footer.settings.header_social_media.content",
+        "info": "t:sections.footer.settings.header_social_media.info"
       },
       {
         "id": "show_social_icons",
         "type": "checkbox",
-        "label": "Show social icons",
+        "label": "t:sections.footer.settings.show_social_icons.label",
         "default": true
       },
       {
         "type": "header",
-        "content": "Payment types",
-        "info": "Only icons for payment types that your store supports will be shown."
+        "content": "t:sections.footer.settings.header_payment_types.content",
+        "info": "t:sections.footer.settings.header_payment_types.content"
       },
       {
         "id": "show_payment_icons",
         "type": "checkbox",
-        "label": "Show payment icons",
+        "label": "t:sections.footer.settings.show_payment_icons.label",
         "default": true
       }
     ],
@@ -316,24 +203,24 @@
     "blocks": [
       {
         "type": "text",
-        "name": "Text",
+        "name": "t:sections.footer.blocks.text.name",
         "settings": [
           {
             "id": "title",
             "type": "text",
-            "label": "Heading",
-            "info": "We strongly recommend including a heading because it functions as a toggle on smaller screen sizes.",
+            "label": "t:sections.footer.blocks.text.settings.title.label",
+            "info": "t:sections.footer.blocks.text.settings.title.info",
             "default": "About us"
           },
           {
             "id": "text",
             "type": "richtext",
-            "label": "Text",
+            "label": "t:sections.footer.blocks.text.settings.text.label",
             "default": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>"
           }
         ]
       },
-      {
+		{
         "type": "about",
         "name": "About",
         "settings": [
@@ -368,38 +255,38 @@
       },
       {
         "type": "links",
-        "name": "Links",
+        "name": "t:sections.footer.blocks.links.name",
         "settings": [
           {
             "id": "title",
             "type": "text",
-            "label": "Heading",
-            "info": "We strongly recommend including a heading because it functions as a toggle on smaller screen sizes.",
+            "label": "t:sections.footer.blocks.links.settings.title.label",
+            "info": "t:sections.footer.blocks.links.settings.title.info",
             "default": "Links"
           },
           {
             "id": "link_list",
             "type": "link_list",
-            "label": "Footer menu",
+            "label": "t:sections.footer.blocks.links.settings.link_list.label",
             "default": "footer"
           }
         ]
       },
       {
         "type": "newsletter",
-        "name": "Newsletter",
+        "name": "t:sections.footer.blocks.newsletter.name",
         "settings": [
           {
             "id": "title",
             "type": "text",
-            "label": "Heading",
-            "info": "We strongly recommend including a heading because it functions as a toggle on smaller screen sizes.",
+            "label": "t:sections.footer.blocks.newsletter.settings.title.label",
+            "info": "t:sections.footer.blocks.newsletter.settings.title.info",
             "default": "Newsletter"
           },
           {
             "id": "text",
             "type": "richtext",
-            "label": "Text",
+            "label": "t:sections.footer.blocks.newsletter.settings.text.label",
             "default": "<p>Subscribe for store updates and discounts.</p>"
           }
         ]

@@ -11,6 +11,9 @@
       data-item="{% if has_children %}parent{% else %}link{% endif %}"
       class="drawer-menu__link {% if has_children %}no-transition{% endif %} {% if link.active %}active{% endif %}"
       href="{{ link.url }}"
+      {% if depth > 1 %}
+      tabindex="-1"
+      {% endif %}
       {% if has_children %}
         data-link="primary"
       {% endif %}
@@ -23,7 +26,7 @@
 
     {% comment %} Render sub navigation {% endcomment %}
     {%- if link.links.size > 0 -%}
-      <ul class="drawer-menu__list drawer-menu__list--sub" data-height-reference>
+      <ul class="drawer-menu__list drawer-menu__list--sub" data-height-reference aria-hidden="true" aria-expaned="false">
         <li class="drawer-menu__item drawer-menu__item--heading">
           <button class="drawer-menu__link" data-heading="true" data-item="back">
             <span>{{ link.title }}</span>

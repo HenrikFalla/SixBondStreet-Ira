@@ -10,6 +10,7 @@
     data-timeout="10000"
     style="
       --image-position: {{ section.settings.image_position }};
+      --image-opacity: {{ section.settings.image_opacity | divided_by: 100.0}};
       --color-background: {{ section.settings.color_background }};
       --color-background-input: {{ section.settings.color_background_input }};
       --color-text: {{ section.settings.color_text }};
@@ -19,14 +20,15 @@
     <div class="popup__overlay" data-overlay></div>
     <div class="popup__bar">
       {%- if image != blank -%}
-        {% render 'image' with
+        {% render 'nativeImage' with
           image: image,
           id: 'popup',
           wrapper_class: 'popup__image',
-          disable_style: true
+          disable_style: true,
+          sizes: "100vw"
         %}
       {%- endif -%}
-      <a href="#" data-close class="popup__close">{% render 'icon' with icon: 'close' %}</a>
+      <a href="#" data-close class="popup__close" title="Close">{% render 'icon' with icon: 'close' %}</a>
 
       <div class="popup__content">
         {%- if heading != blank -%}
@@ -46,69 +48,79 @@
 
 {% schema %}
   {
-    "name": "Popup",
+    "name": "t:sections.popup.name",
     "settings": [
       {
         "id": "enable_popup",
         "type": "checkbox",
-        "label": "Enable",
-        "info": "Show a popup the first time the user's cursor leaves your site.",
+        "label": "t:sections.popup.settings.enable_popup.label",
+        "info": "t:sections.popup.settings.enable_popup.info",
         "default": false
       },
       {
         "id": "image",
         "type": "image_picker",
-        "label": "Image"
+        "label": "t:sections.popup.settings.image.label"
       },
       {
         "id": "image_position",
         "type": "select",
-        "label": "Image position",
+        "label": "t:sections.popup.settings.image_position.label",
         "options": [
-          { "label": "Top", "value": "top" },
-          { "label": "Center", "value": "center" },
-          { "label": "Bottom", "value": "bottom" }
+          { "label": "t:sections.popup.settings.image_position.options.top", "value": "top" },
+          { "label": "t:sections.popup.settings.image_position.options.center", "value": "center" },
+          { "label": "t:sections.popup.settings.image_position.options.bottom", "value": "bottom" }
         ],
         "default": "center"
       },
       {
+        "id": "image_opacity",
+        "type": "range",
+        "label": "t:sections.popup.settings.image_opacity.label",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "default": 50,
+        "unit": "%"
+      },
+      {
         "id": "title",
         "type": "text",
-        "label": "Heading",
+        "label": "t:sections.popup.settings.title.label",
         "default": "Sign up for our newsletter"
       },
       {
         "id": "subheading",
         "type": "textarea",
-        "label": "Subheading",
+        "label": "t:sections.popup.settings.subheading.label",
         "default": "We only send emails once or twice a month and only about good things."
       },
       {
         "type": "header",
-        "content": "Style"
+        "content": "t:sections.popup.settings.header_style"
       },
       {
         "id": "color_background",
         "type": "color",
-        "label": "Background",
+        "label": "t:sections.popup.settings.color_background.label",
         "default": "#000000"
       },
       {
         "id": "color_text",
         "type": "color",
-        "label": "Text",
+        "label": "t:sections.popup.settings.color_text.label",
         "default": "#ffffff"
       },
       {
         "id": "color_background_input",
         "type": "color",
-        "label": "Input background",
+        "label": "t:sections.popup.settings.color_background_input.label",
         "default": "#ffffff"
       },
       {
         "id": "color_text_input",
         "type": "color",
-        "label": "Input text",
+        "label": "t:sections.popup.settings.color_text_input.label",
         "default": "#1d1d1d"
       }
     ]

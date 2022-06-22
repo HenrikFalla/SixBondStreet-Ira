@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-search",
+      "settings": {
+        "show_filter": true,
+        "show_sort": true,
+        "per_row": 3,
+        "per_page": 12,
+        "aspect_ratio": "square"
+      }
+    },
+    "nosto_search_prepend": {
+      "type": "nosto-search-prepend",
+      "settings": {
+      }
+    },
+    "nosto_search_append": {
+      "type": "nosto-search-append",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "nosto_search_prepend",
+    "nosto_search_append"
+  ]
+}

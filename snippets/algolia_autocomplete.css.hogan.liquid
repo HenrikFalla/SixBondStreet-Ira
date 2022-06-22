@@ -55,28 +55,18 @@
 }
 
 /* Column layout */
-.aa-dropdown-menu .aa-left-column,
-.aa-dropdown-menu .aa-right-column {
+.aa-dropdown-menu .aa-left-column {
   position: relative;
-
   padding: 24px 24px 0 24px;
 }
 
 .aa-dropdown-menu-size-xs .aa-left-column,
-.aa-dropdown-menu-size-xs .aa-right-column,
-.aa-dropdown-menu-size-sm .aa-left-column,
-.aa-dropdown-menu-size-sm .aa-right-column {
-  padding: 24px 12px 0 12px;
+.aa-dropdown-menu-size-sm .aa-left-column {
+  padding: 0 12px 32px;
 }
 
 .aa-dropdown-menu .aa-with-powered-by .aa-left-column {
   padding-bottom: 48px;
-}
-
-.aa-dropdown-menu-size-xs .aa-left-column,
-.aa-dropdown-menu-size-sm .aa-left-column {
-  padding-top: 0;
-  padding-bottom: 32px;
 }
 
 .aa-dropdown-menu-size-xs .aa-without-powered-by .aa-left-column,
@@ -84,11 +74,30 @@
   padding-bottom: 0;
 }
 
+.aa-dropdown-menu .aa-right-column {
+  position: relative;
+  padding: 24px;
+}
+
+.aa-dropdown-menu-size-xs .aa-right-column,
+.aa-dropdown-menu-size-sm .aa-right-column {
+  padding: 24px 12px 34px 12px;
+}
+
+.aa-dropdown-menu-size-md .aa-without-footer .aa-right-column,
+.aa-dropdown-menu-size-lg .aa-without-footer .aa-right-column {
+  padding-bottom: 0;
+}
+
+.aa-dropdown-menu-size-xs .aa-without-footer .aa-right-column,
+.aa-dropdown-menu-size-sm .aa-without-footer .aa-right-column {
+  padding-bottom: 0;
+  margin-bottom: 8px;
+}
+
 .aa-dropdown-menu-size-lg .aa-columns-container {
   direction: rtl;
-
   width: 100%;
-
   display: table;
   table-layout: fixed;
 }
@@ -117,10 +126,6 @@
   border-left: 1px solid #ebebeb;
 
   padding-bottom: 64px;
-}
-
-.aa-dropdown-menu-size-lg .aa-without-footer .aa-right-column {
-  padding-bottom: 0;
 }
 
 .aa-dropdown-menu-size-lg .aa-without-articles.aa-without-collections .aa-right-column {
@@ -277,25 +282,30 @@
 }
 
 /* Footer */
-
 .aa-dropdown-menu .aa-footer {
   display: block;
-
   width: 100%;
-
   position: absolute;
   left: 0;
   bottom: 0;
+  padding: 0 40px;
+  color: rgb(21, 142, 194);
 
-  padding: 16px 48px;
-
-  background-color: #f8f8f8;
 }
 
-.aa-dropdown-menu-size-xs .aa-footer,
-.aa-dropdown-menu-size-sm .aa-footer,
-.aa-dropdown-menu-size-md .aa-footer {
-  display: none;
+.aa-dropdown-menu-size-sm .aa-footer {
+  padding: 0 28px;
+  margin-bottom: 24px;
+}
+
+.aa-dropdown-menu-size-xs .aa-footer {
+  padding: 0 16px;
+  margin-bottom: 24px;
+}
+
+.aa-dropdown-menu-size-lg .aa-footer {
+  padding: 16px 48px;
+  background-color: #f8f8f8;
 }
 
 /* Powered By */

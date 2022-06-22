@@ -11,7 +11,7 @@
     {%- assign image_object = collection.image | default: collection.products.first.featured_media.preview_image -%}
     {%- assign image_id = collection.image.id | default: collection.products.first.featured_media.id -%}
 
-    <a href="{{ collection.url }}" class="hover">
+    <a href="{{ collection.url }}" class="hover" title="{{collection.title}}">
       {% render 'image' with
         image: image_object,
         id: image_id,
@@ -41,7 +41,7 @@
         {% paginate collection.products by 3 %}
           {%- assign preview_count = collection.products.count -%}
           {% for product in collection.products %}
-              <a class="circle" href="{{ product.url }}">
+              <a class="circle" href="{{ product.url }}" title="{{product.title}}">
                 {%- if product.featured_media.preview_image -%}
                   {% render 'image' with
                     image: product.featured_media.preview_image,

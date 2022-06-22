@@ -2,7 +2,7 @@
   {
     "name": "theme_info",
     "theme_name": "Ira",
-    "theme_version": "3.5.1",
+    "theme_version": "4.2.0",
     "theme_author": "Fluorescent Design Inc.",
     "theme_documentation_url": "https:\/\/fluorescent.co\/help\/ira",
     "theme_support_url": "https:\/\/fluorescent.co\/help\/contact"
@@ -223,7 +223,7 @@
         "type": "font_picker",
         "id": "font_logo",
         "label": "Logo",
-        "default": "ibm_plex_sans_n4"
+        "default": "ibm_plex_sans_n7"
       },
       {
         "id": "capitalize_logo",
@@ -384,7 +384,7 @@
     ]
   },
   {
-    "name": "Search",
+    "name": "Quick Search",
     "settings": [
       {
         "id": "search_max_result_size",
@@ -461,19 +461,6 @@
       },
       {
         "type": "checkbox",
-        "id": "cart_quick_shop_show_quantity",
-        "label": "Show quick shop quantity input",
-        "info": "If quantity inputs are hidden, quantities will default to 1.",
-        "default": false
-      },
-      {
-        "type": "checkbox",
-        "id": "cart_show_notes",
-        "label": "Enable cart notes",
-        "default": true
-      },
-      {
-        "type": "checkbox",
         "id": "cart_terms_conditions_enable",
         "label": "Enable terms and conditions checkbox"
       },
@@ -486,6 +473,13 @@
         "type": "url",
         "id": "cart_terms_conditions_link",
         "label": "Terms and conditions page"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_quick_shop_show_quantity",
+        "label": "Show quick shop quantity input",
+        "info": "If quantity inputs are hidden, quantities will default to 1.",
+        "default": false
       }
     ]
   },

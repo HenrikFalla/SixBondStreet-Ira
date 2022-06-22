@@ -17,11 +17,11 @@
 
   assign blocks = section.blocks
   assign links = linklists[menu].links
-  assign links_alt = linklists[secondary_menu].links
+   assign links_alt = linklists[secondary_menu].links
 %}
 
 {% capture header_classes %}
-  header header--{{ style }} header--{{ logo_position }}
+  header header--{{ style }} header--logo--{{ logo_position }}
   {% if logo != blank %}
     header--has-logo
   {% endif %}
@@ -32,9 +32,7 @@
     header--transparent-home
   {% endif %}
   {% if transparent_collection and template.name == 'collection' %}
-		{% if collection.image != blank %}
     header--transparent-collection
-		{% endif %}
   {% endif %}
   {% if shop.customer_accounts_enabled %}
     header--has-accounts
@@ -50,17 +48,19 @@
 {% endcapture %}
 
 {% capture logo_markup %}
-  {% if logo != blank %}
-    {% render 'image' with image: logo, wrapper_class: 'regular-logo', preload: true %}
-  {% endif %}
+  <a class="header__logo-link" href="{{ routes.root_url }}">
+    {% if logo != blank %}
+      {% render 'image' with image: logo, wrapper_class: 'regular-logo', preload: true %}
+    {% endif %}
 
-  {% if logo_transparent != blank %}
-    {% render 'image' with image: logo_transparent, wrapper_class: 'transparent-logo', preload: true %}
-  {% endif %}
+    {% if logo_transparent != blank %}
+      {% render 'image' with image: logo_transparent, wrapper_class: 'transparent-logo', preload: true %}
+    {% endif %}
 
-  {% if logo == blank or logo_transparent == blank %}
-    <span class="header__logo-text">{{ shop.name }}</span>
-  {% endif %}
+    {% if logo == blank or logo_transparent == blank %}
+      <span class="header__logo-text">{{ shop.name }}</span>
+    {% endif %}
+  </a>
 {% endcapture %}
 
 {%- if cart.item_count > 0 -%}
@@ -74,40 +74,48 @@
   style="{{ css_vars }}"
 >
 
-  <a class="header__menu-icon header__icon-touch" href="#" data-js-menu-button>
-    {% render 'icon-button' with icon: 'menu' %}
+  <a href="#main" class="skip-to-content-button">
+    {{ 'general.accessibility.skip_to_content' | t }}
   </a>
 
-  <h1 class="header__logo ff-heading fs-heading-base">
-    <a class="header__logo-link" href="{{ routes.root_url }}">
-      {{ logo_markup }}
-    </a>
-  </h1>
+  {% if logo_position == "left" %}
+    <h1 class="header__logo ff-heading fs-heading-base desktop-only-logo">
+        {{ logo_markup }}
+    </h1>
+  {% endif %}
+
+  <button class="header__menu-icon header__icon-touch" href="#" data-js-menu-button title="Show Main Menu">
+    {% render 'icon-button' with icon: 'menu' %}
+  </button>
 
   {%- if style == 'inline' -%}
     <div class="header__links" data-navigation>
       {% render 'navigation' with menu: links, mega_navs: blocks %}
     </div>
   {%- endif -%}
-  
+
+
+  {% if logo_position == "center" %}
+    <h1 class="header__logo ff-heading fs-heading-base">
+      {{ logo_markup }}
+    </h1>
+  {% else %}
+    <h1 class="header__logo ff-heading fs-heading-base mobile-only-logo">
+      {{ logo_markup }}
+    </h1>
+  {% endif %}
+
   <div class="header__right">
-	{% comment %} Custom SixBondStreet Henrik {% endcomment %}
-	{%- if style == 'inline' -%}
-		<div class="header__links-alt header__secondary {{ secondary_menu.handle }}" data-navigation>
-		{% render 'navigation-alt' with secondary_menu: links_alt, mega_navs: blocks %}
-		</div>
-	{%- endif -%}
-	{% comment %} End Custom SixBondStreet Henrik {% endcomment %}
-    <a class="header__icon-touch header__icon-touch--search no-transition" href="{{ routes.search_url }}" data-search>
+    <a class="header__icon-touch header__icon-touch--search no-transition" href="{{ routes.search_url }}" data-search title="{{'layout.navigation.search' | t }}">
       {% render 'icon-button' with icon: 'search' %}
     </a>
 
     {%- if shop.customer_accounts_enabled -%}
-      <a class="header__icon-touch header__icon-touch--account" href="{{ routes.account_url }}">
+      <a class="header__icon-touch header__icon-touch--account" href="{{ routes.account_url }}" title="Account">
         {% render 'icon-button' with icon: 'account' %}
       </a>
     {%- endif -%}
-    <a class="header__icon-touch no-transition" href="{{ routes.cart_url }}" data-js-cart-icon>
+    <a class="header__icon-touch no-transition" href="{{ routes.cart_url }}" data-js-cart-icon title="Cart">
       {% render 'icon-button' with icon: 'shopping-cart' %}
       <div class="header__cart-count {% if count_visible %}visible{% endif %}" data-js-cart-indicator>
         <span data-js-cart-count>{{ cart.item_count }}</span>
@@ -124,22 +132,22 @@
 
 <style>
   {% if transparent_home %}
-    .template-index .index {
+    .template-index main#main {
       margin-top: calc(var(--height-header) * -1);
-    }
-
-    .template-index .index .offset-section:first-child .block-overlay__content {
-      padding-top: var(--height-header);
     }
   {% endif %}
 
   {% if transparent_collection %}
-    .template-collection .collection {
+    body.template-collection main#main {
       margin-top: calc(var(--height-header) * -1);
     }
 
-    .template-collection .collection .collection__slideshow-header-overlay .block-overlay__content {
-      padding-top: var(--height-header);
+    body.template-collection main#main > :first-child > [data-section-type="collection-intro"] .collection__enhanced-header-text {
+      padding-top: calc(var(--space-outer) + var(--height-header));
+    }
+
+    body.template-collection main#main > :first-child > [data-section-type="collection-intro"] .collection__slideshow-header .block-overlay {
+      padding-top: calc(var(--space-outer) + var(--height-header));
     }
   {% endif %}
 </style>
@@ -147,13 +155,13 @@
 
 {% schema %}
   {
-    "name": "Header",
+    "name": "t:sections.header.name",
     "class": "header__outer-wrapper",
     "settings": [
       {
         "type": "image_picker",
         "id": "logo",
-        "label": "Logo image"
+        "label": "t:sections.header.settings.logo.label"
       },
       {
         "id": "logo_max_width",
@@ -162,16 +170,16 @@
         "max": 350,
         "step": 10,
         "unit": "px",
-        "label": "Logo max width",
+        "label": "t:sections.header.settings.logo_max_width.label",
         "default": 200
       },
       {
         "id": "menu",
         "type": "link_list",
-        "label": "Main menu",
+        "label": "t:sections.header.settings.menu.label",
         "default": "main-menu"
       },
-      {
+  		 {
         "id": "mobile-menu",
         "type": "link_list",
         "label": "Mobile Menu"
@@ -184,57 +192,57 @@
       {
         "id": "style",
         "type": "select",
-        "label": "Style",
+        "label": "t:sections.header.settings.style.label",
         "options": [
-          { "value": "inline", "label": "Inline links" },
-          { "value": "icon", "label": "Menu icon" }
+          { "value": "inline", "label": "t:sections.header.settings.style.options.inline" },
+          { "value": "icon", "label": "t:sections.header.settings.style.options.icon" }
         ],
         "default": "inline"
       },
       {
         "id": "logo_position",
         "type": "select",
-        "label": "Logo position",
+        "label": "t:sections.header.settings.logo_position.label",
         "options": [
-            { "value": "left", "label": "Left"},
-            { "value": "center", "label": "Center"}
+            { "value": "left", "label": "t:sections.header.settings.logo_position.options.left"},
+            { "value": "center", "label": "t:sections.header.settings.logo_position.options.center"}
         ],
         "default": "left"
       },
       {
         "type": "header",
-        "content": "Transparent header"
+        "content": "t:sections.header.settings.transparent_header_divider"
       },
       {
         "id": "enable_transparent_home",
         "type": "checkbox",
-        "label": "Enable on home page",
-        "info": "This setting requires that you have a Slideshow Section with full-width enabled as the first Section on your homepage.",
+        "label": "t:sections.header.settings.enable_transparent_home.label",
+        "info": "t:sections.header.settings.enable_transparent_home.info",
         "default": false
       },
       {
         "id": "enable_transparent_collection",
         "type": "checkbox",
-        "label": "Enable on collection pages",
-        "info": "This setting requires that you have Collection images and have enabled full-width within your Collection pages Section.",
+        "label": "t:sections.header.settings.enable_transparent_collection.label",
+        "info": "t:sections.header.settings.enable_transparent_collection.info",
         "default": false
       },
       {
         "id": "color_text_transparent",
         "type": "color",
-        "label": "Text color",
+        "label": "t:sections.header.settings.color_text_transparent.label",
         "default": "#ffffff"
       },
       {
         "id": "color_icon_transparent",
         "type": "color",
-        "label": "Icon color",
+        "label": "t:sections.header.settings.color_icon_transparent.label",
         "default": "#ffffff"
       },
       {
         "id": "color_border_transparent",
         "type": "color",
-        "label": "Border color",
+        "label": "t:sections.header.settings.color_border_transparent.label",
         "default": "#ffffff"
       },
       {
@@ -244,31 +252,157 @@
         "max": 100,
         "step": 10,
         "unit": "%",
-        "label": "Border opacity",
+        "label": "t:sections.header.settings.opacity_border_transparent.label",
         "default": 50
       },
       {
         "id": "logo_transparent",
         "type": "image_picker",
-        "label": "Logo image",
-        "info": "If no logo is set here it will use the default logo image instead"
+        "label": "t:sections.header.settings.logo_transparent.label",
+        "info": "t:sections.header.settings.logo_transparent.info"
       }
     ],
     "blocks": [
       {
-        "type": "mega_nav",
-        "name": "Mega nav",
+        "type": "mega_nav_legacy",
+        "name":  "t:sections.header.blocks.mega_nav_legacy.name",
         "settings": [
           {
             "type": "text",
             "id": "dropdown_parent_link",
-            "label": "Dropdown parent link",
-            "info": "Name the link in the main menu that you'd like the Mega nav to appear from. [Learn more](https://fluorescent.co/help/ira/header/#set-up-a-mega-nav-menu)"
+            "label": "t:sections.header.blocks.mega_nav_legacy.settings.dropdown_parent_link.label",
+            "info": "t:sections.header.blocks.mega_nav_legacy.settings.dropdown_parent_link.info"
           },
           {
             "type": "image_picker",
             "id": "mega_nav_featured_image",
-            "label": "Mega nav featured image"
+            "label": "t:sections.header.blocks.mega_nav_legacy.settings.mega_nav_featured_image.label"
+          }
+        ]
+      },
+      {
+        "type": "mega_nav_5_col",
+        "name":  "t:sections.header.blocks.mega_nav_5_col.name",
+        "settings": [
+          {
+            "type": "text",
+            "id": "dropdown_parent_link",
+            "label": "t:sections.header.blocks.mega_nav_5_col.settings.dropdown_parent_link.label",
+            "info": "t:sections.header.blocks.mega_nav_5_col.settings.dropdown_parent_link.info"
+          },
+          {
+            "type": "image_picker",
+            "id": "featured_image",
+            "label": "t:sections.header.blocks.mega_nav_5_col.settings.featured_image.label"
+          },
+          {
+            "type": "text",
+            "id": "featured_image_caption",
+            "label": "t:sections.header.blocks.mega_nav_5_col.settings.featured_image_caption.label"
+          },
+          {
+            "type": "url",
+            "id": "featured_image_link",
+            "label": "t:sections.header.blocks.mega_nav_5_col.settings.featured_image_link.label"
+          },
+          {
+            "type": "text",
+            "id": "featured_image_link_title",
+            "label": "t:sections.header.blocks.mega_nav_5_col.settings.featured_image_link_title.label"
+          },
+          {
+            "id": "featured_image_aspect_ratio",
+            "type": "select",
+            "label": "t:sections.header.blocks.mega_nav_5_col.settings.featured_image_aspect_ratio.label",
+            "options": [
+              { "label": "t:sections.header.blocks.mega_nav_5_col.settings.featured_image_aspect_ratio.options.natural", "value": "natural" },
+              { "label": "t:sections.header.blocks.mega_nav_5_col.settings.featured_image_aspect_ratio.options.square", "value": "square" },
+              { "label": "t:sections.header.blocks.mega_nav_5_col.settings.featured_image_aspect_ratio.options.landscape", "value": "landscape" },
+              { "label": "t:sections.header.blocks.mega_nav_5_col.settings.featured_image_aspect_ratio.options.portrait", "value": "portrait" }
+            ],
+            "default": "portrait"
+          },
+          {
+            "id": "focal_point",
+            "type": "select",
+            "label": "t:shared.focal_point.label",
+            "options": [
+              { "label": "t:shared.focal_point.options.left_top", "value": "left_top" },
+              { "label": "t:shared.focal_point.options.center_top", "value": "center_top" },
+              { "label": "t:shared.focal_point.options.right_top", "value": "right_top" },
+              { "label": "t:shared.focal_point.options.left_center", "value": "left_center" },
+              { "label": "t:shared.focal_point.options.center_center", "value": "center_center" },
+              { "label": "t:shared.focal_point.options.right_center", "value": "right_center" },
+              { "label": "t:shared.focal_point.options.left_bottom", "value": "left_bottom" },
+              { "label": "t:shared.focal_point.options.center_bottom", "value": "center_bottom" },
+              { "label": "t:shared.focal_point.options.right_bottom", "value": "right_bottom" }
+            ],
+            "default": "center_center"
+          }
+        ]
+      },
+      {
+        "type": "mega_nav_5_col_with_imgs",
+        "name":  "t:sections.header.blocks.mega_nav_5_col_with_imgs.name",
+        "settings": [
+          {
+            "type": "text",
+            "id": "dropdown_parent_link",
+            "label": "t:sections.header.blocks.mega_nav_5_col_with_imgs.settings.dropdown_parent_link.label",
+            "info": "t:sections.header.blocks.mega_nav_5_col_with_imgs.settings.dropdown_parent_link.info"
+          },
+          {
+            "type": "image_picker",
+            "id": "mega_nav_col1_image",
+            "label": "t:sections.header.blocks.mega_nav_5_col_with_imgs.settings.column_1_image.label"
+          },
+          {
+            "type": "image_picker",
+            "id": "mega_nav_col2_image",
+            "label": "t:sections.header.blocks.mega_nav_5_col_with_imgs.settings.column_2_image.label"
+          },
+          {
+            "type": "image_picker",
+            "id": "mega_nav_col3_image",
+            "label": "t:sections.header.blocks.mega_nav_5_col_with_imgs.settings.column_3_image.label"
+          },
+          {
+            "type": "image_picker",
+            "id": "mega_nav_col4_image",
+            "label": "t:sections.header.blocks.mega_nav_5_col_with_imgs.settings.column_4_image.label"
+          },{
+            "type": "image_picker",
+            "id": "mega_nav_col5_image",
+            "label": "t:sections.header.blocks.mega_nav_5_col_with_imgs.settings.column_5_image.label"
+          },
+          {
+            "id": "column_images_aspect_ratio",
+            "type": "select",
+            "label": "t:sections.header.blocks.mega_nav_5_col_with_imgs.settings.column_images_aspect_ratio.label",
+            "options": [
+              { "label": "t:sections.header.blocks.mega_nav_5_col_with_imgs.settings.column_images_aspect_ratio.options.natural", "value": "natural" },
+              { "label": "t:sections.header.blocks.mega_nav_5_col_with_imgs.settings.column_images_aspect_ratio.options.square", "value": "square" },
+              { "label": "t:sections.header.blocks.mega_nav_5_col_with_imgs.settings.column_images_aspect_ratio.options.landscape", "value": "landscape" },
+              { "label": "t:sections.header.blocks.mega_nav_5_col_with_imgs.settings.column_images_aspect_ratio.options.portrait", "value": "portrait" }
+            ],
+            "default": "landscape"
+          },
+          {
+            "id": "focal_point",
+            "type": "select",
+            "label": "t:shared.focal_point.label",
+            "options": [
+              { "label": "t:shared.focal_point.options.left_top", "value": "left_top" },
+              { "label": "t:shared.focal_point.options.center_top", "value": "center_top" },
+              { "label": "t:shared.focal_point.options.right_top", "value": "right_top" },
+              { "label": "t:shared.focal_point.options.left_center", "value": "left_center" },
+              { "label": "t:shared.focal_point.options.center_center", "value": "center_center" },
+              { "label": "t:shared.focal_point.options.right_center", "value": "right_center" },
+              { "label": "t:shared.focal_point.options.left_bottom", "value": "left_bottom" },
+              { "label": "t:shared.focal_point.options.center_bottom", "value": "center_bottom" },
+              { "label": "t:shared.focal_point.options.right_bottom", "value": "right_bottom" }
+            ],
+            "default": "center_center"
           }
         ]
       }

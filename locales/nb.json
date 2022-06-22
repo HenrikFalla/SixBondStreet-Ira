@@ -10,7 +10,8 @@
       "pick_up_available": "Hente selv mulig",
       "pick_up_currently_unavailable": "Hente selv utilgjengelig for øyeblikket",
       "pick_up_available_at_html": "Hent selv ved <span>{{ location_name }}<\/span>",
-      "pick_up_unavailable_at_html": "Hente selv utilgjengelig ved <span>{{ location_name }}<\/span>"
+      "pick_up_unavailable_at_html": "Hente selv utilgjengelig ved <span>{{ location_name }}<\/span>",
+      "pick_up_available_time_html": ""
     }
   },
   "general": {
@@ -27,7 +28,17 @@
         "new_window": "Åpnes i nytt vindu.",
         "external": "Åpnes i et annet nettsted.",
         "new_window_and_external": "Åpnes i et annet nettsted i nytt vindu."
-      }
+      },
+      "carousel_select": "",
+      "decrement": "",
+      "increment": "",
+      "load_3d_model": "",
+      "next": "",
+      "pause": "",
+      "play": "",
+      "play_video": "",
+      "previous": "",
+      "skip_to_products": ""
     },
     "meta": {
       "tags": "Tagget \"{{ tags }}\"",
@@ -54,7 +65,8 @@
       "signup_form_success": "Vi vil sende deg en epost rett før vi åpner!",
       "admin_link_html": "Er du butikkeier? <a href=\"\/admin\" class=\"text-link\">Logg inn her\/a>",
       "password_link": "Gå inn med passord",
-      "powered_by_shopify_html": "Denne butikken vil bli drevet av {{ shopify }}"
+      "powered_by_shopify_html": "Denne butikken vil bli drevet av {{ shopify }}",
+      "toggle": ""
     },
     "social": {
       "share_on_facebook": "Del",
@@ -157,7 +169,9 @@
       "remove": "Fjern {{ product }}",
       "regular_total": "Vanlig total",
       "total": "Total",
-      "update": "Oppdater"
+      "update": "Oppdater",
+      "decrease": "",
+      "increase": ""
     },
     "popup": {
       "added_to_cart": "Nettopp lagt til i din handlekurv",
@@ -357,7 +371,14 @@
       "view_in_space": "Se i ditt rom",
       "view_in_space_label": "Se i ditt rom, laster inn produktet i et augmented reality vindu.",
       "selling_plan_options": "Kjøpsalternativer",
-      "selling_plan_one_time": "Engangskjøp"
+      "selling_plan_one_time": "Engangskjøp",
+      "quantity_error": ""
+    },
+    "inventory": {
+      "in_stock": "",
+      "label": "",
+      "low_stock": "",
+      "sold_out": ""
     }
   },
   "gift_cards": {
@@ -373,7 +394,9 @@
       "print": "Skriv ut dette gavekortet",
       "remaining_html": "{{ balance }} igjen",
       "add_to_apple_wallet": "Legg til Apple Wallet",
-      "qr_image_alt": "QR kode — skann for å motta gavekort"
+      "qr_image_alt": "QR kode — skann for å motta gavekort",
+      "initial_value": "",
+      "redeem": ""
     }
   },
   "account": {
@@ -429,7 +452,8 @@
   "quick_cart": {
     "cart": "Handlekurv",
     "go_to_cart": "Gå til handlekurv",
-    "empty": "Din handlekurv er tom"
+    "empty": "Din handlekurv er tom",
+    "shop_cta": ""
   },
   "sections": {
     "blog_posts": {
@@ -507,6 +531,18 @@
       "general": {
         "complete_purchase_button_label": "Bestill og betal"
       }
+    },
+    "links": {
+      "powered_by_shopify": " "
     }
+  },
+  "filters": {
+    "apply": "",
+    "clear": "",
+    "clear_all": "",
+    "clear_filters": "",
+    "from": "",
+    "price": "",
+    "to": ""
   }
 }

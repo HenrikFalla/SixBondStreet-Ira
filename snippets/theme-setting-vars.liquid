@@ -64,13 +64,13 @@
 
 
 <style>
-  {{ font_logo | font_face }}
-  {{ font_heading | font_face }}
-  {{ font_meta | font_face }}
-  {{ font_body | font_face }}
-  {{ font_body_bold | font_face }}
-  {{ font_body_italic | font_face }}
-  {{ font_body_boldy_italic | font_face }}
+  {{ font_logo | font_face: font_display: 'swap' }}
+  {{ font_heading | font_face: font_display: 'swap' }}
+  {{ font_meta | font_face: font_display: 'swap' }}
+  {{ font_body | font_face: font_display: 'swap' }}
+  {{ font_body_bold | font_face: font_display: 'swap' }}
+  {{ font_body_italic | font_face: font_display: 'swap' }}
+  {{ font_body_boldy_italic | font_face: font_display: 'swap' }}
 
   :root {
     --color-text-heading: {{ settings.color_text_heading }};
