@@ -39,6 +39,51 @@
         "color_dot": "#777777"
       }
     },
+    "1652734830e13bb44f": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "1652734830beeb48e1-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shipped_0433dece-e93b-493d-b515-b5906a5d371f.png",
+            "title": "Fri frakt på ordre over 10.000,-",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        },
+        "1652734830beeb48e1-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/circular-arrow.png",
+            "title": "30 dager åpent kjøp",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        },
+        "1652734830beeb48e1-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/safe_payment_solid.png",
+            "title": "Trygg betaling",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1652734830beeb48e1-0",
+        "1652734830beeb48e1-1",
+        "1652734830beeb48e1-2"
+      ],
+      "settings": {
+        "per_row": 3,
+        "image_max_width": 100,
+        "circle": true
+      }
+    },
     "2-column-mosaic-grid": {
       "type": "2-column-mosaic-grid",
       "blocks": {
@@ -99,91 +144,47 @@
         "enable_full_width": false
       }
     },
-    "slideshow-3": {
-      "type": "slideshow",
+    "165590230686a4951c": {
+      "type": "image-with-text",
       "blocks": {
-        "1600985612177-0": {
-          "type": "image",
+        "1655902306efe1fc7a-0": {
+          "type": "heading",
           "settings": {
-            "image": "shopify:\/\/shop_images\/blogg_utemobler_styling_002.jpg",
-            "focal_point": "center_center",
-            "focal_point_mobile": "center_center",
-            "video_url": "",
-            "meta": "SixBondStreet",
-            "title": "Slik styler du uteplassen som en proff",
-            "subheading": "<p>Her får du tips og triks til hvordan du kan style uteplassen som en proff.<\/p>",
-            "max_width_subheading": 30,
-            "link_text": "Les mer her",
-            "link": "#",
-            "alignment": "center_center",
-            "color_heading": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_text_button": "#2d2d2d",
-            "color_background_button": "#f8f7f5",
-            "color_overlay": "#000000",
-            "opacity_overlay": 50
+            "heading_title": "Eksklusivt tilbud til våre nyhetsbrevmottakere"
+          }
+        },
+        "1655902306efe1fc7a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Abonerer du på vårt nyhetsbrev får du <strong>20% på et rikt utvalg av våre bestselgere fra Harrison og Somerset kolleksjonen ut juni. <\/strong><a href=\"https:\/\/sixbondstreet.no\/pages\/nyhetsbrev\" target=\"_blank\" title=\"https:\/\/sixbondstreet.no\/pages\/nyhetsbrev\"><strong>Meld deg på vårt nyhetsbrev her.<\/strong><\/a><\/p>"
+          }
+        },
+        "1655902306efe1fc7a-2": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/collections\/vare-klassikere-til-eksklusiv-pris",
+            "link_text": "Se utvalget her"
           }
         }
       },
       "block_order": [
-        "1600985612177-0"
+        "1655902306efe1fc7a-0",
+        "1655902306efe1fc7a-1",
+        "1655902306efe1fc7a-2"
       ],
       "settings": {
-        "desktop_height": 50,
-        "mobile_height": 50,
-        "duration_autoplay": 4,
-        "enable_parallax": false,
-        "enable_full_width": true,
-        "color_dot": "#777777"
-      }
-    },
-    "1652734830e13bb44f": {
-      "type": "text-columns-with-images",
-      "blocks": {
-        "1652734830beeb48e1-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/shipped_0433dece-e93b-493d-b515-b5906a5d371f.png",
-            "title": "Fri frakt på ordre over 10.000,-",
-            "text": "",
-            "link": "#",
-            "link_text": ""
-          }
-        },
-        "1652734830beeb48e1-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/circular-arrow.png",
-            "title": "30 dager åpent kjøp",
-            "text": "",
-            "link": "#",
-            "link_text": ""
-          }
-        },
-        "1652734830beeb48e1-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/safe_payment_solid.png",
-            "title": "Trygg betaling",
-            "text": "",
-            "link": "#",
-            "link_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "1652734830beeb48e1-0",
-        "1652734830beeb48e1-1",
-        "1652734830beeb48e1-2"
-      ],
-      "settings": {
-        "per_row": 3,
-        "image_max_width": 100,
-        "circle": true
+        "image": "shopify:\/\/shop_images\/kampanje_klassikere_sommer.jpg",
+        "video_url": "",
+        "image_width": "standard",
+        "image_position": "left",
+        "max_width_text": 34,
+        "enable_contrast": true,
+        "enable_full_width": false
       }
     },
     "16527348348cad75b8": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "16527348347dcc4a56-0": {
           "type": "heading",
@@ -222,6 +223,7 @@
     },
     "featured-collection-2": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "nyheter",
         "title": "NYHETER",
@@ -232,6 +234,7 @@
     },
     "slideshow-2": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "1600315468934-0": {
           "type": "image",
@@ -319,6 +322,7 @@
     },
     "carousel-1": {
       "type": "carousel",
+      "disabled": true,
       "blocks": {
         "1600984449963-0": {
           "type": "image",
@@ -379,6 +383,7 @@
     },
     "featured-collection-1": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "north-hage-sixbondstreet",
         "title": "Årets hagemøbler",
@@ -389,6 +394,7 @@
     },
     "1652897314e73ea667": {
       "type": "2-column-mosaic-grid",
+      "disabled": true,
       "blocks": {
         "1652897314482a1529-1": {
           "type": "small_square",
@@ -449,6 +455,7 @@
     },
     "collection-list-1": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "1600315451525-0": {
           "type": "collection",
@@ -489,6 +496,7 @@
     },
     "1652897399e459949a": {
       "type": "2-column-mosaic-grid",
+      "disabled": true,
       "blocks": {
         "16528973982c30ecc6-1": {
           "type": "small_square",
@@ -549,6 +557,7 @@
     },
     "16528990354809b128": {
       "type": "blog-posts",
+      "disabled": true,
       "settings": {
         "title": "Nettmagasin",
         "blog": "inspirasjon",
@@ -559,6 +568,7 @@
     },
     "16528993087ed8d422": {
       "type": "2-column-mosaic-grid",
+      "disabled": true,
       "blocks": {
         "165289930892de7a1d-1": {
           "type": "small_square",
@@ -619,6 +629,7 @@
     },
     "1652899360872e3c51": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "1652899360628764c1-0": {
           "type": "heading",
@@ -657,6 +668,7 @@
     },
     "16529002771217d726": {
       "type": "2-column-mosaic-grid",
+      "disabled": true,
       "blocks": {
         "1652900276abcaa752-1": {
           "type": "small_square",
@@ -717,6 +729,7 @@
     },
     "165290045380c0c288": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "1652900453379d68e2-0": {
           "type": "heading",
@@ -755,6 +768,7 @@
     },
     "1652901112e701d6bb": {
       "type": "2-column-mosaic-grid",
+      "disabled": true,
       "blocks": {
         "1652901112d06ce325-1": {
           "type": "small_square",
@@ -815,6 +829,7 @@
     },
     "featured-collection-3": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "artwood",
         "title": "Artwood",
@@ -825,6 +840,7 @@
     },
     "1652901523c83035ab": {
       "type": "2-column-mosaic-grid",
+      "disabled": true,
       "blocks": {
         "1652901523a57054ab-1": {
           "type": "small_square",
@@ -960,15 +976,16 @@
     },
     "nosto_index": {
       "type": "nosto-index",
+      "disabled": true,
       "settings": {
       }
     }
   },
   "order": [
     "slideshow-1",
-    "2-column-mosaic-grid",
-    "slideshow-3",
     "1652734830e13bb44f",
+    "2-column-mosaic-grid",
+    "165590230686a4951c",
     "16527348348cad75b8",
     "featured-collection-2",
     "slideshow-2",
