@@ -251,15 +251,16 @@
         "1655904214361113c8-2": {
           "type": "small_square",
           "settings": {
+            "image": "shopify:\/\/shop_images\/img-7286-790183-Ym8HnCbV_360x_ec520f53-0f11-4a06-a634-b2eba3010efc.webp",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
             "meta": "",
-            "title": "",
-            "subheading": "",
+            "title": "Bli kjent med våre interiørkonsulenter i Bergen",
+            "subheading": "<p>Interiørtjenesten kommer nå til flere byer. Hils på våre lokale interiørkonsulenter i Bergen.<\/p>",
             "text_max_width": 28,
-            "link_text": "",
-            "link": "",
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/bli-kjent-med-vare-interiorkonsulenter-i-bergen",
             "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
@@ -268,7 +269,7 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000",
-            "overlay_opacity": 60
+            "overlay_opacity": 40
           }
         }
       },
