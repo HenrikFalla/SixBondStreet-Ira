@@ -423,7 +423,7 @@
       "settings": {
         "desktop_height": 65,
         "mobile_height": 65,
-        "duration_autoplay": 4,
+        "duration_autoplay": 6,
         "enable_parallax": false,
         "enable_full_width": true,
         "color_dot": "#777777"
