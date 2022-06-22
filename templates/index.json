@@ -306,6 +306,44 @@
         "enable_full_width": false
       }
     },
+    "1655904219a65c7fad": {
+      "type": "slideshow",
+      "blocks": {
+        "1655904218536d6b97-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FredJonny_22_ToneKroken_22082020_S03_0727_v2IG.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "",
+            "title": "Merkevaresalg",
+            "subheading": "<p>Merkevaresalg med <span style=\"text-decoration:underline\"><strong>opptil 50% rabatt <\/strong><\/span>på en mengde møbler og interiørvarer. Nå har du muligheten til å sikre deg godbiter fra en av våre kjente merkevarer.<strong>Tilbudene gjelder fra 10.juni - 31. juli<\/strong><span style=\"text-decoration:underline\"><strong> 2022 <\/strong><\/span><strong>eller så langt lageret rekker.<\/strong><\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/merkevaresalg",
+            "alignment": "right_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "opacity_overlay": 60
+          }
+        }
+      },
+      "block_order": [
+        "1655904218536d6b97-0"
+      ],
+      "settings": {
+        "desktop_height": 65,
+        "mobile_height": 65,
+        "duration_autoplay": 4,
+        "enable_parallax": false,
+        "enable_full_width": true,
+        "color_dot": "#777777"
+      }
+    },
     "16527348348cad75b8": {
       "type": "image-with-text",
       "disabled": true,
@@ -1112,6 +1150,7 @@
     "165590230686a4951c",
     "1655903749b7b25dde",
     "1655904214bdb65264",
+    "1655904219a65c7fad",
     "16527348348cad75b8",
     "featured-collection-2",
     "slideshow-2",
