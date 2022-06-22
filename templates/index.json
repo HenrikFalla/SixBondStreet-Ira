@@ -271,11 +271,36 @@
             "overlay_color": "#000",
             "overlay_opacity": 40
           }
+        },
+        "19986943-96e5-4e7e-9a8a-1c96bb6a0441": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blogg_utemobler_styling_002.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Slik styler du uteplassen som en proff",
+            "subheading": "<p>Her får du tips og triks til hvordan du kan style uteplassen som en proff.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/pages\/slik-styler-du-uteplassen-som-en-proff",
+            "text_position": "left_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 35
+          }
         }
       },
       "block_order": [
         "1655904214361113c8-1",
-        "1655904214361113c8-2"
+        "1655904214361113c8-2",
+        "19986943-96e5-4e7e-9a8a-1c96bb6a0441"
       ],
       "settings": {
         "enable_full_width": false
