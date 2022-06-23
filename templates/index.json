@@ -849,15 +849,16 @@
         "16559803440fa7cd50-2": {
           "type": "small_square",
           "settings": {
+            "image": "shopify:\/\/shop_images\/styling_sofabord_rektangulaert_1728x_2437c954-7572-4f55-adc2-3390a171c494.webp",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "meta": "",
-            "title": "",
-            "subheading": "",
+            "meta": "Guide",
+            "title": "Hvordan style et kvadratisk sofabord?",
+            "subheading": "<p>Her finner du gudien til hvordan du styler et kvadratisk eller rektangulært sofabord.<\/p>",
             "text_max_width": 28,
-            "link_text": "",
-            "link": "",
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-style-et-kvadratisk-eller-rektangulaert-sofabord",
             "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
@@ -866,16 +867,105 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000",
-            "overlay_opacity": 60
+            "overlay_opacity": 30
+          }
+        },
+        "ec2caef9-1eeb-4453-933b-974c644cfa55": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lenox_rod_miljo.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Fjellhytte kolleksjonen",
+            "subheading": "<p>Vi introduserer vår nye fjellhytte kolleksjon med tekstilmøbler som passer perfekt på fjellhytta.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/fjellhytte-kolleksjonen",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 20
+          }
+        },
+        "713f8bf9-3548-4765-b135-34ffdf05fc0b": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/plla_forside_trender_hoyoppl_003.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Vår designer Palla Masdottir",
+            "subheading": "<p>Palla er engasjert og lidenskapelig opptatt av design og produksjon. Hun er villig til å stå på barrikadene for å få frem bærekraftig produksjon og rettferdig handel.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/pages\/var-designer",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 20
           }
         }
       },
       "block_order": [
         "16559803440fa7cd50-1",
-        "16559803440fa7cd50-2"
+        "16559803440fa7cd50-2",
+        "ec2caef9-1eeb-4453-933b-974c644cfa55",
+        "713f8bf9-3548-4765-b135-34ffdf05fc0b"
       ],
       "settings": {
         "enable_full_width": true
+      }
+    },
+    "16559803771d68809c": {
+      "type": "slideshow",
+      "blocks": {
+        "16559803768042aaf8-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hjemmekontor_banner_forside_var_003_2048x_e5df758f-b0c0-41dd-82b7-bc34797cde79.webp",
+            "mobile_image": "shopify:\/\/shop_images\/hjemmekontor_banner_forside_var_003.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "Få stilen",
+            "title": "Hjemmekontoret",
+            "subheading": "<p>Her finner du alt du trenger til hjemmekontoret.<\/p>",
+            "max_width_subheading": 20,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/hjemmekontoret",
+            "alignment": "center_center",
+            "color_heading": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_text_button": "#313131",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 30
+          }
+        }
+      },
+      "block_order": [
+        "16559803768042aaf8-0"
+      ],
+      "settings": {
+        "desktop_height": 75,
+        "mobile_height": 75,
+        "duration_autoplay": 4,
+        "enable_parallax": false,
+        "enable_full_width": false,
+        "color_dot": "#777777"
       }
     }
   },
@@ -899,6 +989,7 @@
     "1655974318b59a0d60",
     "16559798224c7e9984",
     "1655979936791ce15e",
-    "1655980344fab006ba"
+    "1655980344fab006ba",
+    "16559803771d68809c"
   ]
 }
