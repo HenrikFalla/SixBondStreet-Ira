@@ -650,6 +650,66 @@
         "enable_contrast": true,
         "enable_full_width": false
       }
+    },
+    "1655974076c4e0d6ab": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "1655974076f2689ccf-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/entreen_forsdie_square.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "Entrèen",
+            "subheading": "<p>Her finner du alt du trenger til et innbydende og komplett inngangsparti.<\/p>",
+            "text_max_width": 32,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/entreen",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 30
+          }
+        },
+        "1655974076f2689ccf-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gallerivegg_blogginnlegg_2048x_37540b91-2691-4746-b291-65554b2fff38.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Guide",
+            "title": "Slik lager du en gallerivegg",
+            "subheading": "<p>Kombiner gamle skatter, arvegods og personlige bilder sammen med moderne elementer for et unikt og personlig resultat. <\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/slik-lager-du-en-dekorativ-gallerivegg",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "1655974076f2689ccf-1",
+        "1655974076f2689ccf-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
     }
   },
   "order": [
@@ -667,6 +727,7 @@
     "nosto_index",
     "1655972076e89a6252",
     "1655973450c3510188",
-    "1655973557af65b2bb"
+    "1655973557af65b2bb",
+    "1655974076c4e0d6ab"
   ]
 }
