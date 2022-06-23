@@ -710,6 +710,44 @@
       "settings": {
         "enable_full_width": false
       }
+    },
+    "1655974318b59a0d60": {
+      "type": "image-with-text",
+      "blocks": {
+        "16559743186c071922-0": {
+          "type": "heading",
+          "settings": {
+            "heading_title": "En vakker og innbydende spiseplass"
+          }
+        },
+        "16559743186c071922-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gi spiseplassen din et velfortjent løft. Her finner du et rikt utvalg av møbler og interiørartikler til spiseplassen.<\/p>"
+          }
+        },
+        "16559743186c071922-2": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/collections\/en-vakker-og-innbydende-spisestue",
+            "link_text": "Les mer her"
+          }
+        }
+      },
+      "block_order": [
+        "16559743186c071922-0",
+        "16559743186c071922-1",
+        "16559743186c071922-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/broadway_spisestoler_plass_rundtbodet.jpg",
+        "video_url": "",
+        "image_width": "standard",
+        "image_position": "left",
+        "max_width_text": 34,
+        "enable_contrast": true,
+        "enable_full_width": false
+      }
     }
   },
   "order": [
@@ -728,6 +766,7 @@
     "1655972076e89a6252",
     "1655973450c3510188",
     "1655973557af65b2bb",
-    "1655974076c4e0d6ab"
+    "1655974076c4e0d6ab",
+    "1655974318b59a0d60"
   ]
 }
