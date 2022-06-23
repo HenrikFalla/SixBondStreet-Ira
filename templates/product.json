@@ -78,6 +78,11 @@
           "type": "share_buttons",
           "settings": {
           }
+        },
+        "sharptar_3d_viewer": {
+          "type": "text",
+          "settings": {
+          }
         }
       },
       "block_order": [
