@@ -79,7 +79,7 @@
           "settings": {
           }
         },
-        "sharptar_3d_viewer": {
+        "4cf98af7-2f74-4d50-8b03-2c6264b0dbf8": {
           "type": "sharptar_3d_viewer",
           "settings": {
           }
@@ -99,7 +99,7 @@
         "503bed45-a61e-444e-b1ed-384e9e5ac9ff",
         "a76d1c85-788a-479a-b903-898ce70fed9f",
         "422395fc-49fe-48ec-a531-c89b8314004d",
-        "sharptar_3d_viewer"
+        "4cf98af7-2f74-4d50-8b03-2c6264b0dbf8"
       ],
       "settings": {
         "show_swatches": true,
