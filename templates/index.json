@@ -808,6 +808,16 @@
       "settings": {
         "enable_full_width": false
       }
+    },
+    "1655979936791ce15e": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "101-copenhagen",
+        "title": "{{ section.settings.collection.title }}",
+        "per_row": 4,
+        "rows": 1,
+        "aspect_ratio": "square"
+      }
     }
   },
   "order": [
@@ -828,6 +838,7 @@
     "1655973557af65b2bb",
     "1655974076c4e0d6ab",
     "1655974318b59a0d60",
-    "16559798224c7e9984"
+    "16559798224c7e9984",
+    "1655979936791ce15e"
   ]
 }
