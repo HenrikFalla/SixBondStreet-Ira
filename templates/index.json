@@ -21,7 +21,7 @@
             "color_heading": "#ffffff",
             "color_subheading": "#ffffff",
             "color_text_button": "#29292c",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
             "opacity_overlay": 50
           }
@@ -203,7 +203,7 @@
             "color_heading": "#ffffff",
             "color_subheading": "#ffffff",
             "color_text_button": "#000000",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
             "opacity_overlay": 40
           }
@@ -241,7 +241,7 @@
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
@@ -265,7 +265,7 @@
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
@@ -289,7 +289,7 @@
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
@@ -326,7 +326,7 @@
             "color_heading": "#ffffff",
             "color_subheading": "#ffffff",
             "color_text_button": "#000000",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
             "opacity_overlay": 40
           }
@@ -364,7 +364,7 @@
             "color_heading": "#ffffff",
             "color_subheading": "#ffffff",
             "color_text_button": "#000000",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
             "opacity_overlay": 40
           }
@@ -386,7 +386,7 @@
             "color_heading": "#ffffff",
             "color_subheading": "#ffffff",
             "color_text_button": "#000000",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
             "opacity_overlay": 40
           }
@@ -409,7 +409,7 @@
             "color_heading": "#ffffff",
             "color_subheading": "#ffffff",
             "color_text_button": "#000000",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
             "opacity_overlay": 40
           }
@@ -439,12 +439,6 @@
         "aspect_ratio": "square"
       }
     },
-    "nosto_index": {
-      "type": "nosto-index",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "165597183990c0e2cb": {
       "type": "2-column-mosaic-grid",
       "blocks": {
@@ -465,7 +459,7 @@
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000",
@@ -489,7 +483,7 @@
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000",
@@ -561,8 +555,100 @@
         "color_overlay": "#000000",
         "color_heading": "#ffffff",
         "color_subheading": "#f1efeb",
-        "color_background_button": "#ffffff",
+        "color_background_button": "#f8f7f5",
         "color_text_button": "#000000"
+      }
+    },
+    "nosto_index": {
+      "type": "nosto-index",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1655972076e89a6252": {
+      "type": "image-with-text",
+      "blocks": {
+        "165597207649fe8758-0": {
+          "type": "heading",
+          "settings": {
+            "heading_title": "Harrison kolleksjonen"
+          }
+        },
+        "165597207649fe8758-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>På lager for omgående levering. <\/strong>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen. <\/p>"
+          }
+        },
+        "165597207649fe8758-2": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/collections\/harrison-kolleksjonen",
+            "link_text": "Se utvalget her"
+          }
+        }
+      },
+      "block_order": [
+        "165597207649fe8758-0",
+        "165597207649fe8758-1",
+        "165597207649fe8758-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hariison_kolleksjonen_bla_forside_600.jpg",
+        "video_url": "",
+        "image_width": "standard",
+        "image_position": "left",
+        "max_width_text": 34,
+        "enable_contrast": true,
+        "enable_full_width": false
+      }
+    },
+    "1655973450c3510188": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Nettmagasin",
+        "blog": "inspirasjon",
+        "per_row": 2,
+        "rows": 1,
+        "aspect_ratio": "natural"
+      }
+    },
+    "1655973557af65b2bb": {
+      "type": "image-with-text",
+      "blocks": {
+        "165597355786fceeb1-0": {
+          "type": "heading",
+          "settings": {
+            "heading_title": "Somerset serien passer inn hos alle"
+          }
+        },
+        "165597355786fceeb1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Somerset serien består av tremøbler som defineres av et tidløst og klassisk design. Disse egenskapene gjør at møblene passer godt inn hos alle.<\/p>"
+          }
+        },
+        "165597355786fceeb1-2": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/collections\/somerset-serien-som-passer-inn-hos-alle",
+            "link_text": "Shop the collection"
+          }
+        }
+      },
+      "block_order": [
+        "165597355786fceeb1-0",
+        "165597355786fceeb1-1",
+        "165597355786fceeb1-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/somerset_close_up_borddekking.jpg",
+        "video_url": "",
+        "image_width": "standard",
+        "image_position": "left",
+        "max_width_text": 34,
+        "enable_contrast": true,
+        "enable_full_width": false
       }
     }
   },
@@ -576,8 +662,11 @@
     "1655904219a65c7fad",
     "16559052358ffed71f",
     "1655906078323d2266",
-    "nosto_index",
     "165597183990c0e2cb",
-    "16559720716359b63d"
+    "16559720716359b63d",
+    "nosto_index",
+    "1655972076e89a6252",
+    "1655973450c3510188",
+    "1655973557af65b2bb"
   ]
 }
