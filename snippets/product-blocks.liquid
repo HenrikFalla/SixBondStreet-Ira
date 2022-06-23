@@ -433,7 +433,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
           low_inventory_threshold: block.settings.low_inventory_threshold,
           current_variant: current_variant,
         -%}
-    {% when 'sharptar_3d_viewer'%}
+    {%- when 'sharptar_3d_viewer' -%}
         {%- render 'sharpstar-3d-viewer' with
           product: product,
           current_variant: current_variant,
