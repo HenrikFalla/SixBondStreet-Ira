@@ -818,6 +818,65 @@
         "rows": 1,
         "aspect_ratio": "square"
       }
+    },
+    "1655980344fab006ba": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "16559803440fa7cd50-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/style_rundt_sofabord.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Guide",
+            "title": "Hvordan style et rundt sofabord?",
+            "subheading": "<p>Vi guider deg til hvordan du går frem for å style et rundt sofabord.<\/p>",
+            "text_max_width": 32,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-style-et-rundt-sofabord",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 30
+          }
+        },
+        "16559803440fa7cd50-2": {
+          "type": "small_square",
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "",
+            "subheading": "",
+            "text_max_width": 28,
+            "link_text": "",
+            "link": "",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        }
+      },
+      "block_order": [
+        "16559803440fa7cd50-1",
+        "16559803440fa7cd50-2"
+      ],
+      "settings": {
+        "enable_full_width": true
+      }
     }
   },
   "order": [
@@ -839,6 +898,7 @@
     "1655974076c4e0d6ab",
     "1655974318b59a0d60",
     "16559798224c7e9984",
-    "1655979936791ce15e"
+    "1655979936791ce15e",
+    "1655980344fab006ba"
   ]
 }
