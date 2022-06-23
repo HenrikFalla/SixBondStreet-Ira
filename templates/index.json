@@ -998,15 +998,16 @@
         "165598082007f114ab-2": {
           "type": "small_square",
           "settings": {
+            "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_540x_ceafa2d0-b4aa-446d-bc1a-836db39fa184.webp",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "meta": "",
-            "title": "",
-            "subheading": "",
+            "meta": "Interiørtjenester",
+            "title": "Book en online interiørkonsultasjon",
+            "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. <\/p>",
             "text_max_width": 28,
-            "link_text": "",
-            "link": "",
+            "link_text": "Book time her",
+            "link": "shopify:\/\/pages\/interiortjeneste",
             "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
@@ -1017,11 +1018,36 @@
             "overlay_color": "#000",
             "overlay_opacity": 60
           }
+        },
+        "27cbf0b0-2054-4b88-a567-04e051c32285": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hund_gine_margrethe.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Bærekraft",
+            "title": "Hvordan fungerer FibreGuard?",
+            "subheading": "<p>FibreGuard tekstiler er lettstelte tekstiler som er klare for hverdagen. De er lettstelte og OEKO-TEX® sertifisert noe som vil si at tekstilene er helt fri for skadelige kjemikalier og er dermed trygge for miljøet og for deg.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/lettstelte-tekstiler-med-fibreguard",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 25
+          }
         }
       },
       "block_order": [
         "165598082007f114ab-1",
-        "165598082007f114ab-2"
+        "165598082007f114ab-2",
+        "27cbf0b0-2054-4b88-a567-04e051c32285"
       ],
       "settings": {
         "enable_full_width": false
