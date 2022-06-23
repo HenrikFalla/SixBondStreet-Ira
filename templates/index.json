@@ -748,6 +748,65 @@
         "enable_contrast": true,
         "enable_full_width": false
       }
+    },
+    "16559798224c7e9984": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "165597982238fd4bf6-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gine_2fe96266-5f3b-4ba9-8704-9e5870b8113c.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "Hjemme hos Gine Margrethe",
+            "subheading": "<p>Gine Margrethe er et stilikon med mange jern i ilden. SixBondStreet besøkte henne for å snakke om trender, bærekraft og innredning av hjemmet.<br\/><\/p>",
+            "text_max_width": 32,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/inspirasjon-hjemme-hos-stilikonet-gine-margrethe",
+            "text_position": "left_split",
+            "background_color": "",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 30
+          }
+        },
+        "165597982238fd4bf6-2": {
+          "type": "small_square",
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "",
+            "subheading": "",
+            "text_max_width": 28,
+            "link_text": "",
+            "link": "",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        }
+      },
+      "block_order": [
+        "165597982238fd4bf6-1",
+        "165597982238fd4bf6-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
     }
   },
   "order": [
@@ -767,6 +826,7 @@
     "1655973450c3510188",
     "1655973557af65b2bb",
     "1655974076c4e0d6ab",
-    "1655974318b59a0d60"
+    "1655974318b59a0d60",
+    "16559798224c7e9984"
   ]
 }
