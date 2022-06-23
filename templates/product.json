@@ -25,6 +25,7 @@
         },
         "divider": {
           "type": "divider",
+          "disabled": true,
           "settings": {
           }
         },

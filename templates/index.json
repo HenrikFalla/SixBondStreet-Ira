@@ -6,21 +6,22 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_forside_topp_hagemobler_2022_003.jpg",
+            "image": "shopify:\/\/shop_images\/banner_gratis_interiortjeneste.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/forisde_interiortjenesten_gratis_sommer_mobil.jpg",
             "focal_point": "center_center",
             "focal_point_mobile": "center_center",
             "video_url": "",
-            "meta": "North Hage SixBondStreet",
-            "title": "Årets hagemøbler",
-            "subheading": "<p>Årets møbler til uteområdet defineres som tidløse, elegante og romslige. Møblene er laget av ubehandlet teak. <\/p>",
+            "meta": "",
+            "title": "Gratis interiørhjelp",
+            "subheading": "<p>Gratis interiørhjelp hele sommeren til våre kjære kunder.  Våre dyktige interiørdesignere står klare for å hjelpe deg med valg av farger\/tekstiler, møblering og styling. Møt oss online via video eller i et av våre showroom i Oslo eller Bergen. Varer t.o.m 31. august.<\/p>",
             "max_width_subheading": 30,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/blogs\/merker\/north-hage-sixbondstreet",
+            "link_text": "Book en gratis konsultasjon her",
+            "link": "https:\/\/sixbondstreet.no\/pages\/interiortjeneste",
             "alignment": "center_center",
             "color_heading": "#ffffff",
             "color_subheading": "#ffffff",
             "color_text_button": "#29292c",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
             "opacity_overlay": 50
           }
@@ -32,104 +33,6 @@
       "settings": {
         "desktop_height": 65,
         "mobile_height": 65,
-        "duration_autoplay": 4,
-        "enable_parallax": false,
-        "enable_full_width": true,
-        "color_dot": "#777777"
-      }
-    },
-    "2-column-mosaic-grid": {
-      "type": "2-column-mosaic-grid",
-      "blocks": {
-        "small_square-2": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/lenestol_sofabord_miljobilde_002.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Interiør",
-            "title": "Gi uteplassen personlighet",
-            "subheading": "<p>Her finner du alt du trenger for å dekorere uteplassen din.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/dekor-til-uteplassen",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#f8f7f5",
-            "color_text_button": "#2d2d2d",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 40
-          }
-        },
-        "small_square-1": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-7286-790183-Ym8HnCbV_1.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "",
-            "title": "Bli kjent med våre interiørkonsulenter i Bergen",
-            "subheading": "<p>Interiørtjenesten kommer nå til flere byer. Hils på våre lokale interiørkonsulenter i Bergen.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Les mer her",
-            "link": "shopify:\/\/blogs\/inspirasjon\/bli-kjent-med-vare-interiorkonsulenter-i-bergen",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#f8f7f5",
-            "color_text_button": "#2d2d2d",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 40
-          }
-        }
-      },
-      "block_order": [
-        "small_square-2",
-        "small_square-1"
-      ],
-      "settings": {
-        "enable_full_width": false
-      }
-    },
-    "slideshow-3": {
-      "type": "slideshow",
-      "blocks": {
-        "1600985612177-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/blogg_utemobler_styling_002.jpg",
-            "focal_point": "center_center",
-            "focal_point_mobile": "center_center",
-            "video_url": "",
-            "meta": "SixBondStreet",
-            "title": "Slik styler du uteplassen som en proff",
-            "subheading": "<p>Her får du tips og triks til hvordan du kan style uteplassen som en proff.<\/p>",
-            "max_width_subheading": 30,
-            "link_text": "Les mer her",
-            "link": "#",
-            "alignment": "center_center",
-            "color_heading": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_text_button": "#2d2d2d",
-            "color_background_button": "#f8f7f5",
-            "color_overlay": "#000000",
-            "opacity_overlay": 50
-          }
-        }
-      },
-      "block_order": [
-        "1600985612177-0"
-      ],
-      "settings": {
-        "desktop_height": 50,
-        "mobile_height": 50,
         "duration_autoplay": 4,
         "enable_parallax": false,
         "enable_full_width": true,
@@ -181,62 +84,283 @@
         "circle": true
       }
     },
-    "16527348348cad75b8": {
+    "2-column-mosaic-grid": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "small_square-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/styling_pynteputer_004.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Interiør",
+            "title": "Fotokunst",
+            "subheading": "<p>Alt du trenger for å oppgradere veggene dine.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/fotokunst",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#2d2d2d",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "small_square-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/screenshot_ginemargrethe_003.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Interiør",
+            "title": "Interiørvarer",
+            "subheading": "<p>Her finner du hele vårt interiørsortiment.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/interior",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#2d2d2d",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "small_square-2",
+        "small_square-1"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "165590230686a4951c": {
       "type": "image-with-text",
       "blocks": {
-        "16527348347dcc4a56-0": {
+        "1655902306efe1fc7a-0": {
           "type": "heading",
           "settings": {
-            "heading_title": "Merkevaresalg"
+            "heading_title": "Eksklusivt tilbud til våre nyhetsbrevmottakere"
           }
         },
-        "16527348347dcc4a56-1": {
+        "1655902306efe1fc7a-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Opptil 50% rabatt på en rekke kjente merkevarer. Tilbudet gjelder t.o.m 31.05.2022 eller så langt lageret rekker.<\/p>"
+            "text": "<p>Abonerer du på vårt nyhetsbrev får du <strong>20% på et rikt utvalg av våre bestselgere fra Harrison og Somerset kolleksjonen ut juni. <\/strong><a href=\"https:\/\/sixbondstreet.no\/pages\/nyhetsbrev\" target=\"_blank\" title=\"https:\/\/sixbondstreet.no\/pages\/nyhetsbrev\"><strong>Meld deg på vårt nyhetsbrev her.<\/strong><\/a><\/p>"
           }
         },
-        "16527348347dcc4a56-2": {
+        "1655902306efe1fc7a-2": {
           "type": "button",
           "settings": {
-            "link": "shopify:\/\/collections\/merkevaresalg",
+            "link": "shopify:\/\/collections\/vare-klassikere-til-eksklusiv-pris",
             "link_text": "Se utvalget her"
           }
         }
       },
       "block_order": [
-        "16527348347dcc4a56-0",
-        "16527348347dcc4a56-1",
-        "16527348347dcc4a56-2"
+        "1655902306efe1fc7a-0",
+        "1655902306efe1fc7a-1",
+        "1655902306efe1fc7a-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner_merkevaresalg_tonekroken_003_2048x_71c2354c-22af-4cc5-a62d-98a5a20d27b3.webp",
+        "image": "shopify:\/\/shop_images\/kampanje_klassikere_sommer.jpg",
         "video_url": "",
         "image_width": "standard",
         "image_position": "left",
         "max_width_text": 34,
         "enable_contrast": true,
-        "enable_full_width": true
+        "enable_full_width": false
       }
     },
-    "featured-collection-2": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "nyheter",
-        "title": "NYHETER",
-        "per_row": 4,
-        "rows": 1,
-        "aspect_ratio": "natural"
-      }
-    },
-    "slideshow-2": {
+    "1655903749b7b25dde": {
       "type": "slideshow",
       "blocks": {
-        "1600315468934-0": {
+        "1655903749038773c4-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_spisestue_raskLev.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/banner_spisestue_raskLev.jpg",
+            "image": "shopify:\/\/shop_images\/banner_forside_topp_hagemobler_2022_003.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/288A5168.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "North Hage SixBondStreet",
+            "title": "Årest hagemøbler",
+            "subheading": "<p>Årets møbler til uteområdet defineres som tidløse, elegante og romslige. Møblene er laget av ubehandlet teak. <\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/north-hage-sixbondstreet",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 40
+          }
+        }
+      },
+      "block_order": [
+        "1655903749038773c4-0"
+      ],
+      "settings": {
+        "desktop_height": 65,
+        "mobile_height": 65,
+        "duration_autoplay": 4,
+        "enable_parallax": true,
+        "enable_full_width": true,
+        "color_dot": "#777777"
+      }
+    },
+    "1655904214bdb65264": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "1655904214361113c8-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lenestol_sofabord_miljobilde_002.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Interiør",
+            "title": "Gi uteplassen personlighet",
+            "subheading": "<p>Her finner du alt du trenger for å dekorere uteplassen din.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/dekor-til-uteplassen",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "1655904214361113c8-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img-7286-790183-Ym8HnCbV_360x_ec520f53-0f11-4a06-a634-b2eba3010efc.webp",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "Bli kjent med våre interiørkonsulenter i Bergen",
+            "subheading": "<p>Interiørtjenesten kommer nå til flere byer. Hils på våre lokale interiørkonsulenter i Bergen.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/bli-kjent-med-vare-interiorkonsulenter-i-bergen",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "19986943-96e5-4e7e-9a8a-1c96bb6a0441": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blogg_utemobler_styling_002.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Slik styler du uteplassen som en proff",
+            "subheading": "<p>Her får du tips og triks til hvordan du kan style uteplassen som en proff.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/pages\/slik-styler-du-uteplassen-som-en-proff",
+            "text_position": "left_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 35
+          }
+        }
+      },
+      "block_order": [
+        "1655904214361113c8-1",
+        "1655904214361113c8-2",
+        "19986943-96e5-4e7e-9a8a-1c96bb6a0441"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "1655904219a65c7fad": {
+      "type": "slideshow",
+      "blocks": {
+        "1655904218536d6b97-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FredJonny_22_ToneKroken_22082020_S03_0727_v2IG.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "",
+            "title": "Merkevaresalg",
+            "subheading": "<p>Merkevaresalg med <span style=\"text-decoration:underline\"><strong>opptil 50% rabatt <\/strong><\/span>på en mengde møbler og interiørvarer. Nå har du muligheten til å sikre deg godbiter fra en av våre kjente merkevarer.<strong>Tilbudene gjelder fra 10.juni - 31. juli<\/strong><span style=\"text-decoration:underline\"><strong> 2022 <\/strong><\/span><strong>eller så langt lageret rekker.<\/strong><\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/merkevaresalg",
+            "alignment": "right_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 40
+          }
+        }
+      },
+      "block_order": [
+        "1655904218536d6b97-0"
+      ],
+      "settings": {
+        "desktop_height": 65,
+        "mobile_height": 65,
+        "duration_autoplay": 4,
+        "enable_parallax": false,
+        "enable_full_width": true,
+        "color_dot": "#777777"
+      }
+    },
+    "1655906078323d2266": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "utemobler",
+        "title": "{{ section.settings.collection.title }}",
+        "per_row": 4,
+        "rows": 1,
+        "aspect_ratio": "square"
+      }
+    },
+    "16559052358ffed71f": {
+      "type": "slideshow",
+      "blocks": {
+        "16559052345c05876d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/somerset_serien_banner.jpg",
             "focal_point": "center_center",
             "focal_point_mobile": "center_center",
             "video_url": "",
@@ -245,21 +369,20 @@
             "subheading": "<p>Her finner du møblene og dekoren du trenger for å skape en vakker og innbydende spisestue. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
             "max_width_subheading": 30,
             "link_text": "Se utvalget her",
-            "link": "#",
+            "link": "shopify:\/\/collections\/levering-for-jul-spisestue",
             "alignment": "center_center",
             "color_heading": "#ffffff",
             "color_subheading": "#ffffff",
             "color_text_button": "#000000",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
-            "opacity_overlay": 60
+            "opacity_overlay": 40
           }
         },
-        "799849af-7884-4fc0-8a7c-a4df858c6048": {
+        "dbba427c-9d1b-429f-9a03-453c2f20271f": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/stue_rask_levering.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/stue_rask_levering.jpg",
             "focal_point": "center_center",
             "focal_point_mobile": "center_center",
             "video_url": "",
@@ -268,17 +391,17 @@
             "subheading": "<p>Her finner du garantert noe du ønsker deg til stuen din. Alt du finner her er lagerført. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
             "max_width_subheading": 30,
             "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections",
+            "link": "shopify:\/\/collections\/levering-f-r-jul-stue",
             "alignment": "center_center",
             "color_heading": "#ffffff",
-            "color_subheading": "#b8b8b8",
-            "color_text_button": "#2d2d2d",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
             "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
-            "opacity_overlay": 60
+            "opacity_overlay": 40
           }
         },
-        "aa5e017b-1522-457a-be6d-50a26eda3608": {
+        "9a6e1083-45b6-495c-877f-eb60ca6285a9": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/forside_rask_levering_interior_mobil.jpg",
@@ -291,105 +414,35 @@
             "subheading": "<p>Her finner du et bredt utvalg interiørvarer. Alt du finner her er lagerført og leveringsklart. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
             "max_width_subheading": 30,
             "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections",
+            "link": "shopify:\/\/collections\/levering-for-jul-interior-tekstiler",
             "alignment": "center_center",
             "color_heading": "#ffffff",
-            "color_subheading": "#b8b8b8",
-            "color_text_button": "#2d2d2d",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
             "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
-            "opacity_overlay": 60
+            "opacity_overlay": 40
           }
         }
       },
       "block_order": [
-        "1600315468934-0",
-        "799849af-7884-4fc0-8a7c-a4df858c6048",
-        "aa5e017b-1522-457a-be6d-50a26eda3608"
+        "16559052345c05876d-0",
+        "dbba427c-9d1b-429f-9a03-453c2f20271f",
+        "9a6e1083-45b6-495c-877f-eb60ca6285a9"
       ],
       "settings": {
-        "desktop_height": 85,
-        "mobile_height": 50,
-        "duration_autoplay": 4,
+        "desktop_height": 65,
+        "mobile_height": 65,
+        "duration_autoplay": 6,
         "enable_parallax": false,
         "enable_full_width": true,
         "color_dot": "#777777"
       }
     },
-    "carousel-1": {
-      "type": "carousel",
-      "blocks": {
-        "1600984449963-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner_forside_nyheter.jpg",
-            "meta": "Nyheter",
-            "title": "Nyheter",
-            "subheading": "<p>Her finner du alle våre nyheter.<\/p>",
-            "max_width_subheading": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/nyheter",
-            "alignment": "center_center",
-            "opacity_overlay": 50
-          }
-        },
-        "1600984449963-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/39958-01-05-649229f70d_1728x_3923321b-530f-40a2-bf3a-131a9fdae69b.webp",
-            "meta": "Inspirasjon",
-            "title": "Hytta ved sjøen",
-            "subheading": "<p>Med rikitge produkter kan du skap et interiør som minner om frisk sjøluft, lyse dager og god stemning. Har du hytte i nærheten av sjøen? <\/p>",
-            "max_width_subheading": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/inspirasjon-til-hytta-ved-sjoen",
-            "alignment": "center_center",
-            "opacity_overlay": 30
-          }
-        },
-        "1600984449963-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Mathias_duma_001.jpg",
-            "meta": "Bærekraft",
-            "title": "Miljøsofa aka “Møbelflipperen” x SixBondStree",
-            "subheading": "<p>Miljøsofa aka “Møbelflipperen” & SixBondStreet ønsker å ta sin del av ansvaret og bruke vår felles kunnskap til å gi nytt liv til brukte møbler.<\/p>",
-            "max_width_subheading": 28,
-            "link_text": "Les mer her",
-            "link": "\/",
-            "alignment": "right_split",
-            "opacity_overlay": 20
-          }
-        }
-      },
-      "block_order": [
-        "1600984449963-0",
-        "1600984449963-1",
-        "1600984449963-2"
-      ],
-      "settings": {
-        "height_mobile": 50,
-        "color_overlay": "#000000",
-        "color_heading": "#ffffff",
-        "color_subheading": "#ffffff",
-        "color_background_button": "#ffffff",
-        "color_text_button": "#000000"
-      }
-    },
-    "featured-collection-1": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "north-hage-sixbondstreet",
-        "title": "Årets hagemøbler",
-        "per_row": 4,
-        "rows": 1,
-        "aspect_ratio": "natural"
-      }
-    },
-    "1652897314e73ea667": {
+    "165597183990c0e2cb": {
       "type": "2-column-mosaic-grid",
       "blocks": {
-        "1652897314482a1529-1": {
+        "165597183994b029a2-1": {
           "type": "small_square",
           "settings": {
             "image": "shopify:\/\/shop_images\/banner_forside_sofaguiden_var.jpg",
@@ -399,24 +452,24 @@
             "meta": "Guide",
             "title": "Sofaguiden",
             "subheading": "<p>Vi guider deg til hvordan du velger rikitg sofa.<\/p>",
-            "text_max_width": 28,
+            "text_max_width": 32,
             "link_text": "Les mer her",
             "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-velge-riktig-sofa",
             "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
-            "color_subheading": "#b8b8b8",
-            "color_background_button": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 60
+            "overlay_opacity": 40
           }
         },
-        "1652897314482a1529-2": {
+        "165597183994b029a2-2": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_spisestue_raskLev.jpg",
+            "image": "shopify:\/\/shop_images\/somerset_serien_banner.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -429,124 +482,128 @@
             "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
-            "color_subheading": "#b8b8b8",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 60
-          }
-        }
-      },
-      "block_order": [
-        "1652897314482a1529-1",
-        "1652897314482a1529-2"
-      ],
-      "settings": {
-        "enable_full_width": false
-      }
-    },
-    "collection-list-1": {
-      "type": "collection-list",
-      "blocks": {
-        "1600315451525-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "komfort-lounge"
-          }
-        },
-        "1600315451525-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "gjenfodt-anonym"
-          }
-        },
-        "f5c2ea0f-742b-4195-bffd-193cce87ee7a": {
-          "type": "collection",
-          "settings": {
-            "collection": "apenbaring"
-          }
-        },
-        "12a4035b-3f33-4ba8-9c89-f680b70d3477": {
-          "type": "collection",
-          "settings": {
-            "collection": "drommefanger"
-          }
-        }
-      },
-      "block_order": [
-        "1600315451525-0",
-        "1600315451525-1",
-        "f5c2ea0f-742b-4195-bffd-193cce87ee7a",
-        "12a4035b-3f33-4ba8-9c89-f680b70d3477"
-      ],
-      "settings": {
-        "title": "Få stilen - Vårens interiørtrender",
-        "per_row": 4,
-        "aspect_ratio": "natural"
-      }
-    },
-    "1652897399e459949a": {
-      "type": "2-column-mosaic-grid",
-      "blocks": {
-        "16528973982c30ecc6-1": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/gine_2fe96266-5f3b-4ba9-8704-9e5870b8113c.jpg",
-            "video_url": "",
-            "media_fit": "contain",
-            "focal_point": "center_center",
-            "meta": "",
-            "title": "Hjemme hos Gine Margrethe",
-            "subheading": "<p>Gine Margrethe er et stilikon med mange jern i ilden. Vi besøkte henne for å snakke om trender, bærekraft og innredning av hjemmet.<\/p>",
-            "text_max_width": 20,
-            "link_text": "Les mer her",
-            "link": "shopify:\/\/blogs\/inspirasjon\/inspirasjon-hjemme-hos-stilikonet-gine-margrethe",
-            "text_position": "right_bottom",
-            "background_color": "",
-            "color_text": "#ffffff",
             "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
             "overlay_opacity": 40
           }
-        },
-        "16528973982c30ecc6-2": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/8470000183_miljobilde_1728x_4e6aa084-3267-42f4-9063-f62831caeb73.webp",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "",
-            "title": "Krukker fra Muubs",
-            "subheading": "<p>Vi har en mengde krukker fra den danske leverandøren Muubs på lager for omgående levering. <\/p>",
-            "text_max_width": 26,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/muubs",
-            "text_position": "center_bottom",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 50
-          }
         }
       },
       "block_order": [
-        "16528973982c30ecc6-1",
-        "16528973982c30ecc6-2"
+        "165597183994b029a2-1",
+        "165597183994b029a2-2"
       ],
       "settings": {
         "enable_full_width": false
       }
     },
-    "16528990354809b128": {
+    "16559720716359b63d": {
+      "type": "carousel",
+      "blocks": {
+        "16559720714a0cc8c7-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nyheter_forside_juni22.jpg",
+            "meta": "Nyheter",
+            "title": "Nyheter",
+            "subheading": "<p>Her finner du alle våre nyheter<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/nyheter",
+            "alignment": "center_center",
+            "opacity_overlay": 40
+          }
+        },
+        "16559720714a0cc8c7-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/39958-01-05-649229f70d_1728x_3923321b-530f-40a2-bf3a-131a9fdae69b.webp",
+            "meta": "Inspirasjon",
+            "title": "Hytta ved sjøen",
+            "subheading": "<p>Med riktige produkter kan du skap et interiør som minner om frisk sjøluft, lyse dager og god stemning. Har du hytte i nærheten av sjøen? <\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/inspirasjon-til-hytta-ved-sjoen",
+            "alignment": "center_center",
+            "opacity_overlay": 30
+          }
+        },
+        "16559720714a0cc8c7-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mathias_duma_001.jpg",
+            "meta": "Bærekraft",
+            "title": "Miljøsofa aka “Møbelflipperen” x SixBondStree",
+            "subheading": "<p>Miljøsofa aka “Møbelflipperen” & SixBondStreet ønsker å ta sin del av ansvaret og bruke vår felles kunnskap til å gi nytt liv til brukte møbler.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Le mer her",
+            "link": "shopify:\/\/pages\/m-flipperen",
+            "alignment": "right_split",
+            "opacity_overlay": 30
+          }
+        }
+      },
+      "block_order": [
+        "16559720714a0cc8c7-0",
+        "16559720714a0cc8c7-1",
+        "16559720714a0cc8c7-2"
+      ],
+      "settings": {
+        "height_mobile": 80,
+        "color_overlay": "#000000",
+        "color_heading": "#ffffff",
+        "color_subheading": "#f1efeb",
+        "color_background_button": "#f8f7f5",
+        "color_text_button": "#000000"
+      }
+    },
+    "nosto_index": {
+      "type": "nosto-index",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1655972076e89a6252": {
+      "type": "image-with-text",
+      "blocks": {
+        "165597207649fe8758-0": {
+          "type": "heading",
+          "settings": {
+            "heading_title": "Harrison kolleksjonen"
+          }
+        },
+        "165597207649fe8758-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>På lager for omgående levering. <\/strong>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen. <\/p>"
+          }
+        },
+        "165597207649fe8758-2": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/collections\/harrison-kolleksjonen",
+            "link_text": "Se utvalget her"
+          }
+        }
+      },
+      "block_order": [
+        "165597207649fe8758-0",
+        "165597207649fe8758-1",
+        "165597207649fe8758-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hariison_kolleksjonen_bla_forside_600.jpg",
+        "video_url": "",
+        "image_width": "standard",
+        "image_position": "left",
+        "max_width_text": 34,
+        "enable_contrast": true,
+        "enable_full_width": false
+      }
+    },
+    "1655973450c3510188": {
       "type": "blog-posts",
       "settings": {
         "title": "Nettmagasin",
@@ -556,34 +613,72 @@
         "aspect_ratio": "natural"
       }
     },
-    "16528993087ed8d422": {
+    "1655973557af65b2bb": {
+      "type": "image-with-text",
+      "blocks": {
+        "165597355786fceeb1-0": {
+          "type": "heading",
+          "settings": {
+            "heading_title": "Somerset serien passer inn hos alle"
+          }
+        },
+        "165597355786fceeb1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Somerset serien består av tremøbler som defineres av et tidløst og klassisk design. Disse egenskapene gjør at møblene passer godt inn hos alle.<\/p>"
+          }
+        },
+        "165597355786fceeb1-2": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/collections\/somerset-serien-som-passer-inn-hos-alle",
+            "link_text": "Shop the collection"
+          }
+        }
+      },
+      "block_order": [
+        "165597355786fceeb1-0",
+        "165597355786fceeb1-1",
+        "165597355786fceeb1-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/somerset_close_up_borddekking.jpg",
+        "video_url": "",
+        "image_width": "standard",
+        "image_position": "left",
+        "max_width_text": 34,
+        "enable_contrast": true,
+        "enable_full_width": false
+      }
+    },
+    "1655974076c4e0d6ab": {
       "type": "2-column-mosaic-grid",
       "blocks": {
-        "165289930892de7a1d-1": {
+        "1655974076f2689ccf-1": {
           "type": "small_square",
           "settings": {
             "image": "shopify:\/\/shop_images\/entreen_forsdie_square.jpg",
             "video_url": "",
             "media_fit": "cover",
-            "focal_point": "center_top",
+            "focal_point": "center_center",
             "meta": "",
-            "title": "Entréen",
-            "subheading": "<p>Mix and match between sizes, set a background color or fill, and add text to blocks that are medium or larger.<\/p>",
-            "text_max_width": 20,
+            "title": "Entrèen",
+            "subheading": "<p>Her finner du alt du trenger til et innbydende og komplett inngangsparti.<\/p>",
+            "text_max_width": 32,
             "link_text": "Se utvalget her",
             "link": "shopify:\/\/collections\/entreen",
-            "text_position": "center_bottom",
+            "text_position": "center_center",
             "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 40
+            "overlay_opacity": 30
           }
         },
-        "165289930892de7a1d-2": {
+        "1655974076f2689ccf-2": {
           "type": "small_square",
           "settings": {
             "image": "shopify:\/\/shop_images\/gallerivegg_blogginnlegg_2048x_37540b91-2691-4746-b291-65554b2fff38.jpg",
@@ -594,44 +689,44 @@
             "title": "Slik lager du en gallerivegg",
             "subheading": "<p>Kombiner gamle skatter, arvegods og personlige bilder sammen med moderne elementer for et unikt og personlig resultat. <\/p>",
             "text_max_width": 28,
-            "link_text": "Ler mer her",
+            "link_text": "Les mer her",
             "link": "shopify:\/\/blogs\/inspirasjon\/slik-lager-du-en-dekorativ-gallerivegg",
-            "text_position": "center_bottom",
+            "text_position": "center_center",
             "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 60
+            "overlay_opacity": 40
           }
         }
       },
       "block_order": [
-        "165289930892de7a1d-1",
-        "165289930892de7a1d-2"
+        "1655974076f2689ccf-1",
+        "1655974076f2689ccf-2"
       ],
       "settings": {
         "enable_full_width": false
       }
     },
-    "1652899360872e3c51": {
+    "1655974318b59a0d60": {
       "type": "image-with-text",
       "blocks": {
-        "1652899360628764c1-0": {
+        "16559743186c071922-0": {
           "type": "heading",
           "settings": {
             "heading_title": "En vakker og innbydende spiseplass"
           }
         },
-        "1652899360628764c1-1": {
+        "16559743186c071922-1": {
           "type": "text",
           "settings": {
             "text": "<p>Gi spiseplassen din et velfortjent løft. Her finner du et rikt utvalg av møbler og interiørartikler til spiseplassen.<\/p>"
           }
         },
-        "1652899360628764c1-2": {
+        "16559743186c071922-2": {
           "type": "button",
           "settings": {
             "link": "shopify:\/\/collections\/en-vakker-og-innbydende-spisestue",
@@ -640,24 +735,94 @@
         }
       },
       "block_order": [
-        "1652899360628764c1-0",
-        "1652899360628764c1-1",
-        "1652899360628764c1-2"
+        "16559743186c071922-0",
+        "16559743186c071922-1",
+        "16559743186c071922-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/spisestue_lysvarlig_innbydende.jpg",
+        "image": "shopify:\/\/shop_images\/broadway_spisestoler_plass_rundtbodet.jpg",
         "video_url": "",
         "image_width": "standard",
         "image_position": "left",
         "max_width_text": 34,
         "enable_contrast": true,
-        "enable_full_width": true
+        "enable_full_width": false
       }
     },
-    "16529002771217d726": {
+    "16559798224c7e9984": {
       "type": "2-column-mosaic-grid",
       "blocks": {
-        "1652900276abcaa752-1": {
+        "165597982238fd4bf6-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gine_2fe96266-5f3b-4ba9-8704-9e5870b8113c.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "Hjemme hos Gine Margrethe",
+            "subheading": "<p>Gine Margrethe er et stilikon med mange jern i ilden. SixBondStreet besøkte henne for å snakke om trender, bærekraft og innredning av hjemmet.<br\/><\/p>",
+            "text_max_width": 32,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/inspirasjon-hjemme-hos-stilikonet-gine-margrethe",
+            "text_position": "left_bottom",
+            "background_color": "",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "165597982238fd4bf6-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hund_gine_margrethe.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "",
+            "subheading": "<p>Her finner du alle møblene og interiørartiklene Gine Margrethe har valgt til sitt hjem fra SixBondStreet.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se produktene her",
+            "link": "shopify:\/\/collections\/hjemme-hos-gine-margrethe",
+            "text_position": "left_bottom",
+            "background_color": "",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "165597982238fd4bf6-1",
+        "165597982238fd4bf6-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "1655979936791ce15e": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "101-copenhagen",
+        "title": "{{ section.settings.collection.title }}",
+        "per_row": 4,
+        "rows": 1,
+        "aspect_ratio": "square"
+      }
+    },
+    "1655980344fab006ba": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "16559803440fa7cd50-1": {
           "type": "small_square",
           "settings": {
             "image": "shopify:\/\/shop_images\/style_rundt_sofabord.jpg",
@@ -667,21 +832,21 @@
             "meta": "Guide",
             "title": "Hvordan style et rundt sofabord?",
             "subheading": "<p>Vi guider deg til hvordan du går frem for å style et rundt sofabord.<\/p>",
-            "text_max_width": 28,
+            "text_max_width": 32,
             "link_text": "Les mer her",
             "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-style-et-rundt-sofabord",
             "text_position": "center_center",
             "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 40
+            "overlay_opacity": 30
           }
         },
-        "1652900276abcaa752-2": {
+        "16559803440fa7cd50-2": {
           "type": "small_square",
           "settings": {
             "image": "shopify:\/\/shop_images\/styling_sofabord_rektangulaert_1728x_2437c954-7572-4f55-adc2-3390a171c494.webp",
@@ -702,60 +867,10 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 40
-          }
-        }
-      },
-      "block_order": [
-        "1652900276abcaa752-1",
-        "1652900276abcaa752-2"
-      ],
-      "settings": {
-        "enable_full_width": false
-      }
-    },
-    "165290045380c0c288": {
-      "type": "image-with-text",
-      "blocks": {
-        "1652900453379d68e2-0": {
-          "type": "heading",
-          "settings": {
-            "heading_title": "Harrison kolleksjonen"
+            "overlay_opacity": 30
           }
         },
-        "1652900453379d68e2-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>På lager for omgående levering. <\/strong>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen. <\/p>"
-          }
-        },
-        "1652900453379d68e2-2": {
-          "type": "button",
-          "settings": {
-            "link": "shopify:\/\/collections\/harrison-kolleksjonen",
-            "link_text": "Se utvalget her"
-          }
-        }
-      },
-      "block_order": [
-        "1652900453379d68e2-0",
-        "1652900453379d68e2-1",
-        "1652900453379d68e2-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/hariison_kolleksjonen_bla_forside_600.jpg",
-        "video_url": "",
-        "image_width": "standard",
-        "image_position": "left",
-        "max_width_text": 34,
-        "enable_contrast": true,
-        "enable_full_width": true
-      }
-    },
-    "1652901112e701d6bb": {
-      "type": "2-column-mosaic-grid",
-      "blocks": {
-        "1652901112d06ce325-1": {
+        "ec2caef9-1eeb-4453-933b-974c644cfa55": {
           "type": "small_square",
           "settings": {
             "image": "shopify:\/\/shop_images\/lenox_rod_miljo.jpg",
@@ -768,7 +883,7 @@
             "text_max_width": 28,
             "link_text": "Se utvalget her",
             "link": "shopify:\/\/collections\/fjellhytte-kolleksjonen",
-            "text_position": "left_bottom",
+            "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
@@ -779,7 +894,7 @@
             "overlay_opacity": 20
           }
         },
-        "1652901112d06ce325-2": {
+        "713f8bf9-3548-4765-b135-34ffdf05fc0b": {
           "type": "small_square",
           "settings": {
             "image": "shopify:\/\/shop_images\/plla_forside_trender_hoyoppl_003.jpg",
@@ -792,7 +907,7 @@
             "text_max_width": 28,
             "link_text": "Les mer her",
             "link": "shopify:\/\/pages\/var-designer",
-            "text_position": "left_bottom",
+            "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
@@ -805,27 +920,58 @@
         }
       },
       "block_order": [
-        "1652901112d06ce325-1",
-        "1652901112d06ce325-2"
+        "16559803440fa7cd50-1",
+        "16559803440fa7cd50-2",
+        "ec2caef9-1eeb-4453-933b-974c644cfa55",
+        "713f8bf9-3548-4765-b135-34ffdf05fc0b"
       ],
       "settings": {
-        "enable_full_width": false
+        "enable_full_width": true
       }
     },
-    "featured-collection-3": {
-      "type": "featured-collection",
+    "16559803771d68809c": {
+      "type": "slideshow",
+      "blocks": {
+        "16559803768042aaf8-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hjemmekontor_banner_forside_var_003_2048x_e5df758f-b0c0-41dd-82b7-bc34797cde79.webp",
+            "mobile_image": "shopify:\/\/shop_images\/hjemmekontor_banner_forside_var_003.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "Få stilen",
+            "title": "Hjemmekontoret",
+            "subheading": "<p>Her finner du alt du trenger til hjemmekontoret.<\/p>",
+            "max_width_subheading": 20,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/hjemmekontoret",
+            "alignment": "center_center",
+            "color_heading": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_text_button": "#313131",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 30
+          }
+        }
+      },
+      "block_order": [
+        "16559803768042aaf8-0"
+      ],
       "settings": {
-        "collection": "artwood",
-        "title": "Artwood",
-        "per_row": 4,
-        "rows": 1,
-        "aspect_ratio": "natural"
+        "desktop_height": 75,
+        "mobile_height": 75,
+        "duration_autoplay": 4,
+        "enable_parallax": false,
+        "enable_full_width": false,
+        "color_dot": "#777777"
       }
     },
-    "1652901523c83035ab": {
+    "165598082154f9f913": {
       "type": "2-column-mosaic-grid",
       "blocks": {
-        "1652901523a57054ab-1": {
+        "165598082007f114ab-1": {
           "type": "small_square",
           "settings": {
             "image": "shopify:\/\/shop_images\/forside_rundespisebord_inngagn_blogg_1728x_5224c561-8bd8-4e9a-b166-7c2468314d85.webp",
@@ -835,24 +981,24 @@
             "meta": "Inspirasjon",
             "title": "Runde spisebord alle vil ha",
             "subheading": "<p>Bordene er skapt for å kunne lage en innbydende og fleksibel spisegruppe. Det skal være enkelt å få plass til en ekstra gjest...<\/p>",
-            "text_max_width": 20,
+            "text_max_width": 28,
             "link_text": "Les mer her",
-            "link": "shopify:\/\/collections\/en-vakker-og-innbydende-spisestue",
+            "link": "shopify:\/\/blogs\/inspirasjon\/runde-spisebord-alle-vil-ha",
             "text_position": "center_center",
             "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 40
+            "overlay_opacity": 35
           }
         },
-        "1652901523a57054ab-2": {
+        "165598082007f114ab-2": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_1.jpg",
+            "image": "shopify:\/\/shop_images\/untitled-1interiortjeneste-319229-9G7eMwnN_540x_ceafa2d0-b4aa-446d-bc1a-836db39fa184.webp",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -870,34 +1016,10 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 40
+            "overlay_opacity": 60
           }
         },
-        "da0eaf62-4e18-407a-9aa4-a1879b339d7f": {
-          "type": "medium_horizontal_rect",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/hjemmekontor_banner_forside_var_003_2048x_e5df758f-b0c0-41dd-82b7-bc34797cde79.webp",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Få stilen",
-            "title": "Hjemmekontoret",
-            "subheading": "<p>Her finner du alt du trenger til hjemmekontoret.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/hjemmekontoret",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#eaeaea",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#2d2d2d",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "0fce378b-1f51-48cd-8955-b03c6da62ec3": {
+        "27cbf0b0-2054-4b88-a567-04e051c32285": {
           "type": "small_square",
           "settings": {
             "image": "shopify:\/\/shop_images\/hund_gine_margrethe.jpg",
@@ -906,22 +1028,22 @@
             "focal_point": "center_center",
             "meta": "Bærekraft",
             "title": "Hvordan fungerer FibreGuard?",
-            "subheading": "<p>Her finner du alt du trenger å vite om tekstiler som er FibreGuard sertifisert. <\/p>",
+            "subheading": "<p>FibreGuard tekstiler er lettstelte tekstiler som er klare for hverdagen. De er lettstelte og OEKO-TEX® sertifisert noe som vil si at tekstilene er helt fri for skadelige kjemikalier og er dermed trygge for miljøet og for deg.<\/p>",
             "text_max_width": 28,
             "link_text": "Les mer her",
-            "link": "shopify:\/\/pages\/v-r-tekstilkolleksjon",
-            "text_position": "center_bottom",
+            "link": "shopify:\/\/blogs\/inspirasjon\/lettstelte-tekstiler-med-fibreguard",
+            "text_position": "center_center",
             "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 50
+            "overlay_opacity": 25
           }
         },
-        "ff3a51b3-3ada-4e1d-a4d7-7a5f1a88a9a9": {
+        "f967ada8-7978-4499-8c21-8757bb884478": {
           "type": "small_square",
           "settings": {
             "image": "shopify:\/\/shop_images\/forside_rask_levering_stue_mobil.jpg",
@@ -930,60 +1052,55 @@
             "focal_point": "center_center",
             "meta": "Bærekraft",
             "title": "Våre tekstiler",
-            "subheading": "<p>Her kan du bli inspirert til hvordan du kan kombinere våre tekstiler, samt lese mer om utvalget.<\/p>",
+            "subheading": "<p>Vår nye tekstilkolleksjon en inspirert av nye tider. Vi lengter etter farger. Våre vakre lyse farger har vi nå mikset med dype toner som strekker seg fra umbra- rust-oaker, dype blåtoner og vakker grønn miks.<\/p>",
             "text_max_width": 28,
             "link_text": "Les mer her",
-            "link": "shopify:\/\/pages\/v-r-tekstilkolleksjon",
+            "link": "shopify:\/\/collections\/ny-tekstilkolleksjon-2021",
             "text_position": "center_center",
             "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 50
+            "overlay_opacity": 25
           }
         }
       },
       "block_order": [
-        "1652901523a57054ab-1",
-        "1652901523a57054ab-2",
-        "da0eaf62-4e18-407a-9aa4-a1879b339d7f",
-        "0fce378b-1f51-48cd-8955-b03c6da62ec3",
-        "ff3a51b3-3ada-4e1d-a4d7-7a5f1a88a9a9"
+        "165598082007f114ab-1",
+        "165598082007f114ab-2",
+        "27cbf0b0-2054-4b88-a567-04e051c32285",
+        "f967ada8-7978-4499-8c21-8757bb884478"
       ],
       "settings": {
         "enable_full_width": false
-      }
-    },
-    "nosto_index": {
-      "type": "nosto-index",
-      "settings": {
       }
     }
   },
   "order": [
     "slideshow-1",
-    "2-column-mosaic-grid",
-    "slideshow-3",
     "1652734830e13bb44f",
-    "16527348348cad75b8",
-    "featured-collection-2",
-    "slideshow-2",
-    "carousel-1",
-    "featured-collection-1",
-    "1652897314e73ea667",
-    "collection-list-1",
-    "1652897399e459949a",
-    "16528990354809b128",
-    "16528993087ed8d422",
-    "1652899360872e3c51",
-    "16529002771217d726",
-    "165290045380c0c288",
-    "1652901112e701d6bb",
-    "featured-collection-3",
-    "1652901523c83035ab",
-    "nosto_index"
+    "2-column-mosaic-grid",
+    "165590230686a4951c",
+    "1655903749b7b25dde",
+    "1655904214bdb65264",
+    "1655904219a65c7fad",
+    "1655906078323d2266",
+    "16559052358ffed71f",
+    "165597183990c0e2cb",
+    "16559720716359b63d",
+    "nosto_index",
+    "1655972076e89a6252",
+    "1655973450c3510188",
+    "1655973557af65b2bb",
+    "1655974076c4e0d6ab",
+    "1655974318b59a0d60",
+    "16559798224c7e9984",
+    "1655979936791ce15e",
+    "1655980344fab006ba",
+    "16559803771d68809c",
+    "165598082154f9f913"
   ]
 }

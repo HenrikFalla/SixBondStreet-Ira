@@ -141,7 +141,7 @@
           "alt_menu": "alt-menu",
           "style": "inline",
           "logo_position": "center",
-          "enable_transparent_home": false,
+          "enable_transparent_home": true,
           "enable_transparent_collection": true,
           "color_text_transparent": "#ffffff",
           "color_icon_transparent": "#ffffff",
