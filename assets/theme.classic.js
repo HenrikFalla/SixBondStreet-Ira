@@ -10166,7 +10166,7 @@
       const searchButton = n$1('[data-search]', this.container);
       const space = n$1('[data-header-space]', document);
       const menu$1 = menu(n$1('[data-drawer-menu]'));
-//       const quickSearch = QuickSearch(n$1('[data-quick-search]', this.container));
+      const quickSearch = QuickSearch(n$1('[data-quick-search]', this.container));
       const quickCart = QuickCart(n$1('[data-quick-cart]', this.container));
       const navigation = Navigation(n$1('[data-navigation]', this.container)); // These all return a function for cleanup
 
@@ -10176,7 +10176,7 @@
         i$1(cartIndicator, 'visible');
         setTimeout(() => u(cartIndicator, 'visible'), 500);
         count.innerHTML = cart.item_count;
-      }), e$2(menuButton, 'click', preventDefault(menu$1.open)), e$2(searchButton, 'click', preventDefault(quickSearch.open)), e$2(cartIcon, 'click', preventDefault(quickCart.open))]; // Components return a destroy function for cleanup
+      }), e$2(menuButton, 'click', preventDefault(menu$1.open)), e$2(searchButton, 'click'), e$2(cartIcon, 'click', preventDefault(quickCart.open))]; // Components return a destroy function for cleanup
 
       this.components = [menu$1, quickSearch, quickCart, navigation]; // Our header is always sticky (with position: sticky) however at some
       // point we want to adjust the styling (eg. box-shadow) so we toggle
