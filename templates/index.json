@@ -344,6 +344,16 @@
         "color_dot": "#777777"
       }
     },
+    "1655906078323d2266": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "utemobler",
+        "title": "{{ section.settings.collection.title }}",
+        "per_row": 4,
+        "rows": 1,
+        "aspect_ratio": "square"
+      }
+    },
     "16559052358ffed71f": {
       "type": "slideshow",
       "blocks": {
@@ -429,16 +439,6 @@
         "color_dot": "#777777"
       }
     },
-    "1655906078323d2266": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "utemobler",
-        "title": "{{ section.settings.collection.title }}",
-        "per_row": 4,
-        "rows": 1,
-        "aspect_ratio": "square"
-      }
-    },
     "165597183990c0e2cb": {
       "type": "2-column-mosaic-grid",
       "blocks": {
@@ -462,7 +462,7 @@
             "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 40
           }
         },
@@ -486,7 +486,7 @@
             "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 40
           }
         }
@@ -674,7 +674,7 @@
             "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 30
           }
         },
@@ -698,7 +698,7 @@
             "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 40
           }
         }
@@ -772,7 +772,7 @@
             "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 30
           }
         },
@@ -796,7 +796,7 @@
             "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 30
           }
         }
@@ -842,7 +842,7 @@
             "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 30
           }
         },
@@ -866,7 +866,7 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 30
           }
         },
@@ -890,7 +890,7 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 20
           }
         },
@@ -914,7 +914,7 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 20
           }
         }
@@ -991,7 +991,7 @@
             "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 35
           }
         },
@@ -1015,7 +1015,7 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 60
           }
         },
@@ -1039,7 +1039,7 @@
             "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 25
           }
         },
@@ -1063,7 +1063,7 @@
             "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 25
           }
         }
@@ -1087,8 +1087,8 @@
     "1655903749b7b25dde",
     "1655904214bdb65264",
     "1655904219a65c7fad",
-    "16559052358ffed71f",
     "1655906078323d2266",
+    "16559052358ffed71f",
     "165597183990c0e2cb",
     "16559720716359b63d",
     "nosto_index",
