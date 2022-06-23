@@ -8243,7 +8243,7 @@
       l(clear, classes$5.visible, populated);
       l(resultsContainer, classes$5.visible, populated);
       clear.setAttribute('tabindex', populated ? 0 : -1);
-//       predictiveSearch.getSearchResults(e.target.value);
+      predictiveSearch.getSearchResults(e.target.value);
     }
 
     function checkEscape({
@@ -8290,8 +8290,7 @@
 
     return {
       open,
-      close,
-      destroy
+      close
     };
   }
 
