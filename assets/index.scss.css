@@ -1,0 +1,4 @@
+/* Mosaic Grid Styling */
+.mosaic-grid__item > * {
+    border-radius: 5px;
+}
