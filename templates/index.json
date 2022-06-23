@@ -1042,12 +1042,37 @@
             "overlay_color": "#000",
             "overlay_opacity": 25
           }
+        },
+        "f967ada8-7978-4499-8c21-8757bb884478": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forside_rask_levering_stue_mobil.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Bærekraft",
+            "title": "Våre tekstiler",
+            "subheading": "<p>Vår nye tekstilkolleksjon en inspirert av nye tider. Vi lengter etter farger. Våre vakre lyse farger har vi nå mikset med dype toner som strekker seg fra umbra- rust-oaker, dype blåtoner og vakker grønn miks.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/collections\/ny-tekstilkolleksjon-2021",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 25
+          }
         }
       },
       "block_order": [
         "165598082007f114ab-1",
         "165598082007f114ab-2",
-        "27cbf0b0-2054-4b88-a567-04e051c32285"
+        "27cbf0b0-2054-4b88-a567-04e051c32285",
+        "f967ada8-7978-4499-8c21-8757bb884478"
       ],
       "settings": {
         "enable_full_width": false
