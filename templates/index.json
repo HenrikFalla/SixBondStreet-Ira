@@ -444,6 +444,126 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "165597183990c0e2cb": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "165597183994b029a2-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_forside_sofaguiden_var.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Guide",
+            "title": "Sofaguiden",
+            "subheading": "<p>Vi guider deg til hvordan du velger rikitg sofa.<\/p>",
+            "text_max_width": 32,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-velge-riktig-sofa",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 40
+          }
+        },
+        "165597183994b029a2-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/somerset_serien_banner.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Komfortable og elegante spisestoler",
+            "subheading": "<p>Er du på jakt etter spisestoler som både er elegante og komfortable? <\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/komfortable-og-elegante-spisestoler",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "165597183994b029a2-1",
+        "165597183994b029a2-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "16559720716359b63d": {
+      "type": "carousel",
+      "blocks": {
+        "16559720714a0cc8c7-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nyheter_forside_juni22.jpg",
+            "meta": "Nyheter",
+            "title": "Nyheter",
+            "subheading": "<p>Her finner du alle våre nyheter<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/nyheter",
+            "alignment": "center_center",
+            "opacity_overlay": 40
+          }
+        },
+        "16559720714a0cc8c7-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/39958-01-05-649229f70d_1728x_3923321b-530f-40a2-bf3a-131a9fdae69b.webp",
+            "meta": "Inspirasjon",
+            "title": "Hytta ved sjøen",
+            "subheading": "<p>Med riktige produkter kan du skap et interiør som minner om frisk sjøluft, lyse dager og god stemning. Har du hytte i nærheten av sjøen? <\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/inspirasjon-til-hytta-ved-sjoen",
+            "alignment": "center_center",
+            "opacity_overlay": 30
+          }
+        },
+        "16559720714a0cc8c7-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mathias_duma_001.jpg",
+            "meta": "Bærekraft",
+            "title": "Miljøsofa aka “Møbelflipperen” x SixBondStree",
+            "subheading": "<p>Miljøsofa aka “Møbelflipperen” & SixBondStreet ønsker å ta sin del av ansvaret og bruke vår felles kunnskap til å gi nytt liv til brukte møbler.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Le mer her",
+            "link": "shopify:\/\/pages\/m-flipperen",
+            "alignment": "right_split",
+            "opacity_overlay": 30
+          }
+        }
+      },
+      "block_order": [
+        "16559720714a0cc8c7-0",
+        "16559720714a0cc8c7-1",
+        "16559720714a0cc8c7-2"
+      ],
+      "settings": {
+        "height_mobile": 80,
+        "color_overlay": "#000000",
+        "color_heading": "#ffffff",
+        "color_subheading": "#f1efeb",
+        "color_background_button": "#ffffff",
+        "color_text_button": "#000000"
+      }
     }
   },
   "order": [
@@ -456,6 +576,8 @@
     "1655904219a65c7fad",
     "16559052358ffed71f",
     "1655906078323d2266",
-    "nosto_index"
+    "nosto_index",
+    "165597183990c0e2cb",
+    "16559720716359b63d"
   ]
 }
