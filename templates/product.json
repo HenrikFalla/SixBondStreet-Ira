@@ -81,6 +81,7 @@
         },
         "4cf98af7-2f74-4d50-8b03-2c6264b0dbf8": {
           "type": "sharptar_3d_viewer",
+          "disabled": true,
           "settings": {
           }
         }
