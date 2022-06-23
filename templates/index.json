@@ -765,7 +765,7 @@
             "text_max_width": 32,
             "link_text": "Les mer her",
             "link": "shopify:\/\/blogs\/inspirasjon\/inspirasjon-hjemme-hos-stilikonet-gine-margrethe",
-            "text_position": "left_split",
+            "text_position": "left_bottom",
             "background_color": "",
             "color_text": "#f8f7f5",
             "color_subheading": "#f8f7f5",
@@ -779,24 +779,25 @@
         "165597982238fd4bf6-2": {
           "type": "small_square",
           "settings": {
+            "image": "shopify:\/\/shop_images\/hund_gine_margrethe.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
             "meta": "",
             "title": "",
-            "subheading": "",
+            "subheading": "<p>Her finner du alle møblene og interiørartiklene Gine Margrethe har valgt til sitt hjem fra SixBondStreet.<\/p>",
             "text_max_width": 28,
-            "link_text": "",
-            "link": "",
-            "text_position": "center_center",
+            "link_text": "Se produktene her",
+            "link": "shopify:\/\/collections\/hjemme-hos-gine-margrethe",
+            "text_position": "left_bottom",
             "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000",
-            "overlay_opacity": 60
+            "overlay_opacity": 30
           }
         }
       },
