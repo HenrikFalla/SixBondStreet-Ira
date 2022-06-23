@@ -967,6 +967,65 @@
         "enable_full_width": false,
         "color_dot": "#777777"
       }
+    },
+    "165598082154f9f913": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "165598082007f114ab-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forside_rundespisebord_inngagn_blogg_1728x_5224c561-8bd8-4e9a-b166-7c2468314d85.webp",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Runde spisebord alle vil ha",
+            "subheading": "<p>Bordene er skapt for å kunne lage en innbydende og fleksibel spisegruppe. Det skal være enkelt å få plass til en ekstra gjest...<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/runde-spisebord-alle-vil-ha",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#f8f7f5",
+            "color_subheading": "#f8f7f5",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 35
+          }
+        },
+        "165598082007f114ab-2": {
+          "type": "small_square",
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "",
+            "subheading": "",
+            "text_max_width": 28,
+            "link_text": "",
+            "link": "",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        }
+      },
+      "block_order": [
+        "165598082007f114ab-1",
+        "165598082007f114ab-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
     }
   },
   "order": [
@@ -990,6 +1049,7 @@
     "16559798224c7e9984",
     "1655979936791ce15e",
     "1655980344fab006ba",
-    "16559803771d68809c"
+    "16559803771d68809c",
+    "165598082154f9f913"
   ]
 }
