@@ -495,7 +495,7 @@
   var createDataAttributes = function(refinement) {
     return Object.keys(refinement)
       .map(function(key) {
-         return 'data-' + key + '="' + refinement[key] + '"';
+        return 'data-' + key + '="' + encodeURIComponent(refinement[key] || '') + '"';
       })
       .join(' ');
   };
@@ -550,7 +550,7 @@
             key
           ) {
             var itemData = {};
-            itemData[key] = event.currentTarget.dataset[key];
+            itemData[key] = decodeURIComponent(event.currentTarget.dataset[key]);
             return algolia.assign({}, acc, itemData);
           },
           {});
