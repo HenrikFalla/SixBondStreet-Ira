@@ -8290,9 +8290,9 @@
 
     function destroy() {
       close();
-      overlayClick();
-      clearClick();
-      keyDown();
+//       overlayClick();
+//       clearClick();
+//       keyDown();
       inputChange();
     }
 
