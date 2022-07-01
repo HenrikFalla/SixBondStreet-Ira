@@ -8157,7 +8157,7 @@
       document.querySelectorAll('.aa-product-title').forEach(function(a){
         a.addEventListener('click', function(evt){
           console.log(evt)
-        })
+        }, true)
       });
     }
 
