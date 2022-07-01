@@ -8242,8 +8242,8 @@
     const focusTrap = createFocusTrap(node); // This gets replaced with a focus trapping util on `open` however
 
     const overlayClick = e$2(overlay, 'click', close);
-    const clearClick = e$2(clear, 'click', reset);
-    const keyDown = e$2(node, 'keydown', checkEscape);
+    //const clearClick = e$2(clear, 'click', reset);
+    //const keyDown = e$2(node, 'keydown', checkEscape);
     const inputChange = e$2(input, 'input', handleInput);
     const predictiveSearch = new PredictiveSearch(resultsContainer);
 
