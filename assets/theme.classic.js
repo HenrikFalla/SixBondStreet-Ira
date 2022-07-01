@@ -8153,6 +8153,12 @@
 
     function renderSearchResults(resultsMarkup) {
       resultsContainer.innerHTML = resultsMarkup;
+      
+      document.querySelectorAll('.aa-product-title').forEach(function(a){
+        a.addEventListener('click', function(evt){
+          console.log(evt)
+        })
+      });
     }
 
     function highlightQuery(searchTerm, searchResult) {
