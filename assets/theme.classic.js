@@ -8280,6 +8280,7 @@
     }
 
     function close() {
+      return;
       i$1(node, classes$5.visible);
       setTimeout(() => {
         i$1(node, classes$5.active);
