@@ -8153,6 +8153,7 @@
 
     function renderSearchResults(resultsMarkup) {
       resultsContainer.innerHTML = resultsMarkup;
+      /*
       console.log(document.querySelectorAll('.aa-product-title'));
       document.querySelectorAll('.aa-product-title').forEach(function(a){
         var a_clone = a.cloneNode(true);
@@ -8161,6 +8162,7 @@
           console.log(evt)
         }, true)
       });
+      */
     }
 
     function highlightQuery(searchTerm, searchResult) {
@@ -8280,7 +8282,6 @@
     }
 
     function close() {
-      return;
       i$1(node, classes$5.visible);
       setTimeout(() => {
         i$1(node, classes$5.active);
@@ -8291,9 +8292,9 @@
 
     function destroy() {
       close();
-//       overlayClick();
-//       clearClick();
-//       keyDown();
+      overlayClick();
+      clearClick();
+      keyDown();
       inputChange();
     }
 
