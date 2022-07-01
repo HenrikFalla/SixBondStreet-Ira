@@ -8155,7 +8155,9 @@
       resultsContainer.innerHTML = resultsMarkup;
       console.log(document.querySelectorAll('.aa-product-title'));
       document.querySelectorAll('.aa-product-title').forEach(function(a){
-        a.addEventListener('click', function(evt){
+        var a_clone = a.cloneNode(true);
+        a.parentNode.replaceChild(a_clone, a);
+        a_clone.addEventListener('click', function(evt){
           console.log(evt)
         }, true)
       });
