@@ -8153,6 +8153,14 @@
 
     function renderSearchResults(resultsMarkup) {
       resultsContainer.innerHTML = resultsMarkup;
+      if(window.innerWidth < 768) return;
+      
+      const resultNode = document.querySelector('.algolia-autocomplete[style*=block]');
+      if(resultNode){
+        const resultHtml = resultNode.innerHTML;
+        resultNode.innerHTML = resultHtml;
+      }
+      
       /*
       console.log(document.querySelectorAll('.aa-product-title'));
       document.querySelectorAll('.aa-product-title').forEach(function(a){
