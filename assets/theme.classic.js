@@ -8159,6 +8159,7 @@
       if(resultNode){
         const newNode = document.createElement('div');
         newNode.innerHTML = resultNode.innerHTML;
+        newNode.classList.add('search-block')
         resultNode.parentNode.replaceChild(newNode, resultNode);
         //resultNode.innerHTML = resultHtml;
       }
