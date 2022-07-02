@@ -8169,7 +8169,7 @@
       //console.log(document.querySelectorAll('.aa-product-title'));
       document.querySelectorAll('.aa-product-title').forEach(function(a){
         a.addEventListener('mouseup', function(evt){
-          console.log('mouseup',evt.target, evt.target.classList)
+          window.location.href = this.href;
         })
       });
       
