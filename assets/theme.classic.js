@@ -8160,7 +8160,7 @@
         const cloneNode = resultNode.cloneNode(true);
         //newNode.innerHTML = resultNode.innerHTML;
         //newNode.classList.add('algolia-autocomplete')
-        cloneNode.parentNode.replaceChild(cloneNode, resultNode);
+        resultNode.parentNode.replaceChild(cloneNode, resultNode);
         //resultNode.innerHTML = resultHtml;
       }
       
