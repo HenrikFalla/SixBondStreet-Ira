@@ -8153,7 +8153,7 @@
 
     function renderSearchResults(resultsMarkup) {
       resultsContainer.innerHTML = resultsMarkup;
-      if(window.innerWidth < 768) return;
+      //if(window.innerWidth < 768) return;
       
       document.querySelectorAll('.aa-product-title').forEach(function(a){
         a.addEventListener('mouseup', function(evt){
