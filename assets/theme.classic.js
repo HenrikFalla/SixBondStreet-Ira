@@ -8153,6 +8153,27 @@
 
     function renderSearchResults(resultsMarkup) {
       resultsContainer.innerHTML = resultsMarkup;
+      if(window.innerWidth < 768) return;
+      
+      /*
+      const resultNode = document.querySelector('.algolia-autocomplete[style*=block]');
+      if(resultNode){
+        const cloneNode = resultNode.cloneNode(true);
+        //newNode.innerHTML = resultNode.innerHTML;
+        //newNode.classList.add('algolia-autocomplete')
+        resultNode.parentNode.replaceChild(cloneNode, resultNode);
+        //resultNode.innerHTML = resultHtml;
+      }
+      */
+      
+      //console.log(document.querySelectorAll('.aa-product-title'));
+      document.querySelectorAll('.aa-product-title').forEach(function(a){
+        a.addEventListener('mouseup', function(evt){
+          console.log('mouseup',evt)
+        })
+      });
+      
+      //console.log(n$1)
     }
 
     function highlightQuery(searchTerm, searchResult) {
