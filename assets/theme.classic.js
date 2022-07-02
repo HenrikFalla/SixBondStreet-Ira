@@ -8157,8 +8157,10 @@
       
       const resultNode = document.querySelector('.algolia-autocomplete[style*=block]');
       if(resultNode){
-        const resultHtml = resultNode.innerHTML;
-        resultNode.innerHTML = resultHtml;
+        const newNode = document.createElement('div');
+        newNode.innerHTML = resultNode.innerHTML;
+        resultNode.parentNode.replaceChild(newNode, resultNode);
+        //resultNode.innerHTML = resultHtml;
       }
       
       /*
