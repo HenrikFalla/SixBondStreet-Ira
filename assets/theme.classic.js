@@ -8157,10 +8157,10 @@
       
       const resultNode = document.querySelector('.algolia-autocomplete[style*=block]');
       if(resultNode){
-        const newNode = document.createElement('div');
-        newNode.innerHTML = resultNode.innerHTML;
-        newNode.classList.add('algolia-autocomplete')
-        resultNode.parentNode.replaceChild(newNode, resultNode);
+        const cloneNode = resultNode.cloneNode(true);
+        //newNode.innerHTML = resultNode.innerHTML;
+        //newNode.classList.add('algolia-autocomplete')
+        cloneNode.parentNode.replaceChild(cloneNode, resultNode);
         //resultNode.innerHTML = resultHtml;
       }
       
