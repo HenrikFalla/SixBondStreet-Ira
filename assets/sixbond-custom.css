@@ -1444,6 +1444,6 @@ img#trygg-logo {
   }
   .algolia-autocomplete > .aa-dropdown-menu > .aa-columns-container .aa-dropdown-menu .aa-product-title, 
   .algolia-autocomplete > .aa-dropdown-menu > .aa-columns-container .aa-dropdown-menu .aa-product-info {
-    white-space: normal;
+    white-space: normal !important;
   }
 }
