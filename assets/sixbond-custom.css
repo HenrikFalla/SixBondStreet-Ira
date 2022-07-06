@@ -1433,13 +1433,13 @@ img#trygg-logo {
 
 @media screen and (max-width: 767px){
   .algolia-autocomplete {
-    height: 100vh;
+    height: 100vh !important;
   }
   .algolia-autocomplete > .aa-dropdown-menu,
   .algolia-autocomplete > .aa-columns-container {
-    height: 100%;
+    height: 100% !important;
   }
   .algolia-autocomplete > .aa-columns-container {
-    overflow-y: auto;
+    overflow-y: auto !important;
   }
 }
