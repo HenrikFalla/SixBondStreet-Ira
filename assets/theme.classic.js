@@ -8161,7 +8161,7 @@
         });
       } else {
         document.querySelectorAll('.aa-product-title').forEach(function(a){
-          a.addEventListener('click', function(evt){
+          a.addEventListener('touchend', function(evt){
             window.location.href = this.href;
           })
         });
