@@ -1440,7 +1440,7 @@ img#trygg-logo {
     height: 100% !important;
   }
   .algolia-autocomplete > .aa-dropdown-menu > .aa-columns-container {
-    overflow-y: auto !important;
+    overflow-y: auto;
   }
   .algolia-autocomplete > .aa-dropdown-menu > .aa-columns-container .aa-product-title, 
   .algolia-autocomplete > .aa-dropdown-menu > .aa-columns-container .aa-product-info {
