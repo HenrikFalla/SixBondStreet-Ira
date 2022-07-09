@@ -8229,6 +8229,16 @@
     const input = n$1('[data-input]', node);
     const clear = n$1('[data-clear]', node);
     const resultsContainer = n$1('[data-results]', node);
+    const headerSearchIcon = document.querySelector('header .header__icon-touch--search');
+    const overlay = document.querySelector('.quick-search__overlay');
+    const quickSearch = document.querySelector('[data-quick-search]');
+    headerSearchIcon.addEventListener('click', function(evt){
+      quickSearch.classList.add('active', 'visible');
+    });
+    overlay.addEventListener('click', function(evt){
+      quickSearch.classList.remove('active', 'visible');
+    });
+	
     //const focusTrap = createFocusTrap(node); // This gets replaced with a focus trapping util on `open` however
 
     //const overlayClick = e$2(overlay, 'click', close);
