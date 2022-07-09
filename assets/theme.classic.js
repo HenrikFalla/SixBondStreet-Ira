@@ -8153,19 +8153,19 @@
 
     function renderSearchResults(resultsMarkup) {
       resultsContainer.innerHTML = resultsMarkup;
-      if(window.innerWidth > 767){
-        document.querySelectorAll('.aa-product-title').forEach(function(a){
-          a.addEventListener('mouseup', function(evt){
-            window.location.href = this.href;
-          })
-        });
-      } else {
-        document.querySelectorAll('.aa-product-title').forEach(function(a){
-          a.addEventListener('touchend', function(evt){
-            window.location.href = this.href;
-          })
-        });
-      }
+//       if(window.innerWidth > 767){
+//         document.querySelectorAll('.aa-product-title').forEach(function(a){
+//           a.addEventListener('mouseup', function(evt){
+//             window.location.href = this.href;
+//           })
+//         });
+//       } else {
+//         document.querySelectorAll('.aa-product-title').forEach(function(a){
+//           a.addEventListener('touchend', function(evt){
+//             window.location.href = this.href;
+//           })
+//         });
+//       }
       
       //console.log(n$1)
     }
@@ -8244,13 +8244,22 @@
     const input = n$1('[data-input]', node);
     const clear = n$1('[data-clear]', node);
     const resultsContainer = n$1('[data-results]', node);
-    const focusTrap = createFocusTrap(node); // This gets replaced with a focus trapping util on `open` however
-
-    const overlayClick = e$2(overlay, 'click', close);
-    const clearClick = e$2(clear, 'click', reset);
-    const keyDown = e$2(node, 'keydown', checkEscape);
-    const inputChange = e$2(input, 'input', handleInput);
-    const predictiveSearch = new PredictiveSearch(resultsContainer);
+//     const focusTrap = createFocusTrap(node); // This gets replaced with a focus trapping util on `open` however
+//     const overlayClick = e$2(overlay, 'click', close);
+//     const clearClick = e$2(clear, 'click', reset);
+//     const keyDown = e$2(node, 'keydown', checkEscape);
+//     const inputChange = e$2(input, 'input', handleInput);
+//     const predictiveSearch = new PredictiveSearch(resultsContainer);
+    
+    const headerSearchIcon = document.querySelector('header .header__icon-touch--search');
+    const search_overlay = document.querySelector('.quick-search__overlay');
+    const quickSearch = document.querySelector('[data-quick-search]');
+    headerSearchIcon.addEventListener('click', function(evt){
+      quickSearch.classList.add('active', 'visible');
+    });
+    search_overlay.addEventListener('click', function(evt){
+      quickSearch.classList.remove('active', 'visible');
+    });
 
     function handleInput(e) {
       let populated = e.target.value !== '';
