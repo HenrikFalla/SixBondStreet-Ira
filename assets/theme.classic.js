@@ -10189,7 +10189,7 @@
       const menuButton = n$1('[data-js-menu-button]', this.container);
       const searchButton = n$1('[data-search]', this.container);
       const space = n$1('[data-header-space]', document);
-      //const menu$1 = menu(n$1('[data-drawer-menu]'));
+      const menu$1 = menu(n$1('[data-drawer-menu]'));
       const quickSearch = QuickSearch(n$1('[data-quick-search]', this.container));
       const quickCart = QuickCart(n$1('[data-quick-cart]', this.container));
       const navigation = Navigation(n$1('[data-navigation]', this.container)); // These all return a function for cleanup
@@ -10201,7 +10201,7 @@
         setTimeout(() => u(cartIndicator, 'visible'), 500);
         count.innerHTML = cart.item_count;
       }), 
-	//e$2(menuButton, 'click', preventDefault(menu$1.open)), 
+	e$2(menuButton, 'click', preventDefault(menu$1.open)), 
 e$2(searchButton, 'click', preventDefault(quickSearch.open)), e$2(cartIcon, 'click', preventDefault(quickCart.open))]; // Components return a destroy function for cleanup
 
       this.components = [quickSearch, quickCart, navigation]; // menu$1,  Our header is always sticky (with position: sticky) however at some
@@ -10357,7 +10357,7 @@ e$2(searchButton, 'click', preventDefault(quickSearch.open)), e$2(cartIcon, 'cli
 
     open() {
       u(this.container, 'visible');
-      focusTrap.activate();
+      //focusTrap.activate();
     },
 
     close() {
