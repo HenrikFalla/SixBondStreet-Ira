@@ -8248,8 +8248,8 @@
 //     const overlayClick = e$2(overlay, 'click', close);
 //     const clearClick = e$2(clear, 'click', reset);
 //     const keyDown = e$2(node, 'keydown', checkEscape);
-    const inputChange = e$2(input, 'input', handleInput);
-    const predictiveSearch = new PredictiveSearch(resultsContainer);
+//     const inputChange = e$2(input, 'input', handleInput);
+//     const predictiveSearch = new PredictiveSearch(resultsContainer);
     
     const headerSearchIcon = document.querySelector('header .header__icon-touch--search');
     const search_overlay = document.querySelector('.quick-search__overlay');
@@ -10189,7 +10189,7 @@
       const menuButton = n$1('[data-js-menu-button]', this.container);
       const searchButton = n$1('[data-search]', this.container);
       const space = n$1('[data-header-space]', document);
-      const menu$1 = menu(n$1('[data-drawer-menu]'));
+      //const menu$1 = menu(n$1('[data-drawer-menu]'));
       const quickSearch = QuickSearch(n$1('[data-quick-search]', this.container));
       const quickCart = QuickCart(n$1('[data-quick-cart]', this.container));
       const navigation = Navigation(n$1('[data-navigation]', this.container)); // These all return a function for cleanup
@@ -10200,9 +10200,11 @@
         i$1(cartIndicator, 'visible');
         setTimeout(() => u(cartIndicator, 'visible'), 500);
         count.innerHTML = cart.item_count;
-      }), e$2(menuButton, 'click', preventDefault(menu$1.open)), e$2(searchButton, 'click', preventDefault(quickSearch.open)), e$2(cartIcon, 'click', preventDefault(quickCart.open))]; // Components return a destroy function for cleanup
+      }), 
+	//e$2(menuButton, 'click', preventDefault(menu$1.open)), 
+e$2(searchButton, 'click', preventDefault(quickSearch.open)), e$2(cartIcon, 'click', preventDefault(quickCart.open))]; // Components return a destroy function for cleanup
 
-      this.components = [menu$1, quickSearch, quickCart, navigation]; // Our header is always sticky (with position: sticky) however at some
+      this.components = [quickSearch, quickCart, navigation]; // menu$1,  Our header is always sticky (with position: sticky) however at some
       // point we want to adjust the styling (eg. box-shadow) so we toggle
       // the is-sticky class when our arbitrary space element (.header__space)
       // goes in and out of the viewport.
