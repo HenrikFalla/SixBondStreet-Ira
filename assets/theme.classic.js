@@ -8153,19 +8153,19 @@
 
     function renderSearchResults(resultsMarkup) {
       resultsContainer.innerHTML = resultsMarkup;
-      if(window.innerWidth > 767){
+//       if(window.innerWidth > 767){
 //         document.querySelectorAll('.aa-product-title').forEach(function(a){
 //           a.addEventListener('mouseup', function(evt){
 //             window.location.href = this.href;
 //           })
 //         });
-      } else {
-        document.querySelectorAll('.aa-product-title').forEach(function(a){
-          a.addEventListener('touchend', function(evt){
-            window.location.href = this.href;
-          })
-        });
-      }
+//       } else {
+//         document.querySelectorAll('.aa-product-title').forEach(function(a){
+//           a.addEventListener('touchend', function(evt){
+//             window.location.href = this.href;
+//           })
+//         });
+//       }
       
       //console.log(n$1)
     }
