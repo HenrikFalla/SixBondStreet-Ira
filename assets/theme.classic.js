@@ -10167,6 +10167,7 @@
       const space = n$1('[data-header-space]', document);
       const menu$1 = menu(n$1('[data-drawer-menu]'));
       //const quickSearch = QuickSearch(n$1('[data-quick-search]', this.container));
+		const quickSearch = null
       const quickCart = QuickCart(n$1('[data-quick-cart]', this.container));
       const navigation = Navigation(n$1('[data-navigation]', this.container)); // These all return a function for cleanup
 
