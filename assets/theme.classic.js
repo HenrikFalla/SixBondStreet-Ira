@@ -8229,13 +8229,13 @@
     const input = n$1('[data-input]', node);
     const clear = n$1('[data-clear]', node);
     const resultsContainer = n$1('[data-results]', node);
-    const focusTrap = createFocusTrap(node); // This gets replaced with a focus trapping util on `open` however
+//     const focusTrap = createFocusTrap(node); // This gets replaced with a focus trapping util on `open` however
 
-    const overlayClick = e$2(overlay, 'click', close);
-    const clearClick = e$2(clear, 'click', reset);
-    const keyDown = e$2(node, 'keydown', checkEscape);
-    const inputChange = e$2(input, 'input', handleInput);
-    const predictiveSearch = new PredictiveSearch(resultsContainer);
+//     const overlayClick = e$2(overlay, 'click', close);
+//     const clearClick = e$2(clear, 'click', reset);
+//     const keyDown = e$2(node, 'keydown', checkEscape);
+//     const inputChange = e$2(input, 'input', handleInput);
+//     const predictiveSearch = new PredictiveSearch(resultsContainer);
 
     function handleInput(e) {
       let populated = e.target.value !== '';
@@ -10166,8 +10166,7 @@
       const searchButton = n$1('[data-search]', this.container);
       const space = n$1('[data-header-space]', document);
       const menu$1 = menu(n$1('[data-drawer-menu]'));
-      //const quickSearch = QuickSearch(n$1('[data-quick-search]', this.container));
-		const quickSearch = null
+      const quickSearch = QuickSearch(n$1('[data-quick-search]', this.container));
       const quickCart = QuickCart(n$1('[data-quick-cart]', this.container));
       const navigation = Navigation(n$1('[data-navigation]', this.container)); // These all return a function for cleanup
 
