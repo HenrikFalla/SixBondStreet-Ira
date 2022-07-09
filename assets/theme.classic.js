@@ -3816,7 +3816,7 @@
         u(node, classes$8.active);
       }, 50);
       node.setAttribute('aria-hidden', 'false');
-      focusTrap.activate();
+      //focusTrap.activate();
       disableBodyScroll(node, {
         allowTouchMove: el => {
           while (el && el !== document.body) {
@@ -8287,7 +8287,7 @@
     function open() {
       u(node, classes$5.active);
       setTimeout(() => {
-        focusTrap.activate();
+        //focusTrap.activate();
         disableBodyScroll(node, {
           reserveScrollBarGap: true
         });
@@ -8450,7 +8450,7 @@
     function open(options = {}) {
       u(node, 'active');
       setTimeout(() => {
-        focusTrap.activate();
+        //focusTrap.activate();
         disableBodyScroll(node, {
           reserveScrollBarGap: true
         });
@@ -10031,7 +10031,7 @@
       u(node, classes$4.active);
       setTimeout(() => {
         u(node, classes$4.visible);
-        focusTrap.activate();
+        //focusTrap.activate();
         disableBodyScroll(node, {
           allowTouchMove: el => {
             while (el && el !== document.body) {
