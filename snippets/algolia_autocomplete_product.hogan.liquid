@@ -1,8 +1,10 @@
 <div data-algolia-index="[[ _index ]]" data-algolia-position="[[ _position ]]" data-algolia-queryid="[[ queryID ]]" data-algolia-objectid="[[ objectID ]]" class="aa-product">
   <div class="aa-product-picture" style="background-image: url('[[# helpers.thumbImage ]][[/ helpers.thumbImage ]]')"></div>
   <div class="aa-product-text">
-    <p class="aa-product-title">
-      [[# helpers.fullHTMLTitle ]][[/ helpers.fullHTMLTitle ]]
+    <p class="ais-hit--title">
+      <a data-algolia-index="[[ index ]]" data-algolia-position="[[ productPosition ]]" data-algolia-queryid="[[ queryID ]]" data-algolia-objectid="[[ objectID ]]" href="[[# helpers.instantsearchLink ]][[/ helpers.instantsearchLink ]]" onclick="void(0)" title="[[# helpers.fullTitle ]][[/ helpers.fullTitle ]]">
+        [[# helpers.fullEscapedHTMLTitle ]][[/ helpers.fullEscapedHTMLTitle ]]
+      </a>
     </p>
     <p class="aa-product-info">
       [[# product_type ]]
