@@ -80,10 +80,10 @@
 
     if (params.templates.footer) {
       templates.footer = function displayFooter(props, content) {
-        
+        if (!content.nbHits) return null;
         if (content.nbHits <= params.hitsPerPage) return null;
         if (!algolia.config.instant_search_enabled) return null;
-        
+        if (!algolia.config.autocomplete_see_all) return null;
 
         return algolia.render(params.templates.footer, {
           query: props.query,
@@ -271,7 +271,7 @@
             articles: algolia.config.index_articles,
             collections: algolia.config.index_collections,
             pages: algolia.config.index_pages,
-            footer: algolia.config.instant_search_enabled ,
+            footer: algolia.config.instant_search_enabled && algolia.config.autocomplete_see_all,
             poweredBy: algolia.config.powered_by,
             products: algolia.config.index_products,
           },
