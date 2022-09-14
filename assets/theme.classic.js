@@ -8244,12 +8244,16 @@
     const input = n$1('[data-input]', node);
     const clear = n$1('[data-clear]', node);
     const resultsContainer = n$1('[data-results]', node);
-//     const focusTrap = createFocusTrap(node); // This gets replaced with a focus trapping util on `open` however
-//     const overlayClick = e$2(overlay, 'click', close);
-//     const clearClick = e$2(clear, 'click', reset);
-//     const keyDown = e$2(node, 'keydown', checkEscape);
-//     const inputChange = e$2(input, 'input', handleInput);
-//     const predictiveSearch = new PredictiveSearch(resultsContainer);
+    
+    
+    const focusTrap = createFocusTrap(node); // This gets replaced with a focus trapping util on `open` however
+    const overlayClick = e$2(overlay, 'click', close);
+    const clearClick = e$2(clear, 'click', reset);
+    const keyDown = e$2(node, 'keydown', checkEscape);
+    const inputChange = e$2(input, 'input', handleInput);
+    const predictiveSearch = new PredictiveSearch(resultsContainer);
+
+
     
     const headerSearchIcon = document.querySelector('header .header__icon-touch--search');
     const search_overlay = document.querySelector('.quick-search__overlay');
@@ -8287,7 +8291,7 @@
     function open() {
       u(node, classes$5.active);
       setTimeout(() => {
-        //focusTrap.activate();
+        focusTrap.activate();
         disableBodyScroll(node, {
           reserveScrollBarGap: true
         });
@@ -8296,7 +8300,7 @@
     }
 
     function close() {
-      console.log("r");
+
       i$1(node, classes$5.visible);
       setTimeout(() => {
         i$1(node, classes$5.active);
