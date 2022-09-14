@@ -8245,7 +8245,8 @@
     const clear = n$1('[data-clear]', node);
     const resultsContainer = n$1('[data-results]', node);
     var focusTrap = createFocusTrap(node, {
-      allowOutsideClick: true
+      allowOutsideClick: true,
+       escapeDeactivates: false
     });
     // const focusTrap = createFocusTrap(node); // This gets replaced with a focus trapping util on `open` however
     const overlayClick = e$2(overlay, 'click', close);
