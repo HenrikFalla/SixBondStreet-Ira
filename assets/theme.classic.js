@@ -8285,7 +8285,7 @@
     }
 
     function open() {
-      console.log("rr");
+
       u(node, classes$5.active);
       setTimeout(() => {
         //focusTrap.activate();
@@ -8297,7 +8297,7 @@
     }
 
     function close() {
-
+      console.log("rr");
       i$1(node, classes$5.visible);
       setTimeout(() => {
         i$1(node, classes$5.active);
