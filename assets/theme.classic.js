@@ -8244,7 +8244,7 @@
     const input = n$1('[data-input]', node);
     const clear = n$1('[data-clear]', node);
     const resultsContainer = n$1('[data-results]', node);
-       const focusTrap = createFocusTrap(node, {
+    var focusTrap = createFocusTrap(node, {
       allowOutsideClick: true
     });
     // const focusTrap = createFocusTrap(node); // This gets replaced with a focus trapping util on `open` however
