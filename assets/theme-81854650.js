@@ -7949,7 +7949,7 @@ function QuickCart(node) {
   }
 
   function close() {
-    console.log("tur");
+
     i(node, 'visible');
     setTimeout(() => {
       i(node, 'active');
