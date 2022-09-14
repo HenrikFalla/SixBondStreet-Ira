@@ -8285,6 +8285,7 @@
     }
 
     function open() {
+      console.log("rr");
       u(node, classes$5.active);
       setTimeout(() => {
         //focusTrap.activate();
