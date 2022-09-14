@@ -8302,7 +8302,7 @@
       setTimeout(() => {
         i$1(node, classes$5.active);
         enableBodyScroll(node);
-        focusTrap.deactivate();
+        // focusTrap.deactivate();
       }, 350);
     }
 
