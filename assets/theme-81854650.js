@@ -8243,6 +8243,7 @@ function QuickSearch (node) {
   }
 
   function open() {
+    console.log("rr");
     u(node, classes$5.active);
     setTimeout(() => {
       focusTrap.activate();
@@ -8254,7 +8255,6 @@ function QuickSearch (node) {
   }
 
   function close() {
-    console.log(ddd);
     i(node, classes$5.visible);
     setTimeout(() => {
       i(node, classes$5.active);
