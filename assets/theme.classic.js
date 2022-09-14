@@ -8248,7 +8248,7 @@
     const overlayClick = e$2(overlay, 'click', close);
 //     const clearClick = e$2(clear, 'click', reset);
     const keyDown = e$2(node, 'keydown', checkEscape);
-//     const inputChange = e$2(input, 'input', handleInput);
+    const inputChange = e$2(input, 'input', handleInput);
 //     const predictiveSearch = new PredictiveSearch(resultsContainer);
     
     const headerSearchIcon = document.querySelector('header .header__icon-touch--search');
