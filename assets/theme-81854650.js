@@ -8254,7 +8254,6 @@ function QuickSearch (node) {
   }
 
   function close() {
-        console.log("tur");
     i(node, classes$5.visible);
     setTimeout(() => {
       i(node, classes$5.active);
