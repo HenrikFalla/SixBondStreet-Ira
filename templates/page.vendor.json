@@ -4,9 +4,15 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "vendor": {
+      "type": "vendor-page",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "vendor"
   ]
 }
