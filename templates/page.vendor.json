@@ -1,19 +1,12 @@
-{"sections":
-    {
-        "main":
-        {
-            "type":"main-page",
-            "settings":{
-                
-            }
-        },
-        "vendor": 
-        {
-            "type": "vendor-page",
-            "settings": {
-
-            }
-        }
-    },
-    "order":["main"]
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
