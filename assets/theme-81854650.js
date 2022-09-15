@@ -7949,6 +7949,7 @@ function QuickCart(node) {
   }
 
   function close() {
+
     i(node, 'visible');
     setTimeout(() => {
       i(node, 'active');

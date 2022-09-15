@@ -1430,3 +1430,20 @@ img#trygg-logo {
     z-index: 10000;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 767px){
+  .algolia-autocomplete {
+    height: calc(100vh - 84px) !important;
+  }
+  .algolia-autocomplete > .aa-dropdown-menu,
+  .algolia-autocomplete > .aa-dropdown-menu > .aa-columns-container {
+    height: 100% !important;
+  }
+  .algolia-autocomplete > .aa-dropdown-menu > .aa-columns-container {
+    overflow-y: auto;
+  }
+  .algolia-autocomplete > .aa-dropdown-menu > .aa-columns-container .aa-product-title, 
+  .algolia-autocomplete > .aa-dropdown-menu > .aa-columns-container .aa-product-info {
+    white-space: normal;
+  }
+}

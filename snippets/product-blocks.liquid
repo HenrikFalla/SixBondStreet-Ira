@@ -38,7 +38,14 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
         <div class="product__spacer" style="height: {{block.settings.size}}px;"></div>
       {%- when 'vendor' -%}
         <div class="product__vendor fs-body-base c-meta">
-          {{product.vendor | link_to_vendor}}
+          {%- assign vendorHandle = product.vendor | handleize | strip | escape -%}
+			    {%- if collections[vendorHandle].products.size > 0 -%}
+          <a href="{{ collections[vendorHandle].url }}">
+            <div class="product__vendor ff-meta fs-meta c-meta found">{{ product.vendor }}</div>
+          </a>
+          {%- else -%}
+          <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
+          {%- endif -%}
         </div>
       {%- when 'price' -%}
         <div class="product__price fs-body-base">
@@ -52,22 +59,22 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
           </s>
           {% render 'unit-price' item: current_variant %}
         </div>
-  {%- when 'lead_time' -%}
-<div class="product-lead-time">
-               {% assign instockorb= '<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>'   %}
+      {%- when 'lead_time' -%}
+        <div class="product-lead-time">
+            {% assign instockorb= '<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>'   %}
 
-              <div class="trigger_orb" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}>{{instockorb}}</div>
-          	  <span class="variant-inventory" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}><span>{{ current_variant.inventory_quantity }}</span> på lager.</span>
-              <span data-stock-availability class="dom-message" {% if current_variant.inventory_quantity > 0 %}style="display:none"{% endif %}>
-                Leveringstid: <span>
-                {% if current_variant.metafields.product_data.leveringstid != blank %}
-                	{{ current_variant.metafields.product_data.leveringstid }}
-                {% else %}
-            	    {{ product.metafields.product_data.leveringstid }}
-                {% endif %}
-                </span>
+            <div class="trigger_orb" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}>{{instockorb}}</div>
+            <span class="variant-inventory" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}><span>{{ current_variant.inventory_quantity }}</span> på lager.</span>
+            <span data-stock-availability class="dom-message" {% if current_variant.inventory_quantity > 0 %}style="display:none"{% endif %}>
+              Leveringstid: <span>
+              {% if current_variant.metafields.product_data.leveringstid != blank %}
+                {{ current_variant.metafields.product_data.leveringstid }}
+              {% else %}
+                {{ product.metafields.product_data.leveringstid }}
+              {% endif %}
               </span>
-  </div>         
+            </span>
+          </div>         
   
       {%- when 'sku' -%}
         {% if request.design_mode or current_variant.sku != blank %}
@@ -426,11 +433,16 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
             <br>
         </div>
         {% endif %}
-      {%- when 'inventory_counter' -%}
+    {%- when 'inventory_counter' -%}
         {%- render 'inventory-counter' with
           product: product,
           inventory_max: block.settings.inventory_max,
           low_inventory_threshold: block.settings.low_inventory_threshold,
+          current_variant: current_variant,
+        -%}
+    {%- when 'sharptar_3d_viewer' -%}
+        {%- render 'sharpstar-3d-viewer' with
+          product: product,
           current_variant: current_variant,
         -%}
     {% endcase %}
