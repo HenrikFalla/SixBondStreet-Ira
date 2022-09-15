@@ -84,8 +84,9 @@
 			{%- assign vendorHandle = product.vendor | handleize | strip | escape -%}
 			{%- if collections[vendorHandle].products.size > 0 -%}
 			<a href="{{ collections[vendorHandle].url }}">
-			<div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div>
+			<div class="product__vendor ff-meta fs-meta c-meta found">{{ product.vendor }}</div>
             </a>
+            <span>{{ vendorHandle }}</span>
 			{%- else -%}
 			<div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
 			{%- endif -%}
