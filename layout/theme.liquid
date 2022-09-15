@@ -68,7 +68,7 @@
     <!-- SixBondStreet CUSTOM -->
 
     {% if template.name == 'product' %}
-      {{ 'product-page.scss.css' | asset_url | stylesheet_tag }}
+      {{ 'product-page.css' | asset_url | stylesheet_tag }}
     {% elsif template.name == 'index'%}
       {{ 'index.scss.css' | asset_url | stylesheet_tag }}
     {% endif %}
