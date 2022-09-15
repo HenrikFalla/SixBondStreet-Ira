@@ -209,7 +209,7 @@
             {% assign i-size = product.media.size | minus: 1 %}
 	        {% for i in (3..i-size) %}
 		        <div class="product__media-item {% if product.media[i].id == featured_media.id %}initial{% endif %}" data-slide>
-			        {% render 'media', media: product.media[i], featured_media: featured_media, loop_video: enable_video_looping, crop: crop, sizes: '500x500'  %}
+			        {% render 'media', media: product.media[i], featured_media: featured_media, loop_video: enable_video_looping, crop: crop  %}
 		        </div>
 	        {% endfor %}
 
