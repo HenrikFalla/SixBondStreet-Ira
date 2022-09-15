@@ -82,7 +82,6 @@
       <!-- SixBondStreet CUSTOM -->
 		{%- if product.handle -%}
 			{%- assign vendorHandle = product.vendor | handleize | strip | escape -%}
-      <span>{{ vendorHandle }}</span>
 			{%- if collections[vendorHandle].products.size > 0 -%}
 			<a href="{{ collections[vendorHandle].url }}">
 			<div class="product__vendor ff-meta fs-meta c-meta found">{{ product.vendor }}</div>
