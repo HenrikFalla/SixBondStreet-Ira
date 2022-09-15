@@ -106,6 +106,13 @@
   {% endif %}
 
   <div class="header__right">
+    {% comment %} Custom SixBondStreet Henrik {% endcomment %}
+    {%- if style == 'inline' -%}
+      <div class="header__links-alt header__secondary {{ secondary_menu.handle }}" data-navigation>
+      {% render 'navigation-alt' with secondary_menu: links_alt, mega_navs: blocks %}
+      </div>
+    {%- endif -%}
+    {% comment %} End Custom SixBondStreet Henrik {% endcomment %}
     <a class="header__icon-touch header__icon-touch--search no-transition" href="{{ routes.search_url }}" data-search title="{{'layout.navigation.search' | t }}">
       {% render 'icon-button' with icon: 'search' %}
     </a>
