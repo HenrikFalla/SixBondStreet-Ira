@@ -5,8 +5,6 @@
 
 {% assign counter_divided_by_3 = counter | divided_by: 3 | floor %}
 
-{% render 'pages--page' %}
-
 <div class="vendor-list block-grid three-up mobile one-up">
 {% for product_vendor in shop.vendors %}
 	{% assign its_a_match = false %}
