@@ -91,7 +91,6 @@
           "label": "Lovnader",
           "class": "promises",
           "settings": [
-            
             {
               "type": "range",
               "id": "qty-promise",
