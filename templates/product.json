@@ -80,18 +80,10 @@
           }
         },
         "4cf98af7-2f74-4d50-8b03-2c6264b0dbf8": {
-          "type": "sharpstar_3d_viewer",
+          "type": "sharptar_3d_viewer",
           "disabled": true,
           "settings": {
           }
-        },
-        "promises_block": {
-          "type": "promises",
-          "settings": [
-            {
-
-            }
-          ]
         }
       },
       "block_order": [
@@ -103,7 +95,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "promises_block",
         "description",
         "f138415d-c8df-4ec6-851d-147d64d93a46",
         "503bed45-a61e-444e-b1ed-384e9e5ac9ff",
