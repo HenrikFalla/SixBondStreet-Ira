@@ -114,7 +114,7 @@
             {%- assign sale_price = product.price | money -%}
             {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
           {% else %}
-            <span class="sale">{{ product.price | money }}<span>
+            <span class="sale sxbs-on-sale">{{ product.price | money }}<span>
           {% endif %}
           {% render 'unit-price' item: current_variant %}
 
