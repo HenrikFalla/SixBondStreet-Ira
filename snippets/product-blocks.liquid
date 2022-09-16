@@ -49,7 +49,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
         </div>
       {%- when 'price' -%}
         <div class="product__price fs-body-base">
-          <span data-price>{{ current_variant.price | money }}</span>
+          <span data-price {% if current_variant.compare_at_price > current_variant.price %}class="sxbs-on-sale"{% endif %}>{{ current_variant.price | money }}</span>
 
           <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
           <s data-compare-price>
