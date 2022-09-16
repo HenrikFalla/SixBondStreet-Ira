@@ -85,9 +85,8 @@
           "settings": {
           }
         },
-        "promises": {
+        "promises_block": {
           "type": "promises",
-          "label": "Lovnader",
           "settings": [
             {
 
@@ -104,7 +103,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "promises",
+        "promises_block",
         "description",
         "f138415d-c8df-4ec6-851d-147d64d93a46",
         "503bed45-a61e-444e-b1ed-384e9e5ac9ff",
