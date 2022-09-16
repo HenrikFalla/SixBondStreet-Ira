@@ -87,11 +87,11 @@
         },
         "promises": {
           "type": "promises",
+          "id": "promises",
+          "label": "Lovnader",
+          "class": "promises",
           "settings": [
-            {
-              "id": "promises",
-              "label": "Promises"
-            },
+            
             {
               "type": "range",
               "id": "qty-promise",
