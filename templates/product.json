@@ -84,6 +84,15 @@
           "disabled": true,
           "settings": {
           }
+        },
+        "promises": {
+          "type": "promises",
+          "label": "Lovnader",
+          "settings": [
+            {
+              
+            }
+          ]
         }
       },
       "block_order": [
