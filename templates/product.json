@@ -91,29 +91,80 @@
             {
               "id": "promises",
               "label": "Promises"
-            }
-          ],
-          "blocks": [
+            },
             {
-              "type": "promise",
-              "name": "Promise",
-              "settings": [
-                {
-                  "type": "text",
-                  "id": "promise-title",
-                  "label": "Title"
-                },
-                {
-                  "type": "image_picker",
-                  "id": "promise-image",
-                  "label": "Image"
-                },
-                {
-                  "type": "url",
-                  "id": "promise-url",
-                  "label": "URL"
-                }
-              ]
+              "type": "range",
+              "id": "qty-promise",
+              "min": 1,
+              "max": 4,
+              "unit": "antall",
+              "step": 1,
+              "label": "Antall synlige",
+              "default": 3
+            },
+            {
+              "type": "text",
+              "id": "promise-1-text",
+              "label": "Lovnad 1"
+            },
+            {
+              "type": "image_picker",
+              "id": "promise-1-image",
+              "class": "promise-image",
+              "label": "Lovnad 1 Bilde"
+            },
+            {
+              "type": "url",
+              "id": "promise-1-url",
+              "label": "Lovnad 1 Url"
+            },
+            {
+              "type": "text",
+              "id": "promise-2-text",
+              "label": "Lovnad 2"
+            },
+            {
+              "type": "image_picker",
+              "id": "promise-2-image",
+              "class": "promise-image",
+              "label": "Lovnad 2 Bilde"
+            },
+            {
+              "type": "url",
+              "id": "promise-2-url",
+              "label": "Lovnad 2 Url"
+            },
+            {
+              "type": "text",
+              "id": "promise-3-text",
+              "label": "Lovnad 3"
+            },
+            {
+              "type": "image_picker",
+              "id": "promise-3-image",
+              "class": "promise-image",
+              "label": "Lovnad 3 Bilde"
+            },
+            {
+              "type": "url",
+              "id": "promise-3-url",
+              "label": "Lovnad 3 Url"
+            },
+            {
+              "type": "text",
+              "id": "promise-4-text",
+              "label": "Lovnad 4"
+            },
+            {
+              "type": "image_picker",
+              "id": "promise-4-image",
+              "class": "promise-image",
+              "label": "Lovnad 4 Bilde"
+            },
+            {
+              "type": "url",
+              "id": "promise-4-url",
+              "label": "Lovnad 4 Url"
             }
           ]
         }
