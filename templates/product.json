@@ -84,6 +84,38 @@
           "disabled": true,
           "settings": {
           }
+        },
+        "promises": {
+          "type": "promises",
+          "settings": [
+            {
+              "id": "promises",
+              "label": "Promises"
+            }
+          ],
+          "blocks": [
+            {
+              "type": "promise",
+              "name": "Promise",
+              "settings": [
+                {
+                  "type": "text",
+                  "id": "promise-title",
+                  "label": "Title"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "promise-image",
+                  "label": "Image"
+                },
+                {
+                  "type": "url",
+                  "id": "promise-url",
+                  "label": "URL"
+                }
+              ]
+            }
+          ]
         }
       },
       "block_order": [
