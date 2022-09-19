@@ -644,7 +644,7 @@
             "text_max_width": 28,
             "link_text": "Les mer her",
             "link": "shopify:\/\/pages\/var-designer",
-            "text_position": "center_center",
+            "text_position": "left_bottom",
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
@@ -662,13 +662,13 @@
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "meta": "Inspirasjon",
-            "title": "Fjellhytte kolleksjonen",
-            "subheading": "<p>Vi introduserer vår nye fjellhytte kolleksjon med tekstilmøbler som passer perfekt på fjellhytta.<\/p>",
+            "meta": "Interiørtjenester",
+            "title": "Book en online interiørkonsultasjon",
+            "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. <\/p>",
             "text_max_width": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/fjellhytte-kolleksjonen",
-            "text_position": "center_center",
+            "link_text": "Book time her",
+            "link": "shopify:\/\/pages\/interiortjeneste",
+            "text_position": "center_bottom",
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
@@ -676,7 +676,7 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 20
+            "overlay_opacity": 30
           }
         }
       },
