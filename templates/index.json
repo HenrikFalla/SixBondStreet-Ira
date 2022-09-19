@@ -182,46 +182,6 @@
         "enable_full_width": false
       }
     },
-    "1655903749b7b25dde": {
-      "type": "slideshow",
-      "disabled": true,
-      "blocks": {
-        "1655903749038773c4-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner_forside_topp_hagemobler_2022_003.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/288A5168.jpg",
-            "focal_point": "center_center",
-            "focal_point_mobile": "center_center",
-            "video_url": "",
-            "meta": "North Hage SixBondStreet",
-            "title": "Årest hagemøbler",
-            "subheading": "<p>Årets møbler til uteområdet defineres som tidløse, elegante og romslige. Møblene er laget av ubehandlet teak. <\/p>",
-            "max_width_subheading": 30,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/north-hage-sixbondstreet",
-            "alignment": "center_center",
-            "color_heading": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_text_button": "#000000",
-            "color_background_button": "#f8f7f5",
-            "color_overlay": "#000000",
-            "opacity_overlay": 40
-          }
-        }
-      },
-      "block_order": [
-        "1655903749038773c4-0"
-      ],
-      "settings": {
-        "desktop_height": 65,
-        "mobile_height": 65,
-        "duration_autoplay": 4,
-        "enable_parallax": true,
-        "enable_full_width": true,
-        "color_dot": "#777777"
-      }
-    },
     "1655904214bdb65264": {
       "type": "2-column-mosaic-grid",
       "blocks": {
@@ -282,42 +242,39 @@
         "enable_full_width": false
       }
     },
-    "1655904219a65c7fad": {
-      "type": "slideshow",
+    "1663578893628202ea": {
+      "type": "2-column-mosaic-grid",
       "blocks": {
-        "1655904218536d6b97-0": {
-          "type": "image",
+        "1663578893011d0a65-0": {
+          "type": "medium_horizontal_rect",
           "settings": {
-            "image": "shopify:\/\/shop_images\/FredJonny_22_ToneKroken_22082020_S03_0727_v2IG.jpg",
-            "focal_point": "center_center",
-            "focal_point_mobile": "center_center",
+            "image": "shopify:\/\/shop_images\/600057_Breeze10_2PK_Grey_3_1800x1800_9683765d-de20-4ec9-91cc-035a639493be.jpg",
             "video_url": "",
-            "meta": "",
-            "title": "Merkevaresalg",
-            "subheading": "<p>Merkevaresalg med <span style=\"text-decoration:underline\"><strong>opptil 50% rabatt <\/strong><\/span>på en mengde møbler og interiørvarer. Nå har du muligheten til å sikre deg godbiter fra en av våre kjente merkevarer.<strong>Tilbudene gjelder fra 10.juni - 31. juli<\/strong><span style=\"text-decoration:underline\"><strong> 2022 <\/strong><\/span><strong>eller så langt lageret rekker.<\/strong><\/p>",
-            "max_width_subheading": 30,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/merkevaresalg",
-            "alignment": "right_center",
-            "color_heading": "#ffffff",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Peis uten pipe",
+            "subheading": "<p>Hold deg og gjestene dine varme utover høsten med hjelp fra en eller flere peiser fra TenderFlame.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/lun-opp-kjolige-sommerkvelder-med-en-utepeis-fra-tenderflame",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
             "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
             "color_text_button": "#000000",
-            "color_background_button": "#f8f7f5",
-            "color_overlay": "#000000",
-            "opacity_overlay": 40
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 30
           }
         }
       },
       "block_order": [
-        "1655904218536d6b97-0"
+        "1663578893011d0a65-0"
       ],
       "settings": {
-        "desktop_height": 65,
-        "mobile_height": 65,
-        "duration_autoplay": 4,
-        "enable_parallax": false,
-        "enable_full_width": true,
-        "color_dot": "#777777"
+        "enable_full_width": false
       }
     },
     "1655906078323d2266": {
@@ -357,6 +314,7 @@
         },
         "dbba427c-9d1b-429f-9a03-453c2f20271f": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/stue_rask_levering.jpg",
             "focal_point": "center_center",
@@ -379,6 +337,7 @@
         },
         "9a6e1083-45b6-495c-877f-eb60ca6285a9": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/forside_rask_levering_interior_mobil.jpg",
             "mobile_image": "shopify:\/\/shop_images\/forside_rask_levering_interior_mobil.jpg",
@@ -1060,9 +1019,8 @@
     "1652734830e13bb44f",
     "2-column-mosaic-grid",
     "165590230686a4951c",
-    "1655903749b7b25dde",
     "1655904214bdb65264",
-    "1655904219a65c7fad",
+    "1663578893628202ea",
     "1655906078323d2266",
     "16559052358ffed71f",
     "165597183990c0e2cb",
