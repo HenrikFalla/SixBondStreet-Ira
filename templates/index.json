@@ -265,7 +265,7 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 30
           }
         }
@@ -400,7 +400,7 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 40
           }
         }
@@ -530,7 +530,7 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 25
           }
         }
@@ -634,7 +634,7 @@
         "713f8bf9-3548-4765-b135-34ffdf05fc0b": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/plla_forside_trender_hoyoppl_003.jpg",
+            "image": "shopify:\/\/shop_images\/portrett_palla_svart_hvitt.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -658,7 +658,7 @@
         "ec2caef9-1eeb-4453-933b-974c644cfa55": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/lenox_rod_miljo.jpg",
+            "image": "shopify:\/\/shop_images\/nora_portrett_svarthvitt.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -668,7 +668,7 @@
             "text_max_width": 28,
             "link_text": "Book time her",
             "link": "shopify:\/\/pages\/interiortjeneste",
-            "text_position": "center_bottom",
+            "text_position": "right_top",
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
@@ -676,7 +676,7 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
