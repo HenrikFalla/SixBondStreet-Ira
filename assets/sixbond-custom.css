@@ -1310,7 +1310,7 @@ img#trygg-logo {
     body span.algolia-autocomplete {
         width: 70vw !important;
         max-width: calc(100vw - 50px);
-        right: 116px !important;
+        right: 133px !important;
         left: auto !important;
     }
 }
