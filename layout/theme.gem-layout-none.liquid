@@ -1,3 +1,10 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
 <!doctype html>
 
 <!--
@@ -122,96 +129,10 @@
 <!--End_Gem_Page_Header_Script-->
 </head>
 
-  <body class="
-    template-{{ request.page_type | handle }}
-    {% if settings.enable_section_borders %}show-borders{% endif %}
-  " {% if settings.cart_enable_ajax %} data-enable-cart-ajax="true" {% endif %}>
-    <div class="page">
-      <div class="theme-editor-scroll-offset"></div>
-
-      <div class="header__space" data-header-space></div>
-      {% section 'announcement-bar' %}
-      {% section 'header' %}
-      <main id="main" role='main' class="main">
-        {{ content_for_layout }}
-      </main>
-      {% section 'popup' %}
-      {% section 'extended-footer' %}
-      {% section 'footer' %}
-      {% render 'store-availability-modal' %}
-
-      {% if settings.enable_page_transitions %}
-      <div class="active" id="page-transition-overlay"></div>
-      <script>
-        var pageTransitionOverlay = document.getElementById("page-transition-overlay"),
-          internalReferrer = document.referrer.includes(document.location.origin),
-          winPerf = window.performance,
-          navTypeLegacy = winPerf && winPerf.navigation && winPerf.navigation.type,
-          navType = winPerf && winPerf.getEntriesByType && winPerf.getEntriesByType("navigation")[0] && winPerf.getEntriesByType("navigation")[0].type;
-
-        if (!internalReferrer || navType !== "navigate" || navTypeLegacy !== 0) {
-          {% comment %} 
-          goal is to avoid transitioning if it isn't a navigation throughout the site to improve performance 
-          {% endcomment %}
-          pageTransitionOverlay.className = "active skip-animation";
-          setTimeout(function () {
-            pageTransitionOverlay.className = "skip-animation";
-            setTimeout(function () { pageTransitionOverlay.className = ""; }, 1);
-          }, 1);
-        } else {
-          {% comment %} fallback if app js breaks {% endcomment %}
-          setTimeout(function () {
-            pageTransitionOverlay.className = "";
-          }, 500);
-        }
-      </script>
-      {% endif %}
-    </div>
-
-    {%- if request.page_type contains 'customers/' -%}
-    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
-    {%- endif -%}
-
-    {% comment %}
-    Set the following line to true to use the single theme.classic.js (no code-splitting, editable)
-    {% endcomment %}
-    {% assign useLegacyThemeJS = true %}
-
-    {% if useLegacyThemeJS %}
-    {% comment %}This is the classic monolithic build that is optionally used by intermediary theme devs who need to
-    edit the JS{% endcomment %}
-    <script src="{{ 'theme.classic.js' | asset_url }}"></script>
-    {% else %}
-    {% comment %}This is the ES Module for modern browsers. This features code splitting {% endcomment %}
-    <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
-
-    {% comment %}This is the fallback for browsers that don't support ES Modules, code-splitting is supported by
-    systemJS{% endcomment %}
-    <script nomodule src="{{ 's.js' | asset_url }}"></script>
-    <script nomodule>
-      System.import('{{ 'theme.nomodule.js' | asset_url }}');
-    </script>
-    {% endif %}
-
-    {% comment %}
-    Set the following line to true to import custom-events.js
-    {% endcomment %}
-    {% assign useCustomEvents = false %}
-
-    {% if useCustomEvents %}
-    <script src="{{ 'custom-events.js' | asset_url }}"></script>
-    {% endif %}
-  {% render 'nosto-tagging' %}
-  <!-- PickyStory code, do not modify. Safe to remove after the app is uninstalled -->
-  {% if content_for_header contains 'pickystory' %}
-    {% render 'pickystory-combos-prerender' %}
-  {% endif %}
-  <!-- PickyStory code end -->
-  <!-- PickyStory snippet "main_widget_script", do not modify. Safe to remove after the app is uninstalled -->
-  {% if content_for_header contains 'pickystory' %}
-    <script defer src="https://cdn.pickystory.com/widget/dist/latest/pickystory-widget.min.js"></script>
-  {% endif %}
-  <!-- PickyStory end snippet "main_widget_script" -->
+  <body>
+<div class="gem-container">
+	{{ content_for_layout }}
+</div><!-- end .gem-container -->
 <!--Gem_Page_Footer_Script-->
 {% render 'gem-app-footer-scripts', GEM_FOOTER_SCRIPT: GEM_FOOTER_SCRIPT %}
 <!--End_Gem_Page_Footer_Script-->
