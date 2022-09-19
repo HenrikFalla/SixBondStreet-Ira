@@ -311,14 +311,15 @@
         "1663579398e4302730-2": {
           "type": "image",
           "settings": {
-            "meta": "Carousel",
-            "title": "Carousel Section",
-            "subheading": "<p>Use this Section to showcase a rotating gallery of images.<\/p>",
+            "image": "shopify:\/\/shop_images\/1040769_louise_roe_miljo_oker_avlang.jpg",
+            "meta": "Dansk design",
+            "title": "Louise Roe",
+            "subheading": "<p>Louise Roe er et Københavnsbasert interiørdesignmerke, etablert i 2010. Hvert objekt er personlig tegnet av Louise Roe og oser av estetikk og håndverk av høy kvalitet.<\/p>",
             "max_width_subheading": 28,
-            "link_text": "Shop the Collection",
-            "link": "\/",
-            "alignment": "left_split",
-            "opacity_overlay": 60
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/louise-roe",
+            "alignment": "left_bottom",
+            "opacity_overlay": 20
           }
         }
       },
