@@ -1,0 +1,173 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "lead_time": {
+          "type": "lead_time",
+          "settings": {
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "f138415d-c8df-4ec6-851d-147d64d93a46": {
+          "type": "accordion",
+          "settings": {
+            "style": "closed",
+            "heading": "Dimensjoner",
+            "content": ""
+          }
+        },
+        "503bed45-a61e-444e-b1ed-384e9e5ac9ff": {
+          "type": "accordion",
+          "settings": {
+            "style": "closed",
+            "heading": "Materiale",
+            "content": "<p>{{ product.metafields.product_data.materiale | metafield_text }}<\/p>"
+          }
+        },
+        "a76d1c85-788a-479a-b903-898ce70fed9f": {
+          "type": "accordion",
+          "settings": {
+            "style": "closed",
+            "heading": "Ytterligere informasjon",
+            "content": ""
+          }
+        },
+        "422395fc-49fe-48ec-a531-c89b8314004d": {
+          "type": "share_buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "lead_time",
+        "divider",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "f138415d-c8df-4ec6-851d-147d64d93a46",
+        "503bed45-a61e-444e-b1ed-384e9e5ac9ff",
+        "a76d1c85-788a-479a-b903-898ce70fed9f",
+        "422395fc-49fe-48ec-a531-c89b8314004d"
+      ],
+      "settings": {
+        "show_swatches": true,
+        "enable_sticky_sidebar": true,
+        "enable_full_width": true,
+        "media_layout": "column",
+        "enable_video_looping": true,
+        "vedlikehold": "vedlikehold"
+      }
+    },
+    "16536511166b9a2ac9": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "merker",
+        "per_row": 1,
+        "rows": 1,
+        "aspect_ratio": "square"
+      }
+    },
+    "recommendations": {
+      "type": "recommended-products",
+      "settings": {
+        "heading": "Ofte kjøpt sammen med",
+        "per_row": 3,
+        "rows": 1,
+        "aspect_ratio": "square"
+      }
+    },
+    "16529056183a2eb7ef": {
+      "type": "collection-list",
+      "disabled": true,
+      "blocks": {
+        "16529056189b1ce296-0": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16529056189b1ce296-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16529056189b1ce296-2": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "16529056189b1ce296-0",
+        "16529056189b1ce296-1",
+        "16529056189b1ce296-2"
+      ],
+      "settings": {
+        "title": "Collection list",
+        "per_row": 3,
+        "aspect_ratio": "natural"
+      }
+    },
+    "nosto_product": {
+      "type": "nosto-product",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16536511166b9a2ac9",
+    "recommendations",
+    "16529056183a2eb7ef",
+    "nosto_product"
+  ]
+}
