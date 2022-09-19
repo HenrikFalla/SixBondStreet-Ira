@@ -377,6 +377,41 @@
         "aspect_ratio": "natural"
       }
     },
+    "166357992126ee7bfb": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "1663579921e1b604ba-0": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forside_fotokunst_banner.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Interiør",
+            "title": "Fotokunst",
+            "subheading": "<p>Alt du trenger for å oppgradere veggene dine.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/fotokunst",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "1663579921e1b604ba-0"
+      ],
+      "settings": {
+        "enable_full_width": true
+      }
+    },
     "1655906078323d2266": {
       "type": "featured-collection",
       "settings": {
@@ -1123,6 +1158,7 @@
     "1663578893628202ea",
     "1663579399ad141f79",
     "166357956153f60049",
+    "166357992126ee7bfb",
     "1655906078323d2266",
     "16559052358ffed71f",
     "165597183990c0e2cb",
