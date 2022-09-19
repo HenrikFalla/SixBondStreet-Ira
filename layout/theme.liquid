@@ -107,7 +107,7 @@
 <script type="text/template" id="template_algolia_instant_search_no_result" defer>{% include 'algolia_instant_search_no_result.hogan' %}</script>
 {{ 'algolia_dependency_font-awesome-4-4-0.min.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'algolia_externals.js' | asset_url }}" defer></script>
-{{ 'algolia_init.js' | asset_url | script_tag }}
+<script src="{{ 'algolia_init.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'algolia_analytics.js' | asset_url }}" defer></script>
 <script src="{{ 'algolia_translations.js' | asset_url }}" defer></script>
 <script src="{{ 'algolia_helpers.js' | asset_url }}" defer></script>
