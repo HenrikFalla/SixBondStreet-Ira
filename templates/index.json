@@ -6,16 +6,16 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_gratis_interiortjeneste.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/forisde_interiortjenesten_gratis_sommer_mobil.jpg",
+            "image": "shopify:\/\/shop_images\/banner_hostenstrender_forside_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/banner_hostenstrender_forside_22.jpg",
             "focal_point": "center_center",
             "focal_point_mobile": "center_center",
             "video_url": "",
             "meta": "",
-            "title": "Gratis interiørhjelp",
-            "subheading": "<p>Gratis interiørhjelp hele sommeren til våre kjære kunder.  Våre dyktige interiørdesignere står klare for å hjelpe deg med valg av farger\/tekstiler, møblering og styling. Møt oss online via video eller i et av våre showroom i Oslo eller Bergen. Varer t.o.m 31. august.<\/p>",
+            "title": "Høstens interiørtrender",
+            "subheading": "<p>De siste tre årene har det skjedd endringer som normalt ville ha skjedd over flere tiår. <br\/>Det har vært intense år med drastiske endringer.<\/p>",
             "max_width_subheading": 30,
-            "link_text": "Book en gratis konsultasjon her",
+            "link_text": "Les mer her",
             "link": "https:\/\/sixbondstreet.no\/pages\/interiortjeneste",
             "alignment": "center_center",
             "color_heading": "#ffffff",
@@ -23,7 +23,7 @@
             "color_text_button": "#29292c",
             "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
-            "opacity_overlay": 50
+            "opacity_overlay": 40
           }
         }
       },
