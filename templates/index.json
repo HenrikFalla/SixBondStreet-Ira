@@ -415,7 +415,7 @@
     "1655906078323d2266": {
       "type": "featured-collection",
       "settings": {
-        "collection": "utemobler",
+        "collection": "nyheter",
         "title": "{{ section.settings.collection.title }}",
         "per_row": 4,
         "rows": 1,
@@ -449,7 +449,6 @@
         },
         "dbba427c-9d1b-429f-9a03-453c2f20271f": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/stue_rask_levering.jpg",
             "focal_point": "center_center",
@@ -472,7 +471,6 @@
         },
         "9a6e1083-45b6-495c-877f-eb60ca6285a9": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/forside_rask_levering_interior_mobil.jpg",
             "mobile_image": "shopify:\/\/shop_images\/forside_rask_levering_interior_mobil.jpg",
@@ -507,6 +505,41 @@
         "enable_parallax": false,
         "enable_full_width": true,
         "color_dot": "#777777"
+      }
+    },
+    "1663580092ee98390a": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "16635800919982818c-0": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ginemargrethe_forside.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "Hjemme hos Gine Margrethe",
+            "subheading": "<p>Gine Margrethe er et stilikon med mange jern i ilden. SixBondStreet besøkte henne for å snakke om trender, bærekraft og innredning av hjemmet.<\/p>",
+            "text_max_width": 30,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/inspirasjon-hjemme-hos-stilikonet-gine-margrethe",
+            "text_position": "left_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 25
+          }
+        }
+      },
+      "block_order": [
+        "16635800919982818c-0"
+      ],
+      "settings": {
+        "enable_full_width": false
       }
     },
     "165597183990c0e2cb": {
@@ -1161,6 +1194,7 @@
     "166357992126ee7bfb",
     "1655906078323d2266",
     "16559052358ffed71f",
+    "1663580092ee98390a",
     "165597183990c0e2cb",
     "16559720716359b63d",
     "nosto_index",
