@@ -572,17 +572,17 @@
         "165597183994b029a2-2": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/somerset_serien_banner.jpg",
+            "image": "shopify:\/\/shop_images\/oakland_spisestol_naerbilde_002.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "meta": "Inspirasjon",
-            "title": "Komfortable og elegante spisestoler",
-            "subheading": "<p>Er du på jakt etter spisestoler som både er elegante og komfortable? <\/p>",
+            "meta": "Bærekraft",
+            "title": "Våre tekstiler",
+            "subheading": "<p>Vår nye tekstilkolleksjon en inspirert av nye tider. Vi lengter etter farger.<\/p>",
             "text_max_width": 28,
             "link_text": "Les mer her",
             "link": "shopify:\/\/blogs\/inspirasjon\/komfortable-og-elegante-spisestoler",
-            "text_position": "center_center",
+            "text_position": "center_bottom",
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
@@ -602,108 +602,10 @@
         "enable_full_width": false
       }
     },
-    "16559720716359b63d": {
-      "type": "carousel",
-      "blocks": {
-        "16559720714a0cc8c7-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/nyheter_forside_juni22.jpg",
-            "meta": "Nyheter",
-            "title": "Nyheter",
-            "subheading": "<p>Her finner du alle våre nyheter<\/p>",
-            "max_width_subheading": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/nyheter",
-            "alignment": "center_center",
-            "opacity_overlay": 40
-          }
-        },
-        "16559720714a0cc8c7-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/39958-01-05-649229f70d_1728x_3923321b-530f-40a2-bf3a-131a9fdae69b.webp",
-            "meta": "Inspirasjon",
-            "title": "Hytta ved sjøen",
-            "subheading": "<p>Med riktige produkter kan du skap et interiør som minner om frisk sjøluft, lyse dager og god stemning. Har du hytte i nærheten av sjøen? <\/p>",
-            "max_width_subheading": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/inspirasjon-til-hytta-ved-sjoen",
-            "alignment": "center_center",
-            "opacity_overlay": 30
-          }
-        },
-        "16559720714a0cc8c7-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Mathias_duma_001.jpg",
-            "meta": "Bærekraft",
-            "title": "Miljøsofa aka “Møbelflipperen” x SixBondStree",
-            "subheading": "<p>Miljøsofa aka “Møbelflipperen” & SixBondStreet ønsker å ta sin del av ansvaret og bruke vår felles kunnskap til å gi nytt liv til brukte møbler.<\/p>",
-            "max_width_subheading": 28,
-            "link_text": "Le mer her",
-            "link": "shopify:\/\/pages\/m-flipperen",
-            "alignment": "right_split",
-            "opacity_overlay": 30
-          }
-        }
-      },
-      "block_order": [
-        "16559720714a0cc8c7-0",
-        "16559720714a0cc8c7-1",
-        "16559720714a0cc8c7-2"
-      ],
-      "settings": {
-        "height_mobile": 80,
-        "color_overlay": "#000000",
-        "color_heading": "#ffffff",
-        "color_subheading": "#f1efeb",
-        "color_background_button": "#f8f7f5",
-        "color_text_button": "#000000"
-      }
-    },
     "nosto_index": {
       "type": "nosto-index",
       "disabled": true,
       "settings": {
-      }
-    },
-    "1655972076e89a6252": {
-      "type": "image-with-text",
-      "blocks": {
-        "165597207649fe8758-0": {
-          "type": "heading",
-          "settings": {
-            "heading_title": "Harrison kolleksjonen"
-          }
-        },
-        "165597207649fe8758-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>På lager for omgående levering. <\/strong>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen. <\/p>"
-          }
-        },
-        "165597207649fe8758-2": {
-          "type": "button",
-          "settings": {
-            "link": "shopify:\/\/collections\/harrison-kolleksjonen",
-            "link_text": "Se utvalget her"
-          }
-        }
-      },
-      "block_order": [
-        "165597207649fe8758-0",
-        "165597207649fe8758-1",
-        "165597207649fe8758-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/hariison_kolleksjonen_bla_forside_600.jpg",
-        "video_url": "",
-        "image_width": "standard",
-        "image_position": "left",
-        "max_width_text": 34,
-        "enable_contrast": true,
-        "enable_full_width": false
       }
     },
     "1655973450c3510188": {
@@ -1196,9 +1098,7 @@
     "16559052358ffed71f",
     "1663580092ee98390a",
     "165597183990c0e2cb",
-    "16559720716359b63d",
     "nosto_index",
-    "1655972076e89a6252",
     "1655973450c3510188",
     "1655973557af65b2bb",
     "1655974076c4e0d6ab",
