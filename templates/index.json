@@ -277,6 +277,64 @@
         "enable_full_width": false
       }
     },
+    "1663579399ad141f79": {
+      "type": "carousel",
+      "blocks": {
+        "1663579398e4302730-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1040769_miljobilde_louise_roe_oker_avlang.jpg",
+            "meta": "Nyheter",
+            "title": "Nyheter",
+            "subheading": "<p>Her finner du alle våre nyheter.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/nyheter",
+            "alignment": "center_center",
+            "opacity_overlay": 30
+          }
+        },
+        "1663579398e4302730-1": {
+          "type": "image",
+          "settings": {
+            "meta": "Carousel",
+            "title": "Carousel Section",
+            "subheading": "<p>Use this Section to showcase a rotating gallery of images.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Shop the Collection",
+            "link": "\/",
+            "alignment": "left_split",
+            "opacity_overlay": 60
+          }
+        },
+        "1663579398e4302730-2": {
+          "type": "image",
+          "settings": {
+            "meta": "Carousel",
+            "title": "Carousel Section",
+            "subheading": "<p>Use this Section to showcase a rotating gallery of images.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Shop the Collection",
+            "link": "\/",
+            "alignment": "left_split",
+            "opacity_overlay": 60
+          }
+        }
+      },
+      "block_order": [
+        "1663579398e4302730-0",
+        "1663579398e4302730-1",
+        "1663579398e4302730-2"
+      ],
+      "settings": {
+        "height_mobile": 50,
+        "color_overlay": "#000000",
+        "color_heading": "#ffffff",
+        "color_subheading": "#ffffff",
+        "color_background_button": "#ffffff",
+        "color_text_button": "#000000"
+      }
+    },
     "1655906078323d2266": {
       "type": "featured-collection",
       "settings": {
@@ -1021,6 +1079,7 @@
     "165590230686a4951c",
     "1655904214bdb65264",
     "1663578893628202ea",
+    "1663579399ad141f79",
     "1655906078323d2266",
     "16559052358ffed71f",
     "165597183990c0e2cb",
