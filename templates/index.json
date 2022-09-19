@@ -337,6 +337,46 @@
         "color_text_button": "#000000"
       }
     },
+    "166357956153f60049": {
+      "type": "collection-list",
+      "blocks": {
+        "1663579561eae045fd-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "interiortrender-de-bevisste"
+          }
+        },
+        "1663579561eae045fd-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "interiortrender-de-selvbevisste"
+          }
+        },
+        "1663579561eae045fd-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "interiortrender-de-sannhetssokende"
+          }
+        },
+        "6ae82d34-df16-44fa-9ec9-1656a0eee21c": {
+          "type": "collection",
+          "settings": {
+            "collection": "interiortrender-de-sensitive"
+          }
+        }
+      },
+      "block_order": [
+        "1663579561eae045fd-0",
+        "1663579561eae045fd-1",
+        "1663579561eae045fd-2",
+        "6ae82d34-df16-44fa-9ec9-1656a0eee21c"
+      ],
+      "settings": {
+        "title": "Få stilen",
+        "per_row": 4,
+        "aspect_ratio": "natural"
+      }
+    },
     "1655906078323d2266": {
       "type": "featured-collection",
       "settings": {
@@ -1082,6 +1122,7 @@
     "1655904214bdb65264",
     "1663578893628202ea",
     "1663579399ad141f79",
+    "166357956153f60049",
     "1655906078323d2266",
     "16559052358ffed71f",
     "165597183990c0e2cb",
