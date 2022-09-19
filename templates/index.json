@@ -114,17 +114,17 @@
         "small_square-1": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/screenshot_ginemargrethe_003.jpg",
+            "image": "shopify:\/\/shop_images\/belysning_forside_host.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "meta": "Interiør",
-            "title": "Interiørvarer",
-            "subheading": "<p>Her finner du hele vårt interiørsortiment.<\/p>",
+            "meta": "Inspirasjon",
+            "title": "Lys opp høstmørket",
+            "subheading": "<p>Her finner du dekorativ belysning til alle rom.<\/p>",
             "text_max_width": 28,
             "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/interior",
-            "text_position": "center_center",
+            "link": "shopify:\/\/collections\/belysning",
+            "text_position": "center_bottom",
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
@@ -132,7 +132,7 @@
             "color_text_button": "#2d2d2d",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 40
+            "overlay_opacity": 30
           }
         }
       },
@@ -150,20 +150,20 @@
         "1655902306efe1fc7a-0": {
           "type": "heading",
           "settings": {
-            "heading_title": "Eksklusivt tilbud til våre nyhetsbrevmottakere"
+            "heading_title": "LAYERED x POPPYKALAS"
           }
         },
         "1655902306efe1fc7a-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Abonerer du på vårt nyhetsbrev får du <strong>20% på et rikt utvalg av våre bestselgere fra Harrison og Somerset kolleksjonen ut juni. <\/strong><a href=\"https:\/\/sixbondstreet.no\/pages\/nyhetsbrev\" target=\"_blank\" title=\"https:\/\/sixbondstreet.no\/pages\/nyhetsbrev\"><strong>Meld deg på vårt nyhetsbrev her.<\/strong><\/a><\/p>"
+            "text": "<p>The secret garden. Layereds samarbeid med den berømte danske blomsterkunstneren Poppykalas. Inspirert av organiske blomsterformer, skaper Poppykalas interaktive og uventede installasjoner som bringer blomsterverdenen direkte til hjemmet ditt.<\/p>"
           }
         },
         "1655902306efe1fc7a-2": {
           "type": "button",
           "settings": {
-            "link": "shopify:\/\/collections\/vare-klassikere-til-eksklusiv-pris",
-            "link_text": "Se utvalget her"
+            "link": "shopify:\/\/collections\/layered-x-poppykalas",
+            "link_text": "Se kolleksjonen her"
           }
         }
       },
@@ -173,12 +173,12 @@
         "1655902306efe1fc7a-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/kampanje_klassikere_sommer.jpg",
+        "image": "shopify:\/\/shop_images\/Poppy_9.gif",
         "video_url": "",
         "image_width": "standard",
         "image_position": "left",
         "max_width_text": 34,
-        "enable_contrast": true,
+        "enable_contrast": false,
         "enable_full_width": false
       }
     },
