@@ -90,17 +90,17 @@
         "small_square-2": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/styling_pynteputer_004.jpg",
+            "image": "shopify:\/\/shop_images\/collage_host_hytta_002.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "meta": "Interiør",
-            "title": "Fotokunst",
-            "subheading": "<p>Alt du trenger for å oppgradere veggene dine.<\/p>",
-            "text_max_width": 28,
+            "meta": "Inspirasjon",
+            "title": "Fjellhytta",
+            "subheading": "<p>Gjør hytta på fjellet klar for sesongen, med en aldri så liten oppgradering.<\/p>",
+            "text_max_width": 30,
             "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/fotokunst",
-            "text_position": "center_center",
+            "link": "shopify:\/\/collections\/inspirasjon-til-fjellhytta",
+            "text_position": "center_bottom",
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
@@ -108,7 +108,7 @@
             "color_text_button": "#2d2d2d",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 40
+            "overlay_opacity": 30
           }
         },
         "small_square-1": {
