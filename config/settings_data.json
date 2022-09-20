@@ -84,15 +84,6 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "1600989347608": {
-            "type": "announcement",
-            "settings": {
-              "title": "Merkevaresalg opptil 50% rabatt",
-              "link": "shopify:\/\/collections\/merkevaresalg",
-              "color_background": "#2d2d2d",
-              "color_text": "#ffffff"
-            }
-          },
           "1600989314555": {
             "type": "announcement",
             "settings": {
@@ -104,7 +95,6 @@
           }
         },
         "block_order": [
-          "1600989347608",
           "1600989314555"
         ],
         "settings": {
