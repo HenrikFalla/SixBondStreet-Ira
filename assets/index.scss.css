@@ -2,11 +2,14 @@
 .mosaic-grid__item > * {
     border-radius: 5px;
 }
-.mosaic-grid__item.mosaic-grid__item--medium-horizontal-rect {
-    padding-top: 100%;
+.mosaic-grid__item.mosaic-grid__item--medium-horizontal-rect, .mosaic-grid__item.mosaic-grid__item--small-square {
+    padding-top: 150%;
 }
 @media (min-width: 60em) {
     .mosaic-grid__item.mosaic-grid__item--medium-horizontal-rect {
         padding-top: 50%;
+    }
+    .mosaic-grid__item.mosaic-grid__item--small-square {
+        padding-top: 100%;
     }
 }
