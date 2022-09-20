@@ -13,3 +13,8 @@
         padding-top: 100%;
     }
 }
+@media (max-width: 40em) {
+    .mosaic-grid__item-fill {
+        display: block;
+    }
+}
