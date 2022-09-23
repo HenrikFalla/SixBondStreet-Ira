@@ -244,7 +244,8 @@
   
   {% render 'lightbox' with images: images %}
   
-    <section class="description">
+  <section class="description">
+    {% render 'sharpstar-3d-viewer' %}
     <div class="description__container">
         <div id="description"></div>
         <h2>Beskrivelse</h2>
@@ -279,7 +280,7 @@
             </div>
         {% endif %}
     {% endfor %}
-    </section>
+  </section>
 </section>
 
 {%- assign models = product.media | where: 'media_type', 'model' | json -%}
