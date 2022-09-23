@@ -245,7 +245,7 @@
   {% render 'lightbox' with images: images %}
   
   <section class="description">
-    {% render 'sharpstar-3d-viewer' %}
+    {% render 'charpstar-3d-viewer' %}
     <div class="description__container">
         <div id="description"></div>
         <h2>Beskrivelse</h2>
@@ -556,7 +556,14 @@
       },
       {
         "type": "sharpstar_3d_viewer",
-        "name": "SharpstAR 3D Viewer"
+        "name": "SharpstAR 3D Viewer",
+        "settings"[
+          {
+            "type": "image_picker",
+            "name": "ar-image",
+            "label": "AR Bilde"
+          }
+        ]
       },
       {
         "type": "promises",
