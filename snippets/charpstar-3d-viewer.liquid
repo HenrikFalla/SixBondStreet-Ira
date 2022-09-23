@@ -1,0 +1,18 @@
+{%- liquid 
+    if product.metafields.product_data.charpstar_model_file_name
+        assign threed-model = product.metafields.product_data.charpstar_model_file_name.value
+    endif
+-%}
+{% if threed-model %}
+    {{ 'charpstar.css' | asset_url | stylesheet_tag }}
+    <section class="AR-3D">
+    <script src="https://cdn.jsdelivr.net/gh/charpstar/InPlace/charpstar-viewer.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/charpstar/InPlace/model-viewer.js"></script>
+    <div class="model-viewer-wrapper">
+        <model-viewer id="threeDViewer" reveal="auto" src="https://cdnx.charpstar.net/Uploads/{{ threed-model }}.glb
+        "></model-viewer>
+
+    </div>
+    <img class="charpstarARViewer" width = "65px" onclick="activateAR(this)" src="https://charpstar.se/AR.gif" data-desktopqr data-androidsrc="https://cdnx.charpstar.net/Uploads/{{ threed-model }}.glb" data-iossrc="https://cdnx.charpstar.net/Uploads/{{ threed-model }}.usdz">
+</section>
+{% endif %}
