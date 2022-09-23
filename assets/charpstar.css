@@ -1,0 +1,9 @@
+.AR-3D {
+    display: block;
+    position: relative;
+}
+.charpstarARViewer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
