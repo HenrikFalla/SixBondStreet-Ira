@@ -141,11 +141,20 @@
       {% render 'social-icons' %}
     </div>
   {%- endif -%}
-
+  {%- comment -%}
   <div class="footer__credits">
     <p>{{ 'sections.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}.</p>
     <p>{{ powered_by_link | replace: 'rel="nofollow"', 'rel="nofollow noopener"' }}</p>
   </div>
+  {%- endcomment -%}
+  {%- if section.settings.facebook_link or section.settings.instagram_link or section.settings.youtube_link or section.settings.pinterest_link or section.settings.twitter_link -%}
+      <div class="footer__social">
+        {% if section.settings.facebook_link and section.settings.facebook_image %}
+          <a href="{{ section.settings.facebook_link.value }}">
+          </a>
+        {% endif %}
+      </div>
+  {%- endif -%}
 </footer>
 
 
