@@ -1230,6 +1230,9 @@ input#Email {
         flex: 100%;
     }
 }
+ul.social_icons li ::marker {
+    display: none;
+}
 
 
 /* Tryg E-Handel */
