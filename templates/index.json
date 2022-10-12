@@ -144,6 +144,91 @@
         "enable_full_width": false
       }
     },
+    "47c2154c-a63c-4ca9-bd80-9dfb10180ca7": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "template--15627018567877__47c2154c-a63c-4ca9-bd80-9dfb10180ca7-1665577456f54dbcc8-0": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gulvteppe_forside.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Interiør",
+            "title": "Gulvtepper",
+            "subheading": "<p>Lun opp hjem og hytte ved hjelp av myke og lune gulvtepper.<\/p>",
+            "text_max_width": 36,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/gulvtepper",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 29
+          }
+        },
+        "template--15627018567877__47c2154c-a63c-4ca9-bd80-9dfb10180ca7-1665577456f54dbcc8-1": {
+          "type": "small_square",
+          "disabled": true,
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "This is small square block",
+            "subheading": "<p>Mix and match between sizes, set a background color or fill, and add text to blocks that are medium or larger.<\/p>",
+            "text_max_width": 32,
+            "link_text": "",
+            "link": "",
+            "text_position": "left_top",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        },
+        "template--15627018567877__47c2154c-a63c-4ca9-bd80-9dfb10180ca7-1665577456f54dbcc8-2": {
+          "type": "small_square",
+          "disabled": true,
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "",
+            "subheading": "",
+            "text_max_width": 28,
+            "link_text": "",
+            "link": "",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        }
+      },
+      "block_order": [
+        "template--15627018567877__47c2154c-a63c-4ca9-bd80-9dfb10180ca7-1665577456f54dbcc8-0",
+        "template--15627018567877__47c2154c-a63c-4ca9-bd80-9dfb10180ca7-1665577456f54dbcc8-1",
+        "template--15627018567877__47c2154c-a63c-4ca9-bd80-9dfb10180ca7-1665577456f54dbcc8-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
     "165590230686a4951c": {
       "type": "image-with-text",
       "blocks": {
@@ -692,6 +777,7 @@
     "slideshow-1",
     "1652734830e13bb44f",
     "2-column-mosaic-grid",
+    "47c2154c-a63c-4ca9-bd80-9dfb10180ca7",
     "165590230686a4951c",
     "1655904214bdb65264",
     "1663578893628202ea",
