@@ -209,7 +209,13 @@
           "show_locale_selector": true,
           "show_currency_selector": true,
           "show_social_icons": true,
-          "show_payment_icons": true
+          "show_payment_icons": true,
+          "facebook_link": "https:\/\/www.facebook.com\/sixbondstreet",
+          "facebook_image": "shopify:\/\/shop_images\/iconmonstr-facebook-4-240.png",
+          "instagram_link": "",
+          "youtube_link": "",
+          "pinterest_link": "",
+          "twitter_link": ""
         }
       },
       "extended-footer": {
