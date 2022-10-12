@@ -141,11 +141,56 @@
       {% render 'social-icons' %}
     </div>
   {%- endif -%}
-
+  {%- comment -%}
   <div class="footer__credits">
     <p>{{ 'sections.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}.</p>
     <p>{{ powered_by_link | replace: 'rel="nofollow"', 'rel="nofollow noopener"' }}</p>
   </div>
+  {%- endcomment -%}
+  {%- if section.settings.facebook_link or section.settings.instagram_link or section.settings.youtube_link or section.settings.pinterest_link or section.settings.twitter_link -%}
+      <div class="footer__social">
+        <ul class="social_icons">
+        {% if section.settings.facebook_link and section.settings.facebook_image %}
+          <li>
+            <a href="{{ section.settings.facebook_link }}">
+              <img src="{{ section.settings.facebook_image | img_url: '50x50' }}" />
+            </a>
+        </li>
+        {% endif %}
+        {% if section.settings.instagram_link and section.settings.instagram_image %}
+          <li>
+            <a href="{{ section.settings.instagram_link }}">
+              <img src="{{ section.settings.instagram_image | img_url: '50x50' }}" />
+            </a>
+        </li>
+        {% endif %}
+        {% if section.settings.pinterest_link and section.settings.pinterest_image %}
+          <li>
+            <a href="{{ section.settings.pinterest_link }}">
+              <img src="{{ section.settings.pinterest_image | img_url: '50x50' }}" />
+            </a>
+        </li>
+        {% endif %}
+        {% if section.settings.youtube_link and section.settings.youtube_image %}
+          <li>
+            <a href="{{ section.settings.youtube_link }}">
+              <img src="{{ section.settings.youtube_image | img_url: '50x50' }}" />
+            </a>
+        </li>
+        {% endif %}
+        {% if section.settings.twitter_link and section.settings.twitter_image %}
+          <li>
+            <a href="{{ section.settings.twitter_link }}">
+              <img src="{{ section.settings.twitter_image | img_url: '50x50' }}" />
+            </a>
+        </li>
+        {% endif %}
+      </ul>
+      </div>
+      <div class="footer__credits">
+        <p>{{ 'sections.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}.</p>
+      </div>
+  {%- endif -%}
 </footer>
 
 
@@ -197,6 +242,56 @@
         "type": "checkbox",
         "label": "t:sections.footer.settings.show_payment_icons.label",
         "default": true
+      }, 
+      {
+        "id": "facebook_link", 
+        "type": "url",
+        "label": "Facebook URL"
+      },
+      {
+        "id": "facebook_image",
+        "type": "image_picker",
+        "label": "Facebook Logo"
+      },
+      {
+        "id": "instagram_link",
+        "type": "url",
+        "label": "Instagram URL"
+      },
+      {
+        "id": "instagram_image",
+        "type": "image_picker",
+        "label": "Instagram Logo"
+      },
+      {
+        "id": "youtube_link",
+        "type": "url",
+        "label": "Youtube URL"
+      },
+      {
+        "id": "youtube_image",
+        "type": "image_picker",
+        "label": "Youtube Logo"
+      },
+      {
+        "id": "pinterest_link",
+        "type": "url",
+        "label": "Pinterest URL"
+      },
+      {
+        "id": "pinterest_image",
+        "type": "image_picker",
+        "label": "Pinterest Logo"
+      },
+      {
+        "id": "twitter_link",
+        "type": "url",
+        "label": "Twitter URL"
+      },
+      {
+        "id": "twitter_image",
+        "type": "image_picker",
+        "label": "Twitter Logo"
       }
     ],
     "max_blocks": 4,
@@ -221,36 +316,36 @@
         ]
       },
 		{
-        "type": "about",
-        "name": "About",
-        "settings": [
-            {
-                "id": "title",
-                "type": "text",
-                "label": "Paragraph title",
-                "default": "Om SixBondStreet"
-            },
-            {
-                "id": "about_text",
-                "type": "richtext",
-                "label": "Paragraph text"
-            },
-            {
-                "id": "about_link",
-                "type": "url",
-                "label": "Link to about us"
-            },
-            {
-                "id": "trygg_id",
-                "type": "text",
-                "label": "Trygg E-Handel Store ID",
-                "default": "1234"
-            },
-            {
-                "id": "trygg_text",
-                "type": "richtext",
-                "label": "About text for Trygg E-Handel"
-            }
+      "type": "about",
+      "name": "About",
+      "settings": [
+          {
+              "id": "title",
+              "type": "text",
+              "label": "Paragraph title",
+              "default": "Om SixBondStreet"
+          },
+          {
+              "id": "about_text",
+              "type": "richtext",
+              "label": "Paragraph text"
+          },
+          {
+              "id": "about_link",
+              "type": "url",
+              "label": "Link to about us"
+          },
+          {
+              "id": "trygg_id",
+              "type": "text",
+              "label": "Trygg E-Handel Store ID",
+              "default": "1234"
+          },
+          {
+              "id": "trygg_text",
+              "type": "richtext",
+              "label": "About text for Trygg E-Handel"
+          }
         ]
       },
       {
