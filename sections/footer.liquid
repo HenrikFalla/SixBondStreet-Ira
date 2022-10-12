@@ -149,10 +149,43 @@
   {%- endcomment -%}
   {%- if section.settings.facebook_link or section.settings.instagram_link or section.settings.youtube_link or section.settings.pinterest_link or section.settings.twitter_link -%}
       <div class="footer__social">
+        <ul class="social_icons">
         {% if section.settings.facebook_link and section.settings.facebook_image %}
-          <a href="{{ section.settings.facebook_link }}">
-          </a>
+          <li>
+            <a href="{{ section.settings.facebook_link }}">
+              <img src="{{ section.settings.facebook_image | img_url: '100x100' }}" />
+            </a>
+        </li>
         {% endif %}
+        {% if section.settings.instagram_link and section.settings.instagram_image %}
+          <li>
+            <a href="{{ section.settings.instagram_link }}">
+              <img src="{{ section.settings.instagram_image | img_url: '100x100' }}" />
+            </a>
+        </li>
+        {% endif %}
+        {% if section.settings.pinterest_link and section.settings.pinterest_image %}
+          <li>
+            <a href="{{ section.settings.pinterest_link }}">
+              <img src="{{ section.settings.pinterest_image | img_url: '100x100' }}" />
+            </a>
+        </li>
+        {% endif %}
+        {% if section.settings.youtube_link and section.settings.youtube_image %}
+          <li>
+            <a href="{{ section.settings.youtube_link }}">
+              <img src="{{ section.settings.youtube_image | img_url: '100x100' }}" />
+            </a>
+        </li>
+        {% endif %}
+        {% if section.settings.twitter_link and section.settings.twitter_image %}
+          <li>
+            <a href="{{ section.settings.twitter_link }}">
+              <img src="{{ section.settings.twitter_image | img_url: '100x100' }}" />
+            </a>
+        </li>
+        {% endif %}
+      </ul>
       </div>
   {%- endif -%}
 </footer>
