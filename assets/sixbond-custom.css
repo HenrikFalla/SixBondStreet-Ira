@@ -1230,8 +1230,13 @@ input#Email {
         flex: 100%;
     }
 }
-ul.social_icons li ::marker {
-    display: none;
+ul.social_icons {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+ul.social_icons li {
+    display: block;
 }
 
 
