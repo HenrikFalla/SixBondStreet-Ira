@@ -150,7 +150,7 @@
   {%- if section.settings.facebook_link or section.settings.instagram_link or section.settings.youtube_link or section.settings.pinterest_link or section.settings.twitter_link -%}
       <div class="footer__social">
         {% if section.settings.facebook_link and section.settings.facebook_image %}
-          <a href="{{ section.settings.facebook_link.value }}">
+          <a href="{{ section.settings.facebook_link }}">
           </a>
         {% endif %}
       </div>
