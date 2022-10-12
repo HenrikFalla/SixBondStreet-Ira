@@ -212,7 +212,8 @@
           "show_payment_icons": true,
           "facebook_link": "https:\/\/www.facebook.com\/sixbondstreet",
           "facebook_image": "shopify:\/\/shop_images\/iconmonstr-facebook-4-240.png",
-          "instagram_link": "",
+          "instagram_link": "https:\/\/www.instagram.com\/sixbondstreet.no\/",
+          "instagram_image": "shopify:\/\/shop_images\/iconmonstr-instagram-14-240.png",
           "youtube_link": "",
           "pinterest_link": "",
           "twitter_link": ""
