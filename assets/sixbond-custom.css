@@ -1244,7 +1244,10 @@ ul.social_icons li a img {
     max-width: 30px;
     margin: 0 3px;
 }
-
+.footer__credits {
+    display: flex;
+    justify-content: center;
+}
 
 /* Tryg E-Handel */
 
