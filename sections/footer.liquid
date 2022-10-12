@@ -187,6 +187,9 @@
         {% endif %}
       </ul>
       </div>
+      <div class="footer__credits">
+        <p>{{ 'sections.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}.</p>
+      </div>
   {%- endif -%}
 </footer>
 
