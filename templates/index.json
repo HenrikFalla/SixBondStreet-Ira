@@ -46,7 +46,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/shipped_0433dece-e93b-493d-b515-b5906a5d371f.png",
-            "title": "Fri frakt på ordre over 10.000,-",
+            "title": "Fri frakt på ordre over 12.000,-",
             "text": "",
             "link": "#",
             "link_text": ""
@@ -167,7 +167,7 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 29
           }
         },
@@ -191,7 +191,7 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 60
           }
         },
@@ -215,7 +215,7 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 60
           }
         }
