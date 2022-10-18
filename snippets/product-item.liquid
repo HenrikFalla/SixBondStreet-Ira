@@ -47,7 +47,7 @@
             {% render 'video' with
               id: product.media[0].id,
               media: product.media[0],
-              wrapper_class: 'product-item__image',
+              wrapper_class: 'product-item__image nopadding',
               disable_style: disabled_image_style
             %}
             <span>Video</span>
@@ -64,7 +64,7 @@
             {% render 'video' with
               id: product.media[1].id,
               media: product.media[1],
-              wrapper_class: 'product-item__image product-item__image--two',
+              wrapper_class: 'product-item__image product-item__image--two nopadding',
               disable_style: disabled_image_style
             %}
           {% else %}
