@@ -29,7 +29,7 @@
       %}
     </a>
   {% when 'video'%}
-    {{ media | video_tag: controls: true, image_size: "1024x" }}
+    {{ media | video_tag: controls: false, image_size: "1024x", autoplay: true, loop: true }}
   {% when 'external_video' %}
     {%- liquid
       if loop_video
