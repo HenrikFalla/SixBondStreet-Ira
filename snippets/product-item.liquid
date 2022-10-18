@@ -50,7 +50,6 @@
               wrapper_class: 'product-item__image nopadding',
               disable_style: disabled_image_style
             %}
-            <span>Video</span>
           {% else %}
             {% render 'image' with
               id: product.media[0].id,
@@ -58,7 +57,6 @@
               wrapper_class: 'product-item__image',
               disable_style: disabled_image_style
             %}
-            <span>Image</span>
           {% endif %}
           {% if product.media[1].media_type == 'video' %}
             {% render 'video' with
