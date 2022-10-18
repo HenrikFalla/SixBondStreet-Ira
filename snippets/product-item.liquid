@@ -43,6 +43,9 @@
         {%- endif -%}
       >
         {%- if multiple_images -%}
+          {% if product.media[0].media_type == 'video' or product.media[1].media_type == 'video'%}
+            <span>is video</span>
+          {% endif %}
           {% render 'image' with
             id: product.media[0].id,
             image: product.media[0].preview_image,
