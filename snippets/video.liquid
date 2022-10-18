@@ -1,1 +1,11 @@
+{%- assign height = media.height | times: 1.0 | default: 1.0 -%}
+{%- assign width = media.width | times: 1.0 | default: 1.0 -%}
+{%- assign padding_top = height | divided_by: width | times: 100 | append: "%" -%}
+
+<div class="image image--{{ id }} image--responsive {{ wrapper_class}}"
+    {% unless disable_style %}
+        style="padding-top: {{ padding-top }}"
+    {% endunless%}
+>
 {{ media | video_tag: controls: true, image_size: "1024x", autoplay: true, loop: true }}
+</div>

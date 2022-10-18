@@ -45,6 +45,7 @@
         {%- if multiple_images -%}
           {% if product.media[0].media_type == 'video' %}
             {% render 'video' with
+              id: product.media[0].id,
               media: product.media[0],
               wrapper_class: 'product-item__image',
               disable_style: disabled_image_style
@@ -61,6 +62,7 @@
           {% endif %}
           {% if product.media[1].media_type == 'video' %}
             {% render 'video' with
+              id: product.media[1].id,
               media: product.media[1],
               wrapper_class: 'product-item__image',
               disable_style: disabled_image_style
