@@ -32,8 +32,8 @@
         <div class="collection-sidebar__group">
              
           {%unless filter.label == 'In Stock' %}
-          {% render 'collection-sidebar-heading' with heading: filter.label %}
-			{%endunless%}
+            {% render 'collection-sidebar-heading' with heading: filter.label %}
+			    {%endunless%}
           {%- case filter.type -%}
             {%- when 'list' -%}
               {%- liquid

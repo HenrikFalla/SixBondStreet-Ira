@@ -1,4 +1,8 @@
-<div class="collection-sidebar__heading" data-heading="{{ heading }}">
+{% if heading == 'Price'%}
+  <div class="collection-sidebar__heading" data-heading="{{ heading }}">
+{% else %}
+  <div class="collection-sidebar__heading closed" data-heading="{{ heading }}">
+{% endif %}
   <span class="fs-body-base" data-sidebar-title>{{ heading }}</span>
   {% render 'icon' with icon: 'arrow-drop-down' %}
 </div>
