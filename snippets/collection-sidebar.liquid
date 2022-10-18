@@ -32,8 +32,8 @@
         <div class="collection-sidebar__group">
              
           {%unless filter.label == 'In Stock' %}
-          {% render 'collection-sidebar-heading' with heading: filter.label %}
-			{%endunless%}
+            {% render 'collection-sidebar-heading' with heading: filter.label %}
+			    {%endunless%}
           {%- case filter.type -%}
             {%- when 'list' -%}
               {%- liquid
@@ -52,7 +52,11 @@
     
         
         
+              {% if filter.label == 'pris' %}
               <ul class="collection-sidebar__group{{ list_modifiers }}  {%if  filter.label == 'Tilgjengelighet'%}hide-it {%endif%}">
+              {% else %}
+              <ul class="collection-sidebar__group{{ list_modifiers }}  {%if  filter.label == 'Tilgjengelighet'%}hide-it {%endif%}" style="display: none;">
+              {% endif %}
                 {%- for filter_value in filter.values -%}
                   {%- liquid
                     if filter_value.active
