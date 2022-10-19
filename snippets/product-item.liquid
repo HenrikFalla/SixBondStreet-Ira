@@ -43,17 +43,35 @@
         {%- endif -%}
       >
         {%- if multiple_images -%}
-          {% render 'image' with
-            id: product.media[0].id,
-            image: product.media[0].preview_image,
-            wrapper_class: 'product-item__image',
-            disable_style: disabled_image_style
-          %}
-          {% render 'image' with
-            image: product.media[1].preview_image,
-            wrapper_class: 'product-item__image product-item__image--two',
-            disable_style: true
-          %}
+          {% if product.media[0].media_type == 'video' %}
+            {% render 'video' with
+              id: product.media[0].id,
+              media: product.media[0],
+              wrapper_class: 'product-item__image nopadding',
+              disable_style: disabled_image_style
+            %}
+          {% else %}
+            {% render 'image' with
+              id: product.media[0].id,
+              image: product.media[0].preview_image,
+              wrapper_class: 'product-item__image',
+              disable_style: disabled_image_style
+            %}
+          {% endif %}
+          {% if product.media[1].media_type == 'video' %}
+            {% render 'video' with
+              id: product.media[1].id,
+              media: product.media[1],
+              wrapper_class: 'product-item__image product-item__image--two nopadding',
+              disable_style: disabled_image_style
+            %}
+          {% else %}
+            {% render 'image' with
+              image: product.media[1].preview_image,
+              wrapper_class: 'product-item__image product-item__image--two',
+              disable_style: true
+            %}
+          {% endif %}
         {%- else -%}
           {% if product.featured_media %}
             {% render 'image' with
