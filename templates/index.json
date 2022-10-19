@@ -39,48 +39,46 @@
         "color_dot": "#777777"
       }
     },
-    "1652734830e13bb44f": {
+    "84ae89db-600f-4961-87e7-0ec5dc2eb435": {
       "type": "text-columns-with-images",
       "blocks": {
-        "1652734830beeb48e1-0": {
+        "template--15886817689797__84ae89db-600f-4961-87e7-0ec5dc2eb435-166616161541d5054e-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shipped_0433dece-e93b-493d-b515-b5906a5d371f.png",
-            "title": "Fri frakt på ordre over 12.000,-",
-            "text": "",
+            "image": "shopify:\/\/shop_images\/1f8cab57-413e-4da5-8480-3e8d166a7688_2000x_401d5a32-2d03-4719-a113-ac44ad804ff0.png",
+            "title": "Årets store belysningsevent",
+            "text": "<p>Sammen med Hudson Valley Lighting i Oslo og Bergen.<\/p>",
             "link": "#",
             "link_text": ""
           }
         },
-        "1652734830beeb48e1-1": {
+        "template--15886817689797__84ae89db-600f-4961-87e7-0ec5dc2eb435-166616161541d5054e-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/circular-arrow.png",
-            "title": "30 dager åpent kjøp",
-            "text": "",
-            "link": "#",
-            "link_text": ""
+            "title": "Oslo 26. oktober",
+            "text": "<p>Bli med på årets belysningsevent sammen Hudson Valley Lighting. Drammensveien 130, B5 i Oslo. <br\/>Pssst.. Vi kan friste med vår største giveaway hittil.<\/p>",
+            "link": "https:\/\/fb.me\/e\/6PiMuwDnr",
+            "link_text": "Meld deg på her"
           }
         },
-        "1652734830beeb48e1-2": {
+        "55ebfc76-0fbe-4560-992f-6fc331bd19d1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/safe_payment_solid.png",
-            "title": "Trygg betaling",
-            "text": "",
-            "link": "#",
-            "link_text": ""
+            "title": "Bergen 27. okotber",
+            "text": "<p>Bli med på årets belysningsevent sammen Hudson Valley Lighting. Veiten 1 i Bergen. <br\/>Pssst.. Vi kan friste med vår største giveaway hittil.<\/p>",
+            "link": "https:\/\/fb.me\/e\/21spEjiiV",
+            "link_text": "Meld deg på her"
           }
         }
       },
       "block_order": [
-        "1652734830beeb48e1-0",
-        "1652734830beeb48e1-1",
-        "1652734830beeb48e1-2"
+        "template--15886817689797__84ae89db-600f-4961-87e7-0ec5dc2eb435-166616161541d5054e-1",
+        "template--15886817689797__84ae89db-600f-4961-87e7-0ec5dc2eb435-166616161541d5054e-0",
+        "55ebfc76-0fbe-4560-992f-6fc331bd19d1"
       ],
       "settings": {
         "per_row": 3,
-        "image_max_width": 100,
+        "image_max_width": 120,
         "circle": true
       }
     },
@@ -142,6 +140,51 @@
       ],
       "settings": {
         "enable_full_width": false
+      }
+    },
+    "1652734830e13bb44f": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "1652734830beeb48e1-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shipped_0433dece-e93b-493d-b515-b5906a5d371f.png",
+            "title": "Fri frakt på ordre over 12.000,-",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        },
+        "1652734830beeb48e1-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/circular-arrow.png",
+            "title": "30 dager åpent kjøp",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        },
+        "1652734830beeb48e1-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/safe_payment_solid.png",
+            "title": "Trygg betaling",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1652734830beeb48e1-0",
+        "1652734830beeb48e1-1",
+        "1652734830beeb48e1-2"
+      ],
+      "settings": {
+        "per_row": 3,
+        "image_max_width": 100,
+        "circle": true
       }
     },
     "47c2154c-a63c-4ca9-bd80-9dfb10180ca7": {
@@ -775,8 +818,9 @@
   },
   "order": [
     "slideshow-1",
-    "1652734830e13bb44f",
+    "84ae89db-600f-4961-87e7-0ec5dc2eb435",
     "2-column-mosaic-grid",
+    "1652734830e13bb44f",
     "47c2154c-a63c-4ca9-bd80-9dfb10180ca7",
     "165590230686a4951c",
     "1655904214bdb65264",
