@@ -283,12 +283,13 @@
                     {{ article.content }}
                 </div>
             </div>
-        <span class="clerk"
+   
+        {% endif %}
+    {% endfor %}
+         <span class="clerk"
     data-template="@product-page-others-also-bought"
     data-products="[{{ product.id }}]">
 </span>
-        {% endif %}
-    {% endfor %}
   </section>
 </section>
 
