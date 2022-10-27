@@ -99,7 +99,7 @@ https://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected{
   opacity:1;
 }
-:root{
+:root:not(.clerk_instant_search_title){
   --max-width:2000px;
   --max-width-small-page:600px;
 
@@ -120,7 +120,7 @@ https://flickity.metafizzy.co
     --space-outer:calc(var(--spacing-unit) * 10);
 }
   }
-:root:not(.clerk_instant_search_title){
+:root{
   --space-inline-element:10px;
 
   --space-grid:20px;
