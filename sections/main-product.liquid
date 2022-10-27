@@ -286,13 +286,12 @@
    
         {% endif %}
     {% endfor %}
-         <span class="clerk"
+  </section>
+</section>
+     <span class="clerk"
     data-template="@product-page-others-also-bought"
     data-products="[{{ product.id }}]">
 </span>
-  </section>
-</section>
-
 {%- assign models = product.media | where: 'media_type', 'model' | json -%}
 
 {% unless product == empty %}
