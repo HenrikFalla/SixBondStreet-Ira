@@ -43,17 +43,35 @@
         {%- endif -%}
       >
         {%- if multiple_images -%}
-          {% render 'image' with
-            id: product.media[0].id,
-            image: product.media[0].preview_image,
-            wrapper_class: 'product-item__image',
-            disable_style: disabled_image_style
-          %}
-          {% render 'image' with
-            image: product.media[1].preview_image,
-            wrapper_class: 'product-item__image product-item__image--two',
-            disable_style: true
-          %}
+          {% if product.media[0].media_type == 'video' %}
+            {% render 'video' with
+              id: product.media[0].id,
+              media: product.media[0],
+              wrapper_class: 'product-item__image nopadding',
+              disable_style: disabled_image_style
+            %}
+          {% else %}
+            {% render 'image' with
+              id: product.media[0].id,
+              image: product.media[0].preview_image,
+              wrapper_class: 'product-item__image',
+              disable_style: disabled_image_style
+            %}
+          {% endif %}
+          {% if product.media[1].media_type == 'video' %}
+            {% render 'video' with
+              id: product.media[1].id,
+              media: product.media[1],
+              wrapper_class: 'product-item__image product-item__image--two nopadding',
+              disable_style: disabled_image_style
+            %}
+          {% else %}
+            {% render 'image' with
+              image: product.media[1].preview_image,
+              wrapper_class: 'product-item__image product-item__image--two',
+              disable_style: true
+            %}
+          {% endif %}
         {%- else -%}
           {% if product.featured_media %}
             {% render 'image' with
@@ -81,10 +99,10 @@
     <div class="product-item__text ff-body">
       <!-- SixBondStreet CUSTOM -->
 		{%- if product.handle -%}
-			{%- assign vendorHandle = product.vendor | handle -%}
+			{%- assign vendorHandle = product.vendor | handleize | strip | escape -%}
 			{%- if collections[vendorHandle].products.size > 0 -%}
 			<a href="{{ collections[vendorHandle].url }}">
-			<div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor }}</div>
+			<div class="product__vendor ff-meta fs-meta c-meta found">{{ product.vendor }}</div>
             </a>
 			{%- else -%}
 			<div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
@@ -114,9 +132,11 @@
             {%- assign sale_price = product.price | money -%}
             {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
           {% else %}
-            <span class="sale">{{ product.price | money }}<span>
+            <span class="sale sxbs-on-sale">{{ product.price | money }}<span>
           {% endif %}
           {% render 'unit-price' item: current_variant %}
+          {%- assign amount_saved = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price -%}
+          <span class="on-sale saved_percentage">{{ amount_saved | round }}% avslag</span>
 
         {% else %}
           {% if product.price_varies %}

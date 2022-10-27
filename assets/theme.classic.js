@@ -3816,7 +3816,7 @@
         u(node, classes$8.active);
       }, 50);
       node.setAttribute('aria-hidden', 'false');
-      focusTrap.activate();
+      //focusTrap.activate();
       disableBodyScroll(node, {
         allowTouchMove: el => {
           while (el && el !== document.body) {
@@ -8153,6 +8153,21 @@
 
     function renderSearchResults(resultsMarkup) {
       resultsContainer.innerHTML = resultsMarkup;
+//       if(window.innerWidth > 767){
+//         document.querySelectorAll('.aa-product-title').forEach(function(a){
+//           a.addEventListener('mouseup', function(evt){
+//             window.location.href = this.href;
+//           })
+//         });
+//       } else {
+//         document.querySelectorAll('.aa-product-title').forEach(function(a){
+//           a.addEventListener('touchend', function(evt){
+//             window.location.href = this.href;
+//           })
+//         });
+//       }
+      
+      //console.log(n$1)
     }
 
     function highlightQuery(searchTerm, searchResult) {
@@ -8229,13 +8244,26 @@
     const input = n$1('[data-input]', node);
     const clear = n$1('[data-clear]', node);
     const resultsContainer = n$1('[data-results]', node);
-    const focusTrap = createFocusTrap(node); // This gets replaced with a focus trapping util on `open` however
-
+      var focusTrap = createFocusTrap(node, {
+      allowOutsideClick: true,
+       escapeDeactivates: false
+    });
+    // const focusTrap = createFocusTrap(node); // This gets replaced with a focus trapping util on `open` however
     const overlayClick = e$2(overlay, 'click', close);
-    const clearClick = e$2(clear, 'click', reset);
+//     const clearClick = e$2(clear, 'click', reset);
     const keyDown = e$2(node, 'keydown', checkEscape);
-    const inputChange = e$2(input, 'input', handleInput);
-    const predictiveSearch = new PredictiveSearch(resultsContainer);
+//     const inputChange = e$2(input, 'input', handleInput);
+//     const predictiveSearch = new PredictiveSearch(resultsContainer);
+    
+    const headerSearchIcon = document.querySelector('header .header__icon-touch--search');
+    const search_overlay = document.querySelector('.quick-search__overlay');
+    const quickSearch = document.querySelector('[data-quick-search]');
+    headerSearchIcon.addEventListener('click', function(evt){
+      quickSearch.classList.add('active', 'visible');
+    });
+    search_overlay.addEventListener('click', function(evt){
+      quickSearch.classList.remove('active', 'visible');
+    });
 
     function handleInput(e) {
       let populated = e.target.value !== '';
@@ -8261,6 +8289,7 @@
     }
 
     function open() {
+
       u(node, classes$5.active);
       setTimeout(() => {
         focusTrap.activate();
@@ -8272,6 +8301,7 @@
     }
 
     function close() {
+
       i$1(node, classes$5.visible);
       setTimeout(() => {
         i$1(node, classes$5.active);
@@ -8426,7 +8456,7 @@
     function open(options = {}) {
       u(node, 'active');
       setTimeout(() => {
-        focusTrap.activate();
+        //focusTrap.activate();
         disableBodyScroll(node, {
           reserveScrollBarGap: true
         });
@@ -10007,7 +10037,7 @@
       u(node, classes$4.active);
       setTimeout(() => {
         u(node, classes$4.visible);
-        focusTrap.activate();
+        //focusTrap.activate();
         disableBodyScroll(node, {
           allowTouchMove: el => {
             while (el && el !== document.body) {
@@ -10176,9 +10206,10 @@
         i$1(cartIndicator, 'visible');
         setTimeout(() => u(cartIndicator, 'visible'), 500);
         count.innerHTML = cart.item_count;
-      }), e$2(menuButton, 'click', preventDefault(menu$1.open)), e$2(searchButton, 'click', preventDefault(quickSearch.open)), e$2(cartIcon, 'click', preventDefault(quickCart.open))]; // Components return a destroy function for cleanup
+      }), 
+	e$2(menuButton, 'click', preventDefault(menu$1.open)), e$2(searchButton, 'click', preventDefault(quickSearch.open)), e$2(cartIcon, 'click', preventDefault(quickCart.open))]; // Components return a destroy function for cleanup
 
-      this.components = [menu$1, quickSearch, quickCart, navigation]; // Our header is always sticky (with position: sticky) however at some
+      this.components = [menu$1, quickSearch, quickCart, navigation]; //  Our header is always sticky (with position: sticky) however at some
       // point we want to adjust the styling (eg. box-shadow) so we toggle
       // the is-sticky class when our arbitrary space element (.header__space)
       // goes in and out of the viewport.
@@ -10331,7 +10362,7 @@
 
     open() {
       u(this.container, 'visible');
-      focusTrap.activate();
+      //focusTrap.activate();
     },
 
     close() {

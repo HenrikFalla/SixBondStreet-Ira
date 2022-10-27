@@ -1,0 +1,35 @@
+{% assign counter = 0 %}
+{% for vendor in shop.vendors %}
+{% assign counter = counter | plus: 1 %}
+{% endfor %}
+
+{% assign counter_divided_by_3 = counter | divided_by: 3 | floor %}
+
+<header class="page__header" style="margin: var(--spacing-large) auto;">
+    <h1 class="page__heading ff-heading c-heading">
+        {{ page.title }}
+    </h1>
+</header>
+<div class="vendor-list block-grid three-up mobile one-up">
+{% for product_vendor in shop.vendors %}
+	{% assign its_a_match = false %}
+	{% capture my_collection_handle %} {{ product_vendor | handleize | strip | escape  }} {% endcapture %}
+	{% assign my_collection_handle_stripped = my_collection_handle | strip | escape %}
+
+	{% for collection in collections %}
+		{% if my_collection_handle_stripped == collection.handle %}
+			{% assign its_a_match = true %}
+		{% endif %}
+	{% endfor %}
+
+	{% if its_a_match %}
+		<a href="/collections/{{ product_vendor | handleize }}">
+			{% if collections[my_collection_handle_stripped].image %}
+				<div class="vendor-image__featured" style=" background: url('{{ collections[my_collection_handle_stripped].image | img_url: '1000x1500' }}') no-repeat 60% 50%; background-size:cover;"></div>
+			{% endif %}
+			<h2>{{ collections[my_collection_handle_stripped].title }}</h2>
+			<p>{{ collections[my_collection_handle_stripped].description | strip_html | truncate: 120 }}</p>
+		</a>
+	{% endif %}
+{% endfor %}
+</div>

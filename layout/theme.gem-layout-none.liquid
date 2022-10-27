@@ -1,0 +1,141 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+<!doctype html>
+
+<!--
+      ___                       ___           ___           ___
+     /  /\                     /__/\         /  /\         /  /\
+    /  /:/_                    \  \:\       /  /:/        /  /::\
+   /  /:/ /\  ___     ___       \  \:\     /  /:/        /  /:/\:\
+  /  /:/ /:/ /__/\   /  /\  ___  \  \:\   /  /:/  ___   /  /:/  \:\
+ /__/:/ /:/  \  \:\ /  /:/ /__/\  \__\:\ /__/:/  /  /\ /__/:/ \__\:\
+ \  \:\/:/    \  \:\  /:/  \  \:\ /  /:/ \  \:\ /  /:/ \  \:\ /  /:/
+  \  \::/      \  \:\/:/    \  \:\  /:/   \  \:\  /:/   \  \:\  /:/
+   \  \:\       \  \::/      \  \:\/:/     \  \:\/:/     \  \:\/:/
+    \  \:\       \__\/        \  \::/       \  \::/       \  \::/
+     \__\/                     \__\/         \__\/         \__\/
+
+--------------------------------------------------------------------
+#  Ira v4.2.0
+#  Documentation: https://fluorescent.co/help/ira/
+#  Purchase: https://themes.shopify.com/themes/ira/
+#  A product by Fluorescent: https://fluorescent.co/
+--------------------------------------------------------------------
+
+-->
+
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- if settings.favicon != blank -%}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+    {%- endif -%}
+
+    {%- capture seo_title -%}
+    {%- if request.page_type == 'search' and search.performed == true -%}
+    {{ 'search.heading' | t: count: search.results_count }}: {{ 'search.results_with_count' | t: terms: search.terms,
+    count: search.results_count }}
+    {%- else -%}
+    {{ page_title }}
+    {%- endif -%}
+    {%- if current_tags -%}
+    {%- assign meta_tags = current_tags | join: ', ' -%} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+    {%- endif -%}
+    {%- if current_page != 1 -%}
+    &ndash; {{ 'general.meta.page' | t: page: current_page }}
+    {%- endif -%}
+    {%- assign escaped_page_title = page_title | escape -%}
+    {%- unless escaped_page_title contains shop.name -%}
+    &ndash; {{ shop.name }}
+    {%- endunless -%}
+    {%- endcapture -%}
+    <title>{{ seo_title | strip }}</title>
+
+    {%- if page_description -%}
+    <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    {% render 'social-meta-tags' %}
+
+    {% render 'theme-setup' %}
+    {% render 'theme-setting-vars' %}
+    {{ 'theme.css' | asset_url | stylesheet_tag }}
+    {{ 'sixbond-custom.css' | asset_url | stylesheet_tag }}
+
+    <!-- SixBondStreet CUSTOM -->
+
+    {% if template.name == 'product' %}
+      {{ 'product-page.css' | asset_url | stylesheet_tag }}
+    {% elsif template.name == 'index'%}
+      {{ 'index.scss.css' | asset_url | stylesheet_tag }}
+    {% endif %}
+    <!-- END SixBondStreet CUSTOM  -->
+    
+    
+    {{ content_for_header }}
+    <!-- Algolia head -->
+    {{ 'algolia_config.js' | asset_url | script_tag }}
+
+
+
+
+
+
+<script type="text/template" id="template_algolia_money_format">{% include 'algolia_money_format' %}</script>
+<script type="text/template" id="template_algolia_current_collection_id">{% include 'algolia_current_collection_id' %}</script>
+<script type="text/template" id="template_algolia_autocomplete">{% include 'algolia_autocomplete.hogan' %}</script>
+<script type="text/template" id="template_algolia_autocomplete.css">{% include 'algolia_autocomplete.css.hogan' %}</script>
+<script type="text/template" id="template_algolia_autocomplete_pages_empty">{% include 'algolia_autocomplete_pages_empty.hogan' %}</script>
+<script type="text/template" id="template_algolia_autocomplete_page">{% include 'algolia_autocomplete_page.hogan' %}</script>
+<script type="text/template" id="template_algolia_autocomplete_collection">{% include 'algolia_autocomplete_collection.hogan' %}</script>
+<script type="text/template" id="template_algolia_autocomplete_collections_empty">{% include 'algolia_autocomplete_collections_empty.hogan' %}</script>
+<script type="text/template" id="template_algolia_autocomplete_article">{% include 'algolia_autocomplete_article.hogan' %}</script>
+<script type="text/template" id="template_algolia_autocomplete_articles_empty">{% include 'algolia_autocomplete_articles_empty.hogan' %}</script>
+<script type="text/template" id="template_algolia_autocomplete_product">{% include 'algolia_autocomplete_product.hogan' %}</script>
+<script type="text/template" id="template_algolia_autocomplete_products_empty">{% include 'algolia_autocomplete_products_empty.hogan' %}</script>
+<script type="text/template" id="template_algolia_autocomplete_footer">{% include 'algolia_autocomplete_footer.hogan' %}</script>
+<script type="text/template" id="template_algolia_instant_search">{% include 'algolia_instant_search.hogan' %}</script>
+<script type="text/template" id="template_algolia_instant_search.css">{% include 'algolia_instant_search.css.hogan' %}</script>
+<script type="text/template" id="template_algolia_instant_search_stats">{% include 'algolia_instant_search_stats.hogan' %}</script>
+<script type="text/template" id="template_algolia_instant_search_facet_show_more">{% include 'algolia_instant_search_facet_show_more.hogan' %}</script>
+<script type="text/template" id="template_algolia_instant_search_facet_item">{% include 'algolia_instant_search_facet_item.hogan' %}</script>
+<script type="text/template" id="template_algolia_instant_search_current_refined_values_item">{% include 'algolia_instant_search_current_refined_values_item.hogan' %}</script>
+<script type="text/template" id="template_algolia_instant_search_product">{% include 'algolia_instant_search_product.hogan' %}</script>
+<script type="text/template" id="template_algolia_instant_search_no_result">{% include 'algolia_instant_search_no_result.hogan' %}</script>
+{{ 'algolia_dependency_font-awesome-4-4-0.min.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'algolia_externals.js' | asset_url }}" defer></script>
+{{ 'algolia_init.js' | asset_url | script_tag }}
+<script src="{{ 'algolia_analytics.js' | asset_url }}" defer></script>
+<script src="{{ 'algolia_translations.js' | asset_url }}" defer></script>
+<script src="{{ 'algolia_helpers.js' | asset_url }}" defer></script>
+<script src="{{ 'algolia_autocomplete.js' | asset_url }}" defer></script>
+<script src="{{ 'algolia_facets.js' | asset_url }}" defer></script>
+<script src="{{ 'algolia_sort_orders.js' | asset_url }}" defer></script>
+<script src="{{ 'algolia_instant_search.js' | asset_url }}" defer></script>
+  <!-- /Algolia head -->
+
+  <!--Gem_Page_Header_Script-->
+{% render 'gem-app-header-scripts' %}
+<!--End_Gem_Page_Header_Script-->
+</head>
+
+  <body>
+<div class="gem-container">
+	{{ content_for_layout }}
+</div><!-- end .gem-container -->
+<!--Gem_Page_Footer_Script-->
+{% render 'gem-app-footer-scripts', GEM_FOOTER_SCRIPT: GEM_FOOTER_SCRIPT %}
+<!--End_Gem_Page_Footer_Script-->
+</body>
+
+</html>

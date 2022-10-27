@@ -49,7 +49,7 @@
     "cart_enable_ajax": true,
     "cart_enable_quick_shop": false,
     "cart_terms_conditions_enable": true,
-    "threshold": "10000",
+    "threshold": "12000",
     "cart_terms_conditions_link": "shopify:\/\/pages\/kjopsbetingelser",
     "cart_quick_shop_show_quantity": false,
     "social_twitter_link": "",
@@ -84,19 +84,10 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "1600989347608": {
-            "type": "announcement",
-            "settings": {
-              "title": "Merkevaresalg opptil 50% rabatt",
-              "link": "shopify:\/\/collections\/merkevaresalg",
-              "color_background": "#2d2d2d",
-              "color_text": "#ffffff"
-            }
-          },
           "1600989314555": {
             "type": "announcement",
             "settings": {
-              "title": "Fri frakt på alle ordre over 10.000,-",
+              "title": "Fri frakt på alle ordre over 12.000,-",
               "link": "",
               "color_background": "#151515",
               "color_text": "#ffffff"
@@ -104,7 +95,6 @@
           }
         },
         "block_order": [
-          "1600989347608",
           "1600989314555"
         ],
         "settings": {
@@ -141,7 +131,7 @@
           "alt_menu": "alt-menu",
           "style": "inline",
           "logo_position": "center",
-          "enable_transparent_home": false,
+          "enable_transparent_home": true,
           "enable_transparent_collection": true,
           "color_text_transparent": "#ffffff",
           "color_icon_transparent": "#ffffff",
@@ -171,7 +161,7 @@
             "type": "text",
             "settings": {
               "title": "Kontakt oss",
-              "text": "<p>Tlf: 45 09 99 00<br\/>Telefon åpen fra 10:00 - 16:00<br\/>Mandag til Fredag<br\/>Kundeservice@sixbondstreet.no<\/p><p><strong>Showroom<\/strong><\/p><p><a href=\"\/pages\/showroom-bergen\" title=\"Showroom Bergen\">Bergen →<\/a><br\/><a href=\"\/pages\/showroom-oslo\" title=\"Showroom Oslo\">Oslo →<\/a><\/p><p><a href=\"\/pages\/ledige-stillinger\" title=\"Ledige Stillinger\"><strong>Ledige stillinger<\/strong><\/a><\/p>"
+              "text": "<p>Kundeservice@sixbondstreet.no<\/p><p><strong>Chat<br\/><\/strong>Snakk med oss online mellom <br\/>11-13 og 16-18 <br\/>man-fre<\/p><p><strong>Showroom<\/strong><\/p><p><a href=\"\/pages\/showroom-bergen\" title=\"Showroom Bergen\">Bergen →<\/a><br\/><a href=\"\/pages\/showroom-oslo\" title=\"Showroom Oslo\">Oslo →<\/a><\/p><p><a href=\"\/pages\/ledige-stillinger\" title=\"Ledige Stillinger\"><strong>Ledige stillinger<\/strong><\/a><\/p>"
             }
           },
           "1600315548142": {
@@ -192,7 +182,7 @@
             "type": "about",
             "settings": {
               "title": "Om SixBondStreet",
-              "about_text": "<p>Hos oss skal du få det du ikke finner alle andre steder.  Gjennom spennende kolleksjoner med internasjonalt uttrykk, kvalitet og fornuftige priser skal vi gjennom vår nettbutikk inspirere deg til et vakrere hjem.<\/p>",
+              "about_text": "<p>Hos oss skal du få det du ikke finner alle andre steder.  Gjennom spennende kolleksjoner med internasjonalt uttrykk, kvalitet og fornuftige priser skal vi gjennom vår nettbutikk inspirere deg til et vakrere hjem.<\/p><p>Les mer her<\/p>",
               "about_link": "shopify:\/\/pages\/om-oss",
               "trygg_id": "1624",
               "trygg_text": "<p>SixBondStreet AS er godkjent av Trygg e-Handel, det betyr at du kan kjenne deg trygg og sikker når du handler fra oss. Trygg e-Handels formål er å beskytte deg som forbruker – kun stabile og seriøse nettbutikker kan bli godkjent til å benytte Trygg e-Handel merket. Du kan lese mer om Trygg e-Handel og dine rettigheter som forbruker på www.tryggehandel.no. <\/p>"
@@ -209,7 +199,16 @@
           "show_locale_selector": true,
           "show_currency_selector": true,
           "show_social_icons": true,
-          "show_payment_icons": true
+          "show_payment_icons": true,
+          "facebook_link": "https:\/\/www.facebook.com\/sixbondstreet",
+          "facebook_image": "shopify:\/\/shop_images\/iconmonstr-facebook-4-240.png",
+          "instagram_link": "https:\/\/www.instagram.com\/sixbondstreet.no\/",
+          "instagram_image": "shopify:\/\/shop_images\/iconmonstr-instagram-14-240.png",
+          "youtube_link": "https:\/\/www.youtube.com\/channel\/UCCMtKelGjAiD6z5XRCbO6pQ",
+          "youtube_image": "shopify:\/\/shop_images\/iconmonstr-youtube-9-240_2.png",
+          "pinterest_link": "https:\/\/no.pinterest.com\/sixbondstreet\/",
+          "pinterest_image": "shopify:\/\/shop_images\/iconmonstr-pinterest-4-240.png",
+          "twitter_link": ""
         }
       },
       "extended-footer": {

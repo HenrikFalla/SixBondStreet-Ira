@@ -1,0 +1,711 @@
+{
+  "sections": {
+    "slideshow-1": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_hostenstrender_forside_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/banner_hostenstrender_forside_22.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "",
+            "title": "Høstens interiørtrender",
+            "subheading": "<p>De siste tre årene har det skjedd endringer som normalt ville ha skjedd over flere tiår. <br\/>Det har vært intense år med drastiske endringer.<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Les mer her",
+            "link": "https:\/\/sixbondstreet.no\/pages\/interiortjeneste",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#29292c",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 40
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "settings": {
+        "desktop_height": 65,
+        "mobile_height": 65,
+        "duration_autoplay": 4,
+        "enable_parallax": false,
+        "enable_full_width": true,
+        "color_dot": "#777777"
+      }
+    },
+    "1652734830e13bb44f": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "1652734830beeb48e1-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shipped_0433dece-e93b-493d-b515-b5906a5d371f.png",
+            "title": "Fri frakt på ordre over 10.000,-",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        },
+        "1652734830beeb48e1-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/circular-arrow.png",
+            "title": "30 dager åpent kjøp",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        },
+        "1652734830beeb48e1-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/safe_payment_solid.png",
+            "title": "Trygg betaling",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1652734830beeb48e1-0",
+        "1652734830beeb48e1-1",
+        "1652734830beeb48e1-2"
+      ],
+      "settings": {
+        "per_row": 3,
+        "image_max_width": 100,
+        "circle": true
+      }
+    },
+    "2-column-mosaic-grid": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "small_square-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collage_host_hytta_002.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Fjellhytta",
+            "subheading": "<p>Gjør hytta på fjellet klar for sesongen, med en aldri så liten oppgradering.<\/p>",
+            "text_max_width": 30,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/inspirasjon-til-fjellhytta",
+            "text_position": "center_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#2d2d2d",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "small_square-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/belysning_forside_host.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Lys opp høstmørket",
+            "subheading": "<p>Her finner du dekorativ belysning til alle rom.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/belysning",
+            "text_position": "center_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#2d2d2d",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "small_square-2",
+        "small_square-1"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "165590230686a4951c": {
+      "type": "image-with-text",
+      "blocks": {
+        "1655902306efe1fc7a-0": {
+          "type": "heading",
+          "settings": {
+            "heading_title": "LAYERED x POPPYKALAS"
+          }
+        },
+        "1655902306efe1fc7a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The secret garden. Layereds samarbeid med den berømte danske blomsterkunstneren Poppykalas. Inspirert av organiske blomsterformer, skaper Poppykalas interaktive og uventede installasjoner som bringer blomsterverdenen direkte til hjemmet ditt.<\/p>"
+          }
+        },
+        "1655902306efe1fc7a-2": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/collections\/layered-x-poppykalas",
+            "link_text": "Se kolleksjonen her"
+          }
+        }
+      },
+      "block_order": [
+        "1655902306efe1fc7a-0",
+        "1655902306efe1fc7a-1",
+        "1655902306efe1fc7a-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Poppy_9.gif",
+        "video_url": "",
+        "image_width": "standard",
+        "image_position": "left",
+        "max_width_text": 34,
+        "enable_contrast": false,
+        "enable_full_width": false
+      }
+    },
+    "1655904214bdb65264": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "1655904214361113c8-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/portrett_forside_camilla_abry.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Få stilen til Camilla Abry",
+            "subheading": "<p>La deg inspirere av hjemmet og interiørstilen til designer Camilla Abry. Den er preget av lyse tekstiler kombinert med eksklusive naturmaterialer som eik og marmor. <\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/fa-stilen-til-camilla-abry",
+            "text_position": "right_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "1655904214361113c8-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/camilla_abry_sofabord_teppe.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "",
+            "subheading": "<p>Her finner du alle møblene og interiørartiklene du trenger for å gjenskape Camilla Abrys stil.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/camilla-abry-fa-stilen",
+            "text_position": "center_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "1655904214361113c8-1",
+        "1655904214361113c8-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "1663578893628202ea": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "1663578893011d0a65-0": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/600057_Breeze10_2PK_Grey_3_1800x1800_9683765d-de20-4ec9-91cc-035a639493be.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Peis uten pipe",
+            "subheading": "<p>Hold deg og gjestene dine varme utover høsten med hjelp fra en eller flere peiser fra TenderFlame.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/lun-opp-kjolige-sommerkvelder-med-en-utepeis-fra-tenderflame",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "1663578893011d0a65-0"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "1663579399ad141f79": {
+      "type": "carousel",
+      "blocks": {
+        "1663579398e4302730-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1040769_miljobilde_louise_roe_oker_avlang.jpg",
+            "meta": "Nyheter",
+            "title": "Nyheter",
+            "subheading": "<p>Her finner du alle våre nyheter.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/nyheter",
+            "alignment": "center_center",
+            "opacity_overlay": 30
+          }
+        },
+        "1663579398e4302730-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/harrison_gang_forside_22.jpg",
+            "meta": "by SixBondStreet",
+            "title": "Harrison kolleksjonen",
+            "subheading": "<p><strong>På lager for omgående levering. <\/strong>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/harrison-kolleksjonen",
+            "alignment": "left_bottom",
+            "opacity_overlay": 30
+          }
+        },
+        "1663579398e4302730-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1040769_louise_roe_miljo_oker_avlang.jpg",
+            "meta": "Dansk design",
+            "title": "Louise Roe",
+            "subheading": "<p>Louise Roe er et Københavnsbasert interiørdesignmerke, etablert i 2010. Hvert objekt er personlig tegnet av Louise Roe og oser av estetikk og håndverk av høy kvalitet.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/louise-roe",
+            "alignment": "left_bottom",
+            "opacity_overlay": 20
+          }
+        }
+      },
+      "block_order": [
+        "1663579398e4302730-0",
+        "1663579398e4302730-1",
+        "1663579398e4302730-2"
+      ],
+      "settings": {
+        "height_mobile": 50,
+        "color_overlay": "#000000",
+        "color_heading": "#ffffff",
+        "color_subheading": "#ffffff",
+        "color_background_button": "#ffffff",
+        "color_text_button": "#000000"
+      }
+    },
+    "166357956153f60049": {
+      "type": "collection-list",
+      "blocks": {
+        "1663579561eae045fd-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "interiortrender-de-bevisste"
+          }
+        },
+        "1663579561eae045fd-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "interiortrender-de-selvbevisste"
+          }
+        },
+        "1663579561eae045fd-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "interiortrender-de-sannhetssokende"
+          }
+        },
+        "6ae82d34-df16-44fa-9ec9-1656a0eee21c": {
+          "type": "collection",
+          "settings": {
+            "collection": "interiortrender-de-sensitive"
+          }
+        }
+      },
+      "block_order": [
+        "1663579561eae045fd-0",
+        "1663579561eae045fd-1",
+        "1663579561eae045fd-2",
+        "6ae82d34-df16-44fa-9ec9-1656a0eee21c"
+      ],
+      "settings": {
+        "title": "Få stilen",
+        "per_row": 4,
+        "aspect_ratio": "natural"
+      }
+    },
+    "166357992126ee7bfb": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "1663579921e1b604ba-0": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forside_fotokunst_banner.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Interiør",
+            "title": "Fotokunst",
+            "subheading": "<p>Alt du trenger for å oppgradere veggene dine.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/fotokunst",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "1663579921e1b604ba-0"
+      ],
+      "settings": {
+        "enable_full_width": true
+      }
+    },
+    "1655906078323d2266": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "nyheter",
+        "title": "{{ section.settings.collection.title }}",
+        "per_row": 4,
+        "rows": 1,
+        "aspect_ratio": "square"
+      }
+    },
+    "16559052358ffed71f": {
+      "type": "slideshow",
+      "blocks": {
+        "16559052345c05876d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/somerset_serien_banner.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "Rask levering",
+            "title": "Spisestue",
+            "subheading": "<p>Her finner du møblene og dekoren du trenger for å skape en vakker og innbydende spisestue. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/levering-for-jul-spisestue",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 40
+          }
+        },
+        "dbba427c-9d1b-429f-9a03-453c2f20271f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stue_rask_levering.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "Rask levering",
+            "title": "Stue",
+            "subheading": "<p>Her finner du garantert noe du ønsker deg til stuen din. Alt du finner her er lagerført. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/levering-f-r-jul-stue",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 40
+          }
+        },
+        "9a6e1083-45b6-495c-877f-eb60ca6285a9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forside_rask_levering_interior_mobil.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/forside_rask_levering_interior_mobil.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "Rask levering",
+            "title": "Interiørvarer",
+            "subheading": "<p>Her finner du et bredt utvalg interiørvarer. Alt du finner her er lagerført og leveringsklart. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/levering-for-jul-interior-tekstiler",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 40
+          }
+        }
+      },
+      "block_order": [
+        "16559052345c05876d-0",
+        "dbba427c-9d1b-429f-9a03-453c2f20271f",
+        "9a6e1083-45b6-495c-877f-eb60ca6285a9"
+      ],
+      "settings": {
+        "desktop_height": 65,
+        "mobile_height": 65,
+        "duration_autoplay": 6,
+        "enable_parallax": false,
+        "enable_full_width": true,
+        "color_dot": "#777777"
+      }
+    },
+    "1663580092ee98390a": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "16635800919982818c-0": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ginemargrethe_forside.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "Hjemme hos Gine Margrethe",
+            "subheading": "<p>Gine Margrethe er et stilikon med mange jern i ilden. SixBondStreet besøkte henne for å snakke om trender, bærekraft og innredning av hjemmet.<\/p>",
+            "text_max_width": 30,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/inspirasjon-hjemme-hos-stilikonet-gine-margrethe",
+            "text_position": "left_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 25
+          }
+        }
+      },
+      "block_order": [
+        "16635800919982818c-0"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "165597183990c0e2cb": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "165597183994b029a2-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hund_gine_margrethe.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Bærekraft",
+            "title": "Hvordan fungerer FibreGuard?",
+            "subheading": "<p>Er du blant dem som ønsker møbler med lettstelte tekstiler? Da vil vi introdusere deg for Fibreguard.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/lettstelte-tekstiler-med-fibreguard",
+            "text_position": "left_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "165597183994b029a2-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/oakland_spisestol_naerbilde_002.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Bærekraft",
+            "title": "Våre tekstiler",
+            "subheading": "<p>Vår nye tekstilkolleksjon en inspirert av nye tider. Vi lengter etter farger.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/komfortable-og-elegante-spisestoler",
+            "text_position": "center_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "165597183994b029a2-1",
+        "165597183994b029a2-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "nosto_index": {
+      "type": "nosto-index",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1655973450c3510188": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Nettmagasin",
+        "blog": "inspirasjon",
+        "per_row": 2,
+        "rows": 1,
+        "aspect_ratio": "natural"
+      }
+    },
+    "1655979936791ce15e": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "101-copenhagen",
+        "title": "{{ section.settings.collection.title }}",
+        "per_row": 4,
+        "rows": 1,
+        "aspect_ratio": "square"
+      }
+    },
+    "1655980344fab006ba": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "713f8bf9-3548-4765-b135-34ffdf05fc0b": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/portrett_palla_svart_hvitt.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Vår designer Palla Masdottir",
+            "subheading": "<p>Palla er engasjert og lidenskapelig opptatt av design og produksjon. Hun er villig til å stå på barrikadene for å få frem bærekraftig produksjon og rettferdig handel.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/pages\/var-designer",
+            "text_position": "left_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "ec2caef9-1eeb-4453-933b-974c644cfa55": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nora_portrett_svarthvitt.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Interiørtjenester",
+            "title": "Book en online interiørkonsultasjon",
+            "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. <\/p>",
+            "text_max_width": 28,
+            "link_text": "Book time her",
+            "link": "shopify:\/\/pages\/interiortjeneste",
+            "text_position": "right_top",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "713f8bf9-3548-4765-b135-34ffdf05fc0b",
+        "ec2caef9-1eeb-4453-933b-974c644cfa55"
+      ],
+      "settings": {
+        "enable_full_width": true
+      }
+    }
+  },
+  "order": [
+    "slideshow-1",
+    "1652734830e13bb44f",
+    "2-column-mosaic-grid",
+    "165590230686a4951c",
+    "1655904214bdb65264",
+    "1663578893628202ea",
+    "1663579399ad141f79",
+    "166357956153f60049",
+    "166357992126ee7bfb",
+    "1655906078323d2266",
+    "16559052358ffed71f",
+    "1663580092ee98390a",
+    "165597183990c0e2cb",
+    "nosto_index",
+    "1655973450c3510188",
+    "1655979936791ce15e",
+    "1655980344fab006ba"
+  ]
+}

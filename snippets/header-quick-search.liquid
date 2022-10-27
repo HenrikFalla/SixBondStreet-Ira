@@ -22,14 +22,15 @@
         data-input
       />
       <div class="quick-search__actions">
-        <a class="quick-search__clear" href="#" data-clear tabindex="-1">
+        {% comment %}
+        <a class="quick-search__clear" href="#" data-clear>
           {% render 'icon' with icon: 'close' %}
-        </a>
+        </a> {% endcomment %}
         <button class="quick-search__submit" type="submit">
           {% render 'icon' with icon: 'search' %}
         </button>
       </div>
     </div>
-    <div class="quick-search__results" data-results></div>
+    {% comment %} <div class="quick-search__results" data-results></div> {% endcomment %}
   </form>
 </div>

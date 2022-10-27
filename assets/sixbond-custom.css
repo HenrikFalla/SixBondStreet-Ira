@@ -143,6 +143,7 @@ a.btn.btn--primary,
 .variant__option {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .variant__option .product__color-swatch {
@@ -256,10 +257,10 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
     display: inline-block
 }
 
-  .collection-in-stock__toggle .in_stock_toggle.inactive + .in_stock__variant_orb .in_stock__variant_orb_inner{background:#ff1610}
+  .collection-in-stock__toggle .in_stock_toggle.inactive + .in_stock__variant_orb .in_stock__variant_orb_inner{background:transparent}
   .collection-in-stock__toggle .in_stock_toggle.inactive + .in_stock__variant_orb{
   
-  background:rgb(255 114 110 / 47%)
+  background:transparent
   }
 /* Collapsible menus */
 
@@ -1230,7 +1231,24 @@ input#Email {
         flex: 100%;
     }
 }
-
+ul.social_icons {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    padding: 0 0 12px 0;
+}
+ul.social_icons li {
+    display: block;
+}
+ul.social_icons li a img {
+    max-width: 30px;
+    margin: 0 3px;
+}
+.footer__credits {
+    display: flex;
+    justify-content: center;
+}
 
 /* Tryg E-Handel */
 
@@ -1310,7 +1328,7 @@ img#trygg-logo {
     body span.algolia-autocomplete {
         width: 70vw !important;
         max-width: calc(100vw - 50px);
-        right: 133.1px !important;
+        right: 133px !important;
         left: auto !important;
     }
 }
@@ -1429,4 +1447,21 @@ img#trygg-logo {
     background: rgb(127 93 0 / 1%);
     z-index: 10000;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 767px){
+  .algolia-autocomplete {
+    height: calc(100vh - 84px) !important;
+  }
+  .algolia-autocomplete > .aa-dropdown-menu,
+  .algolia-autocomplete > .aa-dropdown-menu > .aa-columns-container {
+    height: 100% !important;
+  }
+  .algolia-autocomplete > .aa-dropdown-menu > .aa-columns-container {
+    overflow-y: auto;
+  }
+  .algolia-autocomplete > .aa-dropdown-menu > .aa-columns-container .aa-product-title, 
+  .algolia-autocomplete > .aa-dropdown-menu > .aa-columns-container .aa-product-info {
+    white-space: normal;
+  }
 }

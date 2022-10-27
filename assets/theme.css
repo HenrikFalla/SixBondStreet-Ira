@@ -5979,7 +5979,7 @@ a.media__image:focus:after{
 .mega-nav-legacy__container{
   position:relative;
   width:100%;
-  height:100%;
+  height:120%;
   background-color:var(--color-background-dropdown);
   opacity:0;
   transform:translateY(var(--spacing-extra-small));
