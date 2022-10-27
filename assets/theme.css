@@ -116,11 +116,11 @@ https://flickity.metafizzy.co
   --space-outer:20px;
 }
 @media (min-width: 40em){
-:root{
+:root:not(.clerk *){
     --space-outer:calc(var(--spacing-unit) * 10);
 }
   }
-:root{
+:root:not(.clerk *){
   --space-inline-element:10px;
 
   --space-grid:20px;
