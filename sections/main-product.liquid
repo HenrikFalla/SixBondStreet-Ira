@@ -255,7 +255,10 @@
     data-template="@product-page-alternatives"
     data-products="[{{ product.id }}]">
 </span>
-
+    <span class="clerk"
+    data-template="@product-page-others-also-bought"
+    data-products="[{{ product.id }}]">
+</span>
     {% for tag in product.tags %}
         {% for article in blog-vedlikehold.articles %}
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag | downcase %}
@@ -283,14 +286,9 @@
                     {{ article.content }}
                 </div>
             </div>
-   
         {% endif %}
     {% endfor %}
   </section>
-       <span class="clerk"
-    data-template="@product-page-others-also-bought"
-    data-products="[{{ product.id }}]">
-</span>
 </section>
 
 {%- assign models = product.media | where: 'media_type', 'model' | json -%}
