@@ -251,6 +251,10 @@
         <h2>Beskrivelse</h2>
         {{ product.description }}
     </div>
+    <span class="clerk"
+    data-template="@product-page-alternatives"
+    data-products="[{{ product.id }}]">
+</span>
     {% for tag in product.tags %}
         {% for article in blog-vedlikehold.articles %}
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag | downcase %}
