@@ -255,6 +255,10 @@
     data-template="@product-page-alternatives"
     data-products="[{{ product.id }}]">
 </span>
+    <span class="clerk"
+    data-template="@product-page-others-also-bought"
+    data-products="[{{ product.id }}]">
+</span>
     {% for tag in product.tags %}
         {% for article in blog-vedlikehold.articles %}
             {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag | downcase %}
