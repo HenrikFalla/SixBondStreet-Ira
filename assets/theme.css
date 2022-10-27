@@ -99,7 +99,7 @@ https://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected{
   opacity:1;
 }
-:root:not(.clerk *){
+:root:not(.clerk){
   --max-width:2000px;
   --max-width-small-page:600px;
 
@@ -116,11 +116,11 @@ https://flickity.metafizzy.co
   --space-outer:20px;
 }
 @media (min-width: 40em){
-:root:not(.clerk *){
+:root:not(.clerk){
     --space-outer:calc(var(--spacing-unit) * 10);
 }
   }
-:root:not(.clerk *){
+:root:not(.clerk){
   --space-inline-element:10px;
 
   --space-grid:20px;
