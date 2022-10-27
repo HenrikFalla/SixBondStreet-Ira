@@ -99,7 +99,7 @@ https://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected{
   opacity:1;
 }
-:root:not(.clerk_instant_search_title){
+:root:not(.clerk *){
   --max-width:2000px;
   --max-width-small-page:600px;
 
