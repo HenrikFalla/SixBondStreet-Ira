@@ -16,7 +16,10 @@
     endif
   endif
 %}
-
+<span class="clerk" 
+    data-template="@category-page-popular" 
+    data-category="{{ collection.id }}" >
+</span>
 {% paginate collection.products by per_page %}
   <section
     class="
