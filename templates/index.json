@@ -1077,6 +1077,12 @@
       "settings": {
         "enable_full_width": false
       }
+    },
+    "e8fb1d75-5d56-41bd-a2a2-b7dd9a91cf75": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<span class=\"clerk\"\n    data-template=\"@home-page-visitor-complementary\">\n<\/span>"
+      }
     }
   },
   "order": [
@@ -1101,6 +1107,7 @@
     "1655979936791ce15e",
     "1655980344fab006ba",
     "16559803771d68809c",
-    "165598082154f9f913"
+    "165598082154f9f913",
+    "e8fb1d75-5d56-41bd-a2a2-b7dd9a91cf75"
   ]
 }
