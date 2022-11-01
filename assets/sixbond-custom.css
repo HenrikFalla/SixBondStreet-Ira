@@ -6,6 +6,7 @@
     --sxbs-sale-color: #e36f21;
     /* Based on the Hermes Orange */
     --sxbs-accent-color: #F3F1EB;
+    --sxbs-dark-grey: #29292c;
 }
 
 ::selection {
@@ -1060,7 +1061,34 @@ body .aa-dropdown-menu .aa-highlight {
     background-color: #29292c;
 }
 
-
+/* Clerk search specific styling */
+.clerk-instant-search-visible {
+    margin-top: 10px;
+    left: 0!important;
+    right: 0!important;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100vw - 50px);
+    width: 1800px;
+}
+.clerk_instant_search_wrapper {
+    background: var(--sxbs-dark-grey);
+}
+.clerk_instant_search_item {
+    color: #fff;
+}
+.clerk_instant_search_item a {
+    border-bottom: 1px solid #36363b
+    ;
+}
+.product_vendor, .clerk_instant_search_product_name, .clerk_instant_search_product_price_wrap {
+    min-height: 5px;
+    height: auto;
+    margin: 0
+}
+.clerk_instant_search_load_more_btn, .clerk_instant_search_title {
+    background: var(--sxbs-dark-grey);
+}
 /* moving the algolia search block up and to the right*/
 
 body span.algolia-autocomplete,
@@ -1096,8 +1124,15 @@ body .aa-dropdown-menu .aa-cursor {
 }
 
 body .quick-search.active.visible {
-    width: 70vw;
+    border-radius: 25px;
+    width: 600px;
     max-width: calc(100vw - 50px);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
 }
 
 
