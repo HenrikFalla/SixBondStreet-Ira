@@ -1071,6 +1071,16 @@ body .aa-dropdown-menu .aa-highlight {
     max-width: calc(100vw - 50px);
     width: 1800px;
 }
+.clerk_instant_search_wrapper {
+    background: var(--sxbs-dark-grey);
+}
+.clerk_instant_search_item {
+    color: #fff;
+}
+.clerk_instant_search_item a {
+    border-bottom: 1px solid #36363b
+    ;
+}
 .clerk_instant_search_load_more_btn, .clerk_instant_search_title {
     background: var(--sxbs-dark-grey);
 }
