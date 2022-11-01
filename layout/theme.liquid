@@ -186,16 +186,17 @@
     {% endif %}
   {% render 'nosto-tagging' %}
   {% render 'livechat' %}
-
-<span 
-  class="clerk" 
-  data-template="@live-search"
-  data-instant-search-suggestions="6"
-  data-instant-search-categories="6"
-  data-instant-search-pages="6" 
-  data-instant-search='.quick-search__input.aa-input'
-  data-instant-search-positioning='right'>
-</span>
+  {% comment %} Clerk.io instant search code {% endcomment %}
+  <span 
+    class="clerk" 
+    data-template="@live-search"
+    data-instant-search-suggestions="6"
+    data-instant-search-categories="6"
+    data-instant-search-pages="6" 
+    data-instant-search='.quick-search__input, .drawer-menu__search-input'
+    data-instant-search-positioning='right'>
+  </span>
+  {% comment %} End of Clerk.io instant search code {% endcomment %}
   </body>
 
 </html>
