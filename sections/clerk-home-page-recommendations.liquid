@@ -1,5 +1,5 @@
 {%- liquid 
-    assign block_type = settings.recommendation_type
+    assign block_type = section.settings.recommendation_type
 -%}
 {% case block_type %}
     {% when 'complimentary' %}
