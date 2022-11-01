@@ -6,6 +6,7 @@
     --sxbs-sale-color: #e36f21;
     /* Based on the Hermes Orange */
     --sxbs-accent-color: #F3F1EB;
+    --sxbs-dark-grey: #151515;
 }
 
 ::selection {
@@ -1069,6 +1070,9 @@ body .aa-dropdown-menu .aa-highlight {
     margin-right: auto;
     max-width: calc(100vw - 50px);
     width: 1800px;
+}
+.clerk_instant_search_load_more_btn, .clerk_instant_search_title {
+    background: --sxbs-dark-grey;
 }
 /* moving the algolia search block up and to the right*/
 
