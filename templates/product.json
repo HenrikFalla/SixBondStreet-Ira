@@ -117,10 +117,6 @@
     "recommendations": {
       "type": "recommended-products",
       "settings": {
-        "heading": "Ofte kjøpt sammen med",
-        "per_row": 3,
-        "rows": 1,
-        "aspect_ratio": "square"
       }
     },
     "16529056183a2eb7ef": {
@@ -156,18 +152,12 @@
         "per_row": 3,
         "aspect_ratio": "natural"
       }
-    },
-    "nosto_product": {
-      "type": "nosto-product",
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
     "16536511166b9a2ac9",
     "recommendations",
-    "16529056183a2eb7ef",
-    "nosto_product"
+    "16529056183a2eb7ef"
   ]
 }

@@ -571,12 +571,6 @@
         "color_text_button": "#000000"
       }
     },
-    "nosto_index": {
-      "type": "nosto-index",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "1655972076e89a6252": {
       "type": "image-with-text",
       "blocks": {
@@ -1111,7 +1105,6 @@
     "16559052358ffed71f",
     "165597183990c0e2cb",
     "16559720716359b63d",
-    "nosto_index",
     "1655972076e89a6252",
     "1655973450c3510188",
     "1655973557af65b2bb",
