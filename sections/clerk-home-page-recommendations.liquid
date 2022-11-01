@@ -17,27 +17,28 @@
 {% endcase%}
 
 {% schema %}
-    {
-        "name": "Clerk Home",
-        "class": "clerk",
-        "tag": "section",
-        "settings": [
-            {
-                "id": "recommendation_type",
-                "type": "radio",
-                "label": "Velg type anbefaling",
-                "options": [
-                    { "label": "Visitor Complimentary", "value": "complimentary" },
-                    { "label": "Best Sellers", "value": "bestseller" },
-                    { "label": "Hot Products", "value": "hot"}
-                ],
-                "default": "bestseller"
+{
+    "name": "Clerk Home",
+    "settings": [
+        {
+            "id": "recommendation_type",
+            "type": "radio",
+            "label": "Recommendation Type",
+            "options": [
+                { "label": "Visitor Complimentary", "value": "complimentary" },
+                { "label": "Best Sellers", "value": "bestseller" },
+                { "label": "Hot Products", "value": "hot"}
+            ], 
+           "default": "bestseller"
+        }
+    ],
+    "presets": [
+        {
+            "name":"Clerk Home",
+            "settings": {
+                "recommendation_type": "bestseller"
             }
-        ],
-        "templates": ["index"]
-    },
-    {
-        "name": "Clerk Home Block",
-        "category": "ADVANCED LAYOUT"
-    }
+        }
+    ],
+}
 {% endschema %}
