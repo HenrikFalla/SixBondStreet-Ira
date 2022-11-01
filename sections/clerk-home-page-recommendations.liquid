@@ -1,0 +1,38 @@
+{%- liquid 
+    assign block_type = settings.recommendation_type
+-%}
+{% case block_type %}
+    {% when 'complimentary' %}
+        <span class="clerk"
+            data-template="@home-page-visitor-complementary">
+        </span>
+    {% when 'bestseller' %}
+        <span class="clerk"
+            data-template="@home-page-popular">
+        </span>
+    {% when 'hot' %}
+        <span class="clerk"
+            data-template="@home-page-trending">
+        </span>
+{% endcase%}
+
+{% schema %}
+    {
+        "name": "clerk_home_recommendations",
+        "class": "clerk",
+        "tag": "section",
+        "settings": [
+            {
+                "id": "recommendation_type",
+                "type": "radio",
+                "label": "Velg type anbefaling",
+                "options": [
+                    { "label": "Visitor Complimentary", "value": "complimentary" },
+                    { "label": "Best Sellers", "value": "bestseller" },
+                    { "label": "Hot Products", "value": "hot"}
+                ],
+                "default": "bestseller"
+            }
+        ]
+    }
+{% endschema %}
