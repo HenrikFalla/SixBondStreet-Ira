@@ -39,6 +39,12 @@
         "color_dot": "#777777"
       }
     },
+    "88f1fa26-f01d-413c-8db3-2af675672079": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "hot"
+      }
+    },
     "e8fb1d75-5d56-41bd-a2a2-b7dd9a91cf75": {
       "type": "custom-liquid",
       "disabled": true,
@@ -1092,16 +1098,11 @@
       "settings": {
         "custom_liquid": ""
       }
-    },
-    "88f1fa26-f01d-413c-8db3-2af675672079": {
-      "type": "clerk-home-page-recommendations",
-      "settings": {
-        "recommendation_type": "hot"
-      }
     }
   },
   "order": [
     "slideshow-1",
+    "88f1fa26-f01d-413c-8db3-2af675672079",
     "e8fb1d75-5d56-41bd-a2a2-b7dd9a91cf75",
     "1652734830e13bb44f",
     "2-column-mosaic-grid",
@@ -1124,7 +1125,6 @@
     "1655980344fab006ba",
     "16559803771d68809c",
     "165598082154f9f913",
-    "d81a5d92-a099-438c-9f1d-357f938387ce",
-    "88f1fa26-f01d-413c-8db3-2af675672079"
+    "d81a5d92-a099-438c-9f1d-357f938387ce"
   ]
 }
