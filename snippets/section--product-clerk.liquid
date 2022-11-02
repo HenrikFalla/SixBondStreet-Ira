@@ -1,6 +1,6 @@
-<section class="description clerk_recommendations">
+<section class="description clerk_recommendations {{ clerkRec }}">
     <div class="description__container clerk_container">
-        {% case clerkReq %}
+        {% case clerkRec %}
             {% when "alternatives" %}
                 <span class="clerk"
                     data-template="@product-page-alternatives"
