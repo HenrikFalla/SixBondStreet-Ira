@@ -106,7 +106,7 @@
     "1d8d845e-1c9d-49e7-89c9-9de0fcad505b": {
       "type": "product-clerk",
       "settings": {
-        "clerk_recs": "others-also-bought"
+        "clerk_recs": "alternatives"
       }
     },
     "3ee7363c-9368-4dbb-9764-743f4e2bfce8": {
