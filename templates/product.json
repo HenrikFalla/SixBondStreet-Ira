@@ -103,12 +103,6 @@
         "enable_video_looping": true
       }
     },
-    "1d8d845e-1c9d-49e7-89c9-9de0fcad505b": {
-      "type": "product-clerk",
-      "settings": {
-        "clerk_recs": "alternatives"
-      }
-    },
     "3ee7363c-9368-4dbb-9764-743f4e2bfce8": {
       "type": "charpstar-3d",
       "settings": {
@@ -118,6 +112,12 @@
       "type": "product-description",
       "settings": {
         "show-data": false
+      }
+    },
+    "1d8d845e-1c9d-49e7-89c9-9de0fcad505b": {
+      "type": "product-clerk",
+      "settings": {
+        "clerk_recs": "alternatives"
       }
     },
     "f09777e5-1abf-4ea2-87f3-7dca7de6b302": {
@@ -137,15 +137,22 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "b6e59752-1433-4656-9a75-18c354b2d972": {
+      "type": "product-clerk",
+      "settings": {
+        "clerk_recs": "others-also-bought"
+      }
     }
   },
   "order": [
     "main",
-    "1d8d845e-1c9d-49e7-89c9-9de0fcad505b",
     "3ee7363c-9368-4dbb-9764-743f4e2bfce8",
     "fb06e00b-6da4-41cf-819f-d9974b36732b",
+    "1d8d845e-1c9d-49e7-89c9-9de0fcad505b",
     "f09777e5-1abf-4ea2-87f3-7dca7de6b302",
     "2ac46181-b599-431b-af90-b0c2fa50b03a",
-    "recommendations"
+    "recommendations",
+    "b6e59752-1433-4656-9a75-18c354b2d972"
   ]
 }
