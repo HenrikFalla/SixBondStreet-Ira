@@ -1,10 +1,7 @@
 {%- liquid 
     assign block_type = section.settings.recommendation_type
 -%}
-<section
-  class="featured-collection s-inline-section"
-  data-section-id="{{ section.id }}"
->
+
     {% case block_type %}
         {% when 'complimentary' %}
             <span class="clerk"
@@ -19,7 +16,7 @@
                 data-template="@home-page-trending">
             </span>
     {% endcase%}
-</section>
+
 {% schema %}
 {
     "name": "Clerk Home",
