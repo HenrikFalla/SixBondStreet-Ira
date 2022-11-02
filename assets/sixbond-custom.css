@@ -52,7 +52,23 @@ span.on-sale.saved_percentage {
     text-decoration: none;
 }
 
-
+/* Clerk Product Recommendations */
+.clerk_product_image, .clerk_product_hover_image {
+    max-height: 1000px;
+    height: auto;
+}
+.clerk_image_wrapper::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 100%;
+    background: rgb(71 47 0 / 4%);
+    z-index: 1000;
+}
+/* End Clerk Product Recommendations */
 /* Product Page */
 
 span.dom-message {
@@ -1021,46 +1037,6 @@ img.tippy-image__tooltip {
     border-radius: 5px;
 }
 
-
-/* Instant search */
-
-body .aa-dropdown-menu-size-lg .aa-columns-container {
-    background-color: #29292c;
-    height: 400px;
-}
-
-body .aa-dropdown-menu .aa-product-info,
-body .aa-dropdown-menu .aa-product-price {
-    color: white;
-}
-
-body .aa-dropdown-menu .aa-products-empty .aa-no-result {
-    color: white;
-}
-
-body .aa-dropdown-menu a,
-body .aa-dropdown-menu a:hover,
-body .aa-dropdown-menu a:focus,
-body .aa-dropdown-menu a:active {
-    color: white;
-    font-weight: bold;
-}
-
-body .aa-dropdown-menu .aa-collections-header,
-body .aa-dropdown-menu .aa-articles-header,
-body .aa-dropdown-menu .aa-pages-header {
-    color: white;
-}
-
-body .aa-dropdown-menu .aa-highlight {
-    color: white;
-    font-weight: bold;
-}
-
-.algolia-autocomplete .aa-dropdown-menu .aa-footer {
-    background-color: #29292c;
-}
-
 /* Clerk search specific styling */
 .clerk-instant-search-visible {
     margin-top: 10px;
@@ -1089,19 +1065,6 @@ body .aa-dropdown-menu .aa-highlight {
 .clerk_instant_search_load_more_btn, .clerk_instant_search_title {
     background: var(--sxbs-dark-grey);
 }
-/* moving the algolia search block up and to the right*/
-
-body span.algolia-autocomplete,
-.algolia-autocomplete {
-    position: fixed !important;
-    background: #29292c;
-    color: white;
-    border: none;
-    width: 355px !important;
-    max-width: calc(100vw - 50px);
-    left: 0 !important;
-}
-
 
 /* more specific version for hiding shopify results in instant search */
 
@@ -1150,19 +1113,6 @@ the shopping cart and the hamburger menu has the same class name */
         display: none;
     }
 }
-
-
-/* move the section with collection, blogpost etc. to the right*/
-
-.aa-dropdown-menu-size-xs .aa-without-powered-by .aa-left-column,
-.aa-dropdown-menu-size-sm .aa-without-powered-by .aa-left-column {
-    padding: 0 24px;
-}
-
-.aa-dataset-products .aa-right-column {
-    padding: 24px 12px 0 24px;
-}
-
 
 /* footer start */
 
