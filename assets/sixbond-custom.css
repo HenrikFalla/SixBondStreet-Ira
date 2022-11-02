@@ -77,6 +77,9 @@ span.on-sale.saved_percentage {
 .clerk-slider-nav {
     top: 30%;
 }
+.clerk_product_name {
+    margin-top: 0;
+}
 /* End Clerk Product Recommendations */
 /* Product Page */
 
