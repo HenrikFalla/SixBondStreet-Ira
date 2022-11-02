@@ -68,6 +68,12 @@ span.on-sale.saved_percentage {
     background: rgb(71 47 0 / 4%);
     z-index: 1000;
 }
+.clerk-slider-nav-prev {
+    left: -10px;
+}
+.clerk-slider-nav-next {
+    right: -10px;
+}
 /* End Clerk Product Recommendations */
 /* Product Page */
 
