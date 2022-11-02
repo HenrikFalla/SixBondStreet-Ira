@@ -121,7 +121,7 @@ input.qtyplus {
 .merke .merke_container .blog-block__text {
     width: 70%;
 }
-@media screen (max-width: 900px) {
+@media screen and (max-width: 992px) {
     .merke .merke_container {
         flex-direction: column;
     }
