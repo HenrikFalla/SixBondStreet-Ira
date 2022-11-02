@@ -1,21 +1,26 @@
 {%- liquid 
     assign block_type = section.settings.recommendation_type
 -%}
-{% case block_type %}
-    {% when 'complimentary' %}
-        <span class="clerk"
-            data-template="@home-page-visitor-complementary">
-        </span>
-    {% when 'bestseller' %}
-        <span class="clerk"
-            data-template="@home-page-popular">
-        </span>
-    {% when 'hot' %}
-        <span class="clerk"
-            data-template="@home-page-trending">
-        </span>
-{% endcase%}
-
+<section
+  class="featured-collection s-inline-section"
+  data-section-id="{{ section.id }}"
+  data-section-type="featured-collection"
+>
+    {% case block_type %}
+        {% when 'complimentary' %}
+            <span class="clerk"
+                data-template="@home-page-visitor-complementary">
+            </span>
+        {% when 'bestseller' %}
+            <span class="clerk"
+                data-template="@home-page-popular">
+            </span>
+        {% when 'hot' %}
+            <span class="clerk"
+                data-template="@home-page-trending">
+            </span>
+    {% endcase%}
+</section>
 {% schema %}
 {
     "name": "Clerk Home",
