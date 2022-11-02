@@ -1093,7 +1093,21 @@ img.tippy-image__tooltip {
 .clerk_instant_search_load_more_btn, .clerk_instant_search_title {
     background: var(--sxbs-dark-grey);
 }
-
+@media screen and (max-width: 960px) {
+    .clerk-instant-search-visible {
+        margin-left: 0;
+        margin-top: 0;
+        border: none;
+    }
+    .clerk_instant_search_grid_wrapper {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 900px) {
+    .clerk_instant_search_grid_wrapper {
+        flex-direction: column;
+    }
+}
 /* more specific version for hiding shopify results in instant search */
 
 .drawer-menu__search-results.visible {
