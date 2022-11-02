@@ -1108,6 +1108,11 @@ img.tippy-image__tooltip {
         bottom: 0;
     }
 }
+@media screen and (max-width: 900px) {
+    .clerk_instant_search_grid_wrapper {
+        flex-direction: column;
+    }
+}
 /* more specific version for hiding shopify results in instant search */
 
 .drawer-menu__search-results.visible {
