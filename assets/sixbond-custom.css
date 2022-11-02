@@ -1093,9 +1093,35 @@ img.tippy-image__tooltip {
 .clerk_instant_search_load_more_btn, .clerk_instant_search_title {
     background: var(--sxbs-dark-grey);
 }
-
+@media screen and (max-width: 640px) {
+    .clerk-instant-search-visible {
+        margin-left: 0;
+        margin-top: 18px;
+        border: none;
+        height: calc(100vh - 87px);
+    }
+    .clerk_instant_search_grid_wrapper {
+        flex-direction: column;
+    }
+    a.clerk_instant_search_load_more_btn {
+        position: sticky;
+        bottom: 0;
+    }
+}
+@media screen and (max-width: 900px) {
+    .clerk_instant_search_grid_wrapper {
+        flex-direction: column;
+    }
+    a.clerk_instant_search_load_more_btn {
+        position: sticky;
+        bottom: 0;
+    }
+}
 /* more specific version for hiding shopify results in instant search */
 
+.drawer-menu__search-results.visible {
+    display: none;
+}
 .quick-search__container .quick-search__results {
     height: 0px;
     overflow: hidden;
