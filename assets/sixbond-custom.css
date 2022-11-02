@@ -262,6 +262,7 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
     clip-path: circle();
     margin-top: 0px;vertical-align: middle;
     display: inline-block;
+
 }
 
 .variant_info .in_stock__variant_orb {
@@ -288,6 +289,17 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
   
   background:transparent
   }
+
+/* clerk display of orb */
+.stock_clerk_dot {
+    display: flex;
+    width: 100%;
+}
+.stock_clerk_dot .in_stock__variant_orb {
+    display: block;
+    margin-left: auto;
+    align-self: center;
+}
 /* Collapsible menus */
 
 .collapsible-button {
