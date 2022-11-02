@@ -5,15 +5,13 @@
             {% for article in blog_data.articles %}
                 {% assign handle-check = blog_data.title | downcase | append: "/" | append: tag | downcase %}
                 {% if handle-check == article.handle %}
-                    <div class="blog-block">
-                        <div id="vedlikehold"></div>
-                        {% if article.image %}
-                            <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;    background-position: center;"></div>
-                        {% endif %}
-                        <div class="blog-block__text" {% unless article.image %}style="flex:100%;"{% endunless %}>
-                            <h2 class="block-title">{{ article.title }}</h2>
-                            {{ article.content }}
-                        </div>
+                    <div id="vedlikehold"></div>
+                    {% if article.image %}
+                        <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;    background-position: center;"></div>
+                    {% endif %}
+                    <div class="blog-block__text" {% unless article.image %}style="flex:100%;"{% endunless %}>
+                        <h2 class="block-title">{{ article.title }}</h2>
+                        {{ article.content }}
                     </div>
                 {% endif %}
             {% endfor %}
