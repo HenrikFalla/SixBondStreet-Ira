@@ -1096,6 +1096,9 @@ img.tippy-image__tooltip {
 
 /* more specific version for hiding shopify results in instant search */
 
+.drawer-menu__search-results.visible {
+    display: none;
+}
 .quick-search__container .quick-search__results {
     height: 0px;
     overflow: hidden;
