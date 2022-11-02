@@ -1,5 +1,5 @@
 {% assign vendorHandle = product_data.vendor | handleize %}
-<section class="description merke">
+<section class="description merke {{ vendorHandle }}">
     <div class="description__container merke_container">
         {% for article in blog_data.articles %}
         {% assign handle-check = blog_data.title | downcase | append: "/" | append: vendorHandle %}
