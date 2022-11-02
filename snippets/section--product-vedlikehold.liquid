@@ -3,6 +3,8 @@
         {% for tag in product_data.tags %}
             {% for article in blog_data.articles %}
                 {% assign handle-check = blog_data.title | downcase | append: "/" | append: tag | downcase %}
+                {{ handle-check }}
+                {{ article.handle }}
                 {% if handle-check == article.handle %}
                     <div class="blog-block">
                         <div id="vedlikehold"></div>
