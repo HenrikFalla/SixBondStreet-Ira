@@ -100,8 +100,7 @@
         "enable_sticky_sidebar": true,
         "enable_full_width": true,
         "media_layout": "column",
-        "enable_video_looping": true,
-        "vedlikehold": "vedlikehold"
+        "enable_video_looping": true
       }
     },
     "3ee7363c-9368-4dbb-9764-743f4e2bfce8": {
@@ -118,6 +117,7 @@
     "f09777e5-1abf-4ea2-87f3-7dca7de6b302": {
       "type": "product-vedlikehold",
       "settings": {
+        "vedlikehold": "vedlikehold"
       }
     },
     "16536511166b9a2ac9": {
