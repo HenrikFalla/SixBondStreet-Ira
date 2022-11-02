@@ -204,6 +204,161 @@
         "enable_full_width": false
       }
     },
+    "1663579399ad141f79": {
+      "type": "carousel",
+      "blocks": {
+        "1663579398e4302730-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1040769_miljobilde_louise_roe_oker_avlang.jpg",
+            "meta": "Nyheter",
+            "title": "Nyheter",
+            "subheading": "<p>Her finner du alle våre nyheter.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/nyheter",
+            "alignment": "center_center",
+            "opacity_overlay": 30
+          }
+        },
+        "1663579398e4302730-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/harrison_gang_forside_22.jpg",
+            "meta": "by SixBondStreet",
+            "title": "Harrison kolleksjonen",
+            "subheading": "<p><strong>På lager for omgående levering. <\/strong>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/harrison-kolleksjonen",
+            "alignment": "left_bottom",
+            "opacity_overlay": 30
+          }
+        },
+        "1663579398e4302730-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1040769_louise_roe_miljo_oker_avlang.jpg",
+            "meta": "Dansk design",
+            "title": "Louise Roe",
+            "subheading": "<p>Louise Roe er et Københavnsbasert interiørdesignmerke, etablert i 2010. Hvert objekt er personlig tegnet av Louise Roe og oser av estetikk og håndverk av høy kvalitet.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/louise-roe",
+            "alignment": "left_bottom",
+            "opacity_overlay": 20
+          }
+        }
+      },
+      "block_order": [
+        "1663579398e4302730-0",
+        "1663579398e4302730-1",
+        "1663579398e4302730-2"
+      ],
+      "settings": {
+        "height_mobile": 50,
+        "color_overlay": "#000000",
+        "color_heading": "#ffffff",
+        "color_subheading": "#ffffff",
+        "color_background_button": "#ffffff",
+        "color_text_button": "#000000"
+      }
+    },
+    "1655980344fab006ba": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "713f8bf9-3548-4765-b135-34ffdf05fc0b": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/portrett_palla_svart_hvitt.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Vår designer Palla Masdottir",
+            "subheading": "<p>Palla er engasjert og lidenskapelig opptatt av design og produksjon. Hun er villig til å stå på barrikadene for å få frem bærekraftig produksjon og rettferdig handel.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/pages\/var-designer",
+            "text_position": "left_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "ec2caef9-1eeb-4453-933b-974c644cfa55": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nora_portrett_svarthvitt.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Interiørtjenester",
+            "title": "Book en online interiørkonsultasjon",
+            "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. <\/p>",
+            "text_max_width": 28,
+            "link_text": "Book time her",
+            "link": "shopify:\/\/pages\/interiortjeneste",
+            "text_position": "right_top",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "713f8bf9-3548-4765-b135-34ffdf05fc0b",
+        "ec2caef9-1eeb-4453-933b-974c644cfa55"
+      ],
+      "settings": {
+        "enable_full_width": true
+      }
+    },
+    "1663578893628202ea": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "1663578893011d0a65-0": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/600057_Breeze10_2PK_Grey_3_1800x1800_9683765d-de20-4ec9-91cc-035a639493be.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Peis uten pipe",
+            "subheading": "<p>Hold deg og gjestene dine varme utover høsten med hjelp fra en eller flere peiser fra TenderFlame.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/lun-opp-kjolige-sommerkvelder-med-en-utepeis-fra-tenderflame",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "1663578893011d0a65-0"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
     "165590230686a4951c": {
       "type": "image-with-text",
       "blocks": {
@@ -301,101 +456,6 @@
         "enable_full_width": false
       }
     },
-    "1663578893628202ea": {
-      "type": "2-column-mosaic-grid",
-      "blocks": {
-        "1663578893011d0a65-0": {
-          "type": "medium_horizontal_rect",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/600057_Breeze10_2PK_Grey_3_1800x1800_9683765d-de20-4ec9-91cc-035a639493be.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Inspirasjon",
-            "title": "Peis uten pipe",
-            "subheading": "<p>Hold deg og gjestene dine varme utover høsten med hjelp fra en eller flere peiser fra TenderFlame.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Les mer her",
-            "link": "shopify:\/\/blogs\/inspirasjon\/lun-opp-kjolige-sommerkvelder-med-en-utepeis-fra-tenderflame",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "1663578893011d0a65-0"
-      ],
-      "settings": {
-        "enable_full_width": false
-      }
-    },
-    "1663579399ad141f79": {
-      "type": "carousel",
-      "blocks": {
-        "1663579398e4302730-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1040769_miljobilde_louise_roe_oker_avlang.jpg",
-            "meta": "Nyheter",
-            "title": "Nyheter",
-            "subheading": "<p>Her finner du alle våre nyheter.<\/p>",
-            "max_width_subheading": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/nyheter",
-            "alignment": "center_center",
-            "opacity_overlay": 30
-          }
-        },
-        "1663579398e4302730-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/harrison_gang_forside_22.jpg",
-            "meta": "by SixBondStreet",
-            "title": "Harrison kolleksjonen",
-            "subheading": "<p><strong>På lager for omgående levering. <\/strong>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen.<\/p>",
-            "max_width_subheading": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/harrison-kolleksjonen",
-            "alignment": "left_bottom",
-            "opacity_overlay": 30
-          }
-        },
-        "1663579398e4302730-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1040769_louise_roe_miljo_oker_avlang.jpg",
-            "meta": "Dansk design",
-            "title": "Louise Roe",
-            "subheading": "<p>Louise Roe er et Københavnsbasert interiørdesignmerke, etablert i 2010. Hvert objekt er personlig tegnet av Louise Roe og oser av estetikk og håndverk av høy kvalitet.<\/p>",
-            "max_width_subheading": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/louise-roe",
-            "alignment": "left_bottom",
-            "opacity_overlay": 20
-          }
-        }
-      },
-      "block_order": [
-        "1663579398e4302730-0",
-        "1663579398e4302730-1",
-        "1663579398e4302730-2"
-      ],
-      "settings": {
-        "height_mobile": 50,
-        "color_overlay": "#000000",
-        "color_heading": "#ffffff",
-        "color_subheading": "#ffffff",
-        "color_background_button": "#ffffff",
-        "color_text_button": "#000000"
-      }
-    },
     "166357956153f60049": {
       "type": "collection-list",
       "blocks": {
@@ -491,7 +551,7 @@
             "focal_point": "center_center",
             "focal_point_mobile": "center_center",
             "video_url": "",
-            "meta": "Rask levering",
+            "meta": "Levering til jul",
             "title": "Spisestue",
             "subheading": "<p>Her finner du møblene og dekoren du trenger for å skape en vakker og innbydende spisestue. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
             "max_width_subheading": 30,
@@ -513,7 +573,7 @@
             "focal_point": "center_center",
             "focal_point_mobile": "center_center",
             "video_url": "",
-            "meta": "Rask levering",
+            "meta": "Levering til jul",
             "title": "Stue",
             "subheading": "<p>Her finner du garantert noe du ønsker deg til stuen din. Alt du finner her er lagerført. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
             "max_width_subheading": 30,
@@ -536,7 +596,7 @@
             "focal_point": "center_center",
             "focal_point_mobile": "center_center",
             "video_url": "",
-            "meta": "Rask levering",
+            "meta": "Levering til jul",
             "title": "Interiørvarer",
             "subheading": "<p>Her finner du et bredt utvalg interiørvarer. Alt du finner her er lagerført og leveringsklart. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
             "max_width_subheading": 30,
@@ -679,72 +739,13 @@
     },
     "1655979936791ce15e": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "101-copenhagen",
         "title": "{{ section.settings.collection.title }}",
         "per_row": 4,
         "rows": 1,
         "aspect_ratio": "square"
-      }
-    },
-    "1655980344fab006ba": {
-      "type": "2-column-mosaic-grid",
-      "blocks": {
-        "713f8bf9-3548-4765-b135-34ffdf05fc0b": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/portrett_palla_svart_hvitt.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Inspirasjon",
-            "title": "Vår designer Palla Masdottir",
-            "subheading": "<p>Palla er engasjert og lidenskapelig opptatt av design og produksjon. Hun er villig til å stå på barrikadene for å få frem bærekraftig produksjon og rettferdig handel.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Les mer her",
-            "link": "shopify:\/\/pages\/var-designer",
-            "text_position": "left_bottom",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 20
-          }
-        },
-        "ec2caef9-1eeb-4453-933b-974c644cfa55": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/nora_portrett_svarthvitt.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Interiørtjenester",
-            "title": "Book en online interiørkonsultasjon",
-            "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. <\/p>",
-            "text_max_width": 28,
-            "link_text": "Book time her",
-            "link": "shopify:\/\/pages\/interiortjeneste",
-            "text_position": "right_top",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "713f8bf9-3548-4765-b135-34ffdf05fc0b",
-        "ec2caef9-1eeb-4453-933b-974c644cfa55"
-      ],
-      "settings": {
-        "enable_full_width": true
       }
     }
   },
@@ -753,10 +754,11 @@
     "1652734830e13bb44f",
     "2-column-mosaic-grid",
     "47c2154c-a63c-4ca9-bd80-9dfb10180ca7",
+    "1663579399ad141f79",
+    "1655980344fab006ba",
+    "1663578893628202ea",
     "165590230686a4951c",
     "1655904214bdb65264",
-    "1663578893628202ea",
-    "1663579399ad141f79",
     "166357956153f60049",
     "166357992126ee7bfb",
     "1655906078323d2266",
@@ -765,7 +767,6 @@
     "165597183990c0e2cb",
     "nosto_index",
     "1655973450c3510188",
-    "1655979936791ce15e",
-    "1655980344fab006ba"
+    "1655979936791ce15e"
   ]
 }
