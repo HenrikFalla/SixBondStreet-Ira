@@ -16,7 +16,6 @@
   assign button_options = swatch_options | concat: chip_options
   assign enable_sticky_sidebar = section.settings.enable_sticky_sidebar
 
-  assign blog-vedlikehold = blogs[section.settings.vedlikehold]
   assign blog-merke = blogs[section.settings.merke]
   
   
@@ -328,11 +327,6 @@
         "type": "checkbox",
         "label": "t:sections.main_product.settings.enable_video_looping.label",
         "default": true
-      },
-		{
-        "id": "vedlikehold",
-        "type": "blog",
-        "label": "Vedlikehold"
       }
     ],
     "blocks": [
