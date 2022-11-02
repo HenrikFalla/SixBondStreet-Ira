@@ -94,7 +94,7 @@
     "88f1fa26-f01d-413c-8db3-2af675672079": {
       "type": "clerk-home-page-recommendations",
       "settings": {
-        "recommendation_type": "bestseller"
+        "recommendation_type": "complimentary"
       }
     },
     "2-column-mosaic-grid": {
