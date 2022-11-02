@@ -104,6 +104,12 @@
         "vedlikehold": "vedlikehold"
       }
     },
+    "fb06e00b-6da4-41cf-819f-d9974b36732b": {
+      "type": "product-description",
+      "settings": {
+        "show-data": false
+      }
+    },
     "16536511166b9a2ac9": {
       "type": "blog-posts",
       "settings": {
@@ -156,6 +162,7 @@
   },
   "order": [
     "main",
+    "fb06e00b-6da4-41cf-819f-d9974b36732b",
     "16536511166b9a2ac9",
     "recommendations",
     "16529056183a2eb7ef"
