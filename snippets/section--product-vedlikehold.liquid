@@ -1,8 +1,11 @@
+{% liquid
+    assign blog-vedlikehold = blogs[section.settings.vedlikehold]
+%}
 <section class="description vedlikehold">
     <div class="description__container vedlikehold_container">
         {% for tag in product_data.tags %}
-            {% for article in blog_data.articles %}
-                {% assign handle-check = blog_data.title | downcase | append: "/" | append: tag | downcase %}
+            {% for article in blog-vedlikehold.articles %}
+                {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag | downcase %}
                 {{ handle-check }}
                 {{ article.handle }}
                 {% if handle-check == article.handle %}
