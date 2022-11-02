@@ -1,0 +1,29 @@
+{% render 'section--clerk-home' with
+  block_type: section.settings.recommendation_type
+%}
+{% schema %}
+{
+    "name": "Clerk Home",
+    "settings": [
+        {
+            "id": "recommendation_type",
+            "type": "radio",
+            "label": "Recommendation Type",
+            "options": [
+                { "label": "Visitor Complimentary", "value": "complimentary" },
+                { "label": "Best Sellers", "value": "bestseller" },
+                { "label": "Hot Products", "value": "hot"}
+            ], 
+           "default": "bestseller"
+        }
+    ],
+    "presets": [
+        {
+            "name":"Clerk Home",
+            "settings": {
+                "recommendation_type": "bestseller"
+            }
+        }
+    ]
+}
+{% endschema %}
