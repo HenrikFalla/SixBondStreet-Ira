@@ -4,6 +4,7 @@
 <section class="description vedlikehold">
     <div class="description__container vedlikehold_container">
         {% for tag in product_data.tags %}
+            {{ tag }}
             {% for article in blog-vedlikehold.articles %}
                 {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag | downcase %}
                 {{ handle-check }}
