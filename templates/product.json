@@ -131,6 +131,12 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "1d8d845e-1c9d-49e7-89c9-9de0fcad505b": {
+      "type": "product-clerk",
+      "settings": {
+        "clerk_recs": "alternatives"
+      }
     }
   },
   "order": [
@@ -139,6 +145,7 @@
     "fb06e00b-6da4-41cf-819f-d9974b36732b",
     "f09777e5-1abf-4ea2-87f3-7dca7de6b302",
     "2ac46181-b599-431b-af90-b0c2fa50b03a",
-    "recommendations"
+    "recommendations",
+    "1d8d845e-1c9d-49e7-89c9-9de0fcad505b"
   ]
 }
