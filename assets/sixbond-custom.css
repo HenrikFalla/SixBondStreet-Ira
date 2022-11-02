@@ -1098,6 +1098,7 @@ img.tippy-image__tooltip {
         margin-left: 0;
         margin-top: 18px;
         border: none;
+        height: calc(100vh - 87px);
     }
     .clerk_instant_search_grid_wrapper {
         flex-direction: column;
