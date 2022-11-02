@@ -286,13 +286,13 @@ form.product-form .product-form__controls-group::-webkit-scrollbar-thumb {
 .trigger_orb {
     display: inline-block
 }
-
+/*
   .collection-in-stock__toggle .in_stock_toggle.inactive + .in_stock__variant_orb .in_stock__variant_orb_inner{background:transparent}
   .collection-in-stock__toggle .in_stock_toggle.inactive + .in_stock__variant_orb{
   
   background:transparent
   }
-
+*/
 /* clerk display of orb */
 .stock_clerk_dot {
     display: flex;
