@@ -118,6 +118,7 @@ input.qtyplus {
     width: 30%;
     margin-right: 12px;
     min-height: 200px;
+    margin-bottom: 0;
 }
 .merke .merke_container .blog-block__text {
     width: 70%;
@@ -129,6 +130,7 @@ input.qtyplus {
     .merke .merke_container .blog-block__image {
         width: 100%;
         margin-right: 0;
+        margin-bottom: 12px;
     }
     .merke .merke_container .blog-block__text {
         width: 100%;
