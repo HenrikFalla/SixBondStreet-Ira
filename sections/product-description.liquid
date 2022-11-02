@@ -1,0 +1,23 @@
+{% render 'section--product-description' with
+    show-data: section.settings.show-data,
+    product_data: product
+%}
+{% schema %}
+{
+    "name": "Product Description",
+    "settings": [
+    {
+        "type": "checkbox",
+        "id": "show-data",
+        "label": "Vis egenskaper i beskrivelse",
+        "default": false
+    }
+    ],
+ "presets": [
+    {
+        "name": "Product Description"
+    }
+ ],
+ "templates": ["product"]
+}
+{% endschema %}
