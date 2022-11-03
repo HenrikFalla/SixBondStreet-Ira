@@ -198,64 +198,16 @@
         "ba050088-0a27-4931-a408-05e03fb69119": {
           "type": "small_square",
           "settings": {
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "",
-            "title": "",
-            "subheading": "",
-            "text_max_width": 28,
-            "link_text": "",
-            "link": "",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000",
-            "overlay_opacity": 0
-          }
-        },
-        "template--15627018567877__47c2154c-a63c-4ca9-bd80-9dfb10180ca7-1665577456f54dbcc8-0": {
-          "type": "medium_horizontal_rect",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/gulvteppe_forside.jpg",
+            "image": "shopify:\/\/shop_images\/v02_CC9A7D62DB309F379ADA1FE7141E378B.webp",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
             "meta": "Interiør",
-            "title": "Gulvtepper",
-            "subheading": "<p>Lun opp hjem og hytte ved hjelp av myke og lune gulvtepper.<\/p>",
-            "text_max_width": 36,
+            "title": "Fotokunst",
+            "subheading": "<p>Alt du trenger for å oppgradere veggene dine.<\/p>",
+            "text_max_width": 28,
             "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/gulvtepper",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 29
-          }
-        },
-        "e1c22ff8-5cdf-4401-9492-c725d478a1ac": {
-          "type": "medium_horizontal_rect",
-          "disabled": true,
-          "settings": {
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "",
-            "title": "",
-            "subheading": "",
-            "text_max_width": 28,
-            "link_text": "",
-            "link": "",
+            "link": "shopify:\/\/collections\/fotokunst",
             "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
@@ -264,64 +216,14 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000",
-            "overlay_opacity": 0
-          }
-        },
-        "a4b8635f-3e86-4dd2-9dc1-40276aea457b": {
-          "type": "medium_vertical_rect",
-          "disabled": true,
-          "settings": {
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "title": "",
-            "subheading": "",
-            "text_max_width": 24,
-            "link_text": "",
-            "link": "",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000",
-            "overlay_opacity": 0
-          }
-        },
-        "44c27e63-5a01-43fc-a10a-4f1a513c03f0": {
-          "type": "medium_square",
-          "disabled": true,
-          "settings": {
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "title": "",
-            "subheading": "",
-            "text_max_width": 28,
-            "link_text": "",
-            "link": "",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000",
-            "overlay_opacity": 0
+            "overlay_opacity": 10
           }
         }
       },
       "block_order": [
         "fefe5de7-18c1-44c9-9b64-7648325c846c",
         "9ecdb5b4-7e52-4176-9116-07133e3799ad",
-        "ba050088-0a27-4931-a408-05e03fb69119",
-        "template--15627018567877__47c2154c-a63c-4ca9-bd80-9dfb10180ca7-1665577456f54dbcc8-0",
-        "e1c22ff8-5cdf-4401-9492-c725d478a1ac",
-        "a4b8635f-3e86-4dd2-9dc1-40276aea457b",
-        "44c27e63-5a01-43fc-a10a-4f1a513c03f0"
+        "ba050088-0a27-4931-a408-05e03fb69119"
       ],
       "settings": {
         "enable_full_width": false
