@@ -535,7 +535,7 @@
     "1655906078323d2266": {
       "type": "featured-collection",
       "settings": {
-        "collection": "nyheter",
+        "collection": "belysning",
         "title": "{{ section.settings.collection.title }}",
         "per_row": 4,
         "rows": 1,
