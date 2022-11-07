@@ -13,11 +13,11 @@
         "image_position": "center center",
         "enable_full_width": true,
         "show_collection_description": true,
-        "max_width_text": 30,
-        "opacity_overlay": 60,
+        "max_width_text": 60,
+        "opacity_overlay": 30,
         "color_overlay": "#000000",
         "color_heading": "#ffffff",
-        "color_subheading": "#e1e1e1"
+        "color_subheading": "#ffffff"
       }
     },
     "main": {
