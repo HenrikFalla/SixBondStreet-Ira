@@ -191,7 +191,7 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 25
           }
         },
@@ -215,7 +215,7 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 10
           }
         }
@@ -362,9 +362,9 @@
             "title": "Book en online interiørkonsultasjon",
             "subheading": "<p>Snakk med en av våre interiørdesignere uansett hvor du befinner deg i landet. <\/p>",
             "text_max_width": 28,
-            "link_text": "Book time her",
+            "link_text": "Book tid her",
             "link": "shopify:\/\/pages\/interiortjeneste",
-            "text_position": "right_top",
+            "text_position": "left_bottom",
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
