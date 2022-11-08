@@ -724,7 +724,9 @@ svg.ais-SearchBox-submitIcon {
 
 
 /* Filters/Facets */
-
+.collection-modal__footer .btn {
+    line-height: 16px;
+}
 .search .ais-facets-button {
     /* Mobile only button */
     border-radius: 15px;
