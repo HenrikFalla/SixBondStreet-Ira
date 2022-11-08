@@ -60,6 +60,7 @@ span.on-sale.saved_percentage {
 .clerk_image_wrapper {
     aspect-ratio: 1 / 1;
     overflow: hidden;
+    border-radius: 5px;
 }
 .clerk_image_wrapper::after {
     content: "";
