@@ -85,8 +85,14 @@
       "submit": "Meld meg på"
     },
     "filters": {
-      "show_more": "Vis mer",
-      "show_less": "Vis mindre"
+      "apply": "Vis resultater",
+      "clear": "Fjern filter", 
+      "clear_all": "Fjern alle",
+      "clear_filters": "Fjern alle filter",
+      "from": "Fra",
+      "price": "Pris",
+      "to": "til"
+
     },
     "payment": {
       "method": "Betalingsmetoder"
