@@ -33,12 +33,12 @@
       "decrement": "",
       "increment": "",
       "load_3d_model": "",
-      "next": "",
-      "pause": "",
-      "play": "",
-      "play_video": "",
-      "previous": "",
-      "skip_to_products": ""
+      "next": "Neste",
+      "pause": "Pause",
+      "play": "Spill",
+      "play_video": "Spill video",
+      "previous": "Forrige",
+      "skip_to_products": "Skip til produkter"
     },
     "meta": {
       "tags": "Tagget \"{{ tags }}\"",
@@ -66,7 +66,7 @@
       "admin_link_html": "Er du butikkeier? <a href=\"\/admin\" class=\"text-link\">Logg inn her\/a>",
       "password_link": "Gå inn med passord",
       "powered_by_shopify_html": "Denne butikken vil bli drevet av {{ shopify }}",
-      "toggle": ""
+      "toggle": "Vis\/Skjul passord skjema"
     },
     "social": {
       "share_on_facebook": "Del",
@@ -86,12 +86,14 @@
     },
     "filters": {
       "apply": "Vis resultater",
-      "clear": "Fjern filter", 
+      "clear": "Fjern filter",
       "clear_all": "Fjern alle",
       "clear_filters": "Fjern alle filter",
       "from": "Fra",
       "price": "Pris",
-      "to": "til"
+      "to": "til",
+      "show_less": "Vis mindre",
+      "show_more": "Vis mer"
     },
     "payment": {
       "method": "Betalingsmetoder"
@@ -175,8 +177,8 @@
       "regular_total": "Vanlig total",
       "total": "Total",
       "update": "Oppdater",
-      "decrease": "",
-      "increase": ""
+      "decrease": "Øk",
+      "increase": "Reduser"
     },
     "popup": {
       "added_to_cart": "Nettopp lagt til i din handlekurv",
@@ -377,12 +379,12 @@
       "view_in_space_label": "Se i ditt rom, laster inn produktet i et augmented reality vindu.",
       "selling_plan_options": "Kjøpsalternativer",
       "selling_plan_one_time": "Engangskjøp",
-      "quantity_error": ""
+      "quantity_error": "Du har valg flere enn det som er tilgjengelig på lager"
     },
     "inventory": {
-      "in_stock": "",
-      "label": "",
-      "low_stock": "",
+      "in_stock": "På lager, klar for forsendelse",
+      "label": "Lagertall",
+      "low_stock": "Begrenset antall igjen",
       "sold_out": ""
     }
   },
@@ -400,8 +402,8 @@
       "remaining_html": "{{ balance }} igjen",
       "add_to_apple_wallet": "Legg til Apple Wallet",
       "qr_image_alt": "QR kode — skann for å motta gavekort",
-      "initial_value": "",
-      "redeem": ""
+      "initial_value": "Gavekortverdi: {{ value }}",
+      "redeem": "Bruk denne koden i kassen for å bruke ditt gavekort"
     }
   },
   "account": {
@@ -458,7 +460,7 @@
     "cart": "Handlekurv",
     "go_to_cart": "Gå til handlekurv",
     "empty": "Din handlekurv er tom",
-    "shop_cta": ""
+    "shop_cta": "Fortsett å handle"
   },
   "sections": {
     "blog_posts": {
@@ -542,12 +544,12 @@
     }
   },
   "filters": {
-    "apply": "",
-    "clear": "",
-    "clear_all": "",
-    "clear_filters": "",
-    "from": "",
-    "price": "",
-    "to": ""
+    "apply": "Vis resultater",
+    "clear": "Fjern",
+    "clear_all": "Fjern alle",
+    "clear_filters": "Fjern alle filtere",
+    "from": "Fra",
+    "price": "Pris",
+    "to": "Til"
   }
 }
