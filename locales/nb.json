@@ -30,8 +30,8 @@
         "new_window_and_external": "Åpnes i et annet nettsted i nytt vindu."
       },
       "carousel_select": "",
-      "decrement": "",
-      "increment": "",
+      "decrement": "Øk",
+      "increment": "Reduser",
       "load_3d_model": "",
       "next": "Neste",
       "pause": "Pause",
