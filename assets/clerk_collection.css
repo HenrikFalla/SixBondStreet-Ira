@@ -66,6 +66,7 @@
     stroke: black;
     fill: currentColor;
     border: none;
+    background: var(--sxbs-dark-grey);
 }
 .clerk-slider-nav-prev:after {
     clip-path: path("M 12 4 L 10.59 5.41 L 16.17 11 H 4 V 13 H 16.17 L 10.59 18.59 L 12 20 L 20 12 L 12 4 Z");
