@@ -1245,7 +1245,7 @@ html.supports-no-cookies .supports-cookies{
 }
 @media (min-width: 78em){
     .header--inline .header__menu-icon{
-      display:block;
+      display:none;
     }
   }
 @media (min-width: 60em){
