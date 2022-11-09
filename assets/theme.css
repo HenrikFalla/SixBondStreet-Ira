@@ -1243,7 +1243,7 @@ html.supports-no-cookies .supports-cookies{
   font-weight:var(--font-logo-weight);
   font-style:var(--font-logo-style);
 }
-@media (min-width: 60em){
+@media (min-width: 78em){
     .header--inline .header__menu-icon{
       display:none;
     }
@@ -1262,7 +1262,7 @@ html.supports-no-cookies .supports-cookies{
 .header__links{
   display:none
 }
-@media (min-width: 60em){
+@media (min-width: 78em){
 .header__links{
     display:flex;
     align-items:center;
