@@ -11,6 +11,14 @@
 .clerk_product_tile {
     display: flex !important;
 }
+.clerk-slider {
+    overflow: visible;
+}
+@media screen and (min-width: 60em) {
+    .clerk-slider {
+        overflow: hidden;
+    }
+}
 .clerk-slider-nav {
     z-index: 1 !important;
     background-image: none !important;
