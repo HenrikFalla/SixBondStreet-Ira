@@ -71,16 +71,45 @@ span.on-sale.saved_percentage {
     left: 0;
     padding-bottom: 100%;
     background: rgb(71 47 0 / 4%);
-    z-index: 1000;
+    z-index: 95;
+}
+.clerk-slider {
+    overflow: visible!important;
 }
 .clerk-slider-nav-prev {
     left: -10px;
 }
 .clerk-slider-nav-next {
-    right: -10px;
+    right: -19px;
 }
 .clerk-slider-nav {
     top: 30%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0;
+    z-index: 98!important;
+    width: 40px;
+    height: 40px;
+    box-shadow: var(--box-shadow)!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clerk-slider-nav:after {
+    content: "";
+    display: block;
+    height: 60%;
+    width: 60%;
+    stroke: black;
+    fill: currentColor;
+    background: var(--sxbs-dark-grey);
+}
+.clerk-slider-nav-next:after {
+    clip-path: path("M 12 4 L 10.59 5.41 L 16.17 11 H 4 V 13 H 16.17 L 10.59 18.59 L 12 20 L 20 12 L 12 4 Z");
+    transform: rotate(0deg);
+}
+.clerk-slider-nav-prev:after {
+    clip-path: path("M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z");
+    transform: rotate(0deg);
 }
 .clerk_product_name {
     margin-top: 0;
