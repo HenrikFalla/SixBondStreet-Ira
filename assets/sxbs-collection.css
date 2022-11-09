@@ -5,3 +5,8 @@
     object-fit: contain;
     max-height: 100%;
 }
+@media screen and (min-width: 78em) {
+    .collection__main-area {
+        max-width: calc(100% - 260px);
+    }
+}
