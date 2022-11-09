@@ -15,10 +15,14 @@
     overflow: visible;
     margin-left: -5px;
 }
+@media screen and (min-width: 25em) {
+    .clerk-slider {
+        margin-left: auto;
+    }
+}
 @media screen and (min-width: 78em) {
     .clerk-slider {
         overflow: hidden;
-        margin-left: auto;
     }
 }
 .clerk-slider-nav {
