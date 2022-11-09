@@ -1,0 +1,432 @@
+.clerk_content_wrap * {
+    font-family: inherit;
+    transition:height 0.3s ease;
+    transition:color 0.3s ease;
+    transition:border 0.3s ease;
+    transition:background 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.clerk_product_tile {
+    display: flex !important;
+}
+.clerk-slider-nav {
+    z-index: 1 !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+.clerk_slider_wrap {
+    display: inline-flex;
+    align-items: stretch;
+    max-width: 100vw;
+    width:inherit;
+}
+
+@keyframes arrowPop {
+    0% {
+        width:20%;
+    }
+    50% {
+        width:0%;
+    }
+    100% {
+        width: 20%;
+    }
+}
+
+.clerk-slider-nav {
+    background:;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:0;
+    opacity:0.8;
+    transition:0.3s ease;
+}
+
+.clerk-slider-nav:hover {
+    opacity:1;
+    transition:0.3s ease;
+}
+.clerk-slider-nav:hover:before {
+    animation:arrowPop 0.3s ease;
+}
+.clerk-slider-nav-next {
+    flex-direction:row-reverse;
+}
+
+.clerk-slider-nav:after {
+    content:"";
+    display:block;
+    height:35%;
+    width:35%;
+    transform: rotate(45deg);
+    border: solid black;
+}
+.clerk-slider-nav-prev:after {
+    border-width: 0px 0px 2px 2px;
+}
+    
+.clerk-slider-nav-next:after {
+    border-width: 2px 2px 0px 0px;
+}
+
+.clerk-slider-nav:before {
+    content:"";
+    width:20%;
+}
+
+.clerk_container {
+    display:block;
+    width:100%;
+}
+
+.clerk_product_info_wrap {
+    margin: 1em 0em;
+    padding: 5px;
+    border-radius:1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    min-height: 0;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: fill-available;
+		height: 100%;
+		height: auto;
+}
+
+.clerk_product_info_wrap .clerk_link {
+    border:;
+    border-width: 1px 0px 1px 0px;
+    transition:0.3s ease;
+    min-height:0;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: fill-available;
+		height: 100%;
+		height: auto;
+}
+
+
+.clerk_product_info_wrap > * {
+    padding: 0 5px;
+}
+.clerk_link {
+    border-bottom:none;
+    display:inherit;
+    width:100%;
+    text-decoration:none;
+    color:inherit;
+    padding:0;
+}
+
+.clerk_link:hover {
+    filter: contrast(105%);
+}
+
+.clerk_content_headline{
+    max-width: 100%;
+    width: 100%;
+    font-size: 26px;
+    text-align:center;
+    color:inherit;
+}
+
+.clerk_product_tile_p{
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius:0px;
+    padding:15px;
+    margin:5px;
+    box-sizing:border-box;
+    min-width:calc(25% - 10px);
+    max-width:calc(25% - 10px);
+    position:relative;
+    overflow:hidden;
+    border:;
+    background-color:white;
+    text-align:center;
+}
+
+.clerk_product_wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.offer_wrap{
+    width:100%;
+}
+.clerk_product_badge.offer{
+    display:block;
+    position:absolute;
+    color:#e36f21;
+    padding:5px;
+    font-weight:bold;
+    line-height:0;
+    user-select:none;
+    pointer-events:none;
+}
+
+.clerk_product_badge.new{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999rem;
+    background: #f9f9f9;
+    color: #333;
+    font-weight: bold;
+    line-height: 3rem;
+    border: 4px solid #333;
+    user-select: none;
+    pointer-events: none;
+}
+
+.clerk_image_wrapper {
+    display:block;
+    position:relative;
+    width:100%;
+    height:auto;
+}
+
+.clerk_image_wrapper:hover .clerk_product_hover_image {
+    opacity:1;
+    transition: 0.3s ease-in;
+}
+
+.clerk_image_wrapper:hover .clerk_product_image {
+    opacity:0;
+    transition: 0.3s ease-out;
+    transition-delay:0.2s;
+}
+
+.clerk_image_wrapper .clerk_product_hover_image {
+    position:absolute;
+    top:0;
+    left:0;
+    min-height:auto;
+}
+
+.clerk_product_hover_image{
+    background-size:contain;
+    background-position:center center;
+    background-repeat:no-repeat;
+    object-fit: contain;
+    /*Change the max height value below to 100% if the client has consistent image sizes */
+    max-height:400px;
+    width:100%;
+    max-width:100%;
+    height: 400px;
+    opacity:0;
+}
+
+.clerk_product_image{
+    background-size:contain;
+    background-position:center center;
+    background-repeat:no-repeat;
+    object-fit: contain;
+    /*Change the max height value below to 100% if the client has consistent image sizes */
+    max-height:400px;
+    width:100%;
+    max-width:100%;
+    height: 400px;
+}
+
+.clerk_product_stock {
+    display:flex;
+    text-align:left;
+    justify-content:left;
+    align-items:center;
+    font-size:80%;
+    text-transform: capitalize;
+    padding:5px;
+    user-select:none;
+}
+
+.clerk_product_stock:before {
+    content:"";
+    height: 8px;
+    width: 8px;
+    margin:0 5px 0 0;
+    border-radius:50%;
+}
+
+.clerk_product_stock.in:before {
+    background:#78b904;
+}
+/*
+.clerk_product_stock.low:before {
+    background:#eea71e;
+}
+*/
+.clerk_product_stock.out:before {
+    background:#ee1e31;
+}
+.clerk_product_name{
+    overflow:hidden;
+    height:auto;
+    color:inherit;
+    text-align:left;
+    max-width: 100%;
+    padding:0 5px;
+}
+.product_vendor{
+    overflow:hidden;
+    height:auto;
+    min-height: 36px;
+    margin-bottom:1rem;
+    color:#1b1b1bb3;
+    text-align:left;
+    max-width: 100%;
+    font-size:14px;
+    padding:0 5px;
+}
+
+.clerk_product_price_wrap{
+    font-size:1rem;
+    min-height: auto;
+    flex-direction:row-reverse;
+    display:flex;
+    max-width: 100%;
+    justify-content: flex-end;
+}
+.offer_price_wrap{
+        font-size:1rem;
+    margin:1em 0;
+    min-height: auto;
+    flex-direction:row-reverse;
+    display:flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.clerk_product_price {
+    padding: 0px 5px 0px 0px;
+}
+
+.clerk_product_price.before{
+    opacity: .8;
+    flex:1;
+    font-weight:normal;
+    color:#313131;
+    text-decoration:line-through;
+    font-size:inherit;
+    text-align:center;
+    max-width: fit-content;
+    max-width: -moz-fit-content;
+}
+
+.clerk_product_price.now{
+    flex:1;
+    font-size:inherit;
+    text-align:center;
+    color:inherit;
+    max-width: fit-content;
+    max-width: -moz-fit-content;
+}
+.clerk_product_price.now.orange{
+    flex:1;
+    font-weight:bold;
+    font-size:inherit;
+    text-align:center;
+    color:#e36f21;
+    max-width: fit-content;
+    max-width: -moz-fit-content;
+}
+.clerk_product_cta{
+    border-radius:2px;
+    cursor:pointer;
+    color:#fff;
+    padding:5px;
+    margin:0;
+    display:block;
+    white-space:nowrap;
+    font-weight:normal;
+    border:none;
+    background-color:#333;
+    border:1px solid #333;
+    text-align:center;
+    max-width: 100%;
+    text-decoration: none;
+}
+
+.clerk_product_cta:hover {
+    color:#333;
+    background-color:#fff;
+}
+
+.clerk_content_wrap{
+    box-sizing: border-box;
+    margin: 1rem auto;
+    width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+.clerk_content_headline{
+    
+}
+
+.clerk_product_tile_p{
+    min-width:calc(100%);
+    max-width:calc(100%);
+}
+
+.clerk_product_badge{
+    
+}
+.clerk_product_price_wrap {
+    flex-direction:column;
+}
+}
+@media screen and (max-width: 7200px) {
+
+    
+}
+@media screen and (min-width: 401px) and (max-width: 620px) {
+.clerk_content_headline{
+    
+}
+.clerk_product_tile_p{
+    min-width:calc(50% - 10px);
+    max-width:calc(50% - 10px);
+}
+.clerk_product_badge{
+    
+}
+}
+@media screen and (min-width: 621px) and (max-width: 940px) {
+.clerk_content_headline{
+    
+}
+.clerk_product_tile_p{
+    min-width:calc(33.333336% - 10px);
+    max-width:calc(33.333336% - 10px);
+}
+.clerk_product_badge{
+    
+}
+}
+@media screen and (min-width: 941px) and (max-width: 1160px) {
+.clerk_content_headline{
+    
+}
+.clerk_product_tile_p{
+    min-width:calc(25% - 10px);
+    max-width:calc(25% - 10px);
+}
+.clerk_product_badge{
+    
+}
+}
+.collection__main-area {
+    width: 82% !important;
+    
+}
+.stock_clerk_dot{
+    display:contents;
+}
