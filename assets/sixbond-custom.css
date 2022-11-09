@@ -75,12 +75,13 @@ span.on-sale.saved_percentage {
 }
 .clerk-slider {
     overflow: visible!important;
+    margin-left: -5px;
 }
 .clerk-slider-nav-prev {
-    left: -19px;
+    left: -14px;
 }
 .clerk-slider-nav-next {
-    right: -19px;
+    right: -24px;
 }
 .clerk-slider-nav {
     top: 30%;
