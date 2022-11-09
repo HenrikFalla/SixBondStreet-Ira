@@ -657,13 +657,13 @@ a#in-stock {
 
 
 /* Tablet size Filter Styling */
-
+/*
 @media (min-width:40em) and (max-width: 60em) {
     .collection__sidebar {
         width: 160px;
     }
 }
-
+*/
 
 /* Remove default Badges */
 

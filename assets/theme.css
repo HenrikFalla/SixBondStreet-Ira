@@ -2155,7 +2155,7 @@ body.show-borders .blog__header{
   margin-right:40px;
   flex-shrink:0
 }
-@media (min-width: 40em){
+@media (min-width: 78em){
 .collection__sidebar{
     display:block
 }
@@ -5018,7 +5018,7 @@ body.template-product #main > .shopify-section > .shopify-app-block{
   padding-left:var(--space-outer);
   padding-bottom:calc(var(--spacing-small) / 2)
 }
-@media (min-width: 40em){
+@media (min-width: 78em){
 .collection-top-bar__filters{
     display:none
 }
