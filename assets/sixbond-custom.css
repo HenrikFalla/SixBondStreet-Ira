@@ -457,7 +457,7 @@ section.description h2 {
     display: none;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 60em) {
     .header__links-alt {
         display: flex;
         align-items: center;
