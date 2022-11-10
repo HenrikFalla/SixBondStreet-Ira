@@ -58,6 +58,7 @@
 }
 .clerk-slider-nav-next {
     flex-direction:row-reverse;
+    right: -5px;
 }
 
 .clerk-slider-nav:after {
