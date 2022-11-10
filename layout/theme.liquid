@@ -68,7 +68,6 @@
 
     <!-- SixBondStreet CUSTOM -->
     {% assign tempName = template.name %}
-    {{ tempName }}
     {% case tempName %}
       {% when 'product' %}
         {{ 'product-page.css' | asset_url | stylesheet_tag }}
