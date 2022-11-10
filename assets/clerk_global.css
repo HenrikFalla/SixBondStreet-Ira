@@ -3,8 +3,8 @@
     left: 0!important;
     right: 0!important;
     margin-right: auto;
-    max-width: 355px;
-    width: auto;
+    max-width: var(--menu-max-width);
+    width: var(--menu-width);
 }
 .clerk_instant_search_wrapper {
     background: var(--sxbs-dark-grey);
