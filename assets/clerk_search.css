@@ -353,17 +353,17 @@
     opacity: 0;
 }
 .clerk_product_image, .clerk_product_hover_image {
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    -o-object-fit: none;
-    object-fit: none;
+    -o-object-fit: cover;
+    object-fit: cover;
     position: absolute;
     top: 0;
     bottom: 0;
     aspect-ratio: 1 / 1;
     height: 100%;
-    
+
 }
 
 .clerk_product_stock {
