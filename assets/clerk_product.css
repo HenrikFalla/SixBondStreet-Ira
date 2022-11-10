@@ -434,9 +434,11 @@
 }
 .clerk-slider {
     margin-left: -5px;
+    overflow: visible;
 }
 @media screen and (min-width: 25em) {
     .clerk-slider {
         margin-left: auto;
+        overflow: hidden;
     }
 }
