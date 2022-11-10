@@ -350,30 +350,20 @@
 }
 
 .clerk_product_hover_image {
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    -o-object-fit: contain;
-    object-fit: contain;
-    /*Change the max height value below to 100% if the client has consistent image sizes */
-    max-height: 400px;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
     opacity: 0;
 }
-
-.clerk_product_image {
+.clerk_product_image, .clerk_product_hover_image {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    -o-object-fit: contain;
-    object-fit: contain;
-    /*Change the max height value below to 100% if the client has consistent image sizes */
-    max-height: 400px;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    -o-object-fit: none;
+    object-fit: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    
 }
 
 .clerk_product_stock {
