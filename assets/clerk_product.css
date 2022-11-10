@@ -432,3 +432,11 @@
 .stock_clerk_dot{
     display:contents;
 }
+.clerk-slider {
+    margin-left: -5px;
+}
+@media screen and (min-width: 25em) {
+    .clerk-slider {
+        margin-left: auto;
+    }
+}
