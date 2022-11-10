@@ -435,12 +435,12 @@
 }
 .clerk-slider {
     margin-left: -5px;
-    /* overflow: visible; */
+    overflow: visible;
 }
 @media screen and (min-width: 25em) {
     .clerk-slider {
         margin-left: auto;
-       /* overflow: hidden; */
+        overflow: hidden;
     }
     .clerk-slider-nav-next {
         right: 5px;
