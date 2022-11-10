@@ -54,6 +54,7 @@
 }
 .clerk-slider-nav-next {
     flex-direction:row-reverse;
+    right: -5px;
 }
 
 .clerk-slider-nav:after {
@@ -440,5 +441,8 @@
     .clerk-slider {
         margin-left: auto;
         overflow: hidden;
+    }
+    .clerk-slider-nav-next {
+        right: 5px;
     }
 }
