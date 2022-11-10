@@ -4,8 +4,8 @@
     right: 0!important;
     margin-left: auto;
     margin-right: auto;
-    max-width: calc(100vw - 50px);
-    width: 1800px;
+    max-width: 355px;
+    width: auto;
 }
 .clerk_instant_search_wrapper {
     background: var(--sxbs-dark-grey);
@@ -39,8 +39,14 @@ a.clerk_instant_search_load_more_btn {
     }
     .clerk-instant-search-visible {
         margin-left: auto;
-        height: auto;
+        height: 10px;
         margin-top: auto;
     }
     
+}
+@media screen and (min-width: 78em) {
+    .clerk-instant-search-visible {
+        max-width: calc(100vw - 50px);
+        width: 1800px;
+    }
 }
