@@ -523,7 +523,7 @@
     transition: 0.3s ease;
     border-radius: 2px;
     cursor: pointer;
-    padding: 10px 1rem;
+    padding: 1em 2em;
     display: block;
     white-space: nowrap;
     font-weight: bold;
@@ -539,6 +539,7 @@
     background-color: #000000;
     margin: 1rem auto;
     text-transform: uppercase;
+    border-radius: 25px;
 }
 .clerk-range-selected-range{
     background-color:#000000;
