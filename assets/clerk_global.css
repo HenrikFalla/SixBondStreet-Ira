@@ -31,12 +31,6 @@ a.clerk_instant_search_load_more_btn {
     height: calc(100vh - 87px);
 }
 @media screen and (min-width: 40em) {
-    .clerk-instant-search-visible {
-        max-width: calc(100vw - 50px);
-        width: 1800px;
-    }
-}
-@media screen and (min-width: 56em) {
     .clerk_instant_search_grid_wrapper {
         flex-direction: row;
     }
@@ -47,6 +41,10 @@ a.clerk_instant_search_load_more_btn {
         margin-left: auto;
         height: 10px;
         margin-top: auto;
+    }
+    .clerk-instant-search-visible {
+        max-width: calc(100vw - 50px);
+        width: 1800px;
     }
     
 }
