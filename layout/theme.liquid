@@ -67,17 +67,20 @@
     {{ 'clerk_global.css' | | asset_url | | stylesheet_tag }}
 
     <!-- SixBondStreet CUSTOM -->
-
-    {% if template.name == 'product' %}
-      {{ 'product-page.css' | asset_url | stylesheet_tag }}
-      {{ 'clerk_product.css' | asset_url | stylesheet_tag }}
-    {% elsif template.name == 'index'%}
-      {{ 'index.scss.css' | asset_url | stylesheet_tag }}
-      {{ 'clerk_index.css' | | asset_url | stylesheet_tag }}
-    {% elsif template.name == 'collection' or template.name == 'list-collections' %}
-      {{ 'sxbs-collection.css' | asset_url | stylesheet_tag }}
-      {{ 'clerk_collection.css' | asset_url | | stylesheet_tag }}
-    {% endif %}
+    {% assign tempName = template.name %}
+    {% {% case tempName %}
+      {% when 'product' %}
+        {{ 'product-page.css' | asset_url | stylesheet_tag }}
+        {{ 'clerk_product.css' | asset_url | stylesheet_tag }}
+      {% when 'index' %}
+        {{ 'index.scss.css' | asset_url | stylesheet_tag }}
+        {{ 'clerk_index.css' | | asset_url | stylesheet_tag }}
+      {% when 'collection' %}
+        {{ 'sxbs-collection.css' | asset_url | stylesheet_tag }}
+        {{ 'clerk_collection.css' | asset_url | | stylesheet_tag }}
+      {% when 'search' %}
+        {{ 'clerk-search.css' | asset_url | stylesheet_tag }}
+    {% endcase %} %}
     <!-- END SixBondStreet CUSTOM  -->
     <script src="https://www.googleoptimize.com/optimize.js?id=GTM-5GWX954"></script>
     
