@@ -111,6 +111,30 @@
     "2-column-mosaic-grid": {
       "type": "2-column-mosaic-grid",
       "blocks": {
+        "4ce802ed-9ab8-494e-987a-192c4b81dc1b": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/v02_CC9A7D62DB309F379ADA1FE7141E378B.webp",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Fotokunst",
+            "title": "Levering før jul",
+            "subheading": "<p>Malerier og fotokunst, innrammet og klare til å henges på veggen.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/fotokunst-pa-lager",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 10
+          }
+        },
         "small_square-2": {
           "type": "small_square",
           "settings": {
@@ -161,6 +185,7 @@
         }
       },
       "block_order": [
+        "4ce802ed-9ab8-494e-987a-192c4b81dc1b",
         "small_square-2",
         "small_square-1"
       ],
