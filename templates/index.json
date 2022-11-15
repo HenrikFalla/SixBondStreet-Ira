@@ -3,17 +3,41 @@
     "slideshow-1": {
       "type": "slideshow",
       "blocks": {
-        "slide-1": {
+        "54c5c3c7-4f7f-4ffc-9af7-55e679a93c63": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_forside_fjellhytte.jpg",
+            "image": "shopify:\/\/shop_images\/003.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/003.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "",
+            "title": "Gaveguiden",
+            "subheading": "<p>Leter du etter en julegave til en som er over gjennomsnittet opptatt av interiør? Da har du kommet rett.<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/julegaver-til-interiorentusiasten",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#f1efeb",
+            "color_overlay": "#000000",
+            "opacity_overlay": 50
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_forside_fjellhytta.jpg",
             "mobile_image": "shopify:\/\/shop_images\/banner_forside_fjellhytte.jpg",
             "focal_point": "center_center",
             "focal_point_mobile": "center_center",
             "video_url": "",
             "meta": "",
             "title": "Hvordan innrede hytta på fjellet?",
-            "subheading": "<p>Crispy luft, roser i kinnene, gode stunder med venner og familie. Ja, jeg snakker om fjellhytta!<\/p>",
+            "subheading": "<p>Crispy luft, roser i kinnene, gode stunder med venner og familie. Ja, vi snakker om fjellhytta!<\/p>",
             "max_width_subheading": 30,
             "link_text": "Les mer her",
             "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-innrede-hytta-pa-fjellet",
@@ -23,36 +47,13 @@
             "color_text_button": "#29292c",
             "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
-            "opacity_overlay": 30
-          }
-        },
-        "70830563-a8b1-45c4-80f7-40d3e39e6278": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/003.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/003.jpg",
-            "focal_point": "center_center",
-            "focal_point_mobile": "center_center",
-            "video_url": "",
-            "meta": "",
-            "title": "Julegaver til Interiørentusiasten",
-            "subheading": "<p>Leter du etter en julegave til en som er over gjennomsnittet opptatt av interiør? Da har du kommet rett.<\/p>",
-            "max_width_subheading": 30,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/julegaver-til-interiorentusiasten",
-            "alignment": "center_center",
-            "color_heading": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_text_button": "#000000",
-            "color_background_button": "#f8f7f5",
-            "color_overlay": "#000000",
             "opacity_overlay": 40
           }
         }
       },
       "block_order": [
-        "slide-1",
-        "70830563-a8b1-45c4-80f7-40d3e39e6278"
+        "54c5c3c7-4f7f-4ffc-9af7-55e679a93c63",
+        "slide-1"
       ],
       "settings": {
         "desktop_height": 65,
@@ -108,33 +109,116 @@
         "circle": true
       }
     },
+    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "complimentary"
+      }
+    },
+    "7b75f33f-384e-4a60-bc59-46ddcd0338ed": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15903449022661__7b75f33f-384e-4a60-bc59-46ddcd0338ed-1668510469d5644e64-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_forside_fjellhytta.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/banner_forside_fjellhytta.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "",
+            "title": "Hvordan innrede hytta på fjellet?",
+            "subheading": "<p>Crispy luft, roser i kinnene, gode stunder med venner og familie. Ja, vi snakker om fjellhytta!<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-innrede-hytta-pa-fjellet",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 40
+          }
+        }
+      },
+      "block_order": [
+        "template--15903449022661__7b75f33f-384e-4a60-bc59-46ddcd0338ed-1668510469d5644e64-0"
+      ],
+      "settings": {
+        "desktop_height": 65,
+        "mobile_height": 65,
+        "duration_autoplay": 4,
+        "enable_parallax": false,
+        "enable_full_width": false,
+        "color_dot": "#777777"
+      }
+    },
+    "9f4ecfa9-c8f3-4fc6-af5e-acc1a8e8738a": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15903449022661__9f4ecfa9-c8f3-4fc6-af5e-acc1a8e8738a-1667563853477841a0-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/v02_CC9A7D62DB309F379ADA1FE7141E378B.webp",
+            "mobile_image": "shopify:\/\/shop_images\/v02_CC9A7D62DB309F379ADA1FE7141E378B.webp",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "Fotokunst",
+            "title": "Levering før jul",
+            "subheading": "<p>Malerier og fotokunst, innrammet og klare til å henges på veggen<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/fotokunst-pa-lager",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 20
+          }
+        },
+        "template--15903449022661__9f4ecfa9-c8f3-4fc6-af5e-acc1a8e8738a-1667563853477841a0-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "Slideshow",
+            "title": "This is your slideshow",
+            "subheading": "<p>Use it to make a dramatic first impression with high-quality imagery and minimal text. Using the button below to link to whatever is most appropriate.<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Shop now",
+            "link": "#",
+            "alignment": "left_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#b8b8b8",
+            "color_text_button": "#ffffff",
+            "color_background_button": "#000000",
+            "color_overlay": "#000000",
+            "opacity_overlay": 60
+          }
+        }
+      },
+      "block_order": [
+        "template--15903449022661__9f4ecfa9-c8f3-4fc6-af5e-acc1a8e8738a-1667563853477841a0-0",
+        "template--15903449022661__9f4ecfa9-c8f3-4fc6-af5e-acc1a8e8738a-1667563853477841a0-1"
+      ],
+      "settings": {
+        "desktop_height": 60,
+        "mobile_height": 60,
+        "duration_autoplay": 4,
+        "enable_parallax": false,
+        "enable_full_width": true,
+        "color_dot": "#ffffff"
+      }
+    },
     "2-column-mosaic-grid": {
       "type": "2-column-mosaic-grid",
       "blocks": {
-        "4ce802ed-9ab8-494e-987a-192c4b81dc1b": {
-          "type": "medium_horizontal_rect",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/v02_CC9A7D62DB309F379ADA1FE7141E378B.webp",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Fotokunst",
-            "title": "Levering før jul",
-            "subheading": "<p>Malerier og fotokunst, innrammet og klare til å henges på veggen.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/fotokunst-pa-lager",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000",
-            "overlay_opacity": 10
-          }
-        },
         "small_square-2": {
           "type": "small_square",
           "settings": {
@@ -142,13 +226,13 @@
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "meta": "Inspirasjon",
+            "meta": "",
             "title": "Fjellhytta",
-            "subheading": "<p>Gjør hytta på fjellet klar for sesongen, med en aldri så liten oppgradering.<\/p>",
+            "subheading": "<p>Gjør hytta på fjellet klar for sesongen, med en aldri så liten oppgradering. <br\/><strong>Foto: Paul Lockhart<\/strong><\/p>",
             "text_max_width": 30,
             "link_text": "Se utvalget her",
             "link": "shopify:\/\/collections\/inspirasjon-til-fjellhytta",
-            "text_position": "center_bottom",
+            "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
@@ -156,7 +240,7 @@
             "color_text_button": "#2d2d2d",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 25
           }
         },
         "small_square-1": {
@@ -167,12 +251,12 @@
             "media_fit": "cover",
             "focal_point": "center_center",
             "meta": "Inspirasjon",
-            "title": "Dette produktet er den perfekte julegave",
+            "title": "Den perfekte julegaven",
             "subheading": "<p>Er du usikker på hva du skal gi venner og familie i julegave i år? <\/p><p>Da kan vi anbefale coffee table bøker! <\/p>",
             "text_max_width": 28,
             "link_text": "Les mer her",
             "link": "shopify:\/\/blogs\/inspirasjon\/dette-produktet-er-den-perfekte-julegave",
-            "text_position": "center_bottom",
+            "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
@@ -185,7 +269,6 @@
         }
       },
       "block_order": [
-        "4ce802ed-9ab8-494e-987a-192c4b81dc1b",
         "small_square-2",
         "small_square-1"
       ],
@@ -241,7 +324,7 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 25
+            "overlay_opacity": 20
           }
         },
         "ba050088-0a27-4931-a408-05e03fb69119": {
@@ -265,7 +348,7 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 10
+            "overlay_opacity": 20
           }
         }
       },
@@ -470,66 +553,6 @@
         "enable_full_width": false
       }
     },
-    "1655904214bdb65264": {
-      "type": "2-column-mosaic-grid",
-      "blocks": {
-        "1655904214361113c8-1": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/portrett_forside_camilla_abry.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Inspirasjon",
-            "title": "Få stilen til Camilla Abry",
-            "subheading": "<p>La deg inspirere av hjemmet og interiørstilen til designer Camilla Abry. Den er preget av lyse tekstiler kombinert med eksklusive naturmaterialer som eik og marmor. <\/p>",
-            "text_max_width": 28,
-            "link_text": "Les mer her",
-            "link": "shopify:\/\/blogs\/inspirasjon\/fa-stilen-til-camilla-abry",
-            "text_position": "right_bottom",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#f8f7f5",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 35
-          }
-        },
-        "1655904214361113c8-2": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/camilla_abry_sofabord_teppe.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "",
-            "title": "",
-            "subheading": "<p>Her finner du alle møblene og interiørartiklene du trenger for å gjenskape Camilla Abrys stil.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/camilla-abry-fa-stilen",
-            "text_position": "center_bottom",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#f8f7f5",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 35
-          }
-        }
-      },
-      "block_order": [
-        "1655904214361113c8-1",
-        "1655904214361113c8-2"
-      ],
-      "settings": {
-        "enable_full_width": false
-      }
-    },
     "166357956153f60049": {
       "type": "collection-list",
       "disabled": true,
@@ -571,6 +594,72 @@
         "aspect_ratio": "natural"
       }
     },
+    "1a5a1932-8888-4fd6-9096-b6c6b59807b5": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "hot"
+      }
+    },
+    "1655904214bdb65264": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "1655904214361113c8-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/portrett_forside_camilla_abry.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Inspirasjon",
+            "title": "Få stilen til Camilla Abry",
+            "subheading": "<p>La deg inspirere av hjemmet og interiørstilen til designer Camilla Abry. Den er preget av lyse tekstiler kombinert med eksklusive naturmaterialer som eik og marmor. <\/p>",
+            "text_max_width": 28,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/fa-stilen-til-camilla-abry",
+            "text_position": "right_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "1655904214361113c8-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/camilla_abry_sofabord_teppe.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "",
+            "subheading": "<p>Her finner du alle møblene og interiørartiklene du trenger for å gjenskape Camilla Abrys stil.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/camilla-abry-fa-stilen",
+            "text_position": "center_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#f8f7f5",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "1655904214361113c8-1",
+        "1655904214361113c8-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
     "1655906078323d2266": {
       "type": "featured-collection",
       "settings": {
@@ -581,69 +670,20 @@
         "aspect_ratio": "square"
       }
     },
-    "ce4e01f5-62c0-475e-b666-9a49c22c5522": {
+    "5c2f7579-d4df-4e74-be1e-ea037337a0a4": {
       "type": "2-column-mosaic-grid",
       "blocks": {
-        "template--15886804451525__ce4e01f5-62c0-475e-b666-9a49c22c5522-1668496646f811e183-0": {
+        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-0": {
           "type": "medium_horizontal_rect",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fb7c3959-66e7-47fb-bc97-0d3b9f12862b-at1600_1_1512x_bda5a448-bc20-42a2-b909-0213e4e0a41b.webp",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Artwood",
-            "title": "Møbler og interiør fra Artwood",
-            "subheading": "<p>Her finner du møbler og interiørartikler som passer godt inn hjemme og på hytta.<\/p>",
-            "text_max_width": 36,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/artwood",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000",
-            "overlay_opacity": 30
-          }
-        },
-        "template--15886804451525__ce4e01f5-62c0-475e-b666-9a49c22c5522-1668496646f811e183-1": {
-          "type": "small_square",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fb7c3959-66e7-47fb-bc97-0d3b9f12862b-at1600_1_1512x_bda5a448-bc20-42a2-b909-0213e4e0a41b.webp",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Artwood",
-            "title": "Møbler og interiør fra Artwood",
-            "subheading": "<p>Mix and match between sizes, set a background color or fill, and add text to blocks that are medium or larger.<\/p>",
-            "text_max_width": 32,
-            "link_text": "",
-            "link": "",
-            "text_position": "left_top",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000",
-            "overlay_opacity": 60
-          }
-        },
-        "template--15886804451525__ce4e01f5-62c0-475e-b666-9a49c22c5522-1668496646f811e183-2": {
-          "type": "small_square",
           "disabled": true,
           "settings": {
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
             "meta": "",
-            "title": "",
-            "subheading": "",
-            "text_max_width": 28,
+            "title": "This is medium hortizontal block",
+            "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+            "text_max_width": 36,
             "link_text": "",
             "link": "",
             "text_position": "center_center",
@@ -653,15 +693,63 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 60
+          }
+        },
+        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/003.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Interiør",
+            "title": "Julegaver til interiørentusiasten",
+            "subheading": "<p>Leter du etter en julegave til en som er over gjennomsnittet opptatt av interiør? Da har du kommet rett.<\/p>",
+            "text_max_width": 32,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/julegaver-til-interiorentusiasten",
+            "text_position": "left_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 33
+          }
+        },
+        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fb7c3959-66e7-47fb-bc97-0d3b9f12862b-at1600_1_1512x_bda5a448-bc20-42a2-b909-0213e4e0a41b.webp",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Artwood",
+            "title": "Møbler og interiør fra Artwood",
+            "subheading": "<p>Her finner du møbler og interiør som passer godt inn hjemme og på hytta.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/artwood",
+            "text_position": "left_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 25
           }
         }
       },
       "block_order": [
-        "template--15886804451525__ce4e01f5-62c0-475e-b666-9a49c22c5522-1668496646f811e183-0",
-        "template--15886804451525__ce4e01f5-62c0-475e-b666-9a49c22c5522-1668496646f811e183-1",
-        "template--15886804451525__ce4e01f5-62c0-475e-b666-9a49c22c5522-1668496646f811e183-2"
+        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-0",
+        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-1",
+        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-2"
       ],
       "settings": {
         "enable_full_width": false
@@ -689,7 +777,7 @@
             "color_text_button": "#000000",
             "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
-            "opacity_overlay": 40
+            "opacity_overlay": 30
           }
         },
         "dbba427c-9d1b-429f-9a03-453c2f20271f": {
@@ -711,7 +799,7 @@
             "color_text_button": "#000000",
             "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
-            "opacity_overlay": 40
+            "opacity_overlay": 30
           }
         },
         "9a6e1083-45b6-495c-877f-eb60ca6285a9": {
@@ -734,7 +822,7 @@
             "color_text_button": "#000000",
             "color_background_button": "#f8f7f5",
             "color_overlay": "#000000",
-            "opacity_overlay": 40
+            "opacity_overlay": 30
           }
         }
       },
@@ -822,7 +910,7 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 40
+            "overlay_opacity": 35
           }
         },
         "165597183994b029a2-2": {
@@ -846,7 +934,7 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 40
+            "overlay_opacity": 35
           }
         }
       },
@@ -856,12 +944,6 @@
       ],
       "settings": {
         "enable_full_width": false
-      }
-    },
-    "nosto_index": {
-      "type": "nosto-index",
-      "disabled": true,
-      "settings": {
       }
     },
     "1655979936791ce15e": {
@@ -874,26 +956,36 @@
         "rows": 1,
         "aspect_ratio": "square"
       }
+    },
+    "dd34eb63-6181-41de-9cac-48e8bd95ddac": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "bestseller"
+      }
     }
   },
   "order": [
     "slideshow-1",
     "1652734830e13bb44f",
+    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5",
+    "7b75f33f-384e-4a60-bc59-46ddcd0338ed",
+    "9f4ecfa9-c8f3-4fc6-af5e-acc1a8e8738a",
     "2-column-mosaic-grid",
     "47c2154c-a63c-4ca9-bd80-9dfb10180ca7",
     "1663579399ad141f79",
     "1663578893628202ea",
     "1655980344fab006ba",
     "165590230686a4951c",
-    "1655904214bdb65264",
     "166357956153f60049",
+    "1a5a1932-8888-4fd6-9096-b6c6b59807b5",
+    "1655904214bdb65264",
     "1655906078323d2266",
-    "ce4e01f5-62c0-475e-b666-9a49c22c5522",
+    "5c2f7579-d4df-4e74-be1e-ea037337a0a4",
     "16559052358ffed71f",
     "1655973450c3510188",
     "1663580092ee98390a",
     "165597183990c0e2cb",
-    "nosto_index",
-    "1655979936791ce15e"
+    "1655979936791ce15e",
+    "dd34eb63-6181-41de-9cac-48e8bd95ddac"
   ]
 }
