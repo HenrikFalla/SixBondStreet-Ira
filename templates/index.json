@@ -581,6 +581,92 @@
         "aspect_ratio": "square"
       }
     },
+    "ce4e01f5-62c0-475e-b666-9a49c22c5522": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "template--15886804451525__ce4e01f5-62c0-475e-b666-9a49c22c5522-1668496646f811e183-0": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fb7c3959-66e7-47fb-bc97-0d3b9f12862b-at1600_1_1512x_bda5a448-bc20-42a2-b909-0213e4e0a41b.webp",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Artwood",
+            "title": "Møbler og interiør fra Artwood",
+            "subheading": "<p>Her finner du møbler og interiørartikler som passer godt inn hjemme og på hytta.<\/p>",
+            "text_max_width": 36,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/artwood",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--15886804451525__ce4e01f5-62c0-475e-b666-9a49c22c5522-1668496646f811e183-1": {
+          "type": "small_square",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fb7c3959-66e7-47fb-bc97-0d3b9f12862b-at1600_1_1512x_bda5a448-bc20-42a2-b909-0213e4e0a41b.webp",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Artwood",
+            "title": "Møbler og interiør fra Artwood",
+            "subheading": "<p>Mix and match between sizes, set a background color or fill, and add text to blocks that are medium or larger.<\/p>",
+            "text_max_width": 32,
+            "link_text": "",
+            "link": "",
+            "text_position": "left_top",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        },
+        "template--15886804451525__ce4e01f5-62c0-475e-b666-9a49c22c5522-1668496646f811e183-2": {
+          "type": "small_square",
+          "disabled": true,
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "",
+            "subheading": "",
+            "text_max_width": 28,
+            "link_text": "",
+            "link": "",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        }
+      },
+      "block_order": [
+        "template--15886804451525__ce4e01f5-62c0-475e-b666-9a49c22c5522-1668496646f811e183-0",
+        "template--15886804451525__ce4e01f5-62c0-475e-b666-9a49c22c5522-1668496646f811e183-1",
+        "template--15886804451525__ce4e01f5-62c0-475e-b666-9a49c22c5522-1668496646f811e183-2"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
     "16559052358ffed71f": {
       "type": "slideshow",
       "blocks": {
@@ -678,6 +764,7 @@
     },
     "1663580092ee98390a": {
       "type": "2-column-mosaic-grid",
+      "disabled": true,
       "blocks": {
         "16635800919982818c-0": {
           "type": "medium_horizontal_rect",
@@ -801,6 +888,7 @@
     "1655904214bdb65264",
     "166357956153f60049",
     "1655906078323d2266",
+    "ce4e01f5-62c0-475e-b666-9a49c22c5522",
     "16559052358ffed71f",
     "1655973450c3510188",
     "1663580092ee98390a",
