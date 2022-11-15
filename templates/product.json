@@ -100,74 +100,59 @@
         "enable_sticky_sidebar": true,
         "enable_full_width": true,
         "media_layout": "column",
-        "enable_video_looping": true,
+        "enable_video_looping": true
+      }
+    },
+    "3ee7363c-9368-4dbb-9764-743f4e2bfce8": {
+      "type": "charpstar-3d",
+      "settings": {
+      }
+    },
+    "fb06e00b-6da4-41cf-819f-d9974b36732b": {
+      "type": "product-description",
+      "settings": {
+        "show-data": false
+      }
+    },
+    "1d8d845e-1c9d-49e7-89c9-9de0fcad505b": {
+      "type": "product-clerk",
+      "settings": {
+        "clerk_recs": "alternatives"
+      }
+    },
+    "f09777e5-1abf-4ea2-87f3-7dca7de6b302": {
+      "type": "product-vedlikehold",
+      "settings": {
         "vedlikehold": "vedlikehold"
       }
     },
-    "16536511166b9a2ac9": {
-      "type": "blog-posts",
+    "2ac46181-b599-431b-af90-b0c2fa50b03a": {
+      "type": "product-brand",
       "settings": {
-        "title": "Blog posts",
-        "blog": "merker",
-        "per_row": 1,
-        "rows": 1,
-        "aspect_ratio": "square"
+        "brand": "merker"
       }
     },
     "recommendations": {
       "type": "recommended-products",
-      "settings": {
-        "heading": "Ofte kjøpt sammen med",
-        "per_row": 3,
-        "rows": 1,
-        "aspect_ratio": "square"
-      }
-    },
-    "16529056183a2eb7ef": {
-      "type": "collection-list",
       "disabled": true,
-      "blocks": {
-        "16529056189b1ce296-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "16529056189b1ce296-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "16529056189b1ce296-2": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "16529056189b1ce296-0",
-        "16529056189b1ce296-1",
-        "16529056189b1ce296-2"
-      ],
       "settings": {
-        "title": "Collection list",
-        "per_row": 3,
-        "aspect_ratio": "natural"
       }
     },
-    "nosto_product": {
-      "type": "nosto-product",
+    "b6e59752-1433-4656-9a75-18c354b2d972": {
+      "type": "product-clerk",
       "settings": {
+        "clerk_recs": "others-also-bought"
       }
     }
   },
   "order": [
     "main",
-    "16536511166b9a2ac9",
+    "3ee7363c-9368-4dbb-9764-743f4e2bfce8",
+    "fb06e00b-6da4-41cf-819f-d9974b36732b",
+    "1d8d845e-1c9d-49e7-89c9-9de0fcad505b",
+    "f09777e5-1abf-4ea2-87f3-7dca7de6b302",
+    "2ac46181-b599-431b-af90-b0c2fa50b03a",
     "recommendations",
-    "16529056183a2eb7ef",
-    "nosto_product"
+    "b6e59752-1433-4656-9a75-18c354b2d972"
   ]
 }

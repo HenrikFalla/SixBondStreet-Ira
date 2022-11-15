@@ -1,3 +1,4 @@
+{% comment %}
 {% liquid
   assign per_row = section.settings.per_row
   assign per_page = section.settings.per_page
@@ -184,3 +185,39 @@
     ]
   }
 {% endschema %}
+{% endcomment %}
+<div class="page-width clerk-page-width">
+  <span
+      id="clerk-search"
+      class="clerk"
+      data-template="@search-page"
+      data-target="#clerk-search-results"
+      data-query="{{ search.terms }}"
+      data-facets-design="161698"
+      data-facets-attributes='["price","categories","vendor"]'
+      data-facets-titles='{"price":"Pris","categories":"Kategorier","vendor":"Merke"}'
+      data-facets-target="#clerk-search-filters"
+      data-facets-price-append=" kr"
+      data-facets-in-url="false"
+      data-facets-view-more-text="Se mer"
+      data-facets-searchbox-text="Søk etter "> 
+  </span>
+
+  <div id="clerk-show-facets" onclick="toggleFacets()">Filters</div>
+
+  <div class="clerk_flex_wrap">
+    <div id="clerk-facets-container">
+      <div id="clerk-search-filters"></div>
+    </div>
+    <div id="clerk-search-results"></div>
+  </div>
+
+  <script>
+    function toggleFacets(){
+      el = document.getElementById('clerk-facets-container');
+      el.classList.toggle('active');
+    }
+  </script>
+
+</div>
+

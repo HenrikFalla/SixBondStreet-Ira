@@ -1,0 +1,25 @@
+{% liquid
+    assign blog-vedlikehold = blogs[section.settings.vedlikehold]
+%}
+{% render 'section--product-vedlikehold' with
+    product_data: product,
+    blog_data: blog-vedlikehold
+%}
+{% schema %}
+{
+   "name": "Vedlikehold",
+  "settings": [
+  {
+    "id": "vedlikehold",
+    "type": "blog",
+    "label": "Vedlikehold"
+  }
+  ],
+ "presets": [
+    {
+        "name":"Vedlikehold"
+    }
+ ],
+ "templates": ["product"]
+}
+{% endschema %}

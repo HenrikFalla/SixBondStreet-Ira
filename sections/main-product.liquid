@@ -16,7 +16,6 @@
   assign button_options = swatch_options | concat: chip_options
   assign enable_sticky_sidebar = section.settings.enable_sticky_sidebar
 
-  assign blog-vedlikehold = blogs[section.settings.vedlikehold]
   assign blog-merke = blogs[section.settings.merke]
   
   
@@ -243,45 +242,6 @@
     {% endif %}
   
   {% render 'lightbox' with images: images %}
-  
-  <section class="description">
-    {% render 'charpstar-3d-viewer' %}
-    <div class="description__container">
-        <div id="description"></div>
-        <h2>Beskrivelse</h2>
-        {{ product.description }}
-    </div>
-    {% for tag in product.tags %}
-        {% for article in blog-vedlikehold.articles %}
-            {% assign handle-check = blog-vedlikehold.title | downcase | append: "/" | append: tag | downcase %}
-            {% if handle-check == article.handle %}
-                <div class="blog-block">
-                    <div id="vedlikehold"></div>
-                    {% if article.image %}
-                        <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;    background-position: center;"></div>
-                    {% endif %}
-                    <div class="blog-block__text" {% unless article.image %}style="flex:100%;"{% endunless %}>
-                        <h2 class="block-title">{{ article.title }}</h2>
-                        {{ article.content }}
-                    </div>
-                </div>
-            {% endif %}
-        {% endfor %}
-    {% endfor %}
-    {% for article in blog-merke.articles %}
-        {% assign handle-check = blog-merke.title | downcase | append: "/" | append: vendorHandle %}
-        {% if handle-check == article.handle %}
-            <div class="blog-block">
-                <div class="blog-block__image" style="background: url({{ article.image | img_url: '1200x1200' }}) no-repeat; background-size: cover;    background-position: center;"></div>
-                <div class="blog-block__text">
-                    <h2 class="block-title">{{ article.title }}</h1>
-                    {{ article.content }}
-                </div>
-            </div>
-        {% endif %}
-    {% endfor %}
-  </section>
-</section>
 
 {%- assign models = product.media | where: 'media_type', 'model' | json -%}
 
@@ -367,11 +327,6 @@
         "type": "checkbox",
         "label": "t:sections.main_product.settings.enable_video_looping.label",
         "default": true
-      },
-		{
-        "id": "vedlikehold",
-        "type": "blog",
-        "label": "Vedlikehold"
       }
     ],
     "blocks": [

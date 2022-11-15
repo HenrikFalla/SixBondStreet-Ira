@@ -1,7 +1,22 @@
+#main {
+    max-width: 100vw;
+    overflow: hidden;
+}
 .product-item--square .image.nopadding, .product-item--square .placeholder-image.nopadding {
     padding-top: 0;
 }
 .product-item .nopadding video {
     object-fit: contain;
     max-height: 100%;
+}
+.collection__sidebar {
+    width: 260px;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+@media screen and (min-width: 78em) {
+    .collection__main-area {
+        max-width: calc(100% - 285px);
+        width: calc(100% - 285px);
+    }
 }
