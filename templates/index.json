@@ -114,7 +114,7 @@
         "small_square-2": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/collage_host_hytta_002_8036170a-e9be-4911-bb49-e0288952168f.jpg",
+            "image": "shopify:\/\/shop_images\/sengegavl_messing_PAL.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -174,7 +174,7 @@
         "fefe5de7-18c1-44c9-9b64-7648325c846c": {
           "type": "medium_horizontal_rect",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hvl_miljobilde_belysning.jpg",
+            "image": "shopify:\/\/shop_images\/banner_belysning_host22.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -184,7 +184,7 @@
             "text_max_width": 28,
             "link_text": "Se utvalget her",
             "link": "shopify:\/\/collections\/belysning",
-            "text_position": "center_center",
+            "text_position": "center_bottom",
             "background_color": "",
             "color_text": "#ffffff",
             "color_subheading": "#ffffff",
@@ -198,7 +198,7 @@
         "9ecdb5b4-7e52-4176-9116-07133e3799ad": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gulvteppe_forside.jpg",
+            "image": "shopify:\/\/shop_images\/forside_gulvtepper_host22.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -222,7 +222,7 @@
         "ba050088-0a27-4931-a408-05e03fb69119": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/v02_CC9A7D62DB309F379ADA1FE7141E378B.webp",
+            "image": "shopify:\/\/shop_images\/fotokunst_forside_host22_002.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
