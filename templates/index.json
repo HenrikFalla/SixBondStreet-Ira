@@ -494,7 +494,7 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 40
+            "overlay_opacity": 35
           }
         },
         "1655904214361113c8-2": {
@@ -518,7 +518,7 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 40
+            "overlay_opacity": 35
           }
         }
       },
