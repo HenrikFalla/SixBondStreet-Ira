@@ -25,10 +25,34 @@
             "color_overlay": "#000000",
             "opacity_overlay": 40
           }
+        },
+        "70830563-a8b1-45c4-80f7-40d3e39e6278": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/003.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/003.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "",
+            "title": "Julegaver til Interiørentusiasten",
+            "subheading": "<p>Leter du etter en julegave til en som er over gjennomsnittet opptatt av interiør? Da har du kommet rett.<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/julegaver-til-interiorentusiasten",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 40
+          }
         }
       },
       "block_order": [
-        "slide-1"
+        "slide-1",
+        "70830563-a8b1-45c4-80f7-40d3e39e6278"
       ],
       "settings": {
         "desktop_height": 65,
