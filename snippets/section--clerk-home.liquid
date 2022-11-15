@@ -1,0 +1,20 @@
+<section
+  class="featured-collection s-inline-section"
+  data-section-id="{{ section.id }}"
+  data-section-type="clerk_{{block_type}}"
+>
+    {% case block_type %}
+        {% when 'complimentary' %}
+            <span class="clerk"
+                data-template="@home-page-visitor-complementary">
+            </span>
+        {% when 'bestseller' %}
+            <span class="clerk"
+                data-template="@home-page-popular">
+            </span>
+        {% when 'hot' %}
+            <span class="clerk"
+                data-template="@home-page-trending">
+            </span>
+    {% endcase%}
+</section>

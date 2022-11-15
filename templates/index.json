@@ -84,6 +84,12 @@
         "circle": true
       }
     },
+    "88f1fa26-f01d-413c-8db3-2af675672079": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "complimentary"
+      }
+    },
     "2-column-mosaic-grid": {
       "type": "2-column-mosaic-grid",
       "blocks": {
@@ -142,6 +148,12 @@
       ],
       "settings": {
         "enable_full_width": false
+      }
+    },
+    "8b8e0298-63fa-464d-b8c2-bcaf49f3763e": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "hot"
       }
     },
     "165590230686a4951c": {
@@ -557,12 +569,6 @@
         "color_subheading": "#f1efeb",
         "color_background_button": "#f8f7f5",
         "color_text_button": "#000000"
-      }
-    },
-    "nosto_index": {
-      "type": "nosto-index",
-      "disabled": true,
-      "settings": {
       }
     },
     "1655972076e89a6252": {
@@ -1077,12 +1083,20 @@
       "settings": {
         "enable_full_width": false
       }
+    },
+    "82aa94d7-db38-4f31-b7f7-dcb92b12dfca": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "bestseller"
+      }
     }
   },
   "order": [
     "slideshow-1",
     "1652734830e13bb44f",
+    "88f1fa26-f01d-413c-8db3-2af675672079",
     "2-column-mosaic-grid",
+    "8b8e0298-63fa-464d-b8c2-bcaf49f3763e",
     "165590230686a4951c",
     "1655903749b7b25dde",
     "1655904214bdb65264",
@@ -1091,7 +1105,6 @@
     "16559052358ffed71f",
     "165597183990c0e2cb",
     "16559720716359b63d",
-    "nosto_index",
     "1655972076e89a6252",
     "1655973450c3510188",
     "1655973557af65b2bb",
@@ -1101,6 +1114,7 @@
     "1655979936791ce15e",
     "1655980344fab006ba",
     "16559803771d68809c",
-    "165598082154f9f913"
+    "165598082154f9f913",
+    "82aa94d7-db38-4f31-b7f7-dcb92b12dfca"
   ]
 }

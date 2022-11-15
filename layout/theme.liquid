@@ -64,61 +64,54 @@
     {% render 'theme-setting-vars' %}
     {{ 'theme.css' | asset_url | stylesheet_tag }}
     {{ 'sixbond-custom.css' | asset_url | stylesheet_tag }}
+    {{ 'clerk_global.css' | | asset_url | | stylesheet_tag }}
 
     <!-- SixBondStreet CUSTOM -->
-
-    {% if template.name == 'product' %}
-      {{ 'product-page.css' | asset_url | stylesheet_tag }}
-    {% elsif template.name == 'index'%}
-      {{ 'index.scss.css' | asset_url | stylesheet_tag }}
-    {% elsif template.name == 'collection' or template.name == 'list-collections' %}
-      {{ 'sxbs-collection.css' | asset_url | stylesheet_tag }}
-    {% endif %}
+    {% assign tempName = template.name %}
+    {% case tempName %}
+      {% when 'product' %}
+        {{ 'product-page.css' | asset_url | stylesheet_tag }}
+        {{ 'clerk_product.css' | asset_url | stylesheet_tag }}
+      {% when 'index' %}
+        {{ 'index.scss.css' | asset_url | stylesheet_tag }}
+        {{ 'clerk_index.css' | | asset_url | stylesheet_tag }}
+      {% when 'collection' %}
+        {{ 'sxbs-collection.css' | asset_url | stylesheet_tag }}
+        {{ 'clerk_collection.css' | asset_url | | stylesheet_tag }}
+      {% when 'search' %}
+        {{ 'clerk_search.css' | asset_url | stylesheet_tag }}
+      {% when 'cart' %}
+        {{ 'clerk_cart.css' | asset_url | | stylesheet_tag }}
+    {% endcase %}
     <!-- END SixBondStreet CUSTOM  -->
     <script src="https://www.googleoptimize.com/optimize.js?id=GTM-5GWX954"></script>
     
     {{ content_for_header }}
-    <!-- Algolia head -->
-    <script src="{{ 'algolia_config.js' | asset_url }}" defer="defer"></script>
+  <!-- Start of Clerk.io E-commerce Personalisation tool - www.clerk.io -->
+  <script type="text/javascript">
+    (function(w,d){
+      var e=d.createElement('script');e.type='text/javascript';e.async=true;
+      e.src=(d.location.protocol=='https:'?'https':'http')+'://cdn.clerk.io/clerk.js';
+      var s=d.getElementsByTagName('script')[0];s.parentNode.insertBefore(e,s);
+      w.__clerk_q=w.__clerk_q||[];w.Clerk=w.Clerk||function(){w.__clerk_q.push(arguments)};
+    })(window,document);
 
-
-
-
-
-
-<script type="text/template" id="template_algolia_money_format" defer>{% include 'algolia_money_format' %}</script>
-<script type="text/template" id="template_algolia_current_collection_id" defer>{% include 'algolia_current_collection_id' %}</script>
-<script type="text/template" id="template_algolia_autocomplete" defer>{% include 'algolia_autocomplete.hogan' %}</script>
-<script type="text/template" id="template_algolia_autocomplete.css" defer>{% include 'algolia_autocomplete.css.hogan' %}</script>
-<script type="text/template" id="template_algolia_autocomplete_pages_empty" defer>{% include 'algolia_autocomplete_pages_empty.hogan' %}</script>
-<script type="text/template" id="template_algolia_autocomplete_page" defer>{% include 'algolia_autocomplete_page.hogan' %}</script>
-<script type="text/template" id="template_algolia_autocomplete_collection" defer>{% include 'algolia_autocomplete_collection.hogan' %}</script>
-<script type="text/template" id="template_algolia_autocomplete_collections_empty" defer>{% include 'algolia_autocomplete_collections_empty.hogan' %}</script>
-<script type="text/template" id="template_algolia_autocomplete_article" defer>{% include 'algolia_autocomplete_article.hogan' %}</script>
-<script type="text/template" id="template_algolia_autocomplete_articles_empty" defer>{% include 'algolia_autocomplete_articles_empty.hogan' %}</script>
-<script type="text/template" id="template_algolia_autocomplete_product" defer>{% include 'algolia_autocomplete_product.hogan' %}</script>
-<script type="text/template" id="template_algolia_autocomplete_products_empty" defer>{% include 'algolia_autocomplete_products_empty.hogan' %}</script>
-<script type="text/template" id="template_algolia_autocomplete_footer" defer>{% include 'algolia_autocomplete_footer.hogan' %}</script>
-<script type="text/template" id="template_algolia_instant_search" defer>{% include 'algolia_instant_search.hogan' %}</script>
-<script type="text/template" id="template_algolia_instant_search.css" defer>{% include 'algolia_instant_search.css.hogan' %}</script>
-<script type="text/template" id="template_algolia_instant_search_stats" defer>{% include 'algolia_instant_search_stats.hogan' %}</script>
-<script type="text/template" id="template_algolia_instant_search_facet_show_more" defer>{% include 'algolia_instant_search_facet_show_more.hogan' %}</script>
-<script type="text/template" id="template_algolia_instant_search_facet_item" defer>{% include 'algolia_instant_search_facet_item.hogan' %}</script>
-<script type="text/template" id="template_algolia_instant_search_current_refined_values_item" defer>{% include 'algolia_instant_search_current_refined_values_item.hogan' %}</script>
-<script type="text/template" id="template_algolia_instant_search_product" defer>{% include 'algolia_instant_search_product.hogan' %}</script>
-<script type="text/template" id="template_algolia_instant_search_no_result" defer>{% include 'algolia_instant_search_no_result.hogan' %}</script>
-{{ 'algolia_dependency_font-awesome-4-4-0.min.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'algolia_externals.js' | asset_url }}" defer></script>
-<script src="{{ 'algolia_init.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'algolia_analytics.js' | asset_url }}" defer></script>
-<script src="{{ 'algolia_translations.js' | asset_url }}" defer></script>
-<script src="{{ 'algolia_helpers.js' | asset_url }}" defer></script>
-<script src="{{ 'algolia_autocomplete.js' | asset_url }}" defer></script>
-<script src="{{ 'algolia_facets.js' | asset_url }}" defer></script>
-<script src="{{ 'algolia_sort_orders.js' | asset_url }}" defer></script>
-<script src="{{ 'algolia_instant_search.js' | asset_url }}" defer></script>
-  <!-- /Algolia head -->
-
+    Clerk('config', {
+      key: 'OZLV8JPBfFyDcsotFN0rcxcIm7a9vydn',
+      formatters: {
+        currency_converter: function(price) {
+          var converted_price = (price*Shopify.currency.rate);
+          return (converted_price).toString();
+        }
+      },
+      globals: {
+        currency_iso: "{{ cart.currency.iso_code }}",
+        currency_symbol: "{{ cart.currency.symbol }}"
+      }
+    });
+  </script>
+  <!-- End of Clerk.io E-commerce Personalisation tool - www.clerk.io -->
+  
   </head>
 
   <body class="
@@ -200,8 +193,18 @@
     {% if useCustomEvents %}
     <script src="{{ 'custom-events.js' | asset_url }}"></script>
     {% endif %}
-  {% render 'nosto-tagging' %}
   {% render 'livechat' %}
-</body>
+  {% comment %} Clerk.io instant search code {% endcomment %}
+  <span 
+    class="clerk" 
+    data-template="@live-search"
+    data-instant-search-suggestions="6"
+    data-instant-search-categories="6"
+    data-instant-search-pages="6" 
+    data-instant-search='.quick-search__input, .drawer-menu__search-input'
+    data-instant-search-positioning='center'>
+  </span>
+  {% comment %} End of Clerk.io instant search code {% endcomment %}
+  </body>
 
 </html>

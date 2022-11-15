@@ -1,0 +1,33 @@
+{%render 'section--product-clerk' with
+    clerkRec: section.settings.clerk_recs,
+    product_data: product
+%}
+{% schema %}
+{
+   "name": "Clerk Recommendations",
+  "settings": [
+    {
+       "type": "radio",
+       "id": "clerk_recs",
+       "label": "Clerk Recommendation Type",
+       "options": [
+       {
+            "value": "alternatives",
+            "label": "Alternative Products"
+       },
+       {
+            "value": "others-also-bought",
+            "label": "Others also bought"
+       }
+       ],
+      "default": "alternatives"
+    }
+  ],
+ "presets": [
+    {
+        "name":"Clerk Recommendations"
+    }
+ ],
+ "templates": ["product"]
+}
+{% endschema %}

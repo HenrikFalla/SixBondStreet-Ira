@@ -1,0 +1,16 @@
+<section class="description clerk_recommendations {{ clerkRec }}">
+    <div class="description__container clerk_container">
+        {% case clerkRec %}
+            {% when "alternatives" %}
+                <span class="clerk"
+                    data-template="@product-page-alternatives"
+                    data-products="[{{ product_data.id }}]">
+                </span>
+            {% when "others-also-bought" %}
+            <span class="clerk"
+                data-template="@product-page-others-also-bought"
+                data-products="[{{ product_data.id }}]">
+            </span>
+        {% endcase %}
+    </div>
+</section>

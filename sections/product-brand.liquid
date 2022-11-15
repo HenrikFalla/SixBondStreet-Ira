@@ -1,0 +1,25 @@
+{% liquid
+    assign blog-brand = blogs[section.settings.brand]
+%}
+{% render 'section--product-brand' with
+    product_data: product,
+    blog_data: blog-brand
+%}
+{% schema %}
+{
+   "name": "Merke",
+    "settings": [
+    {
+        "id": "brand",
+        "type": "blog",
+        "label": "Merke"
+    }
+    ],
+    "presets": [
+    {
+        "name":"Merke"
+    }
+    ],
+    "templates": ["product"]
+}
+{% endschema %}
