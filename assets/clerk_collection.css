@@ -234,12 +234,13 @@
 }
 
 .clerk_product_hover_image{
-    background-size:contain;
+    background-size:cover;
     background-position:center center;
     background-repeat:no-repeat;
-    object-fit: contain;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
     /*Change the max height value below to 100% if the client has consistent image sizes */
-    max-height:400px;
+    max-height:450px;
     width:100%;
     max-width:100%;
     height: auto;
@@ -247,12 +248,13 @@
 }
 
 .clerk_product_image{
-    background-size:contain;
+    background-size:cover;
     background-position:center center;
     background-repeat:no-repeat;
-    object-fit: contain;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
     /*Change the max height value below to 100% if the client has consistent image sizes */
-    max-height:400px;
+    max-height:450px;
     width:100%;
     max-width:100%;
     height: auto;
