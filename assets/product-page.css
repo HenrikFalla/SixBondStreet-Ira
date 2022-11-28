@@ -56,6 +56,11 @@ input.qtyminus, input.qtyplus {
 input.qtyplus {
     padding-top: 3px;
 }
+a.download_link {
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 1.2rem;
+}
 @media (min-width: 425px) {
     .pf-shop__container .pf-container__qty {
         width: 30%;
