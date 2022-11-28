@@ -1,12 +1,5 @@
-
-{% capture dname %}{{ namespace | downcase }}{% endcapture %}
-{% capture dkey %}{{ key | downcase }}{% endcapture %}
-{{ dname }}
-{{ dkey }}
-{{ product.metafields.product_data.monteringsanvisning }}
-{{ product.title }}
-{% unless product.metafields.product_data.dkey == empty %}
-    <a href="{{ product.metafields.product_data.dkey }}" download>
+{% if product.metafields.product_data.monteringsanvisning %}
+    <a href="{{ product.metafields.product_data.monteringsanvisning }}" download>
         <span>{{ link_text }}</span>
     </a>
-{% endunless %}
+{% endif %}
