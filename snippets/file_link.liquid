@@ -1,8 +1,9 @@
-{{ namespace }}
-{{ key }}
-{{ product.metafields['{{ namespace | downcase }}']['{{ key | downcase }}'] }}
-{% unless product.metafields['{{ namespace | downcase }}']['{{ key | downcase }}'] == empty %}
-    <a href="{{ product.metafields['{{ namespace | downcase }}']['{{ key | downcase }}'] }}" download>
+
+{% capture dname %}{{ namespace | downcase }}{% endcapture %}
+{% capture dkey %}{{ key | downcase }}{% endcapture %}
+{{ product.metafields.dname.dkey }}
+{% unless product.metafields.dname.dkey == empty %}
+    <a href="{{ product.metafields.dname.dkey }}" download>
         <span>{{ link_text }}</span>
     </a>
 {% endunless %}
