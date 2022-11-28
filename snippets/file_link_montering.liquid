@@ -1,5 +1,5 @@
 {% if product.metafields.product_data.monteringsanvisning %}
-    <a href="{{ product.metafields.product_data.monteringsanvisning.value.url }}" target="_blank" download="{{ product.title }}">
+    <a href="{{ product.metafields.product_data.monteringsanvisning.value.url }}" target="_blank" download="{{ product.title }}" class="download_link">
         <span>{{ link_text }}</span>
     </a>
 {% endif %}
