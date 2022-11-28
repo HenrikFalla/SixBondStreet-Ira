@@ -1,3 +1,5 @@
-<a href="{{ product.metafields.namespace.key.value }}" download>
-    <span>{{ link_text }}</span>
-</a>
+{% if product.metafields.namespace.key %}
+    <a href="{{ product.metafields.namespace.key.value }}" download>
+        <span>{{ link_text }}</span>
+    </a>
+{% endif %}
