@@ -1,7 +1,7 @@
 {{ namespace }}
 {{ key }}
 {% unless product.metafields['{{ namespace | downcase }}']['{{ key | downcase }}'] == empty %}
-    <a href="{{ product.metafields.['{{ namespace | downcase }}'].['{{ key | downcase }}'].value }}" download>
+    <a href="{{ product.metafields['{{ namespace | downcase }}']['{{ key | downcase }}']value }}" download>
         <span>{{ link_text }}</span>
     </a>
 {% endunless %}
