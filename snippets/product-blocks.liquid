@@ -435,6 +435,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
         -%}
     {%- when 'file_link' -%}
       {%- render 'file_link' with
+        product: product,
         link_text: block.settings.file-download-text,
         namespace: block.settings.file-namespace,
         key: block.settings.file-key
