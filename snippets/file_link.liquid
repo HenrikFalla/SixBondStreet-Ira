@@ -3,7 +3,7 @@
 {% capture dkey %}{{ key | downcase }}{% endcapture %}
 {{ dname }}
 {{ dkey }}
-{{ product.metafields['{{ dname | downcase }}']['{{ dkey | downcase }}'] }}
+{{ product.metafields.product_data.monteringsanvisning }}
 {{ product.title }}
 {% unless product.metafields.product_data.dkey == empty %}
     <a href="{{ product.metafields.product_data.dkey }}" download>
