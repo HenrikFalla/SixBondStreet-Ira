@@ -3,9 +3,9 @@
 {% capture dkey %}{{ key | downcase }}{% endcapture %}
 {{ dname }}
 {{ dkey }}
-{{ product.metafields.dname.dkey }}
-{% unless product.metafields.dname.dkey == empty %}
-    <a href="{{ product.metafields.dname.dkey }}" download>
+{{ product.metafields.product_data.dkey }}
+{% unless product.metafields.product_data.dkey == empty %}
+    <a href="{{ product.metafields.product_data.dkey }}" download>
         <span>{{ link_text }}</span>
     </a>
 {% endunless %}
