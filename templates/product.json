@@ -74,6 +74,14 @@
             "content": ""
           }
         },
+        "10df6396-49e8-45c9-88a8-aa72ea73a029": {
+          "type": "file_link",
+          "settings": {
+            "file-download-text": "Last ned monteringsanvisning.",
+            "file-namespace": "product_data",
+            "file-key": "monteringsanvisning"
+          }
+        },
         "422395fc-49fe-48ec-a531-c89b8314004d": {
           "type": "share_buttons",
           "settings": {
@@ -93,6 +101,7 @@
         "f138415d-c8df-4ec6-851d-147d64d93a46",
         "503bed45-a61e-444e-b1ed-384e9e5ac9ff",
         "a76d1c85-788a-479a-b903-898ce70fed9f",
+        "10df6396-49e8-45c9-88a8-aa72ea73a029",
         "422395fc-49fe-48ec-a531-c89b8314004d"
       ],
       "settings": {
