@@ -1,5 +1,6 @@
 {{ namespace }}
 {{ key }}
+{{ product.metafields['{{ namespace | downcase }}']['{{ key | downcase }}'] }}
 {% unless product.metafields['{{ namespace | downcase }}']['{{ key | downcase }}'] == empty %}
     <a href="{{ product.metafields['{{ namespace | downcase }}']['{{ key | downcase }}'] }}" download>
         <span>{{ link_text }}</span>
