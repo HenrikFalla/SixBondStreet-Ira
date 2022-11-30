@@ -1389,7 +1389,7 @@ html.supports-no-cookies .supports-cookies{
     width:500px;
     max-width:var(--width-max-logo)
 }
-  /**}
+  }
 body.template-index .header--transparent-home:not(.is-sticky),
   body.template-index .header--transparent-collection:not(.is-sticky),
   body.template-collection .header--transparent-home:not(.is-sticky),
@@ -1397,7 +1397,7 @@ body.template-index .header--transparent-home:not(.is-sticky),
     background-color:transparent;
     color:var(--color-text-transparent);
     border-bottom:1px solid var(--color-border-transparent);
-  }**/
+  }
 body.template-index .header--transparent-home:not(.is-sticky) .icon-button, body.template-index .header--transparent-collection:not(.is-sticky) .icon-button, body.template-collection .header--transparent-home:not(.is-sticky) .icon-button, body.template-collection .header--transparent-collection:not(.is-sticky) .icon-button{
       --color:var(--color-icon-transparent);
     }
