@@ -1,7 +1,10 @@
 {{ video }}
 <section
   class="video"
+  data-section-id="{{ section.id }}"
   data-section-type="video"
+  data-video-id="{{ video_id }}"
+  data-video-type="{{ video_type }}"
   style="
     --color-overlay: {{ color_overlay }};
     --color-overlay-transparent: {{ color_overlay | color_modify: 'alpha', opacity }};
