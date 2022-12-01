@@ -1,0 +1,53 @@
+<section
+  class="video"
+  data-section-type="video"
+  style="
+    --color-overlay: {{ color_overlay }};
+    --color-overlay-transparent: {{ color_overlay | color_modify: 'alpha', opacity }};
+    --color-border: {{ color_text | color_modify: 'alpha', 0.3 }};
+    --color-text: {{ color_text }};
+  "
+>
+  <div class="video__wrapper borders-nfw">
+    {%- if video != blank -%}
+      <div class="video__container" data-video-container>
+        <div class="video__player" tabindex="-1" data-video-player></div>
+      </div>
+    {%- endif -%}
+
+    {%- if image != blank -%}
+      {% render 'image' with
+        image: image,
+        wrapper_class: 'video__image visible',
+        disable_style: true
+      %}
+    {%- endif -%}
+
+    <div class="video__overlay visible" data-overlay>
+      <div class="video__overlay-content">
+        <button class="video__play" data-play-button title="{{ 'general.accessibility.play' | t}}">
+          {% render 'icon' with icon: 'play_arrow' %}
+        </button>
+        <div>
+          {%- if heading -%}
+            <h3 class="video__overlay-heading ff-heading fs-heading-small">{{ heading }}</h3>
+          {%- endif -%}
+
+          {%- if subheading -%}
+            <div class="video__overlay-subheading ff-body fs-body-base">{{ subheading }}</div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video__mobile-text contrast">
+    {%- if heading -%}
+      <h3 class="video__mobile-heading ff-heading fs-heading-base c-heading">{{ heading }}</h3>
+    {%- endif -%}
+
+    {%- if subheading -%}
+      <div class="video__mobile-subheading ff-body fs-body-base c-subheading">{{ subheading }}</div>
+    {%- endif -%}
+  </div>
+</section>
