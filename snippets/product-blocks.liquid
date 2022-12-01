@@ -440,17 +440,6 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
         namespace: block.settings.file-namespace,
         key: block.settings.file-key
       -%}
-    {%- when 'product_video' -%}
-      {%- render "product_video" with
-        product: product,
-        heading: block.settings.video_heading,
-        subheading: block.settings.video_subheading,
-        image: block.settings.video_image,
-        video: block.settings.video,
-        opacity_overlay: block.settings.video_opacity_overlay,
-        color_overlay: block.settings.video_color_overlay,
-        color_text: block.settings.video_color_text
-      -%} 
     {% endcase %}
   {%- endfor -%}
 </div>

@@ -1,0 +1,59 @@
+{% schema %}
+{
+    "type": "product_video",
+    "name": "Product Video",
+    "settings": [
+      {
+        "type": "text",
+        "id": "video_heading",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "video_subheading",
+        "label": "Subheading"
+      },
+      {
+        "type": "image_picker",
+        "id": "video_image",
+        "label": "Image"
+      },
+      {
+        "type": "video_url",
+        "id": "video",
+        "label": "Video Url",
+        "accept": ["youtube", "vimeo"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      },
+      {
+        "type": "range",
+        "id": "video_opacity_overlay",
+        "label": "Opacity Overlay",
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "default": 60,
+        "unit": "%"
+      },
+      {
+        "type": "color",
+        "id": "video_color_overlay",
+        "label": "Color overlay",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "video_color_text",
+        "label": "Text color",
+        "default": "#ffffff"
+      }
+    ],
+    "presets": [
+        {   
+            "name": "Product Video",
+            "settings": {}
+        }
+    ], 
+    "templates": ["product"]
+  }
+{% endschema %}
