@@ -1,3 +1,12 @@
+{%- render "product_video" with
+        heading: block.settings.video_heading,
+        subheading: block.settings.video_subheading,
+        image: block.settings.video_image,
+        video: block.settings.video,
+        opacity_overlay: block.settings.video_opacity_overlay,
+        color_overlay: block.settings.video_color_overlay,
+        color_text: block.settings.video_color_text
+      -%} 
 {% schema %}
 {
     "type": "product_video",
