@@ -1,4 +1,6 @@
-{{ product.metafields.product_data.product_page_video_url }}
+{% assign video = product.metafields.product_data.product_page_video_url.url %}
+{% assign video_id = product.metafields.product_data.product_page_video_url.id %}
+{% assign video_type = product.metafields.product_data.product_page_video_url.type %}
 <section
   class="video"
   data-section-id="{{ section.id }}"
