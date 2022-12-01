@@ -1,12 +1,13 @@
+
 {%- render "product_video" with
         product: product,
-        heading: block.settings.video_heading,
-        subheading: block.settings.video_subheading,
-        image: block.settings.video_image,
-        video: block.settings.video.url,
-        opacity_overlay: block.settings.video_opacity_overlay,
-        color_overlay: block.settings.video_color_overlay,
-        color_text: block.settings.video_color_text
+        heading: section.settings.video_heading,
+        subheading: section.settings.video_subheading,
+        image: section.settings.video_image,
+        video: section.settings.video.url,
+        opacity_overlay: section.settings.video_opacity_overlay,
+        color_overlay: section.settings.video_color_overlay,
+        color_text: section.settings.video_color_text
       -%} 
 {% schema %}
 {
