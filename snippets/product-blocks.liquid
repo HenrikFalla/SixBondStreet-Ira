@@ -235,11 +235,11 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
                       <div class="product-form__color-swatches" data-option-buttons>
                         {% for value in option.values %}
                           {% assign file-url = value | handle | append: '.' | append: file_extension %}
-					{% if product.variants[forloop.index0].available %}
-					<div class="variant__option" id="{{ value | remove:" " }}">
-					{% else %}
-					<div class="variant__option sxbs-variant-sold-out">
-					{% endif %}
+                          {% if product.variants[forloop.index0].available %}
+                          <div class="variant__option" id="{{ value | remove:" " }}">
+                          {% else %}
+                          <div class="variant__option sxbs-variant-sold-out">
+                          {% endif %}
                       
                       
                           <button
