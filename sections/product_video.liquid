@@ -1,10 +1,9 @@
-{{ product.metafields.product_data.product_page_video_url.url }}
 {%- render "product_video" with
         product: product,
         heading: section.settings.video_heading,
         subheading: section.settings.video_subheading,
         image: section.settings.video_image,
-        video: section.settings.video_url,
+        video: product.metafields.product_data.product_page_video_url,
         opacity_overlay: section.settings.video_opacity_overlay,
         color_overlay: section.settings.video_color_overlay,
         color_text: section.settings.video_color_text,
