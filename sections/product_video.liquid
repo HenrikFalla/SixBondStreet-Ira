@@ -1,14 +1,15 @@
-{%- render "product_video" with
+{% if product.metafields.product_data.product_page_video_url %}
+    {%- render "product_video" with
         product: product,
         heading: section.settings.video_heading,
         subheading: section.settings.video_subheading,
         image: section.settings.video_image,
-        video: product.metafields.product_data.product_page_video_url,
         opacity_overlay: section.settings.video_opacity_overlay,
         color_overlay: section.settings.video_color_overlay,
         color_text: section.settings.video_color_text,
         opacity: section.settings.opacity_overlay | divided_by: 100.0
-      -%} 
+    -%} 
+{% endif %}
 {% schema %}
 {
     "name": "Product Video",
@@ -33,9 +34,9 @@
         "id": "video_opacity_overlay",
         "label": "Opacity Overlay",
         "min": 0,
-        "max": 1,
-        "step": 0.1,
-        "default": 0.6,
+        "max": 100,
+        "step": 10,
+        "default": 60,
         "unit": "%"
       },
       {
