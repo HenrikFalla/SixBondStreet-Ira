@@ -1,5 +1,5 @@
 {% assign video = product.metafields.product_data.product_page_video_id %}
-{% assign opacity %}
+{% assign opacity = "" %}
 {% unless opacity_overlay == 100 %}
   {% assign opacity = opacity_overlay %}
 {% endunless %}
@@ -90,7 +90,6 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen
     >
-    
     </iframe>
   </div>
 </div>
