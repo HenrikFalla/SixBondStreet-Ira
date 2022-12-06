@@ -1,1 +1,56 @@
-{{ video }}
+{% assign video = product.metafields.product_data.product_page_video_url %}
+<div class="outer__youtube">
+  <div class="inner__youtube">
+    <iframe
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+      "
+      loading="lazy"
+      srcdoc="
+        <style>
+          * {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+          }
+          body, html {
+            height: 100%;
+          }
+          img {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+          }
+        </style>
+        <a href='{{ video }}?autoplay=1'>
+          <img src='{{ image }}' alt='{{ product.title }}'>
+          <div class='video__overlay-content'>
+            <button class='video__play' data-play-button='' title='Spill'>
+              <span class='icon'>
+                <svg width='100%' viewBox='0 0 24 24'>
+                  <path d='M0 0h24v24H0z' fill='none'></path>
+                  <path d='M8 5v14l11-7z' fill='currentColor'></path>
+                </svg>
+              </span>
+            </button>
+            <div>
+              <h3 class='video__overlay-heading ff-heading fs-heading-small'>{{ product.title }}</h3>
+            </div>
+          </div>
+        </a>
+      "
+      src="{{ video }}"
+      title="{{ product.title }}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+    >
+    </iframe>
+  </div>
+</div>
