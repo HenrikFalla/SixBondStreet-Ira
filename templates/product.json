@@ -110,6 +110,14 @@
         "enable_video_looping": true
       }
     },
+    "7fa57bde-b92a-4744-9e5e-d8e44dd5b212": {
+      "type": "product_video",
+      "settings": {
+        "video_opacity_overlay": 60,
+        "video_color_overlay": "#000000",
+        "video_color_text": "#ffffff"
+      }
+    },
     "3ee7363c-9368-4dbb-9764-743f4e2bfce8": {
       "type": "charpstar-3d",
       "settings": {
@@ -150,29 +158,17 @@
       "settings": {
         "clerk_recs": "others-also-bought"
       }
-    },
-    "c8bb2fdd-59eb-4671-b1fa-504893970891": {
-      "type": "product_video",
-      "settings": {
-        "video_heading": "North Spisestol",
-        "video_subheading": "<p>Vår designer og innkjøper Palla forteller om North spisestol.<\/p>",
-        "video_image": "shopify:\/\/shop_images\/North_Spisestol_Youtube_1f7f794e-98e8-44ef-b8c2-e12d7a7c36d3.jpg",
-        "video_url": "{{ product.metafields.product_data.product_page_video_url.value }}",
-        "video_opacity_overlay": 80,
-        "video_color_overlay": "#000000",
-        "video_color_text": "#ffffff"
-      }
     }
   },
   "order": [
     "main",
+    "7fa57bde-b92a-4744-9e5e-d8e44dd5b212",
     "3ee7363c-9368-4dbb-9764-743f4e2bfce8",
     "fb06e00b-6da4-41cf-819f-d9974b36732b",
     "1d8d845e-1c9d-49e7-89c9-9de0fcad505b",
     "f09777e5-1abf-4ea2-87f3-7dca7de6b302",
     "2ac46181-b599-431b-af90-b0c2fa50b03a",
     "recommendations",
-    "b6e59752-1433-4656-9a75-18c354b2d972",
-    "c8bb2fdd-59eb-4671-b1fa-504893970891"
+    "b6e59752-1433-4656-9a75-18c354b2d972"
   ]
 }
