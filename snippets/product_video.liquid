@@ -1,0 +1,95 @@
+{% assign video = product.metafields.product_data.product_page_video_id %}
+{% assign opacity = "" %}
+{% unless opacity_overlay == 100 %}
+  {% assign opacity = opacity_overlay %}
+{% endunless %}
+<div class="outer__youtube">
+  <div class="inner__youtube">
+    <iframe
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+      "
+      loading="lazy"
+      srcdoc="
+        <style>
+          * {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+          }
+          body, html {
+            height: 100%;
+          }
+          img {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+          }
+          .video__overlay-content {
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            display: flex;
+          }
+          button.video__play {
+            max-width: 50px;
+            max-height: 50px;
+            border-radius: 50%;
+            border: 0;
+          }
+          .video__overlay {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: {{ color_overlay }}{{ opacity }};
+          }
+          .video__overlay-content div {
+            display: flex;
+            vertical-align: middle;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            margin-left: 12px;
+          }
+          .video__overlay-content div h3 {
+            height: 1.6rem;
+            display: block;
+            font-size: 1.5rem;
+            color: {{ color_text }};
+            font-family: 'Raleway';
+          }
+        </style>
+        <a href='https://www.youtube.com/embed/{{ video }}?autoplay=1'>
+          <img src='https://img.youtube.com/vi/{{ video }}/maxresdefault.jpg' alt='{{ product.title }}'>
+          <div class='video__overlay'></div>
+          <div class='video__overlay-content'>
+            <button class='video__play' data-play-button='' title='Spill'>
+              <span class='icon'>
+                <svg width='100%' viewBox='0 0 24 24'>
+                  <path d='M0 0h24v24H0z' fill='none'></path>
+                  <path d='M8 5v14l11-7z' fill='currentColor'></path>
+                </svg>
+              </span>
+            </button>
+            <div>
+              <h3 class='video__overlay-heading ff-heading fs-heading-small'>{{ product.title }}</h3>
+            </div>
+          </div>
+        </a>
+      "
+      src="https://www.youtube.com/embed/{{ video }}"
+      title="{{ product.title }}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+    >
+    </iframe>
+  </div>
+</div>
