@@ -144,7 +144,7 @@ a.download_link {
 /* Youtube on product page settings */
 .outer__youtube {
     width: 100%; 
-    max-width: 550px; 
+    max-width: 900px; 
     box-shadow: 6px 6px 10px hsl(206.5, 0%, 75%); 
     margin: 2rem;
 }
@@ -153,4 +153,10 @@ a.download_link {
     padding-bottom: 56.15%; 
     height: 0; 
     overflow: hidden;
+}
+.video__overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
 }
