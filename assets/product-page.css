@@ -156,7 +156,7 @@ a.download_link {
 }
 .video__overlay-content {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 12px;
+    left: 12px;
     display: flex;
 }
