@@ -160,9 +160,3 @@ a.download_link {
     left: 0;
     display: flex;
 }
-.video__overlay-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-}
