@@ -1,9 +1,6 @@
 {% if product.metafields.product_data.product_page_video_id %}
     {%- render "product_video" with
         product: product,
-        heading: section.settings.video_heading,
-        subheading: section.settings.video_subheading,
-        image: section.settings.video_image,
         opacity_overlay: section.settings.video_opacity_overlay,
         color_overlay: section.settings.video_color_overlay,
         color_text: section.settings.video_color_text,
@@ -29,21 +26,6 @@
 {
     "name": "Product Video",
     "settings": [
-      {
-        "type": "text",
-        "id": "video_heading",
-        "label": "Heading"
-      },
-      {
-        "type": "richtext",
-        "id": "video_subheading",
-        "label": "Subheading"
-      },
-      {
-        "type": "image_picker",
-        "id": "video_image",
-        "label": "Image"
-      },
       {
         "type": "range",
         "id": "video_opacity_overlay",
