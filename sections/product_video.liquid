@@ -16,6 +16,12 @@
             display: flex;
         }
     </style>
+{% else %}
+    <style>
+        #shopify-section-{{ section.id }} {
+            display: none;
+        }
+    </style>
 {% endif %}
 
 {% schema %}
