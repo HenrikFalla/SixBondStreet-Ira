@@ -29,7 +29,7 @@
           }
         </style>
         <a href='{{ video }}?autoplay=1'>
-          <img src='{{ image }}' alt='{{ product.title }}'>
+          <img src='{{ image | file_url }}' alt='{{ product.title }}'>
           <div class='video__overlay-content'>
             <button class='video__play' data-play-button='' title='Spill'>
               <span class='icon'>
