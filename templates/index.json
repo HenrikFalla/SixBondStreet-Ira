@@ -222,7 +222,7 @@
         "small_square-2": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sengegavl_messing_PAL.jpg",
+            "image": "shopify:\/\/shop_images\/PAL_1600_redigert.png",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -356,6 +356,97 @@
         "fefe5de7-18c1-44c9-9b64-7648325c846c",
         "9ecdb5b4-7e52-4176-9116-07133e3799ad",
         "ba050088-0a27-4931-a408-05e03fb69119"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "1a5a1932-8888-4fd6-9096-b6c6b59807b5": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "hot"
+      }
+    },
+    "3c461912-2d6a-4c18-a27e-8d55217e2f96": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-0": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sengegavl_messing_PAL.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "Fjellhytte tekstiler",
+            "subheading": "<p>Her finner du alle våre møbler som leveres med herlige rutete tekstiler. De passer utmerket på fjellhytta. Foto: Paul Lockhart<\/p>",
+            "text_max_width": 36,
+            "link_text": "Se utvalget her",
+            "link": "https:\/\/sixbondstreet.no\/blogs\/inspirasjon\/hyttetekstiler",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 29
+          }
+        },
+        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-1": {
+          "type": "small_square",
+          "disabled": true,
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "This is small square block",
+            "subheading": "<p>Mix and match between sizes, set a background color or fill, and add text to blocks that are medium or larger.<\/p>",
+            "text_max_width": 32,
+            "link_text": "",
+            "link": "",
+            "text_position": "left_top",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        },
+        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-2": {
+          "type": "small_square",
+          "disabled": true,
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "",
+            "subheading": "",
+            "text_max_width": 28,
+            "link_text": "",
+            "link": "",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        }
+      },
+      "block_order": [
+        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-0",
+        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-1",
+        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-2"
       ],
       "settings": {
         "enable_full_width": false
@@ -592,12 +683,6 @@
         "title": "Få stilen",
         "per_row": 4,
         "aspect_ratio": "natural"
-      }
-    },
-    "1a5a1932-8888-4fd6-9096-b6c6b59807b5": {
-      "type": "clerk-home-page-recommendations",
-      "settings": {
-        "recommendation_type": "hot"
       }
     },
     "1655904214bdb65264": {
@@ -886,6 +971,12 @@
         "enable_full_width": false
       }
     },
+    "dd34eb63-6181-41de-9cac-48e8bd95ddac": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "bestseller"
+      }
+    },
     "165597183990c0e2cb": {
       "type": "2-column-mosaic-grid",
       "blocks": {
@@ -956,12 +1047,6 @@
         "rows": 1,
         "aspect_ratio": "square"
       }
-    },
-    "dd34eb63-6181-41de-9cac-48e8bd95ddac": {
-      "type": "clerk-home-page-recommendations",
-      "settings": {
-        "recommendation_type": "bestseller"
-      }
     }
   },
   "order": [
@@ -972,20 +1057,21 @@
     "9f4ecfa9-c8f3-4fc6-af5e-acc1a8e8738a",
     "2-column-mosaic-grid",
     "47c2154c-a63c-4ca9-bd80-9dfb10180ca7",
+    "1a5a1932-8888-4fd6-9096-b6c6b59807b5",
+    "3c461912-2d6a-4c18-a27e-8d55217e2f96",
     "1663579399ad141f79",
     "1663578893628202ea",
     "1655980344fab006ba",
     "165590230686a4951c",
     "166357956153f60049",
-    "1a5a1932-8888-4fd6-9096-b6c6b59807b5",
     "1655904214bdb65264",
     "1655906078323d2266",
     "5c2f7579-d4df-4e74-be1e-ea037337a0a4",
     "16559052358ffed71f",
     "1655973450c3510188",
     "1663580092ee98390a",
+    "dd34eb63-6181-41de-9cac-48e8bd95ddac",
     "165597183990c0e2cb",
-    "1655979936791ce15e",
-    "dd34eb63-6181-41de-9cac-48e8bd95ddac"
+    "1655979936791ce15e"
   ]
 }
