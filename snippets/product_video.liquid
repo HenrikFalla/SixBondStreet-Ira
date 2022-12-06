@@ -1,4 +1,4 @@
-{% assign video = product.metafields.product_data.product_page_video_url %}
+{% assign video = product.metafields.product_data.product_page_video_id %}
 <div class="outer__youtube">
   <div class="inner__youtube">
     <iframe
@@ -28,8 +28,8 @@
             margin: auto;
           }
         </style>
-        <a href='{{ video }}?autoplay=1'>
-          <img src='{{ image | file_url }}' alt='{{ product.title }}'>
+        <a href='https://www.youtube.com/embed/{{ video }}?autoplay=1'>
+          <img src='https://img.youtube.com/vi/{{ video }}/hqdefault.jpg' alt='{{ product.title }}'>
           <div class='video__overlay-content'>
             <button class='video__play' data-play-button='' title='Spill'>
               <span class='icon'>
@@ -45,7 +45,7 @@
           </div>
         </a>
       "
-      src="{{ video }}"
+      src="https://www.youtube.com/embed/{{ video }}"
       title="{{ product.title }}"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
