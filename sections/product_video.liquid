@@ -1,0 +1,61 @@
+{% if product.metafields.product_data.product_page_video_id %}
+    {%- render "product_video" with
+        product: product,
+        opacity_overlay: section.settings.video_opacity_overlay,
+        color_overlay: section.settings.video_color_overlay,
+        color_text: section.settings.video_color_text,
+        opacity: section.settings.opacity_overlay | divided_by: 100.0
+    -%} 
+    <style>
+        #shopify-section-{{ section.id }} {
+            margin: auto;
+            justify-content: center;
+            display: flex;
+            margin-bottom: 12px;
+            margin-top: 12px;
+        }
+    </style>
+{% else %}
+    <style>
+        #shopify-section-{{ section.id }} {
+            display: none;
+        }
+    </style>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Product Video",
+    "settings": [
+      {
+        "type": "range",
+        "id": "video_opacity_overlay",
+        "label": "Opacity Overlay",
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "default": 60,
+        "unit": "%"
+      },
+      {
+        "type": "color",
+        "id": "video_color_overlay",
+        "label": "Color overlay",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "video_color_text",
+        "label": "Text color",
+        "default": "#ffffff"
+      }
+    ],
+    "presets": [
+        {   
+            "name": "Product Video",
+            "settings": {}
+        }
+    ], 
+    "templates": ["product"]
+  }
+{% endschema %}

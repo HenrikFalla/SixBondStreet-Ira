@@ -61,6 +61,19 @@ a.download_link {
     text-decoration: underline;
     margin-bottom: 1.2rem;
 }
+
+/* start sorting variant options in stock */
+
+.variant__option {
+    order: 2;
+  }
+
+  .variant__option.first {
+    order: 1;
+  }
+
+/* end sorting variant options in stock */
+
 @media (min-width: 425px) {
     .pf-shop__container .pf-container__qty {
         width: 30%;
@@ -140,4 +153,19 @@ a.download_link {
     .merke .merke_container .blog-block__text {
         width: 100%;
     }
+}
+/* Youtube on product page settings */
+.outer__youtube {
+    width: 100%; 
+    max-width: 1100px; 
+    /* box-shadow: 6px 6px 10px hsl(206.5, 0%, 75%); */
+    /* margin: 2rem; */
+    border-radius: 6px;
+    overflow: hidden;
+}
+.inner__youtube {
+    position: relative; 
+    padding-bottom: 56.15%; 
+    height: 0; 
+    overflow: hidden;
 }
