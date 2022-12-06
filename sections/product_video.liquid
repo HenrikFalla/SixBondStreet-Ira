@@ -9,8 +9,15 @@
         color_text: section.settings.video_color_text,
         opacity: section.settings.opacity_overlay | divided_by: 100.0
     -%} 
+    <style>
+        #shopify-section-{{ section.id }} {
+            margin: auto;
+            justify-content: center;
+            display: flex;
+        }
+    </style>
 {% endif %}
-{{ section.id }}
+
 {% schema %}
 {
     "name": "Product Video",
