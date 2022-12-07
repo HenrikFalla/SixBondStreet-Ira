@@ -105,8 +105,8 @@
       ],
       "settings": {
         "show_swatches": true,
-        "enable_sticky_sidebar": true,
-        "enable_full_width": false,
+        "enable_sticky_sidebar": false,
+        "enable_full_width": true,
         "media_layout": "column",
         "enable_video_looping": true
       }
