@@ -71,7 +71,7 @@
     {% case tempName %}
       {% when 'product' %}
         {{ 'product-page.css' | asset_url | stylesheet_tag }}
-        {{ 'clerk_product.css' | asset_url | stylesheet_tag }}
+        {% comment %}{{ 'clerk_product.css' | asset_url | stylesheet_tag }}{% endcomment %}
       {% when 'index' %}
         {{ 'index.scss.css' | asset_url | stylesheet_tag }}
         {{ 'clerk_index.css' | | asset_url | stylesheet_tag }}
