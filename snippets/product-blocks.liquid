@@ -441,10 +441,17 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
           current_variant: current_variant,
         -%}
     {%- when 'sharptar_3d_viewer' -%}
-        {%- render 'sharpstar-3d-viewer' with
-          product: product,
-          current_variant: current_variant,
-        -%}
+      {%- render 'sharpstar-3d-viewer' with
+        product: product,
+        current_variant: current_variant,
+      -%}
+    {%- when 'file_link_montering' -%}
+      {%- render 'file_link_montering' with
+        product: product,
+        link_text: block.settings.file-download-text,
+        namespace: block.settings.file-namespace,
+        key: block.settings.file-key
+      -%}
     {% endcase %}
   {%- endfor -%}
 </div>
