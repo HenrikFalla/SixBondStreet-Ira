@@ -9,21 +9,9 @@
         "per_page": 12,
         "aspect_ratio": "square"
       }
-    },
-    "nosto_search_prepend": {
-      "type": "nosto-search-prepend",
-      "settings": {
-      }
-    },
-    "nosto_search_append": {
-      "type": "nosto-search-append",
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "nosto_search_prepend",
-    "nosto_search_append"
+    "main"
   ]
 }

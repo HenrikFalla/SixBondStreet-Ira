@@ -4,15 +4,9 @@
       "type": "main-404",
       "settings": {
       }
-    },
-    "nosto_404": {
-      "type": "nosto-404",
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "nosto_404"
+    "main"
   ]
 }
