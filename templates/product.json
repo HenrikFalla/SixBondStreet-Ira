@@ -74,9 +74,8 @@
             "content": "<p><\/p>"
           }
         },
-        "cd6d4e3b-9b68-4a76-ba9c-beef0ce3c01a": {
+        "8d227ce4-db45-4eab-a689-edd841d14ba0": {
           "type": "file_link_montering",
-          "disabled": true,
           "settings": {
             "file-download-text": "Last ned monteringsanvisning"
           }
@@ -100,29 +99,27 @@
         "f138415d-c8df-4ec6-851d-147d64d93a46",
         "503bed45-a61e-444e-b1ed-384e9e5ac9ff",
         "a76d1c85-788a-479a-b903-898ce70fed9f",
-        "cd6d4e3b-9b68-4a76-ba9c-beef0ce3c01a",
+        "8d227ce4-db45-4eab-a689-edd841d14ba0",
         "422395fc-49fe-48ec-a531-c89b8314004d"
       ],
       "settings": {
         "show_swatches": true,
-        "enable_sticky_sidebar": false,
+        "enable_sticky_sidebar": true,
         "enable_full_width": true,
         "media_layout": "column",
         "enable_video_looping": true
       }
     },
-    "7fa57bde-b92a-4744-9e5e-d8e44dd5b212": {
+    "4ac52392-13b4-413f-a01f-32191c6ebcec": {
       "type": "product_video",
-      "disabled": true,
       "settings": {
-        "video_opacity_overlay": 60,
+        "video_opacity_overlay": 40,
         "video_color_overlay": "#000000",
         "video_color_text": "#ffffff"
       }
     },
     "3ee7363c-9368-4dbb-9764-743f4e2bfce8": {
       "type": "charpstar-3d",
-      "disabled": true,
       "settings": {
       }
     },
@@ -134,7 +131,6 @@
     },
     "1d8d845e-1c9d-49e7-89c9-9de0fcad505b": {
       "type": "product-clerk",
-      "disabled": true,
       "settings": {
         "clerk_recs": "alternatives"
       }
@@ -159,7 +155,6 @@
     },
     "b6e59752-1433-4656-9a75-18c354b2d972": {
       "type": "product-clerk",
-      "disabled": true,
       "settings": {
         "clerk_recs": "others-also-bought"
       }
@@ -167,7 +162,7 @@
   },
   "order": [
     "main",
-    "7fa57bde-b92a-4744-9e5e-d8e44dd5b212",
+    "4ac52392-13b4-413f-a01f-32191c6ebcec",
     "3ee7363c-9368-4dbb-9764-743f4e2bfce8",
     "fb06e00b-6da4-41cf-819f-d9974b36732b",
     "1d8d845e-1c9d-49e7-89c9-9de0fcad505b",

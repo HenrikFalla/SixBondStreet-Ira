@@ -6630,7 +6630,7 @@ html[data-whatintent='mouse'] .pf-input:focus:focus-visible,
   }
 .no-js .product-form__variants select#variant-selector{
       display:block;
-    }    
+    }
 .pf-container{
   display:block;
   margin:var(--spacing-medium) 0;
