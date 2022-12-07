@@ -126,6 +126,7 @@ a.btn.btn--primary,
 .filter-item a,
 .collection-top-bar__filters a,
 .collection-top-bar a {
+    line-height: 1.2rem;
     text-decoration: none;
 }
 
