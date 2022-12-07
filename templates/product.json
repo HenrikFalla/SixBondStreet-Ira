@@ -55,7 +55,7 @@
           "settings": {
             "style": "closed",
             "heading": "Dimensjoner",
-            "content": ""
+            "content": "<p><\/p>"
           }
         },
         "503bed45-a61e-444e-b1ed-384e9e5ac9ff": {
@@ -71,7 +71,7 @@
           "settings": {
             "style": "closed",
             "heading": "Ytterligere informasjon",
-            "content": ""
+            "content": "<p><\/p>"
           }
         },
         "422395fc-49fe-48ec-a531-c89b8314004d": {
