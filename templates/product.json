@@ -110,6 +110,14 @@
         "enable_video_looping": true
       }
     },
+    "4ac52392-13b4-413f-a01f-32191c6ebcec": {
+      "type": "product_video",
+      "settings": {
+        "video_opacity_overlay": 40,
+        "video_color_overlay": "#000000",
+        "video_color_text": "#ffffff"
+      }
+    },
     "3ee7363c-9368-4dbb-9764-743f4e2bfce8": {
       "type": "charpstar-3d",
       "settings": {
@@ -154,6 +162,7 @@
   },
   "order": [
     "main",
+    "4ac52392-13b4-413f-a01f-32191c6ebcec",
     "3ee7363c-9368-4dbb-9764-743f4e2bfce8",
     "fb06e00b-6da4-41cf-819f-d9974b36732b",
     "1d8d845e-1c9d-49e7-89c9-9de0fcad505b",
