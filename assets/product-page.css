@@ -61,19 +61,6 @@ a.download_link {
     text-decoration: underline;
     margin-bottom: 1.2rem;
 }
-
-/* start sorting variant options in stock */
-
-.variant__option {
-    order: 2;
-  }
-
-  .variant__option.first {
-    order: 1;
-  }
-
-/* end sorting variant options in stock */
-
 @media (min-width: 425px) {
     .pf-shop__container .pf-container__qty {
         width: 30%;
@@ -98,7 +85,14 @@ a.download_link {
         width: 75%
     }
 }
-
+/* start sorting variant options in stock */
+.variant__option {
+    order: 2;
+}
+.variant__option.first {
+    order: 1;
+}
+/* end sorting variant options in stock */
 /* Secondary Gallery (Desktop only) */
 .secondary-gallery .product__media {
     display: flex;
