@@ -134,6 +134,7 @@
     },
     "1d8d845e-1c9d-49e7-89c9-9de0fcad505b": {
       "type": "product-clerk",
+      "disabled": true,
       "settings": {
         "clerk_recs": "alternatives"
       }
