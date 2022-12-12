@@ -1,317 +1,285 @@
 {% for tag in product.tags %}
 
-    {% if tag contains "Materiale_" %}
+  {% if tag contains "Materiale_" %}
 
-        {% if mats %}
-            {% assign mats = mats | append: ", " | append: tag | remove_first: "Materiale_" %}
-        {% else %}
-            {% assign mats = tag | remove_first: "Materiale_" %}
+      {% if mats %}
+          {% assign mats = mats | append: ", " | append: tag | remove_first: "Materiale_" %}
+      {% else %}
+          {% assign mats = tag | remove_first: "Materiale_" %}
 
-        {% endif %}
-    {% endif %}
+      {% endif %}
+  {% endif %}
 {% endfor %}
 
 {% if mats %}
-    {% assign materialer = mats | split: ", " %}
+  {% assign materialer = mats | split: ", " %}
 {% endif %}
 
 <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-      jQuery(document).ready(function() {
+    jQuery(document).ready(function() {
 $(".product-form__color-swatches").find("div").on("click", function selectNode(e) {
 //   console.log(this);
 $('.dom-message span').html( $(this).find("button").attr('data-meta'));
 });
-    });
+  });
 </script>
 <div class="product-blocks">
-  {%- for block in section.blocks -%}
-    {% case block.type %}
-      {%- when '@app' -%}
-        {% render block %}
-      {%- when 'custom_liquid' -%} 
-        {{ block.settings.custom_liquid }}
-      {%- when 'divider' -%}
-        <hr class="product__divider pf-divider"/>
-      {%- when 'spacer' -%}
-        <div class="product__spacer" style="height: {{block.settings.size}}px;"></div>
-      {%- when 'vendor' -%}
-        <div class="product__vendor fs-body-base c-meta">
-          {%- assign vendorHandle = product.vendor | handleize | strip | escape -%}
-			    {%- if collections[vendorHandle].products.size > 0 -%}
-          <a href="{{ collections[vendorHandle].url }}">
-            <div class="product__vendor ff-meta fs-meta c-meta found">{{ product.vendor }}</div>
-          </a>
-          {%- else -%}
-          <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
-          {%- endif -%}
-        </div>
-      {%- when 'price' -%}
-        <div class="product__price fs-body-base">
-          <span data-price {% if current_variant.compare_at_price > current_variant.price %}class="sxbs-on-sale"{% endif %}>{{ current_variant.price | money }}</span>
+{%- for block in section.blocks -%}
+  {% case block.type %}
+    {%- when '@app' -%}
+      {% render block %}
+    {%- when 'custom_liquid' -%} 
+      {{ block.settings.custom_liquid }}
+    {%- when 'divider' -%}
+      <hr class="product__divider pf-divider"/>
+    {%- when 'spacer' -%}
+      <div class="product__spacer" style="height: {{block.settings.size}}px;"></div>
+    {%- when 'vendor' -%}
+      <div class="product__vendor fs-body-base c-meta">
+        {%- assign vendorHandle = product.vendor | handleize | strip | escape -%}
+        {%- if collections[vendorHandle].products.size > 0 -%}
+        <a href="{{ collections[vendorHandle].url }}">
+          <div class="product__vendor ff-meta fs-meta c-meta found">{{ product.vendor }}</div>
+        </a>
+        {%- else -%}
+        <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
+        {%- endif -%}
+      </div>
+    {%- when 'price' -%}
+      <div class="product__price fs-body-base">
+        <span data-price {% if current_variant.compare_at_price > current_variant.price %}class="sxbs-on-sale"{% endif %}>{{ current_variant.price | money }}</span>
 
-          <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
-          <s data-compare-price>
-            {% if current_variant.compare_at_price > current_variant.price %}
-              {{ current_variant.compare_at_price | money }}
+        <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
+        <s data-compare-price>
+          {% if current_variant.compare_at_price > current_variant.price %}
+            {{ current_variant.compare_at_price | money }}
+          {% endif %}
+        </s>
+        {% render 'unit-price' item: current_variant %}
+      </div>
+    {%- when 'lead_time' -%}
+      <div class="product-lead-time">
+          {% assign instockorb= '<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>'   %}
+
+          <div class="trigger_orb" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}>{{instockorb}}</div>
+          <span class="variant-inventory" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}><span>{{ current_variant.inventory_quantity }}</span> på lager.</span>
+          <span data-stock-availability class="dom-message" {% if current_variant.inventory_quantity > 0 %}style="display:none"{% endif %}>
+            Leveringstid: <span>
+            {% if current_variant.metafields.product_data.leveringstid != blank %}
+              {{ current_variant.metafields.product_data.leveringstid }}
+            {% else %}
+              {{ product.metafields.product_data.leveringstid }}
             {% endif %}
-          </s>
-          {% render 'unit-price' item: current_variant %}
-        </div>
-      {%- when 'lead_time' -%}
-        <div class="product-lead-time">
-            {% assign instockorb= '<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>'   %}
-
-            <div class="trigger_orb" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}>{{instockorb}}</div>
-            <span class="variant-inventory" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}><span>{{ current_variant.inventory_quantity }}</span> på lager.</span>
-            <span data-stock-availability class="dom-message" {% if current_variant.inventory_quantity > 0 %}style="display:none"{% endif %}>
-              Leveringstid: <span>
-              {% if current_variant.metafields.product_data.leveringstid != blank %}
-                {{ current_variant.metafields.product_data.leveringstid }}
-              {% else %}
-                {{ product.metafields.product_data.leveringstid }}
-              {% endif %}
-              </span>
             </span>
-          </div>         
-  
-      {%- when 'sku' -%}
-        {% if request.design_mode or current_variant.sku != blank %}
-          <div class="product__sku fs-body-base">
-            {% if block.settings.prefix and block.settings.prefix != ""%}{{block.settings.prefix}} {% endif %}<span data-product-sku>{% if current_variant.sku != blank %}{{current_variant.sku}}{% else %}[product SKU]{% endif %}</span>
-          </div>
-        {% endif %}
-      {%- when 'type' -%}
-        {% if request.design_mode or product.type != blank %}
-          <div class="product__type fs-body-base">
-            {% if block.settings.prefix and block.settings.prefix != ""%}{{block.settings.prefix}} {% endif %}{% if product.type and product.type != blank %}{{product.type}}{% else %}[product type]{% endif %}
-          </div>
-        {% endif %}
-      {%- when 'title' -%}
-        {% if title_links_to_product %}<a href="{{product.url}}">{% endif %}
-        <h1 class="product-single__title ff-heading fs-heading-base c-heading">{{ product.title }}</h1>
-        {% if title_links_to_product %}</a>{% endif %}
-      {%- when 'description' -%}
-      {% assign truncated_description = product.description | strip_html | truncatewords: 25 %}
-  
-       {% if truncated_description contains '...' %}
-            <div class="product-single__description rte rte--product fs-body-base" data-description><p>{{ truncated_description }}</p><a href="#description">Les mer</a></div>
-        {% else %}
-            <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
-        {% endif %}
-      {%- when 'text' -%}
-        <div class="product-single__freetext rte rte--product fs-body-base">{{ block.settings.content }}</div>
-      {%- when 'share_buttons' -%}
-        <div class="product__share" data-share="{{ 'product.share' | t }}">
-          {% render 'share-block', share_title: product.title, url: product.url, share_image: product.featured_media %}
+          </span>
+        </div>         
+
+    {%- when 'sku' -%}
+      {% if request.design_mode or current_variant.sku != blank %}
+        <div class="product__sku fs-body-base">
+          {% if block.settings.prefix and block.settings.prefix != ""%}{{block.settings.prefix}} {% endif %}<span data-product-sku>{% if current_variant.sku != blank %}{{current_variant.sku}}{% else %}[product SKU]{% endif %}</span>
         </div>
-        
-      {%- when 'quantity_selector' -%}
-  
-  {%comment%}
-  
-        <div class="pf-container">
-          <div class="pf-element pf-element__qty">
-            <label class="pf-label fs-body-base" for="Quantity-{{ section.id }}">
-              <span>{{ 'products.product.quantity' | t }}</span>
-            </label>
-            <div class="product-qty-selector">
-              <a class="product-qty-selector-button" href="#" data-change="decrement" title="{{ 'cart.label.decrease' | t }}">
-                {% render 'icon' with icon: 'remove' %}
-              </a>
-              <input
-                type="number"
-                name="quantity" 
-                id="Quantity-{{ section.id }}"
-                value="1" min="1" pattern="[0-9]*"
-                data-quantity-input
-              >
-              <a class="product-qty-selector-button" href="#" data-change="increment" title="{{ 'cart.label.increase' | t }}">
-                {% render 'icon' with icon: 'add' %}
-              </a>
-            </div>
-          </div>
+      {% endif %}
+    {%- when 'type' -%}
+      {% if request.design_mode or product.type != blank %}
+        <div class="product__type fs-body-base">
+          {% if block.settings.prefix and block.settings.prefix != ""%}{{block.settings.prefix}} {% endif %}{% if product.type and product.type != blank %}{{product.type}}{% else %}[product type]{% endif %}
         </div>
-  {%endcomment%}
-    <div class="pf-shop__container">
-   <div class="pf-container pf-container__qty">
-          <div class="pf-element">
-            {% comment %}
-            <label class="pf-label fs-body-base" for="Quantity-{{ section.id }}">
-              <span>{{ 'products.product.quantity' | t }}</span>
-            </label>
-            {% endcomment %}
-            <input type='button' value='-' class='qtyminus' field='quantity' />
+      {% endif %}
+    {%- when 'title' -%}
+      {% if title_links_to_product %}<a href="{{product.url}}">{% endif %}
+      <h1 class="product-single__title ff-heading fs-heading-base c-heading">{{ product.title }}</h1>
+      {% if title_links_to_product %}</a>{% endif %}
+    {%- when 'description' -%}
+    {% assign truncated_description = product.description | strip_html | truncatewords: 25 %}
+
+     {% if truncated_description contains '...' %}
+          <div class="product-single__description rte rte--product fs-body-base" data-description><p>{{ truncated_description }}</p><a href="#description">Les mer</a></div>
+      {% else %}
+          <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
+      {% endif %}
+    {%- when 'text' -%}
+      <div class="product-single__freetext rte rte--product fs-body-base">{{ block.settings.content }}</div>
+    {%- when 'share_buttons' -%}
+      <div class="product__share" data-share="{{ 'product.share' | t }}">
+        {% render 'share-block', share_title: product.title, url: product.url, share_image: product.featured_media %}
+      </div>
+      
+    {%- when 'quantity_selector' -%}
+
+{%comment%}
+
+      <div class="pf-container">
+        <div class="pf-element pf-element__qty">
+          <label class="pf-label fs-body-base" for="Quantity-{{ section.id }}">
+            <span>{{ 'products.product.quantity' | t }}</span>
+          </label>
+          <div class="product-qty-selector">
+            <a class="product-qty-selector-button" href="#" data-change="decrement" title="{{ 'cart.label.decrease' | t }}">
+              {% render 'icon' with icon: 'remove' %}
+            </a>
             <input
+              type="number"
+              name="quantity" 
+              id="Quantity-{{ section.id }}"
+              value="1" min="1" pattern="[0-9]*"
               data-quantity-input
-              type="number" id="Quantity-{{ section.id }}"
-              name="quantity" value="1" min="1" pattern="[0-9]*"
-              class="pf-input"
             >
-            <input type='button' value='+' class='qtyplus' field='quantity' />
+            <a class="product-qty-selector-button" href="#" data-change="increment" title="{{ 'cart.label.increase' | t }}">
+              {% render 'icon' with icon: 'add' %}
+            </a>
           </div>
         </div>
+      </div>
+{%endcomment%}
+  <div class="pf-shop__container">
+ <div class="pf-container pf-container__qty">
+        <div class="pf-element">
+          {% comment %}
+          <label class="pf-label fs-body-base" for="Quantity-{{ section.id }}">
+            <span>{{ 'products.product.quantity' | t }}</span>
+          </label>
+          {% endcomment %}
+          <input type='button' value='-' class='qtyminus' field='quantity' />
+          <input
+            data-quantity-input
+            type="number" id="Quantity-{{ section.id }}"
+            name="quantity" value="1" min="1" pattern="[0-9]*"
+            class="pf-input"
+          >
+          <input type='button' value='+' class='qtyplus' field='quantity' />
+        </div>
+      </div>
 
-  
-  
-  
-      {%- when 'buy_buttons' -%}
-        <div class="pf__message fs-body-base" data-error-message></div>
-        <div class="pf__actions">
-          <div class="product-form__item product-form__item--submit
-            {%- if dynamic_checkout_buttons %} product-form__item--payment-button {%- endif -%}
-            {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
-          > 
-            {%- comment -%}Should be refined to be variant-level - https://linear.app/fluorescent/issue/FLU-1058/ira-subscriptions-note-dynamic-checkout-button-is-not-compatible-for {%- endcomment -%}
-            {%- if product.selling_plan_groups.size == 0 -%}
-              {{dynamic_checkout_buttons}}
-            {%- endif -%}
-            
-            <button type="submit" name="add"
-              {% unless current_variant.available %} aria-disabled="true" disabled{% endunless %}
-              aria-label="{% unless current_variant.available %}{{ 'product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
-              class="btn btn--full product-form__cart-submit {% if dynamic_checkout_buttons == nil or product.selling_plan_groups.size > 0 %}btn--primary{% endif %}"
-              data-add-to-cart
-              data-lang-available="{{ 'product.add_to_cart' | t }}"
-              data-lang-unavailable="{{ 'product.unavailable' | t }}"
-              data-lang-sold-out="{{ 'product.sold_out' | t }}"
-            >
-              <span data-add-to-cart-text>
-                {% unless current_variant.available %}
-                  {{ 'product.sold_out' | t }}
-                {% else %}
-                  {{ 'product.add_to_cart' | t }}
-                {% endunless %}
-              </span>
-              <div class="btn__loading-wrap">
-                <div class="btn__loading-bar"></div>
-              </div>
-            </button>
-            
 
-            <div class="product__quantity-error fs-body-base hidden" data-quantity-error>
-              {{ 'products.product.quantity_error' | t }}
+
+
+    {%- when 'buy_buttons' -%}
+      <div class="pf__message fs-body-base" data-error-message></div>
+      <div class="pf__actions">
+        <div class="product-form__item product-form__item--submit
+          {%- if dynamic_checkout_buttons %} product-form__item--payment-button {%- endif -%}
+          {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
+        > 
+          {%- comment -%}Should be refined to be variant-level - https://linear.app/fluorescent/issue/FLU-1058/ira-subscriptions-note-dynamic-checkout-button-is-not-compatible-for {%- endcomment -%}
+          {%- if product.selling_plan_groups.size == 0 -%}
+            {{dynamic_checkout_buttons}}
+          {%- endif -%}
+          
+          <button type="submit" name="add"
+            {% unless current_variant.available %} aria-disabled="true" disabled{% endunless %}
+            aria-label="{% unless current_variant.available %}{{ 'product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
+            class="btn btn--full product-form__cart-submit {% if dynamic_checkout_buttons == nil or product.selling_plan_groups.size > 0 %}btn--primary{% endif %}"
+            data-add-to-cart
+            data-lang-available="{{ 'product.add_to_cart' | t }}"
+            data-lang-unavailable="{{ 'product.unavailable' | t }}"
+            data-lang-sold-out="{{ 'product.sold_out' | t }}"
+          >
+            <span data-add-to-cart-text>
+              {% unless current_variant.available %}
+                {{ 'product.sold_out' | t }}
+              {% else %}
+                {{ 'product.add_to_cart' | t }}
+              {% endunless %}
+            </span>
+            <div class="btn__loading-wrap">
+              <div class="btn__loading-bar"></div>
             </div>
+          </button>
+          
 
-            {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-            <div class="product__policies fs-body-base rte" data-product-policies>
-              {%- if shop.taxes_included -%}
-              {{ 'products.product.include_taxes' | t }}
-              {%- endif -%}
-              {%- if shop.shipping_policy.body != blank -%}
-              {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-              {%- endif -%}
-            </div>
-            {%- endif -%}
-            
-            {% comment %} Shop Pay {% endcomment %}
-            <div class="product-form__shop-pay fs-body-base">
-              {{- form | payment_terms -}}
-            </div>      
-            {% comment %} Surface pick-up {% endcomment %}
-            <div data-store-availability-container data-base-url="{{ shop.url }}{{ routes.root_url }}"></div>
+          <div class="product__quantity-error fs-body-base hidden" data-quantity-error>
+            {{ 'products.product.quantity_error' | t }}
           </div>
-        </div>
-        </div>
-      {%- when 'variant_picker' -%}
-        <div class="product-form-variant-block">
-          {% unless product.has_only_default_variant %}
-            <div class="product-form__controls-group">
-              {% for option in product.options_with_values %}
-                {%- assign option_name = option.name | downcase -%}
-                <div class="pf-container">
-                  <div class="pf-element js-enabled {% if button_options contains option_name %}pf-element--flexible{% endif %}">
-                    <label for="Option{{ option.position }}" class="pf-label fs-body-base">
-                      <span>{{ option.name }}</span>
 
-                      {%- if swatch_options contains option_name -%}
-                        <span class="pf-swatch-value" data-swatch-selected>{{ option.selected_value }}</span>
-                      {%- endif -%}
-                    </label>
+          {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+          <div class="product__policies fs-body-base rte" data-product-policies>
+            {%- if shop.taxes_included -%}
+            {{ 'products.product.include_taxes' | t }}
+            {%- endif -%}
+            {%- if shop.shipping_policy.body != blank -%}
+            {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+            {%- endif -%}
+          </div>
+          {%- endif -%}
+          
+          {% comment %} Shop Pay {% endcomment %}
+          <div class="product-form__shop-pay fs-body-base">
+            {{- form | payment_terms -}}
+          </div>      
+          {% comment %} Surface pick-up {% endcomment %}
+          <div data-store-availability-container data-base-url="{{ shop.url }}{{ routes.root_url }}"></div>
+        </div>
+      </div>
+      </div>
+    {%- when 'variant_picker' -%}
+      <div class="product-form-variant-block">
+        {% unless product.has_only_default_variant %}
+          <div class="product-form__controls-group">
+            {% for option in product.options_with_values %}
+              {%- assign option_name = option.name | downcase -%}
+              <div class="pf-container">
+                <div class="pf-element js-enabled {% if button_options contains option_name %}pf-element--flexible{% endif %}">
+                  <label for="Option{{ option.position }}" class="pf-label fs-body-base">
+                    <span>{{ option.name }}</span>
 
-                    {% comment %}
-                      All inputs that have `name=options[Name]` will be picked up by
-                      ProductForm, registered as an option input, and made available
-                      at ProductForm.optionsInputs
-                    {% endcomment %}
                     {%- if swatch_options contains option_name -%}
-                      <div class="product-form__color-swatches" data-option-buttons>
-                        {% assign optionValues = option.values | sort %}
-                        {% for value in optionValues %}
-                          {% assign file-url = value | handle | append: '.' | append: file_extension %}
-                          {% if product.variants[forloop.index0].available %}
-                            <div class="variant__option{% unless product.variants[forloop.index0].inventory_quantity < 1 %} first{% endunless %}" id="{{ value | remove:" " }}">
-                          {% else %}
-                            <div class="variant__option sxbs-variant-sold-out">
-                          {% endif %}
-                      
-                      
-                          <button
-                            data-swatch-button="true"
-                            data-label="{{ value }}"
-                            aria-label="{{value}}"
-                            data-button="{{ value | handleize }}--{{ forloop.index0 }}"
-                            class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}"
-                            style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: 'png' | file_url }})"
-                           data-meta="{% if product.variants[forloop.index0].metafields.product_data.leveringstid != blank %}{{ product.variants[forloop.index0].metafields.product_data.leveringstid }}{% else %}{{ product.metafields.product_data.leveringstid }}{% endif %}">
-                          </button>
-                         <div class="variant_info">
-                        {% unless product.variants[forloop.index0].inventory_quantity < 1 %}
-                        <div class="in_stock__variant_orb">
-                            <div class="in_stock__variant_orb_inner"></div>
-                        </div>
-                        {% endunless %}
-					    <span class="variant__title">{{ value }}</span>
+                      <span class="pf-swatch-value" data-swatch-selected>{{ option.selected_value }}</span>
+                    {%- endif -%}
+                  </label>
+
+                  {% comment %}
+                    All inputs that have `name=options[Name]` will be picked up by
+                    ProductForm, registered as an option input, and made available
+                    at ProductForm.optionsInputs
+                  {% endcomment %}
+                  {%- if swatch_options contains option_name -%}
+                    <div class="product-form__color-swatches" data-option-buttons>
+                      {% assign optionValues = option.values | sort %}
+                      {% for value in option.values %}
+                        {% assign file-url = value | handle | append: '.' | append: file_extension %}
+                        {% if product.variants[forloop.index0].available %}
+                          {% assign currentStock = product.variants[forloop.index0].inventory_quantity %}
+                          {% for val in optionValues %}
+                            {% if value == val %}
+                              {% if currentStock > 0 %}
+                                <div class="variant__option" id="{{ value | remove:" " }}" style="order: 0;">
+                              {% else %}
+                                <div class="variant__option" id="{{ value | remove:" " }}" style="order: {{ forloop.index }};">
+                              {% endif %}
+                            {% endif %}
+                          {% endfor%}
+                        {% else %}
+                          <div class="variant__option sxbs-variant-sold-out">
+                        {% endif %}
+                    
+                    
+                        <button
+                          data-swatch-button="true"
+                          data-label="{{ value }}"
+                          aria-label="{{value}}"
+                          data-button="{{ value | handleize }}--{{ forloop.index0 }}"
+                          class="product__color-swatch {% if option.selected_value == value %}selected{% endif %}"
+                          style="background-color: {{ value | lowercase | replace: ' ', '' }}; background-image: url({{ value | handle | append: '.' | append: 'png' | file_url }})"
+                         data-meta="{% if product.variants[forloop.index0].metafields.product_data.leveringstid != blank %}{{ product.variants[forloop.index0].metafields.product_data.leveringstid }}{% else %}{{ product.metafields.product_data.leveringstid }}{% endif %}">
+                        </button>
+                       <div class="variant_info">
+                      {% unless product.variants[forloop.index0].inventory_quantity < 1 %}
+                      <div class="in_stock__variant_orb">
+                          <div class="in_stock__variant_orb_inner"></div>
+                      </div>
+                      {% endunless %}
+            <span class="variant__title">{{ value }}</span>
+                  </div>
                     </div>
-                      </div>
-                        {% endfor %}
-                        <select
-                          id="Option{{ option.position }}"
-                          class="product-form__chip-select"
-                          name="options[{{ option.name | escape }}]"
-                        >
-                          {% for value in option.values %}
-                            <option value="{{ value | escape }}"
-                              data-value-handle="{{ value | handleize }}--{{ forloop.index0 }}"
-                              {%- if option.selected_value == value -%}selected="selected"{%- endif -%}>
-                              {{ value }}
-                            </option>
-                          {% endfor %}
-                        </select>
-                      </div>
-        
-                    {%- elsif chip_options contains option_name and quick != true -%}
-                      <div class="product-form__chips" data-option-buttons>
-                        {% for value in option.values %}
-                          <button
-                            class="fs-body-base product-form__chip {% if option.selected_value == value %}selected{% endif %}"
-                            data-button="{{ value | handleize }}--{{ forloop.index0 }}"
-                            aria-label="{{ value }}"
-                          >
-                            {{ value }}
-                      </button>
-                        {% endfor %}
-                        <select
-                          id="Option{{ option.position }}"
-                          class="product-form__chip-select"
-                          name="options[{{ option.name | escape }}]"
-                        >
-                          {% for value in option.values %}
-                            <option value="{{ value | escape }}"
-                              data-value-handle="{{ value | handleize }}--{{ forloop.index0 }}"
-                              {%- if option.selected_value == value -%}selected="selected"{%- endif -%}>
-                              {{ value }}
-                            </option>
-                          {% endfor %}
-                        </select>
-                      </div>
-        
-                    {%- else -%}
+                      {% endfor %}
                       <select
                         id="Option{{ option.position }}"
-                        class="pf-input"
-                        name="options[{{ option.name | escape }}]">
+                        class="product-form__chip-select"
+                        name="options[{{ option.name | escape }}]"
+                      >
                         {% for value in option.values %}
                           <option value="{{ value | escape }}"
                             data-value-handle="{{ value | handleize }}--{{ forloop.index0 }}"
@@ -320,140 +288,181 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
                           </option>
                         {% endfor %}
                       </select>
-        
-                      <div class="pf-icon" data-icon>{% render 'icon' with icon: 'arrow-drop-down' %}</div>
-                    {%- endif -%}
-                  </div>
-                </div>
-              {% endfor %}
-            </div>
-          {% endunless %}
-          
-          {% comment %}
-            In order for this form to submit, it needs to contain an input with name="id".
-            ProductForm() will automatically create this input (or make sure it has the
-            right value set if it already exists) on form submit based on the
-            currently selected variant. However, if JS is disabled we need a fallback.
-
-            render a single <select> element which allows users to select all variants
-            as a fallback and present it only when JS is disabled. In addition,
-            make sure you hide the option inputs declared above, like we do with the
-            `.js-enabled` class which only shows its contents when JS is enabled.
-          {% endcomment %}
-          <div class="pf-container product-form__variants">
-            <select
-              name="id"
-              class="input"
-              id="variant-selector"
-              data-variant-select
-            >
-              {% for variant in product.variants %}
-                <option value="{{ variant.id }}"
-                  {%- if variant == current_variant %} selected="selected" {%- endif -%}
-                >
-                  {{ variant.title }}  {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
-                </option>
-              {% endfor %}
-            </select>
-          </div>
-        </div>
-{% comment %}      
-      {%- when 'reviews' -%}
-            <div class="product__reviews">
-      <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
-    </div>
-{% endcomment %}
-           <div class="product__reviews">
-      <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
-    </div>
-      {%- when 'accordion' -%}
-          
-          
-        {%- assign prevIndex = forloop.index0 | minus: 1 -%}
-        {%- assign nextIndex = forloop.index0 | plus: 1 -%}
-        {%- if forloop.first or section.blocks[prevIndex].type != 'accordion' -%}
-          <div class="accordion rte product--accordion product__block product__block--small">
-        {%- endif -%}
-        <div
-          class="accordion__group"
-          data-index="{{ forloop.index0 }}"
-          data-open="{% if block.settings.style == 'open' %}true{% else %}false{% endif %}"
-          {{ block.shopify_attributes }}
-        >
-          {% if mats == null and block.settings.heading == 'Materiale'%}
-          {%else%}
-            <a class="accordion__label" href="#">
-            {{ block.settings.heading }}
-          </a>
-          {%endif%}
-          <div class="accordion__text fs-body-small">
-            
-            {%if block.settings.heading  == 'Dimensjoner'%}  
-            {%  assign dimensjoner = "Sittedybde" | append: ":" | append: product.metafields.product_data.sittedybde | append: "," | append: "Sittehøyde" | append: ":" | append: product.metafields.product_data.sittehoyde | append: "," | append: "Armlene" | append: ":" | append: product.metafields.product_data.hoyde_armlene | append: "," | append: "Diameter" | append: ":" | append: product.metafields.product_data.diameter | append: "," | append: "Bredde" | append: ":" | append: product.metafields.product_data.produktbredde | append: "," | append: "Dybde" | append: ":" | append: product.metafields.product_data.produktdybde | append: "," | append: "Lengde" | append: ":" | append: product.metafields.product_data.produktlengde | append: "," | append: "Høyde" | append: ":" | append: product.metafields.product_data.produkth_yde | append: "," | append: "Vekt" | append: ":" | append: product.metafields.product_data.produktvekt | split: ","
-  %}
-              {% for dimensjon in dimensjoner %}
-                            {% assign dim_i = o %}
-                            {% assign values_dim = dimensjon | split: ":" %}
-                            {% unless values_dim[1] == blank %}
-                                {% unless values_dim[1] == "0" %}
-                                    {% if values_dim[0] == "Vekt" %}
-                                        {% assign dim_trail = "kg" %}
-                                    {% else %}
-                                        {% assign dim_trail = "cm" %}
-                                    {% endif %}
-                                    <span>
-                                        {% assign dim_i = 0 %}
-                                        {% for value_dim in values_dim %}
-                                            {% if dim_i == 0 %}
-                                                <strong>{{ value_dim }}: </strong>
-                                            {% else %}
-                                                {{ value_dim }} {{ dim_trail }}
-                                            {% endif %}
-                                            {% assign dim_i = dim_i | plus: 1 %}
-                                        {% endfor %}
-                                    </span><br>
-                                {% endunless %}
-                            {% endunless %}
+                    </div>
+      
+                  {%- elsif chip_options contains option_name and quick != true -%}
+                    <div class="product-form__chips" data-option-buttons>
+                      {% for value in option.values %}
+                        <button
+                          class="fs-body-base product-form__chip {% if option.selected_value == value %}selected{% endif %}"
+                          data-button="{{ value | handleize }}--{{ forloop.index0 }}"
+                          aria-label="{{ value }}"
+                        >
+                          {{ value }}
+                    </button>
+                      {% endfor %}
+                      <select
+                        id="Option{{ option.position }}"
+                        class="product-form__chip-select"
+                        name="options[{{ option.name | escape }}]"
+                      >
+                        {% for value in option.values %}
+                          <option value="{{ value | escape }}"
+                            data-value-handle="{{ value | handleize }}--{{ forloop.index0 }}"
+                            {%- if option.selected_value == value -%}selected="selected"{%- endif -%}>
+                            {{ value }}
+                          </option>
                         {% endfor %}
-            
-           {% elsif block.settings.heading  == 'Materiale'  %}
-              {{mats}}
-       
-            
-              {%elsif block.settings.heading  == 'Ytterligere informasjon'%}
-       <strong>Varenummer:</strong> {{ product.selected_or_first_available_variant.sku }}
-            
-            
-            {%else%}
-                     {{ block.settings.content }}
-            {%endif%}
-
+                      </select>
+                    </div>
+      
+                  {%- else -%}
+                    <select
+                      id="Option{{ option.position }}"
+                      class="pf-input"
+                      name="options[{{ option.name | escape }}]">
+                      {% for value in option.values %}
+                        <option value="{{ value | escape }}"
+                          data-value-handle="{{ value | handleize }}--{{ forloop.index0 }}"
+                          {%- if option.selected_value == value -%}selected="selected"{%- endif -%}>
+                          {{ value }}
+                        </option>
+                      {% endfor %}
+                    </select>
+      
+                    <div class="pf-icon" data-icon>{% render 'icon' with icon: 'arrow-drop-down' %}</div>
+                  {%- endif -%}
+                </div>
+              </div>
+            {% endfor %}
           </div>
+        {% endunless %}
+        
+        {% comment %}
+          In order for this form to submit, it needs to contain an input with name="id".
+          ProductForm() will automatically create this input (or make sure it has the
+          right value set if it already exists) on form submit based on the
+          currently selected variant. However, if JS is disabled we need a fallback.
+
+          render a single <select> element which allows users to select all variants
+          as a fallback and present it only when JS is disabled. In addition,
+          make sure you hide the option inputs declared above, like we do with the
+          `.js-enabled` class which only shows its contents when JS is enabled.
+        {% endcomment %}
+        <div class="pf-container product-form__variants">
+          <select
+            name="id"
+            class="input"
+            id="variant-selector"
+            data-variant-select
+          >
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}"
+                {%- if variant == current_variant %} selected="selected" {%- endif -%}
+              >
+                {{ variant.title }}  {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+              </option>
+            {% endfor %}
+          </select>
         </div>
-        {% if forloop.last or section.blocks[nextIndex].type != 'accordion' %}
-            <br>
+      </div>
+{% comment %}      
+    {%- when 'reviews' -%}
+          <div class="product__reviews">
+    <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
+  </div>
+{% endcomment %}
+         <div class="product__reviews">
+    <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
+  </div>
+    {%- when 'accordion' -%}
+        
+        
+      {%- assign prevIndex = forloop.index0 | minus: 1 -%}
+      {%- assign nextIndex = forloop.index0 | plus: 1 -%}
+      {%- if forloop.first or section.blocks[prevIndex].type != 'accordion' -%}
+        <div class="accordion rte product--accordion product__block product__block--small">
+      {%- endif -%}
+      <div
+        class="accordion__group"
+        data-index="{{ forloop.index0 }}"
+        data-open="{% if block.settings.style == 'open' %}true{% else %}false{% endif %}"
+        {{ block.shopify_attributes }}
+      >
+        {% if mats == null and block.settings.heading == 'Materiale'%}
+        {%else%}
+          <a class="accordion__label" href="#">
+          {{ block.settings.heading }}
+        </a>
+        {%endif%}
+        <div class="accordion__text fs-body-small">
+          
+          {%if block.settings.heading  == 'Dimensjoner'%}  
+          {%  assign dimensjoner = "Sittedybde" | append: ":" | append: product.metafields.product_data.sittedybde | append: "," | append: "Sittehøyde" | append: ":" | append: product.metafields.product_data.sittehoyde | append: "," | append: "Armlene" | append: ":" | append: product.metafields.product_data.hoyde_armlene | append: "," | append: "Diameter" | append: ":" | append: product.metafields.product_data.diameter | append: "," | append: "Bredde" | append: ":" | append: product.metafields.product_data.produktbredde | append: "," | append: "Dybde" | append: ":" | append: product.metafields.product_data.produktdybde | append: "," | append: "Lengde" | append: ":" | append: product.metafields.product_data.produktlengde | append: "," | append: "Høyde" | append: ":" | append: product.metafields.product_data.produkth_yde | append: "," | append: "Vekt" | append: ":" | append: product.metafields.product_data.produktvekt | split: ","
+%}
+            {% for dimensjon in dimensjoner %}
+                          {% assign dim_i = o %}
+                          {% assign values_dim = dimensjon | split: ":" %}
+                          {% unless values_dim[1] == blank %}
+                              {% unless values_dim[1] == "0" %}
+                                  {% if values_dim[0] == "Vekt" %}
+                                      {% assign dim_trail = "kg" %}
+                                  {% else %}
+                                      {% assign dim_trail = "cm" %}
+                                  {% endif %}
+                                  <span>
+                                      {% assign dim_i = 0 %}
+                                      {% for value_dim in values_dim %}
+                                          {% if dim_i == 0 %}
+                                              <strong>{{ value_dim }}: </strong>
+                                          {% else %}
+                                              {{ value_dim }} {{ dim_trail }}
+                                          {% endif %}
+                                          {% assign dim_i = dim_i | plus: 1 %}
+                                      {% endfor %}
+                                  </span><br>
+                              {% endunless %}
+                          {% endunless %}
+                      {% endfor %}
+          
+         {% elsif block.settings.heading  == 'Materiale'  %}
+            {{mats}}
+     
+          
+            {%elsif block.settings.heading  == 'Ytterligere informasjon'%}
+     <strong>Varenummer:</strong> {{ product.selected_or_first_available_variant.sku }}
+          
+          
+          {%else%}
+                   {{ block.settings.content }}
+          {%endif%}
+
         </div>
-        {% endif %}
-    {%- when 'inventory_counter' -%}
-        {%- render 'inventory-counter' with
-          product: product,
-          inventory_max: block.settings.inventory_max,
-          low_inventory_threshold: block.settings.low_inventory_threshold,
-          current_variant: current_variant,
-        -%}
-    {%- when 'sharptar_3d_viewer' -%}
-      {%- render 'sharpstar-3d-viewer' with
+      </div>
+      {% if forloop.last or section.blocks[nextIndex].type != 'accordion' %}
+          <br>
+      </div>
+      {% endif %}
+  {%- when 'inventory_counter' -%}
+      {%- render 'inventory-counter' with
         product: product,
+        inventory_max: block.settings.inventory_max,
+        low_inventory_threshold: block.settings.low_inventory_threshold,
         current_variant: current_variant,
       -%}
-    {%- when 'file_link_montering' -%}
-      {%- render 'file_link_montering' with
-        product: product,
-        link_text: block.settings.file-download-text
-      -%}
-    {% endcase %}
-  {%- endfor -%}
+  {%- when 'sharptar_3d_viewer' -%}
+    {%- render 'sharpstar-3d-viewer' with
+      product: product,
+      current_variant: current_variant,
+    -%}
+  {%- when 'file_link_montering' -%}
+    {%- render 'file_link_montering' with
+      product: product,
+      link_text: block.settings.file-download-text
+    -%}
+  {% endcase %}
+{%- endfor -%}
 </div>
- 
-  
-   <script src="{{ 'qtySelector.js' | asset_url }}"></script>
+
+
+ <script src="{{ 'qtySelector.js' | asset_url }}"></script>
