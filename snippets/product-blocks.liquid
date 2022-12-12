@@ -15,7 +15,8 @@
   {% assign materialer = mats | split: ", " %}
 {% endif %}
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     jQuery(document).ready(function() {
 $(".product-form__color-swatches").find("div").on("click", function selectNode(e) {
@@ -237,13 +238,13 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
                   {%- if swatch_options contains option_name -%}
                     <div class="product-form__color-swatches" data-option-buttons>
                       {% assign optionValues = option.values | sort %}
-                      {% for value in option.values %}
+                      {% for value in optionValues %}
                         {% assign file-url = value | handle | append: '.' | append: file_extension %}
-        {% if product.variants[forloop.index0].available %}
-        <div class="variant__option{% unless product.variants[forloop.index0].inventory_quantity < 1 %} first{% endunless %}" id="{{ value | remove:" " }}">
-        {% else %}
-        <div class="variant__option sxbs-variant-sold-out">
-        {% endif %}
+                        {% if product.variants[forloop.index0].available %}
+                          <div class="variant__option{% unless product.variants[forloop.index0].inventory_quantity < 1 %} first{% endunless %}" id="{{ value | remove:" " }}">
+                        {% else %}
+                          <div class="variant__option sxbs-variant-sold-out">
+                        {% endif %}
                     
                     
                         <button
@@ -441,13 +442,18 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
         current_variant: current_variant,
       -%}
   {%- when 'sharptar_3d_viewer' -%}
-      {%- render 'sharpstar-3d-viewer' with
-        product: product,
-        current_variant: current_variant,
-      -%}
+    {%- render 'sharpstar-3d-viewer' with
+      product: product,
+      current_variant: current_variant,
+    -%}
+  {%- when 'file_link_montering' -%}
+    {%- render 'file_link_montering' with
+      product: product,
+      link_text: block.settings.file-download-text
+    -%}
   {% endcase %}
 {%- endfor -%}
 </div>
 
 
- <script src="{{ 'qtySelector.min.js' | asset_url }}"></script>
+ <script src="{{ 'qtySelector.js' | asset_url }}"></script>
