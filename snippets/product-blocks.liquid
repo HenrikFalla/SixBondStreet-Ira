@@ -239,20 +239,11 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
                       {% assign optionValues = option.values | sort %}
                       {% for value in option.values %}
                         {% assign file-url = value | handle | append: '.' | append: file_extension %}
-                        {% if product.variants[forloop.index0].available %}
-                          {% assign currentStock = product.variants[forloop.index0].inventory_quantity %}
-                          {% for val in optionValues %}
-                            {% if value == val %}
-                              {% if currentStock > 0 %}
-                                <div class="variant__option" id="{{ value | remove:" " }}" style="order: 0;">
-                              {% else %}
-                                <div class="variant__option" id="{{ value | remove:" " }}" style="order: {{ forloop.index }};">
-                              {% endif %}
-                            {% endif %}
-                          {% endfor%}
-                        {% else %}
-                          <div class="variant__option sxbs-variant-sold-out">
-                        {% endif %}
+        {% if product.variants[forloop.index0].available %}
+        <div class="variant__option{% unless product.variants[forloop.index0].inventory_quantity < 1 %} first{% endunless %}" id="{{ value | remove:" " }}">
+        {% else %}
+        <div class="variant__option sxbs-variant-sold-out">
+        {% endif %}
                     
                     
                         <button
