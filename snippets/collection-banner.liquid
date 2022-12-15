@@ -1,16 +1,12 @@
 {% case type %}
     {% when 'sale-over-1000' %}
         <div class="collection-banner">
-            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="41" viewBox="0 0 65 41" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M45.9546 0C56.4725 0.033931 65 8.49407 65 18.9095C65 28.4399 57.86 36.3334 48.5893 37.6316V37.6376L48.5321 37.6398C47.6693 37.7578 46.7882 37.8161 45.8929 37.819C38.3121 37.8416 30.0486 39.155 24.4675 40.6639H24.4668C23.2504 40.8844 21.9957 41 20.7143 41C9.28179 41 0 31.8142 0 20.5C0 9.18577 9.28179 0 20.7143 0H45.8929H45.9546Z" fill="#231F20"></path>
-            </svg>
+            {% render 'collection-banner-background' %}
             <span>-{{ percent | round }}%</span>
         </div>
     {% when 'sale-under-1000' %}
         <div class="collection-banner">
-            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="41" viewBox="0 0 65 41" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M45.9546 0C56.4725 0.033931 65 8.49407 65 18.9095C65 28.4399 57.86 36.3334 48.5893 37.6316V37.6376L48.5321 37.6398C47.6693 37.7578 46.7882 37.8161 45.8929 37.819C38.3121 37.8416 30.0486 39.155 24.4675 40.6639H24.4668C23.2504 40.8844 21.9957 41 20.7143 41C9.28179 41 0 31.8142 0 20.5C0 9.18577 9.28179 0 20.7143 0H45.8929H45.9546Z" fill="#231F20"></path>
-            </svg>
-            <span>SALG</span>
+            {% render 'collection-banner-background' %}
+            <span>-{{ percent | round }}%</span>
         </div>
 {% endcase %}
