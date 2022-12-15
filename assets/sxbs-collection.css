@@ -30,7 +30,8 @@
 .collection-banner span {
     position: absolute;
     top: 6px;
-    left: 15px;
+    left: 50%;
+    transform: translateX(-50%);
     color: #EFEFEF;
     font-weight: 300;
 }
