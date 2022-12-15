@@ -125,6 +125,8 @@
 
       {% if product != blank %}
         {% if product.compare_at_price > product.price %}
+          {% render 'collection-banner' with
+          type: 'sale' %}
           <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
           <s class="t-subdued">{{ product.compare_at_price | money }}</s>
 
