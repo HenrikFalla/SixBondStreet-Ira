@@ -20,3 +20,21 @@
         width: calc(100% - 285px);
     }
 }
+/* Collection banner icons */
+.collection-banner {
+    position: absolute;
+    top: 14px;
+    left: 24px;
+    width: 70px;
+}
+.collection-banner span {
+    position: absolute;
+    top: 6px;
+    left: 15px;
+    color: #EFEFEF;
+    font-weight: 300;
+}
+.collection-banner svg {
+    position: initial;
+    width: 100%;
+}
