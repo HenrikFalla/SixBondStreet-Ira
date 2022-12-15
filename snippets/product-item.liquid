@@ -137,9 +137,16 @@
           {% render 'unit-price' item: current_variant %}
           {%- assign amount_saved = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price -%}
           <span class="on-sale saved_percentage">{{ amount_saved | round }}% avslag</span>
-          {% render 'collection-banner' with
-            type: 'sale',
-            percent: amount_saved %}
+          {% assign discount_check = product.compare_at_price | minus: product.price %}
+          {% if discount_check < 1000 %}
+            {% render 'collection-banner' with
+              type: 'sale-under-1000',
+              percent: amount_saved %}
+          {% else %}
+            {% render 'collection-banner' with
+              type: 'sale-over-1000',
+              percent: amount_saved %}
+          {% endif %}
 
         {% else %}
           {% if product.price_varies %}
