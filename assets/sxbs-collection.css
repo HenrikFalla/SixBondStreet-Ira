@@ -26,6 +26,7 @@
     top: 14px;
     left: 24px;
     width: 70px;
+    display: none;
 }
 .collection-banner span {
     position: absolute;
