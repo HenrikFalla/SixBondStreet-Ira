@@ -145,7 +145,7 @@
               type: 'sale-under-1000',
               percent: amount_saved %}
           {% else %}
-            <span class="on-sale saved_percentage">{{ amount_saved | money }} avslag</span>
+            <span class="on-sale saved_percentage">-{{ amount_saved | money }} avslag</span>
             {% render 'collection-banner' with
               type: 'sale-over-1000',
               percent: amount_saved %}
