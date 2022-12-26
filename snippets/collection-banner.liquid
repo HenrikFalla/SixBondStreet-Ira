@@ -1,0 +1,12 @@
+{% case type %}
+    {% when 'sale-over-1000' %}
+        <div class="collection-banner">
+            {% render 'collection-banner-background' %}
+            <span>-{{ percent | round }}%</span>
+        </div>
+    {% when 'sale-under-1000' %}
+        <div class="collection-banner">
+            {% render 'collection-banner-background' %}
+            <span>-{{ percent | round }}%</span>
+        </div>
+{% endcase %}
