@@ -1,0 +1,83 @@
+{% schema %}
+{
+    "name": "t:sections.main_product.name",
+    "class": "product-section",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "show_swatches",
+            "label": "Show swatches", 
+            "info": "Add swatch image files to your store's [files area](/admin/settings/files). Make sure the file names match the names of your color variants. For example, a variant called Blue would need a file called 'blue.png'",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_sticky_sidebar",
+            "label": "t:sections.main_product.settings.enable_sticky_sidebar.label",
+            "info": "t:sections.main_product.settings.enable_sticky_sidebar.info",
+            "default": true
+        },
+        {
+            "id": "enable_full_width",
+            "type": "checkbox",
+            "label": "t:shared.enable_full_width.label",
+            "info": "t:shared.enable_full_width.info",
+            "default": false
+        },
+        {
+            "type": "header",
+            "content": "Media"
+        },
+        {
+            "type": "select",
+            "id": "media_layout",
+            "label": "t:sections.main_product.settings.media_layout.label",
+            "options": [
+            { "value": "column", "label": "Column" },
+            { "value": "grid", "label": "Grid" }
+            ],
+            "default": "column"
+        },
+        {
+            "type": "paragraph",
+            "content": "t:sections.main_product.settings.media_types_info"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "@app"
+        },
+        {
+            "name": "t:sections.main_product.blocks.custom_liquid.name",
+            "type": "custom_liquid",
+            "settings": [
+                {
+                    "id": "custom_liquid",
+                    "type": "liquid",
+                    "label": "t:sections.main_product.blocks.custom_liquid.settings.custom_liquid.label"
+                }
+            ]
+        },
+        {
+            "type": "title",
+            "name": "t:sections.main_product.blocks.title.name",
+            "limit": 1
+        },
+        {
+            "type": "vendor",
+            "name": "t:sections.main_product.blocks.vendor.name",
+            "limit": 1
+        },
+        {
+            "type": "price",
+            "name": "t:sections.main_product.blocks.price.name",
+            "limit": 1
+        },
+        {
+            "type": "lead_time",
+            "name": "Lead time",
+            "limit": 1
+        }
+    ]
+}
+{% endschema %}
