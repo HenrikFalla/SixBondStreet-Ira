@@ -93,6 +93,9 @@
     <script type="application/json" id="ProductJson-{{ section.id }}">
         {{ product | json }}
     </script>
+    <script type="application/json" id="ModelJson-{{ section.id }}">
+        {{ product.media | where: 'media_type', 'model' | json }}
+    </script>
 {% endunless %}
 {% schema %}
 {
