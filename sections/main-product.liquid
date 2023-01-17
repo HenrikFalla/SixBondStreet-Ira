@@ -32,58 +32,58 @@
     <div class="product__content">
         <div class="product__media-container mobile-only">
             <div class="product__media product__media--{{ media_layout }}" data-slider>
-                {%- for media in product.media -%}
-                  {%- if forloop.first or media.id == featured_media.id -%}
-                    {%- assign prioritizeLoading = true -%}
-                  {%- else -%}
-                    {%- assign prioritizeLoading = false -%}
-                  {%- endif -%}
-                
-                  <div class="product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
-                    {% render 'media' with
-                      media: media, 
-                      featured_media: featured_media, 
-                      loop_video: enable_video_looping, 
-                      setLoadingAttribute: true,
-                      prioritizeLoading: prioritizeLoading,
-                      sizes: sizes
-                     %}
-                  </div>
-                {%- endfor -%}
-        
-                {%- if product.media.size > 1 -%}
-                  {% render 'carousel-pagination' %}
+              {%- for media in product.media -%}
+                {%- if forloop.first or media.id == featured_media.id -%}
+                  {%- assign prioritizeLoading = true -%}
+                {%- else -%}
+                  {%- assign prioritizeLoading = false -%}
                 {%- endif -%}
-        
-                {%- if product.media.size == 0 -%}
-                  <div class="product__media-item initial">
-                    <div class="media borders-nfw">
-                      <div class="placeholder-image">
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                      </div>
+              
+                <div class="product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
+                  {% render 'media' with
+                    media: media, 
+                    featured_media: featured_media, 
+                    loop_video: enable_video_looping, 
+                    setLoadingAttribute: true,
+                    prioritizeLoading: prioritizeLoading,
+                    sizes: sizes
+                   %}
+                </div>
+              {%- endfor -%}
+      
+              {%- if product.media.size > 1 -%}
+                {% render 'carousel-pagination' %}
+              {%- endif -%}
+      
+              {%- if product.media.size == 0 -%}
+                <div class="product__media-item initial">
+                  <div class="media borders-nfw">
+                    <div class="placeholder-image">
+                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                     </div>
                   </div>
-                {%- endif -%}
-              </div>
-        
-              {%- if first_3d_model -%}
-                <button
-                  aria-label="{{ 'products.product.view_in_space_label' | t }}"
-                  class="product__view-in-space btn btn--full"
-                  data-in-your-space
-                  data-shopify-xr
-                  data-shopify-model3d-id="{{ first_3d_model.id }}"
-                  data-shopify-first-model3d-id="{{ first_3d_model.id }}"
-                  data-shopify-title="{{ product.title | escape }}"
-                  data-shopify-xr-hidden
-                >
-                  <span>
-                    {% render 'icon' with icon: '3d' %}
-                    <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
-                  </span>
-                </button>
+                </div>
               {%- endif -%}
-        </div>
+            </div>
+      
+            {%- if first_3d_model -%}
+              <button
+                aria-label="{{ 'products.product.view_in_space_label' | t }}"
+                class="product__view-in-space btn btn--full"
+                data-in-your-space
+                data-shopify-xr
+                data-shopify-model3d-id="{{ first_3d_model.id }}"
+                data-shopify-first-model3d-id="{{ first_3d_model.id }}"
+                data-shopify-title="{{ product.title | escape }}"
+                data-shopify-xr-hidden
+              >
+                <span>
+                  {% render 'icon' with icon: '3d' %}
+                  <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
+                </span>
+              </button>
+            {%- endif -%}
+          </div>
         <div class="product__media-container desktop-only">
 
         </div>
