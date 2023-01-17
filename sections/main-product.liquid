@@ -71,12 +71,15 @@
         {
             "type": "price",
             "name": "t:sections.main_product.blocks.price.name",
-            "limit": 1
-        },
-        {
-            "type": "lead_time",
-            "name": "Lead time",
-            "limit": 1
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "lead_time",
+                    "label": "Lead Time",
+                    "default": true
+                }
+            ] 
         },
         {
             "type": "variant_picker",
