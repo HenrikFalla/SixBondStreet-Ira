@@ -1,3 +1,94 @@
+{% liquid 
+    assign media_layout = section.settings.media_layout
+    assign full_width = section.settings.enable_full_width
+    assign current_variant = product.selected_or_first_available_variant
+    assign compare_at_price = current_variant.compare_at_price
+    assign price = current_variant.price
+    assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media
+    assign first_3d_model = product.media | where: "media_type", "model" | first
+    assign enable_video_looping = section.settings.enable_video_looping
+    assign swatch_options = settings.swatch_options | downcase | split: ', '
+    assign chip_options = settings.chip_options | downcase | split: ', '
+    assign button_options = swatch_options | concat: chip_options
+    assign enable_sticky_sidebar = section.settings.enable_sticky_sidebar
+    assign blog-merke = blogs[section.settings.merke]
+    if media_layout == "grid"
+        assign sizes = "(max-width: 640px) calc(100vw - 40px), (max-width: 960px) calc(50vw / 2), calc(66vw / 2)"
+    else
+        assign sizes = "(max-width: 640px) calc(100vw - 40px), (max-width: 960px) 50vw, 66vw"
+    endif
+    assign kolli = product.metafields.product_data.antall_kolli
+%}
+<section 
+    class="
+        product
+        s-inline-template
+        {% if full_width %}full-width{% endif %}
+    "
+    data-section-id="{{ section.id }}"
+    data-section-type="product"
+    data-product-has-only-default-variant="{{ product.has_only_default_variant }}"
+>
+    <div class="product__content">
+        <div class="product__media-container mobile-only">
+            <div class="product__media product__media--{{ media_layout }}" data-slider>
+                {%- for media in product.media -%}
+                  {%- if forloop.first or media.id == featured_media.id -%}
+                    {%- assign prioritizeLoading = true -%}
+                  {%- else -%}
+                    {%- assign prioritizeLoading = false -%}
+                  {%- endif -%}
+                
+                  <div class="product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
+                    {% render 'media' with
+                      media: media, 
+                      featured_media: featured_media, 
+                      loop_video: enable_video_looping, 
+                      setLoadingAttribute: true,
+                      prioritizeLoading: prioritizeLoading,
+                      sizes: sizes
+                     %}
+                  </div>
+                {%- endfor -%}
+        
+                {%- if product.media.size > 1 -%}
+                  {% render 'carousel-pagination' %}
+                {%- endif -%}
+        
+                {%- if product.media.size == 0 -%}
+                  <div class="product__media-item initial">
+                    <div class="media borders-nfw">
+                      <div class="placeholder-image">
+                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                      </div>
+                    </div>
+                  </div>
+                {%- endif -%}
+              </div>
+        
+              {%- if first_3d_model -%}
+                <button
+                  aria-label="{{ 'products.product.view_in_space_label' | t }}"
+                  class="product__view-in-space btn btn--full"
+                  data-in-your-space
+                  data-shopify-xr
+                  data-shopify-model3d-id="{{ first_3d_model.id }}"
+                  data-shopify-first-model3d-id="{{ first_3d_model.id }}"
+                  data-shopify-title="{{ product.title | escape }}"
+                  data-shopify-xr-hidden
+                >
+                  <span>
+                    {% render 'icon' with icon: '3d' %}
+                    <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
+                  </span>
+                </button>
+              {%- endif -%}
+        </div>
+        <div class="product__media-container desktop-only">
+
+        </div>
+    </div>
+</section>
 {% schema %}
 {
     "name": "t:sections.main_product.name",
