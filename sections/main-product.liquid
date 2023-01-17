@@ -77,6 +77,133 @@
             "type": "lead_time",
             "name": "Lead time",
             "limit": 1
+        },
+        {
+            "type": "variant_picker",
+            "name": "t:sections.main_product.blocks.variant_picker.name",
+            "limit": 1
+        },
+        {
+            "type": "buy_buttons",
+            "name": "t:sections.main_product.blocks.buy_buttons.name",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "show_dynamic_checkout",
+                    "default": true,
+                    "label": "t:sections.main_product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
+                    "info": "t:sections.main_product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "quantity_selector",
+                    "default": true,
+                    "name": "t:sections.main_product.blocks.quantity_selector.name"
+                }
+            ]
+        },
+        {
+            "type": "share_buttons",
+            "name": "t:sections.main_product.blocks.share_buttons.name",
+            "limit": 1
+        },
+        {
+            "type": "divider",
+            "name": "t:sections.main_product.blocks.divider.name"
+        },
+        {
+            "type": "accordion",
+            "name": "t:sections.main_product.blocks.accordion.name",
+            "settings": [
+                {
+                    "id": "style",
+                    "label": "t:sections.main_product.blocks.accordion.settings.style.label",
+                    "type": "select",
+                    "default": "closed",
+                    "options": [
+                        {
+                            "value": "open",
+                            "label": "t:sections.main_product.blocks.accordion.settings.style.open"
+                        },
+                        {
+                            "value": "closed",
+                            "label": "t:sections.main_product.blocks.accordion.settings.style.closed"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:sections.main_product.blocks.accordion.settings.heading.label",
+                    "info": "t:sections.main_product.blocks.accordion.settings.heading.info",
+                    "default": "Accordion heading"
+                },
+                {
+                    "type": "richtext",
+                    "id": "content",
+                    "label": "t:sections.main_product.blocks.accordion.settings.content.label"
+                }
+            ]
+        },
+        {
+            "type": "spacer",
+            "name": "t:sections.main_product.blocks.spacer.name",
+            "settings": [
+                {
+                    "id": "size",
+                    "label": "t:sections.main_product.blocks.spacer.settings.size.label",
+                    "type": "range",
+                    "default": 18,
+                    "step": 3,
+                    "min": 6,
+                    "max": 36,
+                    "unit": "px"
+                }          
+            ]
+        },
+        {
+            "type": "inventory_counter",
+            "name": "t:sections.main_product.blocks.inventory_counter.name",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "inventory_max",
+                    "label": "t:sections.main_product.blocks.inventory_counter.settings.inventory_max.label",
+                    "info": "t:sections.main_product.blocks.inventory_counter.settings.inventory_max.info",
+                    "default": "100"
+                },
+                {
+                    "type": "text",
+                    "id": "low_inventory_threshold",
+                    "label": "t:sections.main_product.blocks.inventory_counter.settings.low_inventory_threshold.label",
+                    "info": "t:sections.main_product.blocks.inventory_counter.settings.low_inventory_threshold.info",
+                    "default": "40"
+                }
+            ]
+        },
+        {
+            "type": "promises",
+            "name": "Lovnader",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "promise-text",
+                    "label": "Lovnad tekst"
+                }
+            ]
+        },
+        {
+            "type": "file_link_montering",
+            "name": "Montering Download Link",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "file-download-text",
+                    "label": "Download link text"
+                }
+            ]
         }
     ]
 }
