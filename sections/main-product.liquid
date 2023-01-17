@@ -89,6 +89,11 @@
         </div>
     </div>
 </section>
+{% unless product == empty %}
+    <script type="application/json" id="ProductJson-{{ section.id }}">
+        {{ product | json }}
+    </script>
+{% endunless %}
 {% schema %}
 {
     "name": "t:sections.main_product.name",
