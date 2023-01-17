@@ -96,6 +96,12 @@
     <script type="application/json" id="ModelJson-{{ section.id }}">
         {{ product.media | where: 'media_type', 'model' | json }}
     </script>
+    <script>
+        window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)}
+        ShopifyXR('addModels', {{ models }});
+    </script>
+    <script src='//cdn.shopify.com/shopifycloud/shopify-xr-js/assets/v1.0/shopify-xr.en.js' defer='defer'></script>
+    {% render 'ld-json-product' %}
 {% endunless %}
 {% schema %}
 {
