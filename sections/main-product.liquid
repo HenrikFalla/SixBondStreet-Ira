@@ -23,6 +23,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <section 
     class="
     product
@@ -34,7 +35,7 @@
     data-product-has-only-default-variant="{{ product.has_only_default_variant }}"
 >
     <div class="product__content">
-        <div class="swiper swiper-mobile product__media-container mobile-only">
+        <div class="swiper swiper-mobile product__media-container mobile-only" id="mobile-gallery">
             <div class="swiper-wrapper">
                 {% for media in product.media %}
                 {%- if forloop.first or media.id == featured_media.id -%}
@@ -131,7 +132,6 @@
     <script src='//cdn.shopify.com/shopifycloud/shopify-xr-js/assets/v1.0/shopify-xr.en.js' defer='defer'></script>
     {% render 'ld-json-product' %}
 {% endunless %}
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".swiper-mobile", {
         loop: true,

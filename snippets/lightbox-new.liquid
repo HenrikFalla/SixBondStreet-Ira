@@ -1,0 +1,15 @@
+<script>
+    const global_swiper_photoswipe_loop_setting = true;
+    var swiper = new Swiper("{{ class }}", {
+        slidesPerView: 1,
+        centeredSlides: true,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+        keyboard: {
+            enabled: true,
+        }
+    });
+</script>
