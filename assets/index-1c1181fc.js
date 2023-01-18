@@ -662,7 +662,7 @@ var proto = Cell.prototype;
 
 proto.create = function() {
   this.element.style.position = 'absolute';
-  this.element.setAttribute( 'aria-hidden', 'true' );
+  //this.element.setAttribute( 'aria-hidden', 'true' );
   this.x = 0;
   this.shift = 0;
 };
@@ -673,7 +673,7 @@ proto.destroy = function() {
   this.element.style.position = '';
   var side = this.parent.originSide;
   this.element.style[ side ] = '';
-  this.element.removeAttribute('aria-hidden');
+  //this.element.removeAttribute('aria-hidden');
 };
 
 proto.getSize = function() {
@@ -701,12 +701,12 @@ proto.renderPosition = function( x ) {
 
 proto.select = function() {
   this.element.classList.add('is-selected');
-  this.element.removeAttribute('aria-hidden');
+  //this.element.removeAttribute('aria-hidden');
 };
 
 proto.unselect = function() {
   this.element.classList.remove('is-selected');
-  this.element.setAttribute( 'aria-hidden', 'true' );
+  //this.element.setAttribute( 'aria-hidden', 'true' );
 };
 
 /**
