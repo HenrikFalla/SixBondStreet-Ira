@@ -12030,7 +12030,7 @@
           adaptiveHeight: true,
           cellSelector: selectors.slide,
           initialIndex: '.initial',
-          pageDots: true,
+          pageDots: false,
           prevNextButtons: false,
           watchCSS: true,
           wrapAround: true,
