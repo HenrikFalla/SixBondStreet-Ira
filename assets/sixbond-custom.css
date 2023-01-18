@@ -1198,13 +1198,22 @@ input#Email {
     max-width: 800px;
     margin: auto;
 }
-
+.trygg-certificate-box {
+    right: 110px;
+    left: auto;
+    top: -105px;
+}
 @media (min-width:60em) {
     .extended-footer .extended-footer-groups .extended-100 {
         padding: 65px 20%;
     }
   body.template-product  .blog-posts.s-inline-section{margin-top:0}
   .blog-posts.description.s-inline-section{padding:0!important}
+  .trygg-certificate-box {
+        right: auto;
+        top: -0;
+        left: 52px;
+    }   
 }
 
 @media (max-width: 40em) {
