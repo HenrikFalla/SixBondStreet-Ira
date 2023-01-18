@@ -163,3 +163,13 @@ a.download_link {
     height: 0; 
     overflow: hidden;
 }
+/* Swiper Settings */
+ul.swiper-wrapper {
+    list-style: none;
+    padding: 0;
+	margin-top: 0;
+    margin-bottom: 0px;
+}
+ul.swiper-wrapper li {
+    padding: 0;
+}
