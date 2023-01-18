@@ -1,6 +1,9 @@
 :root {
     --sxbs-accent-color: #F3F1EB;
 } 
+/* Fix for page going over the size of the screen */
+.product .mobile-carousel__pagination { overflow: hidden; }
+
 .pf-container__qty .pf-element .pf-input {
     padding-top: 1px;
     height: 25px;
@@ -162,14 +165,4 @@ a.download_link {
     padding-bottom: 56.15%; 
     height: 0; 
     overflow: hidden;
-}
-/* Swiper Settings */
-ul.swiper-wrapper {
-    list-style: none;
-    padding: 0;
-	margin-top: 0;
-    margin-bottom: 0px;
-}
-ul.swiper-wrapper li {
-    padding: 0;
 }
