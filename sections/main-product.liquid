@@ -57,8 +57,8 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
+    {% render 'lightbox' with images: images %}
 </section>
-{% render 'lightbox' with images: images %}
 {% unless product == empty %}
     <script type="application/json" id="ProductJson-{{ section.id }}">
         {{ product | json }}
