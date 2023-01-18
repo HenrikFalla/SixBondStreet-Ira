@@ -13041,7 +13041,7 @@
 
   proto.unselect = function() {
     this.element.classList.remove('is-selected');
-    this.element.setAttribute( 'aria-hidden', 'true' );
+    //this.element.setAttribute( 'aria-hidden', 'true' );
   };
 
   /**
