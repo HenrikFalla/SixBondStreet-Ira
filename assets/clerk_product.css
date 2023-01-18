@@ -1,10 +1,5 @@
 .page {
-    overflow: auto;
-}
-@media (max-width: 40em) {
-    .page {
-        overflow: hidden;
-    }
+    overflow-x: hidden;
 }
 .clerk_content_wrap * {
     font-family: inherit;
