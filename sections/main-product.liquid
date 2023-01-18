@@ -35,7 +35,7 @@
 >
     <div class="product__content">
         <div class="swiper swiper-mobile product__media-container mobile-only">
-            <div class="swiper-wrapper product__media">
+            <div class="swiper-wrapper">
                 {% for media in product.media %}
                 {%- if forloop.first or media.id == featured_media.id -%}
                     {%- assign prioritizeLoading = true -%}
