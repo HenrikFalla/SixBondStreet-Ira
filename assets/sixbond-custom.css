@@ -1199,9 +1199,9 @@ input#Email {
     margin: auto;
 }
 .trygg-certificate-box {
-    right: 110px;
-    left: auto;
-    top: -105px;
+    right: 110px!important;
+    left: auto!important;
+    top: -105px!important;
 }
 @media (min-width:60em) {
     .extended-footer .extended-footer-groups .extended-100 {
@@ -1210,9 +1210,9 @@ input#Email {
   body.template-product  .blog-posts.s-inline-section{margin-top:0}
   .blog-posts.description.s-inline-section{padding:0!important}
   .trygg-certificate-box {
-        right: auto;
-        top: -0;
-        left: 52px;
+        right: auto!important;
+        top: -0!important;
+        left: -214px!important;
     }   
 }
 
