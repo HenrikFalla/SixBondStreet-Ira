@@ -1,4 +1,7 @@
 <script>
+    /* ###############################  
+        Part 1 of 2 Swiper v8
+    ##################################  */
     const global_swiper_photoswipe_loop_setting = true;
     var swiper = new Swiper("{{ class }}", {
         slidesPerView: 1,
@@ -10,6 +13,67 @@
         },
         keyboard: {
             enabled: true,
+        }
+    });
+    /* ###############################  
+       Part 2 of 2 PhotoSwipe v5
+    ##################################  */
+    /* https://photoswipe.com/getting-started/ */
+
+    import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5.3.4/dist/photoswipe-lightbox.esm.js';
+    import PhotoSwipe from 'https://unpkg.com/photoswipe@5.3.4/dist/photoswipe.esm.js';
+    const photo_swipe_options = {
+        gallery: '{{ id }}',
+         pswpModule: PhotoSwipe,
+        // set background opacity
+        bgOpacity: 1,
+        showHideOpacity: true,
+        children: 'a',
+        loop: global_swiper_photoswipe_loop_setting,
+        showHideAnimationType: 'zoom', /* options: fade, zoom, none */
+
+        /* Click on image moves to the next slide */
+        imageClickAction: 'next',
+        tapAction: 'next',
+
+        /* ## Hiding a specific UI element ## */
+        zoom: false,
+        close: true,
+        counter: !global_swiper_photoswipe_loop_setting,
+        arrowKeys: true,
+        /* ## Options ## */
+        bgOpacity: "1",/* deafult: 0.8 */
+        wheelToZoom: true, /* deafult: undefined */
+    };
+
+    const lightbox = new PhotoSwipeLightbox(photo_swipe_options);
+
+    lightbox.init();
+
+    lightbox.on('change', () => {
+        const { pswp } = lightbox;
+        swiper.slideTo(pswp.currIndex, 0, false);
+        //console.log('Slide index', pswp.currIndex);
+        //console.log('Slide object', pswp.currSlide);
+        //console.log('Slide object data', pswp.currSlide.data);
+    });
+
+    lightbox.on('afterInit', () => {
+        const { pswp } = lightbox;
+        if(swiper.params.autoplay.enabled){
+            swiper.autoplay.stop();
+        };
+        console.log('afterInit');
+    });
+
+
+    lightbox.on('closingAnimationStart', () => {
+        //console.log('closingAnimationStart');
+        const { pswp } = lightbox;
+        swiper.slideTo(pswp.currIndex, 0, false);
+        /* if autoplay enabled == true -> autoplay.start() when close lightbox */
+        if(swiper.params.autoplay.enabled){
+            swiper.autoplay.start();
         }
     });
 </script>
