@@ -38,7 +38,7 @@
                 {%- else -%}
                     {%- assign prioritizeLoading = false -%}
                 {%- endif -%}
-                    <div class="swiper-slide">
+                    <div class="swiper-slide product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
                         {% render 'media' with
                             media: media,
                             featured_media: featured_media,
