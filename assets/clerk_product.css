@@ -1,6 +1,9 @@
 /*.page {
     overflow: hidden;
 }*/
+.clerk_recommendations {
+    overflow: hidden;
+}
 .clerk_content_wrap * {
     font-family: inherit;
     transition:height 0.3s ease;
