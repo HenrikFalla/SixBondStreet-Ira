@@ -6348,7 +6348,7 @@
         this.carousel = new Flickity(slider, {
           adaptiveHeight: false,
           cellSelector: sel$e.slide,
-          pageDots: false,
+          pageDots: true,
           prevNextButtons: false,
           setGallerySize: false,
           wrapAround: true,
