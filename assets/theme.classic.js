@@ -12997,7 +12997,7 @@
 
   proto.create = function() {
     this.element.style.position = 'absolute';
-    this.element.setAttribute( 'aria-hidden', 'true' );
+    //this.element.setAttribute( 'aria-hidden', 'true' );
     this.x = 0;
     this.shift = 0;
   };
