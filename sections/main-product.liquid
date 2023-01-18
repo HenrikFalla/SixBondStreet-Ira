@@ -45,7 +45,7 @@
   
     <div class="product__content">
       <div class="product__media-container mobile-only">
-        <div class="product__media product__media--{{ media_layout }}" data-slider data-flickity='{ "pageDots": true }>
+        <div class="product__media product__media--{{ media_layout }}" data-slider data-flickity="{ 'pageDots': true }">
           {%- for media in product.media -%}
             {%- if forloop.first or media.id == featured_media.id -%}
               {%- assign prioritizeLoading = true -%}
