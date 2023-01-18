@@ -34,7 +34,7 @@
     data-product-has-only-default-variant="{{ product.has_only_default_variant }}"
 >
     <div class="product__content">
-        <div class="swiper-mobile mobile-only">
+        <div class="swiper swiper-mobile mobile-only">
             <div class="swiper-wrapper">
                 {% for media in product.media %}
                 {%- if forloop.first or media.id == featured_media.id -%}
@@ -75,15 +75,12 @@
 {% endunless %}
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
-    var swiper = new Swiper('.swiper-mobile'{
-        direction: 'horizontal',
-        loop: true,
+    var swiper = new Swiper(".swiper-mobile", {
         pagination: {
-            el: '.swiper-pagnation',
-            dynamicBullets: true,
+          el: ".swiper-pagination",
+          dynamicBullets: true,
         },
-    }
-    );
+      });
 </script>
 {% schema %}
 {
