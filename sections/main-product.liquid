@@ -57,6 +57,7 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
+    {% assign images = product.media | where: 'media_type', 'image' %}
     {% render 'lightbox' with images: images %}
 </section>
 {% unless product == empty %}
