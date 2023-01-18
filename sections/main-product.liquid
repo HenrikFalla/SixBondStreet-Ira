@@ -34,7 +34,7 @@
     data-product-has-only-default-variant="{{ product.has_only_default_variant }}"
 >
     <div class="product__content">
-        <div class="swiper swiper-mobile product__media-container mobile-only">
+        <div class="swiper swiper-mobile mobile-only">
             <div class="swiper-wrapper product__media product__media--{{ media_layout }}" data-slider>
                 {% for media in product.media %}
                 {%- if forloop.first or media.id == featured_media.id -%}
