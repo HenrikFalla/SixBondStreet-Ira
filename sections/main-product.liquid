@@ -136,148 +136,48 @@
           </button>
         {%- endif -%}
       </div>
-      
-      
-  
-      <div class="product__details grid__item grid__item--one-third{% if enable_sticky_sidebar %} sticky{% endif %} ">
-        <div class="product-single__meta">
-  
-          {% capture "form_classes" -%}
-            product-form product-form-{{ section.id }}
-            {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
-          {%- endcapture %}
-          
-          {% form 'product',
-            product,
-            class: form_classes,
-            novalidate: 'novalidate',
-            data-product-form: '',
-            data-product-handle: product.handle
-          %}  
-            {%- comment -%}yikes but we want to know if we have dunamic checkout buttons before the block{%- endcomment -%}
-            {%- assign show_dynamic_checkout = false -%}
-            {%- for block in section.blocks -%}
-              {%- if block.type == 'buy_buttons' -%}
-                {%- assign show_dynamic_checkout = block.settings.show_dynamic_checkout -%}
-              {%- endif -%}
-            {%- endfor -%}
-            {%- if show_dynamic_checkout %}
-              {%- capture "dynamic_checkout_buttons" -%}{{ form | payment_button }}{%- endcapture -%}{%- comment -%}kludge but this has to be called in same template that form 'product' is in, weirdly{%- endcomment -%}
-            {%- endif -%}
-            {% render 'product-blocks' with 
-              product, 
-              form: form,
-              current_variant: current_variant, 
-              dynamic_checkout_buttons: dynamic_checkout_buttons,
-              button_options: button_options,
-              chip_options: chip_options,
-              swatch_options: swatch_options,
-            %}
-          {% endform %}
-        </div>
-  
-        {%- comment -%}
-          Live region for announcing updated price and availability to screen readers
-        {%- endcomment -%}
-        <p class="visually-hidden" data-product-status
-          aria-live="polite"
-          role="status"
-        ></p>
-  
-        {%- comment -%}
-          Live region for announcing that the product form has been submitted and the
-          product is in the process being added to the cart
-        {%- endcomment -%}
-        <p class="visually-hidden" data-loader-status
-          aria-live="assertive"
-          role="alert"
-          aria-hidden="true"
-        >{{ 'products.product.loader_label' | t }}</p>
-  
-  
-      </div>
     </div>
   
   
     {%- assign images = product.media | where: 'media_type', 'image' -%}
     
-      {% if product.media.size > 3 %}
-          <div class="product__media-container secondary-gallery desktop-only">
-            <div class="product__media product__media--{{ media_layout }}" data-slider>
-              {% assign crop = 'center' %}
-              {% assign i-size = product.media.size | minus: 1 %}
-              {% for i in (3..i-size) %}
-                  <div class="product__media-item {% if product.media[i].id == featured_media.id %}initial{% endif %}" data-slide>
-                      {% render 'media', media: product.media[i], featured_media: featured_media, loop_video: enable_video_looping, crop: crop  %}
-                  </div>
-              {% endfor %}
-  
-              {%- if product.media.size > 1 -%}
-                {% render 'carousel-pagination' %}
-              {%- endif -%}
-            </div>
-  
-            <noscript>
-              {% capture product_image_size %}{{ height }}x{% endcapture %}
-              <img src="{{ featured_media | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_media.alt }}" id="FeaturedMedia-{{ section.id }}" class="product-featured-media" style="max-width: {{ height }}px;">
-            </noscript>
-  
-            {%- if first_3d_model -%}
-              <button
-                aria-label="{{ 'products.product.view_in_space_label' | t }}"
-                class="product__view-in-space btn btn--full"
-                data-in-your-space
-                data-shopify-xr
-                data-shopify-model3d-id="{{ first_3d_model.id }}"
-                data-shopify-title="{{ product.title | escape }}"
-                data-shopify-xr-hidden
-              >
-                <span>
-                  {% render 'icon' with icon: '3d' %}
-                  <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
-                </span>
-              </button>
-            {%- endif -%}
-          </div>
-      {% endif %}
-    
     {% render 'lightbox' with images: images %}
   
-  {%- assign models = product.media | where: 'media_type', 'model' | json -%}
+    {%- assign models = product.media | where: 'media_type', 'model' | json -%}
   
-  {% unless product == empty %}
-    <script type="application/json" id="ProductJson-{{ section.id }}">
-      {{ product | json }}
-    </script>
-    <script type="application/json" id="ModelJson-{{ section.id }}">
-      {{ product.media | where: 'media_type', 'model' | json }}
-    </script>
+    {% unless product == empty %}
+        <script type="application/json" id="ProductJson-{{ section.id }}">
+            {{ product | json }}
+        </script>
+        <script type="application/json" id="ModelJson-{{ section.id }}">
+            {{ product.media | where: 'media_type', 'model' | json }}
+        </script>
   
+        <script>
+            window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)}
+            ShopifyXR('addModels', {{ models }});
+        </script>
+        <script src='//cdn.shopify.com/shopifycloud/shopify-xr-js/assets/v1.0/shopify-xr.en.js' defer='defer'></script>
+  
+        {% render 'ld-json-product' %}
+  
+    {% endunless %}
+    <!-- #E2S Script må med for å vise antall -->
     <script>
-      window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)}
-      ShopifyXR('addModels', {{ models }});
+        var inv_qty = {};
+            {% for var in product.variants %}
+                inv_qty[{{- var.id -}}] = {{ var.inventory_quantity | default: 0 }};
+            {% endfor %}
     </script>
-    <script src='//cdn.shopify.com/shopifycloud/shopify-xr-js/assets/v1.0/shopify-xr.en.js' defer='defer'></script>
+    <!-- Slutt Script -->
   
-    {% render 'ld-json-product' %}
-  
-  {% endunless %}
-  <!-- #E2S Script må med for å vise antall -->
-  <script>
-    var inv_qty = {};
-    {% for var in product.variants %}
-      inv_qty[{{- var.id -}}] = {{ var.inventory_quantity | default: 0 }};
-    {% endfor %}
-   </script>
-   <!-- Slutt Script -->
-  
-  {% render 'product_form_tooltip' with
-      product: product,
-      current_variant: current_variant,
-      show_swatches: section.settings.show_swatches,
-  %}
-  </section>
-  {% schema %}
+    {% render 'product_form_tooltip' with
+        product: product,
+        current_variant: current_variant,
+        show_swatches: section.settings.show_swatches,
+    %}
+</section>
+{% schema %}
     {
       "name": "t:sections.main_product.name",
       "class": "product-section",
