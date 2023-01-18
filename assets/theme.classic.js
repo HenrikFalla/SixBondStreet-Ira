@@ -6274,7 +6274,7 @@
         adaptiveHeight: true,
         cellAlign: 'left',
         cellSelector: '[data-slide]',
-        pageDots: false,
+        pageDots: true,
         prevNextButtons: false,
         watchCSS: true,
         wrapAround: true,
