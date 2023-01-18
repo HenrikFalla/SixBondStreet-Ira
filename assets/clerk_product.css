@@ -1,6 +1,3 @@
-.page {
-    overflow-x: hidden;
-}
 .clerk_content_wrap * {
     font-family: inherit;
     transition:height 0.3s ease;
