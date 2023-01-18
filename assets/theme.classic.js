@@ -6348,7 +6348,7 @@
         this.carousel = new Flickity(slider, {
           adaptiveHeight: false,
           cellSelector: sel$e.slide,
-          pageDots: true,
+          pageDots: false,
           prevNextButtons: false,
           setGallerySize: false,
           wrapAround: true,
@@ -12030,7 +12030,7 @@
           adaptiveHeight: true,
           cellSelector: selectors.slide,
           initialIndex: '.initial',
-          pageDots: false,
+          pageDots: true,
           prevNextButtons: false,
           watchCSS: true,
           wrapAround: true,
@@ -12997,7 +12997,7 @@
 
   proto.create = function() {
     this.element.style.position = 'absolute';
-    //this.element.setAttribute( 'aria-hidden', 'true' );
+    this.element.setAttribute( 'aria-hidden', 'true' );
     this.x = 0;
     this.shift = 0;
   };
@@ -13041,7 +13041,7 @@
 
   proto.unselect = function() {
     this.element.classList.remove('is-selected');
-    //this.element.setAttribute( 'aria-hidden', 'true' );
+    this.element.setAttribute( 'aria-hidden', 'true' );
   };
 
   /**
