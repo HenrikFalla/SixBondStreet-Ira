@@ -19,6 +19,8 @@
     endif
     assign kolli = product.metafields.product_data.antall_kolli
 %}
+<!-- photoswipe CSS -->
+<link rel="stylesheet" href="https://unpkg.com/photoswipe@5.3.3/dist/photoswipe.css" />
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -36,14 +38,14 @@
 >
     <div class="product__content">
         <div class="swiper swiper-mobile product__media-container mobile-only" id="mobile-gallery">
-            <div class="swiper-wrapper">
+            <ul class="swiper-wrapper">
                 {% for media in product.media %}
                 {%- if forloop.first or media.id == featured_media.id -%}
                     {%- assign prioritizeLoading = true -%}
                 {%- else -%}
                     {%- assign prioritizeLoading = false -%}
                 {%- endif -%}
-                    <div class="swiper-slide product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
+                    <li class="swiper-slide product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
                         {% render 'media' with
                             media: media,
                             featured_media: featured_media,
@@ -52,71 +54,17 @@
                             prioritizeLoading: prioritizeLoading,
                             sizes: sizes
                         %}
-                    </div>
+                    </li>
                 {% endfor %}
-            </div>
+                </ul>
             <div class="swiper-pagination"></div>
         </div>
-        <div class="product__details grid__item grid__item--one-third{% if enable_sticky_sidebar %} sticky{% endif %} ">
-            <div class="product-single__meta">
-      
-              {% capture "form_classes" -%}
-                product-form product-form-{{ section.id }}
-                {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
-              {%- endcapture %}
-              
-              {% form 'product',
-                product,
-                class: form_classes,
-                novalidate: 'novalidate',
-                data-product-form: '',
-                data-product-handle: product.handle
-              %}  
-                {%- comment -%}yikes but we want to know if we have dunamic checkout buttons before the block{%- endcomment -%}
-                {%- assign show_dynamic_checkout = false -%}
-                {%- for block in section.blocks -%}
-                  {%- if block.type == 'buy_buttons' -%}
-                    {%- assign show_dynamic_checkout = block.settings.show_dynamic_checkout -%}
-                  {%- endif -%}
-                {%- endfor -%}
-                {%- if show_dynamic_checkout %}
-                  {%- capture "dynamic_checkout_buttons" -%}{{ form | payment_button }}{%- endcapture -%}{%- comment -%}kludge but this has to be called in same template that form 'product' is in, weirdly{%- endcomment -%}
-                {%- endif -%}
-                {% render 'product-blocks' with 
-                  product, 
-                  form: form,
-                  current_variant: current_variant, 
-                  dynamic_checkout_buttons: dynamic_checkout_buttons,
-                  button_options: button_options,
-                  chip_options: chip_options,
-                  swatch_options: swatch_options,
-                %}
-              {% endform %}
-            </div>
-      
-            {%- comment -%}
-              Live region for announcing updated price and availability to screen readers
-            {%- endcomment -%}
-            <p class="visually-hidden" data-product-status
-              aria-live="polite"
-              role="status"
-            ></p>
-      
-            {%- comment -%}
-              Live region for announcing that the product form has been submitted and the
-              product is in the process being added to the cart
-            {%- endcomment -%}
-            <p class="visually-hidden" data-loader-status
-              aria-live="assertive"
-              role="alert"
-              aria-hidden="true"
-            >{{ 'products.product.loader_label' | t }}</p>
-      
-      
-          </div>
+        {% render 'lightbox-new' with
+            class: '.swiper-mobile',
+            id: '#mobile-gallery'
+        %}
     </div>
     {% assign images = product.media | where: 'media_type', 'image' %}
-    {% render 'lightbox' with images: images %}
 </section>
 {% unless product == empty %}
     <script type="application/json" id="ProductJson-{{ section.id }}">
@@ -132,15 +80,6 @@
     <script src='//cdn.shopify.com/shopifycloud/shopify-xr-js/assets/v1.0/shopify-xr.en.js' defer='defer'></script>
     {% render 'ld-json-product' %}
 {% endunless %}
-<script>
-    var swiper = new Swiper(".swiper-mobile", {
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets: true,
-        },
-      });
-</script>
 {% schema %}
 {
     "name": "t:sections.main_product.name",
