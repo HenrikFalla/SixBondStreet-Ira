@@ -192,6 +192,7 @@
     {% if useCustomEvents %}
     <script src="{{ 'custom-events.js' | asset_url }}"></script>
     {% endif %}
+  {% render 'livechat' %}
   {% comment %} Clerk.io instant search code {% endcomment %}
   <span 
     class="clerk" 

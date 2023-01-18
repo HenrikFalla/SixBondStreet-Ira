@@ -1,8 +1,10 @@
-/*.page {
-    overflow: hidden;
-}*/
-.clerk_recommendations {
-    overflow: hidden;
+.page {
+    overflow: auto;
+}
+@media (max-width: 40em) {
+    .page {
+        overflow: hidden;
+    }
 }
 .clerk_content_wrap * {
     font-family: inherit;
