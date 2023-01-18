@@ -136,6 +136,56 @@
           </button>
         {%- endif -%}
       </div>
+      
+      
+  
+      <div class="product__details grid__item grid__item--one-third{% if enable_sticky_sidebar %} sticky{% endif %} ">
+        <div class="product-single__meta">
+  
+          {% capture "form_classes" -%}
+            product-form product-form-{{ section.id }}
+            {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
+          {%- endcapture %}
+          
+          {% form 'product',
+            product,
+            class: form_classes,
+            novalidate: 'novalidate',
+            data-product-form: '',
+            data-product-handle: product.handle
+          %}  
+            {% render 'product-blocks' with 
+              product, 
+              form: form,
+              current_variant: current_variant, 
+              dynamic_checkout_buttons: dynamic_checkout_buttons,
+              button_options: button_options,
+              chip_options: chip_options,
+              swatch_options: swatch_options,
+            %}
+          {% endform %}
+        </div>
+  
+        {%- comment -%}
+          Live region for announcing updated price and availability to screen readers
+        {%- endcomment -%}
+        <p class="visually-hidden" data-product-status
+          aria-live="polite"
+          role="status"
+        ></p>
+  
+        {%- comment -%}
+          Live region for announcing that the product form has been submitted and the
+          product is in the process being added to the cart
+        {%- endcomment -%}
+        <p class="visually-hidden" data-loader-status
+          aria-live="assertive"
+          role="alert"
+          aria-hidden="true"
+        >{{ 'products.product.loader_label' | t }}</p>
+  
+  
+      </div>
     </div>
   
   
