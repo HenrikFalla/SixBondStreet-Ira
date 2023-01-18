@@ -30,62 +30,26 @@
     data-product-has-only-default-variant="{{ product.has_only_default_variant }}"
 >
     <div class="product__content">
-        <div class="product__media-container mobile-only">
-            <div class="product__media product__media--{{ media_layout }}" data-slider>
-              {%- for media in product.media -%}
+        <div class="swiper-mobile mobile-only">
+            <div class="swiper-wrapper">
+                {% for media in product.media %}
                 {%- if forloop.first or media.id == featured_media.id -%}
-                  {%- assign prioritizeLoading = true -%}
+                    {%- assign prioritizeLoading = true -%}
                 {%- else -%}
-                  {%- assign prioritizeLoading = false -%}
+                    {%- assign prioritizeLoading = false -%}
                 {%- endif -%}
-              
-                <div class="product__media-item {% if media.id == featured_media.id %}initial{% endif %}" data-slide>
-                  {% render 'media' with
-                    media: media, 
-                    featured_media: featured_media, 
-                    loop_video: enable_video_looping, 
-                    setLoadingAttribute: true,
-                    prioritizeLoading: prioritizeLoading,
-                    sizes: sizes
-                   %}
-                </div>
-              {%- endfor -%}
-      
-              {%- if product.media.size > 1 -%}
-                {% render 'carousel-pagination' %}
-              {%- endif -%}
-      
-              {%- if product.media.size == 0 -%}
-                <div class="product__media-item initial">
-                  <div class="media borders-nfw">
-                    <div class="placeholder-image">
-                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    <div class="swiper-slide">
+                        {% render 'media' with
+                            media: media,
+                            featured_media: featured_media,
+                            loop_video: enable_video_looping,
+                            setLoadingAttribute: true,
+                            prioritizeLoading: prioritizeLoading,
+                            sizes: sizes
+                        %}
                     </div>
-                  </div>
-                </div>
-              {%- endif -%}
+                {% endfor %}
             </div>
-      
-            {%- if first_3d_model -%}
-              <button
-                aria-label="{{ 'products.product.view_in_space_label' | t }}"
-                class="product__view-in-space btn btn--full"
-                data-in-your-space
-                data-shopify-xr
-                data-shopify-model3d-id="{{ first_3d_model.id }}"
-                data-shopify-first-model3d-id="{{ first_3d_model.id }}"
-                data-shopify-title="{{ product.title | escape }}"
-                data-shopify-xr-hidden
-              >
-                <span>
-                  {% render 'icon' with icon: '3d' %}
-                  <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
-                </span>
-              </button>
-            {%- endif -%}
-          </div>
-        <div class="product__media-container desktop-only">
-
         </div>
     </div>
 </section>
@@ -104,6 +68,11 @@
     <script src='//cdn.shopify.com/shopifycloud/shopify-xr-js/assets/v1.0/shopify-xr.en.js' defer='defer'></script>
     {% render 'ld-json-product' %}
 {% endunless %}
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 {% schema %}
 {
     "name": "t:sections.main_product.name",
