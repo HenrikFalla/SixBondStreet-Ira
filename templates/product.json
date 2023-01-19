@@ -51,6 +51,14 @@
             "extra_button_img": "swatch-svg"
           }
         },
+        "0e29e6b0-e384-459d-9ede-b430fec9b362": {
+          "type": "extra_button",
+          "settings": {
+            "extra_button_url": "",
+            "extra_button_text": "",
+            "extra_button_img": "chat-svg"
+          }
+        },
         "8d227ce4-db45-4eab-a689-edd841d14ba0": {
           "type": "file_link_montering",
           "settings": {
@@ -72,6 +80,7 @@
         "b4c014bd-0e8b-4b9b-95d7-96b8d2ef5589",
         "5905ce25-16e2-487e-9ab3-630301e4e05d",
         "6ef072e0-33dd-4a8a-b780-4b497a8f3866",
+        "0e29e6b0-e384-459d-9ede-b430fec9b362",
         "8d227ce4-db45-4eab-a689-edd841d14ba0",
         "422395fc-49fe-48ec-a531-c89b8314004d"
       ],
