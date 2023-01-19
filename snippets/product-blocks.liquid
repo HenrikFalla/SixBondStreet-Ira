@@ -122,7 +122,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
     {% assign truncated_description = product.description | strip_html | truncatewords: 45 %}
 
      {% if truncated_description contains '...' %}
-          <div class="product-single__description rte rte--product fs-body-base" data-description><p>{{ truncated_description }}</p><a href="#description">Les mer</a></div>
+          <div class="product-single__description rte rte--product fs-body-base" data-description><p>{{ truncated_description }} <a class="in-text-link" href="#description">Les mer</a></p></div>
       {% else %}
           <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
       {% endif %}
