@@ -1,9 +1,6 @@
 :root {
     --sxbs-accent-color: #F3F1EB;
 } 
-/* Fix for page going over the size of the screen */
-.product .mobile-carousel__pagination { overflow: hidden; }
-
 .pf-container__qty .pf-element .pf-input {
     padding-top: 1px;
     height: 25px;
@@ -165,4 +162,19 @@ a.download_link {
     padding-bottom: 56.15%; 
     height: 0; 
     overflow: hidden;
+}
+
+/* product blocks */
+.product__price-lead-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.product__price-lead-time .product-lead-time {
+    align-self: flex-start;
+    margin: auto;
+    margin-left: 0;
+}
+.product__price-lead-time .product__price.fs-body-base {
+    align-self: flex-end;
 }
