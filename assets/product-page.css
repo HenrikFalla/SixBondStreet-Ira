@@ -178,3 +178,13 @@ a.download_link {
 .product__price-lead-time .product__price.fs-body-base {
     align-self: flex-end;
 }
+.product__details {
+    margin-top: calc(var(--spacing-unit)*6);
+}
+.product-blocks > * {
+    margin-top: calc(var(--spacing-unit) * 3);
+    margin-bottom: calc(var(--spacing-unit) * 3);
+}
+.product-blocks p {
+    margin: calc(var(--spacing-unit) * 3) 0;
+}
