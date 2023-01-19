@@ -134,17 +134,15 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
     {% when 'extra_button' %}
       <div class="cta-button">
         <button>
-          {% unless block.settings.extra_button_img == "no_icon" %}
-            {% assign svg_tag = block.settings.extra_button_img %}
-            {% case svg_tag %}
-              {% when 'consultant-svg' %}
-                {% render 'consultant-svg' %}
-              {% when 'chat-svg' %}
-                {% render 'chat-svg' %}
-              {% when 'swatch-svg' %}
-                {% render 'swatch-svg' %}
-            {% endcase %}
-          {% endunless %}
+          {% assign svg_tag = block.settings.extra_button_img %}
+          {% case svg_tag %}
+            {% when 'consultant-svg' %}
+              {% render 'consultant-svg' %}
+            {% when 'chat-svg' %}
+              {% render 'chat-svg' %}
+            {% when 'swatch-svg' %}
+              {% render 'swatch-svg' %}
+          {% endcase %}
         </button>
       </div>
     {%- when 'quantity_selector' -%}
