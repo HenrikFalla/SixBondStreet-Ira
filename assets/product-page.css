@@ -188,3 +188,14 @@ a.download_link {
 .product-blocks p {
     margin: calc(var(--spacing-unit) * 3) 0;
 }
+.pf-container {
+    margin: 0;
+}
+a.in-text-link {
+    text-decoration: underline;
+}
+@media (max-width: 40em) {
+    form.product-form .product-form__controls-group {
+        max-height: 180px;
+    }
+}
