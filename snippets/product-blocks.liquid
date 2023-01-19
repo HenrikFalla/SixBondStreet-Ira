@@ -118,12 +118,12 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
       <h1 class="product-single__title ff-heading fs-heading-base c-heading">{{ product.title }}</h1>
       {% if title_links_to_product %}</a>{% endif %}
     {%- when 'description' -%}
-    {% assign truncated_description = product.description | strip_html | truncatewords: 45 %}
+      {% assign truncated_description = product.description | strip_html | truncatewords: 30 %}
 
-     {% if truncated_description contains '...' %}
-          <div class="product-single__description rte rte--product fs-body-base" data-description><p>{{ truncated_description }} <a class="in-text-link" href="#description">Les mer</a></p></div>
+      {% if truncated_description contains '...' %}
+        <div class="product-single__description rte rte--product fs-body-base" data-description><p>{{ truncated_description }} <a class="in-text-link" href="#description">Les mer</a></p></div>
       {% else %}
-          <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
+        <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
       {% endif %}
     {%- when 'text' -%}
       <div class="product-single__freetext rte rte--product fs-body-base">{{ block.settings.content }}</div>
