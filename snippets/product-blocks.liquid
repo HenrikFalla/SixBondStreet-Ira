@@ -134,7 +134,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
     {% when 'extra_button' %}
       <div class="cta-button">
         <button>
-          {{  block.settings.extra_button_img.value }}
+          {{  block.settings.extra_button_img }}
           {% render 'consultant-svg' %}
           {% unless block.settings.extra_button.extra_button_img.value == "no_icon" %}
             {% assign svg_tag = block.settings.extra_button.extra_button_img.value %}
