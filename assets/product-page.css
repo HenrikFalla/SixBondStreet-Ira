@@ -182,11 +182,11 @@ a.download_link {
     margin-top: calc(var(--spacing-unit)*6);
 }
 .product-blocks > * {
-    margin-top: calc(var(--spacing-unit) * 3);
-    margin-bottom: calc(var(--spacing-unit) * 3);
+    margin-top: calc(var(--spacing-unit) * 6);
+    margin-bottom: calc(var(--spacing-unit) * 6);
 }
 .product-blocks p {
-    margin: calc(var(--spacing-unit) * 3) 0;
+    margin: calc(var(--spacing-unit) * 6) 0;
 }
 .pf-container {
     margin: 0;
