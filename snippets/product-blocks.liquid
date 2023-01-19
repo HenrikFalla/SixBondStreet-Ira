@@ -81,7 +81,6 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
             <div class="trigger_orb" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}>{{instockorb}}</div>
             <span class="variant-inventory" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}><span>{{ current_variant.inventory_quantity }}</span> på lager.</span>
               <span data-stock-availability class="dom-message" {% if current_variant.inventory_quantity > 0 %}style="display:none"{% endif %}>
-              Leveringstid: 
               <span>
                 {% if current_variant.metafields.product_data.leveringstid != blank %}
                   {{ current_variant.metafields.product_data.leveringstid }}
