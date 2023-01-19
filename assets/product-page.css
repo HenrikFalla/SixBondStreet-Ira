@@ -208,6 +208,12 @@ a.in-text-link {
     border: var(--color-background-button) 1px solid;
     border-radius: 50px;
     color: var(--color-text-heading);
+    background: var(--color-background);
+    transition: 1s ease;
+}
+.cta-button__extra:hover {
+    background: var(--color-text-button);
+    transition: 1s ease;
 }
 .cta-button__extra a {
     display: flex;
