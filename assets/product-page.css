@@ -194,6 +194,15 @@ a.download_link {
 a.in-text-link {
     text-decoration: underline;
 }
+.product-blocks .product__vendor {
+    margin-bottom: calc(var(--spacing-unit) * 3);
+}
+.product-blocks .product__vendor .ff-meta {
+    margin: 0;
+}
+.product-blocks .product-single__title {
+    margin-top: calc(var(--spacing-unit) * 3);
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
