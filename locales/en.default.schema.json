@@ -910,7 +910,7 @@
 						},
 						"show_qty_picker": {
 							"info": "Check this box to display a qty picker with the add to cart button",
-							"label": "Show qy picker"
+							"label": "Show qty picker"
 						}
 					}
 				},
