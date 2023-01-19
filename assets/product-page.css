@@ -219,6 +219,12 @@ a.in-text-link {
 .cta-button__extra .svg-icon {
     max-width: 16px;
 }
+.chat-svg div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
