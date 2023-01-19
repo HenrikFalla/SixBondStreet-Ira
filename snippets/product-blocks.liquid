@@ -138,12 +138,16 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
           {% case svg_tag %}
             {% when 'consultant-svg' %}
               {% render 'consultant-svg' %}
+              <span>{{ block.settings.extra_button_text | strip_html }}</span>
             {% when 'chat-svg' %}
               {% render 'chat-svg' %}
+              <div data-id="b790b1bfbb" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14465823">Live Chat</a></div>
             {% when 'swatch-svg' %}
               {% render 'swatch-svg' %}
+              <span>{{ block.settings.extra_button_text | strip_html }}</span>
+            {% else %}
+              <span>{{ block.settings.extra_button_text | strip_html }}</span>
           {% endcase %}
-          <span>{{ block.settings.extra_button_text | strip_html }}</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" fill="none"><path stroke="#464039" d="m.606 1 8.486 8.485-8.486 8.486"/></svg>
         </a>
       </div>
