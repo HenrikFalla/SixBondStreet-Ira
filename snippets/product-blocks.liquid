@@ -133,7 +133,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
       </div>
     {% when 'extra_button' %}
       <div class="cta-button__extra">
-        <button>
+        <a>
           {% assign svg_tag = block.settings.extra_button_img | strip %}
           {% case svg_tag %}
             {% when 'consultant-svg' %}
@@ -144,7 +144,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
               {% render 'swatch-svg' %}
           {% endcase %}
           <span>{{ block.settings.extra_button_text | strip_html }}</span>
-        </button>
+        </a>
       </div>
     {%- when 'quantity_selector' -%}
 
