@@ -907,6 +907,10 @@
 						"show_dynamic_checkout": {
 							"info": "Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
 							"label": "Show dynamic checkout buttons"
+						},
+						"show_qty_picker": {
+							"info": "Check this box to display a qty picker with the add to cart button",
+							"label": "Show qy picker"
 						}
 					}
 				},
