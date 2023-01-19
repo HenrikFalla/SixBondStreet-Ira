@@ -993,7 +993,20 @@
         },
         "vendor": {
           "name": "Vendor"
-        }
+        },
+		"extra_button": {
+			"name": "CTA Buttons",
+			"settings": {
+				"extra_button_url": {
+					"label": "Url",
+					"info": "Select the url for the CTA button"
+				},
+				"extra_button_text": {
+					"label": "Button text",
+					"info": "Type in the desired text for the CTA button"
+				}
+			}
+		}
       },
       "name": "Product overview",
       "settings": {
