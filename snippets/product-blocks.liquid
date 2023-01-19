@@ -136,7 +136,14 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
         <button>
           {% unless block.settings.extra_button.extra_button_img.value == "no_icon" %}
             {% assign svg_tag = block.settings.extra_button.extra_button_img.value %}
-            {% render svg_tag %}
+            {% case svg_tag %}
+              {% when 'consultant_svg' %}
+                {% render 'consultant_svg' %}
+              {% when 'chat_svg' %}
+                {% render 'chat_svg' %}
+              {% when 'swatch_svg' %}
+                {% render 'swatch_svg' %}
+            {% endcase %}
           {% endunless %}
         </button>
       </div>
