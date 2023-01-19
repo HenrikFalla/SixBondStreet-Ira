@@ -134,7 +134,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
     {% when 'extra_button' %}
       <div class="cta-button">
         <button>
-          {% assign svg_tag = block.settings.extra_button_img %}
+          {% assign svg_tag = block.settings.extra_button_img | strip %}
           {{ svg_tag }}
           {% case svg_tag %}
             {% when 'consultant-svg' %}
