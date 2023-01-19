@@ -203,6 +203,12 @@ a.in-text-link {
 .product-blocks .product-single__title {
     margin-top: calc(var(--spacing-unit) * 3);
 }
+.cta-button__extra a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
