@@ -1004,6 +1004,10 @@
 					"extra_button_text": {
 						"label": "Button text",
 						"info": "Type in the desired text for the CTA button"
+					},
+					"extra_button_img": {
+						"label": "Button icon",
+						"info": "Select the icon to display on the CTA button. Leave empty if no Icon should be displayed."
 					}
 				}
 			}
