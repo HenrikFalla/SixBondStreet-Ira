@@ -135,18 +135,15 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
       <div class="cta-button">
         <button>
           {% assign svg_tag = block.settings.extra_button_img | strip %}
-          {{ svg_tag }}
           {% case svg_tag %}
             {% when 'consultant-svg' %}
-              <span>Consultant</span>
               {% render 'consultant-svg' %}
             {% when 'chat-svg' %}
-              <span>Chat</span>
               {% render 'chat-svg' %}
             {% when 'swatch-svg' %}
-              <span>Swatch</span>
               {% render 'swatch-svg' %}
           {% endcase %}
+          <span>{{ block.settings.extra_button_text | strip_html }}</span>
         </button>
       </div>
     {%- when 'quantity_selector' -%}
