@@ -131,7 +131,15 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
       <div class="product__share" data-share="{{ 'product.share' | t }}">
         {% render 'share-block', share_title: product.title, url: product.url, share_image: product.featured_media %}
       </div>
-      
+    {% when 'extra_button' %}
+      <div class="cta-button">
+        <button>
+          {% unless block.settings.extra_button.extra_button_img.value == "no_icon" %}
+            {% assign svg_tag = block.settings.extra_button.extra_button_img.value %}
+            {% render svg_tag %}
+          {% endunless %}
+        </button>
+      </div>
     {%- when 'quantity_selector' -%}
 
 {%comment%}
