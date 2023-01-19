@@ -35,6 +35,22 @@
           "settings": {
           }
         },
+        "5905ce25-16e2-487e-9ab3-630301e4e05d": {
+          "type": "extra_button",
+          "settings": {
+            "extra_button_url": "shopify:\/\/pages\/interiortjeneste",
+            "extra_button_text": "Usikker? Få gratis interiørhjelp",
+            "extra_button_img": "consultant-svg"
+          }
+        },
+        "6ef072e0-33dd-4a8a-b780-4b497a8f3866": {
+          "type": "extra_button",
+          "settings": {
+            "extra_button_url": "shopify:\/\/pages\/gratis-tekstilprover",
+            "extra_button_text": "Bestill gratis tekstilprøve",
+            "extra_button_img": "swatch-svg"
+          }
+        },
         "8d227ce4-db45-4eab-a689-edd841d14ba0": {
           "type": "file_link_montering",
           "settings": {
@@ -45,14 +61,6 @@
           "type": "share_buttons",
           "settings": {
           }
-        },
-        "5905ce25-16e2-487e-9ab3-630301e4e05d": {
-          "type": "extra_button",
-          "settings": {
-            "extra_button_url": "shopify:\/\/pages\/interiortjeneste",
-            "extra_button_text": "Usikker? Få gratis interiørhjelp",
-            "extra_button_img": "consultant-svg"
-          }
         }
       },
       "block_order": [
@@ -62,9 +70,10 @@
         "variant_picker",
         "buy_buttons",
         "b4c014bd-0e8b-4b9b-95d7-96b8d2ef5589",
+        "5905ce25-16e2-487e-9ab3-630301e4e05d",
+        "6ef072e0-33dd-4a8a-b780-4b497a8f3866",
         "8d227ce4-db45-4eab-a689-edd841d14ba0",
-        "422395fc-49fe-48ec-a531-c89b8314004d",
-        "5905ce25-16e2-487e-9ab3-630301e4e05d"
+        "422395fc-49fe-48ec-a531-c89b8314004d"
       ],
       "settings": {
         "show_swatches": true,
