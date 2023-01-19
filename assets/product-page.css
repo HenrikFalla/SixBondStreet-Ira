@@ -217,7 +217,7 @@ a.in-text-link {
     align-items: center;
 }
 .cta-button__extra .svg-icon {
-    max-width: 16px;
+    max-height: 22px;
 }
 .chat-svg div {
     display: flex;
