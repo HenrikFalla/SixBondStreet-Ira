@@ -51,7 +51,7 @@
           "settings": {
             "extra_button_url": "shopify:\/\/pages\/interiortjeneste",
             "extra_button_text": "Usikker? Få gratis interiørhjelp",
-            "extra_button_img": "conultant_icon.svg"
+            "extra_button_img": "conultant-svg"
           }
         }
       },
