@@ -884,134 +884,134 @@
     },
     "main_product": {
       "blocks": {
-			"accordion": {
-			"name": "Accordion",
-			"settings": {
-				"content": {
-				"label": "Text"
-				},
-				"heading": {
-				"info": "Include a heading that explains the content.",
-				"label": "Accordion heading"
-				},
-				"style": {
-				"closed": "Closed",
-				"label": "Style",
-				"open": "Open"
-				}
-			}
-			},
-			"buy_buttons": {
-			"name": "Buy buttons",
-			"settings": {
-				"show_dynamic_checkout": {
-				"info": "Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)",
-				"label": "Show dynamic checkout buttons"
-				},
-				"show_qty_picker": {
-				"info": "Check this box to display a qty picker with the add to cart button",
-				"label": "Show qty picker"
-				}
-			}
-			},
-			"custom_liquid": {
-			"name": "Custom Liquid",
-			"presets": {
-				"name": "Custom Liquid"
-			},
-			"settings": {
-				"custom_liquid": {
-				"label": "Custom Liquid"
-				}
-			}
-			},
-			"description": {
-			"name": "Description"
-			},
-			"divider": {
-			"name": "Divider"
-			},
-			"inventory_counter": {
-			"name": "Stock level indicator",
-			"settings": {
-				"inventory_max": {
-				"info": "Enter the initial quantity of your product inventory. Insert a Dynamic source to set different base quantities for multiple products. [Learn more](https:\/\/fluorescent.co\/help\/spark\/product-pages#inventory-counter)",
-				"label": "Inventory base quantity"
-				},
-				"low_inventory_threshold": {
-				"info": "Set the product inventory quantity to alert customers when limited quantities are available. Insert a Dynamic source to set different thresholds for multiple products. [Learn more](https:\/\/fluorescent.co\/help\/ira\/product-pages)",
-				"label": "Low inventory threshold"
-				}
-			}
-			},
-			"price": {
-			"name": "Price"
-			},
-			"quantity_selector": {
-			"name": "Quantity selector"
-			},
-			"share_buttons": {
-			"name": "Share buttons"
-			},
-			"sku": {
-			"name": "SKU",
-			"settings": {
-				"prefix": {
-				"label": "SKU prefix"
-				}
-			}
-			},
-			"spacer": {
-			"name": "Spacer",
-			"settings": {
-				"size": {
-				"label": "Size"
-				}
-			}
-			},
-			"text": {
-			"name": "Text",
-			"settings": {
-				"content": {
-				"label": "Content"
-				}
-			}
-			},
-			"title": {
-			"name": "Name"
-			},
-			"type": {
-			"name": "Product type",
-			"settings": {
-				"prefix": {
-				"label": "Type prefix"
-				}
-			}
-			},
-			"variant_picker": {
-			"name": "Variant selectors"
-			},
-			"vendor": {
-			"name": "Vendor"
-			},
-			"extra_button": {
-				"name": "CTA Button",
-				"settings": {
-					"extra_button_url": {
-						"label": "Url",
-						"info": "Select the url for the CTA button"
-					},
-					"extra_button_text": {
-						"label": "Button text",
-						"info": "Type in the desired text for the CTA button"
-					},
-					"extra_button_img": {
-						"label": "Button icon",
-						"info": "Select the icon to display on the CTA button. Leave empty if no Icon should be displayed."
-					}
-				}
-			}
-      	},
+        "accordion": {
+          "name": "Accordion",
+          "settings": {
+            "content": {
+              "label": "Text"
+            },
+            "heading": {
+              "info": "Include a heading that explains the content.",
+              "label": "Accordion heading"
+            },
+            "style": {
+              "closed": "Closed",
+              "label": "Style",
+              "open": "Open"
+            }
+          }
+        },
+        "buy_buttons": {
+          "name": "Buy buttons",
+          "settings": {
+            "show_dynamic_checkout": {
+              "info": "Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)",
+              "label": "Show dynamic checkout buttons"
+            },
+            "show_qty_picker": {
+              "info": "Check this box to display a qty picker with the add to cart button",
+              "label": "Show qty picker"
+            }
+          }
+        },
+        "custom_liquid": {
+          "name": "Custom Liquid",
+          "presets": {
+            "name": "Custom Liquid"
+          },
+          "settings": {
+            "custom_liquid": {
+              "label": "Custom Liquid"
+            }
+          }
+        },
+        "description": {
+          "name": "Description"
+        },
+        "divider": {
+          "name": "Divider"
+        },
+        "inventory_counter": {
+          "name": "Stock level indicator",
+          "settings": {
+            "inventory_max": {
+              "info": "Enter the initial quantity of your product inventory. Insert a Dynamic source to set different base quantities for multiple products. [Learn more](https:\/\/fluorescent.co\/help\/spark\/product-pages#inventory-counter)",
+              "label": "Inventory base quantity"
+            },
+            "low_inventory_threshold": {
+              "info": "Set the product inventory quantity to alert customers when limited quantities are available. Insert a Dynamic source to set different thresholds for multiple products. [Learn more](https:\/\/fluorescent.co\/help\/ira\/product-pages)",
+              "label": "Low inventory threshold"
+            }
+          }
+        },
+        "price": {
+          "name": "Price"
+        },
+        "quantity_selector": {
+          "name": "Quantity selector"
+        },
+        "share_buttons": {
+          "name": "Share buttons"
+        },
+        "sku": {
+          "name": "SKU",
+          "settings": {
+            "prefix": {
+              "label": "SKU prefix"
+            }
+          }
+        },
+        "spacer": {
+          "name": "Spacer",
+          "settings": {
+            "size": {
+              "label": "Size"
+            }
+          }
+        },
+        "text": {
+          "name": "Text",
+          "settings": {
+            "content": {
+              "label": "Content"
+            }
+          }
+        },
+        "title": {
+          "name": "Name"
+        },
+        "type": {
+          "name": "Product type",
+          "settings": {
+            "prefix": {
+              "label": "Type prefix"
+            }
+          }
+        },
+        "variant_picker": {
+          "name": "Variant selectors"
+        },
+        "vendor": {
+          "name": "Vendor"
+        },
+        "extra_button": {
+          "name": "CTA Button",
+          "settings": {
+            "extra_button_url": {
+              "label": "Url",
+              "info": "Select the url for the CTA button"
+            },
+            "extra_button_text": {
+              "label": "Button text",
+              "info": "Type in the desired text for the CTA button"
+            },
+            "extra_button_img": {
+              "label": "Button icon",
+              "info": "Select the icon to display on the CTA button. Leave empty if no Icon should be displayed."
+            }
+          }
+        }
+      },
       "name": "Product overview",
       "settings": {
         "enable_full_width": {
