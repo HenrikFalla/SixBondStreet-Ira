@@ -40,17 +40,16 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
       <div class="product__vendor fs-body-base c-meta">
         {%- assign vendorHandle = product.vendor | handleize | strip | escape -%}
         {%- if collections[vendorHandle].products.size > 0 -%}
-        <a href="{{ collections[vendorHandle].url }}">
-          <div class="product__vendor ff-meta fs-meta c-meta found">{{ product.vendor }}</div>
-        </a>
+          <a href="{{ collections[vendorHandle].url }}">
+            <div class="product__vendor ff-meta fs-meta c-meta found">{{ product.vendor }}</div>
+          </a>
         {%- else -%}
-        <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
+          <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
         {%- endif -%}
       </div>
     {%- when 'price' -%}
       <div class="product__price fs-body-base">
         <span data-price {% if current_variant.compare_at_price > current_variant.price %}class="sxbs-on-sale"{% endif %}>{{ current_variant.price | money }}</span>
-
         <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
         <s data-compare-price>
           {% if current_variant.compare_at_price > current_variant.price %}
@@ -75,7 +74,34 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
             </span>
           </span>
         </div>         
-
+    {% when 'price_lead_time' %}
+        <div class="product__price-lead-time">
+          <div class="product-lead-time">
+            {% assign instockorb= '<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>' %}
+            <div class="trigger_orb" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}>{{instockorb}}</div>
+            <span class="variant-inventory" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}><span>{{ current_variant.inventory_quantity }}</span> på lager.</span>
+              <span data-stock-availability class="dom-message" {% if current_variant.inventory_quantity > 0 %}style="display:none"{% endif %}>
+              Leveringstid: 
+              <span>
+                {% if current_variant.metafields.product_data.leveringstid != blank %}
+                  {{ current_variant.metafields.product_data.leveringstid }}
+                {% else %}
+                  {{ product.metafields.product_data.leveringstid }}
+                {% endif %}
+              </span>
+            </span>
+          </div>
+          <div class="product__price fs-body-base">
+            <span data-price {% if current_variant.compare_at_price > current_variant.price %}class="sxbs-on-sale"{% endif %}>{{ current_variant.price | money }}</span>
+            <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
+            <s data-compare-price>
+              {% if current_variant.compare_at_price > current_variant.price %}
+              {{ current_variant.compare_at_price | money }}
+              {% endif %}
+            </s>
+            {% render 'unit-price' item: current_variant %}
+          </div>   
+        </div>
     {%- when 'sku' -%}
       {% if request.design_mode or current_variant.sku != blank %}
         <div class="product__sku fs-body-base">
