@@ -132,7 +132,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
         {% render 'share-block', share_title: product.title, url: product.url, share_image: product.featured_media %}
       </div>
     {% when 'extra_button' %}
-      <div class="cta-button">
+      <div class="cta-button__extra">
         <button>
           {% assign svg_tag = block.settings.extra_button_img | strip %}
           {% case svg_tag %}
