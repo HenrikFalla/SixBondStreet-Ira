@@ -203,11 +203,21 @@ a.in-text-link {
 .product-blocks .product-single__title {
     margin-top: calc(var(--spacing-unit) * 3);
 }
+.cta-button__extra {
+    padding: 12px 18px;
+    border: var(--color-background-button) 1px solid;
+    border-radius: 50px;
+    color: var(--color-text-heading);
+}
 .cta-button__extra a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
+}
+.cta-button__extra .svg-icon {
+    max-width: 16px;
 }
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
