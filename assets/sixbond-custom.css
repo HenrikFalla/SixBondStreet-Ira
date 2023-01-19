@@ -96,7 +96,7 @@ span.on-sale.saved_percentage {
 span.dom-message {
     margin-bottom: var(--spacing-large);
     display: inline;
-    font-size: 14px;
+    /*font-size: 14px;*/
     margin-top: -14px;
 }
 
