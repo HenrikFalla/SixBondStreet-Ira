@@ -7,6 +7,20 @@
     /* Based on the Hermes Orange */
     --sxbs-accent-color: #F3F1EB;
     --sxbs-dark-grey: #29292c;
+    --max-width:2000px;
+    --max-width-small-page:600px;
+
+    --spacing-unit:3px;
+
+    --spacing-none:0px;
+    --spacing-extra-small:calc(var(--spacing-unit) * 2);
+    --spacing-small:calc(var(--spacing-unit) * 3);
+    --spacing-medium:calc(var(--spacing-unit) * 5);
+    --spacing-medium-large:calc(var(--spacing-unit) * 7);
+    --spacing-large:calc(var(--spacing-unit) * 10);
+    --spacing-extra-large:calc(var(--spacing-unit) * 12);
+    --spacing-extra-extra-large:calc(var(--spacing-unit) * 20);
+    --space-outer:20px;
 }
 
 ::selection {
