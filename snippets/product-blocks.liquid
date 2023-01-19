@@ -133,22 +133,30 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
       </div>
     {% when 'extra_button' %}
       <div class="cta-button__extra {{ block.settings.extra_button_img }}">
-        <a href="{{ block.settings.extra_button_url }}" target="_blank">
           {% assign svg_tag = block.settings.extra_button_img | strip %}
           {% case svg_tag %}
             {% when 'consultant-svg' %}
-              {% render 'consultant-svg' %}
-              <span>{{ block.settings.extra_button_text | strip_html }}</span>
+              <a href="{{ block.settings.extra_button_url }}" target="_blank">
+                {% render 'consultant-svg' %}
+                <span>{{ block.settings.extra_button_text | strip_html }}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" fill="none"><path stroke="#464039" d="m.606 1 8.486 8.485-8.486 8.486"/></svg>
+              </a>
             {% when 'chat-svg' %}
-              {% render 'chat-svg' %}
-              <div data-id="b790b1bfbb" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14465823">Live Chat</a></div>
+              <a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14465823">
+                {% render 'chat-svg' %}
+                <div data-id="b790b1bfbb" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14465823">Live Chat</a></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" fill="none"><path stroke="#464039" d="m.606 1 8.486 8.485-8.486 8.486"/></svg>
+              </a>
             {% when 'swatch-svg' %}
-              {% render 'swatch-svg' %}
-              <span>{{ block.settings.extra_button_text | strip_html }}</span>
+              <a href="{{ block.settings.extra_button_url }}" target="_blank">
+                {% render 'swatch-svg' %}
+                <span>{{ block.settings.extra_button_text | strip_html }}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" fill="none"><path stroke="#464039" d="m.606 1 8.486 8.485-8.486 8.486"/></svg>
+              </a>
             {% else %}
               <span>{{ block.settings.extra_button_text | strip_html }}</span>
           {% endcase %}
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" fill="none"><path stroke="#464039" d="m.606 1 8.486 8.485-8.486 8.486"/></svg>
+          
         </a>
       </div>
     {%- when 'quantity_selector' -%}
