@@ -193,9 +193,11 @@
         %}  
           {%- comment -%}yikes but we want to know if we have dunamic checkout buttons before the block{%- endcomment -%}
           {%- assign show_dynamic_checkout = false -%}
+          {% assign show_qty_picker =  false %}
           {%- for block in section.blocks -%}
             {%- if block.type == 'buy_buttons' -%}
               {%- assign show_dynamic_checkout = block.settings.show_dynamic_checkout -%}
+              {% assign show_qty_picker = block.settings.show_qty_picker %}
             {%- endif -%}
           {%- endfor -%}
           {%- if show_dynamic_checkout %}
@@ -209,6 +211,7 @@
             button_options: button_options,
             chip_options: chip_options,
             swatch_options: swatch_options,
+            qty_picker: show_qty_picker
           %}
         {% endform %}
       </div>
@@ -426,6 +429,13 @@
             "default": true,
             "label": "t:sections.main_product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
             "info": "t:sections.main_product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_qty_picker",
+            "defailt": true,
+            "label": "t:sections.main_product.blocks.buy_buttons.settings.show_qty_picker.label",
+            "info": "t:sections.main_product.blocks.buy_buttons.settings.show_qty_picker.info"
           }
         ]
       },
