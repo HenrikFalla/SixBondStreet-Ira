@@ -247,6 +247,8 @@ a.in-text-link {
     form.product-form .product-form__controls-group {
         max-height: 180px;
     }
+}
+@media (min-width: 40em) {
     .shopify-section.full-width .product__media-container {
         width: 100%;
         margin-left: -20px;
@@ -259,4 +261,4 @@ a.in-text-link {
         padding-top: 0;
     }
 }
-@media (max-width: 60em) {}
+@media (min-width: 60em) {}
