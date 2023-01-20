@@ -233,8 +233,30 @@ a.in-text-link {
     justify-content: space-between;
     align-items: center;
 }
+.secondary-gallery .product__media-item {
+    width: calc(100% / 3);
+    float: left;
+}
+.product__media-container.secondary-gallery.desktop-only {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
     }
+    .shopify-section.full-width .product__media-container {
+        width: 100%;
+        margin-left: -20px;
+        padding-right: 0;
+    }
+    .shopify-section.full-width .product__media-item {
+        padding: 12px;
+    }
+    .shopify-section.full-width .product__media-item.initial {
+        padding-top: 0;
+    }
 }
+@media (max-width: 60em) {}
