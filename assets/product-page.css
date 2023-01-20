@@ -259,10 +259,14 @@ a.in-text-link {
         margin: auto;
     }
     .shopify-section.full-width .product__media-item {
-        padding: 9px;
+        padding: calc(var(--spacing-unit)*1);
     }
     .shopify-section.full-width .product__media-item.initial {
         padding-top: 0;
     }
 }
-@media (min-width: 60em) {}
+@media (min-width: 60em) {
+    .shopify-section.full-width .product__media-item {
+        padding: calc(var(--spacing-unit)*3);
+    }
+}
