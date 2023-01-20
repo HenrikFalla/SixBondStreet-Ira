@@ -211,6 +211,7 @@ a.in-text-link {
     color: var(--color-text-heading);
     background: var(--color-background);
     transition: 1s ease;
+    font-size: var(--font-size-body-base);
 }
 .cta-button__extra:hover {
     background: var(--color-text-button);
