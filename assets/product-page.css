@@ -254,6 +254,10 @@ a.in-text-link {
         margin-left: -20px;
         padding-right: 0;
     }
+    .shopify-section.full-width .product__media-container.secondary-gallery {
+        margin-left: auto;
+        margin: auto;
+    }
     .shopify-section.full-width .product__media-item {
         padding: 12px;
     }
