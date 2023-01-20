@@ -118,7 +118,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
       <h1 class="product-single__title ff-heading fs-heading-base c-heading">{{ product.title }}</h1>
       {% if title_links_to_product %}</a>{% endif %}
     {%- when 'description' -%}
-      {% assign truncated_description = product.description | strip_html | truncatewords: 30 %}
+      {% assign truncated_description = product.description | strip_html | truncatewords: 20 %}
 
       {% if truncated_description contains '...' %}
         <div class="product-single__description rte rte--product fs-body-base" data-description><p>{{ truncated_description }} <a class="in-text-link" href="#description">Les mer</a></p></div>
