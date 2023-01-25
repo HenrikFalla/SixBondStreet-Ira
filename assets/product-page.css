@@ -295,6 +295,11 @@ a.in-text-link {
 .accordion__group .accordion__text .accordion__data-div:first-child {
     border-top: var(--color-border-input) 1px solid;
 }
+.pf-divider {
+    width: calc(100% - 36px);
+    margin-left: auto;
+    margin-right: auto;
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
