@@ -63,10 +63,15 @@
           "type": "accordion",
           "settings": {
             "style": "closed",
-            "heading": "Accordion heading",
+            "heading": "Brand",
             "content": "",
             "vendor": true,
             "vendor-blog": "merker"
+          }
+        },
+        "657227f3-fd58-469c-ad48-d89af8361ebc": {
+          "type": "divider",
+          "settings": {
           }
         },
         "b509ef7d-ef95-4c61-a4e0-dc26bbd0c6f5": {
@@ -77,6 +82,11 @@
             "content": "<p>TEst 1234<\/p>",
             "vendor": false,
             "vendor-blog": ""
+          }
+        },
+        "d5e6b4d7-f409-41cc-a663-dbec84286286": {
+          "type": "divider",
+          "settings": {
           }
         },
         "ad3d155e-5dcd-4a9c-abcb-35c39d6f88d6": {
@@ -112,7 +122,9 @@
         "5905ce25-16e2-487e-9ab3-630301e4e05d",
         "0e29e6b0-e384-459d-9ede-b430fec9b362",
         "006fbf80-9674-4588-845d-d234f689cf3a",
+        "657227f3-fd58-469c-ad48-d89af8361ebc",
         "b509ef7d-ef95-4c61-a4e0-dc26bbd0c6f5",
+        "d5e6b4d7-f409-41cc-a663-dbec84286286",
         "ad3d155e-5dcd-4a9c-abcb-35c39d6f88d6",
         "8d227ce4-db45-4eab-a689-edd841d14ba0",
         "422395fc-49fe-48ec-a531-c89b8314004d"
