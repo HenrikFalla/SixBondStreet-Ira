@@ -273,6 +273,11 @@ a.in-text-link {
 .product--accordion .accordion__group[data-open=true] svg {
     rotate: 90deg;
 }
+.product--accordion .accordion__text, 
+.product-single__description .accordion .accordion__text {
+    margin-left: calc(var(--spacing-unit)*2);
+    margin-right: calc(var(--spacing-unit)*2);
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
