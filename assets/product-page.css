@@ -264,7 +264,7 @@ a.in-text-link {
     margin-left: 0;
 }
 .accordion__group .accordion__text .category-description, 
-.accordion__group .accordion__text .category-description .product-blocks p {
+.accordion__group .accordion__text .category-description p {
     margin: 0;
 }
 .product--accordion .accordion__group svg {
