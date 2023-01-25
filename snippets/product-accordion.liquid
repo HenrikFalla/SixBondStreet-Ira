@@ -26,8 +26,11 @@
             {% endcase %}
         {% else %}
             {% assign vendorHandle = product.vendor | handleize %}
+            <span>{{ blog_data.title }}</span>
             {% for article in blog_data.articles %}
                 {% assign handle-check = blog_data.title | downcase | append: "/" | append: vendorHandle %}
+                <span>{{ handle-check }}</span>
+                <span>{{ vendorHandle }}</span>
                 {% if handle-check == article.handle %}
                     {{ article.content }}
                 {% endif %}
