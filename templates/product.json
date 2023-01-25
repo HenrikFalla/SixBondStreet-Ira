@@ -59,6 +59,16 @@
             "extra_button_img": "chat-svg"
           }
         },
+        "006fbf80-9674-4588-845d-d234f689cf3a": {
+          "type": "accordion",
+          "settings": {
+            "style": "open",
+            "heading": "Accordion heading",
+            "content": "",
+            "vendor": true,
+            "vendor-blog": "merker"
+          }
+        },
         "8d227ce4-db45-4eab-a689-edd841d14ba0": {
           "type": "file_link_montering",
           "settings": {
@@ -81,6 +91,7 @@
         "6ef072e0-33dd-4a8a-b780-4b497a8f3866",
         "5905ce25-16e2-487e-9ab3-630301e4e05d",
         "0e29e6b0-e384-459d-9ede-b430fec9b362",
+        "006fbf80-9674-4588-845d-d234f689cf3a",
         "8d227ce4-db45-4eab-a689-edd841d14ba0",
         "422395fc-49fe-48ec-a531-c89b8314004d"
       ],
