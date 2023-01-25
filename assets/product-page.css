@@ -254,6 +254,25 @@ a.in-text-link {
     margin-left: 0;
     margin-right: 0;
 }
+.product--accordion .accordion__label:before {
+    display: none;
+}
+.product--accordion .accordion__label {
+    justify-content: space-between;
+    padding: 0 18px;
+    width: 100%;
+    margin-left: 0;
+}
+.accordion__group .accordion__text .category-description, 
+.accordion__group .accordion__text .category-description .product-blocks p {
+    margin: 0;
+}
+.product--accordion .accordion__group svg {
+    transition: 0.2s ease;
+}
+.product--accordion .accordion__group[data-open=true] svg {
+    rotate: 90deg;
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
