@@ -10,14 +10,28 @@
     {{ shopifyAttributes }}
 >
     <a class="accordion__label" href="#">
-        {{ heading }}
+        {% unless merke == true%}
+            {{ heading }}
+        {% else %}
+            {{ product.vendor }}
+        {% endunless%}
     </a>
     <div class="accordion__text fs-body-small">
-        {% case heading %}
-            {% when 'Dimensjoner' %}
-            {% when 'Materiale' %}
-            {% else %}
-                {{ content }}
-        {% endcase %}
+        {% unless merke == true%}
+            {% case heading %}
+                {% when 'Dimensjoner' %}
+                {% when 'Materiale' %}
+                {% else %}
+                    {{ content }}
+            {% endcase %}
+        {% else %}
+            {% assign vendorHandle = product.vendor | handleize %}
+            {% for article in blog_data.articles %}
+                {% assign handle-check = blog_data.title | downcase | append: "/" | append: vendorHandle %}
+                {% if handle-check == article.handle %}
+                    {{ article.content }}
+                {% endif %}
+            {% endfor%}
+        {% endunless %}
     </div>
 </div>
