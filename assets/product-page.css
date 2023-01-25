@@ -57,9 +57,20 @@ input.qtyplus {
     padding-top: 3px;
 }
 a.download_link {
-    display: block;
+    display: flex;
     text-decoration: underline;
-    margin-bottom: 1.2rem;
+    margin-bottom: calc(var(--spacing-unit)*3);
+    margin-top: calc(var(--spacing-unit)*3);
+    flex-direction: row;
+    justify-content: center;
+}
+a.download_link svg {
+    max-height: 22px;
+    margin-right: calc(var(--spacing-unit)*3);
+    color: var(--color-text-heading);
+}
+.product-blocks a.download_link p {
+    margin: 0;
 }
 @media (min-width: 425px) {
     .pf-shop__container .pf-container__qty {
