@@ -10,11 +10,14 @@
     {{ shopifyAttributes }}
 >
     <a class="accordion__label" href="#">
-        {% unless merke == true %}
-            {{ heading }}
-        {% else %}
-            {{ product.vendor }}
-        {% endunless%}
+        <span>
+            {% unless merke == true %}
+                {{ heading }}
+            {% else %}
+                {{ product.vendor }}
+            {% endunless%}
+    </span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" fill="none"><path stroke="#464039" d="m.606 1 8.486 8.485-8.486 8.486"></path></svg>
     </a>
     <div class="accordion__text fs-body-small">
         {% unless merke == true %}
