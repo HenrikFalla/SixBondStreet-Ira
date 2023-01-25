@@ -62,7 +62,7 @@
         "006fbf80-9674-4588-845d-d234f689cf3a": {
           "type": "accordion",
           "settings": {
-            "style": "open",
+            "style": "closed",
             "heading": "Accordion heading",
             "content": "",
             "vendor": true,
