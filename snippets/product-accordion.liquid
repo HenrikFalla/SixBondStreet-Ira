@@ -13,6 +13,11 @@
         {{ heading }}
     </a>
     <div class="accordion__text fs-body-small">
-        {{ content }}
+        {% case heading %}
+            {% when 'Dimensjoner' %}
+            {% when 'Materiale' %}
+            {% else %}
+                {{ content }}
+        {% endcase %}
     </div>
 </div>
