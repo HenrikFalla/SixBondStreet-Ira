@@ -1,0 +1,18 @@
+{% assign prevIndex = forloop.index0 | minus: 1 %}
+{% assign nextIndex = forloop.index0 | plus: 1 %}
+{% if forloop.first or section.blocks[prevIndex].type != 'accordion' %}
+    <div class="accordion rte product--accordion product__block product__block--small">
+{% endif %}
+<div
+    class="accordion__group"
+    data-index="{{ forloop.index0 }}"
+    data-open="{% if style == 'open' %}true{% else %}false{% endif %}"
+    {{ shopifyAttributes }}
+>
+    <a class="accordion__label" href="#">
+        {{ heading }}
+    </a>
+    <div class="accordion__text fs-body-small">
+        {{ content }}
+    </div>
+</div>

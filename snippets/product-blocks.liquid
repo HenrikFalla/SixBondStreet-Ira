@@ -435,74 +435,14 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
          <div class="product__reviews">
     <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
   </div>
-    {%- when 'accordion' -%}
-        
-        
-      {%- assign prevIndex = forloop.index0 | minus: 1 -%}
-      {%- assign nextIndex = forloop.index0 | plus: 1 -%}
-      {%- if forloop.first or section.blocks[prevIndex].type != 'accordion' -%}
-        <div class="accordion rte product--accordion product__block product__block--small">
-      {%- endif -%}
-      <div
-        class="accordion__group"
-        data-index="{{ forloop.index0 }}"
-        data-open="{% if block.settings.style == 'open' %}true{% else %}false{% endif %}"
-        {{ block.shopify_attributes }}
-      >
-        {% if mats == null and block.settings.heading == 'Materiale'%}
-        {%else%}
-          <a class="accordion__label" href="#">
-          {{ block.settings.heading }}
-        </a>
-        {%endif%}
-        <div class="accordion__text fs-body-small">
-          
-          {%if block.settings.heading  == 'Dimensjoner'%}  
-          {%  assign dimensjoner = "Sittedybde" | append: ":" | append: product.metafields.product_data.sittedybde | append: "," | append: "Sittehøyde" | append: ":" | append: product.metafields.product_data.sittehoyde | append: "," | append: "Armlene" | append: ":" | append: product.metafields.product_data.hoyde_armlene | append: "," | append: "Diameter" | append: ":" | append: product.metafields.product_data.diameter | append: "," | append: "Bredde" | append: ":" | append: product.metafields.product_data.produktbredde | append: "," | append: "Dybde" | append: ":" | append: product.metafields.product_data.produktdybde | append: "," | append: "Lengde" | append: ":" | append: product.metafields.product_data.produktlengde | append: "," | append: "Høyde" | append: ":" | append: product.metafields.product_data.produkth_yde | append: "," | append: "Vekt" | append: ":" | append: product.metafields.product_data.produktvekt | split: ","
-%}
-            {% for dimensjon in dimensjoner %}
-                          {% assign dim_i = o %}
-                          {% assign values_dim = dimensjon | split: ":" %}
-                          {% unless values_dim[1] == blank %}
-                              {% unless values_dim[1] == "0" %}
-                                  {% if values_dim[0] == "Vekt" %}
-                                      {% assign dim_trail = "kg" %}
-                                  {% else %}
-                                      {% assign dim_trail = "cm" %}
-                                  {% endif %}
-                                  <span>
-                                      {% assign dim_i = 0 %}
-                                      {% for value_dim in values_dim %}
-                                          {% if dim_i == 0 %}
-                                              <strong>{{ value_dim }}: </strong>
-                                          {% else %}
-                                              {{ value_dim }} {{ dim_trail }}
-                                          {% endif %}
-                                          {% assign dim_i = dim_i | plus: 1 %}
-                                      {% endfor %}
-                                  </span><br>
-                              {% endunless %}
-                          {% endunless %}
-                      {% endfor %}
-          
-         {% elsif block.settings.heading  == 'Materiale'  %}
-            {{mats}}
-     
-          
-            {%elsif block.settings.heading  == 'Ytterligere informasjon'%}
-     <strong>Varenummer:</strong> {{ product.selected_or_first_available_variant.sku }}
-          
-          
-          {%else%}
-                   {{ block.settings.content }}
-          {%endif%}
-
-        </div>
-      </div>
-      {% if forloop.last or section.blocks[nextIndex].type != 'accordion' %}
-          <br>
-      </div>
-      {% endif %}
+  {%- when 'accordion' -%}
+    {% render 'product-accordion' with
+      product: product,
+      style: block.settings.style,
+      shopifyAttributes: block.shopify_attributes,
+      heading: block.settings.heading,
+      content: block.settings.content
+    %}
   {%- when 'inventory_counter' -%}
       {%- render 'inventory-counter' with
         product: product,
