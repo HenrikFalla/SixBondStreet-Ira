@@ -73,7 +73,7 @@
           "type": "accordion",
           "settings": {
             "style": "closed",
-            "heading": "Accordion heading",
+            "heading": "Dimensjoner",
             "content": "<p>TEst 1234<\/p>",
             "vendor": false,
             "vendor-blog": ""
