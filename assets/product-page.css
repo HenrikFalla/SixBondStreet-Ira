@@ -290,6 +290,7 @@ a.in-text-link {
     border-left: var(--color-border-input) 1px solid;
     border-bottom: var(--color-border-input) 1px solid;
     border-right: var(--color-border-input) 1px solid;
+    color: var(--color-text-heading);
 }
 .accordion__group .accordion__text .accordion__data-div:first-child {
     border-top: var(--color-border-input) 1px solid;
