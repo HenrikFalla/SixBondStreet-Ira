@@ -441,7 +441,9 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
       style: block.settings.style,
       shopifyAttributes: block.shopify_attributes,
       heading: block.settings.heading,
-      content: block.settings.content
+      content: block.settings.content,
+      merke: block.settings.vendor,
+      merke-blog: block.settings.blog
     %}
   {%- when 'inventory_counter' -%}
       {%- render 'inventory-counter' with
