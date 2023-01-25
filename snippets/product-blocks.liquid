@@ -436,9 +436,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
     <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
   </div>
   {%- when 'accordion' -%}
-    {% if block.settings.blog %}
-      {% assign blog_data = blogs[block.settings.blog] %}
-    {% endif%}
+    {% assign blog_data = blogs[block.settings.blog] %}
     {% render 'product-accordion' with
       product: product,
       style: block.settings.style,
