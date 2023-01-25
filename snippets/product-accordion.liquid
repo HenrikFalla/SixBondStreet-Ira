@@ -35,3 +35,6 @@
         {% endunless %}
     </div>
 </div>
+{% if forloop.first or section.blocks[prevIndex].type != 'accordion' %}
+</div>
+{% endif %}
