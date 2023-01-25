@@ -278,6 +278,22 @@ a.in-text-link {
     padding-left: calc(var(--spacing-unit)*8);
     padding-right: calc(var(--spacing-unit)*6);
 }
+.accordion__group .accordion__text .accordion__data-div .accordion__data-span {
+    margin: 0;
+    padding: calc(var(--spacing-unit)*2) calc(var(--spacing-unit)*4);
+}
+.accordion__group .accordion__text .accordion__data-div {
+    margin: 0;
+    padding: 0;
+}
+.accordion__group .accordion__text .accordion__data-div > * {
+    border-left: var(--color-border-input) 1px solid;
+    border-bottom: var(--color-border-input) 1px solid;
+    border-right: var(--color-border-input) 1px solid;
+}
+.accordion__group .accordion__text .accordion__data-div:first-child {
+    border-top: var(--color-border-input) 1px solid;
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
