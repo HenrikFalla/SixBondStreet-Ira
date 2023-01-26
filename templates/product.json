@@ -93,8 +93,8 @@
           "type": "accordion",
           "settings": {
             "style": "closed",
-            "heading": "Accordion heading",
-            "content": "<p>TEST459851<\/p>",
+            "heading": "Mer produktinformasjon",
+            "content": "<p>Antall kolli: {{ product.metafields.product_data.antall_kolli.value }}<\/p>",
             "vendor": false,
             "vendor-blog": ""
           }
