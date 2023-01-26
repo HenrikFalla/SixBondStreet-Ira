@@ -81,6 +81,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
             <div class="trigger_orb" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}>{{instockorb}}</div>
             <span class="variant-inventory" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}><span>{{ current_variant.inventory_quantity }}</span> på lager.</span>
               <span data-stock-availability class="dom-message" {% if current_variant.inventory_quantity > 0 %}style="display:none"{% endif %}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.61 122.88"><defs><style>.cls-1{stroke-linecap:round}.cls-1,.cls-2{fill:none;stroke:#1d1d1b;stroke-miterlimit:10;stroke-width:5px}</style></defs><g id="Layer_5"><path d="M46.89 28.67V8.41c0-3.26 2.64-5.91 5.91-5.91h111.06c3.26 0 5.91 2.64 5.91 5.91v96.04h-75.3M63.14 104.44H52.8c-3.26 0-5.91-2.64-5.91-5.91V63.14M178.27 104.44h-8.51" class="cls-2"/><path d="M169.76 34.06h24.79c1.92 0 3.74.9 4.89 2.44l23.43 31.11c.8 1.06 1.23 2.36 1.23 3.68V98.4c0 3.33-2.7 6.03-6.03 6.03l-9.18.3" class="cls-2"/><circle cx="78.79" cy="104.44" r="15.94" class="cls-2"/><circle cx="193.66" cy="104.44" r="15.94" class="cls-2"/><path d="M19.3 27.73h46.24M10.13 45.62h55.41M2.5 63.51h63.04" class="cls-1"/></g></svg>
               <span>
                 {% if current_variant.metafields.product_data.leveringstid != blank %}
                   {{ current_variant.metafields.product_data.leveringstid }}
