@@ -219,7 +219,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
 
     {%- when 'buy_buttons' -%}
       <div class="pf__message fs-body-base" data-error-message></div>
-      <div class="pf__actions">
+      <div class="pf__actions{% if block.settings.show_qty_picker == true %} qty-selector-active{% endif %}">
         {% if block.settings.show_qty_picker == true %}
           <div class="pf-container">
             <div class="pf-element pf-element__qty">

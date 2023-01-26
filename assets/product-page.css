@@ -300,6 +300,9 @@ a.in-text-link {
     margin-left: auto;
     margin-right: auto;
 }
+.pf-element__qty {
+    padding-top: 0;
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
