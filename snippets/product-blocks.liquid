@@ -219,22 +219,22 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
 
     {%- when 'buy_buttons' -%}
       <div class="pf__message fs-body-base" data-error-message></div>
-      {% if block.settings.show_qty_picker == true %}
-        <div class="pf-container">
-          <div class="pf-element pf-element__qty">
-            <div class="product-qty-selector">
-              <input
-                type="number"
-                name="quantity" 
-                id="Quantity-{{ section.id }}"
-                value="1" min="1" pattern="[0-9]*"
-                data-quantity-input
-              >
+      <div class="pf__actions">
+        {% if block.settings.show_qty_picker == true %}
+          <div class="pf-container">
+            <div class="pf-element pf-element__qty">
+              <div class="product-qty-selector">
+                <input
+                  type="number"
+                  name="quantity" 
+                  id="Quantity-{{ section.id }}"
+                  value="1" min="1" pattern="[0-9]*"
+                  data-quantity-input
+                >
+              </div>
             </div>
           </div>
-        </div>
-      {% endif %}
-      <div class="pf__actions{% if block.settings.show_qty_picker == true %} qty-select-active{% endif %}">
+        {% endif %}
         <div class="product-form__item product-form__item--submit
           {%- if dynamic_checkout_buttons %} product-form__item--payment-button {%- endif -%}
           {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
