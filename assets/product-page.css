@@ -317,6 +317,15 @@ a.in-text-link {
     width: 100%;
     max-width: calc(100% - 60px);
 }
+.product__price-lead-time .product-lead-time span.dom-message svg {
+    height: 22px;
+    padding-right: calc(var(--spacing-unit)*1);
+}
+.product__price-lead-time .product-lead-time span.dom-message {
+    align-items: center;
+    display: flex;
+    margin: 0;
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
