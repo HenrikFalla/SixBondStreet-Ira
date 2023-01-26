@@ -234,7 +234,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
           </div>
         </div>
       {% endif %}
-      <div class="pf__actions">
+      <div class="pf__actions{% if block.settings.show_qty_picker == true %} qty-select-active{% endif %}">
         <div class="product-form__item product-form__item--submit
           {%- if dynamic_checkout_buttons %} product-form__item--payment-button {%- endif -%}
           {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
