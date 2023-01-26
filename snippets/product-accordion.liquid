@@ -81,7 +81,7 @@
                     </div>
                 {% when 'Materiale' %}
                 {% when 'Mer produktinformasjon' %}
-                    <span>Varenummer: {{ product.sku }}</span>
+                    <span>Varenummer: {{ product.selected_or_first_available_variant.sku }}</span>
                     {{ content }}
                 {% else %}
                     {{ content }}
