@@ -80,6 +80,9 @@
                         {% endif %}
                     </div>
                 {% when 'Materiale' %}
+                {% when 'Mer produktinformasjon' %}
+                    <span>Varenummer: {{ product.sku }}</span>
+                    {{ content }}
                 {% else %}
                     {{ content }}
             {% endcase %}
