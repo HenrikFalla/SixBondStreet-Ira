@@ -303,6 +303,20 @@ a.in-text-link {
 .pf-element__qty {
     padding-top: 0;
 }
+.qty-selector-active {
+    justify-content: space-between;
+    display: flex;
+}
+.qty-selector-active .product-qty-selector input {
+    width: 48px;
+    height: 48px;
+    border: var(--color-border-button-secondary) 1px solid;
+    border-radius: 50px;
+}
+.qty-selector-active .product-form__item--submit {
+    width: 100%;
+    max-width: calc(100% - 60px);
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
