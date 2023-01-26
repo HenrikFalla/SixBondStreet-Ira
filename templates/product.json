@@ -92,7 +92,7 @@
         "ad3d155e-5dcd-4a9c-abcb-35c39d6f88d6": {
           "type": "accordion",
           "settings": {
-            "style": "open",
+            "style": "closed",
             "heading": "Mer produktinformasjon",
             "content": "<p>Antall kolli: {{ product.metafields.product_data.antall_kolli.value }}<\/p>",
             "vendor": false,
