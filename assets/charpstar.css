@@ -20,3 +20,8 @@ bottom: 8px;
 right: 8px;
 display : none;
 }
+@media (min-width: 40em) {
+    .model-viewer-wrapper {
+        padding-top: 60%;
+    }
+}
