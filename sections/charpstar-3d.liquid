@@ -3,7 +3,9 @@
     {% for variant in product.variants %}
         {% assign options = variant.options | split: "," %}
         {% for option in options %}
+            <span>{{ option }}</span>
             {% for textile in threed-textiles %}
+                <span>{{ textile }}</span>
                 {% if textile == option %}
                     <span> found: {{ textile }}</span>
                 {% endif %}
