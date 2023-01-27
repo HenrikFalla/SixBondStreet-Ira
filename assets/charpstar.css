@@ -1,9 +1,22 @@
-.AR-3D {
-    display: block;
-    position: relative;
+.model-viewer-wrapper {
+position: relative;
+padding-top: 100%;
+margin: 0
 }
-.charpstarARViewer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+
+model-viewer {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+}
+
+#charpstarViewerControls {
+position: absolute;
+display: flex;
+flex-direction: column;
+align-items: left;
+bottom: 8px;
+right: 8px;
+display : none;
 }
