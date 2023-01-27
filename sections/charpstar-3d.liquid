@@ -1,4 +1,7 @@
 {% assign threed-textiles = section.settings.threed-viewer-textiles | split: "," %}
+{% for textile in threed-textiles %}
+    <span>{{ textile }}</span>
+{% endfor%}
 <section class="description">
     <div class="description__container">
         {% render 'charpstar-3d-viewer' %}
