@@ -6,7 +6,13 @@
             {% assign control-option = option | remove: '"' | remove: "[" | remove: "]" %}
             {% for textile in threed-textiles %}
                 {% if textile == control-option %}
-                    <span> found: {{ textile }}</span>
+                    <section class="description">
+                        <div class="description__container">
+                            {% render 'charpstar-3d-viewer' with
+                                sku: variant.sku
+                            %}
+                        </div>
+                    </section>
                 {% endif %}
             {% endfor%}
         {% endfor%}
