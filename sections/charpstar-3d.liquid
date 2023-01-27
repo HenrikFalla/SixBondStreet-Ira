@@ -1,7 +1,18 @@
 {% assign threed-textiles = section.settings.threed-viewer-textiles | split: "," %}
-{% for textile in threed-textiles %}
-    <span>{{ textile }}</span>
-{% endfor%}
+{% unless product.has_only_default_variant %}
+    {% for variant in product.variants %}
+        {% assign options = variant.options | split: "," %}
+        {% for option in options %}
+            {% for textile in threed-textiles %}
+                {% if textile == option %}
+                    <span> found: {{ textile }}</span>
+                {% endif %}
+            {% endfor%}
+        {% endfor%}
+    {% endfor%}
+{% else %}
+
+{% endunless %}
 <section class="description">
     <div class="description__container">
         {% render 'charpstar-3d-viewer' %}
