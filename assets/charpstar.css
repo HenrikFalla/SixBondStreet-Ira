@@ -24,6 +24,13 @@ model-viewer {
     background: #fff;
     border-radius: 35px;    
 }
+#charpstarViewerControls #charpstarViewerVariant {
+    border: none;
+    border-radius: 35px;
+    background-color: var(--color-background-button);
+    color: var(--color-text-button);
+    padding: calc(var(--spacing-unit)*1) calc(var(--spacing-unit)*3);
+}
 @media (min-width: 40em) {
     .model-viewer-wrapper {
         padding-top: 60%;
