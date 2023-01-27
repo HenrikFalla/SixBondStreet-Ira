@@ -1,4 +1,4 @@
-{% assign 3d-textiles = section.settings.3d-viewer-textiles | split: "," %}
+{% assign 3d-textiles = section.settings.3d-viewer-textiles.value | split: "," %}
 <section class="description">
     <div class="description__container">
         {% render 'charpstar-3d-viewer' %}
@@ -8,12 +8,12 @@
 {% schema %}
 {
     "name": "CharpstAR 3D Viewer",
-   "settings": [
+    "settings": [
         {
             "type": "text",
             "id": "3d-viewer-textiles",
             "label": "3D viewer trigger textiles",
-            "default": "",
+            "default": "Bolt - Marble",
             "info": "Type in the names of the textiles that should trigger an attempt at rendering the 3D viewer for configurable products. Separate by comma. Type the names as they are set for the variants."
         }
    ],
