@@ -13,6 +13,10 @@
     width: 260px;
     margin-right: 25px;
     flex-shrink: 0;
+}@media (min-width: 40em) {
+    .s-inline-section {
+        margin: calc(var(--spacing-unit)*6) 0;
+    }
 }
 @media screen and (min-width: 78em) {
     .collection__main-area {
