@@ -20,7 +20,7 @@
   assign ar-light = section.settings.charpstar_light
   assign ar-dark = section.settings.charpstar_dark
   assign ar-hytte = section.settings.charpstar_hytte
-  
+  assign ar-media = section.settings.charpstar_image | asset_url
   
   if media_layout == "grid"
     assign sizes = "(max-width: 640px) calc(100vw - 40px), (max-width: 960px) calc(50vw / 2), calc(66vw / 2)"
@@ -51,14 +51,14 @@
       {% if product.has_only_default_variant %}
         {% assign productVariant = product.selected_or_first_available_variant.sku %}
         <div class="charpstarviewer-container">
-        <img id = "charpstarARViewer" style = "display:none" width = "65px" src="https://js.charpstar.net/sbs/AR.gif" data-articleid="{{ productVariant }}">
+        <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media }}" data-articleid="{{ productVariant }}">
         </div>
       {% else %}
         <div class="charpstarviewer-container">
           {% for variant in product.variants %}
             {% if variant.option1 == ar-light %}
               <div class="charpstarviewer-inner-container">
-                <img id = "charpstarARViewer" style = "display:none" width = "65px" src="https://js.charpstar.net/sbs/AR.gif" data-articleid="{{ variant.sku }}">
+                <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media }}" data-articleid="{{ variant.sku }}">
                 <span>{{ variant.option1 }}</span>
               </div>
             {% elsif variant.option1 == ar-dark %}
