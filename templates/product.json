@@ -134,7 +134,10 @@
         "enable_sticky_sidebar": true,
         "enable_full_width": true,
         "media_layout": "column",
-        "enable_video_looping": true
+        "enable_video_looping": true,
+        "charpstar_light": "Bolt - Marble",
+        "charpstar_dark": "Braveheart - Charcoal",
+        "charpstar_hytte": "Geilo - Coffee"
       }
     },
     "4ac52392-13b4-413f-a01f-32191c6ebcec": {
