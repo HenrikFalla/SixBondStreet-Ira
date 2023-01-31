@@ -47,6 +47,7 @@
     <div class="product__media-container mobile-only">
       {% if product.has_only_default_variant %}
         {% assign productVariant = product.current_variant.sku %}
+        {{ productVariant }}
         <div class="charpstarviewer-container">
         <img id = "charpstarARViewer" style = "display:none" width = "65px" src="https://js.charpstar.net/sbs/AR.gif" data-articleid="{{ productVariant }}">
         </div>
