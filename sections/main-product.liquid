@@ -47,7 +47,6 @@
     <div class="product__media-container mobile-only">
       {% if product.has_only_default_variant %}
         {% assign productVariant = product.selected_or_first_available_variant.sku %}
-        {{ product.selected_or_first_available_variant.sku }}
         <div class="charpstarviewer-container">
         <img id = "charpstarARViewer" style = "display:none" width = "65px" src="https://js.charpstar.net/sbs/AR.gif" data-articleid="{{ productVariant }}">
         </div>
@@ -343,6 +342,21 @@
         "type": "checkbox",
         "label": "t:sections.main_product.settings.enable_video_looping.label",
         "default": true
+      },
+      {
+        "id": "charpstar_light",
+        "type": "text",
+        "label": "AR Light textile name"
+      },
+      {
+        "id": "charpstar_dark",
+        "type": "text",
+        "label": "AR Dark textile name"
+      },
+      {
+        "id": "charpstar_hytte",
+        "type": "text",
+        "label": "ARK Hytte textile name"
       }
     ],
     "blocks": [
