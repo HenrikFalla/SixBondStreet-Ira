@@ -45,6 +45,21 @@
 
   <div class="product__content">
     <div class="product__media-container mobile-only">
+      {% if product.has_only_default_variant %}
+        {% assign productVariant = product.current_variant.sku %}
+        <div class="charpstarviewer-container">
+        <img id = "charpstarARViewer" style = "display:none" width = "65px" src="https://js.charpstar.net/sbs/AR.gif" data-articleid="{{ productVariant }}">
+        </div>
+      {% else %}
+        <div class="charpstarviewer-container">
+          {% for variant in product.variants %}
+            <div class="charpstarviewer-inner-container">
+              <img id = "charpstarARViewer" style = "display:none" width = "65px" src="https://js.charpstar.net/sbs/AR.gif" data-articleid="{{ variant.sku }}">
+              <span>{{ variant.option.name }}</span>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
       <div class="product__media product__media--{{ media_layout }}" data-slider>
         {%- for media in product.media -%}
           {%- if forloop.first or media.id == featured_media.id -%}
