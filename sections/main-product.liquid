@@ -17,6 +17,9 @@
   assign enable_sticky_sidebar = section.settings.enable_sticky_sidebar
 
   assign blog-merke = blogs[section.settings.merke]
+  assign ar-light = section.settings.charpstar_light
+  assign ar-dark = section.settings.charpstar_dark
+  assign ar-hytte = section.settings.charpstar_hytte
   
   
   if media_layout == "grid"
@@ -53,10 +56,14 @@
       {% else %}
         <div class="charpstarviewer-container">
           {% for variant in product.variants %}
-            <div class="charpstarviewer-inner-container">
-              <img id = "charpstarARViewer" style = "display:none" width = "65px" src="https://js.charpstar.net/sbs/AR.gif" data-articleid="{{ variant.sku }}">
-              <span>{{ variant.option.name }}</span>
-            </div>
+            {% if variant.option1 == ar-light %}
+              <div class="charpstarviewer-inner-container">
+                <img id = "charpstarARViewer" style = "display:none" width = "65px" src="https://js.charpstar.net/sbs/AR.gif" data-articleid="{{ variant.sku }}">
+                <span>{{ variant.option1 }}</span>
+              </div>
+            {% elsif variant.option1 == ar-dark %}
+            {% elsif variant.option1 == ar-hytte %}
+            {% endif %}
           {% endfor %}
         </div>
       {% endif %}
