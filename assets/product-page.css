@@ -346,6 +346,10 @@ a.in-text-link {
     text-align: center;
     max-width: 65px;
 }
+/* Hides 3D viewers without models */
+div.shopify-section:has([data-activemodel='false']) {
+    display: none;
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
