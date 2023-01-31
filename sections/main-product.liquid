@@ -47,26 +47,34 @@
 >
 
   <div class="product__content">
+    {% if product.has_only_default_variant %}
+      {% assign productVariant = product.selected_or_first_available_variant.sku %}
+      <div class="charpstarviewer-container">
+      <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ productVariant }}">
+      </div>
+    {% else %}
+      <div class="charpstarviewer-container">
+        {% for variant in product.variants %}
+          {% if variant.option1 == ar-light %}
+            <div class="charpstarviewer-inner-container">
+              <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
+              <span>{{ variant.option1 }}</span>
+            </div>
+          {% elsif variant.option1 == ar-dark %}
+            <div class="charpstarviewer-inner-container">
+              <img id = "charpstarARViewerMork" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
+              <span>{{ variant.option1 }}</span>
+            </div>
+          {% elsif variant.option1 == ar-hytte %}
+            <div class="charpstarviewer-inner-container">
+              <img id = "charpstarARViewerHytte" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
+              <span>{{ variant.option1 }}</span>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
     <div class="product__media-container mobile-only">
-      {% if product.has_only_default_variant %}
-        {% assign productVariant = product.selected_or_first_available_variant.sku %}
-        <div class="charpstarviewer-container">
-        <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ productVariant }}">
-        </div>
-      {% else %}
-        <div class="charpstarviewer-container">
-          {% for variant in product.variants %}
-            {% if variant.option1 == ar-light %}
-              <div class="charpstarviewer-inner-container">
-                <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
-                <span>{{ variant.option1 }}</span>
-              </div>
-            {% elsif variant.option1 == ar-dark %}
-            {% elsif variant.option1 == ar-hytte %}
-            {% endif %}
-          {% endfor %}
-        </div>
-      {% endif %}
       <div class="product__media product__media--{{ media_layout }}" data-slider>
         {%- for media in product.media -%}
           {%- if forloop.first or media.id == featured_media.id -%}
