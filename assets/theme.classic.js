@@ -6126,7 +6126,7 @@
     adaptiveHeight: false,
     draggable: false,
     fade: true,
-    pageDots: false,
+    pageDots: true,
     prevNextButtons: false,
     wrapAround: true
   };
