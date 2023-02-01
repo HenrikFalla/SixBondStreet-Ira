@@ -388,9 +388,15 @@ div.shopify-section:has([data-activemodel='false']) {
     .shopify-section.full-width .product__media-item.initial {
         padding-top: 0;
     }
+    .charpstarviewer-container {
+        right: 50%;
+    }
 }
 @media (min-width: 60em) {
     .shopify-section.full-width .product__media-item {
         padding: calc(var(--spacing-unit)*3);
+    }
+    .charpstarviewer-container {
+        right: calc(340px + var(--spacing-unit)*2);
     }
 }
