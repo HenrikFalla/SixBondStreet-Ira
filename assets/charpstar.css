@@ -27,6 +27,7 @@ model-viewer {
 #charpstarViewerControls #charpstarViewerVariant {
     padding: calc(var(--spacing-unit)*1) calc(var(--spacing-unit)*3);
     border: none;
+    padding-right: 15px;
 }
 @media (min-width: 40em) {
     .model-viewer-wrapper {
