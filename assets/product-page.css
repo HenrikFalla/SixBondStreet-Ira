@@ -356,6 +356,9 @@ div.shopify-section:has([data-activemodel='false']) {
     left: 0;
     right: 0;
 }
+.mobile-only .product__media .mobile-carousel__pagination {
+    display: none;
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
