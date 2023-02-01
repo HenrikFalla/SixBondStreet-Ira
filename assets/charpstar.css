@@ -25,9 +25,11 @@ model-viewer {
     align-items: center;
 }
 #charpstarViewerControls #charpstarViewerVariant {
-    padding: calc(var(--spacing-unit)*1) calc(var(--spacing-unit)*3);
-    border: none;
-    padding-right: 15px;
+    padding: calc(var(--spacing-unit)*3) calc(var(--spacing-unit)*8) calc(var(--spacing-unit)*3) calc(var(--spacing-unit)*3);
+    border: var(--color-background-button) 1px solid;
+    border-radius: 25px;
+    margin-left: calc(var(--spacing-unit)*2);
+    background: rgb(255 255 255 / 40%);
 }
 @media (min-width: 40em) {
     .model-viewer-wrapper {
