@@ -350,6 +350,12 @@ a.in-text-link {
 div.shopify-section:has([data-activemodel='false']) {
     display: none;
 }
+/* Flickity gallery styling */
+.mobile-only .product__media ol.flickity-page-dots {
+    bottom: calc(var(--spacing-unit)*2);
+    left: 0;
+    right: 0;
+}
 @media (max-width: 40em) {
     form.product-form .product-form__controls-group {
         max-height: 180px;
