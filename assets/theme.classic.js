@@ -6126,7 +6126,7 @@
     adaptiveHeight: false,
     draggable: false,
     fade: true,
-    pageDots: true,
+    pageDots: false,
     prevNextButtons: false,
     wrapAround: true
   };
@@ -6274,7 +6274,7 @@
         adaptiveHeight: true,
         cellAlign: 'left',
         cellSelector: '[data-slide]',
-        pageDots: false,
+        pageDots: true,
         prevNextButtons: false,
         watchCSS: true,
         wrapAround: true,
