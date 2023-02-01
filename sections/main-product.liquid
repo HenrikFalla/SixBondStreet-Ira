@@ -96,7 +96,9 @@
         {%- endfor -%}
 
         {%- if product.media.size > 1 -%}
-          {% render 'carousel-pagination' %}
+          {% render 'carousel-pagination' with
+            dotsOnly = true
+          %}
         {%- endif -%}
 
         {%- if product.media.size == 0 -%}
