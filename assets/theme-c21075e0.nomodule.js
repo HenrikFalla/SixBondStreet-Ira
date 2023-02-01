@@ -6117,7 +6117,7 @@ System.register([], (function (exports, module) {
         adaptiveHeight: false,
         draggable: false,
         fade: true,
-        pageDots: true,
+        pageDots: false,
         prevNextButtons: false,
         wrapAround: true
       };
@@ -6265,7 +6265,7 @@ System.register([], (function (exports, module) {
             adaptiveHeight: true,
             cellAlign: 'left',
             cellSelector: '[data-slide]',
-            pageDots: true,
+            pageDots: false,
             prevNextButtons: false,
             watchCSS: true,
             wrapAround: true,
@@ -6339,7 +6339,7 @@ System.register([], (function (exports, module) {
             this.carousel = new Flickity(slider, {
               adaptiveHeight: false,
               cellSelector: sel$e.slide,
-              pageDots: true,
+              pageDots: false,
               prevNextButtons: false,
               setGallerySize: false,
               wrapAround: true,
@@ -10487,7 +10487,7 @@ System.register([], (function (exports, module) {
               draggable: true,
               prevNextButtons: false,
               wrapAround: true,
-              pageDots: true,
+              pageDots: false,
               on: {
                 ready: () => {
                   const first = n$1('[data-slide]', this.container);
@@ -11244,7 +11244,7 @@ System.register([], (function (exports, module) {
             }),
             prevNextButtons: false,
             wrapAround: false,
-            pageDots: true
+            pageDots: false
           });
 
           if (images.length > 1) {
@@ -11963,7 +11963,7 @@ System.register([], (function (exports, module) {
               adaptiveHeight: true,
               cellSelector: selectors.slide,
               initialIndex: '.initial',
-              pageDots: true,
+              pageDots: false,
               prevNextButtons: false,
               watchCSS: true,
               wrapAround: true,
