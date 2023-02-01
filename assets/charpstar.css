@@ -28,9 +28,6 @@ model-viewer {
     padding: calc(var(--spacing-unit)*1) calc(var(--spacing-unit)*3);
     border: none;
 }
-#charpstarViewerControls #charpstarViewerVariant::after {
-    content: '{{ chevron.svg | asset_url }}';
-}
 @media (min-width: 40em) {
     .model-viewer-wrapper {
         padding-top: 60%;

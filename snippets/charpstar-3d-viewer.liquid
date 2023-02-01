@@ -12,3 +12,8 @@
     </div>
 </section>
 {{ 'charpstar.css' | asset_url | stylesheet_tag }}
+<style type="text/css">
+    #charpstarViewerControls #charpstarViewerVariant::after {
+        content: '{{ chevron.svg | asset_url }}';
+    }
+</style>
