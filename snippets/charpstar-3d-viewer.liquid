@@ -11,9 +11,9 @@
         </model-viewer>
     </div>
 </section>
-{{ 'charpstar.css' | asset_url | stylesheet_tag }}
 <style type="text/css">
     #charpstarViewerControls #charpstarViewerVariant::after {
-        content: url("data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" stroke="var(--color-text-heading)" fill="none"><path d="m.606 1 8.486 8.485-8.486 8.486"/></svg>");
+        content: '';
+        background-image: url({{ 'chevron.svg' | asset_url | svg_filter }});
     }
 </style>
