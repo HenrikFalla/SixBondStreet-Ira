@@ -6105,7 +6105,7 @@ const slideshowOpts = {
   adaptiveHeight: false,
   draggable: false,
   fade: true,
-  pageDots: false,
+  pageDots: true,
   prevNextButtons: false,
   wrapAround: true
 };
@@ -6253,7 +6253,7 @@ var mobileCarousel = ((node, opts = {}) => {
       adaptiveHeight: true,
       cellAlign: 'left',
       cellSelector: '[data-slide]',
-      pageDots: false,
+      pageDots: true,
       prevNextButtons: false,
       watchCSS: true,
       wrapAround: true,
@@ -6327,7 +6327,7 @@ register('carousel', {
       this.carousel = new Flickity(slider, {
         adaptiveHeight: false,
         cellSelector: sel$e.slide,
-        pageDots: false,
+        pageDots: true,
         prevNextButtons: false,
         setGallerySize: false,
         wrapAround: true,
@@ -10505,7 +10505,7 @@ register('slideshow', {
         draggable: true,
         prevNextButtons: false,
         wrapAround: true,
-        pageDots: false,
+        pageDots: true,
         on: {
           ready: () => {
             const first = n$1('[data-slide]', this.container);
@@ -11262,7 +11262,7 @@ function Lightbox(node) {
       }),
       prevNextButtons: false,
       wrapAround: false,
-      pageDots: false
+      pageDots: true
     });
 
     if (images.length > 1) {
@@ -11981,7 +11981,7 @@ register('product', {
         adaptiveHeight: true,
         cellSelector: selectors.slide,
         initialIndex: '.initial',
-        pageDots: false,
+        pageDots: true,
         prevNextButtons: false,
         watchCSS: true,
         wrapAround: true,

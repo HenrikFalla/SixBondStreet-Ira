@@ -6126,7 +6126,7 @@
     adaptiveHeight: false,
     draggable: false,
     fade: true,
-    pageDots: false,
+    pageDots: true,
     prevNextButtons: false,
     wrapAround: true
   };
@@ -6274,7 +6274,7 @@
         adaptiveHeight: true,
         cellAlign: 'left',
         cellSelector: '[data-slide]',
-        pageDots: false,
+        pageDots: true,
         prevNextButtons: false,
         watchCSS: true,
         wrapAround: true,
@@ -6348,7 +6348,7 @@
         this.carousel = new Flickity(slider, {
           adaptiveHeight: false,
           cellSelector: sel$e.slide,
-          pageDots: false,
+          pageDots: true,
           prevNextButtons: false,
           setGallerySize: false,
           wrapAround: true,
@@ -10554,7 +10554,7 @@
           draggable: true,
           prevNextButtons: false,
           wrapAround: true,
-          pageDots: false,
+          pageDots: true,
           on: {
             ready: () => {
               const first = n$1('[data-slide]', this.container);
@@ -11311,7 +11311,7 @@
         }),
         prevNextButtons: false,
         wrapAround: false,
-        pageDots: false
+        pageDots: true
       });
 
       if (images.length > 1) {
@@ -12030,7 +12030,7 @@
           adaptiveHeight: true,
           cellSelector: selectors.slide,
           initialIndex: '.initial',
-          pageDots: false,
+          pageDots: true,
           prevNextButtons: false,
           watchCSS: true,
           wrapAround: true,
