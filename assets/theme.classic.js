@@ -6348,7 +6348,7 @@
         this.carousel = new Flickity(slider, {
           adaptiveHeight: false,
           cellSelector: sel$e.slide,
-          pageDots: true,
+          pageDots: false,
           prevNextButtons: false,
           setGallerySize: false,
           wrapAround: true,
@@ -11311,7 +11311,7 @@
         }),
         prevNextButtons: false,
         wrapAround: false,
-        pageDots: false
+        pageDots: true
       });
 
       if (images.length > 1) {
