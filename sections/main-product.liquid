@@ -47,33 +47,33 @@
 >
 
   <div class="product__content">
-    {% if product.has_only_default_variant %}
-      {% assign productVariant = product.selected_or_first_available_variant.sku %}
-      <div class="charpstarviewer-container">
-      <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ productVariant }}">
-      </div>
-    {% else %}
-      <div class="charpstarviewer-container">
-        {% for variant in product.variants %}
-          {% if variant.option1 == ar-light %}
-            <div class="charpstarviewer-inner-container">
-              <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
-              <span>{{ variant.option1 }}</span>
-            </div>
-          {% elsif variant.option1 == ar-dark %}
-            <div class="charpstarviewer-inner-container">
-              <img id = "charpstarARViewerMork" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
-              <span>{{ variant.option1 }}</span>
-            </div>
-          {% elsif variant.option1 == ar-hytte %}
-            <div class="charpstarviewer-inner-container">
-              <img id = "charpstarARViewerHytte" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
-              <span>{{ variant.option1 }}</span>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-    {% endif %}
+      {% if product.has_only_default_variant %}
+        {% assign productVariant = product.selected_or_first_available_variant.sku %}
+        <div class="charpstarviewer-container">
+        <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ productVariant }}">
+        </div>
+      {% else %}
+        <div class="charpstarviewer-container">
+          {% for variant in product.variants %}
+            {% if variant.option1 == ar-light %}
+              <div class="charpstarviewer-inner-container">
+                <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
+                <span>{{ variant.option1 }}</span>
+              </div>
+            {% elsif variant.option1 == ar-dark %}
+              <div class="charpstarviewer-inner-container">
+                <img id = "charpstarARViewerMork" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
+                <span>{{ variant.option1 }}</span>
+              </div>
+            {% elsif variant.option1 == ar-hytte %}
+              <div class="charpstarviewer-inner-container">
+                <img id = "charpstarARViewerHytte" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
+                <span>{{ variant.option1 }}</span>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     <div class="product__media-container mobile-only">
       <div class="product__media product__media--{{ media_layout }}" data-slider>
         {%- for media in product.media -%}
@@ -96,9 +96,7 @@
         {%- endfor -%}
 
         {%- if product.media.size > 1 -%}
-          {% render 'carousel-pagination' with
-            dotsOnly = true
-          %}
+          {% render 'carousel-pagination' %}
         {%- endif -%}
 
         {%- if product.media.size == 0 -%}
@@ -597,10 +595,10 @@
             "id": "size",
             "label": "t:sections.main_product.blocks.spacer.settings.size.label",
             "type": "range",
-            "default": 20,
-            "step": 4,
-            "min": 8,
-            "max": 40,
+            "default": 18,
+            "step": 3,
+            "min": 3,
+            "max": 42,
             "unit": "px"
           }          
         ]
