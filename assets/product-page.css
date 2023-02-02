@@ -197,6 +197,10 @@ a.download_link svg {
     margin-top: calc(var(--spacing-unit) * 6);
     margin-bottom: calc(var(--spacing-unit) * 6);
 }
+.product-blocks .product__spacer {
+    margin-top: calc(var(--spacing-unit) * -6);
+    margin-bottom: 0;
+}
 .product-blocks p {
     margin: calc(var(--spacing-unit) * 6) 0;
 }
