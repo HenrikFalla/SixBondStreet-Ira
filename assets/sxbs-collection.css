@@ -16,7 +16,7 @@
 }
 @media (min-width: 40em) {
     .s-inline-section {
-        margin: 0;
+        margin: 0 0 var(--spacing-large) 0;
     }
 }
 @media screen and (min-width: 78em) {
