@@ -18,6 +18,12 @@
           "settings": {
           }
         },
+        "b8c33565-3328-4d81-85ec-40306bc987de": {
+          "type": "spacer",
+          "settings": {
+            "size": 12
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -115,6 +121,7 @@
         "vendor",
         "title",
         "description",
+        "b8c33565-3328-4d81-85ec-40306bc987de",
         "variant_picker",
         "buy_buttons",
         "b4c014bd-0e8b-4b9b-95d7-96b8d2ef5589",
