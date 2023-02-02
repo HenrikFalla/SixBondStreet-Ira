@@ -21,7 +21,7 @@
         "b8c33565-3328-4d81-85ec-40306bc987de": {
           "type": "spacer",
           "settings": {
-            "size": 12
+            "size": 18
           }
         },
         "variant_picker": {
@@ -39,6 +39,12 @@
         "b4c014bd-0e8b-4b9b-95d7-96b8d2ef5589": {
           "type": "price_lead_time",
           "settings": {
+          }
+        },
+        "ffce4a86-1d43-4a2b-977e-ab8237a7b99d": {
+          "type": "spacer",
+          "settings": {
+            "size": 18
           }
         },
         "6ef072e0-33dd-4a8a-b780-4b497a8f3866": {
@@ -63,6 +69,12 @@
             "extra_button_url": "",
             "extra_button_text": "",
             "extra_button_img": "chat-svg"
+          }
+        },
+        "e921ac4e-e234-4bf8-89d6-7b683a31d0a7": {
+          "type": "spacer",
+          "settings": {
+            "size": 18
           }
         },
         "006fbf80-9674-4588-845d-d234f689cf3a": {
@@ -125,9 +137,11 @@
         "variant_picker",
         "buy_buttons",
         "b4c014bd-0e8b-4b9b-95d7-96b8d2ef5589",
+        "ffce4a86-1d43-4a2b-977e-ab8237a7b99d",
         "6ef072e0-33dd-4a8a-b780-4b497a8f3866",
         "5905ce25-16e2-487e-9ab3-630301e4e05d",
         "0e29e6b0-e384-459d-9ede-b430fec9b362",
+        "e921ac4e-e234-4bf8-89d6-7b683a31d0a7",
         "006fbf80-9674-4588-845d-d234f689cf3a",
         "657227f3-fd58-469c-ad48-d89af8361ebc",
         "b509ef7d-ef95-4c61-a4e0-dc26bbd0c6f5",
