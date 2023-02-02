@@ -299,6 +299,9 @@ a.in-text-link {
 .accordion__group .accordion__text .accordion__data-div:first-child {
     border-top: var(--color-border-input) 1px solid;
 }
+.accordion__text a {
+    text-decoration: underline;
+}
 .pf-divider {
     width: calc(100% - 36px);
     margin-left: auto;
