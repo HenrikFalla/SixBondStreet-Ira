@@ -397,8 +397,13 @@ div.shopify-section:has([data-activemodel='false']) {
         padding: calc(var(--spacing-unit)*3);
     }
 }
-@media (min-width: 90em) {
+@media (min-width: 92em) {
     .charpstarviewer-container {
         right: calc((var(--spacing-unit)*5) + 480px);
+    }
+}
+@media (min-width: 100em) {
+    .charpstarviewer-container {
+        right: calc((var(--spacing-unit)*5) + 560px);
     }
 }
