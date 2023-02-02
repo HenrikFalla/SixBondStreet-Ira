@@ -389,14 +389,16 @@ div.shopify-section:has([data-activemodel='false']) {
         padding-top: 0;
     }
     .charpstarviewer-container {
-        right: 50%;
+        right: calc((1 / 3) * 100%);
     }
 }
 @media (min-width: 60em) {
     .shopify-section.full-width .product__media-item {
         padding: calc(var(--spacing-unit)*3);
     }
+}
+@media (min-width: 90em) {
     .charpstarviewer-container {
-        right: calc(340px + var(--spacing-unit)*2);
+        right: calc((var(--spacing-unit)*5) + 480px);
     }
 }
