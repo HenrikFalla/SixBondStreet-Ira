@@ -77,6 +77,22 @@
             "size": 18
           }
         },
+        "66d71756-680a-4e91-8d61-df836d0fb092": {
+          "type": "accordion",
+          "settings": {
+            "style": "open",
+            "heading": "Vedlikehold",
+            "content": "",
+            "vendor": false,
+            "vendor-blog": "",
+            "vedlikehold-blog": "vedlikehold"
+          }
+        },
+        "e8110bb8-23d2-4586-8c50-5f7d0737e561": {
+          "type": "divider",
+          "settings": {
+          }
+        },
         "006fbf80-9674-4588-845d-d234f689cf3a": {
           "type": "accordion",
           "settings": {
@@ -84,7 +100,8 @@
             "heading": "Brand",
             "content": "",
             "vendor": true,
-            "vendor-blog": "merker"
+            "vendor-blog": "merker",
+            "vedlikehold-blog": ""
           }
         },
         "657227f3-fd58-469c-ad48-d89af8361ebc": {
@@ -99,7 +116,8 @@
             "heading": "Dimensjoner",
             "content": "<p>TEst 1234<\/p>",
             "vendor": false,
-            "vendor-blog": ""
+            "vendor-blog": "",
+            "vedlikehold-blog": ""
           }
         },
         "d5e6b4d7-f409-41cc-a663-dbec84286286": {
@@ -114,7 +132,8 @@
             "heading": "Mer produktinformasjon",
             "content": "<p>Antall kolli: {{ product.metafields.product_data.antall_kolli.value }}<\/p>",
             "vendor": false,
-            "vendor-blog": ""
+            "vendor-blog": "",
+            "vedlikehold-blog": ""
           }
         },
         "8d227ce4-db45-4eab-a689-edd841d14ba0": {
@@ -142,6 +161,8 @@
         "5905ce25-16e2-487e-9ab3-630301e4e05d",
         "0e29e6b0-e384-459d-9ede-b430fec9b362",
         "e921ac4e-e234-4bf8-89d6-7b683a31d0a7",
+        "66d71756-680a-4e91-8d61-df836d0fb092",
+        "e8110bb8-23d2-4586-8c50-5f7d0737e561",
         "006fbf80-9674-4588-845d-d234f689cf3a",
         "657227f3-fd58-469c-ad48-d89af8361ebc",
         "b509ef7d-ef95-4c61-a4e0-dc26bbd0c6f5",
