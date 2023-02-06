@@ -85,7 +85,7 @@
                     {{ content }}
                 {% when 'Vedlikehold' %}
                     {% for article in blog_vedlikehold.articles %}
-                        {% for tags in product.tags %}
+                        {% for tag in product.tags %}
                             {% assign handle-check = blog_vedlikehold.title | downcase | append: "/" | append: tag | downcase %}
                             <span>{{ handle-check }}</span>
                             <span>{{ article.handle }}</span>
