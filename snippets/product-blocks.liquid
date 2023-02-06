@@ -453,6 +453,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
   </div>
   {%- when 'accordion' -%}
     {% assign blog_data = blogs[block.settings.vendor-blog] %}
+    {% assign blog_vedlikehold = blogs[blog.settings.vedlikehold-blog] %}
     {% render 'product-accordion' with
       product: product,
       style: block.settings.style,
@@ -460,7 +461,8 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
       heading: block.settings.heading,
       content: block.settings.content,
       merke: block.settings.vendor,
-      blog_data: blog_data
+      blog_data: blog_data,
+      blog_vedlikehold: blog_vedlikehold
     %}
   {%- when 'inventory_counter' -%}
       {%- render 'inventory-counter' with

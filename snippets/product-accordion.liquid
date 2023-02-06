@@ -83,6 +83,16 @@
                 {% when 'Mer produktinformasjon' %}
                     <span>Varenummer: {{ product.selected_or_first_available_variant.sku }}</span>
                     {{ content }}
+                {% when 'Vedlikehold' %}
+                    {% for article in blog_vedlikehold.articles %}
+                        {% for tags in product.tags %}
+                            {% assign handle-check = blog_vedlikehold.title | downcase | append: "/" | append: tag | downcase %}
+                            {% if handle-check == article.handle %}
+                                <h2>{{ article.title }}</h2>
+                                <p>{{ article.content }}</p>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
                 {% else %}
                     {{ content }}
             {% endcase %}
