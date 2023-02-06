@@ -87,10 +87,8 @@
                     {% for article in blog_vedlikehold.articles %}
                         {% for tag in product.tags %}
                             {% assign handle-check = blog_vedlikehold.title | downcase | append: "/" | append: tag | downcase %}
-                            <span>{{ handle-check }}</span>
-                            <span>{{ article.handle }}</span>
                             {% if handle-check == article.handle %}
-                                <h2>{{ article.title }}</h2>
+                                <h2>{{ tag | capitalize }}</h2>
                                 <p>{{ article.content }}</p>
                             {% endif %}
                         {% endfor %}
