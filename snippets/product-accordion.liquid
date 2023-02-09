@@ -1,7 +1,7 @@
 {% assign prevIndex = forloop.index0 | minus: 1 %}
 {% assign nextIndex = forloop.index0 | plus: 1 %}
 {% if forloop.first or section.blocks[prevIndex].type != 'accordion' %}
-    <div class="accordion rte product--accordion product__block product__block--small">
+    <div class="accordion rte product--accordion product__block product__block--small {{ heading | downcase | hendleize}}">
 {% endif %}
 <div
     class="accordion__group"
@@ -84,15 +84,22 @@
                     <span>Varenummer: {{ product.selected_or_first_available_variant.sku }}</span>
                     {{ content }}
                 {% when 'Vedlikehold' %}
+                    {% assign found = false%}
                     {% for article in blog_vedlikehold.articles %}
                         {% for tag in product.tags %}
                             {% assign handle-check = blog_vedlikehold.title | downcase | append: "/" | append: tag | downcase %}
                             {% if handle-check == article.handle %}
+                                {% assign found = true %}
                                 <h3>{{ tag | capitalize }}</h3>
                                 <p>{{ article.content }}</p>
                             {% endif %}
                         {% endfor %}
                     {% endfor %}
+                    {% if found == false %}
+                        <style type="text/css">
+
+                        </style>>
+                    {% endif %}
                 {% else %}
                     {{ content }}
             {% endcase %}
