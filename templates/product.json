@@ -13,19 +13,8 @@
           "settings": {
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "lead_time": {
-          "type": "lead_time",
-          "settings": {
-          }
-        },
-        "divider": {
-          "type": "divider",
-          "disabled": true,
+        "description": {
+          "type": "description",
           "settings": {
           }
         },
@@ -34,44 +23,99 @@
           "settings": {
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": false
+            "show_dynamic_checkout": false,
+            "show_qty_picker": true
           }
         },
-        "description": {
-          "type": "description",
+        "b4c014bd-0e8b-4b9b-95d7-96b8d2ef5589": {
+          "type": "price_lead_time",
           "settings": {
           }
         },
-        "f138415d-c8df-4ec6-851d-147d64d93a46": {
+        "6ef072e0-33dd-4a8a-b780-4b497a8f3866": {
+          "type": "extra_button",
+          "settings": {
+            "extra_button_url": "shopify:\/\/pages\/gratis-tekstilprover",
+            "extra_button_text": "Bestill gratis tekstilprøve",
+            "extra_button_img": "swatch-svg"
+          }
+        },
+        "5905ce25-16e2-487e-9ab3-630301e4e05d": {
+          "type": "extra_button",
+          "settings": {
+            "extra_button_url": "shopify:\/\/pages\/interiortjeneste",
+            "extra_button_text": "Usikker? Få gratis interiørhjelp",
+            "extra_button_img": "consultant-svg"
+          }
+        },
+        "0e29e6b0-e384-459d-9ede-b430fec9b362": {
+          "type": "extra_button",
+          "settings": {
+            "extra_button_url": "",
+            "extra_button_text": "",
+            "extra_button_img": "chat-svg"
+          }
+        },
+        "b509ef7d-ef95-4c61-a4e0-dc26bbd0c6f5": {
           "type": "accordion",
           "settings": {
             "style": "closed",
             "heading": "Dimensjoner",
-            "content": "<p><\/p>"
+            "content": "<p>TEst 1234<\/p>",
+            "vendor": false,
+            "vendor-blog": "",
+            "vedlikehold-blog": ""
           }
         },
-        "503bed45-a61e-444e-b1ed-384e9e5ac9ff": {
+        "e8859ee5-fed6-4f0e-9cf0-168b03aec6f1": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "e314c7e0-01cf-4d1f-8faf-1b46e24e9540": {
           "type": "accordion",
           "settings": {
             "style": "closed",
-            "heading": "Materiale",
-            "content": "<p>{{ product.metafields.product_data.materiale | metafield_text }}<\/p>"
+            "heading": "Vedlikehold",
+            "content": "",
+            "vendor": false,
+            "vendor-blog": "",
+            "vedlikehold-blog": "vedlikehold"
           }
         },
-        "a76d1c85-788a-479a-b903-898ce70fed9f": {
+        "657227f3-fd58-469c-ad48-d89af8361ebc": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "006fbf80-9674-4588-845d-d234f689cf3a": {
           "type": "accordion",
           "settings": {
             "style": "closed",
-            "heading": "Ytterligere informasjon",
-            "content": "<p><\/p>"
+            "heading": "Brand",
+            "content": "",
+            "vendor": true,
+            "vendor-blog": "merker",
+            "vedlikehold-blog": ""
+          }
+        },
+        "d5e6b4d7-f409-41cc-a663-dbec84286286": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "ad3d155e-5dcd-4a9c-abcb-35c39d6f88d6": {
+          "type": "accordion",
+          "settings": {
+            "style": "closed",
+            "heading": "Mer produktinformasjon",
+            "content": "<p>Antall kolli: {{ product.metafields.product_data.antall_kolli.value }}<\/p>",
+            "vendor": false,
+            "vendor-blog": "",
+            "vedlikehold-blog": ""
           }
         },
         "8d227ce4-db45-4eab-a689-edd841d14ba0": {
@@ -89,16 +133,20 @@
       "block_order": [
         "vendor",
         "title",
-        "price",
-        "lead_time",
-        "divider",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
         "description",
-        "f138415d-c8df-4ec6-851d-147d64d93a46",
-        "503bed45-a61e-444e-b1ed-384e9e5ac9ff",
-        "a76d1c85-788a-479a-b903-898ce70fed9f",
+        "variant_picker",
+        "buy_buttons",
+        "b4c014bd-0e8b-4b9b-95d7-96b8d2ef5589",
+        "6ef072e0-33dd-4a8a-b780-4b497a8f3866",
+        "5905ce25-16e2-487e-9ab3-630301e4e05d",
+        "0e29e6b0-e384-459d-9ede-b430fec9b362",
+        "b509ef7d-ef95-4c61-a4e0-dc26bbd0c6f5",
+        "e8859ee5-fed6-4f0e-9cf0-168b03aec6f1",
+        "e314c7e0-01cf-4d1f-8faf-1b46e24e9540",
+        "657227f3-fd58-469c-ad48-d89af8361ebc",
+        "006fbf80-9674-4588-845d-d234f689cf3a",
+        "d5e6b4d7-f409-41cc-a663-dbec84286286",
+        "ad3d155e-5dcd-4a9c-abcb-35c39d6f88d6",
         "8d227ce4-db45-4eab-a689-edd841d14ba0",
         "422395fc-49fe-48ec-a531-c89b8314004d"
       ],
@@ -107,7 +155,11 @@
         "enable_sticky_sidebar": true,
         "enable_full_width": true,
         "media_layout": "column",
-        "enable_video_looping": true
+        "enable_video_looping": true,
+        "charpstar_light": "Bolt - Marble",
+        "charpstar_dark": "Braveheart - Charcoal",
+        "charpstar_hytte": "Geilo - Coffee",
+        "charpstar_image": "shopify:\/\/shop_images\/sxbs_ar.gif"
       }
     },
     "4ac52392-13b4-413f-a01f-32191c6ebcec": {

@@ -1,0 +1,112 @@
+{% assign prevIndex = forloop.index0 | minus: 1 %}
+{% assign nextIndex = forloop.index0 | plus: 1 %}
+{% if forloop.first or section.blocks[prevIndex].type != 'accordion' %}
+    <div class="accordion rte product--accordion product__block product__block--small">
+{% endif %}
+<div
+    class="accordion__group"
+    data-index="{{ forloop.index0 }}"
+    data-open="{% if style == 'open' %}true{% else %}false{% endif %}"
+    {{ shopifyAttributes }}
+>
+    <a class="accordion__label" href="#">
+        <span>
+            {% unless merke == true %}
+                {{ heading }}
+            {% else %}
+                {{ product.vendor }}
+            {% endunless%}
+    </span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" fill="none"><path stroke="#464039" d="m.606 1 8.486 8.485-8.486 8.486"></path></svg>
+    </a>
+    <div class="accordion__text fs-body-small">
+        {% unless merke == true %}
+            {% case heading %}
+                {% when 'Dimensjoner' %}
+                    <div class="accordion__data-div">
+                        {% if product.metafields.product_data.hoyde_armlene %}
+                            <div class="accordion__data-span">
+                                <span class="accordion__data-span-title">Høyde armlene:</span>
+                                <span class="accordion__data-span-content">{{ product.metafields.product_data.hoyde_armlene }} cm</span>
+                            </div>
+                        {% endif %}
+                        {% if product.metafields.product_data.sittehoyde %}
+                            <div class="accordion__data-span">
+                                <span class="accordion__data-span-title">Sittehøyde:</span>
+                                <span class="accordion__data-span-content">{{ product.metafields.product_data.sittehoyde }} cm</span>
+                            </div>
+                        {% endif %}
+                        {% if product.metafields.product_data.sittedybde %}
+                            <div class="accordion__data-span">
+                                <span class="accordion__data-span-title">Sittedybde:</span>
+                                <span class="accordion__data-span-content">{{ product.metafields.product_data.sittedybde }} cm</span>
+                            </div>
+                        {% endif %}
+                        {% if product.metafields.product_data.produkth_yde %}
+                            <div class="accordion__data-span">
+                                <span class="accordion__data-span-title">Høyde:</span>
+                                <span class="accordion__data-span-content">{{ product.metafields.product_data.produkth_yde }} cm</span>
+                            </div>
+                        {% endif %}
+                        {% if product.metafields.product_data.produktdybde %}
+                            <div class="accordion__data-span">
+                                <span class="accordion__data-span-title">Dybde:</span>
+                                <span class="accordion__data-span-content">{{ product.metafields.product_data.produktdybde }} cm</span>
+                            </div>
+                        {% endif %}
+                        {% if product.metafields.product_data.produktbredde %}
+                            <div class="accordion__data-span">
+                                <span class="accordion__data-span-title">Bredde:</span>
+                                <span class="accordion__data-span-content">{{ product.metafields.product_data.produktbredde }} cm</span>
+                            </div>
+                        {% endif %}
+                        {% if product.metafields.product_data.produktlengde %}
+                            <div class="accordion__data-span">
+                                <span class="accordion__data-span-title">Lengde:</span>
+                                <span class="accordion__data-span-content">{{ product.metafields.product_data.produktlengde }} cm</span>
+                            </div>
+                        {% endif %}
+                        {% if product.metafields.product_data.diameter %}
+                            <div class="accordion__data-span">
+                                <span class="accordion__data-span-title">Diameter:</span>
+                                <span class="accordion__data-span-content">{{ product.metafields.product_data.diameter }} cm</span>
+                            </div>
+                        {% endif %}
+                        {% if product.metafields.product_data.produktvekt %}
+                            <div class="accordion__data-span">
+                                <span class="accordion__data-span-title">Vekt:</span>
+                                <span class="accordion__data-span-content">{{ product.metafields.product_data.produktvekt }} kg</span>
+                            </div>
+                        {% endif %}
+                    </div>
+                {% when 'Materiale' %}
+                {% when 'Mer produktinformasjon' %}
+                    <span>Varenummer: {{ product.selected_or_first_available_variant.sku }}</span>
+                    {{ content }}
+                {% when 'Vedlikehold' %}
+                    {% for article in blog_vedlikehold.articles %}
+                        {% for tag in product.tags %}
+                            {% assign handle-check = blog_vedlikehold.title | downcase | append: "/" | append: tag | downcase %}
+                            {% if handle-check == article.handle %}
+                                <h3>{{ tag | capitalize }}</h3>
+                                <p>{{ article.content }}</p>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                {% else %}
+                    {{ content }}
+            {% endcase %}
+        {% else %}
+            {% assign vendorHandle = product.vendor | handleize %}
+            {% for article in blog_data.articles %}
+                {% assign handle-check = blog_data.title | downcase | append: "/" | append: vendorHandle %}
+                {% if handle-check == article.handle %}
+                    {{ article.content }}
+                {% endif %}
+            {% endfor%}
+        {% endunless %}
+    </div>
+</div>
+{% if forloop.first or section.blocks[prevIndex].type != 'accordion' %}
+</div>
+{% endif %}
