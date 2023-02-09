@@ -58,17 +58,17 @@
             {% if variant.option1 == ar-light %}
               <div class="charpstarviewer-inner-container">
                 <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
-                <span>{{ variant.option1 }}</span>
+                <span class="charpstar-text" style = "display:none">{{ variant.option1 }}</span>
               </div>
             {% elsif variant.option1 == ar-dark %}
               <div class="charpstarviewer-inner-container">
                 <img id = "charpstarARViewerMork" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
-                <span>{{ variant.option1 }}</span>
+                <span class="charpstar-text" style = "display:none">{{ variant.option1 }}</span>
               </div>
             {% elsif variant.option1 == ar-hytte %}
               <div class="charpstarviewer-inner-container">
                 <img id = "charpstarARViewerHytte" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
-                <span>{{ variant.option1 }}</span>
+                <span class="charpstar-text" style = "display:none">{{ variant.option1 }}</span>
               </div>
             {% endif %}
           {% endfor %}
