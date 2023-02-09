@@ -404,13 +404,13 @@ select.input{
 .input-control + .input-control{
     margin-top:var(--spacing-small);
   }
-/* .product-qty-selector{
+.product-qty-selector{
   display:flex;
   justify-content:space-between;
   border:1px solid var(--color-border);
   width:100px;
   height:40px;   
-} */
+}
 .product-qty-selector input{
     width:24px;
     padding:0;
@@ -6730,9 +6730,9 @@ select.pf-input:hover + .pf-icon{
 .pf-element__qty{
   padding-top:calc(var(--font-size-body-base) * 2.4);
 }
-/* .pf-element__qty .product-qty-selector{
+.pf-element__qty .product-qty-selector{
     height:44px;
-  } */
+  }
 .pf-element__qty .product-qty-selector .icon{
       height:20px;
       width:20px;

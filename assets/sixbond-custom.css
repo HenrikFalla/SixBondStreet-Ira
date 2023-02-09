@@ -7,20 +7,6 @@
     /* Based on the Hermes Orange */
     --sxbs-accent-color: #F3F1EB;
     --sxbs-dark-grey: #29292c;
-    --max-width:2000px;
-    --max-width-small-page:600px;
-
-    --spacing-unit:3px;
-
-    --spacing-none:0px;
-    --spacing-extra-small:calc(var(--spacing-unit) * 2);
-    --spacing-small:calc(var(--spacing-unit) * 3);
-    --spacing-medium:calc(var(--spacing-unit) * 5);
-    --spacing-medium-large:calc(var(--spacing-unit) * 7);
-    --spacing-large:calc(var(--spacing-unit) * 10);
-    --spacing-extra-large:calc(var(--spacing-unit) * 12);
-    --spacing-extra-extra-large:calc(var(--spacing-unit) * 20);
-    --space-outer:20px;
 }
 
 ::selection {
@@ -96,7 +82,7 @@ span.on-sale.saved_percentage {
 span.dom-message {
     margin-bottom: var(--spacing-large);
     display: inline;
-    /*font-size: 14px;*/
+    font-size: 14px;
     margin-top: -14px;
 }
 
@@ -106,6 +92,18 @@ span.dom-message {
 
 .fs-body-base {
     max-width: 90vw;
+}
+
+.secondary-gallery .product__media-item {
+    width: calc(100% / 3);
+    float: left;
+}
+
+.product__media-container.secondary-gallery.desktop-only {
+    width: 100%;
+    margin-top: 16px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .mobile-only {
@@ -1200,22 +1198,13 @@ input#Email {
     max-width: 800px;
     margin: auto;
 }
-.trygg-certificate-box {
-    right: 110px!important;
-    left: auto!important;
-    top: -105px!important;
-}
+
 @media (min-width:60em) {
     .extended-footer .extended-footer-groups .extended-100 {
         padding: 65px 20%;
     }
   body.template-product  .blog-posts.s-inline-section{margin-top:0}
   .blog-posts.description.s-inline-section{padding:0!important}
-  .trygg-certificate-box {
-        right: auto!important;
-        top: -0!important;
-        left: -214px!important;
-    }   
 }
 
 @media (max-width: 40em) {

@@ -502,7 +502,6 @@
     box-sizing: border-box;
     margin: 1rem auto;
     width: 100%;
-    overflow: hidden;
 }
 
 .clerk_content_wrap.search {

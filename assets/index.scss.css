@@ -5,9 +5,6 @@
 .mosaic-grid__item.mosaic-grid__item--medium-horizontal-rect, .mosaic-grid__item.mosaic-grid__item--small-square {
     padding-top: 150%;
 }
-.announcement-bar ol.flickity-page-dots {
-    display: none;
-}
 @media (min-width: 60em) {
     .mosaic-grid__item.mosaic-grid__item--medium-horizontal-rect {
         padding-top: 50%;
