@@ -1469,3 +1469,7 @@ img#trygg-logo {
     white-space: normal;
   }
 }
+.cart__item-qty-selector {
+    display: flex;
+    flex-direction: row;
+}
