@@ -1,18 +1,26 @@
-{%- liquid 
-    if product.metafields.product_data.charpstar_model_file_name
-        assign threed-model = product.metafields.product_data.charpstar_model_file_name.value
-    endif
--%}
-{% if threed-model %}
-    {{ 'charpstar.css' | asset_url | stylesheet_tag }}
-    <section class="AR-3D">
-    <script src="https://cdn.jsdelivr.net/gh/charpstar/InPlace/charpstar-viewer.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/charpstar/InPlace/model-viewer.js"></script>
+<section class="AR-3D">
+    <script src="https://js.charpstar.net/sbs/model-viewer-sbs.js"></script>
     <div class="model-viewer-wrapper">
-        <model-viewer id="threeDViewer" reveal="auto" src="https://cdnx.charpstar.net/Uploads/{{ threed-model }}.glb
-        "></model-viewer>
-
+        <model-viewer id="threeDViewer" src="{{sku}}"
+            shadow-intensity="1.55" shadow-softness="1" environment-image="https://js.charpstar.net/sbs/sbs-hdri.hdr">
+            <div id ="charpstarViewerControls">
+                <div>
+                    Variant: <select id="charpstarViewerVariant"></select> 
+                </div>
+            </div>
+        </model-viewer>
     </div>
-    <img class="charpstarARViewer" width = "65px" onclick="activateAR(this)" src="https://charpstar.se/AR.gif" data-desktopqr data-androidsrc="https://cdnx.charpstar.net/Uploads/{{ threed-model }}.glb" data-iossrc="https://cdnx.charpstar.net/Uploads/{{ threed-model }}.usdz">
 </section>
-{% endif %}
+{{ 'charpstar.css' | asset_url | stylesheet_tag }}
+<style type="text/css">
+    #charpstarViewerControls div::after {
+        content: '';
+        background-image: url(//cdn.shopify.com/s/files/1/0582/7490/6309/t/162/assets/chevron.svg?v=8477239…);
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-size: 10px 10px;
+        position: relative;
+        margin-left: -18px;
+    }
+</style>

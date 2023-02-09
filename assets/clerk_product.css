@@ -1,6 +1,3 @@
-.page {
-    overflow: hidden;
-}
 .clerk_content_wrap * {
     font-family: inherit;
     transition:height 0.3s ease;
@@ -372,10 +369,11 @@
     background-color:#fff;
 }
 
-.clerk_content_wrap{
+.clerk_content_wrap {
     box-sizing: border-box;
     margin: 1rem auto;
     width: 100%;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 400px) {

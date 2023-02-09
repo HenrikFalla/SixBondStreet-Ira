@@ -1,9 +1,42 @@
-.AR-3D {
-    display: block;
+.model-viewer-wrapper {
     position: relative;
+    padding-top: 100%;
+    margin: 0
 }
-.charpstarARViewer {
+
+model-viewer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#charpstarViewerControls {
     position: absolute;
     bottom: 0;
     right: 0;
+    left: 0;
+    display : none;  
+}
+#charpstarViewerControls div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: calc(var(--spacing-unit)*0) calc(var(--spacing-unit)*4);
+}
+#charpstarViewerControls #charpstarViewerVariant {
+    padding: calc(var(--spacing-unit)*3) calc(var(--spacing-unit)*8) calc(var(--spacing-unit)*3) calc(var(--spacing-unit)*3);
+    border: var(--color-background-button) 1px solid;
+    border-radius: 25px;
+    margin-left: calc(var(--spacing-unit)*2);
+    background: rgb(255 255 255 / 40%);
+}
+@media (min-width: 40em) {
+    .model-viewer-wrapper {
+        padding-top: 60%;
+    }
+    #charpstarViewerControls div {
+        justify-content: flex-end;
+    }
 }

@@ -18,6 +18,11 @@
         margin: calc(var(--spacing-unit)*6) 0;
     }
 }
+@media (min-width: 40em) {
+    .s-inline-section {
+        margin: 0 0 var(--spacing-large) 0;
+    }
+}
 @media screen and (min-width: 78em) {
     .collection__main-area {
         max-width: calc(100% - 285px);
