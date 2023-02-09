@@ -17,7 +17,10 @@
   assign enable_sticky_sidebar = section.settings.enable_sticky_sidebar
 
   assign blog-merke = blogs[section.settings.merke]
-  
+  assign ar-light = section.settings.charpstar_light
+  assign ar-dark = section.settings.charpstar_dark
+  assign ar-hytte = section.settings.charpstar_hytte
+  assign ar-media = section.settings.charpstar_image
   
   if media_layout == "grid"
     assign sizes = "(max-width: 640px) calc(100vw - 40px), (max-width: 960px) calc(50vw / 2), calc(66vw / 2)"
@@ -44,6 +47,33 @@
 >
 
   <div class="product__content">
+      {% if product.has_only_default_variant %}
+        {% assign productVariant = product.selected_or_first_available_variant.sku %}
+        <div class="charpstarviewer-container">
+        <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ productVariant }}">
+        </div>
+      {% else %}
+        <div class="charpstarviewer-container">
+          {% for variant in product.variants %}
+            {% if variant.option1 == ar-light %}
+              <div class="charpstarviewer-inner-container">
+                <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
+                <span>{{ variant.option1 }}</span>
+              </div>
+            {% elsif variant.option1 == ar-dark %}
+              <div class="charpstarviewer-inner-container">
+                <img id = "charpstarARViewerMork" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
+                <span>{{ variant.option1 }}</span>
+              </div>
+            {% elsif variant.option1 == ar-hytte %}
+              <div class="charpstarviewer-inner-container">
+                <img id = "charpstarARViewerHytte" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
+                <span>{{ variant.option1 }}</span>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     <div class="product__media-container mobile-only">
       <div class="product__media product__media--{{ media_layout }}" data-slider>
         {%- for media in product.media -%}
@@ -327,6 +357,26 @@
         "type": "checkbox",
         "label": "t:sections.main_product.settings.enable_video_looping.label",
         "default": true
+      },
+      {
+        "id": "charpstar_light",
+        "type": "text",
+        "label": "AR Light textile name"
+      },
+      {
+        "id": "charpstar_dark",
+        "type": "text",
+        "label": "AR Dark textile name"
+      },
+      {
+        "id": "charpstar_hytte",
+        "type": "text",
+        "label": "ARK Hytte textile name"
+      },
+      {
+        "id": "charpstar_image",
+        "type": "image_picker",
+        "label": "AR Image"
       }
     ],
     "blocks": [
@@ -534,6 +584,11 @@
             "type": "blog",
             "id": "vendor-blog",
             "label": "Merke Blog"
+          },
+          {
+            "type": "blog",
+            "id": "vedlikehold-blog",
+            "label": "Verdlikehold Blog"
           }
         ]
       },
@@ -545,10 +600,10 @@
             "id": "size",
             "label": "t:sections.main_product.blocks.spacer.settings.size.label",
             "type": "range",
-            "default": 20,
-            "step": 4,
-            "min": 8,
-            "max": 40,
+            "default": 18,
+            "step": 3,
+            "min": 3,
+            "max": 42,
             "unit": "px"
           }          
         ]
