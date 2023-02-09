@@ -17,10 +17,7 @@
   assign enable_sticky_sidebar = section.settings.enable_sticky_sidebar
 
   assign blog-merke = blogs[section.settings.merke]
-  assign ar-light = section.settings.charpstar_light
-  assign ar-dark = section.settings.charpstar_dark
-  assign ar-hytte = section.settings.charpstar_hytte
-  assign ar-media = section.settings.charpstar_image
+  
   
   if media_layout == "grid"
     assign sizes = "(max-width: 640px) calc(100vw - 40px), (max-width: 960px) calc(50vw / 2), calc(66vw / 2)"
@@ -47,33 +44,6 @@
 >
 
   <div class="product__content">
-      {% if product.has_only_default_variant %}
-        {% assign productVariant = product.selected_or_first_available_variant.sku %}
-        <div class="charpstarviewer-container">
-        <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ productVariant }}">
-        </div>
-      {% else %}
-        <div class="charpstarviewer-container">
-          {% for variant in product.variants %}
-            {% if variant.option1 == ar-light %}
-              <div class="charpstarviewer-inner-container">
-                <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
-                <span>{{ variant.option1 }}</span>
-              </div>
-            {% elsif variant.option1 == ar-dark %}
-              <div class="charpstarviewer-inner-container">
-                <img id = "charpstarARViewerMork" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
-                <span>{{ variant.option1 }}</span>
-              </div>
-            {% elsif variant.option1 == ar-hytte %}
-              <div class="charpstarviewer-inner-container">
-                <img id = "charpstarARViewerHytte" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
-                <span>{{ variant.option1 }}</span>
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
-      {% endif %}
     <div class="product__media-container mobile-only">
       <div class="product__media product__media--{{ media_layout }}" data-slider>
         {%- for media in product.media -%}
@@ -128,84 +98,47 @@
         </button>
       {%- endif -%}
     </div>
+    
     <div class="product__media-container desktop-only">
       <div class="product__media product__media--{{ media_layout }}" data-slider>
 	
 	
-        {% for i in (0..1) %}
-          <div class="product__media-item {% if product.media[i].id == featured_media.id %}initial{% endif %}" data-slide>
-            {% render 'media', media: product.media[i], featured_media: featured_media, loop_video: enable_video_looping  %}
-          </div>
-        {% endfor %}
+	    {% for i in (0..2) %}
+		    <div class="product__media-item {% if product.media[i].id == featured_media.id %}initial{% endif %}" data-slide>
+			    {% render 'media', media: product.media[i], featured_media: featured_media, loop_video: enable_video_looping  %}
+		    </div>
+	    {% endfor %}
 
-        {%- if product.media.size > 1 -%}
-          {% render 'carousel-pagination' %}
-        {%- endif -%}
-
-        <noscript>
-        {% capture product_image_size %}{{ height }}x{% endcapture %}
-        <img src="{{ featured_media | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_media.alt }}" id="FeaturedMedia-{{ section.id }}" class="product-featured-media" style="max-width: {{ height }}px;">
-        </noscript>
-
-        {%- if first_3d_model -%}
-        <button
-          aria-label="{{ 'products.product.view_in_space_label' | t }}"
-          class="product__view-in-space btn btn--full"
-          data-in-your-space
-          data-shopify-xr
-          data-shopify-model3d-id="{{ first_3d_model.id }}"
-          data-shopify-title="{{ product.title | escape }}"
-          data-shopify-xr-hidden
-        >
-          <span>
-          {% render 'icon' with icon: '3d' %}
-          <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
-          </span>
-        </button>
-        {%- endif -%}
+	    {%- if product.media.size > 1 -%}
+	      {% render 'carousel-pagination' %}
+	    {%- endif -%}
       </div>
-      <!-- Secondary gallery with smaller images -->
-      {%- assign images = product.media | where: 'media_type', 'image' -%}
-      {% if product.media.size > 3 %}
-          <div class="product__media-container secondary-gallery desktop-only">
-            <div class="product__media product__media--{{ media_layout }}" data-slider>
-              {% assign crop = 'center' %}
-              {% assign i-size = product.media.size | minus: 1 %}
-            {% for i in (2..i-size) %}
-              <div class="product__media-item {% if product.media[i].id == featured_media.id %}initial{% endif %}" data-slide>
-                {% render 'media', media: product.media[i], featured_media: featured_media, loop_video: enable_video_looping, crop: crop  %}
-              </div>
-            {% endfor %}
 
-            {%- if product.media.size > 1 -%}
-              {% render 'carousel-pagination' %}
-            {%- endif -%}
-            </div>
+      <noscript>
+	    {% capture product_image_size %}{{ height }}x{% endcapture %}
+	    <img src="{{ featured_media | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_media.alt }}" id="FeaturedMedia-{{ section.id }}" class="product-featured-media" style="max-width: {{ height }}px;">
+      </noscript>
 
-            <noscript>
-            {% capture product_image_size %}{{ height }}x{% endcapture %}
-            <img src="{{ featured_media | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_media.alt }}" id="FeaturedMedia-{{ section.id }}" class="product-featured-media" style="max-width: {{ height }}px;">
-            </noscript>
-
-            {%- if first_3d_model -%}
-            <button
-              aria-label="{{ 'products.product.view_in_space_label' | t }}"
-              class="product__view-in-space btn btn--full"
-              data-in-your-space
-              data-shopify-xr
-              data-shopify-model3d-id="{{ first_3d_model.id }}"
-              data-shopify-title="{{ product.title | escape }}"
-              data-shopify-xr-hidden
-            >
-              <span>
-              {% render 'icon' with icon: '3d' %}
-              <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
-              </span>
-            </button>
-            {%- endif -%}
-          </div>
-      {% endif %}
+      {%- if first_3d_model -%}
+	    <button
+	      aria-label="{{ 'products.product.view_in_space_label' | t }}"
+	      class="product__view-in-space btn btn--full"
+	      data-in-your-space
+	      data-shopify-xr
+	      data-shopify-model3d-id="{{ first_3d_model.id }}"
+	      data-shopify-title="{{ product.title | escape }}"
+	      data-shopify-xr-hidden
+	    >
+	      <span>
+		    {% render 'icon' with icon: '3d' %}
+		    <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
+	      </span>
+	    </button>
+      {%- endif -%}
     </div>
+    
+    
+
     <div class="product__details grid__item grid__item--one-third{% if enable_sticky_sidebar %} sticky{% endif %} ">
       <div class="product-single__meta">
 
@@ -223,11 +156,9 @@
         %}  
           {%- comment -%}yikes but we want to know if we have dunamic checkout buttons before the block{%- endcomment -%}
           {%- assign show_dynamic_checkout = false -%}
-          {% assign show_qty_picker =  false %}
           {%- for block in section.blocks -%}
             {%- if block.type == 'buy_buttons' -%}
               {%- assign show_dynamic_checkout = block.settings.show_dynamic_checkout -%}
-              {% assign show_qty_picker = block.settings.show_qty_picker %}
             {%- endif -%}
           {%- endfor -%}
           {%- if show_dynamic_checkout %}
@@ -241,7 +172,6 @@
             button_options: button_options,
             chip_options: chip_options,
             swatch_options: swatch_options,
-            qty_picker: show_qty_picker
           %}
         {% endform %}
       </div>
@@ -268,7 +198,48 @@
     </div>
   </div>
 
- 
+
+  {%- assign images = product.media | where: 'media_type', 'image' -%}
+  
+    {% if product.media.size > 3 %}
+        <div class="product__media-container secondary-gallery desktop-only">
+          <div class="product__media product__media--{{ media_layout }}" data-slider>
+            {% assign crop = 'center' %}
+            {% assign i-size = product.media.size | minus: 1 %}
+	        {% for i in (3..i-size) %}
+		        <div class="product__media-item {% if product.media[i].id == featured_media.id %}initial{% endif %}" data-slide>
+			        {% render 'media', media: product.media[i], featured_media: featured_media, loop_video: enable_video_looping, crop: crop  %}
+		        </div>
+	        {% endfor %}
+
+	        {%- if product.media.size > 1 -%}
+	          {% render 'carousel-pagination' %}
+	        {%- endif -%}
+          </div>
+
+          <noscript>
+	        {% capture product_image_size %}{{ height }}x{% endcapture %}
+	        <img src="{{ featured_media | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_media.alt }}" id="FeaturedMedia-{{ section.id }}" class="product-featured-media" style="max-width: {{ height }}px;">
+          </noscript>
+
+          {%- if first_3d_model -%}
+	        <button
+	          aria-label="{{ 'products.product.view_in_space_label' | t }}"
+	          class="product__view-in-space btn btn--full"
+	          data-in-your-space
+	          data-shopify-xr
+	          data-shopify-model3d-id="{{ first_3d_model.id }}"
+	          data-shopify-title="{{ product.title | escape }}"
+	          data-shopify-xr-hidden
+	        >
+	          <span>
+		        {% render 'icon' with icon: '3d' %}
+		        <span class='product-single__view-in-space-text'>{{ 'products.product.view_in_space' | t }}</span>
+	          </span>
+	        </button>
+          {%- endif -%}
+        </div>
+    {% endif %}
   
   {% render 'lightbox' with images: images %}
 
@@ -300,13 +271,11 @@
  </script>
  <!-- Slutt Script -->
 
-<!-- Tippy Tooltip, looking for alternative that is more user friendly
 {% render 'product_form_tooltip' with
 	product: product,
 	current_variant: current_variant,
 	show_swatches: section.settings.show_swatches,
-%} 
--->
+%}
 
 {% schema %}
   {
@@ -357,26 +326,6 @@
         "type": "checkbox",
         "label": "t:sections.main_product.settings.enable_video_looping.label",
         "default": true
-      },
-      {
-        "id": "charpstar_light",
-        "type": "text",
-        "label": "AR Light textile name"
-      },
-      {
-        "id": "charpstar_dark",
-        "type": "text",
-        "label": "AR Dark textile name"
-      },
-      {
-        "id": "charpstar_hytte",
-        "type": "text",
-        "label": "ARK Hytte textile name"
-      },
-      {
-        "id": "charpstar_image",
-        "type": "image_picker",
-        "label": "AR Image"
       }
     ],
     "blocks": [
@@ -412,11 +361,6 @@
 		 {
         "type": "lead_time",
         "name": "Lead time",
-        "limit": 1
-      },
-      {
-        "type": "price_lead_time",
-        "name": "Price and lead time",
         "limit": 1
       },
       {
@@ -481,56 +425,7 @@
             "default": true,
             "label": "t:sections.main_product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
             "info": "t:sections.main_product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
-          },
-          {
-            "type": "checkbox",
-            "id": "show_qty_picker",
-            "default": true,
-            "label": "t:sections.main_product.blocks.buy_buttons.settings.show_qty_picker.label",
-            "info": "t:sections.main_product.blocks.buy_buttons.settings.show_qty_picker.info"
           }
-        ]
-      },
-      {
-        "type": "extra_button",
-        "name": "t:sections.main_product.blocks.extra_button.name",
-        "settings": [
-            {
-                "type": "url",
-                "id": "extra_button_url",
-                "label": "t:sections.main_product.blocks.extra_button.settings.extra_button_url.label",
-                "info": "t:sections.main_product.blocks.extra_button.settings.extra_button_url.info"
-            },
-            {
-                "type": "text",
-                "id": "extra_button_text",
-                "label": "t:sections.main_product.blocks.extra_button.settings.extra_button_text.label",
-                "info": "t:sections.main_product.blocks.extra_button.settings.extra_button_text.info"
-            },
-            {
-                "type": "radio",
-                "id": "extra_button_img",
-                "label": "t:sections.main_product.blocks.extra_button.settings.extra_button_img.label",
-                "info": "t:sections.main_product.blocks.extra_button.settings.extra_button_img.info",
-                "options": [
-                    {
-                        "value": "no_icon",
-                        "value": "No icon"
-                    },
-                    {
-                        "value": "consultant-svg",
-                        "label": "Consultant"
-                    },
-                    {
-                        "value": "swatch-svg",
-                        "label": "Swatch"
-                    },
-                    {
-                        "value": "chat-svg",
-                        "label": "Chat"
-                    }
-                ]
-            }
         ]
       },
       {
@@ -573,22 +468,6 @@
             "type": "richtext",
             "id": "content",
             "label": "t:sections.main_product.blocks.accordion.settings.content.label"
-          },
-          {
-            "type": "checkbox",
-            "id": "vendor",
-            "label": "Merke",
-            "default": false
-          },
-          {
-            "type": "blog",
-            "id": "vendor-blog",
-            "label": "Merke Blog"
-          },
-          {
-            "type": "blog",
-            "id": "vedlikehold-blog",
-            "label": "Verdlikehold Blog"
           }
         ]
       },
@@ -600,10 +479,10 @@
             "id": "size",
             "label": "t:sections.main_product.blocks.spacer.settings.size.label",
             "type": "range",
-            "default": 18,
-            "step": 3,
-            "min": 3,
-            "max": 42,
+            "default": 20,
+            "step": 4,
+            "min": 8,
+            "max": 40,
             "unit": "px"
           }          
         ]
