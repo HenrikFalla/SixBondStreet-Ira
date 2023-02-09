@@ -1,13 +1,43 @@
+{% assign threed-textiles = section.settings.threed-viewer-textiles | split: "," %}
+{% unless product.has_only_default_variant %}
+    {% for variant in product.variants %}
+        {% assign options = variant.options | split: "," %}
+        {% for option in options %}
+            {% assign control-option = option | remove: '"' | remove: "[" | remove: "]" %}
+            {% for textile in threed-textiles %}
+                {% if textile == control-option %}
+                    <section class="description">
+                        <div class="description__container">
+                            {% render 'charpstar-3d-viewer' with
+                                sku: variant.sku
+                            %}
+                        </div>
+                    </section>
+                {% endif %}
+            {% endfor%}
+        {% endfor%}
+    {% endfor%}
+{% else %}
 <section class="description">
     <div class="description__container">
-        {% render 'charpstar-3d-viewer' %}
+        {% render 'charpstar-3d-viewer' with
+            sku: product.selected_or_first_available_variant.sku
+        %}
     </div>
 </section>
-
+{% endunless %}
 {% schema %}
 {
     "name": "CharpstAR 3D Viewer",
-   "settings": [],
+    "settings": [
+        {
+            "type": "text",
+            "id": "threed-viewer-textiles",
+            "label": "3D viewer trigger textiles",
+            "default": "Bolt - Marble",
+            "info": "Type in the names of the textiles that should trigger an attempt at rendering the 3D viewer for configurable products. Separate by comma. Type the names as they are set for the variants."
+        }
+   ],
    "presets": [
    {
         "name": "CharpstAR 3D Viewer"

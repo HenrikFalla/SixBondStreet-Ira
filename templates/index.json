@@ -1,67 +1,142 @@
 {
   "sections": {
-    "slideshow-1": {
+    "f38af089-6df6-4e9d-8229-dda182262c89": {
       "type": "slideshow",
       "blocks": {
-        "54c5c3c7-4f7f-4ffc-9af7-55e679a93c63": {
+        "template--15944979939525__f38af089-6df6-4e9d-8229-dda182262c89-167110217590d2c54e-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/003.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/003.jpg",
+            "image": "shopify:\/\/shop_images\/banner_forside_nyheter_83018767-3b6d-430f-ad4c-6aed2a1cd843.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/AVCHBW_3_2000x_7485d071-65bc-4047-9f47-77e92caf54d6.jpg",
             "focal_point": "center_center",
             "focal_point_mobile": "center_center",
             "video_url": "",
             "meta": "",
-            "title": "Gaveguiden",
-            "subheading": "<p>Leter du etter en julegave til en som er over gjennomsnittet opptatt av interiør? Da har du kommet rett.<\/p>",
+            "title": "VÅRENS VAKRESTE NYHETER",
+            "subheading": "<p>Her finner du vårens vakreste nyheter på møbel-og interiørfronten.<\/p>",
             "max_width_subheading": 30,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/julegaver-til-interiorentusiasten",
+            "link_text": "Se nyhetene her",
+            "link": "shopify:\/\/collections\/nyheter",
             "alignment": "center_center",
             "color_heading": "#ffffff",
             "color_subheading": "#ffffff",
             "color_text_button": "#000000",
-            "color_background_button": "#f1efeb",
+            "color_background_button": "#ffffff",
             "color_overlay": "#000000",
-            "opacity_overlay": 50
-          }
-        },
-        "slide-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner_forside_fjellhytta.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/banner_forside_fjellhytte.jpg",
-            "focal_point": "center_center",
-            "focal_point_mobile": "center_center",
-            "video_url": "",
-            "meta": "",
-            "title": "Hvordan innrede hytta på fjellet?",
-            "subheading": "<p>Crispy luft, roser i kinnene, gode stunder med venner og familie. Ja, vi snakker om fjellhytta!<\/p>",
-            "max_width_subheading": 30,
-            "link_text": "Les mer her",
-            "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-innrede-hytta-pa-fjellet",
-            "alignment": "center_center",
-            "color_heading": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_text_button": "#29292c",
-            "color_background_button": "#f8f7f5",
-            "color_overlay": "#000000",
-            "opacity_overlay": 40
+            "opacity_overlay": 30
           }
         }
       },
       "block_order": [
-        "54c5c3c7-4f7f-4ffc-9af7-55e679a93c63",
-        "slide-1"
+        "template--15944979939525__f38af089-6df6-4e9d-8229-dda182262c89-167110217590d2c54e-0"
       ],
       "settings": {
-        "desktop_height": 65,
-        "mobile_height": 65,
+        "desktop_height": 70,
+        "mobile_height": 70,
         "duration_autoplay": 4,
         "enable_parallax": false,
         "enable_full_width": true,
         "color_dot": "#777777"
+      }
+    },
+    "44e5109c-a793-4f62-a83e-e59b2c6dfdf1": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15954986762437__44e5109c-a793-4f62-a83e-e59b2c6dfdf1-16740292632e1924a8-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_beige.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/banner_beige.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "",
+            "title": "Chat med oss!",
+            "subheading": "<p>Vi er tilgjengelige på chat mellom kl. 9-17 mandag til fredag. Ikke nøl med å ta kontakt, vi er her for å hjelpe deg. <\/p>",
+            "max_width_subheading": 30,
+            "link_text": "",
+            "link": "#",
+            "alignment": "center_center",
+            "color_heading": "#29292c",
+            "color_subheading": "#29292c",
+            "color_text_button": "#ffffff",
+            "color_background_button": "#000000",
+            "color_overlay": "#000000",
+            "opacity_overlay": 0
+          }
+        },
+        "template--15954986762437__44e5109c-a793-4f62-a83e-e59b2c6dfdf1-16740292632e1924a8-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "Slideshow",
+            "title": "This is your slideshow",
+            "subheading": "<p>Use it to make a dramatic first impression with high-quality imagery and minimal text. Using the button below to link to whatever is most appropriate.<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Shop now",
+            "link": "#",
+            "alignment": "left_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#b8b8b8",
+            "color_text_button": "#ffffff",
+            "color_background_button": "#000000",
+            "color_overlay": "#000000",
+            "opacity_overlay": 60
+          }
+        }
+      },
+      "block_order": [
+        "template--15954986762437__44e5109c-a793-4f62-a83e-e59b2c6dfdf1-16740292632e1924a8-0",
+        "template--15954986762437__44e5109c-a793-4f62-a83e-e59b2c6dfdf1-16740292632e1924a8-1"
+      ],
+      "settings": {
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "duration_autoplay": 4,
+        "enable_parallax": false,
+        "enable_full_width": false,
+        "color_dot": "#777777"
+      }
+    },
+    "afa98bb1-2ec8-4821-b0f4-90df414b33ce": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15954986762437__afa98bb1-2ec8-4821-b0f4-90df414b33ce-1675345320f561c954-0": {
+          "type": "heading",
+          "settings": {
+            "heading_title": "Specktrum"
+          }
+        },
+        "template--15954986762437__afa98bb1-2ec8-4821-b0f4-90df414b33ce-1675345320f561c954-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Med lidenskap for moderne, særpreget design, tradisjonelt håndverk og unike detaljer, designer og skaper Specktrum moderne og luksuriøst boliginteriør.<\/p>"
+          }
+        },
+        "template--15954986762437__afa98bb1-2ec8-4821-b0f4-90df414b33ce-1675345320f561c954-2": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/collections\/specktrum",
+            "link_text": "Se utvalget her"
+          }
+        }
+      },
+      "block_order": [
+        "template--15954986762437__afa98bb1-2ec8-4821-b0f4-90df414b33ce-1675345320f561c954-0",
+        "template--15954986762437__afa98bb1-2ec8-4821-b0f4-90df414b33ce-1675345320f561c954-1",
+        "template--15954986762437__afa98bb1-2ec8-4821-b0f4-90df414b33ce-1675345320f561c954-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/specktrum.jpg",
+        "video_url": "",
+        "image_width": "standard",
+        "image_position": "left",
+        "max_width_text": 34,
+        "enable_contrast": false,
+        "enable_full_width": false
       }
     },
     "1652734830e13bb44f": {
@@ -71,7 +146,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/shipped_0433dece-e93b-493d-b515-b5906a5d371f.png",
-            "title": "Fri frakt på ordre over 12.000,-",
+            "title": "Trygg levering",
             "text": "",
             "link": "#",
             "link_text": ""
@@ -109,111 +184,43 @@
         "circle": true
       }
     },
-    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5": {
-      "type": "clerk-home-page-recommendations",
-      "settings": {
-        "recommendation_type": "complimentary"
-      }
-    },
-    "7b75f33f-384e-4a60-bc59-46ddcd0338ed": {
+    "slideshow-1": {
       "type": "slideshow",
       "blocks": {
-        "template--15903449022661__7b75f33f-384e-4a60-bc59-46ddcd0338ed-1668510469d5644e64-0": {
+        "54c5c3c7-4f7f-4ffc-9af7-55e679a93c63": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_forside_fjellhytta.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/banner_forside_fjellhytta.jpg",
+            "image": "shopify:\/\/shop_images\/somerset_serien_banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/somerset_serien_banner.jpg",
             "focal_point": "center_center",
             "focal_point_mobile": "center_center",
             "video_url": "",
-            "meta": "",
-            "title": "Hvordan innrede hytta på fjellet?",
-            "subheading": "<p>Crispy luft, roser i kinnene, gode stunder med venner og familie. Ja, vi snakker om fjellhytta!<\/p>",
+            "meta": "Rask levering",
+            "title": "Spiseplassen",
+            "subheading": "<p>Her finner du møbler til spiseplassen. Møblene som ligger samlet her er på lager for omgående levering.<\/p>",
             "max_width_subheading": 30,
-            "link_text": "Les mer her",
-            "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-innrede-hytta-pa-fjellet",
+            "link_text": "Se utvalget her",
+            "link": "https:\/\/sixbondstreet.no\/collections\/levering-for-jul-spisestue",
             "alignment": "center_center",
             "color_heading": "#ffffff",
             "color_subheading": "#ffffff",
             "color_text_button": "#000000",
-            "color_background_button": "#f8f7f5",
+            "color_background_button": "#f1efeb",
             "color_overlay": "#000000",
-            "opacity_overlay": 40
+            "opacity_overlay": 30
           }
         }
       },
       "block_order": [
-        "template--15903449022661__7b75f33f-384e-4a60-bc59-46ddcd0338ed-1668510469d5644e64-0"
+        "54c5c3c7-4f7f-4ffc-9af7-55e679a93c63"
       ],
       "settings": {
         "desktop_height": 65,
         "mobile_height": 65,
         "duration_autoplay": 4,
         "enable_parallax": false,
-        "enable_full_width": false,
-        "color_dot": "#777777"
-      }
-    },
-    "9f4ecfa9-c8f3-4fc6-af5e-acc1a8e8738a": {
-      "type": "slideshow",
-      "blocks": {
-        "template--15903449022661__9f4ecfa9-c8f3-4fc6-af5e-acc1a8e8738a-1667563853477841a0-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/v02_CC9A7D62DB309F379ADA1FE7141E378B.webp",
-            "mobile_image": "shopify:\/\/shop_images\/v02_CC9A7D62DB309F379ADA1FE7141E378B.webp",
-            "focal_point": "center_center",
-            "focal_point_mobile": "center_center",
-            "video_url": "",
-            "meta": "Fotokunst",
-            "title": "Levering før jul",
-            "subheading": "<p>Malerier og fotokunst, innrammet og klare til å henges på veggen<\/p>",
-            "max_width_subheading": 30,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/fotokunst-pa-lager",
-            "alignment": "center_center",
-            "color_heading": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_text_button": "#000000",
-            "color_background_button": "#f8f7f5",
-            "color_overlay": "#000000",
-            "opacity_overlay": 20
-          }
-        },
-        "template--15903449022661__9f4ecfa9-c8f3-4fc6-af5e-acc1a8e8738a-1667563853477841a0-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "focal_point": "center_center",
-            "focal_point_mobile": "center_center",
-            "video_url": "",
-            "meta": "Slideshow",
-            "title": "This is your slideshow",
-            "subheading": "<p>Use it to make a dramatic first impression with high-quality imagery and minimal text. Using the button below to link to whatever is most appropriate.<\/p>",
-            "max_width_subheading": 30,
-            "link_text": "Shop now",
-            "link": "#",
-            "alignment": "left_center",
-            "color_heading": "#ffffff",
-            "color_subheading": "#b8b8b8",
-            "color_text_button": "#ffffff",
-            "color_background_button": "#000000",
-            "color_overlay": "#000000",
-            "opacity_overlay": 60
-          }
-        }
-      },
-      "block_order": [
-        "template--15903449022661__9f4ecfa9-c8f3-4fc6-af5e-acc1a8e8738a-1667563853477841a0-0",
-        "template--15903449022661__9f4ecfa9-c8f3-4fc6-af5e-acc1a8e8738a-1667563853477841a0-1"
-      ],
-      "settings": {
-        "desktop_height": 60,
-        "mobile_height": 60,
-        "duration_autoplay": 4,
-        "enable_parallax": false,
         "enable_full_width": true,
-        "color_dot": "#ffffff"
+        "color_dot": "#777777"
       }
     },
     "2-column-mosaic-grid": {
@@ -246,16 +253,16 @@
         "small_square-1": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/212_K7A0518-scaled.jpg",
+            "image": "shopify:\/\/shop_images\/screenshot_ginemargrethe_003.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
             "meta": "Inspirasjon",
-            "title": "Den perfekte julegaven",
-            "subheading": "<p>Er du usikker på hva du skal gi venner og familie i julegave i år? <\/p><p>Da kan vi anbefale coffee table bøker! <\/p>",
+            "title": "Skulpturelle dekorelementer",
+            "subheading": "<p>Les mer om hvordan du innreder med skulpturelle dekorelementer.<\/p>",
             "text_max_width": 28,
             "link_text": "Les mer her",
-            "link": "shopify:\/\/blogs\/inspirasjon\/dette-produktet-er-den-perfekte-julegave",
+            "link": "shopify:\/\/blogs\/inspirasjon\/innred-med-skulpturelle-dekorelementer",
             "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
@@ -276,13 +283,58 @@
         "enable_full_width": false
       }
     },
+    "7b75f33f-384e-4a60-bc59-46ddcd0338ed": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15903449022661__7b75f33f-384e-4a60-bc59-46ddcd0338ed-1668510469d5644e64-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fjellhytta_banner_fosdide.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/fjellhytta_banner_fosdide.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "",
+            "title": "Hvordan innrede hytta på fjellet?",
+            "subheading": "<p>Crispy luft, roser i kinnene, gode stunder med venner og familie. Ja, vi snakker om fjellhytta! <strong>Foto<\/strong>: Paul Lockhart<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Les mer her",
+            "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-innrede-hytta-pa-fjellet",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 30
+          }
+        }
+      },
+      "block_order": [
+        "template--15903449022661__7b75f33f-384e-4a60-bc59-46ddcd0338ed-1668510469d5644e64-0"
+      ],
+      "settings": {
+        "desktop_height": 65,
+        "mobile_height": 65,
+        "duration_autoplay": 4,
+        "enable_parallax": false,
+        "enable_full_width": false,
+        "color_dot": "#777777"
+      }
+    },
+    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "complimentary"
+      }
+    },
     "47c2154c-a63c-4ca9-bd80-9dfb10180ca7": {
       "type": "2-column-mosaic-grid",
       "blocks": {
         "fefe5de7-18c1-44c9-9b64-7648325c846c": {
           "type": "medium_horizontal_rect",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_belysning_host22.jpg",
+            "image": "shopify:\/\/shop_images\/banner_forside_ace.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -306,7 +358,7 @@
         "9ecdb5b4-7e52-4176-9116-07133e3799ad": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/forside_gulvtepper_host22.jpg",
+            "image": "shopify:\/\/shop_images\/michigan_sofabord_sort_e063655a-5680-4734-8c8d-40c91956feaf.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -330,7 +382,7 @@
         "ba050088-0a27-4931-a408-05e03fb69119": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fotokunst_forside_host22_002.jpg",
+            "image": "shopify:\/\/shop_images\/banner_fotokunst.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -390,63 +442,13 @@
             "color_background_button": "#ffffff",
             "color_text_button": "#000000",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 29
-          }
-        },
-        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-1": {
-          "type": "small_square",
-          "disabled": true,
-          "settings": {
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "",
-            "title": "This is small square block",
-            "subheading": "<p>Mix and match between sizes, set a background color or fill, and add text to blocks that are medium or larger.<\/p>",
-            "text_max_width": 32,
-            "link_text": "",
-            "link": "",
-            "text_position": "left_top",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000",
-            "overlay_opacity": 60
-          }
-        },
-        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-2": {
-          "type": "small_square",
-          "disabled": true,
-          "settings": {
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "",
-            "title": "",
-            "subheading": "",
-            "text_max_width": 28,
-            "link_text": "",
-            "link": "",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000",
-            "overlay_opacity": 60
           }
         }
       },
       "block_order": [
-        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-0",
-        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-1",
-        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-2"
+        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-0"
       ],
       "settings": {
         "enable_full_width": false
@@ -607,86 +609,9 @@
         "enable_full_width": true
       }
     },
-    "165590230686a4951c": {
-      "type": "image-with-text",
-      "blocks": {
-        "1655902306efe1fc7a-0": {
-          "type": "heading",
-          "settings": {
-            "heading_title": "LAYERED x POPPYKALAS"
-          }
-        },
-        "1655902306efe1fc7a-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>The secret garden. Layereds samarbeid med den berømte danske blomsterkunstneren Poppykalas. Inspirert av organiske blomsterformer, skaper Poppykalas interaktive og uventede installasjoner som bringer blomsterverdenen direkte til hjemmet ditt.<\/p>"
-          }
-        },
-        "1655902306efe1fc7a-2": {
-          "type": "button",
-          "settings": {
-            "link": "shopify:\/\/collections\/layered-x-poppykalas",
-            "link_text": "Se kolleksjonen her"
-          }
-        }
-      },
-      "block_order": [
-        "1655902306efe1fc7a-0",
-        "1655902306efe1fc7a-1",
-        "1655902306efe1fc7a-2"
-      ],
-      "settings": {
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2bda318fd6b543a6955f55bc5a6ea645.mp4",
-        "image_width": "standard",
-        "image_position": "left",
-        "max_width_text": 34,
-        "enable_contrast": false,
-        "enable_full_width": false
-      }
-    },
-    "166357956153f60049": {
-      "type": "collection-list",
-      "disabled": true,
-      "blocks": {
-        "1663579561eae045fd-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "interiortrender-de-bevisste"
-          }
-        },
-        "1663579561eae045fd-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "interiortrender-de-selvbevisste"
-          }
-        },
-        "1663579561eae045fd-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "interiortrender-de-sannhetssokende"
-          }
-        },
-        "6ae82d34-df16-44fa-9ec9-1656a0eee21c": {
-          "type": "collection",
-          "settings": {
-            "collection": "interiortrender-de-sensitive"
-          }
-        }
-      },
-      "block_order": [
-        "1663579561eae045fd-0",
-        "1663579561eae045fd-1",
-        "1663579561eae045fd-2",
-        "6ae82d34-df16-44fa-9ec9-1656a0eee21c"
-      ],
-      "settings": {
-        "title": "Få stilen",
-        "per_row": 4,
-        "aspect_ratio": "natural"
-      }
-    },
     "1655904214bdb65264": {
       "type": "2-column-mosaic-grid",
+      "disabled": true,
       "blocks": {
         "1655904214361113c8-1": {
           "type": "small_square",
@@ -785,16 +710,16 @@
         "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-1": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/003.jpg",
+            "image": "shopify:\/\/shop_images\/212_K7A0518-scaled.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
             "meta": "Interiør",
-            "title": "Julegaver til interiørentusiasten",
-            "subheading": "<p>Leter du etter en julegave til en som er over gjennomsnittet opptatt av interiør? Da har du kommet rett.<\/p>",
+            "title": "Coffee table bøker",
+            "subheading": "<p>Her finner du bøker som du kan dekorere med hjemme og på hytte. Disse bøkene er også fine gaver til de som liker å ha inspirerende bøker fremme.<\/p>",
             "text_max_width": 32,
             "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/julegaver-til-interiorentusiasten",
+            "link": "https:\/\/sixbondstreet.no\/collections\/boker",
             "text_position": "left_bottom",
             "background_color": "",
             "color_text": "#ffffff",
@@ -850,12 +775,12 @@
             "focal_point": "center_center",
             "focal_point_mobile": "center_center",
             "video_url": "",
-            "meta": "Levering til jul",
+            "meta": "Rask levering",
             "title": "Spisestue",
             "subheading": "<p>Her finner du møblene og dekoren du trenger for å skape en vakker og innbydende spisestue. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
             "max_width_subheading": 30,
             "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/rask-levering-spisestue",
+            "link": "shopify:\/\/collections\/levering-for-jul-spisestue",
             "alignment": "center_center",
             "color_heading": "#ffffff",
             "color_subheading": "#ffffff",
@@ -872,7 +797,7 @@
             "focal_point": "center_center",
             "focal_point_mobile": "center_center",
             "video_url": "",
-            "meta": "Levering til jul",
+            "meta": "Rask levering",
             "title": "Stue",
             "subheading": "<p>Her finner du garantert noe du ønsker deg til stuen din. Alt du finner her er lagerført. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
             "max_width_subheading": 30,
@@ -895,7 +820,7 @@
             "focal_point": "center_center",
             "focal_point_mobile": "center_center",
             "video_url": "",
-            "meta": "Levering til jul",
+            "meta": "Rask levering",
             "title": "Interiørvarer",
             "subheading": "<p>Her finner du et bredt utvalg interiørvarer. Alt du finner her er lagerført og leveringsklart. Vi leverer både hjem og til hytta, over hele landet.<\/p>",
             "max_width_subheading": 30,
@@ -937,7 +862,6 @@
     },
     "1663580092ee98390a": {
       "type": "2-column-mosaic-grid",
-      "disabled": true,
       "blocks": {
         "16635800919982818c-0": {
           "type": "medium_horizontal_rect",
@@ -968,7 +892,7 @@
         "16635800919982818c-0"
       ],
       "settings": {
-        "enable_full_width": false
+        "enable_full_width": true
       }
     },
     "dd34eb63-6181-41de-9cac-48e8bd95ddac": {
@@ -1036,34 +960,23 @@
       "settings": {
         "enable_full_width": false
       }
-    },
-    "1655979936791ce15e": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "101-copenhagen",
-        "title": "{{ section.settings.collection.title }}",
-        "per_row": 4,
-        "rows": 1,
-        "aspect_ratio": "square"
-      }
     }
   },
   "order": [
-    "slideshow-1",
+    "f38af089-6df6-4e9d-8229-dda182262c89",
+    "44e5109c-a793-4f62-a83e-e59b2c6dfdf1",
+    "afa98bb1-2ec8-4821-b0f4-90df414b33ce",
     "1652734830e13bb44f",
-    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5",
-    "7b75f33f-384e-4a60-bc59-46ddcd0338ed",
-    "9f4ecfa9-c8f3-4fc6-af5e-acc1a8e8738a",
+    "slideshow-1",
     "2-column-mosaic-grid",
+    "7b75f33f-384e-4a60-bc59-46ddcd0338ed",
+    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5",
     "47c2154c-a63c-4ca9-bd80-9dfb10180ca7",
     "1a5a1932-8888-4fd6-9096-b6c6b59807b5",
     "3c461912-2d6a-4c18-a27e-8d55217e2f96",
     "1663579399ad141f79",
     "1663578893628202ea",
     "1655980344fab006ba",
-    "165590230686a4951c",
-    "166357956153f60049",
     "1655904214bdb65264",
     "1655906078323d2266",
     "5c2f7579-d4df-4e74-be1e-ea037337a0a4",
@@ -1071,7 +984,6 @@
     "1655973450c3510188",
     "1663580092ee98390a",
     "dd34eb63-6181-41de-9cac-48e8bd95ddac",
-    "165597183990c0e2cb",
-    "1655979936791ce15e"
+    "165597183990c0e2cb"
   ]
 }
