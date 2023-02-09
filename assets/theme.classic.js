@@ -12030,7 +12030,7 @@
           adaptiveHeight: true,
           cellSelector: selectors.slide,
           initialIndex: '.initial',
-          pageDots: false,
+          pageDots: true,
           prevNextButtons: false,
           watchCSS: true,
           wrapAround: true,
@@ -12112,7 +12112,7 @@
                   document.querySelector(".trigger_orb").style.display="inline-block";
                 } else {
                   document.querySelector(".variant-inventory").style.display="none";
-                  document.querySelector(".dom-message").style.display="inline";
+                  document.querySelector(".dom-message").style.display="flex";
                   document.querySelector(".trigger_orb").style.display="none";
                 }
 
