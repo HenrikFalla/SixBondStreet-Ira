@@ -21,6 +21,8 @@
   assign ar-dark = section.settings.charpstar_dark
   assign ar-hytte = section.settings.charpstar_hytte
   assign ar-media = section.settings.charpstar_image
+  assign ar-media-lys = section.settings.charpstar_image_lys
+  assign ar-media-mork = section.settings.charpstar_image_mork
   
   if media_layout == "grid"
     assign sizes = "(max-width: 640px) calc(100vw - 40px), (max-width: 960px) calc(50vw / 2), calc(66vw / 2)"
@@ -57,18 +59,15 @@
           {% for variant in product.variants %}
             {% if variant.option1 == ar-light %}
               <div class="charpstarviewer-inner-container">
-                <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
-                <span>{{ variant.option1 }}</span>
+                <img id = "charpstarARViewer" style = "display:none" width = "65px" src="{{ ar-media-lys | img_url }}" data-articleid="{{ variant.sku }}">
               </div>
             {% elsif variant.option1 == ar-dark %}
               <div class="charpstarviewer-inner-container">
-                <img id = "charpstarARViewerMork" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
-                <span>{{ variant.option1 }}</span>
+                <img id = "charpstarARViewerMork" style = "display:none" width = "65px" src="{{ ar-media-mork | img_url }}" data-articleid="{{ variant.sku }}">
               </div>
             {% elsif variant.option1 == ar-hytte %}
               <div class="charpstarviewer-inner-container">
                 <img id = "charpstarARViewerHytte" style = "display:none" width = "65px" src="{{ ar-media | img_url }}" data-articleid="{{ variant.sku }}">
-                <span>{{ variant.option1 }}</span>
               </div>
             {% endif %}
           {% endfor %}
@@ -377,6 +376,16 @@
         "id": "charpstar_image",
         "type": "image_picker",
         "label": "AR Image"
+      },
+      {
+        "id": "charpstar_image_lys",
+        "type": "image_picker",
+        "label": "AR Image Lys Tekstil"
+      },
+      {
+        "id": "charpstar_image_mork",
+        "type": "image_picker",
+        "label": "AR Image Mørk Tekstil"
       }
     ],
     "blocks": [
