@@ -43,12 +43,14 @@
         </p>
         <p class="Text--subdued " id="free-shipping">Gratis frakt!</p>
       {% else %}
-        <p class="Text--subdued" id="paid-shipping" style="display: none;">
-        Handle for <span id="remaining_amount">
-        {{ cart.total_price | minus: threshold_in_cents | abs | money_without_trailing_zeros }}</span>
-        kr mer og få gratis frakt!
-        </p>
-        <p class="Text--subdued " id="free-shipping" style="display: none;">Gratis frakt!</p>
+        <div style="display: none;">
+          <p class="Text--subdued" id="paid-shipping" style="display: none;">
+          Handle for <span id="remaining_amount">
+          {{ cart.total_price | minus: threshold_in_cents | abs | money_without_trailing_zeros }}</span>
+          kr mer og få gratis frakt!
+          </p>
+          <p class="Text--subdued " id="free-shipping" style="display: none;">Gratis frakt!</p>
+        </div>
       {% endunless %}
       
       
