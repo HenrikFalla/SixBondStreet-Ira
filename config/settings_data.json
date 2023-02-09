@@ -50,7 +50,7 @@
     "cart_enable_ajax": true,
     "cart_enable_quick_shop": false,
     "cart_terms_conditions_enable": true,
-    "threshold": "12000",
+    "threshold": "0",
     "cart_terms_conditions_link": "shopify:\/\/pages\/kjopsbetingelser",
     "cart_quick_shop_show_quantity": false,
     "social_twitter_link": "",
@@ -87,6 +87,7 @@
         "blocks": {
           "1600989314555": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "title": "Fri frakt på alle ordre over 12.000,-",
               "link": "",
