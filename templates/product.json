@@ -59,22 +59,6 @@
             "extra_button_img": "chat-svg"
           }
         },
-        "006fbf80-9674-4588-845d-d234f689cf3a": {
-          "type": "accordion",
-          "settings": {
-            "style": "closed",
-            "heading": "Brand",
-            "content": "",
-            "vendor": true,
-            "vendor-blog": "merker",
-            "vedlikehold-blog": ""
-          }
-        },
-        "657227f3-fd58-469c-ad48-d89af8361ebc": {
-          "type": "divider",
-          "settings": {
-          }
-        },
         "b509ef7d-ef95-4c61-a4e0-dc26bbd0c6f5": {
           "type": "accordion",
           "settings": {
@@ -83,6 +67,38 @@
             "content": "<p>TEst 1234<\/p>",
             "vendor": false,
             "vendor-blog": "",
+            "vedlikehold-blog": ""
+          }
+        },
+        "e8859ee5-fed6-4f0e-9cf0-168b03aec6f1": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "e314c7e0-01cf-4d1f-8faf-1b46e24e9540": {
+          "type": "accordion",
+          "settings": {
+            "style": "closed",
+            "heading": "Vedlikehold",
+            "content": "",
+            "vendor": false,
+            "vendor-blog": "",
+            "vedlikehold-blog": "vedlikehold"
+          }
+        },
+        "657227f3-fd58-469c-ad48-d89af8361ebc": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "006fbf80-9674-4588-845d-d234f689cf3a": {
+          "type": "accordion",
+          "settings": {
+            "style": "closed",
+            "heading": "Brand",
+            "content": "",
+            "vendor": true,
+            "vendor-blog": "merker",
             "vedlikehold-blog": ""
           }
         },
@@ -124,9 +140,11 @@
         "6ef072e0-33dd-4a8a-b780-4b497a8f3866",
         "5905ce25-16e2-487e-9ab3-630301e4e05d",
         "0e29e6b0-e384-459d-9ede-b430fec9b362",
-        "006fbf80-9674-4588-845d-d234f689cf3a",
-        "657227f3-fd58-469c-ad48-d89af8361ebc",
         "b509ef7d-ef95-4c61-a4e0-dc26bbd0c6f5",
+        "e8859ee5-fed6-4f0e-9cf0-168b03aec6f1",
+        "e314c7e0-01cf-4d1f-8faf-1b46e24e9540",
+        "657227f3-fd58-469c-ad48-d89af8361ebc",
+        "006fbf80-9674-4588-845d-d234f689cf3a",
         "d5e6b4d7-f409-41cc-a663-dbec84286286",
         "ad3d155e-5dcd-4a9c-abcb-35c39d6f88d6",
         "8d227ce4-db45-4eab-a689-edd841d14ba0",
