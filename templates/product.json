@@ -18,12 +18,6 @@
           "settings": {
           }
         },
-        "b8c33565-3328-4d81-85ec-40306bc987de": {
-          "type": "spacer",
-          "settings": {
-            "size": 18
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -39,12 +33,6 @@
         "b4c014bd-0e8b-4b9b-95d7-96b8d2ef5589": {
           "type": "price_lead_time",
           "settings": {
-          }
-        },
-        "ffce4a86-1d43-4a2b-977e-ab8237a7b99d": {
-          "type": "spacer",
-          "settings": {
-            "size": 18
           }
         },
         "6ef072e0-33dd-4a8a-b780-4b497a8f3866": {
@@ -71,10 +59,20 @@
             "extra_button_img": "chat-svg"
           }
         },
-        "e921ac4e-e234-4bf8-89d6-7b683a31d0a7": {
-          "type": "spacer",
+        "006fbf80-9674-4588-845d-d234f689cf3a": {
+          "type": "accordion",
           "settings": {
-            "size": 18
+            "style": "closed",
+            "heading": "Brand",
+            "content": "",
+            "vendor": true,
+            "vendor-blog": "merker",
+            "vedlikehold-blog": ""
+          }
+        },
+        "657227f3-fd58-469c-ad48-d89af8361ebc": {
+          "type": "divider",
+          "settings": {
           }
         },
         "b509ef7d-ef95-4c61-a4e0-dc26bbd0c6f5": {
@@ -85,38 +83,6 @@
             "content": "<p>TEst 1234<\/p>",
             "vendor": false,
             "vendor-blog": "",
-            "vedlikehold-blog": ""
-          }
-        },
-        "e8110bb8-23d2-4586-8c50-5f7d0737e561": {
-          "type": "divider",
-          "settings": {
-          }
-        },
-        "66d71756-680a-4e91-8d61-df836d0fb092": {
-          "type": "accordion",
-          "settings": {
-            "style": "closed",
-            "heading": "Vedlikehold",
-            "content": "",
-            "vendor": false,
-            "vendor-blog": "",
-            "vedlikehold-blog": "vedlikehold"
-          }
-        },
-        "657227f3-fd58-469c-ad48-d89af8361ebc": {
-          "type": "divider",
-          "settings": {
-          }
-        },
-        "006fbf80-9674-4588-845d-d234f689cf3a": {
-          "type": "accordion",
-          "settings": {
-            "style": "closed",
-            "heading": "Brand",
-            "content": "",
-            "vendor": true,
-            "vendor-blog": "merker",
             "vedlikehold-blog": ""
           }
         },
@@ -152,20 +118,15 @@
         "vendor",
         "title",
         "description",
-        "b8c33565-3328-4d81-85ec-40306bc987de",
         "variant_picker",
         "buy_buttons",
         "b4c014bd-0e8b-4b9b-95d7-96b8d2ef5589",
-        "ffce4a86-1d43-4a2b-977e-ab8237a7b99d",
         "6ef072e0-33dd-4a8a-b780-4b497a8f3866",
         "5905ce25-16e2-487e-9ab3-630301e4e05d",
         "0e29e6b0-e384-459d-9ede-b430fec9b362",
-        "e921ac4e-e234-4bf8-89d6-7b683a31d0a7",
-        "b509ef7d-ef95-4c61-a4e0-dc26bbd0c6f5",
-        "e8110bb8-23d2-4586-8c50-5f7d0737e561",
-        "66d71756-680a-4e91-8d61-df836d0fb092",
-        "657227f3-fd58-469c-ad48-d89af8361ebc",
         "006fbf80-9674-4588-845d-d234f689cf3a",
+        "657227f3-fd58-469c-ad48-d89af8361ebc",
+        "b509ef7d-ef95-4c61-a4e0-dc26bbd0c6f5",
         "d5e6b4d7-f409-41cc-a663-dbec84286286",
         "ad3d155e-5dcd-4a9c-abcb-35c39d6f88d6",
         "8d227ce4-db45-4eab-a689-edd841d14ba0",
@@ -194,7 +155,6 @@
     "3ee7363c-9368-4dbb-9764-743f4e2bfce8": {
       "type": "charpstar-3d",
       "settings": {
-        "threed-viewer-textiles": "Bolt - Marble,Geilo - Coffee"
       }
     },
     "fb06e00b-6da4-41cf-819f-d9974b36732b": {
