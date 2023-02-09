@@ -40,16 +40,17 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
       <div class="product__vendor fs-body-base c-meta">
         {%- assign vendorHandle = product.vendor | handleize | strip | escape -%}
         {%- if collections[vendorHandle].products.size > 0 -%}
-          <a href="{{ collections[vendorHandle].url }}">
-            <div class="product__vendor ff-meta fs-meta c-meta found">{{ product.vendor }}</div>
-          </a>
+        <a href="{{ collections[vendorHandle].url }}">
+          <div class="product__vendor ff-meta fs-meta c-meta found">{{ product.vendor }}</div>
+        </a>
         {%- else -%}
-          <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
+        <div class="product__vendor ff-meta fs-meta c-meta">{{ product.vendor | link_to_vendor }}</div>
         {%- endif -%}
       </div>
     {%- when 'price' -%}
       <div class="product__price fs-body-base">
         <span data-price {% if current_variant.compare_at_price > current_variant.price %}class="sxbs-on-sale"{% endif %}>{{ current_variant.price | money }}</span>
+
         <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
         <s data-compare-price>
           {% if current_variant.compare_at_price > current_variant.price %}
@@ -74,34 +75,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
             </span>
           </span>
         </div>         
-    {% when 'price_lead_time' %}
-        <div class="product__price-lead-time">
-          <div class="product-lead-time">
-            {% assign instockorb= '<div class="in_stock__variant_orb"><div class="in_stock__variant_orb_inner"></div></div>' %}
-            <div class="trigger_orb" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}>{{instockorb}}</div>
-            <span class="variant-inventory" {% if current_variant.inventory_quantity <= 0 %}style="display:none"{% endif %}><span>{{ current_variant.inventory_quantity }}</span> på lager.</span>
-              <span data-stock-availability class="dom-message" {% if current_variant.inventory_quantity > 0 %}style="display:none"{% endif %}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.61 122.88"><defs><style>.cls-1{stroke-linecap:round}.cls-1,.cls-2{fill:none;stroke:#1d1d1b;stroke-miterlimit:10;stroke-width:5px}</style></defs><g id="Layer_5"><path d="M46.89 28.67V8.41c0-3.26 2.64-5.91 5.91-5.91h111.06c3.26 0 5.91 2.64 5.91 5.91v96.04h-75.3M63.14 104.44H52.8c-3.26 0-5.91-2.64-5.91-5.91V63.14M178.27 104.44h-8.51" class="cls-2"/><path d="M169.76 34.06h24.79c1.92 0 3.74.9 4.89 2.44l23.43 31.11c.8 1.06 1.23 2.36 1.23 3.68V98.4c0 3.33-2.7 6.03-6.03 6.03l-9.18.3" class="cls-2"/><circle cx="78.79" cy="104.44" r="15.94" class="cls-2"/><circle cx="193.66" cy="104.44" r="15.94" class="cls-2"/><path d="M19.3 27.73h46.24M10.13 45.62h55.41M2.5 63.51h63.04" class="cls-1"/></g></svg>
-              <span>
-                {% if current_variant.metafields.product_data.leveringstid != blank %}
-                  {{ current_variant.metafields.product_data.leveringstid }}
-                {% else %}
-                  {{ product.metafields.product_data.leveringstid }}
-                {% endif %}
-              </span>
-            </span>
-          </div>
-          <div class="product__price fs-body-base">
-            <span data-price {% if current_variant.compare_at_price > current_variant.price %}class="sxbs-on-sale"{% endif %}>{{ current_variant.price | money }}</span>
-            <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
-            <s data-compare-price>
-              {% if current_variant.compare_at_price > current_variant.price %}
-              {{ current_variant.compare_at_price | money }}
-              {% endif %}
-            </s>
-            {% render 'unit-price' item: current_variant %}
-          </div>   
-        </div>
+
     {%- when 'sku' -%}
       {% if request.design_mode or current_variant.sku != blank %}
         <div class="product__sku fs-body-base">
@@ -119,12 +93,12 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
       <h1 class="product-single__title ff-heading fs-heading-base c-heading">{{ product.title }}</h1>
       {% if title_links_to_product %}</a>{% endif %}
     {%- when 'description' -%}
-      {% assign truncated_description = product.description | strip_html | truncatewords: 20 %}
+    {% assign truncated_description = product.description | strip_html | truncatewords: 25 %}
 
-      {% if truncated_description contains '...' %}
-        <div class="product-single__description rte rte--product fs-body-base" data-description><p>{{ truncated_description }} <a class="in-text-link" href="#description">Les mer</a></p></div>
+     {% if truncated_description contains '...' %}
+          <div class="product-single__description rte rte--product fs-body-base" data-description><p>{{ truncated_description }}</p><a href="#description">Les mer</a></div>
       {% else %}
-        <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
+          <div class="product-single__description rte rte--product fs-body-base" data-description>{{ product.description }}</div>
       {% endif %}
     {%- when 'text' -%}
       <div class="product-single__freetext rte rte--product fs-body-base">{{ block.settings.content }}</div>
@@ -132,43 +106,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
       <div class="product__share" data-share="{{ 'product.share' | t }}">
         {% render 'share-block', share_title: product.title, url: product.url, share_image: product.featured_media %}
       </div>
-    {% when 'extra_button' %}
-        {% assign svg_tag = block.settings.extra_button_img | strip %}
-        {% case svg_tag %}
-          {% when 'consultant-svg' %}
-            <div class="cta-button__extra {{ block.settings.extra_button_img }}">
-              <a href="{{ block.settings.extra_button_url }}" target="_blank">
-                {% render 'consultant-svg' %}
-                <span>{{ block.settings.extra_button_text | strip_html }}</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" fill="none"><path stroke="#464039" d="m.606 1 8.486 8.485-8.486 8.486"/></svg>
-              </a>
-            </div>
-          {% when 'chat-svg' %}
-            <div class="cta-button__extra {{ block.settings.extra_button_img }}">
-              <div>
-                {% render 'chat-svg' %}
-                <div data-id="b790b1bfbb" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14465823">Live Chat</a></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" fill="none"><path stroke="#464039" d="m.606 1 8.486 8.485-8.486 8.486"/></svg>
-              </div>
-            </div>
-          {% when 'swatch-svg' %}
-            {% comment %} Unless used to only show fabric samples button on products with variants, not perfect but, will do for now {% endcomment %}
-            {% unless product.has_only_default_variant %}
-              <div class="cta-button__extra {{ block.settings.extra_button_img }}">
-                <a href="{{ block.settings.extra_button_url }}" target="_blank">
-                  {% render 'swatch-svg' %}
-                  <span>{{ block.settings.extra_button_text | strip_html }}</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" fill="none"><path stroke="#464039" d="m.606 1 8.486 8.485-8.486 8.486"/></svg>
-                </a>
-              </div>
-            {% endunless %}
-          {% else %}
-            <div class="cta-button__extra {{ block.settings.extra_button_img }}">
-              <a href="{{ block.settings.extra_button_url }}" target="_blank">
-                <span>{{ block.settings.extra_button_text | strip_html }}</span>
-              </a>
-            </div>
-          {% endcase %}     
+      
     {%- when 'quantity_selector' -%}
 
 {%comment%}
@@ -220,22 +158,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
 
     {%- when 'buy_buttons' -%}
       <div class="pf__message fs-body-base" data-error-message></div>
-      <div class="pf__actions{% if block.settings.show_qty_picker == true %} qty-selector-active{% endif %}">
-        {% if block.settings.show_qty_picker == true %}
-          <div class="pf-container">
-            <div class="pf-element pf-element__qty">
-              <div class="product-qty-selector">
-                <input
-                  type="number"
-                  name="quantity" 
-                  id="Quantity-{{ section.id }}"
-                  value="1" min="1" pattern="[0-9]*"
-                  data-quantity-input
-                >
-              </div>
-            </div>
-          </div>
-        {% endif %}
+      <div class="pf__actions">
         <div class="product-form__item product-form__item--submit
           {%- if dynamic_checkout_buttons %} product-form__item--payment-button {%- endif -%}
           {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
@@ -289,6 +212,7 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
           {% comment %} Surface pick-up {% endcomment %}
           <div data-store-availability-container data-base-url="{{ shop.url }}{{ routes.root_url }}"></div>
         </div>
+      </div>
       </div>
     {%- when 'variant_picker' -%}
       <div class="product-form-variant-block">
@@ -451,19 +375,74 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
          <div class="product__reviews">
     <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
   </div>
-  {%- when 'accordion' -%}
-    {% assign blog_data = blogs[block.settings.vendor-blog] %}
-    {% assign blog_vedlikehold = blogs[block.settings.vedlikehold-blog] %}
-    {% render 'product-accordion' with
-      product: product,
-      style: block.settings.style,
-      shopifyAttributes: block.shopify_attributes,
-      heading: block.settings.heading,
-      content: block.settings.content,
-      merke: block.settings.vendor,
-      blog_data: blog_data,
-      blog_vedlikehold: blog_vedlikehold
-    %}
+    {%- when 'accordion' -%}
+        
+        
+      {%- assign prevIndex = forloop.index0 | minus: 1 -%}
+      {%- assign nextIndex = forloop.index0 | plus: 1 -%}
+      {%- if forloop.first or section.blocks[prevIndex].type != 'accordion' -%}
+        <div class="accordion rte product--accordion product__block product__block--small">
+      {%- endif -%}
+      <div
+        class="accordion__group"
+        data-index="{{ forloop.index0 }}"
+        data-open="{% if block.settings.style == 'open' %}true{% else %}false{% endif %}"
+        {{ block.shopify_attributes }}
+      >
+        {% if mats == null and block.settings.heading == 'Materiale'%}
+        {%else%}
+          <a class="accordion__label" href="#">
+          {{ block.settings.heading }}
+        </a>
+        {%endif%}
+        <div class="accordion__text fs-body-small">
+          
+          {%if block.settings.heading  == 'Dimensjoner'%}  
+          {%  assign dimensjoner = "Sittedybde" | append: ":" | append: product.metafields.product_data.sittedybde | append: "," | append: "Sittehøyde" | append: ":" | append: product.metafields.product_data.sittehoyde | append: "," | append: "Armlene" | append: ":" | append: product.metafields.product_data.hoyde_armlene | append: "," | append: "Diameter" | append: ":" | append: product.metafields.product_data.diameter | append: "," | append: "Bredde" | append: ":" | append: product.metafields.product_data.produktbredde | append: "," | append: "Dybde" | append: ":" | append: product.metafields.product_data.produktdybde | append: "," | append: "Lengde" | append: ":" | append: product.metafields.product_data.produktlengde | append: "," | append: "Høyde" | append: ":" | append: product.metafields.product_data.produkth_yde | append: "," | append: "Vekt" | append: ":" | append: product.metafields.product_data.produktvekt | split: ","
+%}
+            {% for dimensjon in dimensjoner %}
+                          {% assign dim_i = o %}
+                          {% assign values_dim = dimensjon | split: ":" %}
+                          {% unless values_dim[1] == blank %}
+                              {% unless values_dim[1] == "0" %}
+                                  {% if values_dim[0] == "Vekt" %}
+                                      {% assign dim_trail = "kg" %}
+                                  {% else %}
+                                      {% assign dim_trail = "cm" %}
+                                  {% endif %}
+                                  <span>
+                                      {% assign dim_i = 0 %}
+                                      {% for value_dim in values_dim %}
+                                          {% if dim_i == 0 %}
+                                              <strong>{{ value_dim }}: </strong>
+                                          {% else %}
+                                              {{ value_dim }} {{ dim_trail }}
+                                          {% endif %}
+                                          {% assign dim_i = dim_i | plus: 1 %}
+                                      {% endfor %}
+                                  </span><br>
+                              {% endunless %}
+                          {% endunless %}
+                      {% endfor %}
+          
+         {% elsif block.settings.heading  == 'Materiale'  %}
+            {{mats}}
+     
+          
+            {%elsif block.settings.heading  == 'Ytterligere informasjon'%}
+     <strong>Varenummer:</strong> {{ product.selected_or_first_available_variant.sku }}
+          
+          
+          {%else%}
+                   {{ block.settings.content }}
+          {%endif%}
+
+        </div>
+      </div>
+      {% if forloop.last or section.blocks[nextIndex].type != 'accordion' %}
+          <br>
+      </div>
+      {% endif %}
   {%- when 'inventory_counter' -%}
       {%- render 'inventory-counter' with
         product: product,
