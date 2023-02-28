@@ -17,7 +17,6 @@
     "main": {
       "type": "main-collection-grid",
       "settings": {
-        "wide-display": true,
         "show_filter": true,
         "show_sort": false,
         "per_row": 3,
