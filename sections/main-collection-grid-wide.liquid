@@ -15,7 +15,15 @@
     endif
   endif
 %}
-
+<style type="text/css">
+a.double-image .product-item__image {
+  width: 50%;
+  padding-top: calc((2 / 3) * 100%);
+  padding-left: 0;
+  margin: 0;
+  float: left;
+}
+</style>
 {% paginate collection.products by per_page %}
   <section
     class="

@@ -44,17 +44,17 @@
         {%- endif -%}
       >
         {%- if multiple_images -%}
-          {% if product.media[1].media_type == 'video' %}
+          {% if product.media[0].media_type == 'video' %}
             {% render 'video' with
-              id: product.media[1].id,
-              media: product.media[1],
+              id: product.media[0].id,
+              media: product.media[0],
               wrapper_class: 'product-item__image nopadding',
               disable_style: disabled_image_style
             %}
           {% else %}
             {% render 'image' with
-              id: product.media[1].id,
-              image: product.media[1].preview_image,
+              id: product.media[0].id,
+              image: product.media[0].preview_image,
               wrapper_class: 'product-item__image',
               disable_style: disabled_image_style
             %}
@@ -76,8 +76,8 @@
         {%- else -%}
           {% if product.featured_media %}
             {% render 'image' with
-              id: product.featured_media.id,
-              image: product.featured_media,
+              id: product.media[1].id,
+              image: product.media[1].preview_image,
               wrapper_class: 'product-item__image',
               disable_style: disabled_image_style
             %}
