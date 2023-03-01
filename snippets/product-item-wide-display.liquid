@@ -36,7 +36,7 @@
     </div>
   {%- else -%}
     <div class="product-item__media">
-      <a class="product-item__image-link borders{%- if multiple_images -%} double-image{%- endif -%}" href="{{ product.url }}" 
+      <a class="product-item__image-link borders {%- if multiple_images -%} double-image{%- endif -%}" href="{{ product.url }}" 
         {%- if product -%}
           title="{{product.title}}"
         {%- else -%}
