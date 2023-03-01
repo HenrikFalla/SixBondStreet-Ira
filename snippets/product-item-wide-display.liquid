@@ -1,4 +1,5 @@
 {%- liquid
+  assign multiple_images = false
   if media_count > 1
     assign multiple_images = true
   endif
@@ -43,7 +44,7 @@
           title="{{ 'sections.featured_products.placeholder.product_title' | t }}"
         {%- endif -%}
       >
-        {% if multiple_images %}
+        {% if multiple_images == true %}
           {% if product.featured_media %}
             {% render 'image' with
               id: product.featured_media.id,
