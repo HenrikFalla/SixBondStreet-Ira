@@ -43,7 +43,30 @@
           title="{{ 'sections.featured_products.placeholder.product_title' | t }}"
         {%- endif -%}
       >
-        {%- if multiple_images -%}
+        {% if multiple_images %}
+          {% if product.featured_media %}
+            {% render 'image' with
+              id: product.featured_media.id,
+              image: product.featured_media,
+              wrapper_class: 'product-item__image',
+              disable_style: disabled_image_style
+            %}
+            {% if product.media[2].media_type == 'video' %}
+              {% render 'video' with
+                id: product.media[2].id,
+                media: product.media[2],
+                wrapper_class: 'product-item__image nopadding',
+                disable_style: disabled_image_style
+              %}
+            {% else %}
+              {% render 'image' with
+                image: product.media[2].preview_image,
+                wrapper_class: 'product-item__image',
+                disable_style: true
+              %}
+            {% endif %}
+          {% endif %}
+        {% else %}
           {% if product.media[0].media_type == 'video' %}
             {% render 'video' with
               id: product.media[0].id,
@@ -53,41 +76,13 @@
             %}
           {% else %}
             {% render 'image' with
-              id: product.media[0].id,
-              image: product.media[0].preview_image,
+              id: product.media[1].id,
+              image: product.media[1].preview_image,
               wrapper_class: 'product-item__image',
               disable_style: disabled_image_style
             %}
           {% endif %}
-          {% if product.media[2].media_type == 'video' %}
-            {% render 'video' with
-              id: product.media[2].id,
-              media: product.media[2],
-              wrapper_class: 'product-item__image nopadding',
-              disable_style: disabled_image_style
-            %}
-          {% else %}
-            {% render 'image' with
-              id: product.media[2].id,
-              image: product.media[2].preview_image,
-              wrapper_class: 'product-item__image',
-              disable_style: disabled_image_style
-            %}
-          {% endif %}
-        {%- else -%}
-          {% if product.featured_media %}
-            {% render 'image' with
-              id: product.media[2].id,
-              image: product.media[2].preview_image,
-              wrapper_class: 'product-item__image',
-              disable_style: disabled_image_style
-            %}
-          {% else %}
-            <div class="placeholder-image">
-              {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
-            </div>
-          {% endif %}
-        {%- endif -%}
+        {% endif %}
       </a>
       {% if product.available and settings.cart_enable_quick_shop %}
         <div class="product-item__add">
