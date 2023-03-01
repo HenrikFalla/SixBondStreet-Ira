@@ -1,5 +1,4 @@
 {% liquid
-  assign per_row = section.settings.per_row
   assign per_page = section.settings.per_page
   assign show_sort = section.settings.show_sort
   assign show_filter = section.settings.show_filter
@@ -54,10 +53,10 @@
             show_sort: section.settings.show_sort
           %}
         {% endif %}
-<span class="clerk" 
-    data-template="@category-page-popular" 
-    data-category="{{ collection.id }}" >
-</span>
+        <span class="clerk" 
+            data-template="@category-page-popular" 
+            data-category="{{ collection.id }}" >
+        </span>
         <div class="collection__window" id="products">
 
           <div class="collection__loading" data-js-loading>
@@ -75,7 +74,15 @@
                 <div class="grid__item grid__item--{{ per_row }} animate animate-up">
                   {% render 'product-item' with
                     product: product,
-                    aspect_ratio: section.settings.aspect_ratio,
+                    aspect_ratio: "landscape",
+                    media_count: 1
+                  %}
+                </div>
+                <div class="grid__item grid__item--{{ per_row }} animate animate-up">
+                  {% render 'product-item-wide-display' with
+                    product: product,
+                    aspect_ratio: "portrait",
+                    media_count: 2
                   %}
                 </div>
               {% else %}
@@ -129,15 +136,6 @@
       {
         "type": "header",
         "content": "t:sections.main_collection_grid.settings.header_grid.content"
-      },
-      {
-        "id": "per_row",
-        "type": "range",
-        "label": "t:sections.main_collection_grid.settings.per_row.label",
-        "default": 3,
-        "min": 2,
-        "max": 4,
-        "step": 1
       },
       {
         "id": "per_page",
