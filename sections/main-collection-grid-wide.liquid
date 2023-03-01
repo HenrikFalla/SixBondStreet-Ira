@@ -80,7 +80,7 @@ a.double-image .product-item__image {
             <div class="collection__grid grid">
               {% for product in collection.products %}
                 <div class="grid__item grid__item--{{ per_row }} animate animate-up">
-                  {% render 'product-item' with
+                  {% render 'product-item-wide-display' with
                     product: product,
                     aspect_ratio: "landscape",
                     media_count: 1

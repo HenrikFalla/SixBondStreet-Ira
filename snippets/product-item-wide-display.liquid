@@ -1,5 +1,4 @@
 {%- liquid
-  assign multiple_images = false
   if media_count > 1
     assign multiple_images = true
   endif
@@ -44,8 +43,7 @@
           title="{{ 'sections.featured_products.placeholder.product_title' | t }}"
         {%- endif -%}
       >
-        {% if multiple_images == true %}
-          <span> Multiple images</span>
+        {% if multiple_images %}
           {% if product.featured_media %}
             {% render 'image' with
               id: product.featured_media.id,
@@ -69,7 +67,21 @@
             {% endif %}
           {% endif %}
         {% else %}
-          
+          {% if product.media[0].media_type == 'video' %}
+            {% render 'video' with
+              id: product.media[0].id,
+              media: product.media[0],
+              wrapper_class: 'product-item__image nopadding',
+              disable_style: disabled_image_style
+            %}
+          {% else %}
+            {% render 'image' with
+              id: product.media[1].id,
+              image: product.media[1].preview_image,
+              wrapper_class: 'product-item__image',
+              disable_style: disabled_image_style
+            %}
+          {% endif %}
         {% endif %}
       </a>
       {% if product.available and settings.cart_enable_quick_shop %}
