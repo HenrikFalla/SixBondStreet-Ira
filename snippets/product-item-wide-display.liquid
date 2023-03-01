@@ -45,6 +45,7 @@
         {%- endif -%}
       >
         {% if multiple_images == true %}
+          <span> Multiple images</span>
           {% if product.featured_media %}
             {% render 'image' with
               id: product.featured_media.id,
