@@ -14,28 +14,6 @@
         "color_subheading": "#ffffff"
       }
     },
-    "main": {
-      "type": "main-collection-grid",
-      "disabled": true,
-      "settings": {
-        "show_filter": true,
-        "show_sort": false,
-        "per_row": 2,
-        "per_page": 12,
-        "aspect_ratio": "square"
-      }
-    },
-    "featured": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "",
-        "title": "Featured collection",
-        "per_row": 3,
-        "rows": 1,
-        "aspect_ratio": "natural"
-      }
-    },
     "24ff8b99-cc93-4489-af1e-4d3a3b25625f": {
       "type": "main-collection-grid-wide",
       "settings": {
