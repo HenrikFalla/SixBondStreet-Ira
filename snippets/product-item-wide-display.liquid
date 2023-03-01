@@ -77,8 +77,8 @@
         {%- else -%}
           {% if product.featured_media %}
             {% render 'image' with
-              id: product.media[1].id,
-              image: product.media[1].preview_image,
+              id: product.media[2].id,
+              image: product.media[2].preview_image,
               wrapper_class: 'product-item__image',
               disable_style: disabled_image_style
             %}
