@@ -68,9 +68,10 @@
             %}
           {% else %}
             {% render 'image' with
+              id: product.media[2].id,
               image: product.media[2].preview_image,
               wrapper_class: 'product-item__image',
-              disable_style: true
+              disable_style: disabled_image_style
             %}
           {% endif %}
         {%- else -%}
