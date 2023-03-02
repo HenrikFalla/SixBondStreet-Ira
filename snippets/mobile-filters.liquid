@@ -29,3 +29,15 @@
 
   <div class="space"></div>
 </div>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $('.collection-top-bar__filters .in_stock_toggle').on('click', function(e) {
+      $(this).toggleClass("inactive active");
+    $('#filter--filter\\.p\\.m\\.product_data\\.in_stock--Ja--sidebar').trigger('click');
+      e.preventDefault();
+  });
+  if ($('#filter--filter\\.p\\.m\\.product_data\\.in_stock--Ja--sidebar').prop('checked')) {
+      $(".collection-top-bar__filters .in_stock_toggle").toggleClass("active inactive");
+  };
+  </script>
