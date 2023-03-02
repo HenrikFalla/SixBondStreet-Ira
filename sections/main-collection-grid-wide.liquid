@@ -37,6 +37,19 @@ a.double-image .product-item__image {
 a.double-image div:nth-child(3) {
   margin-left: 12px;
 } */
+.collection__sidebar {
+  display: none!important;
+}
+.collection__main-area {
+  width: 100%!important;
+  max-width: 100%!important;
+}
+.collection-top-bar__filters {
+  display: flex!important;
+}
+[data-mobile-filter="in-stock"] {
+  display: none;
+}
 </style>
 {% paginate collection.products by per_page %}
   <section
