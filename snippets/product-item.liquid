@@ -125,8 +125,13 @@
 
       {% if product != blank %}
         {% if product.compare_at_price > product.price %}
+          {% for variant in product.variants %}
+            {% if variant.available == false %}
+              <span>{{ variant.option1 }}</span>
+            {% endif %}
+          {% endfor %}
           <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
-          <s class="t-subdued">{{ product.compare_at_price | money }}</s>
+          <!-- <s class="t-subdued">{{ product.compare_at_price | money }}</s> -->
 
           {% if product.price_varies %}
             {%- assign sale_price = product.price | money -%}
@@ -134,8 +139,6 @@
           {% else %}
             <span class="sale sxbs-on-sale">{{ product.price | money }}<span>
           {% endif %}
-          <span>{{ product.compare_at_price }}</span>
-          <span>{{ product.price }}</span>
           {% render 'unit-price' item: current_variant %}
           {%- assign amount_saved_percent = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price -%}
           {% assign amount_saved = product.compare_at_price | minus: product.price %}
