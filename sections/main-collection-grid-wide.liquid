@@ -124,6 +124,22 @@ a.double-image div:nth-child(3) {
                     media_count: 2
                   %}
                 </div>
+                {% for media in product.media %}
+                  {% assign mediacount = 0 %}
+                  {% if media.type == 'video'%}
+                    <div class="grid__item grid__item--{{ per_row }} animate animate-up">
+                      {% render 'product-item-wide-display' with
+                        product: product,
+                        aspect_ratio: "landscape",
+                        media_count: 1,
+                        media_placement: mediacount
+                      %}
+                    </div>
+                    {% break %}
+                  {% else %}
+                    {% assign mediacount = mediacount | plus: 1 %}
+                  {% endif %}
+                {% endfor %}
               {% else %}
                 <div class="collection__empty">
                   <div class="ff-heading fs-heading-small">No products</div>
