@@ -16,6 +16,7 @@
     },
     "main": {
       "type": "main-collection-grid",
+      "disabled": true,
       "settings": {
         "show_filter": true,
         "show_sort": false,
@@ -34,11 +35,21 @@
         "rows": 1,
         "aspect_ratio": "natural"
       }
+    },
+    "752b2de0-4594-4b9a-8b0f-f592d2e33f67": {
+      "type": "main-collection-grid-wide",
+      "settings": {
+        "show_filter": true,
+        "show_sort": true,
+        "per_page": 12,
+        "aspect_ratio": "square"
+      }
     }
   },
   "order": [
     "intro",
     "main",
-    "featured"
+    "featured",
+    "752b2de0-4594-4b9a-8b0f-f592d2e33f67"
   ]
 }
