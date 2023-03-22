@@ -127,7 +127,7 @@ a.double-image div:nth-child(3) {
                 {% for media in product.media %}
                   {% assign mediacount = 0 %}
                   {% if media.media_type == 'video'%}
-                    <div class="grid__item grid__item--{{ per_row }} animate animate-up">
+                    <div class="grid__item grid__item--full-width grid__item--{{ per_row }} animate animate-up">
                       {% render 'product-item-wide-display' with
                         product: product,
                         aspect_ratio: "landscape",
