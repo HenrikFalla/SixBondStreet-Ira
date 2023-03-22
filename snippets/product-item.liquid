@@ -141,9 +141,15 @@
             {% endif %}
           {% endfor %}
         {% endunless %}
-        {% if control_price_compare %}
-          <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
-          <s class="t-subdued">{{ control_price_compare | money }}</s>
+        {% if product.compare_at_price > product.price %}
+          {% if control_price_compare %}
+            <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+            <s class="t-subdued">{{ control_price_compare | money }}</s>
+          {% else %}
+            <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+            <s class="t-subdued">{{ product.compare_at_price | money }}</s>
+          {% endif %}
+        
 
           {% if product.price_varies %}
             {%- assign sale_price = control_price_sale | money -%}
