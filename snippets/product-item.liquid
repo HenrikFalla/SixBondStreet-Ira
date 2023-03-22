@@ -153,12 +153,16 @@
         
 
           {% if product.price_varies %}
-            {%- assign sale_price = control_price_sale | money -%}
+            {% unless control_price_sale == 100000000 %}
+              {%- assign sale_price = control_price_sale | money -%}
+            {% else %}
+              {%- assign sale_price = product.price | money -%}
+            {% endunless%}
             {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
             {% render 'unit-price' item: current_variant %}
-            {%- assign amount_saved_percent = control_price_compare | minus: control_price_sale | times: 100.0 | divided_by: control_price_compare -%}
-            {% assign amount_saved = control_price_compare | minus: control_price_sale %}
-            {% assign discount_check = control_price_compare | minus: control_price_sale | divided_by: 100.0 %}
+            {%- assign amount_saved_percent = control_price_compare | minus: sale_price | times: 100.0 | divided_by: control_price_compare -%}
+            {% assign amount_saved = control_price_compare | minus: sale_price %}
+            {% assign discount_check = control_price_compare | minus: sale_price | divided_by: 100.0 %}
             {% if discount_check < 1000 %}
               <span class="on-sale saved_percentage">{{ amount_saved_percent | round }}% avslag</span>
               {% render 'collection-banner' with
