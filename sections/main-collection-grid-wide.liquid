@@ -1,0 +1,240 @@
+{% liquid
+  assign per_page = section.settings.per_page
+  assign show_sort = section.settings.show_sort
+  assign show_filter = section.settings.show_filter
+  assign show_sidebar = false
+  
+  if show_sort or show_filter
+    assign show_sidebar = true
+  endif
+
+  assign show_rule = false
+  if settings.enable_section_borders and show_sidebar 
+    if show_enhanced_header or show_as_slideshow
+      assign show_rule = true
+    endif
+  endif
+%}
+<style type="text/css">
+a.double-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+a.double-image .product-item__image {
+  width: calc(50% - 6px);
+  padding-top: calc((2 / 3) * 100%);
+  margin: 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.product-item__image-link:after {
+  display: none;
+}
+/* a.double-image div:nth-child(1) {
+  margin-right: 12px;
+}
+a.double-image div:nth-child(3) {
+  margin-left: 12px;
+} */
+.collection__sidebar {
+  display: none!important;
+}
+.collection__main-area {
+  width: 100%!important;
+  max-width: 100%!important;
+}
+.collection-top-bar__filters {
+  display: flex!important;
+}
+[data-mobile-filter="in-stock"] {
+  display: none;
+}
+.collection-in-stock__toggle {
+  min-width: 220px;
+  align-items: center;
+}
+.product-item--landscape .nopadding video {
+  max-width: 100%;
+  max-height: none;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.product-item--portrait .nopadding video {
+  position: absolute;
+  top: 0;
+}
+.product-item--portrait .product-item__media .double-image .image:first-child img {
+  object-fit: contain;
+  background: #fff;
+}
+.grid__item--full-width {
+  width: 100%;
+}
+</style>
+{% paginate collection.products by per_page %}
+  <section
+    class="
+      collection
+      s-inline-section
+    "
+    data-section-id="{{ section.id }}"
+    data-section-type="collection"
+  >
+    <div
+      class="collection__content
+        {% if show_rule %}collection__content--rule{% endif %}
+      "
+      data-js-container
+    >
+
+      {%- if show_sidebar -%}
+        <div class="collection__sidebar" data-js-sidebar>
+          <a href="#products" class="skip-to-content-button">
+            {{ 'general.accessibility.skip_to_content' | t }}
+          </a>
+          {% render 'collection-sidebar' with
+            results: collection,
+            show_sort: show_sort
+            show_filter: show_filter
+          %}
+        </div>
+      {%- endif -%}
+
+      <div class="collection__main-area" >
+        {% if show_sidebar %}
+          {% render 'mobile-filters' with
+            results: collection,
+            show_filter: section.settings.show_filter,
+            show_sort: section.settings.show_sort
+          %}
+        {% endif %}
+        <span class="clerk" 
+            data-template="@category-page-popular" 
+            data-category="{{ collection.id }}" >
+        </span>
+        <div class="collection__window" id="products">
+
+          <div class="collection__loading" data-js-loading>
+            {% render 'loader' %}
+          </div>
+
+          <div id="root" class="collection__main" data-js-partial>
+
+            {% render 'collection-top-bar' with
+              results: collection 
+            %}
+
+            <div class="collection__grid grid">
+              {% for product in collection.products %}
+                <div class="grid__item grid__item--{{ per_row }} animate animate-up">
+                  {% render 'product-item-wide-display' with
+                    product: product,
+                    aspect_ratio: "landscape",
+                    media_count: 1
+                  %}
+                </div>
+                <div class="grid__item grid__item--{{ per_row }} animate animate-up">
+                  {% render 'product-item-wide-display' with
+                    product: product,
+                    aspect_ratio: "portrait",
+                    media_count: 2
+                  %}
+                </div>
+                {% for media in product.media %}
+                  {% if media.media_type == 'video'%}
+                    <div class="grid__item grid__item--full-width grid__item--{{ per_row }} animate animate-up">
+                      {% render 'product-item-wide-display' with
+                        product: product,
+                        aspect_ratio: "landscape",
+                        media_count: 1,
+                        featured_video: true
+                      %}
+                    </div>
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+              {% else %}
+                <div class="collection__empty">
+                  <div class="ff-heading fs-heading-small">No products</div>
+                  <a class="link ff-body fs-body-base" data-clear="true">{{ 'filters.clear_filters' | t }}</a>
+                </div>
+              {% endfor %}
+            </div>
+
+            <div class="collection__pagination">
+              {% render 'pagination' with paginate: paginate, disable_page_transitions: true %}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    {% render 'mobile-filtering-modal' with
+      results: collection,
+      show_sort: section.settings.show_sort,
+      show_filter: section.settings.show_filter
+    %}
+  </section>
+{% endpaginate %}
+
+
+{% schema %}
+  {
+    "name": "Product grid wide",
+    "class": "collection-grid-section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Sidebar"
+      },
+      {
+        "id": "show_filter",
+        "type": "checkbox",
+        "label": "t:sections.main_collection_grid.settings.show_filter.label",
+        "default": true,
+        "info": "t:sections.main_collection_grid.settings.show_filter.info"
+      },
+      {
+        "id": "show_sort",
+        "type": "checkbox",
+        "label": "t:sections.main_collection_grid.settings.show_sort.label",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "t:sections.main_collection_grid.settings.header_grid.content"
+      },
+      {
+        "id": "per_page",
+        "type": "range",
+        "label": "t:sections.main_collection_grid.settings.per_page.label",
+        "default": 12,
+        "min": 2,
+        "max": 24,
+        "step": 1
+      },
+      {
+        "id": "aspect_ratio",
+        "type": "select",
+        "label": "t:shared.aspect_ratio.label",
+        "options": [
+          { "label": "t:shared.aspect_ratio.options.natural", "value": "natural" },
+          { "label": "t:shared.aspect_ratio.options.square", "value": "square" },
+          { "label": "t:shared.aspect_ratio.options.landscape", "value": "landscape" },
+          { "label": "t:shared.aspect_ratio.options.portrait", "value": "portrait" }
+        ],
+        "default": "square"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product grid wide",
+        "category": "Collection",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

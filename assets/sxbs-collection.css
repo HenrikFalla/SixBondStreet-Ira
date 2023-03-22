@@ -49,3 +49,7 @@
     position: initial;
     width: 100%;
 }
+.collection-top-bar__filters .collection-in-stock__toggle {
+    min-width: 220px;
+    align-items: center;
+}

@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "intro": {
+      "type": "main-collection-intro",
+      "settings": {
+        "collection_header_style": "full",
+        "image_position": "center center",
+        "enable_full_width": true,
+        "show_collection_description": true,
+        "max_width_text": 60,
+        "opacity_overlay": 30,
+        "color_overlay": "#000000",
+        "color_heading": "#ffffff",
+        "color_subheading": "#ffffff"
+      }
+    },
+    "24ff8b99-cc93-4489-af1e-4d3a3b25625f": {
+      "type": "main-collection-grid-wide",
+      "settings": {
+        "show_filter": true,
+        "show_sort": true,
+        "per_page": 12,
+        "aspect_ratio": "square"
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "main",
+    "featured",
+    "24ff8b99-cc93-4489-af1e-4d3a3b25625f"
+  ]
+}
