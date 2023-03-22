@@ -2,7 +2,7 @@
   if media_count > 1
     assign multiple_images = true
   endif
-  if media_placement
+  if featured_video
     assign multiple_images = false
     assign video_feature = true
   endif
@@ -71,12 +71,17 @@
             {% endif %}
           {% endif %}
         {% elsif video_feature == true %}
-          {% render 'video-wide-collection' with
-            product: product,
-            placement: media_placement,
-            wrapper_class: 'product-item__image nopadding',
-            disable_style: disabled_image_style
-          %}
+          {% for media in product.media %}
+            {% if media.media_type == 'video'%}
+              {% render 'video' with
+                id: media.id,
+                media: media,
+                wrapper_class: 'product-item__image nopadding',
+                disable_style: disabled_image_style
+              %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
         {% else %}
           {% if product.media[1].media_type == 'video' %}
             {% render 'video' with
