@@ -135,6 +135,8 @@
             <span class="sale sxbs-on-sale">{{ product.price | money }}<span>
           {% endif %}
           {% render 'unit-price' item: current_variant %}
+          <span>{{current_variant.compare_at_price}}</span>
+          <span>{{current_variant.price}}</span>
           {%- assign amount_saved_percent = current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price -%}
           {% assign amount_saved = current_variant.compare_at_price | minus: current_variant.price %}
           {% assign discount_check = current_variant.compare_at_price | minus: current_variant.price | divided_by: 100.0 %}
