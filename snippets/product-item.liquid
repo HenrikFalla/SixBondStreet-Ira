@@ -133,6 +133,7 @@
                 {% assign control_price = variant.price %}
               {% endif %}
               {% if variant.price < variant.compare_at_price %}
+                <span>Option: {{ variant.option1 }} Price: {{ variant.price }} compare at price: {{ variant.compare_at_price }}</span>
                 {% if variant.price < control_price_sale %}
                   {% assign control_price_sale = variant.price %}
                   {% assign control_price_compare = variant.compare_at_price %}
