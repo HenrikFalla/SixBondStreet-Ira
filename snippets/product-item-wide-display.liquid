@@ -2,6 +2,10 @@
   if media_count > 1
     assign multiple_images = true
   endif
+  if media_placement
+    assign multiple_images = false
+    assign video_feature = true
+  endif
   assign media_qty = media_count
 
   assign current_variant = product.selected_or_first_available_variant
@@ -36,14 +40,14 @@
     </div>
   {%- else -%}
     <div class="product-item__media">
-      <a class="{%- if multiple_images -%}product-item__image-link borders double-image{%- else -%}product-item__image-link borders{%- endif -%}" href="{{ product.url }}" 
+      <a class="{%- if multiple_images == true -%}product-item__image-link borders double-image{%- else -%}product-item__image-link borders{%- endif -%}" href="{{ product.url }}" 
         {%- if product -%}
           title="{{product.title}}"
         {%- else -%}
           title="{{ 'sections.featured_products.placeholder.product_title' | t }}"
         {%- endif -%}
       >
-        {% if multiple_images %}
+        {% if multiple_images == true %}
           {% if product.featured_media %}
             {% render 'image' with
               id: product.featured_media.id,
@@ -66,6 +70,13 @@
               %}
             {% endif %}
           {% endif %}
+        {% elsif video_feature == true %}
+          {% render 'video' with
+            id: product.media[{{ mediaplacement }}].id,
+            media: product.media[{{ mediaplacement }}],
+            wrapper_class: 'product-item__image nopadding',
+            disable_style: disabled_image_style
+          %}
         {% else %}
           {% if product.media[1].media_type == 'video' %}
             {% render 'video' with
