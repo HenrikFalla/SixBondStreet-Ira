@@ -71,9 +71,9 @@
             {% endif %}
           {% endif %}
         {% elsif video_feature == true %}
-          {% render 'video' with
-            id: product.media[{{ mediaplacement }}].id,
-            media: product.media[{{ mediaplacement }}],
+          {% render 'video-wide-collection' with
+            product: product,
+            placement: media_placement,
             wrapper_class: 'product-item__image nopadding',
             disable_style: disabled_image_style
           %}

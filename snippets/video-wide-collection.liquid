@@ -1,0 +1,16 @@
+{% for vmedia in product.media %}
+    {% assign count = 0 %}
+    {% if count == placement %}
+        {% assign id = vmedia.id %}
+        {% assign media = vmedia %}
+    {% else %}
+        {% assign count = count | plus: 1 %}
+    {% endif %}
+{% endfor%}
+{%- assign height = media.height | times: 1.0 | default: 1.0 -%}
+{%- assign width = media.width | times: 1.0 | default: 1.0 -%}
+{%- assign padding_top = height | divided_by: width | times: 100 | append: "%" -%}
+
+<div class="image image--{{ id }} image--responsive {{ wrapper_class}}">
+{{ media | video_tag: controls: true, image_size: "1024x", autoplay: true, loop: true }}
+</div>
