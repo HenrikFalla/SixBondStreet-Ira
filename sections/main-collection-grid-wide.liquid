@@ -54,6 +54,13 @@ a.double-image div:nth-child(3) {
   min-width: 220px;
   align-items: center;
 }
+.product-item--landscape .nopadding video {
+  max-width: 100%;
+  max-height: none;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
 </style>
 {% paginate collection.products by per_page %}
   <section
