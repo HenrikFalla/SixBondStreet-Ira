@@ -124,20 +124,37 @@
       {%- endif -%}
 
       {% if product != blank %}
-        {% if product.compare_at_price > product.price %}
+        {% unless product.has_only_default_variant %}
+          {% assign control_price = 100000000 %}
+          {% assign control_price_sale = 100000000 %}
+          {% for variant in product.variants %}
+            {% if variant.available == true %}
+              {% if variant.price < control_price %}
+                {% assign control_price = variant.price %}
+              {% endif %}
+              {% if variant.price < variant.compare_at_price %}
+                {% if variant.price < control_price_sale %}
+                  {% assign control_price_sale = variant.price %}
+                  {% assign control_price_compare = variant.compare_at_price %}
+                {% endif %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endunless %}
+        {% if control_price_compare %}
           <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
-          <s class="t-subdued">{{ product.compare_at_price | money }}</s>
+          <s class="t-subdued">{{ control_price_compare | money }}</s>
 
           {% if product.price_varies %}
-            {%- assign sale_price = product.price | money -%}
+            {%- assign sale_price = control_price_sale | money -%}
             {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
           {% else %}
             <span class="sale sxbs-on-sale">{{ product.price | money }}<span>
           {% endif %}
           {% render 'unit-price' item: current_variant %}
-          {%- assign amount_saved_percent = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price -%}
-          {% assign amount_saved = product.compare_at_price | minus: product.price %}
-          {% assign discount_check = product.compare_at_price | minus: product.price | divided_by: 100.0 %}
+          {%- assign amount_saved_percent = control_price_compare | minus: control_price_sale | times: 100.0 | divided_by: control_price_compare -%}
+          {% assign amount_saved = control_price_compare | minus: control_price_sale %}
+          {% assign discount_check = control_price_compare | minus: control_price_sale | divided_by: 100.0 %}
           {% if discount_check < 1000 %}
             <span class="on-sale saved_percentage">{{ amount_saved_percent | round }}% avslag</span>
             {% render 'collection-banner' with
@@ -151,7 +168,7 @@
           {% endif %}
         {% else %}
           {% if product.price_varies %}
-            {%- assign price = product.price | money -%}
+            {%- assign price = control_price | money -%}
             {{ 'products.product.from_lowest_price_html' | t: lowest_price: price }}
           {% else %}
             {{ product.price | money }}

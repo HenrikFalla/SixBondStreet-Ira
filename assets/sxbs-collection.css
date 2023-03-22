@@ -36,6 +36,7 @@
     left: 24px;
     width: 70px;
     display: block;
+    z-index: 2;
 }
 .collection-banner span {
     position: absolute;
