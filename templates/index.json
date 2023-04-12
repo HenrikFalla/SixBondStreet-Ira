@@ -511,7 +511,7 @@
             "subheading": "<p>Her finner du alle våre nyheter<\/p>",
             "max_width_subheading": 28,
             "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/nyheter",
+            "link": "shopify:\/\/collections\/nyheter-2",
             "alignment": "center_center",
             "opacity_overlay": 40
           }
