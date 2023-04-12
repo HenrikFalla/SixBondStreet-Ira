@@ -288,7 +288,7 @@
             "subheading": "<p>Her finner du alle våre nyheter.<\/p>",
             "max_width_subheading": 28,
             "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/nyheter",
+            "link": "shopify:\/\/collections\/nyheter-2",
             "alignment": "center_center",
             "opacity_overlay": 30
           }
@@ -414,7 +414,7 @@
     "1655906078323d2266": {
       "type": "featured-collection",
       "settings": {
-        "collection": "nyheter",
+        "collection": "nyheter-2",
         "title": "{{ section.settings.collection.title }}",
         "per_row": 4,
         "rows": 1,
