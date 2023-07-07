@@ -31,8 +31,8 @@
         "template--15944979939525__f38af089-6df6-4e9d-8229-dda182262c89-167110217590d2c54e-0"
       ],
       "settings": {
-        "desktop_height": 70,
-        "mobile_height": 70,
+        "desktop_height": 55,
+        "mobile_height": 65,
         "duration_autoplay": 4,
         "enable_parallax": false,
         "enable_full_width": true,
