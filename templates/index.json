@@ -39,6 +39,51 @@
         "color_dot": "#777777"
       }
     },
+    "1652734830e13bb44f": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "1652734830beeb48e1-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shipped_0433dece-e93b-493d-b515-b5906a5d371f.png",
+            "title": "Trygg levering",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        },
+        "1652734830beeb48e1-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/circular-arrow.png",
+            "title": "30 dager åpent kjøp",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        },
+        "1652734830beeb48e1-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/safe_payment_solid.png",
+            "title": "Trygg betaling",
+            "text": "",
+            "link": "#",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1652734830beeb48e1-0",
+        "1652734830beeb48e1-1",
+        "1652734830beeb48e1-2"
+      ],
+      "settings": {
+        "per_row": 3,
+        "image_max_width": 100,
+        "circle": true
+      }
+    },
     "44e5109c-a793-4f62-a83e-e59b2c6dfdf1": {
       "type": "slideshow",
       "blocks": {
@@ -139,49 +184,66 @@
         "enable_full_width": false
       }
     },
-    "1652734830e13bb44f": {
-      "type": "text-columns-with-images",
+    "7b75f33f-384e-4a60-bc59-46ddcd0338ed": {
+      "type": "slideshow",
       "blocks": {
-        "1652734830beeb48e1-0": {
-          "type": "column",
+        "template--15903449022661__7b75f33f-384e-4a60-bc59-46ddcd0338ed-1668510469d5644e64-0": {
+          "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shipped_0433dece-e93b-493d-b515-b5906a5d371f.png",
-            "title": "Trygg levering",
-            "text": "",
-            "link": "#",
-            "link_text": ""
+            "image": "shopify:\/\/shop_images\/banner_salg.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/banner_salg_mobil.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "Drammensveien 130, Oslo",
+            "title": "LAGERSALG",
+            "subheading": "<p>Vi har åpnet outlet i vårt showroom for å gi nytt liv til sesongvarer, utstillingsmodeller, reklamasjoner og returvarer. Velkommen til oss i Drammensveien 130 i Oslo.<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "",
+            "link": "",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#f8f7f5",
+            "color_overlay": "#000000",
+            "opacity_overlay": 0
           }
         },
-        "1652734830beeb48e1-1": {
-          "type": "column",
+        "2a43bcae-842a-481a-b64c-44c40c3982cd": {
+          "type": "image",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/circular-arrow.png",
-            "title": "30 dager åpent kjøp",
-            "text": "",
-            "link": "#",
-            "link_text": ""
-          }
-        },
-        "1652734830beeb48e1-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/safe_payment_solid.png",
-            "title": "Trygg betaling",
-            "text": "",
-            "link": "#",
-            "link_text": ""
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "",
+            "title": "",
+            "subheading": "",
+            "max_width_subheading": 30,
+            "link_text": "",
+            "link": "",
+            "alignment": "left_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#b8b8b8",
+            "color_text_button": "#ffffff",
+            "color_background_button": "#000000",
+            "color_overlay": "#000000",
+            "opacity_overlay": 60
           }
         }
       },
       "block_order": [
-        "1652734830beeb48e1-0",
-        "1652734830beeb48e1-1",
-        "1652734830beeb48e1-2"
+        "template--15903449022661__7b75f33f-384e-4a60-bc59-46ddcd0338ed-1668510469d5644e64-0",
+        "2a43bcae-842a-481a-b64c-44c40c3982cd"
       ],
       "settings": {
-        "per_row": 3,
-        "image_max_width": 100,
-        "circle": true
+        "desktop_height": 65,
+        "mobile_height": 65,
+        "duration_autoplay": 4,
+        "enable_parallax": false,
+        "enable_full_width": false,
+        "color_dot": "#777777"
       }
     },
     "slideshow-1": {
@@ -281,45 +343,6 @@
       ],
       "settings": {
         "enable_full_width": false
-      }
-    },
-    "7b75f33f-384e-4a60-bc59-46ddcd0338ed": {
-      "type": "slideshow",
-      "blocks": {
-        "template--15903449022661__7b75f33f-384e-4a60-bc59-46ddcd0338ed-1668510469d5644e64-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fjellhytta_banner_fosdide.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/fjellhytta_banner_fosdide.jpg",
-            "focal_point": "center_center",
-            "focal_point_mobile": "center_center",
-            "video_url": "",
-            "meta": "",
-            "title": "Hvordan innrede hytta på fjellet?",
-            "subheading": "<p>Crispy luft, roser i kinnene, gode stunder med venner og familie. Ja, vi snakker om fjellhytta! <strong>Foto<\/strong>: Paul Lockhart<\/p>",
-            "max_width_subheading": 30,
-            "link_text": "Les mer her",
-            "link": "shopify:\/\/blogs\/inspirasjon\/hvordan-innrede-hytta-pa-fjellet",
-            "alignment": "center_center",
-            "color_heading": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_text_button": "#000000",
-            "color_background_button": "#f8f7f5",
-            "color_overlay": "#000000",
-            "opacity_overlay": 30
-          }
-        }
-      },
-      "block_order": [
-        "template--15903449022661__7b75f33f-384e-4a60-bc59-46ddcd0338ed-1668510469d5644e64-0"
-      ],
-      "settings": {
-        "desktop_height": 65,
-        "mobile_height": 65,
-        "duration_autoplay": 4,
-        "enable_parallax": false,
-        "enable_full_width": false,
-        "color_dot": "#777777"
       }
     },
     "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5": {
@@ -964,12 +987,12 @@
   },
   "order": [
     "f38af089-6df6-4e9d-8229-dda182262c89",
+    "1652734830e13bb44f",
     "44e5109c-a793-4f62-a83e-e59b2c6dfdf1",
     "afa98bb1-2ec8-4821-b0f4-90df414b33ce",
-    "1652734830e13bb44f",
+    "7b75f33f-384e-4a60-bc59-46ddcd0338ed",
     "slideshow-1",
     "2-column-mosaic-grid",
-    "7b75f33f-384e-4a60-bc59-46ddcd0338ed",
     "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5",
     "47c2154c-a63c-4ca9-bd80-9dfb10180ca7",
     "1a5a1932-8888-4fd6-9096-b6c6b59807b5",
