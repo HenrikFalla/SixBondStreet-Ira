@@ -246,6 +246,91 @@
         "color_dot": "#777777"
       }
     },
+    "47c2154c-a63c-4ca9-bd80-9dfb10180ca7": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "fefe5de7-18c1-44c9-9b64-7648325c846c": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8924889248_86af57a7-5628-459d-a94a-3c50360a53de.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Hagemøbler",
+            "title": "30% rabatt",
+            "subheading": "<p>Ut august gir vi deg hele 30% rabatt på møbler til uteplassen. Gjelder ikke produkter fra Artwood.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/utemobler",
+            "text_position": "center_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 37
+          }
+        },
+        "9ecdb5b4-7e52-4176-9116-07133e3799ad": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/michigan_sofabord_sort_e063655a-5680-4734-8c8d-40c91956feaf.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Interiør",
+            "title": "Gulvtepper",
+            "subheading": "<p>Lun opp hjem og hytte ved hjelp av myke og lune gulvtepper.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/gulvtepper",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "ba050088-0a27-4931-a408-05e03fb69119": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_fotokunst.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "Interiør",
+            "title": "Fotokunst",
+            "subheading": "<p>Alt du trenger for å oppgradere veggene dine.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/fotokunst",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "fefe5de7-18c1-44c9-9b64-7648325c846c",
+        "9ecdb5b4-7e52-4176-9116-07133e3799ad",
+        "ba050088-0a27-4931-a408-05e03fb69119"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
     "slideshow-1": {
       "type": "slideshow",
       "blocks": {
@@ -349,91 +434,6 @@
       "type": "clerk-home-page-recommendations",
       "settings": {
         "recommendation_type": "complimentary"
-      }
-    },
-    "47c2154c-a63c-4ca9-bd80-9dfb10180ca7": {
-      "type": "2-column-mosaic-grid",
-      "blocks": {
-        "fefe5de7-18c1-44c9-9b64-7648325c846c": {
-          "type": "medium_horizontal_rect",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner_forside_ace.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Inspirasjon",
-            "title": "Lys opp høstmørket",
-            "subheading": "<p>Her finner du dekorativ belysning til alle rom.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/belysning",
-            "text_position": "center_bottom",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 37
-          }
-        },
-        "9ecdb5b4-7e52-4176-9116-07133e3799ad": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/michigan_sofabord_sort_e063655a-5680-4734-8c8d-40c91956feaf.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Interiør",
-            "title": "Gulvtepper",
-            "subheading": "<p>Lun opp hjem og hytte ved hjelp av myke og lune gulvtepper.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/gulvtepper",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 20
-          }
-        },
-        "ba050088-0a27-4931-a408-05e03fb69119": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner_fotokunst.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Interiør",
-            "title": "Fotokunst",
-            "subheading": "<p>Alt du trenger for å oppgradere veggene dine.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/fotokunst",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 20
-          }
-        }
-      },
-      "block_order": [
-        "fefe5de7-18c1-44c9-9b64-7648325c846c",
-        "9ecdb5b4-7e52-4176-9116-07133e3799ad",
-        "ba050088-0a27-4931-a408-05e03fb69119"
-      ],
-      "settings": {
-        "enable_full_width": false
       }
     },
     "1a5a1932-8888-4fd6-9096-b6c6b59807b5": {
@@ -991,10 +991,10 @@
     "44e5109c-a793-4f62-a83e-e59b2c6dfdf1",
     "afa98bb1-2ec8-4821-b0f4-90df414b33ce",
     "7b75f33f-384e-4a60-bc59-46ddcd0338ed",
+    "47c2154c-a63c-4ca9-bd80-9dfb10180ca7",
     "slideshow-1",
     "2-column-mosaic-grid",
     "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5",
-    "47c2154c-a63c-4ca9-bd80-9dfb10180ca7",
     "1a5a1932-8888-4fd6-9096-b6c6b59807b5",
     "3c461912-2d6a-4c18-a27e-8d55217e2f96",
     "1663579399ad141f79",
