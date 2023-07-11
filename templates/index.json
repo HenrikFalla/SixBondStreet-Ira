@@ -285,97 +285,6 @@
         "color_dot": "#777777"
       }
     },
-    "47c2154c-a63c-4ca9-bd80-9dfb10180ca7": {
-      "type": "2-column-mosaic-grid",
-      "blocks": {
-        "fefe5de7-18c1-44c9-9b64-7648325c846c": {
-          "type": "medium_horizontal_rect",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/8924889248_86af57a7-5628-459d-a94a-3c50360a53de.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Hagemøbler",
-            "title": "30% rabatt",
-            "subheading": "<p>Ut august gir vi deg hele 30% rabatt på møbler til uteplassen. Gjelder ikke produkter fra Artwood.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/utemobler",
-            "text_position": "center_bottom",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 37
-          }
-        },
-        "9ecdb5b4-7e52-4176-9116-07133e3799ad": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/michigan_sofabord_sort_e063655a-5680-4734-8c8d-40c91956feaf.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "",
-            "title": "Interiørvarer",
-            "subheading": "<p>Her finner du alt av vaser og dekorative elementer til hele hjemmet.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/interior",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 20
-          }
-        },
-        "ba050088-0a27-4931-a408-05e03fb69119": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner_fotokunst.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "Interiør",
-            "title": "Fotokunst",
-            "subheading": "<p>Alt du trenger for å oppgradere veggene dine.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/fotokunst",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 20
-          }
-        }
-      },
-      "block_order": [
-        "fefe5de7-18c1-44c9-9b64-7648325c846c",
-        "9ecdb5b4-7e52-4176-9116-07133e3799ad",
-        "ba050088-0a27-4931-a408-05e03fb69119"
-      ],
-      "settings": {
-        "enable_full_width": false
-      }
-    },
-    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5": {
-      "type": "clerk-home-page-recommendations",
-      "settings": {
-        "recommendation_type": "complimentary"
-      }
-    },
     "2-column-mosaic-grid": {
       "type": "2-column-mosaic-grid",
       "blocks": {
@@ -436,28 +345,52 @@
         "enable_full_width": false
       }
     },
-    "1a5a1932-8888-4fd6-9096-b6c6b59807b5": {
+    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5": {
       "type": "clerk-home-page-recommendations",
       "settings": {
-        "recommendation_type": "hot"
+        "recommendation_type": "complimentary"
       }
     },
-    "3c461912-2d6a-4c18-a27e-8d55217e2f96": {
+    "47c2154c-a63c-4ca9-bd80-9dfb10180ca7": {
       "type": "2-column-mosaic-grid",
       "blocks": {
-        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-0": {
+        "fefe5de7-18c1-44c9-9b64-7648325c846c": {
           "type": "medium_horizontal_rect",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sengegavl_messing_PAL.jpg",
+            "image": "shopify:\/\/shop_images\/8924889248_86af57a7-5628-459d-a94a-3c50360a53de.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "meta": "",
-            "title": "Fjellhytte tekstiler",
-            "subheading": "<p>Her finner du alle våre møbler som leveres med herlige rutete tekstiler. De passer utmerket på fjellhytta. Foto: Paul Lockhart<\/p>",
-            "text_max_width": 36,
+            "meta": "Hagemøbler",
+            "title": "30% rabatt",
+            "subheading": "<p>Ut august gir vi deg hele 30% rabatt på møbler til uteplassen. Gjelder ikke produkter fra Artwood.<\/p>",
+            "text_max_width": 28,
             "link_text": "Se utvalget her",
-            "link": "https:\/\/sixbondstreet.no\/blogs\/inspirasjon\/hyttetekstiler",
+            "link": "shopify:\/\/collections\/utemobler",
+            "text_position": "center_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 37
+          }
+        },
+        "9ecdb5b4-7e52-4176-9116-07133e3799ad": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/michigan_sofabord_sort_e063655a-5680-4734-8c8d-40c91956feaf.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "20% rabatt",
+            "title": "Interiørvarer",
+            "subheading": "<p>Her finner du alt av vaser og dekorative elementer til hele hjemmet.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/interior",
             "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
@@ -466,12 +399,104 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 29
+            "overlay_opacity": 20
+          }
+        },
+        "ba050088-0a27-4931-a408-05e03fb69119": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_fotokunst.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "20% rabatt",
+            "title": "Fotokunst",
+            "subheading": "<p>Alt du trenger for å oppgradere veggene dine er nå nedsatt med 20% ut august.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/fotokunst",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
           }
         }
       },
       "block_order": [
-        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-0"
+        "fefe5de7-18c1-44c9-9b64-7648325c846c",
+        "9ecdb5b4-7e52-4176-9116-07133e3799ad",
+        "ba050088-0a27-4931-a408-05e03fb69119"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "1a5a1932-8888-4fd6-9096-b6c6b59807b5": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "hot"
+      }
+    },
+    "1663578893628202ea": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "d6c8a5e5-b10d-45e7-9bf5-8a32eb798697": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/spisestue_banner_somerset.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "30% rabatt",
+            "title": "Somerset spisebord ø150",
+            "subheading": "<p>Det mest innbydende spisebordet med den mest anvennlige størrelsen. På lager for omgående levering og nedsatt med 30% ut august.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Kjøp bordet her",
+            "link": "shopify:\/\/products\/somerset-spisebord-o150-200-med-uttrekk-sort",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 26
+          }
+        },
+        "1663578893011d0a65-0": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_tenderflame_forside.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "20% rabatt",
+            "title": "Peis uten pipe",
+            "subheading": "<p>Hold deg selv og gjestene dine varme utover høsten med hjelp fra peiser fra TenderFlame.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/tenderflame",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "d6c8a5e5-b10d-45e7-9bf5-8a32eb798697",
+        "1663578893011d0a65-0"
       ],
       "settings": {
         "enable_full_width": false
@@ -537,46 +562,28 @@
         "color_text_button": "#000000"
       }
     },
-    "1663578893628202ea": {
+    "dd34eb63-6181-41de-9cac-48e8bd95ddac": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "bestseller"
+      }
+    },
+    "3c461912-2d6a-4c18-a27e-8d55217e2f96": {
       "type": "2-column-mosaic-grid",
       "blocks": {
-        "d6c8a5e5-b10d-45e7-9bf5-8a32eb798697": {
+        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-0": {
           "type": "medium_horizontal_rect",
           "settings": {
-            "image": "shopify:\/\/shop_images\/spisestue_banner_somerset.jpg",
+            "image": "shopify:\/\/shop_images\/sengegavl_messing_PAL.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "meta": "30% rabatt",
-            "title": "Somerset spisebord ø150",
-            "subheading": "<p>Det mest innbydende spisebordet med den mest anvennlige størrelsen. På lager for omgående levering og nedsatt med 30% ut august.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Kjøp bordet her",
-            "link": "shopify:\/\/products\/somerset-spisebord-o150-200-med-uttrekk-sort",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000",
-            "overlay_opacity": 26
-          }
-        },
-        "1663578893011d0a65-0": {
-          "type": "medium_horizontal_rect",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner_tenderflame_forside.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "20% rabatt",
-            "title": "Peis uten pipe",
-            "subheading": "<p>Hold deg selv og gjestene dine varme utover høsten med hjelp fra peiser fra TenderFlame.<\/p>",
-            "text_max_width": 28,
+            "meta": "",
+            "title": "Fjellhytte tekstiler",
+            "subheading": "<p>Her finner du alle våre møbler som leveres med herlige rutete tekstiler. De passer utmerket på fjellhytta. Foto: Paul Lockhart<\/p>",
+            "text_max_width": 36,
             "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/tenderflame",
+            "link": "https:\/\/sixbondstreet.no\/blogs\/inspirasjon\/hyttetekstiler",
             "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
@@ -585,22 +592,15 @@
             "color_text_button": "#000000",
             "color_text_container": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 29
           }
         }
       },
       "block_order": [
-        "d6c8a5e5-b10d-45e7-9bf5-8a32eb798697",
-        "1663578893011d0a65-0"
+        "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-0"
       ],
       "settings": {
         "enable_full_width": false
-      }
-    },
-    "dd34eb63-6181-41de-9cac-48e8bd95ddac": {
-      "type": "clerk-home-page-recommendations",
-      "settings": {
-        "recommendation_type": "bestseller"
       }
     },
     "1655980344fab006ba": {
@@ -1019,14 +1019,14 @@
     "afa98bb1-2ec8-4821-b0f4-90df414b33ce",
     "slideshow-1",
     "7b75f33f-384e-4a60-bc59-46ddcd0338ed",
-    "47c2154c-a63c-4ca9-bd80-9dfb10180ca7",
-    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5",
     "2-column-mosaic-grid",
+    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5",
+    "47c2154c-a63c-4ca9-bd80-9dfb10180ca7",
     "1a5a1932-8888-4fd6-9096-b6c6b59807b5",
-    "3c461912-2d6a-4c18-a27e-8d55217e2f96",
-    "1663579399ad141f79",
     "1663578893628202ea",
+    "1663579399ad141f79",
     "dd34eb63-6181-41de-9cac-48e8bd95ddac",
+    "3c461912-2d6a-4c18-a27e-8d55217e2f96",
     "1655980344fab006ba",
     "1655904214bdb65264",
     "1655906078323d2266",
