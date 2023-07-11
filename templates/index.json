@@ -184,6 +184,45 @@
         "enable_full_width": false
       }
     },
+    "slideshow-1": {
+      "type": "slideshow",
+      "blocks": {
+        "54c5c3c7-4f7f-4ffc-9af7-55e679a93c63": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/somerset_serien_banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/somerset_serien_banner.jpg",
+            "focal_point": "center_center",
+            "focal_point_mobile": "center_center",
+            "video_url": "",
+            "meta": "Rask levering",
+            "title": "Spiseplassen",
+            "subheading": "<p>Her finner du møbler til spiseplassen. Møblene som ligger samlet her er på lager for omgående levering.<\/p>",
+            "max_width_subheading": 30,
+            "link_text": "Se utvalget her",
+            "link": "https:\/\/sixbondstreet.no\/collections\/levering-for-jul-spisestue",
+            "alignment": "center_center",
+            "color_heading": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_text_button": "#000000",
+            "color_background_button": "#f1efeb",
+            "color_overlay": "#000000",
+            "opacity_overlay": 30
+          }
+        }
+      },
+      "block_order": [
+        "54c5c3c7-4f7f-4ffc-9af7-55e679a93c63"
+      ],
+      "settings": {
+        "desktop_height": 65,
+        "mobile_height": 65,
+        "duration_autoplay": 4,
+        "enable_parallax": false,
+        "enable_full_width": true,
+        "color_dot": "#777777"
+      }
+    },
     "7b75f33f-384e-4a60-bc59-46ddcd0338ed": {
       "type": "slideshow",
       "blocks": {
@@ -335,45 +374,6 @@
       "type": "clerk-home-page-recommendations",
       "settings": {
         "recommendation_type": "complimentary"
-      }
-    },
-    "slideshow-1": {
-      "type": "slideshow",
-      "blocks": {
-        "54c5c3c7-4f7f-4ffc-9af7-55e679a93c63": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/somerset_serien_banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/somerset_serien_banner.jpg",
-            "focal_point": "center_center",
-            "focal_point_mobile": "center_center",
-            "video_url": "",
-            "meta": "Rask levering",
-            "title": "Spiseplassen",
-            "subheading": "<p>Her finner du møbler til spiseplassen. Møblene som ligger samlet her er på lager for omgående levering.<\/p>",
-            "max_width_subheading": 30,
-            "link_text": "Se utvalget her",
-            "link": "https:\/\/sixbondstreet.no\/collections\/levering-for-jul-spisestue",
-            "alignment": "center_center",
-            "color_heading": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_text_button": "#000000",
-            "color_background_button": "#f1efeb",
-            "color_overlay": "#000000",
-            "opacity_overlay": 30
-          }
-        }
-      },
-      "block_order": [
-        "54c5c3c7-4f7f-4ffc-9af7-55e679a93c63"
-      ],
-      "settings": {
-        "desktop_height": 65,
-        "mobile_height": 65,
-        "duration_autoplay": 4,
-        "enable_parallax": false,
-        "enable_full_width": true,
-        "color_dot": "#777777"
       }
     },
     "2-column-mosaic-grid": {
@@ -563,10 +563,34 @@
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
+        },
+        "d6c8a5e5-b10d-45e7-9bf5-8a32eb798697": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "30% rabatt",
+            "title": "Somerset spisebord ø150",
+            "subheading": "<p>Det mest innbydende spisebordet med den mest anvennlige størrelsen. På lager for omgående levering og nedsatt med 30% ut august.<\/p>",
+            "text_max_width": 28,
+            "link_text": "",
+            "link": "",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 0
+          }
         }
       },
       "block_order": [
-        "1663578893011d0a65-0"
+        "1663578893011d0a65-0",
+        "d6c8a5e5-b10d-45e7-9bf5-8a32eb798697"
       ],
       "settings": {
         "enable_full_width": false
@@ -992,10 +1016,10 @@
     "1652734830e13bb44f",
     "44e5109c-a793-4f62-a83e-e59b2c6dfdf1",
     "afa98bb1-2ec8-4821-b0f4-90df414b33ce",
+    "slideshow-1",
     "7b75f33f-384e-4a60-bc59-46ddcd0338ed",
     "47c2154c-a63c-4ca9-bd80-9dfb10180ca7",
     "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5",
-    "slideshow-1",
     "2-column-mosaic-grid",
     "1a5a1932-8888-4fd6-9096-b6c6b59807b5",
     "3c461912-2d6a-4c18-a27e-8d55217e2f96",
