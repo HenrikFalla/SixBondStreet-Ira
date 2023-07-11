@@ -331,6 +331,12 @@
         "enable_full_width": false
       }
     },
+    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "complimentary"
+      }
+    },
     "slideshow-1": {
       "type": "slideshow",
       "blocks": {
@@ -430,12 +436,6 @@
         "enable_full_width": false
       }
     },
-    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5": {
-      "type": "clerk-home-page-recommendations",
-      "settings": {
-        "recommendation_type": "complimentary"
-      }
-    },
     "1a5a1932-8888-4fd6-9096-b6c6b59807b5": {
       "type": "clerk-home-page-recommendations",
       "settings": {
@@ -480,6 +480,20 @@
     "1663579399ad141f79": {
       "type": "carousel",
       "blocks": {
+        "1663579398e4302730-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/harrison_gang_forside_22.jpg",
+            "meta": "20% rabatt",
+            "title": "Harrison kolleksjonen",
+            "subheading": "<p><strong>På lager for omgående levering. <\/strong>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen.<\/p>",
+            "max_width_subheading": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/harrison-kolleksjonen",
+            "alignment": "left_bottom",
+            "opacity_overlay": 30
+          }
+        },
         "1663579398e4302730-0": {
           "type": "image",
           "settings": {
@@ -494,25 +508,11 @@
             "opacity_overlay": 30
           }
         },
-        "1663579398e4302730-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/harrison_gang_forside_22.jpg",
-            "meta": "by SixBondStreet",
-            "title": "Harrison kolleksjonen",
-            "subheading": "<p><strong>På lager for omgående levering. <\/strong>Innred hjemmet ditt med stil ved hjelp av møblene fra den elegante og tidløse Harrison kolleksjonen.<\/p>",
-            "max_width_subheading": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/harrison-kolleksjonen",
-            "alignment": "left_bottom",
-            "opacity_overlay": 30
-          }
-        },
         "1663579398e4302730-2": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/1040769_louise_roe_miljo_oker_avlang.jpg",
-            "meta": "Dansk design",
+            "meta": "20% rabatt",
             "title": "Louise Roe",
             "subheading": "<p>Louise Roe er et Københavnsbasert interiørdesignmerke, etablert i 2010. Hvert objekt er personlig tegnet av Louise Roe og oser av estetikk og håndverk av høy kvalitet.<\/p>",
             "max_width_subheading": 28,
@@ -524,8 +524,8 @@
         }
       },
       "block_order": [
-        "1663579398e4302730-0",
         "1663579398e4302730-1",
+        "1663579398e4302730-0",
         "1663579398e4302730-2"
       ],
       "settings": {
@@ -547,7 +547,7 @@
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "meta": "Inspirasjon",
+            "meta": "20% rabatt",
             "title": "Peis uten pipe",
             "subheading": "<p>Hold deg selv og gjestene dine varme utover høsten med hjelp fra peiser fra TenderFlame.<\/p>",
             "text_max_width": 28,
@@ -570,6 +570,12 @@
       ],
       "settings": {
         "enable_full_width": false
+      }
+    },
+    "dd34eb63-6181-41de-9cac-48e8bd95ddac": {
+      "type": "clerk-home-page-recommendations",
+      "settings": {
+        "recommendation_type": "bestseller"
       }
     },
     "1655980344fab006ba": {
@@ -737,7 +743,7 @@
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "meta": "Interiør",
+            "meta": "20% rabatt",
             "title": "Coffee table bøker",
             "subheading": "<p>Her finner du bøker som du kan dekorere med hjemme og på hytte. Disse bøkene er også fine gaver til de som liker å ha inspirerende bøker fremme.<\/p>",
             "text_max_width": 32,
@@ -761,7 +767,7 @@
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "meta": "Artwood",
+            "meta": "20% rabatt",
             "title": "Møbler og interiør fra Artwood",
             "subheading": "<p>Her finner du møbler og interiør som passer godt inn hjemme og på hytta.<\/p>",
             "text_max_width": 28,
@@ -790,6 +796,7 @@
     },
     "16559052358ffed71f": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "16559052345c05876d-0": {
           "type": "image",
@@ -885,6 +892,7 @@
     },
     "1663580092ee98390a": {
       "type": "2-column-mosaic-grid",
+      "disabled": true,
       "blocks": {
         "16635800919982818c-0": {
           "type": "medium_horizontal_rect",
@@ -916,12 +924,6 @@
       ],
       "settings": {
         "enable_full_width": true
-      }
-    },
-    "dd34eb63-6181-41de-9cac-48e8bd95ddac": {
-      "type": "clerk-home-page-recommendations",
-      "settings": {
-        "recommendation_type": "bestseller"
       }
     },
     "165597183990c0e2cb": {
@@ -992,13 +994,14 @@
     "afa98bb1-2ec8-4821-b0f4-90df414b33ce",
     "7b75f33f-384e-4a60-bc59-46ddcd0338ed",
     "47c2154c-a63c-4ca9-bd80-9dfb10180ca7",
+    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5",
     "slideshow-1",
     "2-column-mosaic-grid",
-    "29fe3f3c-fbaf-4872-ad95-c4b12dfdb3b5",
     "1a5a1932-8888-4fd6-9096-b6c6b59807b5",
     "3c461912-2d6a-4c18-a27e-8d55217e2f96",
     "1663579399ad141f79",
     "1663578893628202ea",
+    "dd34eb63-6181-41de-9cac-48e8bd95ddac",
     "1655980344fab006ba",
     "1655904214bdb65264",
     "1655906078323d2266",
@@ -1006,7 +1009,6 @@
     "16559052358ffed71f",
     "1655973450c3510188",
     "1663580092ee98390a",
-    "dd34eb63-6181-41de-9cac-48e8bd95ddac",
     "165597183990c0e2cb"
   ]
 }
