@@ -570,6 +570,7 @@
     },
     "3c461912-2d6a-4c18-a27e-8d55217e2f96": {
       "type": "2-column-mosaic-grid",
+      "disabled": true,
       "blocks": {
         "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-0": {
           "type": "medium_horizontal_rect",
@@ -598,6 +599,91 @@
       },
       "block_order": [
         "template--15915864326341__3c461912-2d6a-4c18-a27e-8d55217e2f96-1669618295549c0961-0"
+      ],
+      "settings": {
+        "enable_full_width": false
+      }
+    },
+    "5c2f7579-d4df-4e74-be1e-ea037337a0a4": {
+      "type": "2-column-mosaic-grid",
+      "blocks": {
+        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-0": {
+          "type": "medium_horizontal_rect",
+          "disabled": true,
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "",
+            "title": "This is medium hortizontal block",
+            "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
+            "text_max_width": 36,
+            "link_text": "",
+            "link": "",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 60
+          }
+        },
+        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/212_K7A0518-scaled.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "20% rabatt",
+            "title": "Coffee table bøker",
+            "subheading": "<p>Her finner du bøker som du kan dekorere med hjemme og på hytte. Disse bøkene er også fine gaver til de som liker å ha inspirerende bøker fremme.<\/p>",
+            "text_max_width": 32,
+            "link_text": "Se utvalget her",
+            "link": "https:\/\/sixbondstreet.no\/collections\/boker",
+            "text_position": "left_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 33
+          }
+        },
+        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-2": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fb7c3959-66e7-47fb-bc97-0d3b9f12862b-at1600_1_1512x_bda5a448-bc20-42a2-b909-0213e4e0a41b.webp",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "20% rabatt",
+            "title": "Møbler og interiør fra Artwood",
+            "subheading": "<p>Her finner du møbler og interiør som passer godt inn hjemme og på hytta.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Se utvalget her",
+            "link": "shopify:\/\/collections\/artwood",
+            "text_position": "left_bottom",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 25
+          }
+        }
+      },
+      "block_order": [
+        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-0",
+        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-1",
+        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-2"
       ],
       "settings": {
         "enable_full_width": false
@@ -732,91 +818,6 @@
         "per_row": 4,
         "rows": 1,
         "aspect_ratio": "square"
-      }
-    },
-    "5c2f7579-d4df-4e74-be1e-ea037337a0a4": {
-      "type": "2-column-mosaic-grid",
-      "blocks": {
-        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-0": {
-          "type": "medium_horizontal_rect",
-          "disabled": true,
-          "settings": {
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "",
-            "title": "This is medium hortizontal block",
-            "subheading": "<p>Use this Section to promote a series of editorial images, or to divide space among a series of editorial images. Be careful not to add too much text.<\/p>",
-            "text_max_width": 36,
-            "link_text": "",
-            "link": "",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 60
-          }
-        },
-        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-1": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/212_K7A0518-scaled.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "20% rabatt",
-            "title": "Coffee table bøker",
-            "subheading": "<p>Her finner du bøker som du kan dekorere med hjemme og på hytte. Disse bøkene er også fine gaver til de som liker å ha inspirerende bøker fremme.<\/p>",
-            "text_max_width": 32,
-            "link_text": "Se utvalget her",
-            "link": "https:\/\/sixbondstreet.no\/collections\/boker",
-            "text_position": "left_bottom",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 33
-          }
-        },
-        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-2": {
-          "type": "small_square",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fb7c3959-66e7-47fb-bc97-0d3b9f12862b-at1600_1_1512x_bda5a448-bc20-42a2-b909-0213e4e0a41b.webp",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "20% rabatt",
-            "title": "Møbler og interiør fra Artwood",
-            "subheading": "<p>Her finner du møbler og interiør som passer godt inn hjemme og på hytta.<\/p>",
-            "text_max_width": 28,
-            "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/artwood",
-            "text_position": "left_bottom",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 25
-          }
-        }
-      },
-      "block_order": [
-        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-0",
-        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-1",
-        "template--15903449022661__5c2f7579-d4df-4e74-be1e-ea037337a0a4-1667480565331b53b6-2"
-      ],
-      "settings": {
-        "enable_full_width": false
       }
     },
     "16559052358ffed71f": {
@@ -1027,10 +1028,10 @@
     "1663579399ad141f79",
     "dd34eb63-6181-41de-9cac-48e8bd95ddac",
     "3c461912-2d6a-4c18-a27e-8d55217e2f96",
+    "5c2f7579-d4df-4e74-be1e-ea037337a0a4",
     "1655980344fab006ba",
     "1655904214bdb65264",
     "1655906078323d2266",
-    "5c2f7579-d4df-4e74-be1e-ea037337a0a4",
     "16559052358ffed71f",
     "1655973450c3510188",
     "1663580092ee98390a",
