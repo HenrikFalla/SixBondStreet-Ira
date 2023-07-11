@@ -540,6 +540,30 @@
     "1663578893628202ea": {
       "type": "2-column-mosaic-grid",
       "blocks": {
+        "d6c8a5e5-b10d-45e7-9bf5-8a32eb798697": {
+          "type": "medium_horizontal_rect",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/spisestue_banner_somerset.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "meta": "30% rabatt",
+            "title": "Somerset spisebord ø150",
+            "subheading": "<p>Det mest innbydende spisebordet med den mest anvennlige størrelsen. På lager for omgående levering og nedsatt med 30% ut august.<\/p>",
+            "text_max_width": 28,
+            "link_text": "Kjøp bordet her",
+            "link": "",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_subheading": "#ffffff",
+            "color_background_button": "#ffffff",
+            "color_text_button": "#000000",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 26
+          }
+        },
         "1663578893011d0a65-0": {
           "type": "medium_horizontal_rect",
           "settings": {
@@ -563,34 +587,11 @@
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
-        },
-        "d6c8a5e5-b10d-45e7-9bf5-8a32eb798697": {
-          "type": "medium_horizontal_rect",
-          "settings": {
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "meta": "30% rabatt",
-            "title": "Somerset spisebord ø150",
-            "subheading": "<p>Det mest innbydende spisebordet med den mest anvennlige størrelsen. På lager for omgående levering og nedsatt med 30% ut august.<\/p>",
-            "text_max_width": 28,
-            "link_text": "",
-            "link": "",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
-            "color_subheading": "#ffffff",
-            "color_background_button": "#ffffff",
-            "color_text_button": "#000000",
-            "color_text_container": "",
-            "overlay_color": "#000",
-            "overlay_opacity": 0
-          }
         }
       },
       "block_order": [
-        "1663578893011d0a65-0",
-        "d6c8a5e5-b10d-45e7-9bf5-8a32eb798697"
+        "d6c8a5e5-b10d-45e7-9bf5-8a32eb798697",
+        "1663578893011d0a65-0"
       ],
       "settings": {
         "enable_full_width": false
