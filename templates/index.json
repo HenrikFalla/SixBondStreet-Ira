@@ -152,7 +152,7 @@
         "template--15954986762437__afa98bb1-2ec8-4821-b0f4-90df414b33ce-1675345320f561c954-0": {
           "type": "heading",
           "settings": {
-            "heading_title": "Alt til stuen"
+            "heading_title": "Møbler til stuen"
           }
         },
         "template--15954986762437__afa98bb1-2ec8-4821-b0f4-90df414b33ce-1675345320f561c954-1": {
@@ -280,12 +280,12 @@
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
-            "meta": "Interiør",
-            "title": "Gulvtepper",
-            "subheading": "<p>Lun opp hjem og hytte ved hjelp av myke og lune gulvtepper.<\/p>",
+            "meta": "",
+            "title": "Interiørvarer",
+            "subheading": "<p>Her finner du alt av vaser og dekorative elementer til hele hjemmet.<\/p>",
             "text_max_width": 28,
             "link_text": "Se utvalget her",
-            "link": "shopify:\/\/collections\/gulvtepper",
+            "link": "shopify:\/\/collections\/interior",
             "text_position": "center_center",
             "background_color": "",
             "color_text": "#ffffff",
