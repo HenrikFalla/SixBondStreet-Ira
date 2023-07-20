@@ -144,13 +144,9 @@ $('.dom-message span').html( $(this).find("button").attr('data-meta'));
               </a>
             </div>
           {% when 'chat-svg' %}
-            <div class="cta-button__extra {{ block.settings.extra_button_img }}">
-              <div>
-                {% render 'chat-svg' %}
-                <div data-id="b790b1bfbb" class="livechat_button"><a href="https://www.livechat.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_14465823">Live Chat</a></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" fill="none"><path stroke="#464039" d="m.606 1 8.486 8.485-8.486 8.486"/></svg>
-              </div>
-            </div>
+            <!-- LiveAgent Chat Button -->
+            <script type="text/javascript"> (function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='la_x2s6df8d';s.defer=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document, 'https://sixbondstreet.ladesk.com/scripts/track.js', function(e){ LiveAgent.createButton('5161jj0k', e); }); </script>
+            <!-- End LiveAgent Chat Button -->
           {% when 'swatch-svg' %}
             {% comment %} Unless used to only show fabric samples button on products with variants, not perfect but, will do for now {% endcomment %}
             {% unless product.has_only_default_variant %}
