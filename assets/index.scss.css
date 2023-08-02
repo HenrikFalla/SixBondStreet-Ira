@@ -21,3 +21,26 @@
         display: block;
     }
 }
+
+/* Sales banner icon styling */
+.grid__item { position: relative; }
+.collection-banner {
+    position: absolute;
+    top: 14px;
+    left: 24px;
+    width: 70px;
+    display: block;
+    z-index: 2;
+}
+.collection-banner svg {
+    position: initial;
+    width: 100%;
+}
+.collection-banner span {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translate(-50%);
+    color: #efefef;
+    font-weight: 300;
+}
